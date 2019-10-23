@@ -4,22 +4,22 @@ h1 {
 }
 h2 {
     /* color: orange; */
-    color: rgba(255 165 0/0.5);
+    color: rgba(255, 165, 0.5);
 }
 h3 {/* color: yellow; */
-    color: rgba(255 255 0/0.5);
+    color: rgba(255, 255, 0.5);
 }
 
 h4 {/* color: green; */
-    color: rgba(0 128 0/0.5);
+    color: rgba(0, 128, 0.5);
 }
 
 h5 {/* color: blue; */
-    color: rgba(0 0 255 0/0.5);
+    color: rgba(0, 0, 255 0.5);
 }
 
 h6 {/* color: indigo; */
-    color: rgba(75 0 130 0/0.5);
+    color: rgba(75, 0, 130, 0.5);
 }
 
 p {color:#b54dff ;}
