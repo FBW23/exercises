@@ -9,10 +9,11 @@ body {
     font-family: Georgia, Times, serif;
     color: #fff;
     text-align: center;
-    font-size: 50px;    
+    font-size: 50px;
 }
 
 .primary-box {
+    /* font-family: Helvetica, sans-serif; */
     background: #222;
     color: #eee;
     font-size: 24px;
@@ -29,13 +30,22 @@ body {
     background: #eee;
     color: #222;
     font-size: 24px;
-    margin: 0 0 10px;    
+    margin: 0 0 10px;
     padding: 10px;
 }
+<<<<<<< HEAD
+=======
+
+.primary-box h2 {
+    font-family: Helvetica, sans-serif;
+}
+
+>>>>>>> 5520dddc1779be466e9215d6da818b80eb3d79ee
 .secondary-box p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+<<<<<<< HEAD
 .blue {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
@@ -43,4 +53,12 @@ body {
 }
 .violet {
     color: #fc3fff;
+=======
+.primary-box em {
+    color: #32b0ff;
+}
+
+p em {
+    color: #fc3fff!important; /* Bad style*/
+>>>>>>> 5520dddc1779be466e9215d6da818b80eb3d79ee
 }
