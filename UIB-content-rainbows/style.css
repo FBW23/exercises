@@ -1,0 +1,30 @@
+h1{
+    /*color: red;*/
+    color: rgba(255, 0, 0, 0.8);
+
+}
+
+h2{
+    /*color: orange;*/
+    color: rgba(255, 69, 0, 0.1);
+}
+h3{
+    /*color:yellow;*/
+    color: rgba(255, 255, 0, 0.2);
+}
+h4{
+    /*color: green;*/
+    color: rgba(0, 128, 0, 0.4);
+}
+h5{
+    /*color: blue;*/
+    color: rgba(0, 0, 225, 0.5);
+}
+h6{
+    /*color: indigo;*/
+    color: rgba(75, 0, 130, 0.2);
+}
+
+p{
+    color: #3cb371;
+}
