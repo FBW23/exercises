@@ -34,7 +34,7 @@ body {
 
     
     .primary-box em {
-        background-image: linear-gradient(to left, green, yellow, red);
+        background-image: linear-gradient(to left, green, yellow, yellow, red);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent
 }
