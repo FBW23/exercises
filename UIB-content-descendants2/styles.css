@@ -16,7 +16,6 @@ body {
 .primary-box {
     background: #222;
     color: #eee;
-    font-family: helvetica, Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin: 0 0 10px;
     padding: 10px;
@@ -25,16 +24,21 @@ body {
 .primary-box em {
     color: #32b0ff;
 }
+.primary-box p{
+     font-family: helvetica, Arial, Helvetica, sans-serif;
+}
 
 .secondary-box {
     background: #eee;
     color: #222;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 0 10px;
     padding: 10px;
 }
 
 .secondary-box em {
     color: #fc3fff;
+}
+.secondary-box p{
+    font-family: helvetica, Arial, Helvetica, sans-serif;
 }
