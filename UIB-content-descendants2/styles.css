@@ -1,0 +1,51 @@
+/* used colors are: #32b0ff #fc3fff*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4d2d06;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.primary-box {
+    background: #222;
+    color: #eee;
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 10px;
+    font-family: Helvetica;
+}
+
+.secondary-box {
+    background: #eee;
+    color: #222;
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+.primary-box p {
+    font-family: Helvetica;
+}
+
+.first {
+    color: #32b0ff;
+}
+
+.second {
+    color: #fc3fff;
+}
+
+
+.secondary-box p {
+    font-family: arial;
+}
+
+.h2 {
+    font-family: arial;
+}
