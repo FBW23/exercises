@@ -9,7 +9,7 @@ body {
     font-family: Georgia, Times, serif;
     color: #fff;
     text-align: center;
-    font-size: 50px;    
+    font-size: 50px;
 }
 
 .primary-box {
@@ -18,7 +18,7 @@ body {
     font-size: 24px;
     margin: 0 0 10px;
     padding: 10px;
-    
+
 
 }
 
@@ -26,16 +26,27 @@ body {
     background: #eee;
     color: #222;
     font-size: 24px;
-    margin: 0 0 10px;    
+    margin: 0 0 10px;
     padding: 10px;
- 
+
 }
 
-.primary-box em {color: blue;}
 
-.secondary-box em{color: blueviolet;
+    
+    .primary-box em {
+        background-image: linear-gradient(to left, green, yellow, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent
 }
 
-.secondary-box p {font-family: Arial, Helvetica, sans-serif;}
+.secondary-box em {
+    color: blueviolet;
+}
 
-.primary-box h2 {font-family: Helvetica;}
+.secondary-box p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.primary-box h2 {
+    font-family: Helvetica;
+}
