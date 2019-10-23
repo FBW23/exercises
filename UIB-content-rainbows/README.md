@@ -5,5 +5,5 @@
 * Once you're finished, add alpha to each of the headings using `rgba`. 
 * Then select all the paragraphs and add a hex color.
 
-![task1](/images/task1.png)
-![task2-and-3](/images/task2-3.png)
+![task1](/UIB-content-rainbows/images/task1.png)
+![task2-and-3](/UIB-content-rainbows/images/task2-3.png)
