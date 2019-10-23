@@ -18,6 +18,11 @@ body {
     font-size: 24px;
     margin: 0 0 10px;
     padding: 10px;
+    
+
+}
+.primary-box h2{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .secondary-box {
@@ -26,4 +31,14 @@ body {
     font-size: 24px;
     margin: 0 0 10px;    
     padding: 10px;
+}
+.secondary-box p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blue {
+    color: #32b0ff;
+}
+.violet {
+    color: #fc3fff;
 }
