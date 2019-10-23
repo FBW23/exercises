@@ -18,6 +18,8 @@ body {
     font-size: 24px;
     margin: 0 0 10px;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .secondary-box {
@@ -26,4 +28,21 @@ body {
     font-size: 24px;
     margin: 0 0 10px;    
     padding: 10px;
+    font: Arial;
+}
+
+.primary-box em {
+    color:#32b0ff;
+}
+
+.secondary-box em {
+    color:#EE83FA;
+}
+
+.prim-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prim-helv {
+    font-family: Georgia, Times, serif;
 }

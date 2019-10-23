@@ -31,3 +31,8 @@ h6 {
 p {
     color:#9C74E9;
 }
+
+ol li {
+    color:red;
+    list-style-type: none;
+}
