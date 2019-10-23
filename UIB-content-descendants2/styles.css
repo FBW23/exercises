@@ -27,3 +27,19 @@ body {
     margin: 0 0 10px;    
     padding: 10px;
 }
+
+.secondary-box em {
+    color: #fc3fff;
+}
+
+.primary-box em {
+    color: #32b0ff;
+}
+
+.primary-box p {
+    font-style: Helvetica;
+}
+
+.secondary-box p {
+    font-style: Arial;
+}
