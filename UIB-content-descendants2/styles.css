@@ -13,6 +13,7 @@ body {
 }
 
 .primary-box {
+    font-family: Helvetica, sans-serif;
     background: #222;
     color: #eee;
     font-size: 24px;
@@ -26,4 +27,19 @@ body {
     font-size: 24px;
     margin: 0 0 10px;    
     padding: 10px;
+}
+
+.primary-box > p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.secondary-box > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.primary-box > p > em {
+    color: #32b0ff;
+}
+.secondary-box > p > em {
+color: #fc3fff;
 }
