@@ -1,0 +1,33 @@
+/* My CSS comes here*/
+
+    h1 {
+      /*color: red;*/
+      color: rgba(255, 0, 0,0.5);
+    }
+    h2 {
+      /*color:  orange;*/
+      color: rgb(255, 165, 0);
+    }
+    h3 {
+     /*color:  yellow;*/
+     color:rgb(255,255,0);
+      }
+      h4 {
+     /*color:  green;*/
+     color: rgb(0,128,0);
+      }
+    
+      h5 {
+     /*color:  blue;*/
+        color: rgb(0,0,255);
+      }
+      h6 { 
+        /*color:  indigo;*/
+        color: rgb(75, 0, 130);
+      }
+      p {  
+          color: #990000;
+       
+      }
+
+
