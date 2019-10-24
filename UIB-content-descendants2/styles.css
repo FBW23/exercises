@@ -29,7 +29,6 @@ body {
     font-size: 24px;
     margin: 0 0 10px;
     padding: 10px;
-<<<<<<< HEAD
     font: Arial;
 }
 
@@ -51,22 +50,3 @@ body {
 
 .primary-box ul li {
     font-family: Arial, Helvetica, sans-serif;
-=======
-}
-
-.primary-box h2 {
-    font-family: Helvetica, sans-serif;
-}
-
-.secondary-box p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.primary-box em {
-    color: #32b0ff;
-}
-
-p em {
-    color: #fc3fff!important; /* Bad style*/
-}
->>>>>>> 5520dddc1779be466e9215d6da818b80eb3d79ee
