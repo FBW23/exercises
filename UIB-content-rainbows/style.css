@@ -1,5 +1,4 @@
 h1 {
-<<<<<<< HEAD
     /*color: red;*/
     color: rgba(255, 0, 0, 0.8);
 
@@ -32,37 +31,4 @@ h6 {
 
 p {
     color: #3cb371;
-=======
-    /* color:red; */
-    color:rgb(248, 85, 86, 0.6);
-}
-
-h2 {
-    /* color:orange; */
-    color:rgb(254, 191, 71, 0.7);
-}
-
-h3 {
-    /* color:yellow; */
-    color:rgb(246, 233, 85, 0.4);
-}
-
-h4 {
-    /* color:green; */
-    color:rgb(127, 192, 113, 0.7);
-}
-
-h5 {
-    /* color:blue; */
-    color:rgb(188, 150, 252, 0.8);
-}
-
-h6 {
-    /* color:indigo; */
-    color:rgb(182, 143, 204, 0.8);
-}
-
-p {
-    color:#9C74E9;
->>>>>>> fa5c07b04f3d2686b2693a3dcaea43facfbd9b64
 }
