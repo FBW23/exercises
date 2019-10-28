@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Indie Flower', cursive;
+}
 .nav-item, .media-links {
     list-style: none;
 }

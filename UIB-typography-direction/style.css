@@ -1,0 +1,10 @@
+p {
+    text-align: justify;
+}
+
+h2, h1 {
+    text-align: center;
+}
+.arabic {
+    text-align: right;
+}
