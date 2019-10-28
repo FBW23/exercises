@@ -4,6 +4,37 @@
 .nav-item, .media-links {
     list-style: none;
 }
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.review {
+    text-align: center;
+    text-shadow: 1px 1px 3px red;
+    text-transform: uppercase;
+}
+.media-links {
+    text-align: center;
 
-
+}
+i {
+    font-size: 50px;
+}
+.fa-grin-squint-tears {
+    color: red;
+}
+.fa-grin {
+    color:orange;
+}
+.fa-grin-hearts {
+    color: royalblue;
+}
+.fa-football-ball {
+color: saddlebrown;
+}
+.fa-volleyball-ball{
+    background-image: linear-gradient(to left, blue, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
