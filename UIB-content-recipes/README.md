@@ -27,6 +27,6 @@
 - [x] Under the "Ingredients" heading, add an unordered list for the ingredients of your recipe
 - [x] Under the "Preparation" heading, add an ordered list for the preparation of your recipe
 
-![mockup-image](/img/reference-image.png)
+![mockup-image](./img/reference-image.png)
 
 ---

@@ -1,0 +1,17 @@
+.note {
+    font-weight: bold;
+}
+
+.holidays {
+    font-style: italic;
+}
+
+.me {
+
+    font-size: 1.1em;
+}
+
+.me:hover {
+    font-size: 1.4em;
+    transition-duration: 130ms;
+}
