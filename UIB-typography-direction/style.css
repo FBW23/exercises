@@ -5,8 +5,15 @@ h2 {
 
 p {
     text-align: justify;
+    
 }
 
 .arabic {
     direction: rtl;
+    word-spacing: ;
+    letter-spacing: ;
+}
+
+i{
+    font-size: 1.9em;
 }
