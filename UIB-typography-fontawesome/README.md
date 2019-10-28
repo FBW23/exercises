@@ -10,6 +10,6 @@
 * Resize the icons on the page.
 
 * Desktop
-![alt-text](/images/reference-image-desktop.png "Reference Image Desktop")
+![alt-text](./images/reference-image-desktop.png "Reference Image Desktop")
 * Mobile
-![alt-text](/images/reference-image-mobile.png "Reference Image Desktop")
+![alt-text](./images/reference-image-mobile.png "Reference Image Desktop")
