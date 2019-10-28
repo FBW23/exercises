@@ -6,6 +6,10 @@ p {
     text-align: justify;
 }
 
-p.arabic {
+.arabic {
     direction: rtl;
+}
+
+i {
+    font-size: 500px;
 }
