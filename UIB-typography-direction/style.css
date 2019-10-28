@@ -1,7 +1,7 @@
 h1, h2 {text-align: center;
 }
 
-p1 {text-align: rtl;
+ .arabic {direction: rtl;
 }
 .p {text-align: justify;
 }
