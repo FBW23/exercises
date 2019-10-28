@@ -1,0 +1,11 @@
+
+h1 {text-decoration: underline;
+    text-align: center;}
+.review {text-align:center;
+    text-shadow:  10px 10px 10px;
+    text-transform: capitalize;
+}
+.nav-item, .media-links {
+    list-style: none;
+}
+.media-links {text-align: center;}
