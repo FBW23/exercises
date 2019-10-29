@@ -13,4 +13,4 @@ I only  noticed a  slight change  on the  the left margin.
 * Why is `normalize.css` useful? 
 to make all browsers "render" the same viewport
 * What is the difference between normalize and css resets? 
-using chrome , I only noticed  a difference on the margins.
+Normalize adds a  consistancy among browsers , while  css resets ,removes all the  browser built in stylling.
