@@ -11,3 +11,6 @@ _Add your answers to this `README` file._
 * Why is `normalize.css` useful? 
 
 * What is the difference between normalize and css resets? 
+
+
+Balazs: The margins disappear. The whole page looks more organized and better proportioned. Better to look at.
