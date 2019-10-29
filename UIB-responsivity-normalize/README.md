@@ -8,6 +8,6 @@ _Add your answers to this `README` file._
 
 * What do you notice now that `normalize.css` is being used? Add your answer to this `README` file.
 
-* Why is `normalize.css` useful?  its can reset every thing in HTML file for good working
+* Why is `normalize.css` useful?  its can reset everything,every detail in HTML file for good working 
 
 * What is the difference between normalize and css resets?  normalize is too deep reset ! than css reset
