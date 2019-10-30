@@ -14,19 +14,32 @@ li {
 }
 
 
-@media (min-width:0) and (max-width:375px) {body
-{border-color: red;} }
+@media (max-width:375px) {
+    body {
+        border-color: red;
+    }
+}
 
-   @media  (min-width:376px) and (max-width:425) {body
-    {border-color: blue;} }
+@media (min-width:376px) and (max-width:425px) {
+    body {
+        border-color: blue;
+    }
+}
 
-   @media  (min-width:426px) and (max-width:768px) {body
-   { border-color:green; } }
+@media (min-width:426px) and (max-width:768px) {
+    body {
+        border-color: green;
+    }
+}
 
-   @media  (min-width:769px) and (max-width:1024px) {body
-   { border-color:yellow; } }
+@media (min-width:769px) and (max-width:1024px) {
+    body {
+        border-color: yellow;
+    }
+}
 
-   @media  (min-width:1025px) and (max-width:1440px) {body
-   { border-color:hotpink; } }
-
-
+@media (min-width:1025px) and (max-width:1440px) {
+    body {
+        border-color: hotpink;
+    }
+}
