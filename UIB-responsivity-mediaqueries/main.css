@@ -14,7 +14,7 @@ li {
 }
 
 
-@media (min-width:0px) and (max-width:375px) {body
+@media (min-width:0) and (max-width:375px) {body
 {border-color: red;} }
 
    @media  (min-width:376px) and (max-width:425) {body
