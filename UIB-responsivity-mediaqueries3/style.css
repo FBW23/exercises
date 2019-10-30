@@ -6,3 +6,22 @@ main {
 li {
     margin: 10px;
 }
+@media screen and (min-width:426px) and (max-width: 768px) {
+    body {
+        border: 10px solid purple;
+        margin: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+}
+@media screen and (min-width:1025px) and (max-width: 1440px) {
+    body {
+        margin:10px;
+        border: 10px solid gray;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        font-size: 30px;
+        color: cyan;
+        text-transform: uppercase;
+    }
+    }
+    
