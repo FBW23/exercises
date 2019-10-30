@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Skip to content
 Pull requests
@@ -45,6 +46,8 @@ normalize.css/normalize.css
 @antons
 @Sky161
 350 lines (275 sloc) 5.99 KB
+=======
+>>>>>>> 2d7afc8ca2058ebd7cf72a38f4c43c8f314ab145
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -391,6 +394,7 @@ template {
  * Add the correct display in IE 10.
  */
 
+<<<<<<< HEAD
 [hidden] {
   display: none;
 }
@@ -409,3 +413,8 @@ template {
     Blog
     About
 
+=======
+[   ] {
+  display: none;
+}
+>>>>>>> 2d7afc8ca2058ebd7cf72a38f4c43c8f314ab145
