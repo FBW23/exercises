@@ -70,6 +70,10 @@ footer {
         border-radius: 1.1em;
     }
 
+    .ar1 ul {
+        text-align: left;
+    }
+
     .ar2 {
 
         width: 90%;
@@ -126,14 +130,14 @@ footer {
         vertical-align: top;
         display: inline-block;
         margin-left: 0.3em;
-        background-color:crimson;
+        background-color: crimson;
         border-radius: 0.2em;
-        
+
     }
 
     footer li a {
         text-decoration: none;
-        color:#fff;
+        color: #fff;
 
 
     }
