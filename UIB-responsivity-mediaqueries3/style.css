@@ -39,7 +39,7 @@ li {
         font-family: 'Teko', sans-serif;
     }
 
-    span {
+    li::first-letter {
         font-weight: bold;
 
     }
