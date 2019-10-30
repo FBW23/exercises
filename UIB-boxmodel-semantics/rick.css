@@ -1,32 +1,136 @@
-header{
+header {
     padding: 7px;
     border-bottom: 2px solid #000;
 }
-h1 , h2, h3{
+
+h1,
+h2,
+h3 {
     text-align: center;
 }
-h2 , h4 , h5{
+
+h2,
+h4,
+h5 {
     text-decoration: underline;
     font-weight: bold;
 }
-.section1{
+
+.section1 {
     margin-top: 2px;
 
 }
-.ar1{
+
+.ar1 {
+
     display: inline-block;
     width: 58%;
-   
-    
-}
-.ar2{
-    display: inline-block;
-    width: 36%;
-    margin:1.3em;
-      
+
+
 }
 
-footer{
+.ar2 {
+    display: inline-block;
+    width: 36%;
+    vertical-align: top;
+
+}
+
+footer {
     border-top: 1px solid black;
 }
 
+@media screen and (max-width:480px) {
+    body {
+        background-color: black;
+    }
+
+    header {
+        background-color: black;
+        color: #fff;
+        border-radius: 1.3em;
+        border: 1em solid green;
+        font-family: Modak;
+    }
+
+    main {
+        background-color: grey;
+        border-radius: 1.2em;
+        font-family: Raleway, sans-serif;
+    }
+
+    .ar1 {
+
+
+        width: 90%;
+        margin: 4%;
+        text-align: center;
+        background-color: cornflowerblue;
+        padding: 1.em;
+        border-radius: 1.1em;
+    }
+
+    .ar2 {
+
+        width: 90%;
+        text-align: center;
+        margin: 4%;
+        padding: 1.em;
+        border-radius: 1.1em;
+        background-color: darkolivegreen;
+
+    }
+
+    .src {
+        background-color: brown;
+        width: 57%;
+        border-radius: 1.1em;
+        text-align: center;
+        margin-left: 1em;
+
+    }
+
+    .section2 h2 {
+        color: floralwhite;
+        background-color: darkorange;
+        width: 90%;
+        border-radius: 1.1em;
+        padding: 0.6em;
+        text-decoration: none;
+    }
+
+    .ar3,
+    .ar4 {
+
+        width: 90%;
+        text-align: center;
+        margin: 4%;
+        padding: 0em;
+        border-radius: 1.1em;
+        background-color: #000;
+        color: #fff;
+
+    }
+
+    .h5 {
+
+
+        margin-left: 1em;
+        color: darksalmon;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    footer li {
+
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 0.3em;
+    }
+
+    footer li a {
+        text-decoration: none;
+
+
+    }
+}
