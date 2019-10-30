@@ -6,3 +6,44 @@ main {
 li {
     margin: 10px;
 }
+
+/* mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+    main {
+        font-family: cursive;
+        background-color: violet;
+        font-size: 18px;
+        color: orangered;
+        margin: 1em;
+    }
+}
+
+/* tablets */
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+    main {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: green;
+        border: solid 2px green;
+        margin: 1em ;
+        padding: 1em;
+    }
+}
+
+
+/* desktops */
+@media only screen and (min-device-width : 1025px){ 
+    main {
+        font-family: monospace;
+        background-color: yellowgreen;
+        color: purple;
+        border: solid 2px purple;
+        margin: 1em ;
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-device-width : 1025px){ 
+    li::first-letter { color: teal;
+
+    }}
