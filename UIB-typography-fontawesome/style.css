@@ -3,5 +3,14 @@
     list-style: none;
 }
 
+.review {
+    text-align: center;
+    text-shadow: 5px 5px 6px grey;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
 
 
