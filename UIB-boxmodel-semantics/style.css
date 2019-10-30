@@ -4,8 +4,12 @@ header {
 
 body {
     font-family: monospace;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
     background-color: rgb(38, 43, 43);
     color: whitesmoke;
+    
 }
 
 h1 {
@@ -14,14 +18,15 @@ h1 {
 
 .section0 {
     display: inline-block;
-    width: 42%;
+    width: 50%;
+    margin-right: 30px;
 }
 
 .section1 {
     vertical-align: top;
     display: inline-block;
-    width: 50%;
-    margin-left: 0;
+    width: 45%;
+    margin-left:
 }
 
 
@@ -34,6 +39,17 @@ h3 ,h4{
     text-decoration: underline;
 }
 footer{
+    border-top: 60px;
     border-top: 1px solid #fff;
-    padding-top: 14px;
-}
+    padding-top: 60px;
+    }
+
+    img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    a {
+        color:lime;
+    }
