@@ -1,0 +1,20 @@
+body {
+    background-image: url("queen.jpeg");
+    background-size: cover;
+    color:rgba(9, 231, 28, 0.808);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;}
+
+      .section {width: 60%;
+display: inline-block;}
+
+aside {width:30%;
+display: inline-block;
+}
+#liveaid{ width:64%;
+display:inline-block}
+h4{font-size: 3rem;
+    text-align: center;
+}
+.a {font-size: 3rem;text-align: center;
+}
