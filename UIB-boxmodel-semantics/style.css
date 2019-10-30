@@ -1,0 +1,30 @@
+.band-history {
+    width: 70%;
+    display: inline-block;
+}
+
+.discography {
+    width: 20%;
+    display: inline-block;
+}
+
+header,
+img {
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h2,
+h3 {
+    text-decoration: underline;
+}
+
+hr {
+    border: 2px dotted darkgrey;
+}
