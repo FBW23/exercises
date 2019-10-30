@@ -40,7 +40,7 @@ li {
     }
 
     .line1 {
-        color: red;
+        display: none;
 
     }
 

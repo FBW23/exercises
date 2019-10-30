@@ -6,3 +6,41 @@ main {
 li {
     margin: 10px;
 }
+
+
+
+@media screen and (max-width:479px) {
+    main {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width:1024px) {
+    main {
+        color: violet;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p {
+        font-style: italic;
+
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width:1440px) {
+    main {
+        background-color: yellowgreen;
+        font-size: 40px;
+        font-family: 'Teko', sans-serif;
+    }
+
+    span {
+        font-weight: bold;
+
+    }
+}
