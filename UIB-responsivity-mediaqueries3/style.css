@@ -7,15 +7,13 @@ li {
     margin: 10px;
 }
 
-
-
+/*---------- Media------------- */
 @media screen and (max-width:479px) {
     main {
         font-family: 'Liu Jian Mao Cao', cursive;
         font-size: 20px;
     }
 }
-
 
 @media screen and (min-width: 480px) and (max-width:1024px) {
     main {
@@ -27,9 +25,7 @@ li {
     p {
         font-style: italic;
     }
-    
 }
-
 
 @media screen and (min-width: 1025px) and (max-width:1440px) {
     main {
@@ -37,11 +33,9 @@ li {
         font-size: 40px;
         font-family: 'Teko', sans-serif;
     }
+
     li::first-letter {
         font-weight: bold;
         font-size: 55px;
     }
-   
-
-    
 }
