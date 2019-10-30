@@ -1,7 +1,45 @@
 body {
     height: 100vh;
     border: 10px solid black;
+    1
 }
+
+@media screen and (max-width: 375px) {
+    body {
+        border: 10px solid red;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width:425px) {
+    body {
+        border: 10px solid blue;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    body {
+        border: 10px solid green;
+    }
+
+    h3 {
+        color: indigo;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    body {
+        border: 10px solid yellow;
+        background-color: lawngreen;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width:1440px) {
+    body {
+        border: 10px solid hotpink;
+    }
+}
+
 
 main {
     margin: 15px;
