@@ -1,7 +1,7 @@
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     main {
         font-family: Raleway;
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
     li {
@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (min-width:577px) and (max-width:768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
     body {
         background-color: blue;
         color: #fff;
@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (min-width:769px) and (max-width:992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
     body {
         background-color: #000;
         color: #fff;
