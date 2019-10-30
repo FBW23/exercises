@@ -21,14 +21,13 @@ li {
     main {
         color: violet;
         font-size: 30px;
-        font-weight: bold;
         text-align: center;
     }
 
     p {
         font-style: italic;
-
     }
+    
 }
 
 
@@ -38,9 +37,11 @@ li {
         font-size: 40px;
         font-family: 'Teko', sans-serif;
     }
-
     li::first-letter {
         font-weight: bold;
-
+        font-size: 55px;
     }
+   
+
+    
 }
