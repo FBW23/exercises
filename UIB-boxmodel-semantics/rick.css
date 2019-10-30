@@ -1,0 +1,32 @@
+header{
+    padding: 7px;
+    border-bottom: 2px solid #000;
+}
+h1 , h2, h3{
+    text-align: center;
+}
+h2 , h4 , h5{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.section1{
+    margin-top: 2px;
+
+}
+.ar1{
+    display: inline-block;
+    width: 58%;
+   
+    
+}
+.ar2{
+    display: inline-block;
+    width: 36%;
+    margin:1.3em;
+      
+}
+
+footer{
+    border-top: 1px solid black;
+}
+
