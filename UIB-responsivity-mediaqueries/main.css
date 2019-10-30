@@ -15,7 +15,7 @@ li {
 
 @media screen and (max-width:375px) {
     body {
-        font: size 30px;
+        font-size: 30px;
         border: 10px solid red;
 
     }
