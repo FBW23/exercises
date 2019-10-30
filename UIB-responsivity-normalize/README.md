@@ -13,3 +13,4 @@ the margin is closer to the edges of the viewport
 it turns the viewings in different browsers the more similar as possible
 
 * What is the difference between normalize and css resets?
+the reset css turns
