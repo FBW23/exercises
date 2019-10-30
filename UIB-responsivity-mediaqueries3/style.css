@@ -3,7 +3,9 @@ main {
     font-size: 15px;
 }
 
-
+li::first-letter{
+    font-weight: bold;
+}
 
 li {
     margin: 10px;
