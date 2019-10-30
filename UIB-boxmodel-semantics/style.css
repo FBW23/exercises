@@ -1,0 +1,25 @@
+
+#tennis {
+    width: 60%;
+    display: inline-block;
+    margin-left: 3%;
+    vertical-align: top;
+}
+#football {
+    width: 32%;
+    display: inline-block;
+    margin-right: 3%;
+}
+h1, h2, h3 {
+    text-decoration:underline
+}
+h1, h2 {
+    text-align: center;
+}
+a {
+    font-style: italic;
+    font-weight: bold;
+}
+ul li a {
+    font-style: normal;
+}
