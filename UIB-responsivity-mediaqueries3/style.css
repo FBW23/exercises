@@ -29,6 +29,7 @@ li {
     main {
         font-family: 'Saira Condensed', sans-serif;
         font-size: 47px;
+        margin: 10px 10px;
         background-color: darkred;
         color: white;
     }
@@ -43,5 +44,7 @@ li {
 
     span {
         color: yellow;
+        font-size: 70px;
+        font-weight: bolder;
     }
 }
