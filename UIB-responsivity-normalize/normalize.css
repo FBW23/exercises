@@ -344,6 +344,10 @@ template {
  * Add the correct display in IE 10.
  */
 
+<<<<<<< HEAD
 [hidden] {
+=======
+[   ] {
+>>>>>>> 2d7afc8ca2058ebd7cf72a38f4c43c8f314ab145
   display: none;
 }
