@@ -95,8 +95,9 @@ footer {
         background-color: darkorange;
         width: 90%;
         border-radius: 1.1em;
-        padding: 0.6em;
+        padding: 0.4em;
         text-decoration: none;
+        margin-left: 0.3em;
     }
 
     .ar3,
@@ -125,10 +126,14 @@ footer {
         vertical-align: top;
         display: inline-block;
         margin-left: 0.3em;
+        background-color:crimson;
+        border-radius: 0.2em;
+        
     }
 
     footer li a {
         text-decoration: none;
+        color:#fff;
 
 
     }
