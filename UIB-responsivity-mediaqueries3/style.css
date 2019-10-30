@@ -40,4 +40,7 @@ li {
         background-color: dimgray;
         color: whitesmoke;
     }
+    span {
+        color: yellow;
+    }
 }
