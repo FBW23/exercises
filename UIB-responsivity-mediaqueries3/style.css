@@ -6,3 +6,38 @@ main {
 li {
     margin: 10px;
 }
+
+@media screen and (max-width: 576px) {
+    main {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 25px;
+        background-color: beige;
+        color: brown;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    main {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 35px;
+        background-color: lightgreen;
+        color: darkolivegreen;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    main {
+        font-family: 'Saira Condensed', sans-serif;
+        font-size: 47px;
+        background-color: darkred;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    main {
+        font-size: 55px;
+        background-color: dimgray;
+        color: whitesmoke;
+    }
+}
