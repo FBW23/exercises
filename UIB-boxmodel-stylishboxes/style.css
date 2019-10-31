@@ -1,36 +1,33 @@
 .fake-box {
+    height: 19%;
+    margin: 1% 2%;
+    padding: 3.2em 4em;
     position: relative;
     width: 19%;
-    margin: 3% 5%;
-    padding: 0.1em;
 }
 
 .fake-box:before,
 .fake-box:after {
-    position: absolute;
-    border: 0.2em solid #000;
-    height: 18em;
+    border: 0.3em solid #000;
     content: "";
-    width: 18em;
-    margin: -13%;
-
-
+    height: 100%;
+    margin: -7%;
+    width: 100%;
+    position: absolute;
 
 }
 
 .fake-box:after {
-    left: 26px;
-    top: 26px;
-
+    left: 29px;
+    top: 29px;
 }
 
 .info-box {
-    border: 0.1em solid #000;
-    box-shadow: 0.2em 0.2em 0.3em #000;
+    border: 2px solid #000;
+    box-shadow: 1em 1em 1.4em #000;
     display: inline-block;
     margin-left: 1.5%;
     margin-top: 10%;
+    padding: 0.2%;
     width: 28%;
-    padding: 0.2em;
-
 }
