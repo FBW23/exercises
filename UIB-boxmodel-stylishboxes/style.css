@@ -1,0 +1,39 @@
+section {
+    border: 1px solid black;
+    box-shadow: 5px 5px 11px black;
+    display: inline-block;
+    margin-right: 20px;
+    width: 20%;
+}
+
+.fake-box {
+    position: relative;
+    border: none;
+    box-shadow: none;
+    display: block;
+    height: 200px;
+    padding: 40px;
+    margin-left: 15px;
+
+}
+
+article {
+    margin: 10px;
+}
+
+.fake-box:before,
+.fake-box:after {
+
+    border: 1px solid black;
+    position: absolute;
+    content: "";
+    /*make the styling here visible*/
+    width: 330px;
+    height: 160px;
+
+}
+
+
+.fake-box:after {
+    left: 20px;
+    top: 20px;
