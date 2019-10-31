@@ -5,14 +5,24 @@
 .primary-box {
     color: white;
     background-color: black;
-    padding-bottom: 20px;
+    padding: 1px 0 20px 0;
 }
 
 .inside-box {
     background-color: rgb(53, 167, 167);
     color: black;
+    padding: 1px 0 2px 0;
 }
 
 .secondary-box {
     border-top: 10px solid rgba(77, 2, 2, 0.781);
+    padding-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: -15px;
+}
+
+h2 {
+    margin-bottom: -15px;
 }
