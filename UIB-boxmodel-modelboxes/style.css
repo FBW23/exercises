@@ -9,14 +9,16 @@
 }
 
 .inside-box {
-    background-color: rgb(53, 167, 167);
+    background-color: #8FEEFF;
     color: black;
     padding: 1px 0 2px 0;
 }
 
 .secondary-box {
-    border-top: 10px solid rgba(77, 2, 2, 0.781);
+    border-top: 10px solid #4F3700;
+    border-bottom: 10px solid #4F3700;
     padding-bottom: 20px;
+    background-color: #ECECED;
 }
 
 h3 {
