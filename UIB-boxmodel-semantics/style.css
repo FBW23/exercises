@@ -1,23 +1,25 @@
 .band-history {
-    width: 70%;
+    box-sizing: border-box;
     display: inline-block;
+    width: 63%;
 }
 
 .discography {
-    width: 20%;
+    box-sizing: border-box;
     display: inline-block;
+    width: 33%;
 }
 
 header,
 img {
+    background-color: black;
     display: block;
     margin: 0 auto;
-    background-color: black;
 }
 
 h1 {
-    text-align: center;
     color: #FFFFFF;
+    text-align: center;
 }
 
 h2,
