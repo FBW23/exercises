@@ -6,4 +6,4 @@
 * Task 2: Align the sections with the class `info-box` side-by-side. Give the elements a box shadow.
 
 
-![reference-image](/image/reference-image.png)
+![reference-image](./image/reference-image.png)
