@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    text-align: center;
+}
+
+.primary-box, .secondary-box, .inside-box {
+    font-size: 1.5em;
+    padding: 15px 0;
+}
+
+.primary-box {
+    background: #2B2B2B;
+    color: white;
+}
+
+.inside-box {
+    background: #8BEEFF;
+    color: #2B2B2B;
+    font-size: 0.8em;
+    margin: 15px 0;
+    display: none;
+}
+
+.secondary-box {
+    background: #EDECEE;
+    border-bottom: 16px solid #4E3B00;
+    border-top: 16px solid #4E3B00;
+}

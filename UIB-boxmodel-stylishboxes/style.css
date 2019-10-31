@@ -1,0 +1,12 @@
+.fake-box {
+    position: relative;
+}
+
+.fake-box:before, .fake-box:after {
+    position: absolute;
+}
+
+.fake-box:after {
+    left: 20px;
+    top: 20px;
+}
