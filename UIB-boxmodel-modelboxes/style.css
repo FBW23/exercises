@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+}
+
+.inside-box {
+    background-color: turquoise;
+    color: gray;
+    padding-top: 1px;
+}
+
+.primary-box p {
+    margin-bottom: 40px;
+
+}
+
+.primary-box {
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.secondary-box {
+    border-top: 15px solid #4E3C00;
+    border-bottom: 15px solid #4E3C00;
+}
+
+p {
+    margin-top: -15px;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+
