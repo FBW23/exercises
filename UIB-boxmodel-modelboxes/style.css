@@ -1,0 +1,31 @@
+/* My CSS comes here*/
+body,
+h2,
+h3,
+p {
+    margin: 0;
+
+}
+
+.primary-box {
+    background-color: #2B2B2B;
+    color: white;
+    text-align: center;
+    border-bottom: #4e3c00 solid 5px;
+    padding-bottom: 1.1em;
+    padding-top: 1.5em;
+}
+
+.secondary-box {
+    background-color: #edecee;
+    text-align: center;
+    border-bottom: #4e3c00 solid 5px;
+    padding-bottom: 1.1em;
+    padding-top: 1.5em;
+}
+
+.inside-box {
+    background-color: #89edff;
+    padding: 1.1em;
+    margin: 1em;
+}
