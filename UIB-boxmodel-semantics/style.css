@@ -1,0 +1,16 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+
+.box1 {
+  font-size: 1.2em;
+  width: 45%;
+  display: inline-block;
+}
+
+.box2 {
+  font-size: 1.2em;
+  width: 45%;
+  display: inline-block;
+}

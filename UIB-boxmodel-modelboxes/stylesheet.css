@@ -25,5 +25,7 @@ body {
 .inside-box {
   background-color: rgb(155, 217, 255);
   color: black;
-  
+  font-size: 0.8em;
+  margin: 18px 0;
+
 }
