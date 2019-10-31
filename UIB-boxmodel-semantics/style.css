@@ -1,11 +1,9 @@
 .band-history {
-    box-sizing: border-box;
     display: inline-block;
     width: 63%;
 }
 
 .discography {
-    box-sizing: border-box;
     display: inline-block;
     width: 33%;
 }
