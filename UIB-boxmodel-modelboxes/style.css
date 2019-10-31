@@ -8,8 +8,8 @@
     padding-top: 1px;
 }
 
-.primary-box p {
-    margin-bottom: 40px;
+.primary-box p, .inside-box p, .secondary-box p {
+    margin-bottom: 20px;
 
 }
 
