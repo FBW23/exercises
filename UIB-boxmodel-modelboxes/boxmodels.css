@@ -1,0 +1,39 @@
+div {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-top: 8px solid brown;
+    width: 30%;
+
+}
+
+.inside-box {
+    background-color: cadetblue;
+    color: black;
+    width: 100%;
+    border: 0;
+    text-align: center;
+
+}
+
+
+
+.secondary-box {
+    background-color: lightgray;
+    color: black;
+    width: 30%;
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.primary-box {
+    width: 30%;
+    background-color: black;
+    padding-bottom: 15px;
+    
+}
+
+body {
+    margin-top: -8px;
+}
