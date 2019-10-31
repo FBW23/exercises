@@ -1,34 +1,30 @@
 * {
     text-align: center;
+    margin: 0
 }
 
 .inside-box {
     background-color: turquoise;
     color: gray;
-    padding-top: 1px;
-}
-
-.primary-box p, .inside-box p, .secondary-box p {
-    margin-bottom: 20px;
-
-}
-
-.primary-box {
-    background-color: black;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    margin: 18px 0;
+    padding: 15px 0;
+    
 }
 
 .secondary-box {
     border-top: 15px solid #4E3C00;
     border-bottom: 15px solid #4E3C00;
+    padding: 15px 0;
 }
 
-p {
-    margin-top: -15px;
-    margin-bottom: 80px;
+.primary-box {
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 2px 4px 2px cadetblue;
 }
+
+
 
 
 
