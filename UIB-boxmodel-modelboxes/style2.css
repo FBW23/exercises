@@ -1,0 +1,32 @@
+* {
+    margin:0;
+    text-align:center;
+}
+
+.primary-box, .secondary-box, .inside-box {
+    font-size: 1.2em;
+    padding:15px 0;
+}
+
+.primary-box   {
+    background:#2B2B2B;
+    color:white;
+   
+}
+
+.inside-box {
+    background: #8bEEFF;
+    color: #2B2B2B;
+    margin: 15px 0;
+    
+    font-size: 0.8em;
+}
+
+.secondary-box{
+    border-top:15px solid brown;
+    border-bottom:15px solid brown;
+    
+    background:#EDECEE;
+}
+
+
