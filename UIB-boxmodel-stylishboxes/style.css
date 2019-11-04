@@ -1,5 +1,18 @@
+section {
+    border: 1px solid black;
+    box-shadow: 5px 5px 11px black;
+    display: inline-block;
+    margin-right: 20px;
+    width: 20%;
+}
+
+article {
+    margin: 10px;
+}
+
 .fake-box {
     position: relative;
+<<<<<<< HEAD
     border: 1px solid black;
     width: 250px;
     height: 250px;
@@ -31,4 +44,21 @@
   }
 
 
+=======
+    border: none;
+    box-shadow: none;
+    display: block;
+    height: 200px;
+    padding: 40px; 
+}
+
+.fake-box:before, .fake-box:after {
+    border: 1px solid black;
+    content: ""; /* make the styling here visible */
+    position: absolute;
+    width: 330px;
+    height: 160px;
+
+}
+>>>>>>> 84d9b409a2c4953c9ed0315afcbbb0a4fbb01bd9
 
