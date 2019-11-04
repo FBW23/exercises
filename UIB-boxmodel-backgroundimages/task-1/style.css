@@ -4,11 +4,13 @@ body {
 }
 
 header {
+    background: url(assets/background.jpg) repeat;
+    background-size: 20%;
     height: 30%;
 }
 
 h1 {
-    text-align: center;
     color: white;
     margin: 0;
+    text-align: center;
 }
