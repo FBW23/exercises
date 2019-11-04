@@ -6,7 +6,6 @@ body {
 header {
     background-image: url('../task-1/assets/background.jpg');
     background-size: 300px 300px;
-    background-repeat: repeat;
     height: 30%;
 }
 
