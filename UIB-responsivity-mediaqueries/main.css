@@ -10,17 +10,17 @@
         border: 10px solid  blue;
     }
 }
-@media (min-width:426px)and (max-width:768px){
+@media (min-width:426px) and (max-width:768px){
     body{
         border: 10px solid green;
     }
 }
-@media (min-width:769px)and (max-width:1024px){
+@media (min-width:769px) and (max-width:1024px){
     body{
         border: 10px solid  yellow;
     }
 }
-@media (min-width:1025px)and (max-width:1440px){
+@media (min-width:1025px) and (max-width:1440px){
     body{
         border: 10px solid  hotpink;
     }

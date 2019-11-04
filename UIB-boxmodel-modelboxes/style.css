@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
     text-align: center;
     margin: 0
 }
@@ -14,10 +15,19 @@
 .secondary-box {
     border-top: 15px solid #4E3C00;
     border-bottom: 15px solid #4E3C00;
+=======
+    margin: 0;
+    text-align: center;
+}
+
+.primary-box, .secondary-box, .inside-box {
+    font-size: 1.5em;
+>>>>>>> 7721066b045618bf6cb6bfbb4bed3177a2893702
     padding: 15px 0;
 }
 
 .primary-box {
+<<<<<<< HEAD
     background-color: black;
     color: white;
     padding: 15px 0;
@@ -32,3 +42,22 @@
 
 
 
+=======
+    background: #2B2B2B;
+    color: white;
+}
+
+.inside-box {
+    background: #8BEEFF;
+    color: #2B2B2B;
+    font-size: 0.8em;
+    margin: 15px 0;
+    display: none;
+}
+
+.secondary-box {
+    background: #EDECEE;
+    border-bottom: 16px solid #4E3B00;
+    border-top: 16px solid #4E3B00;
+}
+>>>>>>> 7721066b045618bf6cb6bfbb4bed3177a2893702

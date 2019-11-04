@@ -1,13 +1,18 @@
 h1,
 h2 {
     text-align: center;
+     text-shadow: 10px 10px 10px yellow;
 
 }
 
 p {
     text-align: justify;
+    text-transform:lowercase;
+   
 }
 
 .arabic {
     text-align: right;
+    text-decoration: underline;
+   
 }

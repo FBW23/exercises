@@ -13,7 +13,8 @@ header{
 .section1{
     display:inline-block;
     width: 65%;
-    vertical-align: top;   
+    vertical-align: top; 
+    padding-right:25px;  
    
 }
 
