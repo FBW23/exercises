@@ -1,5 +1,4 @@
 .info-1, .info-2, .info-3 {
-    width: 30%;
     color: white;
     background-size: cover;
     background-position: bottom;
@@ -7,16 +6,17 @@
     display: inline-block;
     padding: 15px 15px;
     text-shadow: 1px 1px 1px black;
+    width: 30%;
 }
 
 .info-1 {
-    background-image: url('../task-2/assets/task2-bg.jpeg');    
+    background-image: url('assets/task2-bg.jpeg');    
 }
 
 .info-2 {
-    background-image: url('../task-2/assets/task2-bg1.jpeg');
+    background-image: url('assets/task2-bg1.jpeg');
 }
 
 .info-3 {
-    background-image: url('../task-2/assets/task2-bg2.jpg');
+    background-image: url('assets/task2-bg2.jpg');
 }

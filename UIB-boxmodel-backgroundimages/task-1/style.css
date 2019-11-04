@@ -4,13 +4,13 @@ body {
 }
 
 header {
-    background-image: url('../task-1/assets/background.jpg');
+    background-image: url('assets/background.jpg');
     background-size: 300px 300px;
     height: 30%;
 }
 
 h1 {
-    text-align: center;
     color: white;
     margin: 0;
+    text-align: center;
 }
