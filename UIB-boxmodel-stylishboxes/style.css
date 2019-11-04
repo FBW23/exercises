@@ -1,14 +1,14 @@
 .fake-box {
     position: relative;
-    width: 300px;
-    height: 450px;
+    width: 330px;
+    height: 340px;
 }
 
 .fake-box:before, .fake-box:after {
     border: 3px solid black;
     content: " ";
     display: inline-block;
-    height: 400px;
+    height: 300px;
     position: absolute;
     width: 300px;
 }
@@ -30,3 +30,32 @@
 .inside-text {
     padding: 35px;
 }
+
+/* section {
+    border: 1px solid black;
+    box-shadow: 6px 6px 13px black;
+    display: inline-block;
+    margin-right: 10px;
+    width: 20%;
+}
+
+.fake-box {
+    display: block;
+    border: none;
+    box-shadow: none;
+    height: 340px;
+    position: relative;
+}
+
+.fake-box:before, .fake-box:after {
+    border: 1px solid black;
+    content: " ";
+    height: 300px;
+    position: absolute;
+    width: 300px;
+}
+
+.fake-box:after {
+    left: 20px;
+    top: 20px;
+} */
