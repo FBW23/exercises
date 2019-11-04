@@ -6,12 +6,20 @@ section {
     width: 20%;
 }
 
+<<<<<<< HEAD
+=======
+article {
+    margin: 10px;
+}
+
+>>>>>>> 84d9b409a2c4953c9ed0315afcbbb0a4fbb01bd9
 .fake-box {
     position: relative;
     border: none;
     box-shadow: none;
     display: block;
     height: 200px;
+<<<<<<< HEAD
     padding: 40px;
     margin-left: 15px;
 
@@ -28,6 +36,15 @@ article {
     position: absolute;
     content: "";
     /*make the styling here visible*/
+=======
+    padding: 40px; 
+}
+
+.fake-box:before, .fake-box:after {
+    border: 1px solid black;
+    content: ""; /* make the styling here visible */
+    position: absolute;
+>>>>>>> 84d9b409a2c4953c9ed0315afcbbb0a4fbb01bd9
     width: 330px;
     height: 160px;
 
