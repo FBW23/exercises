@@ -1,5 +1,38 @@
-.info-1, .info-2, .info-3 {
+.info-1,
+.info-2,
+.info-3 {
     width: 30%;
     color: white;
     text-shadow: 1px 1px 1px black;
+}
+
+.info-1 {
+    display: inline-block;
+    background-image: url(task2-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.info-2 {
+    display: inline-block;
+    background-image: url(task2-bg1.jpeg);
+    background-repeat: inherit;
+    background-size: cover;
+}
+
+.info-3 {
+    display: inline-block;
+    background-image: url(task2-bg2.jpg);
+    background-size: cover;
+
+}
+
+section {
+    border: 1px solid black;
+    max-width: px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background-position: bottom;
 }
