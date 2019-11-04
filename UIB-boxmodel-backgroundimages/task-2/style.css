@@ -34,6 +34,9 @@ background-position-x: center;
     display: block;
     margin: 0 auto;
     width: auto;
+}
 
-
+h2, article {
+    padding: 10px;
+    margin:  20px;
 }
