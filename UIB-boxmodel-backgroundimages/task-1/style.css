@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+header {
+    height: 30%;
+    background-image: url(/task-1/assets/background.jpg);
+    background-repeat: repeat;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
