@@ -20,6 +20,9 @@ body{
     width: 310px;
     border: 1px solid black;
     position: absolute;
+    width: 330px;
+    height: 160px;
+
 }
 
 .fake-box:after {
