@@ -1,3 +1,15 @@
+section {
+    border: 1px solid black;
+    box-shadow: 5px 5px 11px black;
+    display: inline-block;
+    margin-right: 20px;
+    width: 20%;
+}
+
+article {
+    margin: 10px;
+}
+
 .fake-box {
     height: 19%;
     margin: 1% 2%;
@@ -14,6 +26,9 @@
     margin: -7%;
     width: 100%;
     position: absolute;
+    width: 330px;
+    height: 160px;
+
 }
 
 .fake-box:after {
