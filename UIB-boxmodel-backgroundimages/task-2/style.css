@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 
 .info-1, .info-2, .info-3 {
@@ -10,11 +11,13 @@
     display: inline-block;
     background-position: bottom;
     background-size: cover;
+    margin-right: 5px;
+    
     
 }
 .info-1 {
 background-image: url(/task-2/assets/task2-bg.jpeg);
-
+margin-left: 70px;
 
 
 }
@@ -30,4 +33,7 @@ background-image: url(/task-2/assets/task2-bg.jpeg);
 h2, article {
     padding:5px;
     margin: 20px 
+}
+h1 {
+    margin-left: 70px;
 }
