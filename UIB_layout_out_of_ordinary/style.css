@@ -1,4 +1,46 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
+}
+
+.genres {
+    display: flex;
+    flex-grow: 10;
+    flex-wrap: wrap;
+}
+
+.genres>section { 
+    align-items: center;
+    display: flex;   
+    height: 100px;
+    justify-content: center;    
+    width: 500px;
+}
+
+.action {
+    background: dodgerblue;
+}
+
+#thriller {
+    background: grey;
+    flex-grow: 10;
+}
+
+#comedy {
+    background: yellow;
+    flex-grow: 10;
+}
+
+.horror {
+    background: black;
+    color: white;
+}
+
+.drama {
+    background: darkgrey;
+}
+
+.romance {
+    background: red;
 }
