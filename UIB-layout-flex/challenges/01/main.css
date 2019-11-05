@@ -3,16 +3,16 @@
 
 div {
     height: 100px;
-    width: 200px; 
+    width: 200px;
     background-color: darkgray;
     margin: 1em;
     border: 2px solid red;
     text-align: center;
-    
-    }
-    main {
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
 
-    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+
+}
