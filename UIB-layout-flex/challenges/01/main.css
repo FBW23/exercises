@@ -1,7 +1,7 @@
 /* Use flexbox to align all divs in a row. Use wrap so that the divs appear on multiple rows. Center the rows in the container*/
 body{
     display: flex;
-    flex-direction:row;
+    
     flex-wrap: wrap;
 }
 
