@@ -20,7 +20,6 @@ body {
 .b6 {
     height: 100px;
     width: 500px;
-    text-align: center;
     flex-grow: 1;
 }
 
