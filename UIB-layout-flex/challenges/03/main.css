@@ -5,8 +5,6 @@ body {
     flex-direction: column-reverse;
     justify-content: center;  
 }
-
-
 div {
     background-color: darkgray;
     border: 2px solid red;
