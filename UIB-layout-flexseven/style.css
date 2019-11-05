@@ -1,0 +1,81 @@
+.secs {
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    background-color: black;
+
+}
+
+
+
+.num1,
+.num2,
+.num3,
+.num4,
+.num5,
+.num6,
+.num7 {
+
+    width: 300px;
+    height: 100px;
+    flex-grow: 1;
+
+
+}
+
+.num1 {
+    background-color: purple;
+    width: 50%;
+}
+
+.num2 {
+    background-color: rebeccapurple;
+    width: 50%;
+}
+
+.num3 {
+    background-color: darkorchid;
+    width: 33.3%;
+}
+
+.num4 {
+    background-color: green;
+    width: 33.3%;
+}
+
+.num5 {
+    background-color: yellow;
+    width: 33.3%;
+}
+
+.num6 {
+    background-color: orange;
+}
+
+.num7 {
+    background-color: red;
+}
+
+@media screen and (max-width: 599px) {
+
+    .num1,
+    .num2,
+    .num3,
+    .num4,
+    .num5 {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+    .num1,
+    .num2,
+    .num6,
+    .num7 {
+        width: 100%;
+    }
+}
