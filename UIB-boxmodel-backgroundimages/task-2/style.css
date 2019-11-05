@@ -1,22 +1,26 @@
-.info-1, .info-2, .info-3 {
-    color: white;
-    background-size: cover;
-    background-position: bottom;
-    border-radius: 10px 10px;
-    display: inline-block;
-    padding: 15px 15px;
-    text-shadow: 1px 1px 1px black;
-    width: 30%;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.info-1 {
-    background-image: url('assets/task2-bg.jpeg');    
+main {
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
 }
 
-.info-2 {
-    background-image: url('assets/task2-bg1.jpeg');
+figure>img {
+    width: 100%;
 }
 
-.info-3 {
-    background-image: url('assets/task2-bg2.jpg');
+figure {
+    background: grey;
+    border: 3px solid green;
+    flex-basis: 150px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    padding: 20px;
+    width: 20%;
 }
+
