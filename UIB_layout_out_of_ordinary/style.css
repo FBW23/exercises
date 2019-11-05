@@ -1,4 +1,50 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
+}
+
+.genres {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6 {
+    height: 100px;
+    width: 500px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.b1 {
+    background: dodgerblue;
+}
+
+.b2 {
+    background: rgb(190, 178, 178);
+    flex-grow: 10;
+}
+
+.b3 {
+    background: rgb(255, 214, 30);
+    flex-grow: 10;
+}
+
+.b4 {
+    background: black;
+}
+
+.b5 {
+    background: darkgrey;
+}
+
+.b6 {
+    background: red;
 }
