@@ -1,4 +1,51 @@
 html, body {
     margin: 0;
     padding: 0;
+    line-height: 100px;
+  
+}
+
+.genre {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+  
+   
+}
+
+.b1, .b2, .b3, .b4, .b5, .b6 {
+
+    width: 500px;
+    height: 100px;
+    flex-grow: 1;
+    text-align: center;
+    
+
+}
+.b1 {
+    background-color: dodgerblue;
+
+}
+.b2 {
+    background-color: rgb(190 178 178);
+    flex-grow: 10;
+    
+}
+
+.b3 {
+    background-color: rgb(225, 214,30);
+    flex-grow: 10;
+    }
+
+.b4 {
+    background-color: black;
+    color: white;
+    }
+
+.b5 {
+    background-color: darkgrey;
+}
+
+.b6 {
+    background-color: red;
 }
