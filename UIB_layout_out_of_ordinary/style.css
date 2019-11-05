@@ -1,22 +1,21 @@
 html, body {
     margin: 0;
     padding: 0;
-    text-align: center;
-    line-height: 100px;
+    
 
 }
-.genres { display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-
-
-
+.genres { 
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .action, .thriller, .comedy, .horror, .drama, .romance {
     width: 500px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
 }
 .action {
