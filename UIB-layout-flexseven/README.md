@@ -15,11 +15,11 @@
    * 801px +: boxes 1 and 2 should each take up 50% of one row, 3, 4 and 5 each should take up 33.33% of 1 row, and 6 & 7 should each take up 50% of one row
 
 Images for reference:
-![desktop](/images/desktop.png)
+![desktop](./images/desktop.png)
 
-![tablet](/images/tablet.png)
+![tablet](./images/tablet.png)
 
-![mobile](/images/mobile.png)
+![mobile](./images/mobile.png)
    
 
 ### Rules
