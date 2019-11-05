@@ -1,14 +1,18 @@
 /* Use flexbox to display all divs in one column in the center of the page.*/
 
 body {
+    align-items: center;
     border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 div {
-    height: 100px;
-    width: 150px; 
     background-color: darkgray;
-    margin: 1em;
     border: 2px solid red;
+    height: 100px;
+    margin: 1em;
     text-align: center;
+    width: 150px;
 }

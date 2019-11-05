@@ -1,7 +1,12 @@
 /* Use flexbox to display the divs on one row in the center of the container */
 
 body {
+    align-items: center;
     border: 5px solid red;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
 }
 
 div {
