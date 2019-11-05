@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
     margin: 0;
@@ -41,3 +42,37 @@ figure {
 img {
     width: 100%;
 }
+=======
+main {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.info-1,
+.info-2,
+.info-3 {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+    width: 30%;
+}
+
+.info-1 {
+    background-image: url('assets/task2-bg.jpeg');
+}
+
+.info-2 {
+    background-image: url('assets/task2-bg1.jpeg');
+}
+
+.info-3 {
+    background-image: url('assets/task2-bg2.jpg');
+}
+
+>>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
