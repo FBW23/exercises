@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.car1,
+.car2,
+.car3,
+.car4,
+.car5,
+.car5,
+.car6,
+.car7 {
+    width: 600px;
+    height: 100px;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+
+.car1 {
+    background-color: brown;
+
+}
+
+.car2 {
+    background-color: rgb(17, 120, 236);
+
+}
+
+.car3 {
+    background-color: rgb(9, 236, 27);
+
+}
+
+.car4 {
+    background-color: rgb(241, 141, 141);
+
+}
+
+.car5 {
+    background-color: rgb(235, 46, 219);
+
+}
+
+.car6 {
+    background-color: rgb(59, 59, 59);
+
+}
+
+.car7 {
+    background-color: rgb(228, 207, 23);
+
+}
+
+
+
+
+@media screen and (min-width: 400px) and (max-width:999px) {
+
+    .car1,
+    .car2,
+    .car6,
+    .car7 {
+        width: 100%;
+
+    }
+
+    .car3,
+    .car4,
+    .car5 {
+        width: 33%;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1000px) and (max-width:1440px) {
+
+    .car1,
+    .car2,
+    .car6,
+    .car7 {
+        width: 50%;
+    }
+
+    .car3,
+    .car4,
+    .car5 {
+        width: 33%;
+    }
+
+
+}
