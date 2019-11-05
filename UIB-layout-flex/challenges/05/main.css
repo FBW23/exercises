@@ -6,7 +6,7 @@ body {
     flex-direction: row;
     align-items: center;
     height: 100vh;
-    justify-content: center;
+    
 }
 
 div {
@@ -17,4 +17,5 @@ div {
     margin: 1em;
     border: 2px solid red;
     text-align: center;
+    width: 20%;
 }
