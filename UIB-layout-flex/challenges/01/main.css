@@ -7,4 +7,11 @@ div {
     background-color: darkgray;
     margin: 1em;
     border: 2px solid red;
-    text-align: center;}
+    text-align: center;
+
+}
+    body {
+ display: flex;
+flex-flow: row wrap;
+justify-content: center;
+    }

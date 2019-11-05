@@ -1,7 +1,12 @@
 /* Use flexbox to display the divs on one row in the center of the container */
 
-body {
+body{
+    align-items: center;
     border: 5px solid red;
+    display: flex;
+    height: 98vh;
+    width: 98%;
+           
 }
 
 div {
@@ -12,4 +17,21 @@ div {
     margin: 1em;
     border: 2px solid red;
     text-align: center;
+    width: 18%;
+}
+span {
+    flex-direction: column;
+    height: 98vh;
+    width: 20%;    
+    padding: 20px;
+    
+}
+span > div {
+    align-items: center;
+}
+#one, #two, #three, #four {
+    width: 100%;
+    height: 110px;
+    background-color: blueviolet;
+    
 }
