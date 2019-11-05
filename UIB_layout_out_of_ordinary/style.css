@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    line-height: 100px;
 }
 
 .genres {
@@ -39,6 +40,7 @@ body {
 
 .b4 {
     background: black;
+    color: white;
 }
 
 .b5 {
