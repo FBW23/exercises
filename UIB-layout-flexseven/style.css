@@ -1,0 +1,95 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.genres {
+    display: flex;
+    flex-flow: row wrap-reverse;
+
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6,
+.b7 {
+    height: 100px;
+    width: 600px;
+    flex-grow: 1;
+    justify-content: stretch;
+}
+
+.b1 {
+    background: #960081;
+
+}
+
+.b2 {
+    background: #bc00e9;
+
+}
+
+.b3 {
+    background: #9300ff;
+
+}
+
+.b4 {
+    background: #00a600;
+
+}
+
+.b5 {
+    background: #DAFF00;
+
+}
+
+.b6 {
+    background: #ff9800;
+
+}
+
+.b7 {
+    background: #ff0000;
+
+}
+
+@media screen and (min-width:400px) and (max-width: 900px) {
+
+    .b1,
+    .b2,
+    .b6,
+    .b7 {
+        width: 100%;
+    }
+
+    .b3,
+    .b4,
+    .b5 {
+
+        width: 33%;
+    }
+
+}
+
+@media screen and (min-width:901px) and (max-width: 1400px) {
+
+    .b1,
+    .b2,
+    .b6,
+    .b7 {
+        width: 50%;
+    }
+
+    .b3,
+    .b4,
+    .b5 {
+
+        width: 33%;
+    }
+}
