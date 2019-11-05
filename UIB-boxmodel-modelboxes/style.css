@@ -1,5 +1,10 @@
 * {
     margin: 0;
+<<<<<<< HEAD
+=======
+    text-align: center;
+    margin: 1px 2px 3px;
+>>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
 }
 
 .primary-box,
