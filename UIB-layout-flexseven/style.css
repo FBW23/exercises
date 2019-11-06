@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
 
 }
@@ -54,8 +54,8 @@ body {
 
 @media screen and (max-width:600px) {
     body {
-        flex-direction:column;
-        
+        flex-direction: column;
+
 
     }
 
@@ -65,9 +65,11 @@ body {
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
 
-  
-    .first,.second{
-        width:100%;
+
+    .first,
+    .second, .sixth,
+    .seventh  {
+        width: 100%;
     }
 
 
@@ -76,14 +78,8 @@ body {
     .fourth,
     .fifth {
         width: 33.33%;
-        
+
     }
-
-    .sixth,.seventh{
-        width:100%;
-    }
-
-
 }
 
 
@@ -100,7 +96,7 @@ body {
     .fourth,
     .fifth {
         width: 33.33%;
-        
+
     }
 
     .sixth,
@@ -109,4 +105,81 @@ body {
     }
 
 
+} */
+
+
+
+
+/* Martina's code */
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+section {
+    width: 100%;
+    flex-wrap:wrap;
+}
+
+
+
+/* mobile first */
+
+.first {
+    background: #8A0081;
+}
+
+.second {
+    background: #A300E6;
+}
+
+.third {
+    background: #6B00FF;
+}
+
+.fourth {
+    background: #009200;
+}
+
+.fifth {
+    background: #EDFF00;
+}
+
+.sixth {
+    background: #FE9000;
+}
+
+.seventh {
+    background: #FF0000;
+}
+
+
+
+@media screen and (min-width: 601px) {
+
+
+
+
+    .third,
+    .fourth,
+    .fifth {
+        width: 33.33%
+    }
+
+}
+
+
+@media screen and (min-width:801px) {
+
+
+   
+
+    section {
+        width: 50%;
+    }
+
+  
 }
