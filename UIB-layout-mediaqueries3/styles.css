@@ -27,4 +27,8 @@
         flex-direction: row;
         flex: 1;
     }
+
+    #ord-col-2,
+    #ord-col-4 {
+        order: 0;
 }
