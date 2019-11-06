@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap:wrap;
+
+
+}
+
+
+.first {
+    background: rgb(138, 0, 129);
+}
+
+.second {
+    background: #A300E6;
+}
+
+.third {
+    background: #6B00FF;
+}
+
+.fourth {
+    background: #009200;
+}
+
+.fifth {
+    background: #EDFF00;
+}
+
+.sixth {
+    background: #FE9000;
+}
+
+.seventh {
+    background: rgb(255, 0, 0);
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh {
+
+    height: 200px;
+
+}
+
+@media screen and (max-width:600px) {
+    body {
+        flex-direction:column;
+        
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+
+  
+    .first,.second{
+        width:100%;
+    }
+
+
+
+    .third,
+    .fourth,
+    .fifth {
+        width: 33.33%;
+        
+    }
+
+    .sixth,.seventh{
+        width:100%;
+    }
+
+
+}
+
+
+@media screen and (min-width:801px) {
+
+
+
+    .first,
+    .second {
+        width: 50%;
+    }
+
+    .third,
+    .fourth,
+    .fifth {
+        width: 33.33%;
+        
+    }
+
+    .sixth,
+    .seventh {
+        width: 50%;
+    }
+
+
+}
