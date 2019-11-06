@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* CONTAINERS OF HELL AND FRUSTRATION 
 
 * {
@@ -37,23 +38,40 @@
 
 * {
     box-sizing: border-box;
+=======
+* {
+    box-sizing: border-box;
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
 }
 
 .row {
     height: 100vh;
 }
 
+<<<<<<< HEAD
+=======
+/* tablet */
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
 @media screen and (min-width: 601px) {
     .row {
         display: flex;
         flex-wrap: wrap;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
     .column {
         width: 50%;
     }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 992px) {
+=======
+/* desktop */
+@media screen and (min-width: 993px) {
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
     .column {
         flex: 1;
     }
