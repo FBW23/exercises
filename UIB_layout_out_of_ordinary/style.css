@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
 
 .genres {
     display: flex;
@@ -15,6 +16,20 @@ body {
     display: flex;   
     height: 100px;
     justify-content: center;    
+=======
+.genres {
+    background: green;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genres > section {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    height: 100px;
+    justify-content: center;
+>>>>>>> a59ed8ec6c32174d5536f036e4e25a58256bea0f
     width: 500px;
 }
 
@@ -23,12 +38,20 @@ body {
 }
 
 #thriller {
+<<<<<<< HEAD
     background: grey;
+=======
+    background: rgb(190, 178, 178);
+>>>>>>> a59ed8ec6c32174d5536f036e4e25a58256bea0f
     flex-grow: 10;
 }
 
 #comedy {
+<<<<<<< HEAD
     background: yellow;
+=======
+    background: rgb(255, 214, 30);
+>>>>>>> a59ed8ec6c32174d5536f036e4e25a58256bea0f
     flex-grow: 10;
 }
 

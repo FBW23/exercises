@@ -1,0 +1,112 @@
+/* body {
+    margin: 0;
+    padding: 0;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box-container > section {
+    flex-grow: 1;
+}
+
+.one {
+    background-color: #891881;
+}
+
+.two {
+    background: #a332e6;
+}
+
+.three {
+    background: #6a39ff;
+}
+
+.four {
+    background: #009204;
+}
+
+.five {
+    background: #edfa0c;
+}
+
+.six {
+    background: #fe9104;
+}
+
+.seven {
+    background: #ff0201;
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    
+    .one, .two, .six, .seven {
+        flex-flow: row wrap;
+        width: 50%;
+    }
+    
+    .three, .four, .five {
+        width: 33.33%;
+    }
+
+/* mobile first */
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    height: 100px;
+    width: 100%;
+}
+
+.first {
+    background-color: #891881;
+}
+
+.second {
+    background: #a332e6;
+}
+
+.third {
+    background: #6a39ff;
+}
+
+.fourth {
+    background: #009204;
+}
+
+.fifth {
+    background: #edfa0c;
+}
+
+
+.sixth {
+    background: #fe9104;
+}
+
+.seventh {
+    background: #ff0201;
+}
+
+@media screen and (min-width: 601px) {
+    section {
+        width: 100%;
+    }
+    .third, .fourth, .fifth {
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    section {
+        width: 50%;
+    }
+    .third, .fourth, .fifth {
+        width: 33.33%;
+    }
+}
