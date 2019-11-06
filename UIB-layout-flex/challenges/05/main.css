@@ -8,7 +8,7 @@
     align-items: center;
     border: 5px solid red;
     display: flex;
-    height: 98vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -16,13 +16,13 @@
     height: 100px;
     background-color: darkgray;
     border: 1px solid red;
-    
-    justify-content: stretch;
-    flex-grow: 1;
-}
 .up {
-    display: flex;
+display: flex;
 flex-direction: column;
 height: 100%;
+}
+.up div {
+    background-color: yellowgreen;
+    
 }
 

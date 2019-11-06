@@ -1,41 +1,24 @@
 
 * {
     box-sizing: border-box;
-    width: 100%;
-    margin: 5px;
 }
 .row {
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
 
 }
 
-@media screen and (min-width:600px) and (max-width:991px){
+@media screen and (min-width:601px) {
     .row {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: inherit;
-        
     }
     .column {
-        width: 45%;
+        width: 50%;
     }
-    /* .re-order1 {
-        order: ;
-    }
-} */
 
 @media screen and (min-width:992px) and (max-width:1440px) {
-
-
-    .row {
-        display: flex;
-        flex-direction: row;
-        height: 100vh;
-        
-    }
     .column {
-        width: 23%;
-    }
+        flex: 1;
+    } 
 
 }
