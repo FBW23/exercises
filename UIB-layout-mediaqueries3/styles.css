@@ -4,9 +4,10 @@
 
 }
 
-.re-order {
+
+.re-oder {
     order: -1;
-}
+    }
 
 
 
@@ -17,23 +18,28 @@
 
 
     }
+ 
 }
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
 
     .row {
-        flex-direction: inherit;
+        
         display: flex;
         flex-wrap: wrap;
-
-
+        height: 100vh;
     }
 
     .column {
         width: 40%;
+        
     }
+
+ 
+
 }
 
+/*desktop*/
 @media screen and (min-width: 993px) {
     .row {
         flex-wrap: wrap;
