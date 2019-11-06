@@ -13,10 +13,12 @@ body{
     div {
         display: flex;
         flex-wrap: wrap;
+        height:100vh;
          
     }
     .column {
         width: 50%;
+        
        
     }
 }
@@ -25,5 +27,7 @@ body{
     div {
         flex-direction: row;
         flex: 1;
+        height:100vh;
     }
+    
 }
