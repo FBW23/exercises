@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     width: 100%;
@@ -11,17 +10,16 @@
         display: flex;
         flex-wrap: wrap;
     }
+
     .column {
         width: 50%;
     }
 
-    #ord-col-2 {
+    #ord-col-2,
+    #ord-col-4 {
         order: 1;
     }
-    
-    #ord-col-4 {
-        order: 1
-    }
+
 }
 
 @media screen and (min-width: 992px) {
