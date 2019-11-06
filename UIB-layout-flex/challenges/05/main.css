@@ -1,37 +1,28 @@
 /* Use flexbox to display the divs on one row in the center of the container */
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+.row{
     align-items: center;
     border: 5px solid red;
     display: flex;
     height: 98vh;
-    width: 98%;
-           
+    width: 100%;
 }
 
-div {
-    flex-shrink: 1;
+ div {
     height: 100px;
-    /* width: 150px;  */
     background-color: darkgray;
-    margin: 1em;
-    border: 2px solid red;
-    text-align: center;
-    width: 18%;
-}
-span {
-    flex-direction: column;
-    height: 98vh;
-    width: 20%;    
-    padding: 20px;
+    border: 1px solid red;
     
+    justify-content: stretch;
+    flex-grow: 1;
 }
-span > div {
-    align-items: center;
+.up {
+    display: flex;
+flex-direction: column;
+height: 100%;
 }
-#one, #two, #three, #four {
-    width: 100%;
-    height: 110px;
-    background-color: blueviolet;
-    
-}
+
