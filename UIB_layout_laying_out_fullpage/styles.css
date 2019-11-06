@@ -3,3 +3,72 @@
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h1 {
+    color: white;
+}
+
+.thumbnail {
+    background: #000;
+    color: white;
+    height: 80%;
+
+}
+
+.movie-title {
+    background: #1a1a1a;
+    color: white;
+    height: 20%;
+}
+
+aside {
+    background: white;
+    color: black;
+
+}
+
+nav, main {
+    display: flex;
+    background: #4b4b4b;
+}
+
+header {
+    background: #000;
+}
+
+nav {
+    justify-content: center;
+    color: white;
+}
+
+figure {
+    text-align: center;
+    height: 130px;
+    width: 150px;
+    
+}
+
+figure {
+    width: 33.33%;
+    margin: 15px;
+    flex-direction: row;
+}
+
+article {
+    background: #4b4b4b;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: justify;
+}
+
+main {
+    /* align-content: space-between; */
+
+}
+
+body {
+        background: #1a1a1a;
+
+}
+
