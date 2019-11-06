@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    background-color: #4b4b4b;
+}
+.container {
+    flex-direction: row;
+}
+.container0 {
+    display: flex;
+    color: white;
+    align-items: center ;
+    justify-content: center;
+}
+
+aside {
+    background-color: white;
+    display: block;
+    width: 15%;
+    height: 82vh;
+}
+
+.Thumbnail {
+    background-color: black;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 20vh;
+    color: white;
+}
+header {
+background-color: black;
+color: white;
+}
