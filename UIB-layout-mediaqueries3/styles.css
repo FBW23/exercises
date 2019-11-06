@@ -1,4 +1,28 @@
+body {
+
+    width: 100%;
+    
+    }
 
 * {
     box-sizing: border-box;
+}
+div {height: 100vh;}
+
+
+@media screen and (min-width:601px) {
+    div {
+        display: flex;
+                flex-wrap: wrap;
+        height:50vh;
+    }
+    .column {width:50vw;}
+}
+
+
+@media screen and (min-width: 992px) {
+    div {flex: 1;
+    height:100vh;}
+
+
 }

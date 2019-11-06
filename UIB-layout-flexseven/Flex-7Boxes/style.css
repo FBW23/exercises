@@ -59,7 +59,7 @@
     #f,
     #g {
         width:100%;
-        flex-direction: row;
+        
         
     }
 
@@ -67,7 +67,7 @@
     #c,
     #d {
        width:33.33%;
-       flex-direction: row;
+       
     }
 }
 @media screen and (min-width:601px) and (max-width: 800px) {
@@ -77,7 +77,7 @@
     #f,
     #g {
         width:100%;
-        flex-direction: row;
+       
         
     }
 
@@ -85,7 +85,7 @@
     #c,
     #d {
        width:33.33%;
-       flex-direction: row;
+       
     }
 }
 @media screen and (min-width:801px)  {
@@ -95,7 +95,7 @@
     #f,
     #g {
         width:50%;
-        flex-direction: row;
+        
         
     }
 
@@ -103,6 +103,6 @@
     #c,
     #d {
        width:33.33%;
-       flex-direction: row;
+       
     }
 }
