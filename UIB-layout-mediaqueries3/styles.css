@@ -1,23 +1,30 @@
 
 * {
     box-sizing: border-box;
-    /* width: 100%; */
+    
 }
 
 body{
     width: 100%;
 }
 
+div{
+    height:100vh;
+}
+
 
 @media screen and (min-width: 601px) {
     div {
         display: flex;
+        
         flex-wrap: wrap;
-        height:100vh;
+        height:50vh;
+        
+        
          
     }
     .column {
-        width: 50%;
+        width: 50vh;
         
        
     }
@@ -25,9 +32,9 @@ body{
 
 @media screen and (min-width: 993px) {
     div {
-        flex-direction: row;
+       
         flex: 1;
-        height:100vh;
+        
     }
     
 }
