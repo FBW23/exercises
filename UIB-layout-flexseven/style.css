@@ -1,66 +1,83 @@
-
-.violet{
+.violet {
     background: violet;
 }
 
-.purple{
+.purple {
     background: purple;
 }
-.blue{
+
+.blue {
     background: blue;
 }
-.green{background: green;
+
+.green {
+    background: green;
 }
-.yellow{
+
+.yellow {
     background: yellow;
 }
-.orange{
+
+.orange {
     background: orange;
 }
-.red{
-    background: red;}
+
+.red {
+    background: red;
+}
 
 .colors {
-    
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
-    
 }
 
-.colors section{
+.colors section {
     flex-grow: 1;
-    height:100px;
+    height: 100px;
     justify-content: center;
 
 }
 
-@media (min-width: 601px) and (max-width: 800px){
-    .colors{
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .colors {
+        display: flex;
         flex-direction: row;
     }
-    .violet, .purple, .orange, .red{
+
+    .violet,
+    .purple,
+    .orange,
+    .red {
         width: 100%;
     }
-    .blue, .green, .yellow{
+
+    .blue,
+    .green,
+    .yellow {
         width: 33.33%;
     }
-    
-    
+
+
 
 }
 
-@media (min-width: 801px){
-    .colors{
+@media screen and (min-width: 801px) {
+    .colors {
         flex-direction: row;
     }
-    .violet, .purple, .orange, .red{
+
+    .violet,
+    .purple,
+    .orange,
+    .red {
         width: 50%;
     }
-    .blue, .green, .yellow{
+
+    .blue,
+    .green,
+    .yellow {
         width: 33.33%;
     }
 }
-      
-
