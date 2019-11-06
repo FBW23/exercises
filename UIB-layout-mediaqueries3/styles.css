@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* * {
     box-sizing: border-box;
 
@@ -44,19 +45,29 @@ div {
 /* Martina's code */
 
 
+=======
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
 * {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
 .row {
     height: 100vh;
 }
 
+<<<<<<< HEAD
 
 /* tablet */
 
 @media screen and (min-width:601px) {
+=======
+/* tablet */
+@media screen and (min-width: 601px) {
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -65,6 +76,7 @@ div {
     .column {
         width: 50%;
     }
+<<<<<<< HEAD
 
 }
 
@@ -77,3 +89,13 @@ div {
         flex: 1;
 
     }
+=======
+}
+
+/* desktop */
+@media screen and (min-width: 993px) {
+    .column {
+        flex: 1;
+    }
+}
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
