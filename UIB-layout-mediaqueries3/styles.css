@@ -2,20 +2,20 @@
 * {
     box-sizing: border-box;
 }
-
-
+.row{
+    height: 100vw;
+}
+/* desktop*/
 @media screen and (min-width:601px) and (max-width:992px){
     .row{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
         
     
     }
     .column{
         width: 50%    
-        
-
+   
     }
 }
 
@@ -29,7 +29,7 @@
     }
 
     .column{
-        width: 25%;
+        flex: 1;
     }
 
 }
