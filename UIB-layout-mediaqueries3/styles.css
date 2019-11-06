@@ -1,4 +1,29 @@
 
 * {
     box-sizing: border-box;
+    /* width: 100%; */
+}
+
+body{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 601px) {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+         
+    }
+    .column {
+        width: 50%;
+       
+    }
+}
+
+@media screen and (min-width: 993px) {
+    div {
+        flex-direction: row;
+        flex: 1;
+    }
 }
