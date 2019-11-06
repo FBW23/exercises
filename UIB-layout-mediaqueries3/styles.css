@@ -4,7 +4,6 @@
 }
 
 
-
 @media screen and (min-width: 600px) {
     div {
         display: flex;
@@ -15,20 +14,14 @@
         width: 50%;
     }
 
-    #ord-col-2,
-    #ord-col-4 {
+    #ord-col-2, #ord-col-4 {
         order: 1;
     }
-
 }
 
 @media screen and (min-width: 992px) {
     div {
-        flex-direction: row;
         flex: 1;
+        height: 100vh;
     }
-
-    #ord-col-2,
-    #ord-col-4 {
-        order: 0;
 }
