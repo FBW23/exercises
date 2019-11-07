@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    background: black;
+    color: white;
+    padding: 0 200px;
+}
+
+header {
+    padding: 20px;
+    background: black;
+}
+
+ul {
+    list-style-type: none;
+}
+nav, section {
+    background: #4b4b4b;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 20px;
+}
+
+aside {
+    background: white;
+    color: black;
+}
+div {
+    display: flex;
+}
+section {
+    display: flex;
+    flex: 1;
+}
+
+figure {
+
+}
