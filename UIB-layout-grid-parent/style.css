@@ -9,9 +9,9 @@ img {
     grid-auto-rows:1fr 1fr 1fr ;
     grid-gap: 5px;*/
     grid-template-columns: minmax(100px, 350px) 1fr minmax(100px, 350px);
-    grid-template-rows: 33.33% 33.33% 33.33%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px 10px;
+    
+  
+    grid-gap: 10px;
 
 } 
 

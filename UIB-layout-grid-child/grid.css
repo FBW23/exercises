@@ -1,0 +1,11 @@
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    border: 2px solid rgb(230, 6, 238);
+
+}
+.numbers {
+       border: 2px solid rgb(9, 44, 160);
+
+}
