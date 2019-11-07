@@ -3,15 +3,26 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+<<<<<<< HEAD
 body {
     background: #1A1A1A;
     color: white;
     padding: 0 200px;
 }
+=======
+
+body {
+    background: #1a1a1a;
+    color: white;
+    padding: 0 200px;
+}
+
+>>>>>>> c24e71619983d1513bce1ba14277693e887b63fa
 header {
     background: black;
     padding: 20px;
 }
+<<<<<<< HEAD
 ul {
     list-style-type: none;
 }
@@ -25,19 +36,48 @@ nav ul {
 li {
     margin: 20px;
 }
+=======
+
+ul {
+    list-style-type: none;
+}
+
+nav,
+section {
+    background: #4b4b4b;
+}
+
+nav ul {
+    justify-content: center;
+}
+
+li {
+    margin: 20px;
+}
+
+>>>>>>> c24e71619983d1513bce1ba14277693e887b63fa
 div,
 section,
 nav ul {
     display: flex;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c24e71619983d1513bce1ba14277693e887b63fa
 aside {
     background: white;
     color: black;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c24e71619983d1513bce1ba14277693e887b63fa
 section {
     flex-wrap: wrap;
     flex: 1;
 }
+<<<<<<< HEAD
 figure {
     padding: 20px;
 }
@@ -47,3 +87,15 @@ figcaption {
     margin-top: -4px;
     text-align: center;
 }
+=======
+
+figure {
+    padding: 20px;
+}
+
+figcaption {
+    background: #1a1a1a;
+    padding: 5px 0 5px 15px;
+    margin-top: -4px;
+}
+>>>>>>> c24e71619983d1513bce1ba14277693e887b63fa
