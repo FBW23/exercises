@@ -1,11 +1,11 @@
 img {
     width: 100%;
 }
-.container{
-    
+
+.container {
     display: grid;
-     /* grid-template-columns: 1fr 1fr 1fr ; */
-    grid-template-rows: 1fr 1fr 1fr ; 
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 1%;
-    grid-template-columns: minmax(100px, 350px) 1fr minmax(100px,350px) ;
+    grid-template-columns: min-max(100px, 350px) 1fr min-max(100px, 350px);
 }

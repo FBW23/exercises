@@ -1,48 +1,76 @@
+/* @media screen and (min-width:481px) and (max-width:1200px) */
 html,
 body {
     margin: 0;
     padding: 0;
+}
+
+.genres {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;;
-
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center
 }
 
-section {
-    width: 100%;
+.action,
+.thriller,
+.comedy,
+.horror,
+.drama,
+.romance {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    flex-grow: 1;
 }
-    .a1,
-    .a2,
-    .a3,
-    .a4,
-    .a5,
-    .a6 {
-        width: 500px;
-        height: 100px;
-       
-    }
 
-
-.a1 {
+.action {
     background: dodgerblue;
+    flex-basis: 26%;
 }
 
-.a2 {
+.thriller {
     background: rgb(190, 178, 178);
+    flex-basis: 30%;
 }
 
-.a3 {
+.comedy {
     background: rgb(255, 214, 30);
 }
 
-.a4 {
+.horror {
     background: black;
+    flex-basis: 30%;
 }
 
-.a5 {
+.drama {
     background: darkgrey;
+
+
 }
 
-.a6 {
+.romance {
     background: red;
+    flex-basis: 18%;
+}
+
+.thriller,
+.comedy {
+    flex-grow: 10;
+}
+
+@media screen and (max-width:480px) {
+
+    .action,
+    .thriller,
+    .comedy,
+    .horror,
+    .drama,
+    .romance {
+        width: 500px;
+        height: 100px;
+        text-align: center;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
 }
