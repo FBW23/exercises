@@ -1,7 +1,6 @@
-/* mobile first */
+
 body {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
 }
 
@@ -39,11 +38,6 @@ section {
 }
 
 @media screen and (min-width: 601px) {
-    /* div {
-        display: flex;
-        width: 100%;
-    } */
-
     .third,
     .fourth,
     .fifth {
@@ -52,10 +46,6 @@ section {
 }
 
 @media screen and (min-width: 801px) {
-    /* body {
-        flex-direction: row;
-    } */
-
     section {
         width: 50%;
     }
