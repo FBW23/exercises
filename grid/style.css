@@ -1,0 +1,10 @@
+main {
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+    grid-gap: 13px 26px;
+}
+
+section {
+    border: 1px solid black;
+}

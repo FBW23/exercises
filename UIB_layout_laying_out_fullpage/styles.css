@@ -80,6 +80,7 @@ body {
 article {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 10px;
 }
 
 body {
@@ -120,7 +121,7 @@ aside {
 }
 
 aside>p {
-    padding: 5px 15px
+    padding: 5px 15px;
 }
 
 figure {
