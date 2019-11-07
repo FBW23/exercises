@@ -1,17 +1,27 @@
-
 * {
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 .row {
     height: 100vh;
 
 }
 
 @media screen and (min-width:601px) {
+=======
+
+.row {
+    height: 100vh;
+}
+
+/* tablet */
+@media screen and (min-width: 601px) {
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
     .row {
         display: flex;
         flex-wrap: wrap;
     }
+<<<<<<< HEAD
     .column {
         width: 50%;
     }
@@ -21,4 +31,17 @@
         flex: 1;
     } 
 
+=======
+
+    .column {
+        width: 50%;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 993px) {
+    .column {
+        flex: 1;
+    }
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
 }
