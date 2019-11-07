@@ -87,11 +87,6 @@ body {
     background-color: black;
 }
 
-.main-box {
-    display: flex;
-    justify-content: flex-end;
-}
-
 header {
     color: white;
     background-color: black;
@@ -127,7 +122,6 @@ aside {
 aside>p {
     padding: 5px 15px
 }
-
 
 figure {
     display: inline-block;
