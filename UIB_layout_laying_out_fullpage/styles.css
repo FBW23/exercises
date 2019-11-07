@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0px;
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,7 +24,7 @@ h1 {
 aside {
     background: white;
     color: black;
-
+    align-items: space-around;
 }
 
 nav, main {
@@ -45,7 +45,6 @@ figure {
     text-align: center;
     height: 130px;
     width: 150px;
-    
 }
 
 figure {
@@ -63,12 +62,94 @@ article {
 }
 
 main {
-    /* align-content: space-between; */
 
 }
 
 body {
         background: #1a1a1a;
 
+} */
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    padding: 0 270px;
+    background-color: black;
+}
+
+.main-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header {
+    color: white;
+    background-color: black;
+    display: block;
+    width: 50%;
+}
+
+nav {
+    color: white;
+    background-color: #4b4b4b;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+nav>h4 {
+    padding: 5px;
+}
+
+main {
+    background-color: #4b4b4b;
+    display: flex;
+    width: 80%;
+}
+
+aside {
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+aside>p {
+    padding: 5px 15px
+}
+
+
+figure {
+    display: inline-block;
+    height: 130px;
+    margin: 15px;
+    width: 130px;   
+}
+
+.thumbnail {
+    align-items: center;
+    display: flex;
+    background: #000;
+    color: white;
+    height: 80%;
+    justify-content: center;
+}
+
+.movie-title {
+    align-items: center;
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+}
