@@ -80,13 +80,14 @@ ul {
 }
 
 p {
-    display: flex;
+    
     background: #1a1a1a;
     height: 30px;
     width: 150px;
     color: white;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding-top:4px;
+   
     margin-top: -3px;
 
 
@@ -95,3 +96,10 @@ p {
 .thumb {
     margin: 10px;
 }
+
+
+/* 
+
+
+
+*/
