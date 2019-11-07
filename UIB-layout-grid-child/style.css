@@ -1,26 +1,27 @@
-container {
-display: grid;
-border: 2px solid red;
-grid-template-rows: repeat(4, 1fr);
-grid-template-columns: repeat(4, 1fr);
-height: 95vh;
-}
+ main {
+     display: grid;
+     border: 2px solid red;
+     grid-template-rows: repeat(4, 1fr);
+     grid-template-columns: repeat(4, 1fr);
+     height: 95vh;
+ }
 
  section {
-    border: 2px solid blue;
-    text-align: center;
+     border: 2px solid blue;
+     text-align: center;
 
  }
 
- .two{
+ .two {
      grid-column: 2 / span 2;
      background-color: blue;
  }
 
- .six{
+ .six {
      grid-column: 3 / 5;
      background-color: green;
  }
+
  .nine {
      grid-column: 2 / 3;
      grid-row: 3/ 5;
