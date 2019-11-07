@@ -1,0 +1,37 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 200px);
+}
+
+section {
+    border: 2px solid blue;
+}
+
+#second {
+    grid-column: 2 / span 2;
+    background-color: purple;
+}
+
+#fourth {
+    grid-row: 2 / 4;
+    background-color: yellow;
+}
+
+#tenth {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+    background-color: green;
+}
+
+#eighth {
+    background-color: hotpink;
+    grid-column: 2 / 4;
+
+} 
+
