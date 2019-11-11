@@ -22,8 +22,19 @@
 
 }
 
+span {
+    font-weight: bold;
+}
+
 .page-number {
     text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+     
+    
 }
 
 
