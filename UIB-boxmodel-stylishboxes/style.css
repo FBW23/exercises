@@ -1,15 +1,42 @@
+section {
+    border: 1px solid black;
+    box-shadow: 5px 5px 11px black;
+    display: inline-block;
+    margin-right: 20px;
+    width: 20%;
+}
+
+article {
+    margin: 10px;
+}
+
 .fake-box {
     position: relative;
+<<<<<<< HEAD
     border: 1px solid black;
     width: 250px;
     height: 250px;
     padding: 10px;
     font-size: 12px;
     margin: 23px
+=======
+    border: none;
+    box-shadow: none;
+    display: block;
+    height: 200px;
+    padding: 40px; 
+>>>>>>> 95c9f1ba6d761cf181891588a0974e7b200e9b90
 }
 
 .fake-box:before, .fake-box:after {
+    border: 1px solid black;
+    content: ""; /* make the styling here visible */
     position: absolute;
+<<<<<<< HEAD
+=======
+    width: 330px;
+    height: 160px;
+>>>>>>> 95c9f1ba6d761cf181891588a0974e7b200e9b90
 
 }
 
