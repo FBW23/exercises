@@ -9,11 +9,15 @@ section {
        border: 2px solid rgb(9, 44, 160);
 }
 .number2 {
-    grid-column: 2 / span 2;
+    /* grid-column: 2 / span 2; */
+    grid-row: 1;
+    grid-column: 3 / 5;
     background-color: green;
 }
 .number6 {
-    grid-column: 3 / span 2 ;
+    /* grid-column: 3 / span 2; */
+    grid-row: 2;
+    grid-column: 3 / 5;
     background-color: indigo;
 }
 .number9 {
@@ -24,6 +28,12 @@ section {
 
 .number12 {
     background-color: rgb(231, 4, 220);
-    grid-row: 3 / span 2;
+    grid-row: 3 / 5;
     grid-column: 4;
+}
+
+.number8 {
+    background-color: black;
+    grid-row: 3 / 5;
+    grid-column: 3
 }

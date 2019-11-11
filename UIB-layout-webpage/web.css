@@ -1,0 +1,39 @@
+* {
+    font-family: 'Arapey', serif;
+    padding: 20px;
+
+}
+
+.header {
+    font-size: 150%;
+    text-align: right;
+
+}
+
+.first {
+    display: block;
+    border: 1px solid black;
+    box-shadow: black 1px 1px 10px 5px;
+    margin: auto;
+    widows: 95%;
+    height: 90%;
+    margin-bottom: 30px;
+    padding: 60px;
+
+}
+
+.page-number {
+    text-align: center;
+}
+
+
+
+
+
+
+main {
+    font-size: 2em;
+
+
+
+}
