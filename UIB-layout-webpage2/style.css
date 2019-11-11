@@ -6,49 +6,46 @@
 }
 
  
-
+body{
+    overflow: hidden;
+}
 
 
 main {
     position: absolute;
-    width: 80%;
-    height: 90%;
-    
+    width: 65%;
+    height: 100%;
     overflow: scroll;
-    left:15%;
-    
+    left:30%;
+    top:25%;
+   
 }
 
 
 section {
-
     box-shadow: 1px 1px 5px 2px black;
-    /* width: 600px; */
-    margin:20px;
     font-family: 'Arapey', serif;
-    padding: 40px 40px 10px ;
-
-}
+    line-height: 2em;
+    padding:20px;
+    margin:20px;
+    
+   }
 
 
 
 h1 {
     margin-bottom: 1.5em;
-    text-align: right;
     font-size: 3em;
     direction:rtl;
+    line-height:1em;
 
 }
 
 h2 {
     font-size: 0.8em;
     margin-bottom: 2.5em;
-    
 }
 
-p {
-    line-height: 2em;
-}
 
 .pgnr  {
      margin: 5em 50% 0 50%;
@@ -60,6 +57,7 @@ p {
 
 .bold {
     font-weight: bold;
+    font-size:20px;
 
 }
 
@@ -72,14 +70,13 @@ p {
 
 
 
-header {
+nav {
     position:absolute;
-    height: 90%;
-    width: 15%;
-    
+    height: 100%;
+    width: 20%;
     font-family: 'Montserrat', sans-serif;
-    left:5%;
-    top:10%;
+    left:3%;
+    top:35%;
     
 
 
