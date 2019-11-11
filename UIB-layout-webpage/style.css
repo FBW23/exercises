@@ -1,0 +1,22 @@
+* {
+    font-family: 'Arapey', serif;
+    padding:20px;
+     }
+.header {
+    font-size: 150%;
+    text-align: right;
+}
+section {
+    overflow: scroll;
+    border: 3px solid black;
+    box-shadow: black 1px 1px 10px 5px;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 30px;
+    padding: 60px;
+    page-break-after: always
+}
+ol {
+    list-style-type: none;
+}
