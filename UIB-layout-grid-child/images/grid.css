@@ -13,7 +13,7 @@ section {
 .block {
     grid-column: 2 / span 2;
 
-    background: purple;
+    background: red;
 }
 
 .block2 {
