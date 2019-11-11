@@ -14,7 +14,7 @@
 5. Add another square box with the class of `box2`. The box should have a background color of rgb(0, 255, 85) and a height and width of 200px. This box should be positioned at the bottom-left of the screen, but should be 10px higher and 10px more to the right than `box1`.
 
 6. Add a third box with a class of `box3`. It should have a background color of rgb(0, 183, 255). It should be positioned at the bottom-left of the window, but should be 10px higher and 10px further right than `box2`. 
-![reference-image](/images/reference-image1.png)
+![reference-image](./images/reference-image1.png)
 
 7. Place `box3` **behind** `box2`.
-![reference-image](/images/reference-image2.png)
+![reference-image](./images/reference-image2.png)
