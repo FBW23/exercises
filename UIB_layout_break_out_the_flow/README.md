@@ -4,7 +4,7 @@
 
 1. Create an empty box with the class of `halloworld`. The box should have a width and height of 200px. Inside the box, add the text "Hallo World" and change the background color to orange.
 
-2. Center the `halloword` box in the middle of the screen.
+2. Center the `halloworld` box in the middle of the screen.
 
 3. Move the `halloworld` box 5 pixels to the left and 7 pixels down from the center position.
 **Hint**: For centering elements in HTML try using the margin property. 
