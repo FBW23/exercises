@@ -1,28 +1,33 @@
 * {
-    font-family: Arapey;
-    /* fonsts backup */
     box-sizing: border-box;
+    font-family: Arapey, serif;
     
 }
 
 main {
+    height: 98%;
+    left: 20%;
+    overflow: scroll;
     position: absolute;
     width: 75%;
-    left: 20%;
-    height: 100%;
-    overflow: scroll;
 }
 
 .main-content {
 
     box-shadow: 1px 1px 5px 1px black;
-    padding: 30px;
     margin:30px;
+    padding: 30px;
 }
 
 h1 {
-    text-align: right;
     font-size: 2.5em;
+    text-align: right;
+    
+}
+h5 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    
 }
 
 .pagenr {
@@ -30,10 +35,7 @@ h1 {
     transform: translate(0, 150%);
 }
 
-h5 {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
+
 
 section {
     line-height: 35px;
@@ -41,46 +43,58 @@ section {
 
 /* Navigation Menu */
 header {
+    background-color:rgba(236, 228, 228, 0.24);
+    height: 98%;
     position: absolute;
-    width: 10%;
-    border: 1px solid black;
-    height: 100%;
+    width: 20%;
 
 }
-
-header li {
-    list-style-type: none;
-}
-
-header ul {
-
-    margin-top: 200px;
-}
-
-header a {
-    display: block;
-    text-decoration: none;
-    padding: 5px;
+.menu-title {
+    margin-bottom: 10px;
+    text-decoration: underline;
     font-family: 'Montserrat', sans-serif;
 }
 
-.active {
-    text-decoration: underline;
-    font-size: 1.4em;
+header ul {  
+    margin-top: 200px; 
+    margin-left: 70px; 
+}
+header li {
+    list-style-type: none;
+}
+header a {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    
+
 }
 
-span {
+.active {
+    font-size: 1.4em;
+    text-decoration: underline;
+    
+}
+
+.bold {
     font-weight: bold;
 }
+.italic {
+    font-style: italic;
+}
 .fa-arrow-circle-up {
-    position: fixed;
-    font-size: 4em;
-    bottom: 5px ;
-    left: 250px;
     color: black;
+    bottom: 5px ;
+    font-size: 4em;
+    left: 250px;
     opacity: 0.3;
+    position: fixed;
+    
 }
 i:hover {
     opacity: 1;
 }
-
+ li a:hover {
+    font-size: x-large;
+}
