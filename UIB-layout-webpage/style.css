@@ -1,15 +1,23 @@
 * {
     font-family: Arapey;
+    /* fonsts backup */
+    box-sizing: border-box;
+    
+}
 
+main {
+    position: absolute;
+    width: 75%;
+    left: 20%;
+    height: 100%;
+    overflow: scroll;
 }
 
 .main-content {
-    margin: 0 auto;
-    width: 80%;
-    height: 90%;
+
     box-shadow: 1px 1px 5px 1px black;
     padding: 30px;
-    margin-bottom: 40px;
+    margin:30px;
 }
 
 h1 {
@@ -18,9 +26,8 @@ h1 {
 }
 
 .pagenr {
-    position: relative;
     text-align: center;
-    transform: translate(0%, 150%);
+    transform: translate(0, 150%);
 }
 
 h5 {
@@ -31,3 +38,49 @@ h5 {
 section {
     line-height: 35px;
 }
+
+/* Navigation Menu */
+header {
+    position: absolute;
+    width: 10%;
+    border: 1px solid black;
+    height: 100%;
+
+}
+
+header li {
+    list-style-type: none;
+}
+
+header ul {
+
+    margin-top: 200px;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.active {
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+
+span {
+    font-weight: bold;
+}
+.fa-arrow-circle-up {
+    position: fixed;
+    font-size: 4em;
+    bottom: 5px ;
+    left: 250px;
+    color: black;
+    opacity: 0.3;
+}
+i:hover {
+    opacity: 1;
+}
+
