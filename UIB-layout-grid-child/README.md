@@ -15,8 +15,8 @@ You NOW have an empty row at the bottom of your container. Select items and span
 * **Note**: only span 2 columns OR 2 rows at a time.
 
 *   Images for reference:
-    ![task1](/images/task1.png)
-    ![task2](/images/example_task2.png)
+    ![task1](./images/task1.png)
+    ![task2](./images/example_task2.png)
 
     ### Rules
 
