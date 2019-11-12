@@ -1,6 +1,54 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+.halloworld {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin:0 auto;
+    left:5px;
+    bottom:7px;
+    text-align: center;
+    position:relative;
+}
+
+.box1 {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    margin:35px;
+    margin-top:50px;
+    
+    
+    
+}
+
+.box2 {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 255, 85);
+    position:absolute;
+    margin:45px;
+        margin-left:40px;
+        z-index: 1;
+}
+
+.box3 {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 183, 255);
+    
+    margin-left:50px;
+    margin-top:30px;
+    position:absolute;
+
+}

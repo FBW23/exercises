@@ -58,4 +58,10 @@ section {
     box-sizing: border-box;
     box-shadow: black 10px 10px 10px;
 }
-.numbers {text-align: center;}
+
+.numbers {
+    text-align: center;
+}
+
+nav ul li{
+list-style-type:  none;}
