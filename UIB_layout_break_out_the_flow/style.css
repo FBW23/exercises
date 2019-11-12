@@ -1,6 +1,57 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+.halloworld,
+.box1,
+.box2,
+.box3 {
+    width: 200px;
+    height: 200px;
+}
+
+.halloworld {
+    background: orange;
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 0 auto;
+    right: 5px;
+    top: 7px;
+    text-align: center;
+
+}
+
+.box1,
+.box2,
+.box3 {
+    position: absolute;
+}
+
+.box1 {
+    background: red;
+
+    bottom: 0;
+
+}
+
+.box2 {
+    background-color: rgb(0, 225, 85);
+
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.box3 {
+
+    background: rgb(0, 183, 255);
+    bottom: 20px;
+    left: 20px;
+    z-index: -1;
+
+}
