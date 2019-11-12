@@ -12,12 +12,14 @@ section {
 }
 .task-one::before { content: "Once Upon A Time";
     background: purple;
+    font-style: italic;
 
 }
 
 .task-one::after {
     content: "The End";
     background: purple;
+    font-style: italic;;
 }
 
 .task-two {
