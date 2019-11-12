@@ -1,26 +1,33 @@
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
 }
 
-.task-one{
+.task-one {
     margin-top: 10px;
     background: skyblue;
 }
-section::before{
+
+section::before {
     content: "once upon a time";
     background: purple;
 }
-section::after{
-content: "the end";
-background: purple;
+
+section::after {
+    content: "the end";
+    background: purple;
 }
-.task-tow{
-width: 400px;
+
+.task-tow {
+    width: 400px;
     height: 400px;
-    background: url(assets/beach.jpg) ;
+    background: url(assets/beach.jpg);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-#s{
+
+#s {
     transform: rotate(180deg);
-}
+} 
+#s { transition: all .2s ease-in-out; }
+#s:hover { transform: scale(0.5,0.5); }
