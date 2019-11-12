@@ -18,6 +18,8 @@ body {
     position: relative;
     /* top: 50%;
     left: 50%;
+    para combinar porcentagem com pixels usa-se a propriedade calc
+    left:calc(50% + 5px)
     transform: translate(-50%, -50%); */
     margin: 0 auto;
     right: 5px;
@@ -34,7 +36,6 @@ body {
 
 .box1 {
     background: red;
-
     bottom: 0;
 
 }
