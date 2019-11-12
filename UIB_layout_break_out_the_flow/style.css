@@ -1,43 +1,35 @@
-html, body {
+ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-.halloworld{
-    position: relative;
+[class *= "o"]{
     height: 200px;
     width: 200px;
+}
+.halloworld{
+    position: relative;
     background: orange;
     left:50%;
     transform: translate(-50%);
     margin : 7px -5px 0 0 ;
     text-align: center;
 }
-main{
-    margin-bottom: ;
-}
 .box1{
     position: relative;
     background:red;
-    height: 200px;
-    width: 200px;
     top: 600px;
 }
 .box2{
    position: relative;
     background: rgb(0, 255, 85);
     bottom: -390px;
-    left: 10px;
-    height: 200px;
-    width: 200px;
+    left: 10px;  
 }
 .box3{
     position: relative;
     background:  rgb(0, 183, 255);
     bottom:-180px ;
     left: 20px;
-    width: 200px;
-    height: 200px;
     z-index: -1;
 }
-
