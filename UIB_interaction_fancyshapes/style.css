@@ -1,0 +1,33 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-top: 10px;
+
+}
+
+.task-one::before {
+        background: yellow;
+        content: "Once upon a time ... ";
+      
+}
+
+.task-one::after {
+    background:green;
+    content: "...The end. ";
+  
+}
+
+.task-two{
+     height:400px;
+    width:400px;
+     background: url(assets/beach.jpg);
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.task-three{
+    transform: rotate(180deg);
+}
