@@ -1,0 +1,42 @@
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+
+li, .sabout li{
+    
+    color:white;
+    text-align:center;
+    padding:0 10px;
+    height:100%;
+    line-height:50px;
+    
+
+}
+
+
+li{
+    display:inline-block;
+}
+
+ul{
+    list-style-type: none;
+    height:100%;
+ 
+}
+
+header{
+    height: 50px;
+    background:black
+}
+
+.sabout{
+    background:blue;
+    color:white;
+    list-style-type: none;
+    display:none;
+    
+}

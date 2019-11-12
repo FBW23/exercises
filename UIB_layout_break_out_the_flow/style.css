@@ -5,6 +5,46 @@ body {
     height: 100%;
 }
 
+<<<<<<< HEAD
+
+.halloworld{
+    position:relative;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    left:calc(50% + 5px) ;
+    top:calc(50% + 7px);
+    background:orange;
+}
+
+.box1{
+    bottom:0;
+    background:red;
+}
+
+.box2{
+     z-index:1;
+     bottom:10px;
+     left:10px;
+     background:rgb(0,255,85);
+}
+
+.box3{
+    bottom:20px;
+    left:20px;
+    background:rgb(0,183,255);
+}
+
+.halloworld, .box1, .box2, .box3{
+    width:200px;
+    height:200px;
+
+}
+
+.box1, .box2, .box3{
+    position:absolute;
+}
+
+=======
 /* i m aware of alphabetical order but i m tired */
 body {
     font-family: Arapey, Montserrat, sans-serif;
@@ -61,3 +101,4 @@ main {
         left: 26%;
 
     }
+>>>>>>> e8e32116876bfc58eecd637d0e91eea5384889b8
