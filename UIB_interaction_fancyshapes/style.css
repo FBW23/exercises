@@ -9,12 +9,12 @@ body {
     background: skyblue;
 }
 
-section::before {
+.task-one::before {
     content: "once upon a time";
     background: purple;
 }
 
-section::after {
+.task-one::after {
     content: "the end";
     background: purple;
 }
@@ -27,7 +27,7 @@ section::after {
 }
 
 #s {
-    transform: rotate(180deg);
+    transform: scale(-1 );
 } 
 #s { transition: all .2s ease-in-out; }
 #s:hover { transform: scale(0.5,0.5); }
