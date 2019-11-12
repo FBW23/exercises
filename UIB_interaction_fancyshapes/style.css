@@ -15,6 +15,7 @@ section {
 }
 
 .task-two {
+    background-image: url(beach.jpg);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     width: 500px;
     height: 500px;
