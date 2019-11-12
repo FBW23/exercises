@@ -1,22 +1,84 @@
-* {
-    font-family: 'Arapey', serif;
-    padding:20px;
-     }
-.header {
-    font-size: 150%;
-    text-align: right;
-}
-section {
-    overflow: scroll;
-    border: 3px solid black;
-    box-shadow: black 1px 1px 10px 5px;
-    margin: auto;
-    width: 90%;
+html {
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  aside {
+    position: absolute;
+    left: 0;
+    width: 35%;
     height: 100%;
-    margin-bottom: 30px;
-    padding: 60px;
-    page-break-after: always
-}
-ol {
-    list-style-type: none;
-}
+    font-family: "Montserrat", sans-serif;
+    color: #1A1A1A;
+    padding: 40px;
+    padding-top: 120px;
+  }
+  .menu-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  aside nav ul {
+    list-style: none;
+  }
+  nav ul li {
+    margin-bottom: 24px;
+  }
+  nav ul a {
+    text-decoration: none;
+    color: #1A1A1A;
+    cursor: pointer;
+  }
+  main {
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    overflow: scroll;
+  }
+  section {
+    margin: 30px 16px;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 rgba(160, 181, 245, 0.18),
+      0 3px 11px 0 rgba(129, 129, 129, 0.31);
+    font-family: "Arapey", "Arapey-Regular", serif;
+  }
+  section:first-of-type {
+    margin-top: 120px;
+  }
+  section p {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 44px;
+    color: #1A1A1A;
+    text-align: right;
+    margin-bottom: 100px;
+  }
+  article header .header-title {
+    font-size: 12px;
+    margin: 15px 0 20px;
+  }
+  section h2 {
+    font-size: 23px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  section p {
+    font-size: 18px;
+    color: #1A1A1A;
+    line-height: 170%;
+  }
+  section p q {
+    font-weight: bold;
+  }
+  article footer {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+  } 
