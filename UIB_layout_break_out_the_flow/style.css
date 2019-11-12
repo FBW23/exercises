@@ -10,11 +10,11 @@ html, body {
     height: 200px;
     width: 200px;
     top: 50%;
-    bottom: 50%;
+    left: 50%;
     background-color: orange;
     text-align: center;
-    margin: 5px auto;
-    transform: translate(0, -50%);
+    margin: 5px;
+    transform: translate(-50%, -50%);
 }
 
 .box1 {
