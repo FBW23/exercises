@@ -4,3 +4,49 @@ html, body {
     height: 100%;
 }
 
+.note {
+    position: relative;
+    display: block;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    bottom: 50%;
+    background-color: orange;
+    text-align: center;
+    margin: 5px auto;
+    transform: translate(0, -50%);
+}
+
+.box1 {
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 200px;
+    bottom: 10px;
+    left: 7px;
+    background-color: red;
+    
+
+}
+
+.box2 {
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0,255,85);
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.box3 {
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0,183,255);
+    bottom: 30px;
+    left: 30px;
+   
+}
