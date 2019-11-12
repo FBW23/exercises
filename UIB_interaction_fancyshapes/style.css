@@ -1,0 +1,34 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.task-one {
+    background-color: rgb(112, 244, 248);
+}
+
+.task-one::before {
+   content: "Once upon a time ....";
+   background-color: blueviolet;
+   font-weight: bold;
+   font-style: italic;
+}
+
+.task-one::after {
+    content: "...The end";
+    background-color: blueviolet;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#image1 {
+    background-image: url(/assets/beach.jpg);
+    width: 500px;
+    height: 500px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#image2 {
+    position: absolute;
+    transform: scale(-1);
+
+}
