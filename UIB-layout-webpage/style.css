@@ -14,7 +14,8 @@ main {
 
 .main-content {
 
-    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: 0 2px 4px 0 rgba(160, 181, 245, 0.18),
+    0 3px 11px 0 rgba(129, 129, 129, 0.31);
     margin:30px;
     padding: 30px;
 }
