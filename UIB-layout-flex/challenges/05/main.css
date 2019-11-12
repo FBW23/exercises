@@ -2,6 +2,9 @@
 
 body {
     border: 5px solid red;
+    display:flex;
+    height:100vh;
+    align-items: center;
 }
 
 div {
@@ -12,4 +15,5 @@ div {
     margin: 1em;
     border: 2px solid red;
     text-align: center;
+   
 }

@@ -1,0 +1,39 @@
+* {
+    margin:0;
+}
+
+section{
+    border:1px solid black;
+    box-shadow: 5px 5px 11px black;
+    display:inline-block;
+    width: 20%;
+    margin-right:20px;
+}
+
+article{
+    margin:10px;
+}
+
+.fake-box{
+    position:relative;
+    border:none;
+    box-shadow: none;
+    display:block;
+    height:200px;
+    padding: 40px;
+    left: 10px;
+}
+
+.fake-box:before, .fake-box:after {
+    position:absolute;
+    border:solid 1px black;
+    content:"";
+    width:330px;
+    height:140px;
+
+}
+
+.fake-box:after{
+    left: 20px;
+    top: 20px;
+}
