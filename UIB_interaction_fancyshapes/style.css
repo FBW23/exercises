@@ -6,3 +6,21 @@ html, body {
 section {
     margin-top: 10px;
 }
+.task-one::before { content: "Once Upon A Time";
+
+}
+
+.task-one::after {
+    content: "The End"
+}
+
+.task-two {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 500px;
+    height: 500px;
+}
+
+.task-three {
+    position: absolute;
+    transform: rotate(180deg);
+}
