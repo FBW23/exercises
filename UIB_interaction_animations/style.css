@@ -3,3 +3,208 @@ body, html {
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header {
+    display: block;
+    width: 80%;
+    height: 100px;
+    background-color: rgb(32, 32, 32);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+nav ul {
+    
+    list-style-type: none;
+}
+.text-pop-up-top {
+    display: inline-block;
+    margin: 20px;
+    padding: 8px;
+    line-height: 50px;
+    background-color: rgb(238, 40, 14);
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+  
+}
+.container {
+    position: relative;
+    bottom: 100px;
+    left: 93%;
+
+  }
+  .everlib-logo {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;}
+    
+    .everlib-logo-first-bar,
+    .everlib-logo-second-bar,
+    .everlib-logo-third-bar,
+    .everlib-logo-fourth-bar {
+      display: inline-block;
+      border-radius: 13px;
+      width: 9px;
+      margin-right: 6px;
+      transition: .5s;
+      animation: equalize 4s 0s infinite;
+      animation-timing-function: linear;
+      vertical-align: top;
+    }
+    
+    .everlib-logo-first-bar {
+      height: 40px;
+      background: #0f87ae;
+      transition: 0.5s;
+      animation-delay: -1.9s;
+    }
+    
+    .everlib-logo-second-bar {
+      height: 48px;
+      background: #b75690;
+      animation-delay: -2.9s;
+    }
+    
+    .everlib-logo-third-bar {
+      height: 44px;
+      background: #86c035;
+      animation-delay: -3.9s;
+    }
+    
+    .everlib-logo-fourth-bar {
+      height: 36px;
+      background: #F0902E;
+      animation-delay: -4.9s;
+    }
+    .text-pop-up-top:hover {
+     
+        -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+  }
+
+/* keyframe web */
+
+@-webkit-keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+
+
+
+
+/* end */
+
+  
+
+  
+  @keyframes equalize {
+    0% {
+      height: 48px;
+    }
+    4% {
+      height: 42px;
+    }
+    8% {
+      height: 40px;
+    }
+    12% {
+      height: 30px;
+    }
+    16% {
+      height: 20px;
+    }
+    20% {
+      height: 30px;
+    }
+    24% {
+      height: 40px;
+    }
+    28% {
+      height: 10px;
+    }
+    32% {
+      height: 40px;
+    }
+    36% {
+      height: 48px;
+    }
+    40% {
+      height: 20px;
+    }
+    44% {
+      height: 40px;
+    }
+    48% {
+      height: 48px;
+    }
+    52% {
+      height: 30px;
+    }
+    56% {
+      height: 10px;
+    }
+    60% {
+      height: 30px;
+    }
+    64% {
+      height: 48px;
+    }
+    68% {
+      height: 30px;
+    }
+    72% {
+      height: 48px;
+    }
+    76% {
+      height: 20px;
+    }
+    80% {
+      height: 48px;
+    }
+    84% {
+      height: 38px;
+    }
+    88% {
+      height: 48px;
+    }
+    92% {
+      height: 20px;
+    }
+    96% {
+      height: 48px;
+    }
+    100% {
+      height: 48px;
+    }
+  }

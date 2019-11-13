@@ -1,49 +1,135 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section {
+  margin-top: 50px;
+  text-align: center;
 }
-
 .wrapper {
-  display: flex;
-  align-items: stretch;
-  border: 2px solid hotpink;
-  height: 100vh;
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;}
+  
+  .strobe_1,
+  .strobe_2,
+  .strobe_3,
+  .strobe_4,
+  .strobe_5 {
+    display: inline-block;
+    border-radius: 13px;
+    width: 100px;
+    margin-right: 6px;
+    transition: .5s;
+    animation: equalize 4s 0s infinite;
+    animation-timing-function: linear;
+    vertical-align: top;
+  }
+  .strobe_1 {
+    height: 130px;
+    background: #c0ee55;
+    transition: 0.1s;
+    animation-delay: -0.9s;
+  }
+  .strobe_2 {
+    height: 200px;
+    background: #0f87ae;
+    transition: 0.1s;
+    animation-delay: -1.9s;
+  }
+  
+  .strobe_3 {
+    height: 220px;
+    background: #b75690;
+    animation-delay: -2.9s;
+  }
+  
+  .strobe_4 {
+    height: 270px;
+    background: #86c035;
+    animation-delay: -3.9s;
+  }
+  
+  .strobe_5 {
+    height: 300px;
+    background: #F0902E;
+    animation-delay: -4.9s;
+  }
 
-}
 
-div {
-  border: 2px dotted chartreuse;
-  width: 20%;
-}
-
-.strobe_1 {
-  background-color: yellow;
-  animation: first 2s infinite alternate-reverse;
- 
-}
-.strobe_2
-{
-  background: hotpink;
-
-
-}
-.strobe_3 {
-  background: midnightblue;
-}
-.strobe_4 {
-  background: orangered;
-}
-.strobe_5 {
-  background: gray;
-}
-
-.strobe_2:hover,.strobe_3:hover,.strobe_1:hover,.strobe_4:hover,.strobe_5:hover {
-animation-name:fade2;
-animation-iteration-count: infinite;
-animation-duration: 1s;
-
-}
-@keyframes fade2 {
-50% {background-color: blue;}
+@keyframes equalize {
+  0% {
+    height: 300px;
+  }
+  4% {
+    height: 150px;
+  }
+  8% {
+    height: 40px;
+  }
+  12% {
+    height: 30px;
+  }
+  16% {
+    height: 20px;
+  }
+  20% {
+    height: 30px;
+  }
+  24% {
+    height: 40px;
+  }
+  28% {
+    height: 10px;
+  }
+  32% {
+    height: 40px;
+  }
+  36% {
+    height: 48px;
+  }
+  40% {
+    height: 20px;
+  }
+  44% {
+    height: 40px;
+  }
+  48% {
+    height: 48px;
+  }
+  52% {
+    height: 30px;
+  }
+  56% {
+    height: 80px;
+  }
+  60% {
+    height: 30px;
+  }
+  64% {
+    height: 48px;
+  }
+  68% {
+    height: 30px;
+  }
+  72% {
+    height: 48px;
+  }
+  76% {
+    height: 20px;
+  }
+  80% {
+    height: 48px;
+  }
+  84% {
+    height: 38px;
+  }
+  88% {
+    height: 48px;
+  }
+  92% {
+    height: 20px;
+  }
+  96% {
+    height: 48px;
+  }
+  100% {
+    height: 48px;
+  }
 }
