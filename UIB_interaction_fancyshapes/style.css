@@ -7,6 +7,9 @@ body {
 section {
     margin-top: 10px;
 }
+.task-one {
+    background: lightskyblue;
+}
 
 .task-one::before {
     content: "Once upon a time ...";
@@ -22,7 +25,7 @@ section {
     width: 400px;
     height: 400px;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    background: url(beach.jpg);
+    background: url(assets/beach.jpg);
 }
 
 img{
