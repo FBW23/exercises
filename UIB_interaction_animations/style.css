@@ -1,0 +1,29 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    padding: 0;
+    margin: 20px;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color:black;
+    color: white;
+}
+
+nav ul li:hover {
+    color: darkolivegreen;
+    border: 3px solid darkred;
+    border-radius: 6px;
+    background-color:violet;
+    padding: 2px;
+    font-size: 1.4em;
+    transition-duration: 100ms;
+}

@@ -10,7 +10,12 @@
   border: 2px solid hotpink;
   height: 100vh;
 }
+[class *=("str")]{
+  position: absolute;
+  bottom: 0;
+  height: 200px;
 
+}
 div {
   border: 2px dotted chartreuse;
   width: 20%;
@@ -18,37 +23,50 @@ div {
 
 .strobe_1:hover {
   background-color: yellow;
-  animation: fade 0.2s alternate-reverse infinite;
+  animation: fade 1s ease-in-out alternate-reverse infinite;
 }
 
 .strobe_2:hover {
   background-color: blue;
-  animation: fade 0.2s alternate-reverse infinite;
+  animation: fade 1s ease-in-out alternate-reverse infinite;
 }
 
 .strobe_3:hover {
   background-color: darkred;
-  animation: fade 0.2s alternate-reverse infinite;
+  animation: fade 1s ease-in-out alternate-reverse infinite;
 }
 
 .strobe_4:hover {
   background-color: deeppink;
-  animation: fade 0.2s alternate-reverse infinite;
+  animation: fade 1s ease-in-out alternate-reverse infinite;
 
 }
 
 .strobe_5:hover {
   background-color: darkviolet;
-  animation: fade 0.2s alternate-reverse infinite;
+  animation: fade 1s ease-in-out alternate-reverse infinite;
 }
 
 @keyframes fade {
-  from {
+  /*from {
     opacity: 1;
+  
 
   }
 
   to {
     opacity: 0;
-  }
+   
+  }*/
+
+0% {
+  background-color: goldenrod;
+}
+20% {
+  background-color: indigo;
+}
+30% {
+  background-color: lawngreen;
+}
+
 }
