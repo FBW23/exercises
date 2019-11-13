@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  border: 2px dotted chartreuse;
+  width: 20%;
+}
+
+.strobe_1 {
+  background-color: yellow;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_2 {
+  background-color: greenyellow;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_3 {
+  background-color: green;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_4 {
+  background-color: blue;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_5 {
+  background-color: red;
+  animation: first 2s infinite alternate-reverse;
+}
+
+
+
+div:hover {
+  animation-iteration-count: infinite;
+  animation-name: fadein;
+  animation-duration: 2s;
+
+}
+ 
+@keyframes fadein {
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}

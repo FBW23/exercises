@@ -1,0 +1,10 @@
+#nav {
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+}
+ li a:hover {
+     background-color: blue;
+ }
