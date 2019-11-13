@@ -1,0 +1,33 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+    background: blue;
+    display: inline-block;
+    padding: 10px;
+    }
+
+
+ul li:hover {
+    background-color: crimson;
+    animation-duration: 3s;
+    animation-name: exu;
+}
+
+@keyframes exu {
+    0% {
+        transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+        transform: scale(1);
+    }
+}
