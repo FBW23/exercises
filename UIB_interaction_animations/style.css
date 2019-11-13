@@ -3,3 +3,33 @@ body, html {
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+li{
+    display: inline-block;
+    background:blue;
+    padding:5px 10px;
+}
+
+@keyframes zoom {
+   0% {
+        height:20px;
+        width:30px;
+        font-size: 1em;
+    }
+
+  
+
+    100% {
+        height:30px;
+        width:70px;
+        font-size: 1.5em;
+    }
+}
+
+li:hover{
+    animation-name:zoom;
+    background:red;
+    animation-duration:1s ;
+    
+
+}
