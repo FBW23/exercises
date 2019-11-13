@@ -15,15 +15,10 @@ ul {
 
 li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 16px; 10px;
     color: white;
 }
 
-
-li,
-.submenu {
-    line-height: 50px;
-}
 
 .submenu {
     display: none;
