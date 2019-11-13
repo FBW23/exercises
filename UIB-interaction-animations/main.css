@@ -9,24 +9,65 @@
   align-items: stretch;
   border: 2px solid hotpink;
   height: 100vh;
+
 }
 
 div {
   border: 2px dotted chartreuse;
   width: 20%;
+
+}
+
+div:hover {
+  animation-name: div;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+
 }
 
 .strobe_1 {
+  animation: div;
   background-color: yellow;
-  animation: first 2s infinite alternate-reverse;
+
+
 }
 
-@keyframes strobe_1 {
-  from,to {
-    background-color: yellow;
+.strobe_2 {
+
+  background-color: chocolate;
+
+}
+
+.strobe_3 {
+
+  background-color: darkmagenta;
+
+}
+
+.strobe_4 {
+
+  background-color: darkturquoise;
+
+}
+
+.strobe_5 {
+
+  background-color: forestgreen;
+
+}
+
+
+@keyframes div {
+  from {
+    opacity: 1;
   }
 
   50% {
-    background-color: transparent;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

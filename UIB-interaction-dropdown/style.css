@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     color: white;
-    
+
 }
 
 
@@ -23,11 +23,12 @@ nav {
 
 
 nav ul li {
-    float:left;    
+    float: left;
     list-style: none;
     position: relative;
-    
-    
+   
+
+
 }
 
 ul li {
@@ -35,6 +36,7 @@ ul li {
 
     color: white;
     list-style: none;
+   
 
 
 }
@@ -48,6 +50,7 @@ nav ul li a {
     text-decoration: none;
     
 
+
 }
 
 nav ul li ul {
@@ -56,20 +59,22 @@ nav ul li ul {
     background-color: blue;
     padding: 10px;
     border-radius: 0px 0px 4px 4px;
-    width:1500px;
-clear:both;
-
-
-
+    width: 1500px;
+    clear: both;
+    left: 0;
 
 }
-
 
 nav ul li:hover ul {
     display: block;
+    
 
 }
-nav ul li:hover {background-color: blue;
+
+nav ul li:hover {
+    background-color: blue;
+    
+    
 }
 
 
@@ -77,13 +82,17 @@ nav ul li ul li {
     width: 300px;
     border-radius: 4px;
     float: none;
+    
+    
 }
 
 nav ul li ul li a {
-    padding: 8px 14px;
+    padding: 10px 14px;
+    
 }
 
 nav ul li ul li a:hover {
     background-color: lightgrey;
+    width: 1500px;
 
 }
