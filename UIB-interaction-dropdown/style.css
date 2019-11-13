@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+
+li,
+a {
+    display: inline-block
+}
+
+.sub,
+.subtwo {
+    visibility: ;
+}
+
+ul li {
+    display: inline-block;
+    padding: 16px 10px;
+
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    background-color: blue;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.mainmenu li:hover {
+    background-color: blue;
+
+}
+
+.mainmenu li:hover .submenu {
+    display: block;
+}
+
+.submenu li:hover {
+    color: black;
+    background: white;
+
+}
+
+@keyframes slideout{
+    from{
+        transform: translateX(0);
+        
+
+    }
+
+    to{
+        transform: translateX(100%);
+    }
+}
