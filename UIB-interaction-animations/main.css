@@ -50,6 +50,10 @@ div {
   }
 }
 
+body{
+  background:black;
+}
+
 
 @keyframes fade_in{
 0% {opacity:1;}
