@@ -1,0 +1,20 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    height: 30%;
+<<<<<<< HEAD
+    background-image: url("/assets/background.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+=======
+>>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+}

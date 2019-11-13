@@ -1,0 +1,220 @@
+<<<<<<< HEAD
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+.first {
+    background: rgb(138, 0, 129);
+}
+
+.second {
+    background: #A300E6;
+}
+
+.third {
+    background: #6B00FF;
+}
+
+.fourth {
+    background: #009200;
+}
+
+.fifth {
+    background: #EDFF00;
+}
+
+.sixth {
+    background: #FE9000;
+}
+
+.seventh {
+    background: rgb(255, 0, 0);
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh {
+
+    height: 200px;
+
+}
+
+@media screen and (max-width:600px) {
+    body {
+        flex-direction: column;
+
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+
+
+    .first,
+    .second, .sixth,
+    .seventh  {
+        width: 100%;
+    }
+
+
+
+    .third,
+    .fourth,
+    .fifth {
+        width: 33.33%;
+
+    }
+}
+
+
+@media screen and (min-width:801px) {
+
+
+
+    .first,
+    .second {
+        width: 50%;
+    }
+
+    .third,
+    .fourth,
+    .fifth {
+        width: 33.33%;
+
+    }
+
+    .sixth,
+    .seventh {
+        width: 50%;
+    }
+
+
+} */
+
+
+
+
+/* Martina's code */
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+section {
+    width: 100%;
+    flex-wrap:wrap;
+}
+
+
+
+/* mobile first */
+
+=======
+/* mobile first */
+body {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+section {
+    height: 100px;
+    width: 100%;
+}
+
+>>>>>>> b0ba84e195ca8ea4fff2cd3be2f6a3ede53d57df
+.first {
+    background: #8A0081;
+}
+
+.second {
+    background: #A300E6;
+}
+
+.third {
+    background: #6B00FF;
+}
+
+.fourth {
+    background: #009200;
+}
+
+.fifth {
+    background: #EDFF00;
+}
+
+.sixth {
+    background: #FE9000;
+}
+
+.seventh {
+    background: #FF0000;
+}
+
+<<<<<<< HEAD
+
+
+@media screen and (min-width: 601px) {
+
+
+
+=======
+@media screen and (min-width: 601px) {
+    /* div {
+        display: flex;
+        width: 100%;
+    } */
+>>>>>>> b0ba84e195ca8ea4fff2cd3be2f6a3ede53d57df
+
+    .third,
+    .fourth,
+    .fifth {
+        width: 33.33%
+    }
+<<<<<<< HEAD
+
+}
+
+
+@media screen and (min-width:801px) {
+
+
+   
+=======
+}
+
+@media screen and (min-width: 801px) {
+    /* body {
+        flex-direction: row;
+    } */
+>>>>>>> b0ba84e195ca8ea4fff2cd3be2f6a3ede53d57df
+
+    section {
+        width: 50%;
+    }
+<<<<<<< HEAD
+
+  
+=======
+>>>>>>> b0ba84e195ca8ea4fff2cd3be2f6a3ede53d57df
+}

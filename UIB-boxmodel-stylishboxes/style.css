@@ -1,0 +1,77 @@
+<<<<<<< HEAD
+*{
+    margin-left:15px;
+    text-align:left;
+
+}
+
+.fake-box article {
+    padding-top: 28px;
+}
+.fake-box {
+    position: relative;
+    
+    width: 300px;
+    padding-top:25px;
+    margin-bottom: 300px;
+    padding-left: 18px;
+    
+    
+}
+
+.fake-box:before, .fake-box:after {
+    content: '';
+  position: absolute;
+  border: 1px  solid black;
+  
+  width: 300px;
+  height:325px;
+    
+   
+=======
+section {
+    border: 1px solid black;
+    box-shadow: 5px 5px 11px black;
+    display: inline-block;
+    margin-right: 20px;
+    width: 20%;
+}
+
+article {
+    margin: 10px;
+}
+
+.fake-box {
+    position: relative;
+    border: none;
+    box-shadow: none;
+    display: block;
+    height: 200px;
+    padding: 40px; 
+}
+
+.fake-box:before, .fake-box:after {
+    border: 1px solid black;
+    content: ""; /* make the styling here visible */
+    position: absolute;
+    width: 330px;
+    height: 160px;
+
+>>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
+}
+
+.fake-box:after {
+    left: 30px;
+    top: 45px;
+    
+}
+
+.info-box {
+    display: inline-block;
+    width: 30%;
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid black;
+    padding: 2px;
+    margin-right:3px;
+
+}
