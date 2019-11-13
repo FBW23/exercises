@@ -1,0 +1,62 @@
+body {
+   
+    word-wrap: break-word !important;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    margin: 0 auto;
+}
+nav {
+    background-color:black;
+    margin-top: 20px;
+ 
+ 
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+    background-color: black;
+}
+nav a {
+    display: block;
+    padding: 0px 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: darkolivegreen;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
+nav ul li:hover>ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 200vh;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: darkolivegreen;
+    border: 1px solid black;
+}
+
+.drop a:hover {
+    transition: 1s ease-in-out;
+    background: white;
+    color: black;
+    font-size: 30px;
+
+}
