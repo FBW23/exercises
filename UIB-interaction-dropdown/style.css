@@ -15,26 +15,27 @@ ul {
 
 li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 16px 10px;
     color: white;
 }
 
 
-li,
-.submenu {
-    line-height: 50px;
-}
-
-.submenu {
+.submenu, .submenu3 {
     display: none;
     position: absolute;
     top: 50px;
     left: 0;
 }
 
+/* .submenu3{
+    
+    left:200px;
+} */
+
 
 .submenu li,
 .mainmenu li:hover .submenu,
+ :hover .submenu3 li,
 .submenu:hover {
     display: block;
     width: 100%;

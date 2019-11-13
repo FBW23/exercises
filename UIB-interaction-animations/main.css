@@ -21,7 +21,26 @@ div {
   animation: first 2s infinite alternate-reverse;
 }
 
-@keyframes strobe_1 {
+.strobe_2 {
+  background-color: red;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_3 {
+  background-color: blue;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_4 {
+  background-color: green;
+  animation: first 2s infinite alternate-reverse;
+}
+.strobe_5 {
+  background-color: orange;
+  animation: first 2s infinite alternate-reverse;
+}
+
+/* @keyframes strobe_1 {
   from,to {
     background-color: yellow;
   }
@@ -29,4 +48,26 @@ div {
   50% {
     background-color: transparent;
   }
+} */
+
+body{
+  background:black;
 }
+
+
+@keyframes fade_in{
+0% {opacity:1;}
+50% {opacity:0;}
+100% {opacity:1;}
+
+}
+
+div:hover  {
+  animation-name: fade_in;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  
+
+}
+
+
