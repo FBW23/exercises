@@ -3,3 +3,31 @@ body, html {
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+li {
+    display: inline-block;
+    background: turquoise;
+    padding: 7px;
+}
+
+ li:hover {
+    background: red;
+    animation-name: kenburns-top;
+    animation-duration: 1s;
+}
+
+@keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
