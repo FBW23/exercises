@@ -19,14 +19,17 @@ section {
     background-color: purple;
 }
 
-.task-two{background-image:url(assets/beach.jpg);
+.task-two {
+    background-image: url(assets/beach.jpg);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    width:700px;
-    height:500px;
+    width: 700px;
+    height: 500px;
 }
-.task-three {background-image:url(assets/smiley.jpg);
-    width:410px;
-    height:410px;
+
+.task-three {
+    background-image: url(assets/smiley.jpg);
+    width: 410px;
+    height: 410px;
     transform: rotate(180deg);
 
 }
