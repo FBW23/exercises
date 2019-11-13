@@ -1,21 +1,18 @@
 body {
-    font-family: Lato, sans-serif;
-    margin: 1px;
-    
+    margin: 1px
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 0;  /*height: 100% ;  for left right*/
+    position: fixed;
+    overflow-x: hidden;
     left: 0;
-    overflow-y: hidden;     /* if you want to slide the menu left-right Use this value  (overflow-x: hidden)instead of the current one , among with the second script */
-    position: fixed; 
     top: 0;
-    width: 100% ; /*width= 0 ;   for left right*/
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
     z-index: 1;
-    transition: 0.5s; 
 }
-
 .overlay-content {
     position: relative;
     top: 25%;
@@ -23,7 +20,10 @@ body {
     text-align: center;
     margin-top: 30px;
 }
-
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -32,12 +32,6 @@ body {
     display: block;
     transition: 0.4s;
 }
-
-.overlay a:hover,
-.overlay a:focus {
-    color: #f1f1f1;
-}
-
 .overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -45,12 +39,15 @@ body {
     font-size: 60px;
 }
 
+
+
 span {
     cursor: pointer;
 }
+span :active .overlay{
+    
 
-
-
+}
 
 /* @media screen and (max-height:450px) {
     .overlay a {

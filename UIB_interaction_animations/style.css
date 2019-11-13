@@ -2,4 +2,50 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+    font-size: 1.1em;
+}
+
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 3px;
+    background-color: #000;
+    margin: 4px;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.p1 {
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: 40px
+}
+li a:hover {
+    color: lime;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: coral;
+    padding: 2px;
+    font-size: 1.4em;
+    transition-duration: 100ms;
+
+}
+
+li:active {
+    color: darkorange;
+}
+
+li:hover+p {
+    visibility: visible;
+    color: darkslategrey;
+    transition-duration: 100ms;
+    font-size: 1.2em;
+
 }
