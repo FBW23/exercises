@@ -16,17 +16,39 @@ div {
   width: 20%;
 }
 
-.strobe_1 {
+.strobe_1:hover {
   background-color: yellow;
-  animation: first 2s infinite alternate-reverse;
+  animation: fade 0.2s alternate-reverse infinite;
 }
 
-@keyframes strobe_1 {
-  from,to {
-    background-color: yellow;
+.strobe_2:hover {
+  background-color: blue;
+  animation: fade 0.2s alternate-reverse infinite;
+}
+
+.strobe_3:hover {
+  background-color: darkred;
+  animation: fade 0.2s alternate-reverse infinite;
+}
+
+.strobe_4:hover {
+  background-color: deeppink;
+  animation: fade 0.2s alternate-reverse infinite;
+
+}
+
+.strobe_5:hover {
+  background-color: darkviolet;
+  animation: fade 0.2s alternate-reverse infinite;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+
   }
 
-  50% {
-    background-color: transparent;
+  to {
+    opacity: 0;
   }
 }
