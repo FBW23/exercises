@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li {
+    display: inline-block;
+    background-color: aqua;
+    padding: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+li:hover {
+    animation-name: moveup;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+@keyframes moveup {
+    0% {
+        background-color: aqua;
+    }
+    100% {
+        top: -5px;
+        background-color: red;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+}
