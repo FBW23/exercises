@@ -2,14 +2,17 @@ th{
     background: #888888;
 }
 tr:nth-child(2n+1) td{
-    background: #c0c0c0
+    background: #c0c0c0;
 }
 tr:nth-child(2n) td{
-    background:#efefef
+    background:#efefef;
 }
 td, th{
     padding: 7px;
 }
 tr:nth-child(3n) td:nth-child(2){
     background: #ffbbbb;
+}
+td , th::first-letter{
+    text-transform: capitalize;
 }
