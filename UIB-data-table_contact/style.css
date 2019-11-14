@@ -19,16 +19,23 @@ tr:nth-child(even) {
     background: lightgrey;
 }
 
+tfoot:nth-child(even)
+{
+    background: lightgrey;
+}
+
 
 
 .amount {
     text-align: right;
 }
 
+
 tr,
 td,
 th {
     border: lightgrey 0.5px solid;
     padding:0 7px;
-    
+    height:30px;
 }
+
