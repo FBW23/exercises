@@ -6,7 +6,6 @@
 
 
 .burger{
-    /* height: px; */
     width:40px;
 }
 
@@ -19,19 +18,34 @@
 
 .burger:hover.burger li{
     background:red;
-
 }
 
-#wrap{
-    /* display:none; */
+.burger:hover ~.wrap{
+    display:block;
+ }
+
+body:hover .wrap{
+    display:block;
+}
+
+
+.wrap{
+    display:none;
+    opacity:0.9;
     background:black;
     color:white;
     position:absolute;
     top:0;
     width:100%;
     height:100%;
+    /* z-index:1; */
+ }
 
-}
+ 
+
+ 
+
+ 
 .mainmenu{
     font-size:2em;
     display:block;
@@ -41,31 +55,28 @@
     transform:translate(-50%,-50%)
 }
 
+.mainmenu li{
+    list-style-type: none;
+    padding: 5px;
+}
+
 .mainmenu li:hover {
     opacity:0.6;
     padding-bottom:25px;
-
 }
 
 .mainmenu li:hover .submenu{
     display:block;
-}
+ }
 
-.mainmenu li{
-    list-style-type: none;
-    padding: 5px;
-    
-    
-}
+
 
 .submenu{
-    position:absolute;
+   position:absolute;
     left:90px;
     top:0;
     display:none;
-    
-    
-}
+ }
 
 .submenu li{
     width:220px;
@@ -73,10 +84,9 @@
     
 
 }
-.burger li:hover #wrap{
-    animation-duration: 3s;
-  animation-name: slidein;
-}
+
+
+
 
 p{
     position:absolute;
@@ -85,31 +95,18 @@ p{
     font-size:40px;
     text-decoration:none;
     color:white;
+    z-index:1;
 }
 
 p:hover{
     opacity:0.6;
-    
-    
 }
 
-p:hover .mainmenu{
-    color:blue;
+p:hover +.wrap{
+    display:none;
 }
 
-@keyframes menu{
 
-    from {
-        margin-left: 100%;
-        width: 300%; 
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-
-}
 
 
 
