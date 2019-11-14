@@ -1,0 +1,22 @@
+* {
+    margin: 20px;
+}
+
+table {
+    border: 3px solid gray;
+
+}
+
+td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+th {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+img {
+    width: 300px;
+}
