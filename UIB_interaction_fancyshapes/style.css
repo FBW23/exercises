@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 html,
 body {
+=======
+html, body {
+>>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
     padding: 0;
     margin: 0;
 }
 
 section {
+<<<<<<< HEAD
     background-color: lightblue;
     margin-top: 10px;
 }
@@ -32,4 +37,7 @@ section {
     height: 410px;
     transform: rotate(180deg);
 
+=======
+    margin-top: 10px;
+>>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
 }

@@ -21,13 +21,14 @@ ul li:hover {
 }
 
 @keyframes exu {
-    0% {
-        transform: scale(0.5);
-        transform: scale(0.5);
+    0% {transform: scale(1);
+        transform: scale(1);
+        
     }
 
-    100% {
-        transform: scale(1);
-        transform: scale(1);
+    50% {
+        
+        transform: scale(2);
+        transform: scale(2);
     }
 }
