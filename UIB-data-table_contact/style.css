@@ -2,6 +2,7 @@ table {
     border: 0.5px solid #DCDCDC;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
 }
 
 tr:nth-child(2n), tfoot {
@@ -10,22 +11,10 @@ tr:nth-child(2n), tfoot {
 
 td, th {
     border: 1px solid #DCDCDC; 
-    font-size: 14px;
+    /* font-size: 14px; */
     padding: 6px 6px;
 }
 
-.amount {
-    direction: rtl;
-}
-
-.company {
-    width: 500px;
-}
-
-.contact {
-    width: 400px;
-}
-
-.amount-column {
-    width: 200px;
+td:nth-last-child(1) {
+    text-align: end;
 }
