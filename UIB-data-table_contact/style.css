@@ -4,8 +4,8 @@ table {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     font-size: 20px;
-
 }
+ 
 
 td:nth-child(3) {
     text-align: right;
@@ -14,8 +14,8 @@ td:nth-child(3) {
 .blah {
     text-align: right;
 }
-
-tr:nth-child(even),
+th {background-color:white;}
+tr:nth-child(odd),
 tfoot {
     background-color: #dcdcdc;
 }

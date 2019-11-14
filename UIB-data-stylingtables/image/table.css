@@ -1,0 +1,22 @@
+table {
+    border: 1px solid black;
+    display: table;
+    padding-left: 10px solid black;
+}
+td {
+    border-left: 5px solid grey;
+}
+
+
+tr:nth-child(even) td:first-child {
+    border-left-color: #cc181b;
+}
+
+tr:nth-child(odd) td:first-child {
+    border-left-color: #449d45;
+}
+
+
+
+/*tr:first-child:not(odd) {border-left:2px solid#449d45}
+td {border-left:2px solid#cc181d}
