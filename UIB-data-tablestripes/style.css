@@ -1,16 +1,21 @@
-table{
-    background:light-grey;
+
     
-}
+
 
 thead{
     color:white;
+    background:black;
 }
 
 tr:nth-child(odd) td {
-    background:grey;
-})
+    background:blue;
+}
 
-tr:nth-child(odd) td {
-    background:darkgrey;
+tr:nth-child(even) td {
+    background:darkgray;
+}
+
+tr:nth-child(3n)  td:nth-child(2) {
+
+    background:red;
 }
