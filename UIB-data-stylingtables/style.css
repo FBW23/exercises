@@ -10,16 +10,13 @@ td{
 
 
 tr td:first-child {
-    border-left:4px solid blue;
+    border-left-color: blue;
 }
 
-tr:nth-child(2n) td
-{
-    border-left: 4px solid yellow;
-   
-
-}
+tr:nth-child(2n) td{
+    border-left-color:yellow;
+ }
 
 tr td:not(:first-child){
-    border-left:4px solid grey;
+    border-left-color: grey;
 }
