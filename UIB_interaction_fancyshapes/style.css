@@ -5,6 +5,7 @@ html, body {
 
 section {
     margin-top: 10px;
+<<<<<<< HEAD
 }
 .task-one { 
     margin-top: 10px;
@@ -32,4 +33,6 @@ section {
 .task-three {
     position: absolute;
     transform: rotate(180deg);
+=======
+>>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
 }
