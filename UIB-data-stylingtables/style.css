@@ -1,0 +1,19 @@
+td {
+    padding: 8px;
+}
+
+td:last-child {
+    border-left: 5px solid grey;
+}
+
+td:nth-child(2) {
+    border-left: 5px solid grey;
+}
+
+td:first-child {
+    border-left: 5px solid #CC181B;
+}
+
+tr:nth-child(even) td:first-child {
+    border-left: 5px solid #449d45;
+}
