@@ -1,0 +1,34 @@
+
+table{
+    height:200px;
+    width:300px;
+}
+
+tr, td{
+    height:30px;
+    padding-left:10px;
+
+}
+
+tbody tr, td{
+    
+    background:#c0c0c0;
+}
+thead{
+    color:#efefef;
+    background:#888888;
+}
+
+tr:nth-child(odd) td {
+    background:#c0c0c0;
+}
+
+tr:nth-child(even) td{
+    background:#efefef;
+}
+
+
+tr:nth-child(3n) td:nth-child(2){
+    background: #ffbbbb;
+}
+
