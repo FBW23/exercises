@@ -1,34 +1,21 @@
 
-table{
-    height:200px;
-    width:300px;
-}
-
-tr, td{
-    height:30px;
-    padding-left:10px;
-
-}
-
-tbody tr, td{
     
-    background:#c0c0c0;
-}
+
+
 thead{
-    color:#efefef;
-    background:#888888;
+    color:white;
+    background:black;
 }
 
 tr:nth-child(odd) td {
-    background:#c0c0c0;
+    background:blue;
 }
 
-tr:nth-child(even) td{
-    background:#efefef;
+tr:nth-child(even) td {
+    background:darkgray;
 }
 
+tr:nth-child(3n)  td:nth-child(2) {
 
-tr:nth-child(3n) td:nth-child(2){
-    background: #ffbbbb;
+    background:red;
 }
-
