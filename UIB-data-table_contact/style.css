@@ -3,26 +3,28 @@ table {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-tbody tr:nth-child(2n+1) {
+tbody tr:nth-child(2n+1),
+tfoot {
     background-color: #dcdcdc;
 }
 
-thead {
-    text-align: center;
-    font-weight: 800;
+thead th {
     padding: 7px;
 }
 
 table,
-tr {
+tr,
+td,
+th
+    {
     border: 1px solid #dcdcdc;
     border-collapse: collapse;
 }
 
 td {
-    text-align: left;
     padding: 5px;
 }
-tr td:last-child{
+
+td:last-child {
     text-align: right;
 }
