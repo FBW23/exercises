@@ -54,14 +54,14 @@ nav ul {
     }
     
     .everlib-logo-first-bar {
-      height: 40px;
+      height: 6px;
       background: #0f87ae;
       transition: 0.5s;
       animation-delay: -1.9s;
     }
     
     .everlib-logo-second-bar {
-      height: 48px;
+      height: 68px;
       background: #b75690;
       animation-delay: -2.9s;
     }
