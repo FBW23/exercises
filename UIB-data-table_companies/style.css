@@ -16,3 +16,8 @@ img {
 .bold {
     font-weight: bold;
 }
+
+.amount {
+    color: red;
+    direction: rtl;
+}
