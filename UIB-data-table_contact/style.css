@@ -15,13 +15,13 @@ table {
     border-collapse: collapse;
 }
 
-tr:nth-child(even) {
+tfoot,tr:nth-child(odd) {
     background: lightgrey;
 }
 
-tfoot:nth-child(even)
+ thead tr:nth-child(odd)
 {
-    background: lightgrey;
+    background: white;
 }
 
 
