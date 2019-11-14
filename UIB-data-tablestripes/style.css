@@ -1,0 +1,27 @@
+table{
+    background:light-grey;
+    
+}
+
+thead{
+    color:#efefef;
+}
+
+tr:nth-child(odd) td {
+    background:#c0c0c0;
+}
+
+tr:nth-child(even) td {
+    
+    background:#ffbbbb;
+}
+
+tr:nth-child(3n) td:nth-child(2){
+    background:blue;
+}
+
+
+tr:not(nth-child){
+    background:#888888;
+   
+}
