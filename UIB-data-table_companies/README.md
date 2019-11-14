@@ -16,4 +16,4 @@
 4.  Do NOT use deprecated HTML attributes. Style using CSS.
 
 * Mock-up Image
-![companies-table](/image/mockup.png)
+![companies-table](./image/mockup.png)
