@@ -9,4 +9,4 @@
 3.  Do NOT use deprecated HTML attributes. Style using CSS.
 4.  Used colors are; #c0c0c0, #cc181b, #449d45.
 
-![mockup-image](/image/mockup.jpg)
+![mockup-image](./image/mockup.jpg)
