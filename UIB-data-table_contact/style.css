@@ -1,0 +1,23 @@
+table {
+    border: 1px solid #DCDCDC;
+    margin: 0 auto;
+    margin-top: 300px;
+    width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+    border: 1px solid #DCDCDC;
+    padding: 10px;
+}
+
+tr:nth-child(2n) {
+    background-color: #DCDCDC;
+}
+
+td:nth-last-child(1) {
+    text-align: right;
+}
