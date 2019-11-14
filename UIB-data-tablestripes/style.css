@@ -4,24 +4,13 @@ table{
 }
 
 thead{
-    color:#efefef;
+    color:white;
 }
 
 tr:nth-child(odd) td {
-    background:#c0c0c0;
-}
+    background:grey;
+})
 
-tr:nth-child(even) td {
-    
-    background:#ffbbbb;
-}
-
-tr:nth-child(3n) td:nth-child(2){
-    background:blue;
-}
-
-
-tr:not(nth-child){
-    background:#888888;
-   
+tr:nth-child(odd) td {
+    background:darkgrey;
 }
