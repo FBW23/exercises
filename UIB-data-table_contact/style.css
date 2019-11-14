@@ -24,7 +24,9 @@ tfoot,tr:nth-child(odd) {
     background: white;
 }
 
-
+/* table:nth-last-child(even) {
+    background:grey;
+} */
 
 .amount {
     text-align: right;
