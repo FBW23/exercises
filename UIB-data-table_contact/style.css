@@ -10,7 +10,8 @@ tr:nth-child(2n), tfoot {
 
 td, th {
     border: 1px solid #DCDCDC; 
-    padding: 3px 3px;
+    font-size: 14px;
+    padding: 6px 6px;
 }
 
 .amount {
