@@ -3,9 +3,9 @@ td {
 }
 
 td:first-child {
-    border-left: 3px solid #cc181b;
+    border-left-color:#cc181b;
 }
 
 tr:nth-child(even) td:first-child {
-    border-left: 3px solid #449d45;
+    border-left-color:#449d45;
 }
