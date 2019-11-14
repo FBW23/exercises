@@ -1,0 +1,26 @@
+table {
+    width: 300px;
+    
+}
+th, tr, td {
+    padding: 5px;
+    
+}
+
+thead {
+    /* background-color: #888888; */
+    text-align: left;
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: #c0c0c0;
+}
+tr:nth-child(even) {
+    background-color: #efefef;
+}
+thead tr th {
+    background-color: #888888;
+    
+}
+tr:nth-child(3n) td:nth-child(2){
+    background: #ffbbbb;
