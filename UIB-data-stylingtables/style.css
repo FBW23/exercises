@@ -1,11 +1,11 @@
+td {
+    border-left: 3px solid #c0c0c0;
+}
+
 td:first-child {
     border-left: 3px solid #cc181b;
 }
 
 tr:nth-child(even) td:first-child {
     border-left: 3px solid #449d45;
-}
-
-td {
-    border-left: 3px solid #c0c0c0;
 }
