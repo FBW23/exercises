@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 html,
 body {
+=======
+html, body {
+>>>>>>> ea6a99cd47f88d950145fae491db5247c05b657a
     padding: 0;
     margin: 0;
 }
 
 section {
     margin-top: 10px;
+<<<<<<< HEAD
 }
 
 .task-one {
@@ -32,4 +37,6 @@ section {
 img {
     transform: rotate(0.5turn);
     
+=======
+>>>>>>> ea6a99cd47f88d950145fae491db5247c05b657a
 }
