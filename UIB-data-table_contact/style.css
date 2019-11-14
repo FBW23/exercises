@@ -5,9 +5,10 @@ table {
     width: 100%;
 }
 
-tr:nth-child(2n), tfoot {
+tr:nth-child(odd) {
     background-color: #DCDCDC;
   }
+
 
 td, th {
     border: 1px solid #DCDCDC; 
