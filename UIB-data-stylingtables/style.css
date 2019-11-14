@@ -1,0 +1,25 @@
+table{
+    width:300px;
+    
+}
+
+td{
+    padding :5px 10px;
+    border-left: 4px solid grey;
+}
+
+
+tr td:first-child {
+    border-left:4px solid blue;
+}
+
+tr:nth-child(2n) td
+{
+    border-left: 4px solid yellow;
+   
+
+}
+
+tr td:not(:first-child){
+    border-left:4px solid grey;
+}
