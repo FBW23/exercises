@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 html,
 body {
+=======
+html, body {
+>>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
     padding: 0;
     margin: 0;
 }
 
 section {
     margin-top: 10px;
+<<<<<<< HEAD
 }
 .task-one {
     background: lightskyblue;
@@ -30,4 +35,6 @@ section {
 
 img{
     transform: rotate(180deg);
+=======
+>>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
 }
