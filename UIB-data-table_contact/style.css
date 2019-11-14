@@ -14,10 +14,14 @@ td {
     padding: 10px;
 }
 
-tr:nth-child(2n) {
+tr:nth-child(2n+1) {
     background-color: #DCDCDC;
 }
 
 td:nth-last-child(1) {
     text-align: right;
+}
+thead tr th {
+    background-color: white;
+    
 }
