@@ -16,7 +16,7 @@ tr:nth-child(odd) {
     background: lightgrey;
 }
 
-#verylongid {
+thead th {
     background: white;
 }
 
