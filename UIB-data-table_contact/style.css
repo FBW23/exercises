@@ -1,0 +1,34 @@
+*{
+    margin:5px;
+    padding:0;
+    
+}
+body{
+    height:100vh;
+}
+
+table {
+    border:1px solid lightgrey;
+    
+    width: 100%;
+    height:250px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background: lightgrey;
+}
+
+
+
+.amount {
+    text-align: right;
+}
+
+tr,
+td,
+th {
+    border: lightgrey 0.5px solid;
+    padding:0 7px;
+    
+}
