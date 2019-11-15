@@ -1,0 +1,21 @@
+
+    
+
+
+thead{
+    color:white;
+    background:black;
+}
+
+tr:nth-child(odd) td {
+    background:blue;
+})
+
+tr:nth-child(odd) td {
+    background:darkgrey;
+}
+
+tr:nth-child(3n)  td:nth-child(2) {
+
+    background:red;
+}
