@@ -1,3 +1,43 @@
+<<<<<<< HEAD
+=======
+*{
+    margin-top:2vh ;
+    
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+.info-1,
+.info-2,
+.info-3 {
+    margin-top:2vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    padding:25px 15px;
+    text-shadow: 1px 1px 1px black;
+    width: 33%;
+    height:175px;
+
+}
+
+h1 {
+    margin:10px;
+}
+
+
+main{
+    margin:10px; 
+}
+
+>>>>>>> 0afe14a7f767f87c1325643021e9c9c467239386
 .info-1 {
     background: url(assets/task2-bg.jpeg) bottom no-repeat;
 }
