@@ -66,3 +66,8 @@ h1 {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
+#category, #pro-start, #pro-end, #textarea {
+    width: 100%;
+}
+
