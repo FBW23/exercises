@@ -12,11 +12,13 @@ form {
 }
 
 .left {
+    margin: 30px 15px;
     font-weight: bold;
     width: 50%;
 }
 
 .right {
+    margin: 30px 15px;
     width: 50%;
     height: 470px;
 }
