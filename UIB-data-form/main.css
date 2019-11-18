@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+fieldset {
+    padding: 10px 10px;
+    display: inline;
+    width: 40%;
+    margin: 20px;
+    line-height: 30px;
+}
+#form1 input, textarea, select {
+    width: 98%;
+}
+ {
+
+}  
+
+#form2 {
+    position: relative;
+    bottom: 177px;
+    height: ;
+}
+#project, #projectEnd {
+    width: 98%;
+
+}
+label,legend {
+    font-weight: bold;
+}
+legend {
+    color: rgb(177, 100, 250);
+}
+header {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+h3 {
+    padding: 8px;
+}
+button { display: block;
+    position: relative;
+    left: 700px;
+    bottom: 180px;
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    box-shadow: green;
+
+}

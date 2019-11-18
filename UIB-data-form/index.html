@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>FORM</title>
+</head>
+<body>
+    <header><h3>Forms</h3></header>
+    <form action="">
+<fieldset id="form1">
+    <legend>Personal Data</legend>
+    <label for="firstName">First Name:</label><br>
+    <input type="text" name="firstName" id="firstName"><br>
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" name="lastName" id="lastName"><br>
+    <label for="street">Street:</label><br>
+    <input type="text" name="street" id="street"><br>
+    <label for="zip">Zip code:</label><br>
+    <input type="text" name="zip" id="zip"><br>
+    <label for="city">City:</label><br>
+    <input type="text" name="city" id="city"><br>
+    <label for="phoneNumber">Phone Number:</label><br>
+    <input type="number" name="phoneNumber" id="phoneNumber"><br>
+    <label for="email">Email:</label><br>
+    <input type="mail" name="email" id="email"><br>
+    <label for="textarea">Comments</label><br>
+    <textarea name="comments" id="" cols="30" rows="5">some text....</textarea>
+
+</fieldset>
+<fieldset id="form2">
+    <legend>Products</legend>
+    <label for="">Web Designer:</label> <br>
+    <input type="radio" name="individual" value="individual" checked> Individual
+    <input type="radio" name="template" value="template"> Template <br>
+    <label for="knowing">Web Development</label><br>
+    <input type="checkbox" name="html" id="html">HTML&CSS <br>
+    <input type="checkbox" name="javaScript" id="javaScript">JavaScrip <br>
+    <input type="checkbox" name="mongo" id="mongo">MongoDB<br>
+    <label for="project">Project Start:</label><br>
+    <input type="date" name="project" id="project"><br>
+    <label for="date">Project End:</label><br>
+    <input type="date" name="projectEnd" id="projectEnd" ><br>
+    <label for="category">Category</label><br>
+    <select name="category" id="category">
+    <option value="personal" checked>Personal</option>
+    <option value="study">Study</option>
+    <option value="work">Work</option>
+    <option value="business">Business</option>
+</select>
+</fieldset>
+<button type="submit">Order our Service</button>
+    </form>
+    
+    
+</body>
+</html>
