@@ -1,0 +1,51 @@
+* {
+    font-family: sans-serif;
+}
+
+header {
+    font-weight: 700;
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    margin: 0%;
+}
+
+fieldset {
+    width: 45%;
+    float: left;
+    margin: 16px;
+}
+
+legend {
+    font-family: sans-serif;
+    color: purple;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: green;
+    width: 10%;
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 20px; 
+}
