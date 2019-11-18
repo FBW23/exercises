@@ -15,15 +15,16 @@ form {
     margin: 30px 15px;
     font-weight: bold;
     width: 50%;
+    height: 550px;
 }
 
 .right {
     margin: 30px 15px;
     width: 50%;
-    height: 470px;
+    height: 450px;
 }
 
-.right p {
+.right p{
     font-weight: bold;
 }
 
@@ -63,3 +64,6 @@ h1 {
     width: 100%;
 }
 
+#textArea {
+    height: 100px;
+}
