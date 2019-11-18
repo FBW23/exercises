@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-     <title>Document</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <header><h3>FORMS</h3></header>
-    <main>
-    <form class="first">
+    <header>
+        <h3>FORMS</h3>
+    </header>
+
+    <form >
         <fieldset>
             <legend>
                 <h2>Personal Data</h2>
@@ -35,9 +37,9 @@
             <label for="comments">Comments:</label>
             <textarea placeholder="Tell us more about important colors, etc ." id="comments"></textarea>
         </fieldset>
-    </form>
-    <form class="second">
-        <fieldset>
+
+
+        <fieldset class="second">
             <legend>
                 <h2>Products</h2>
             </legend>
@@ -46,12 +48,12 @@
             <input type="radio" name="design" value="Individual" id="ind">Individual
             <input type="radio" name="design" value="Template" id="tem">Template<br>
             <label for="webdevelopment">Web Development:</label>
-            <input type="checkbox" name="checkbox 1" value="checkbox" id="checkbox1">
+            <input type="checkbox" name="checkbox1" value="checkbox" id="checkbox1">
             HTML & CSS<br>
-            <input type="checkbox" name="checkbox 2" value="checkbox">
+            <input type="checkbox" name="checkbox2" value="checkbox">
             JavaScript<br>
-            <input type="checkbox" name="checkbox 3" value="checkbox">
-           MongoDB<br><br>
+            <input type="checkbox" name="checkbox3" value="checkbox">
+            MongoDB<br><br>
             <label for="projectstart">Project start:</label>
             <input type="date" id="projectstart">
             <label for="projectend">Project end:</label>
@@ -63,9 +65,10 @@
                 <option value="down">down </option>
             </select>
         </fieldset>
+
+        <button type="submit">Order our services</button>
     </form>
-    <button type="submit">Order our services</button>
-</main>
+    
 </body>
 
 </html>

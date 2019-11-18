@@ -21,18 +21,20 @@ input[type="radio"] {
     width: 1%;
 }
 
-main {
+form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
 }
 
 button {
     background: green;
     grid-column: 2;
-    width: 27%;
     position: relative;
+    width: 23%;
     height: 150%;
-    top: -170px;
+    right: 0.1rem;
+    top: -10rem;
     border-radius: 7px;
 }
 
@@ -48,4 +50,8 @@ select {
 
 textarea {
     width: 98%;
+}
+
+.second {
+    height: 70%;
 }
