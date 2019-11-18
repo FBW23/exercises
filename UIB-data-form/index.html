@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <form>
+        <fieldset class="big">
+            <legend>Personal Data</legend>
+            <br>
+            <label for="firstName" class="title">First Name:</label>
+            <input type="text" name="firstName" id="firstName"><br><br>
+
+            <label for="lastName" class="title">Last Name:</label>
+            <input type="text" name="lastName" id="lastName"><br><br>
+
+            <label for="street" class="title">Street:</label>
+            <input type="text" name="street" id="street"><br><br>
+
+            <label for="zipcode" class="title">Zipcode:</label>
+            <input type="text" name="zipcode" id="zipcode"><br><br>
+
+            <label for="city" class="title">City:</label>
+            <input type="text" name="city" id="city"><br><br>
+
+            <label for="phone" class="title">Phone:</label>
+            <input type="text" name="phone" id="phone"><br><br>
+
+            <label for="email" class="title">Email:</label>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="textarea" class="title">Comments:</label><br>
+            <textarea name="textarea" id="textarea", placeholder="Tell us more about important colors, etc."></textarea><br>
+    
+        </fieldset>
+
+
+        <fieldset class="small">
+            <legend>Products</legend>
+            <br>
+            
+            <label for="webdesign" class="title">Web Design:</label><br>
+
+            
+            <input type="radio" class="webdesign" name="webdesign">
+            <label for="webdesign">Individual</label>
+            <input type="radio" class="webdesign" name="webdesign">
+            <label for="webdesign">Template</label>
+        
+            <br><br>
+
+            <label for="webdevelopment" class="title">Web Development:</label><br>
+            <input type="checkbox" id="html" name="html">
+            <label for="webdevelopment">HTML & CSS</label><br>
+            <input type="checkbox" id="javascript" name="javascript">
+            <label for="webdevelopment">JavaScript</label><br>
+            <input type="checkbox" id="mongoDB" name="mongoDB">
+            <label for="webdevelopment">MongoDB</label><br><br>
+
+            <label for="start" class="title">Project Start:</label><br>
+            <input type="date" id="start" name="project-start"><br><br>
+
+            <label for="end" class="title">Project End:</label><br>
+            <input type="date" id="end" name="project-end"><br><br>
+
+            <label for="category" class="title">Category:</label><br>
+            <select name="category" id="category">
+            <option value="personal">Personal</option>
+            <option value="professional">Professional</option>
+            <option value="holidays">Holidays</option>
+            <option value="mindyourownbusiness">Mind your own business</option><br>
+
+        </fieldset>
+        
+        <input type="submit" value="Order our services" id="button">
+
+
+    </form>
+
+
+</body>
+</html>
