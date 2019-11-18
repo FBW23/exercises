@@ -3,7 +3,8 @@ body {
 }
 
 h1 {
-    padding: 15px 20px
+    margin: auto 0;
+    padding: 10px 20px
 }
 
 form {
