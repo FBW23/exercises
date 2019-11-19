@@ -27,8 +27,8 @@ body {
 .gridResForm {
     background-color: #cccccc;
     color: black;
-    margin: 0 auto;
     height: 21rem;
+    margin: 0 auto;
     opacity: 80%;
     text-align: center;
     width: 31.8rem;
@@ -54,8 +54,8 @@ label {
 input {
     background: white;
     font-style: italic;
+    padding-left: 3px;
     width: 51%;
-    padding-left: 3px    
 }
 
 .button {
