@@ -36,6 +36,7 @@ form{
 h1{
     text-align:center;
     margin-top:3vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -57,10 +58,10 @@ button{
 }
 
 
-span{
+span, button{
     margin-left:45%;
     position:relative;
-    top:20px;
+    top:10vh;
 
 
 
