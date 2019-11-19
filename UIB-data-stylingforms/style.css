@@ -54,7 +54,8 @@ label {
 input {
     background: white;
     font-style: italic;
-    width: 52%;
+    width: 51%;
+    padding-left: 3px    
 }
 
 .button {
@@ -64,4 +65,5 @@ input {
     font-style: italic;
     height: 30px;
     margin-top: 15px;
+    width: 51%;
 }
