@@ -1,14 +1,15 @@
 * {
     font-family: "Helvetica Neue", Arial, sans-serif;
-    /* margin: 0 auto; */
+    margin: 0;
 }
 
 form {
     display: flex;
 }
 
-fieldset {    
+fieldset {
     flex-direction: row;
+    margin: 0.5em;
     width: 50%;
 }
 
@@ -20,7 +21,17 @@ fieldset {
     height: 350px;
 }
 
-#textarea, #firstName, #lastName, #street, #city, #zipcode, #phone, #email, #start, #end, select {
+#textarea,
+#firstName,
+#lastName,
+#street,
+#city,
+#zipcode,
+#phone,
+#email,
+#start,
+#end,
+select {
     width: 100%;
 }
 
@@ -45,8 +56,4 @@ legend {
 header {
     background-color: rgb(54, 53, 53);
     color: darkgray;
-}
-
-label {
-    margin-top: 50px;
 }
