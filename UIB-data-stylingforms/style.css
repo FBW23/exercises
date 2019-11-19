@@ -47,11 +47,13 @@ label {
     background-color: black;
     width: 50%;
     margin: 0 auto;
+    font-size: 14px;
 }
 
 input {
     background: white;
     width: 52%;
+    font-style: italic;
 }
 
 .button {
