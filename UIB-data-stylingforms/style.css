@@ -4,8 +4,8 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     background-position: top;
-    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
 .gridLogo {
@@ -28,7 +28,7 @@ body {
     background-color: #cccccc;
     color: black;
     margin: 0 auto;
-    height: 22rem;
+    height: 21rem;
     opacity: 80%;
     text-align: center;
     width: 31.8rem;
