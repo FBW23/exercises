@@ -2,19 +2,30 @@ table {
     border: 1px solid black;
     display: table;
     padding-left: 10px solid black;
-}
-td {
-    border-left: 5px solid grey;
+    background-color: lightgray;
 }
 
-
-tr:nth-child(even) td:first-child {
-    border-left-color: #cc181b;
+td:nth-child(even) {
+    background-color: gray;
 }
 
-tr:nth-child(odd) td:first-child {
-    border-left-color: #449d45;
+td:nth-child(odd) {
+    background-color: gray;
 }
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+tr:nth-child(3) td:last-child {
+    background-color: #cc181b;
+}
+
+tr:nth-child(5) td:last-child {
+    background-color: #cc181b;
+}
+
 
 
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <header>Forms </header>
+</head>
+
+<body>
+    <form>
+        <fieldset class="personal">
+            <legend class="purple">Personal Data</legend>
+            <label for="Firstname">First Name:</label> <br>
+            <input type="text" name="Firstname" id="firstName"><br>
+            <label for="lastname">Last Name:</label> <br>
+            <input type="text" name="lastname" id="lastname"><br>
+            <label for="street">Street:</label><br>
+            <input type="text" name="street" id="street"><br>
+            <label for="zipcode">Zipcode:</label><br>
+            <input type="number" name="zipcode" id="zipcode"><br>
+            <label for="city">City:</label><br>
+            <input type="text" name="city" id="city"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="number" name="phone" id="phone"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email"><br>
+            <label for="textarea">Comments:</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="10"
+                placeholder="Tell us more about important colors,etc"></textarea>
+
+
+
+        </fieldset>
+
+        <fieldset class="Products">
+            <legend class="purple">Products</legend>
+            <label for="webdesign">Web-design:</label> <br>
+            <input type="radio" name="Web-design" value="individual" checked>Individual
+            <input type="radio" name="Web-design" value="template">Template
+
+
+
+            <legend>Web Development:</legend>
+            <input type="checkbox" name="html">
+            <label for="Html">HTML&CSS</label>
+            <br><input type="checkbox" name="JavaScript">
+            <label for="JavaScript"> JavaScript <br>
+                <input type="checkbox" name="Mondodb">
+                <label for="MongoDB">MongoDB</label> <br>
+
+
+                <label for="Ps">Project Start:</label>
+                <br> <input type="date" name="ps" id="ps">
+                <br> <label for="Ps">Project end:</label>
+                <br> <input type="date" name="pe" id="pe">
+
+
+
+                <legend>Category:</legend>
+                <select name="Personal" id="Personal">
+                    <option value="personal">Personal</option>
+                    <option value="webdev">Web-Dev</option>
+                </select>
+
+        </fieldset>
+
+        <button type="button">Order our Services</button>
+    </form>
+
+</body>
+
+</html>
