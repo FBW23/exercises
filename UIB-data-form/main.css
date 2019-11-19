@@ -59,7 +59,7 @@ h3 {
     padding: 8px;
 }
 
-button {
+button, button:focus{
     display: block;
     position: relative;
      left: 760px;
@@ -73,6 +73,7 @@ button {
     cursor: pointer;
     text-shadow: 2px 1px 1px black;
     font-size: 15px;
+    border-style: none;
 
 
 }
@@ -87,4 +88,4 @@ input:focus, textarea:focus {
 }
 span:hover {
     font-size: 17px;
-}
+}Order our Service
