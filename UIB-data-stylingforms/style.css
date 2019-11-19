@@ -67,3 +67,10 @@ input {
     margin-top: 15px;
     width: 51%;
 }
+
+footer {
+    color: grey;
+    font-size: 14px;
+    margin: 24px 12px;
+    text-align: center;
+}
