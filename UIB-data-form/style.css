@@ -56,11 +56,6 @@ h1 {
     background-color: #5cc31a;
 }
 
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
 #category, #pro-start, #pro-end, #textArea {
     width: 100%;
 }
@@ -68,3 +63,22 @@ h1 {
 #textArea {
     height: 100px;
 }
+/* 
+.square {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: darkkhaki;
+}
+
+.elem {
+    border: 3px solid blue;
+}
+
+.elem:hover {
+    border: 3px dotted red;
+    background-color: whitesmoke;
+} */
+
