@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    font-style: italic;
+}
+
+body {
+    background: rgb(29, 31, 34);
+}
+
+.logo {
+    position: relative;
+    top: 30px;
+    left: 18%;
+    width: 70%;
+}
+
+main {
+    width: 40%;
+    height: 90vh;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px auto;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+#firstBox {
+    display: block;
+    height: 110px;
+    border: 6px solid black;
+    text-align: center;
+    padding: 4px;
+}
+
+#reservation p {
+    margin: 15px;
+}
+
+h2,
+h3 {
+    margin: 3px;
+    padding: 4px;
+}
+
+label,
+input,
+button {
+    width: 50%;
+    margin: -3px auto;
+}
+
+#boxes {
+    position: relative;
+    left: 18%;
+    top: 50px;
+}
+
+#reservation,
+#firstBox {
+    background-image: url(/images/transparent_white.png);
+    width: 70%;
+    margin-bottom: 20px;
+
+}
+
+#reservation {
+    height: 270px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    text-align: left;
+    padding: 6px 3px;
+    margin-bottom: -20px;
+}
+
+input {
+    display: block;
+}
+
+button {
+    display: block;
+    padding: 5px;
+    background-color: black;
+    color: White;
+    border-style: none;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    margin: -80px auto;
+} 
