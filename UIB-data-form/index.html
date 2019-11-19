@@ -11,10 +11,10 @@
 
 <body>
     <header>
-        <h3>FORMS</h3>
+       <span>FORMS</span>
     </header>
 
-    <form action="http://google.com" method="get">
+    <form action="http://google.com" method="GET"> 
         <fieldset>
             <legend>
                 <h2>Personal Data</h2>
@@ -31,11 +31,11 @@
             <label for="city">City:</label>
             <input type="text" id="city" name="city">
             <label for="phone">Phone:</label>
-            <input type="tel" pattern="" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
             <label for="comments">Comments:</label>
-            <textarea placeholder="Tell us more about important colors, etc ." id="comments"></textarea>
+            <textarea placeholder="Tell us more about important colors, etc ." id="comments" name="comments"></textarea>
         </fieldset>
 
 
@@ -43,21 +43,21 @@
             <legend>
                 <h2>Products</h2>
             </legend>
-            <label for="webdesign">Web Design:</label>
+            <label for="ind">Web Design:</label>
 
             <input type="radio" name="design" value="Individual" id="ind">Individual
             <input type="radio" name="design" value="Template" id="tem">Template<br>
-            <label for="webdevelopment">Web Development:</label>
-            <input type="checkbox" name="checkbox1" value="checkbox" id="checkbox1">
+            <label for="checkbox1">Web Development:</label>
+            <input type="checkbox" name="checkbox1" value="html" id="checkbox1">
             HTML & CSS<br>
-            <input type="checkbox" name="checkbox2" value="checkbox">
+            <input type="checkbox" name="checkbox2" value="js">
             JavaScript<br>
-            <input type="checkbox" name="checkbox3" value="checkbox">
+            <input type="checkbox" name="checkbox3" value="mDB">
             MongoDB<br><br>
-            <label for="projectstart">Project start:</label>
-            <input type="date" id="projectstart">
-            <label for="projectend">Project end:</label>
-            <input type="date" id="projectend">
+            <label for="projectStart">Project Start:</label>
+            <input type="date" id="projectStart">
+            <label for="projectEnd">Project end:</label>
+            <input type="date" id="projectEnd">
             <label for="category">Category:</label>
             <select id="category" name="category">
                 <option value="personal">personal</option>
