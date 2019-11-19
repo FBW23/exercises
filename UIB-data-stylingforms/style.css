@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,44 +6,65 @@
 
 body {
     text-align: center;
-    height: 130vh;
-    background-size: cover;
-    background-image: url(images/background.jpg);
+    height: 150vh;
+    background: url(images/background.jpg) left top / cover no-repeat;
 }
 
 header {
-    background-image: url(images/logo.png);
-    background-repeat: no-repeat;
+    background: url(images/logo.png) no-repeat;
     height: 45vh;
-    margin-top: 3vh;
+    position:relative;
+    margin-top:3vh;
+}
+
+header,footer{
+    width:100vw;
+}
+
+footer{
+    height:10vh;
+    padding: 4vh;
+ }
+
+footer,main{
+   position:absolute;
+    
+}
+
+footer{
+   top:140%;
+}
+
+.foot{
+    display:inline-block;
 }
 
 main {
-    position: absolute;
-    left: 25vw;
-    height: 100vh;
+    left: 18vw;
 }
 
-.intro{
-   height: 20vh;
-   border: solid black 8px;
+.intro {
+    height: 20vh;
+    border: solid black 8px;
 }
 
 .intro,
-.form {
-    width: 50vw;
+.form,
+.p2,
+.h1,
+.h2 {
+    width: 65vw;
     margin-bottom: 2vh;
     background-image: url(images/transparent_white.png);
     background-repeat: cover;
- }
+}
 
 .form {
     height: 55vh;
-    padding-top:2vh;
     font-size: 20px;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-weight: lighter;
-    
+
 }
 
 form {
@@ -52,24 +73,24 @@ form {
     padding-left: 25%;
     text-align: left;
     font-size: 15px;
-   
-}
+ }
 
 label,
-button {
+button,
+footer {
     background: black;
     color: white;
 }
 
-label {
-    padding: 1vh;
-}
 
+
+labe,
 button {
     border: 0;
     height: 6.5vh;
-    font-size:25px;
-    
+    font-size: 25px;
+    padding: 1vh;
+
 }
 
 label,
@@ -80,24 +101,229 @@ button {
 }
 
 input {
+    margin-bottom: 2vh;
+}
+
+
+#name,
+#email,
+button {
+    font-style: italic;
+} */
+
+
+
+
+
+/* GRID */
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    height: 130vh;
+    background-size: cover;
+    background-image: url(images/background.jpg);
+
+}
+
+header {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    height: 45vh;
+    margin-top: 3vh;
+    width:100vh;
+}
+
+main {
+    position: absolute;
+    left: 25vw;
+    height: 100vh;
+}
+.intro{
+   height: 20vh;
+}
+
+
+.intro,
+.form {
+    width: 50vw;
+    margin-bottom: 2vh;
+    background-image: url(images/transparent_white.png);
+    background-repeat: cover;
+    border: solid black 8px;
+}
+
+
+.form {
+    height: 55vh;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    text-align: left;
+}
+label,
+button {
+    background: black;
+    color: white;
+}
+label {
+    padding: 1vh;
+}
+button {
+    border: 0;
+    height: 6vh
+}
+label,
+input,
+button {
+    width: 25vw;
+}
+input {
     margin-bottom: 1vh;
 }
 h1,
 h2 {
     margin: 2vh 0;
 }
-
 .p2 {
     margin-bottom: 3vh;
+}
+.p1,
+.p2 {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: lighter;
+} 
+
+#name, #email, button{
+    font-style: italic;} */
+
+
+    /* *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background:black;
+    }
+
+    header{
+        background:url(/images/logo.png) left top / cover no-repeat;
+
+
+        
+    
+    }
+
+header, footer{
+    width:100%;
     
 }
 
-#name, #email, button{
-    font-style: italic;
-}
+header,main,footer
+{position:absolute;}
+
+    main{
+        width:70%;
+        left:15%;
+
+    }
+
+
+
+    footer{
+         display:flex;
+         background:white;
+         bottom:0;
+         height:10vh;
+    } */
 
 
 
 
 
-
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background-image: url(images/background.jpg);
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: top;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .gridLogo {
+  
+        border: 15px solid black;
+        background-color: lightgrey;
+        opacity: 80%;
+        width: 30rem;
+        height: 7em;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 2rem;
+        opacity: 80%;
+        text-align: center;
+        width: 30rem;
+    }
+    .gridResForm {
+        background-color: #CCCCCC;
+        opacity: 80%;
+        color: black;
+        margin: 0 auto;
+        width: 31.8rem;
+        height: 22rem;
+        color: black;
+        opacity: 80%;
+        text-align: center;
+        width: 31.8rem;
+    }
+  
+    label {
+        text-align: left;
+        padding: 3px 6px;
+        display: block;
+        color: white;
+        background-color: black;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 3px 6px;
+        text-align: left;
+        width: 50%;
+    }
+    input {
+        background: white;
+        width: 52%;
+        font-style: italic;
+        width: 52%;
+    }
+    button {
+        border: 0;
+        font-style: italic;
+        background-color: black;
+        border: 0;
+        color: white;
+        font-style: italic;
+        height: 30px;
+        margin-top: 15px;
+    }
+    footer {
+        color: grey;
+        font-size: 14px;
+        margin: 24px 12px;
+        text-align: center;
+    }
