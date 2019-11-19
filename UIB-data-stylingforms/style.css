@@ -7,6 +7,7 @@ body, form, section {
     flex-direction: column;
 }
 
+
 body {
     font-size: 20px;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -18,7 +19,6 @@ body {
 form {
     background: #CCCACC;
     margin: 0 400px;
-    align-content: center;
     padding: 10px 10px;
     opacity: 80%;
 }
