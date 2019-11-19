@@ -1,0 +1,67 @@
+* {
+    margin: 0 auto;
+}
+
+body, form, section {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: lighter;
+    background-image: url(images/background.jpg);
+    background-size: 100%;
+}
+
+form {
+    background: #CCCACC;
+    margin: 0 400px;
+    align-content: center;
+    padding: 10px 10px;
+    opacity: 70%;
+}
+
+button {
+    background: black;
+    color: white;
+    width: 40%;
+    margin-top: 7px;
+}
+
+section {
+    background: #E0DAD9;
+    opacity: 70%;
+    border: 7px solid black;
+    margin: 20px 400px;
+    padding: 10px 10px;
+    height: 100px;
+}
+
+
+label {
+    background: black;
+    color: ivory;
+    width: 40%;
+    margin-top: 10px;
+    font-size: 10px;
+    padding: 5px 0;
+}
+
+input {
+    width: 39.5%;
+}
+
+span {
+    margin-top: 30px;
+    font-size: 0.7em;
+}
+
+h3 {
+    margin-bottom: 7px;
+}
+
+footer {
+    height: 50px;
+}

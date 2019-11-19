@@ -47,6 +47,7 @@ legend {
 
 #button {
     background-color: green;
+    border: 0;
     border-radius: 10px;
     color: white;
     margin-top: 40px;
