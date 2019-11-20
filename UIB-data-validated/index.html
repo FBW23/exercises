@@ -9,19 +9,20 @@
   </head>
   <body>
       <main class="container">
-    <form class="form">
+      <form action="https://formspree.io/mpzznolo" method="POST">
       <h1>Tell us more</h1>
 
       <section class="fields">
-        <label for="firstname">First Name</label>
-        <input type="text" id="firstname" placeholder="First Name" />
+        <label for="firstname" >First Name</label>
+        <input type="text" minlength="1" name="name" required id="firstname" placeholder="First Name" />
         <label for="lastname">Last name</label>
-        <input type="text" id="lastname" placeholder="Last Name" />
+        <input type="text" id="lastname" placeholder="Last Name" minlength="2" required>
       </section>
 
       <section class="fields">
         <label for="email">Your email</label>
         <input
+        required
           type="email"
           id="email"
           placeholder="Tell us how to contact you"
@@ -30,7 +31,7 @@
 
       <section class="fields">
         <label for="message">Tell us about yourself</label>
-        <textarea id="message" rows="5"></textarea>
+        <textarea id="message" rows="5" maxlength="200"></textarea>
       </section>
 
       <section class="toggle">
@@ -40,7 +41,7 @@
           <span class="slider"></span>
         </label>
       </section>
-      <input type="submit" value="Submit" disabled>
+      <input type="submit" value="Submit">
     </form>
     </main>
   </body>
