@@ -39,7 +39,13 @@ input {
     height: 2rem;
     font-style: italic;
     margin-bottom: 2.6%;
+    
 }
+input:focus{
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    
+}
+
 
 label,
 input {

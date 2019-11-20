@@ -1,0 +1,114 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    background: linear-gradient(to right, #ffb9c9, #aed6e7);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+}
+
+label {
+    display: block;
+    text-align: left;
+    position: relative;
+    left: 2.5%;
+}
+
+form {
+    padding: 2%;
+    width: 200%;
+    background: #fff;
+    text-align: center;
+    grid-column: 2;
+    height: 130%;
+    position: relative;
+    right: 13%;
+    transform: translateX(-13%);
+
+}
+
+input {
+    width: 93%;
+    height: 2.1em;
+}
+
+textarea {
+    width: 94%;
+    height: 4rem;
+}
+
+[type="text"]:focus {
+    outline: 0.1rem solid pink;
+    border: 0;
+}
+
+[type="email"]:focus,
+textarea:focus {
+    outline: 0.1rem solid blue;
+    border: 0;
+}
+
+[type="submit"] {
+    display: block;
+    position: relative;
+    left: 44%;
+    top: 1rem;
+    width: 8rem;
+}
+form :nth-child(6)  , form :nth-child(8)  {
+    margin-top: 1.6em;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.6rem;
+    height: 2rem;
+    top: 1rem;
+    left: 0.1rem;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color:purple;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
