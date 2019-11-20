@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="formContainer">
+        <h1>Tell Us More</h1>
+            <form action="http://google.com" method="GET">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Your First Name"><br>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Your Last Name"><br><br>
+                <label for="email">Your Email</label>
+                <input type="text" name="email" id="email" placeholder="name.lastname@example.com"><br>
+                <label for="textArea">Tell Us About Yourself</label>
+                <textarea name="textArea" id="textArea"
+                    placeholder="Tell us more about important colors, etc."></textarea><br>
+        <div class="flexElement">
+            Want to Know More?
+            <input type="checkbox" id="switch" /><label class="switchLabel" for="switch"></label>
+            <br><br>
+        </div>
+        <input type="button" value="Submit" id="submitButton" disabled>
+        </form>
+    </div>
+</body>
+
+</html>

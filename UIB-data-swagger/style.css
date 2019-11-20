@@ -1,0 +1,92 @@
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, lightpink, lightblue);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 900px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+}
+
+.formContainer {
+    align-items: center;
+    background-color: white;
+    flex-grow: 70%;
+    margin: auto;
+    width: 90vw;
+    min-width: 30vw;
+}
+
+form {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    height: 1.5rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+#submitButton {
+    margin: auto;
+    width: 10rem;
+    background-color: transparent;
+    border: 1px solid lightgrey;
+    color: grey;
+}
+
+.flexElement {
+    display: flex;
+    justify-content: center;
+}
+
+/* switch CSS */
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switchLabel {
+    cursor: pointer;
+    width: 2rem;
+    height: 1rem;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switchLabel:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.1s;
+}
+
+input:checked+.switchLabel {
+    background: purple;
+}
+
+input:checked+.switchLabel:after {
+    left: calc(100% - 0px);
+    transform: translateX(-100%);
+}
+
+.switchLabel:active:after {
+    width: 20px;
+}
