@@ -6,7 +6,7 @@
 }
 
 body{
-    background: linear-gradient(to right, pink, lightblue );
+    background: linear-gradient(to right, hotpink, lightblue );
     height:100vh;
 
 }
@@ -79,7 +79,8 @@ span{
 
 
 input:focus, textarea:focus {
-    outline:  1px solid pink;
+    outline:  1px solid hotpink;
+    
   }
 
 
