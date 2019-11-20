@@ -78,10 +78,10 @@ input[type=checkbox] {
 .switchLabel:after {
     content: '';
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1rem;
-    height: 1rem;
+    top: 1.5px;
+    left: 1.5px;
+    width: 0.8rem;
+    height: 0.8rem;
     background: #fff;
     border-radius: 90px;
     transition: 0.1s;
@@ -92,10 +92,18 @@ input:checked+.switchLabel {
 }
 
 input:checked+.switchLabel:after {
-    left: calc(100% - 0px);
+    left: calc(100% - 1px);
     transform: translateX(-100%);
 }
 
 .switchLabel:active:after {
     width: 20px;
+}
+
+input#firstName:focus, input#lastName:focus{
+    outline: 2px solid hotpink;
+}
+
+input#email:focus, input#textArea:focus {
+    outline: 2px solid blue;
 }
