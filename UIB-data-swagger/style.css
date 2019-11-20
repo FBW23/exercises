@@ -52,7 +52,7 @@ textarea {
 }
 
 .flexElement {
-    margin: 15px; 
+    margin: 1.5rem; 
     display: flex;
     justify-content: center;
 }
@@ -88,7 +88,7 @@ input[type=checkbox] {
 }
 
 input:checked+.switchLabel {
-    background: purple;
+    background: #ec70f9;
 }
 
 input:checked+.switchLabel:after {
