@@ -11,27 +11,27 @@
 
 <body>
 
-    <form action="reservation">
+    <form action="reservation" method="GET">
         <h3>Tell us more</h3>
 
-        <label class="inside" for="FirstName">First Name</label>
+        <label class="inside" for="firstName">First Name</label>
         <input type="text" placeholder="First Name" name="FirstName" id="FirstName">
 
-        <label class="inside" for="LastName">Last Name</label>
+        <label class="inside" for="lastName">Last Name</label>
         <input type="text" placeholder="Last Name" name="LastName" id="LastName">
 
 
         <label class="inside" for="yourMail">Your email</label>
         <input type="text" placeholder="Tell us how to contact you" name="yourMail" id="yourMail">
 
-        <label for="message">Tell us about yourself</label>
+        <label for="yourself">Tell us about yourself</label>
         <textarea name="comment"></textarea>
         <span>Want to know more?</span>
         <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
         </label>
-        <input type="submit"></input>
+        <input type="submit" disabled></input>
     </form>
 
 </body>
