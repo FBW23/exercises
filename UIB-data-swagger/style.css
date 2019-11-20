@@ -43,7 +43,16 @@ textarea {
     color: grey;
 }
 
+.firstMarginGroup {
+    margin-bottom: 1rem;
+}
+
+.secondMarginGroup {
+    margin-bottom: 1.2rem;
+}
+
 .flexElement {
+    margin: 15px; 
     display: flex;
     justify-content: center;
 }

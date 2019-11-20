@@ -12,22 +12,23 @@
 <body>
     <div class="formContainer">
         <h1>Tell Us More</h1>
-            <form action="http://google.com" method="GET">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="Your First Name"><br>
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Your Last Name"><br><br>
-                <label for="email">Your Email</label>
-                <input type="text" name="email" id="email" placeholder="name.lastname@example.com"><br>
-                <label for="textArea">Tell Us About Yourself</label>
-                <textarea name="textArea" id="textArea"
-                    placeholder="Tell us more about important colors, etc."></textarea><br>
-        <div class="flexElement">
-            Want to Know More?
-            <input type="checkbox" id="switch" /><label class="switchLabel" for="switch"></label>
-            <br><br>
-        </div>
-        <input type="button" value="Submit" id="submitButton" disabled>
+        <form action="http://google.com" method="GET">
+            <label for="firstName">First Name</label>
+            <input class="firstMarginGroup" type="text" name="firstName" id="firstName" placeholder="Your First Name">
+            <label for="lastName">Last Name</label>
+            <input class="firstMarginGroup" type="text" name="lastName" id="lastName" placeholder="Your Last Name">
+            <label for="email">Your Email</label>
+            <input class="secondMarginGroup" type="text" name="email" id="email"
+                placeholder="name.lastname@example.com">
+            <label for="textArea">Tell Us About Yourself</label>
+            <textarea class="secondMarginGroup" name="textArea" id="textArea"
+                placeholder="Tell us more about important colors, etc."></textarea>
+            <div class="flexElement">
+                Want to Know More?
+                <input type="checkbox" id="switch" /><label class="switchLabel" for="switch"></label>
+
+            </div>
+            <input type="button" value="Submit" id="submitButton" disabled>
         </form>
     </div>
 </body>
