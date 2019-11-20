@@ -1,0 +1,77 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-family: sans-serif;
+    
+}
+
+.logo {
+    background-image: url(logo.png);
+    background-position: top;
+
+
+}
+
+.container1 {
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: initial;
+    display: block;
+    margin-left: 25%;
+    margin-top: 25%
+}
+
+.container2 {
+    border: 5px black solid;
+    width: 60%;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+
+}
+
+.container3 {
+    margin-top: 20px;
+    width: 61%;
+    padding: 10px;
+    opacity: 0.8;
+    background-color: white;
+}
+
+
+fieldset {
+    position: ;
+    border: none;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+label{
+    text-align: right;
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 304px;
+}
+
+input {
+    display: block;
+    width: 300px;
+    padding: 10px;
+}
+
+
+footer {
+    font-size: 12px;
+    margin-left: 45%;
+    padding-top: 20px;
+}
