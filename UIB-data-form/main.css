@@ -85,6 +85,7 @@ textarea {
 
 input:focus, textarea:focus {
     background-color: rgb(206, 206, 206);
+    outline-color: chartreuse;
 }
 span:hover {
     font-size: 17px;
