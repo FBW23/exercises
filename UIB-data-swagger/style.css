@@ -1,9 +1,6 @@
 body {
-    box-sizing: border-box;
     background-image: linear-gradient(to right, lightpink, lightblue);
-    background-repeat: no-repeat;
-    display: flex;
-    height: 900px;
+    /* display: flex; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0 auto;
 }
@@ -11,10 +8,10 @@ body {
 .formContainer {
     align-items: center;
     background-color: white;
+    height: 45vw;
     flex-grow: 70%;
-    margin: auto;
+    margin: 25px auto;
     width: 90vw;
-    /* min-width: 10vw; */
 }
 
 form {
@@ -43,12 +40,12 @@ textarea {
     color: grey;
 }
 
-.firstMarginGroup {
-    margin-bottom: 1rem;
+.smallMargin {
+    margin-bottom: 0.5rem;
 }
 
-.secondMarginGroup {
-    margin-bottom: 1.2rem;
+.bigMargin {
+    margin-bottom: 1.5rem;
 }
 
 .flexElement {
