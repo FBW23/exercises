@@ -86,6 +86,7 @@ input[type=checkbox] {
     display: block;
     border-radius: 25px;
     position: relative;
+    margin-left: 100px;
 }
 
 .toggle:after {
