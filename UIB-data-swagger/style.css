@@ -26,10 +26,6 @@ legend {
     text-align: center;
 }
 
-textarea {
-    height: 200%;
-}
-
 input {
     border: 1px solid black;
     width: 97%;
