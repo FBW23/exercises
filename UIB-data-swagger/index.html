@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form action="URL" method="POST">
+            <legend>Tell us more</legend>
+            <label for="FirstName">First Name</label>
+            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required>
+
+            <label for="LastName">Last Name</label>
+            <input type="text" name="LastName" id="LastName" placeholder="Last Name" required>
+
+            <label for="email" id="email1">Your email</label>
+            <input type="email" name="email" id="email" placeholder="Tell us how to contact you" required>
+
+            <label for="textarea" id="text">Tell us about yourself</label>
+            <textarea name="textarea" id="textarea"></textarea>
+
+            <div>
+                <input type="checkbox" id="switch">
+                <label for="switch" class="toggle">Want to know more?</label>
+            </div>
+
+            <button type="submit" disabled>Submit</button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
