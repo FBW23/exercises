@@ -14,7 +14,7 @@ body {
     flex-grow: 70%;
     margin: auto;
     width: 90vw;
-    min-width: 30vw;
+    /* min-width: 10vw; */
 }
 
 form {
