@@ -11,7 +11,10 @@ body{
 
 }
 
-section,button{background:white;}
+section,button{
+    background:white;
+}
+
 section{
     margin:auto;
 }
@@ -47,6 +50,7 @@ h1{
 
 input{
     margin-bottom:2vh;
+    padding:0.3rem;
 }
 
 
