@@ -1,11 +1,34 @@
+<<<<<<< HEAD
 .info-1,
 .info-2,
 .info-3 {
     width: 30%;
+=======
+*{
+    margin-top:2vh ;
+    
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+.info-1,
+.info-2,
+.info-3 {
+    margin-top:2vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 5px;
+>>>>>>> 52697d1bca8fbac68f3bf361e197272faf1e24c8
     color: white;
     display: inline-block;
-    padding: 10px;
+    padding:25px 15px;
     text-shadow: 1px 1px 1px black;
+<<<<<<< HEAD
 <<<<<<< HEAD
     
 }
@@ -46,6 +69,20 @@ main {
   text-align: center;
 =======
     width: 30%;
+=======
+    width: 33%;
+    height:175px;
+
+}
+
+h1 {
+    margin:10px;
+}
+
+
+main{
+    margin:10px; 
+>>>>>>> 52697d1bca8fbac68f3bf361e197272faf1e24c8
 }
 
 .info-1 {

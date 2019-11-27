@@ -5,8 +5,14 @@ body {
 
 header {
     height: 30%;
+<<<<<<< HEAD
     background-image: url(background.jpg);
     background-repeat:
+=======
+    background-image: url("/task-1/assets/background.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+>>>>>>> 52697d1bca8fbac68f3bf361e197272faf1e24c8
 }
 
 h1 {
@@ -14,3 +20,4 @@ h1 {
     color: white;
     margin: 0;
 }
+

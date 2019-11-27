@@ -4,7 +4,7 @@
 
 table {
     border: 3px solid gray;
-
+    border-collapse: collapse;
 }
 
 td {
@@ -19,4 +19,4 @@ th {
 
 img {
     width: 300px;
-}
+    }
