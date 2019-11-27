@@ -8,4 +8,4 @@
 * Remove the `disabled` attribute from submit.
 * Allow users to submit a form using `formspree.io`. 
 
-![reference](/images/reference.png)
+![reference](./images/reference.png)
