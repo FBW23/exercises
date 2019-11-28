@@ -1,0 +1,10 @@
+:root{
+    --red: red;
+    --black: black;
+}
+
+
+body{
+    background:linear-gradient(to right, var(--red), var(--black));
+    height:100vh;
+}
