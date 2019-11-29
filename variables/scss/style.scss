@@ -1,0 +1,12 @@
+$yellow-first: yellow;
+$hotpink-second: hotpink;
+
+body {
+    margin: 0 auto;
+}
+
+section {
+    height: 250px;
+    width: 250px;
+    background: linear-gradient($yellow-first, $hotpink-second);
+}

@@ -1,0 +1,11 @@
+body {
+  margin: 0 auto;
+}
+
+section {
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(yellow, hotpink);
+}
+
+/*# sourceMappingURL=style.css.map */
