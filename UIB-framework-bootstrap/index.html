@@ -12,18 +12,18 @@
 </head>
 
 <body>
-    <header  class="text-center">
+    <header class="text-center">
         <div class="jumbotron bg-info mb-0">
             <h1>Bootstrap Page</h1>
             <p>Create this</p>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center border-bottom">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#">About</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
-                </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -41,7 +41,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus sapiente
                         doloremque voluptate aperiam repellat. Fuga quibusdam earum sed, maiores pariatur consectetur
                         autem modi voluptas ipsam ullam? Nam asperiores magni laudantium?</p>
-            </div>
+                </div>
                 <div class="col mt-4">
                     <h5>Column 3</h5>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus sapiente
@@ -51,24 +51,35 @@
             </div>
         </div>
 
-        <span class="d-inline-flex  col-3">
-            <button type="button" class="btn btn-primary btn-md btn-block">First Card</button>
-        </span>
-        <span class="d-inline-flex  col-3">
-            <button type="button" class="btn btn-warning btn-md btn-block">Second Card</button>
-        </span>
-        <span class="d-inline-flex  col-3">
-            <button type="button" class="btn btn-success btn-md btn-block">Third Card</button>
-        </span>
-        <span class="d-inline-flex  col-3">
-            <button type="button" class="btn btn-danger btn-md btn-block">Fourth Card</button>
-        </span>
-
-
+    
+        <div class="container">
+            <div class="row row-cols-md-4">
+                <div class="col mb-4">
+                    <div class="card bg-primary p-2">
+                        <p class="card-text text-center">First card</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-warning p-2">
+                        <p class="card-text text-center">Second card</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-success p-2">
+                        <p class="card-text text-center">Third card</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-danger p-2">
+                        <p class="card-text text-center">Fourth card</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <div class="page-footer p-4 bg-info fixed-bottom">
+        <div class="page-footer p-3 bg-info fixed-bottom">
             <p class="text-center">Footer!</p>
         </div>
     </footer>
