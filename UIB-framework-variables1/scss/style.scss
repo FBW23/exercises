@@ -1,0 +1,73 @@
+$color_1: blue;
+$color_2: purple;
+$color_3: green;
+$font_family_1: Arial, Helvetica, sans-serif;
+$font_family_2: 'Times New Roman', Times, serif;
+$font_family_3: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+$font_family_4: Georgia, 'Times New Roman', Times, serif;
+$font_family_5: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$background_color_1: rgba(255, 255, 0, 0.39);
+$reset: 0;
+html {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	height: 10rem;
+	background-color: $background_color_1;
+	text-align: center;
+	padding-top: 2rem;
+	font-family: $font_family_1;
+}
+h1 {
+	font-family: $font_family_1;
+}
+main {
+	margin: .5rem;
+}
+.huge {
+	font-family: $font_family_2;
+	font-size: 10rem;
+	color: $color_1;
+}
+.big {
+	font-family: $font_family_2;
+	font-size: 8rem;
+	color: $color_1;
+}
+.medium {
+	font-family: $font_family_3;
+	font-size: 3rem;
+	color: $color_2;
+}
+.middle {
+	font-family: $font_family_4;
+	font-size: 3rem;
+	color: $color_2;
+}
+.small {
+	font-family: $font_family_5;
+	font-size: 2rem;
+	color: $color_3;
+}
+.tiny {
+	font-family: $font_family_5;
+	font-size: .5rem;
+	color: $color_3;
+	margin-bottom: 2rem;
+}
+footer {
+	height: 10rem;
+	background-color: $background_color_1;
+	text-align: center;
+	font-family: $font_family_1;
+	padding-top: 1rem;
+}
