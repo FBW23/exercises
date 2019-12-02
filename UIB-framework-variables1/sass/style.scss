@@ -19,6 +19,7 @@ $size5:10rem;
 $color1:blue;
 $color2:green;
 $color3:purple;
+$color4:rgba(255, 255, 0, 0.39);
 
 
 
@@ -31,7 +32,7 @@ body,html {
 }
 header {
     height: $font4; 
-    background-color: rgba(255, 255, 0, 0.39);
+    background-color: $color4;
     text-align: $ct;
     padding-top: $size2;
     font-family: $font4;
@@ -84,7 +85,7 @@ main {
         
         footer {
             height: $size5;
-            background-color: rgba(255, 255, 0, 0.39);
+            background-color: $color4;
             text-align: $ct;
             font-family: $font4;
             padding-top: $size1;
