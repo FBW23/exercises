@@ -1,0 +1,97 @@
+
+$reset:0;
+// fonts
+$font1:'Times New Roman', Times, serif;
+$font2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+$font3:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$font4: Arial, Helvetica, sans-serif;
+$ct:center;
+// size
+$size-1:0.5rem;
+$size1:1rem;
+$size2:2rem;
+$size3:3rem;
+$size4:8rem;
+$size5:10rem;
+
+
+// style
+$color1:blue;
+$color2:green;
+$color3:purple;
+
+
+
+
+body,html {
+    margin: $reset;
+    padding: $reset;
+    border: $reset;
+    box-sizing: border-box;
+}
+header {
+    height: $font4; 
+    background-color: rgba(255, 255, 0, 0.39);
+    text-align: $ct;
+    padding-top: $size2;
+    font-family: $font4;
+}
+
+main {
+    
+        margin: .5rem;
+        text-align: $ct; 
+
+        .huge {
+            font-family: $font1;
+            font-size: $size5;
+            color: $color1;
+        }
+        
+        
+        .big {
+            font-family: $font1;
+            font-size: $size4;
+            color: $color1;
+        }
+        
+        .medium {
+            font-family: $font2;
+            font-size: $size3;
+            color: $color3;
+        }
+        
+        .middle {
+            font-family: Georgia, $font1;
+            font-size: $size3;
+            color: $color3;
+        }
+        
+        
+        .small {
+            font-family: $font3;
+            font-size: $size2;
+            color: $color2;
+        }
+        
+        .tiny {
+            font-family: $font3;
+            font-size: $size-1;
+            color: $color2;
+            margin-bottom: $size2;
+        }
+    }
+        
+        footer {
+            height: $size5;
+            background-color: rgba(255, 255, 0, 0.39);
+            text-align: $ct;
+            font-family: $font4;
+            padding-top: $size1;
+        }
+
+
+
+
+
+
