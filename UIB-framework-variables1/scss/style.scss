@@ -9,13 +9,6 @@ $page-tnr: 'Times New Roman', Times, serif;
 $page-arial: Arial, Helvetica, sans-serif;
 $page-franklin: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-html, body {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header {
     height: 10rem; 
     background-color: $header-color;
