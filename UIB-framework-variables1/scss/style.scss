@@ -1,0 +1,80 @@
+// COLOR
+$header-color: rgba(255, 255, 0, 0.39);
+$green-color: green;
+$purple-color: purple;
+$blue-color: blue;
+
+// FONT
+$page-tnr: 'Times New Roman', Times, serif;
+$page-arial: Arial, Helvetica, sans-serif;
+$page-franklin: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10rem; 
+    background-color: $header-color;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: $page-arial;
+}
+
+h1 {
+    font-family: $page-arial;
+}
+
+main {
+    margin: .5rem; 
+}
+
+.huge {
+    font-family: $page-tnr;
+    font-size: 10rem;
+    color: $blue-color;
+}
+
+
+.big {
+    font-family: $page-tnr;
+    font-size: 8rem;
+    color: $blue-color;
+}
+
+.medium {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 3rem;
+    color: $purple-color;
+}
+
+.middle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: $purple-color;
+}
+
+
+.small {
+    font-family: $page-franklin;
+    font-size: 2rem;
+    color: $green-color;
+}
+
+.tiny {
+    font-family: $page-franklin;
+    font-size: .5rem;
+    color: $green-color;
+    margin-bottom: 2rem;
+}
+
+footer {
+    height: 10rem;
+    background-color: $header-color;
+    text-align: center;
+    font-family: $page-arial;
+    padding-top: 1rem;
+}
