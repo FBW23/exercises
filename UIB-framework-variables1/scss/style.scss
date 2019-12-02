@@ -1,24 +1,24 @@
-$blue:blue;
-$green:green;
-$purple:purple;
-$bigfont: 'Times New Roman',
+$bigColor:blue;
+$smallColor:green;
+$mediumColor:purple;
+$bigFont: 'Times New Roman',
 Times,
 serif;
-$mediumfont:'Lucida Sans',
+$mediumFont:'Lucida Sans',
 'Lucida Sans Regular',
 'Lucida Grande',
 'Lucida Sans Unicode',
 Verdana,
 sans-serif;
-$mediumfontsize:3rem;
-$footheadbg: rgba(255, 255, 0, 0.39);
-$textcenter:center;
-$footheadh1font: Arial,
+$mediumFontSize:3rem;
+$footHeadBg: rgba(255, 255, 0, 0.39);
+$textCenter:center;
+$footHeadH1Font: Arial,
 Helvetica,
 sans-serif;
 $ten:10rem;
 $two:2rem;
-$smallfont:'Franklin Gothic Medium',
+$smallFont:'Franklin Gothic Medium',
 'Arial Narrow',
 Arial,
 sans-serif;
@@ -28,7 +28,7 @@ $half:.5rem;
 
 .huge,
 .big {
-    font-family: $bigfont;
+    font-family: $bigFont;
 }
 
 html,
@@ -41,9 +41,9 @@ body {
 
 header,
 footer {
-    background: $footheadbg;
-    text-align: $textcenter;
-    font-family: $footheadh1font;
+    background: $footHeadBg;
+    text-align: $textCenter;
+    font-family: $footHeadH1Font;
     height: $ten;
 }
 
@@ -57,12 +57,12 @@ main {
 
 .huge,
 .big {
-    color: $blue;
+    color:$bigColor;
 }
 
 .medium,
 .middle {
-    color: $purple;
+    color: $mediumColor;
     font-size: 3rem;
 }
 
@@ -78,7 +78,7 @@ main {
 
 .medium,
 .middle {
-    font-family: $mediumfont;
+    font-family: $mediumFont;
 }
 
 
@@ -86,8 +86,8 @@ main {
 .small,
 .tiny,
     {
-    color: $green;
-    fontfamily: $smallfont;
+    color: $smallColor;
+    fontfamily: $smallFont;
 }
 
 .small {
