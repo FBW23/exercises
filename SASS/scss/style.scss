@@ -1,0 +1,24 @@
+
+$green:green;
+
+$black: blue;
+
+$red: red;
+
+
+body{
+  background:linear-gradient(to right, $green, $black, $red);
+}
+
+div{
+  &:hover{ background:white;}
+
+  background: black;
+  width:250px;
+
+  h1{color:yellow;
+   &:hover{color: blue;} 
+      span{ color:red;
+      padding: 15px;}
+    }
+}

@@ -1,0 +1,104 @@
+$blue:blue;
+$green:green;
+$purple:purple;
+$bigfont: 'Times New Roman',
+Times,
+serif;
+$mediumfont:'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Verdana,
+sans-serif;
+$mediumfontsize:3rem;
+$footheadbg: rgba(255, 255, 0, 0.39);
+$textcenter:center;
+$footheadh1font: Arial,
+Helvetica,
+sans-serif;
+$ten:10rem;
+$two:2rem;
+$smallfont:'Franklin Gothic Medium',
+'Arial Narrow',
+Arial,
+sans-serif;
+
+$half:.5rem;
+
+
+.huge,
+.big {
+    font-family: $bigfont;
+}
+
+html,
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background: $footheadbg;
+    text-align: $textcenter;
+    font-family: $footheadh1font;
+    height: $ten;
+}
+
+header {
+    padding-top: $two;
+}
+
+main {
+    margin: $half;
+}
+
+.huge,
+.big {
+    color: $blue;
+}
+
+.medium,
+.middle {
+    color: $purple;
+    font-size: 3rem;
+}
+
+
+.huge {
+    font-size: $ten;
+}
+
+.big {
+    font-size: 8rem;
+
+}
+
+.medium,
+.middle {
+    font-family: $mediumfont;
+}
+
+
+
+.small,
+.tiny,
+    {
+    color: $green;
+    fontfamily: $smallfont;
+}
+
+.small {
+    font-size: $two;
+}
+
+.tiny {
+    font-size: $half;
+    margin-bottom: $two;
+}
+
+footer {
+    padding-top: 1rem;
+}
