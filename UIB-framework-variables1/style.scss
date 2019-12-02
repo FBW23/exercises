@@ -1,0 +1,91 @@
+$first-color: blue;
+$second-color: purple;
+$third-color: green;
+$fourth-color: rgba(255, 255, 0, 0.39);
+$first-size: 3rem;
+$first-font: 'Franklin Gothic Medium',
+'Arial Narrow',
+Arial,
+sans-serif;
+$second-font: 'Times New Roman',
+Times,
+serif;
+$third-font: Arial,
+Helvetica,
+sans-serif;
+$first-align: center;
+$first-height: 10rem;
+
+.huge,
+.big {
+    color: $first-color;
+    font-family: $second-font;
+}
+
+.medium,
+.middle {
+    color: $second-color;
+    font-size: $first-size;
+}
+
+.small,
+.tiny {
+    color: $third-color;
+    font-family: $first-font;
+}
+
+header,
+footer {
+    background: $fourth-color;
+    font-family: $third-font;
+    text-align: $first-align;
+    height: $first-height;
+}
+
+html,
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 2rem;
+}
+
+
+main {
+    margin: .5rem;
+}
+
+.huge {
+    font-size: 10rem;
+}
+
+
+.big {
+    font-size: 8rem;
+}
+
+.medium {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.middle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.small {
+    font-size: 2rem;
+}
+
+.tiny {
+    font-size: .5rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    padding-top: 1rem;
+}
