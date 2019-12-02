@@ -1,0 +1,103 @@
+$font1: Arial,
+Helvetica,
+sans-serif;
+$font2: 'Times New Roman',
+Times,
+serif;
+$font3: 'Franklin Gothic Medium',
+'Arial Narrow',
+Arial,
+sans-serif;
+$sizeXS:0.5rem;
+$sizeS:2rem;
+$sizeSM:3rem;
+$sizeM:5rem;
+$sizeML:8rem;
+$sizeL:10rem;
+
+$color1:purple;
+$color2:blue;
+$color3:green;
+$color4:rgba(255, 255, 0, 0.39);
+$reset:0;
+$align:center;
+
+
+
+html,
+body {
+    margin: $reset;
+    border: $reset;
+    padding: $reset;
+    box-sizing: border-box;
+}
+
+header {
+    height: $sizeL;
+    background-color: $color4;
+    text-align: $align;
+    padding-top: $sizeS;
+    font-family: $font1;
+
+    h1 {
+        font-family: $font1;
+    }
+
+}
+
+main {
+    margin: $sizeXS;
+
+
+
+    .huge {
+        font-family: $font2;
+        font-size: $sizeL;
+        color: $color2;
+    }
+
+
+    .big {
+        font-family: $font2;
+        font-size: $sizeML;
+        color: $color2;
+    }
+
+    .medium {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        font-size: $sizeSM;
+        color: $color1;
+    }
+
+    .middle {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $sizeSM;
+        color: $color1;
+    }
+
+
+    .small {
+        font-family: $font3;
+        font-size: $sizeS;
+        color: $color3;
+    }
+
+    .tiny {
+        font-family: $font3;
+        font-size: $sizeXS;
+        color: $color3;
+        margin-bottom: $sizeS;
+    }
+
+  
+}
+footer {
+    height: $sizeL;
+    background-color: $color4;
+    text-align: $align;
+    font-family: $font1;
+    padding-top: 1rem;
+}
+
+
+
