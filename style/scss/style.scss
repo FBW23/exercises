@@ -1,0 +1,32 @@
+$my-favourite-color: Blue;
+$my-second-color: red;
+$my-third-color: Black;
+
+body {
+    background: linear-gradient ($my-favourite-color,
+            $my-second-color);
+    color: $my-second-color;
+    background-color: $my-second-color;
+
+    h1 {
+        text-align: center;
+        background: yellow;
+
+        &:hover {
+            background: black;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        background-color: $my-third-color;
+    }
+
+    span {
+        font-size: 10rem;
+    }
+
+
+
+
+}

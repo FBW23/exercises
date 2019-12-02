@@ -1,0 +1,84 @@
+
+//color
+$brown: rgba(255, 255, 0, 0.39);
+$blue: blue;
+$purple: purple;
+$green: green;
+
+//font
+$font1: Arial;
+$font2: Times New Roman;
+$font3: Lucida Sans;
+$font4: Georgia;
+$font5: Franklin Gothic Medium;
+
+%htmlbody {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    @extend %htmlbody;
+}
+
+body {
+    @extend %htmlbody;
+}
+
+header {
+    height: 10rem;
+    background-color: $brown;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: $font1;
+
+}
+
+h1 {
+    font: $font1;
+}
+
+main{
+    margin: .5rem;
+}
+
+.huge {
+    font: $font2;
+    font-size: 10rem;
+    color: $blue;
+}
+
+.big {
+    font-family: $font2;
+    font-size: 10rem;
+    color: $blue;
+}
+
+.medium {
+    font-family: $font4;
+    color: $purple;
+}
+
+.small {
+    font-family: $font5;
+    font-size: 2rem;
+    color: $green;
+}
+
+.tiny {
+    font-family: $font4;
+    font-size: .5rem;
+    color: $green;
+    margin-bottom: 2rem;
+
+}
+
+footer {
+    height: 10rem;
+    background-color: $brown;
+    text-align: center;
+    font-family: $font1;
+    scroll-padding-top: 1rem;
+}

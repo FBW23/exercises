@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient Blue, red;
+  color: red;
+  background-color: red;
+}
+body h1 {
+  text-align: center;
+  background: yellow;
+}
+body h1:hover {
+  background: black;
+}
+body h2 {
+  text-align: center;
+  background-color: Black;
+}
+body span {
+  font-size: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */
