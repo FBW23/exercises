@@ -1,8 +1,9 @@
 {
+  "name": "UIB-framework-variables",
   "version": "1.0.0",
-  "description": "Sass Exercise",
+  "description": "",
   "main": "index.html",
-  "author": "Nicolo Tommasi",
+  "author": "Julia Pim",
   "scripts": {
     "start": "run-p watch watch:styles",
     "build": "run-s clean clean:styles build:styles copy",
