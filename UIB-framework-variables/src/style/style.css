@@ -1,0 +1,216 @@
+h2 {
+  text-align: center;
+}
+
+#menu {
+  background: url(../images/header.jpg);
+  height: 17em;
+}
+#menu a {
+  color: #016690;
+}
+
+ul {
+  list-style-type: none;
+  background: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+ul li {
+  position: relative;
+  left: -8%;
+  display: inline;
+}
+ul a {
+  text-decoration: none;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  background: #E0DDB2;
+  padding: 4%;
+  margin: 5%;
+  border-radius: 2%;
+}
+.container-1 img,
+.container-2 img,
+.container-3 img {
+  width: 94%;
+  margin-left: 1%;
+}
+
+aside,
+article {
+  width: 86%;
+  margin-left: 3.5%;
+  padding: 2%;
+}
+
+aside {
+  border: 1px solid #DAD6AB;
+}
+
+article h2 {
+  text-align: left;
+}
+
+#last {
+  background: #016690;
+  padding: 4%;
+}
+#last a {
+  color: white;
+}
+#last li {
+  position: relative;
+  left: -2%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  ul {
+    list-style-type: none;
+    background: white;
+    justify-content: flex-end;
+  }
+  ul li {
+    position: relative;
+    margin: 2%;
+    left: 2%;
+  }
+  ul a {
+    text-decoration: none;
+  }
+
+  .container-1,
+.container-2,
+.container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #E0DDB2;
+    padding: 4%;
+    margin: 5%;
+    border-radius: 2%;
+    height: 220px;
+  }
+  .container-1 img,
+.container-2 img,
+.container-3 img {
+    width: 10em;
+    margin-left: 1%;
+    height: 13em;
+  }
+  .container-1 p,
+.container-2 p,
+.container-3 p {
+    grid-column: 2/-1;
+    position: relative;
+    top: -10em;
+  }
+
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .grid aside {
+    flex-basis: 13%;
+  }
+  .grid article {
+    flex-basis: 48%;
+  }
+
+  #last {
+    display: flex;
+    justify-content: center;
+  }
+  #last ul {
+    list-style-type: none;
+    background: white;
+  }
+  #last ul li {
+    position: relative;
+    margin: 2%;
+    left: 2%;
+  }
+  #last ul a {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .grid aside {
+    flex-basis: 13%;
+  }
+  .grid article {
+    flex-basis: 48%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .grid-container .container-1,
+.grid-container .container-2,
+.grid-container .container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #E0DDB2;
+    padding: 4%;
+    margin: 5%;
+    border-radius: 2%;
+    height: 220px;
+  }
+  .grid-container img {
+    width: 10em;
+    margin-left: 1%;
+    height: 13em;
+  }
+  .grid-container p {
+    grid-column: 2/-1;
+    position: relative;
+    top: 1em;
+  }
+  .grid-container .container-3 {
+    position: relative;
+    top: -10%;
+    left: 50%;
+  }
+
+  ul {
+    list-style-type: none;
+    background: white;
+    justify-content: flex-end;
+  }
+  ul li {
+    position: relative;
+    margin: 2%;
+    left: 2%;
+  }
+  ul a {
+    text-decoration: none;
+  }
+
+  #last {
+    display: flex;
+    justify-content: center;
+  }
+  #last ul {
+    list-style-type: none;
+    background: white;
+  }
+  #last ul li {
+    position: relative;
+    margin: 2%;
+    left: 2%;
+  }
+  #last ul a {
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

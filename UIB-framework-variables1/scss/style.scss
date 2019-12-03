@@ -14,7 +14,6 @@ $sizeSM:3rem;
 $sizeM:5rem;
 $sizeML:8rem;
 $sizeL:10rem;
-
 $color1:purple;
 $color2:blue;
 $color3:green;
@@ -89,8 +88,9 @@ main {
         margin-bottom: $sizeS;
     }
 
-  
+
 }
+
 footer {
     height: $sizeL;
     background-color: $color4;
@@ -98,6 +98,3 @@ footer {
     font-family: $font1;
     padding-top: 1rem;
 }
-
-
-
