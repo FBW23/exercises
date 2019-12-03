@@ -1,0 +1,158 @@
+div {
+  padding-left: 20px;
+}
+
+h2,
+h1 {
+  margin-bottom: -1px;
+  margin-top: 10px;
+}
+
+.left,
+.right {
+  padding: 7px;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav {
+  margin-bottom: -20px;
+  color: #016690;
+  display: flex;
+}
+nav ul li {
+  padding: 10px;
+  display: inline-block;
+}
+
+img {
+  width: 210px;
+}
+
+header {
+  background: url(/src/images/header.jpg);
+  text-align: center;
+  height: 200px;
+  background-size: cover;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #016690;
+  color: white;
+  text-align: center;
+}
+footer ul li {
+  padding: 30px;
+  display: inline-block;
+}
+
+.card {
+  background: #dad6ab;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  nav,
+footer {
+    justify-content: center;
+  }
+
+  .aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .left, .article, .right {
+    width: 500px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    justify-content: flex-end;
+  }
+}
+.aside {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 1px solid #dad6ab;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  border: 1px solid #dad6ab;
+}
+.right h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.article {
+  width: 40%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background: #016690;
+  color: white;
+  text-align: center;
+}
+footer ul li {
+  padding: 30px;
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    justify-content: flex-end;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
+
+  #sur,
+#mo {
+    width: 40%;
+    height: 150px;
+  }
+
+  #tree {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
