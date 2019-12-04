@@ -9655,5 +9655,130 @@ h3 {
     border-color: #dee2e6;
   }
 }
+h1 {
+  text-align: center;
+}
+
+main {
+  margin-left: 20px;
+  display: grid;
+}
+
+.card {
+  height: 400px;
+  width: 18rem;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.yellow {
+  background: #ffc83f;
+  height: 400px;
+  width: 18rem;
+}
+
+.pink {
+  background: #fa5e5b;
+  height: 400px;
+  width: 18rem;
+}
+
+.blue {
+  background: #1d508d;
+  height: 400px;
+  width: 18rem;
+}
+
+.purple {
+  background: #684e79;
+  height: 400px;
+  width: 18rem;
+}
+
+.yellow-one {
+  background: #ffc83f;
+  grid-column: 1/2;
+  height: 70%;
+}
+
+.yellow-two {
+  background: #c59419;
+  grid-column: 2/3;
+  height: 70%;
+}
+
+.yellow-three {
+  background: #f5dd08;
+  grid-column: 3/4;
+  height: 70%;
+}
+
+span {
+  height: 100%;
+  display: grid;
+}
+
+.Pink-one {
+  background: #fa5e5b;
+  grid-column: 1/2;
+  height: 70%;
+}
+
+.Pink-two {
+  background: #c01e1c;
+  grid-column: 2/3;
+  height: 70%;
+}
+
+.Pink-three {
+  background: #fa6f6c;
+  grid-column: 3/4;
+  height: 70%;
+}
+
+.Blue-one {
+  background: #1d508d;
+  grid-column: 1/2;
+  height: 70%;
+}
+
+.Blue-two {
+  background: #082d5a;
+  grid-column: 2/3;
+  height: 70%;
+}
+
+.Blue-three {
+  background: #4695f7;
+  grid-column: 3/4;
+  height: 70%;
+}
+
+.Purple-one {
+  background: #684e79;
+  grid-column: 1/2;
+  height: 70%;
+}
+
+.Purple-two {
+  background: #402950;
+  grid-column: 2/3;
+  height: 70%;
+}
+
+.Purple-three {
+  background: #c687f0;
+  grid-column: 3/4;
+  height: 70%;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

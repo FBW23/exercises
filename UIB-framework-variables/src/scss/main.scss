@@ -1,2 +1,23 @@
 // This is where you can import other stylesheets or write your scss code
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+$mobile-size: 500px;
+$navigation: inline-block;
+
+* {
+    margin: 0 auto;
+}
+.title {
+    background-image: url(/src/images/header.jpg);
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+.title, .mountain, .surfer, article {
+    height: $mobile-size;
+}
+
+li {
+    display: $navigation;
+}
