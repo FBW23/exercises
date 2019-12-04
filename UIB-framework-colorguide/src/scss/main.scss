@@ -1,3 +1,71 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "reset.scss";
+@import "colors.scss";
+@import "sizes.scss";
 
+body {
+    @include reset-page();
+    
+}
+
+.card {
+    @include colorbox();
+    margin-top: 20px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+
+}
+
+.linear1 {
+    background-image: linear-gradient(to right, #FBD61F 10% 35%, #FCC500 35% 70%, #FBE466 70% 90%, );
+    @include colorbox();
+}
+.linear2 {
+    background-image: linear-gradient(to right, #FF4749 10% 35%, #FD0000 35% 70%, #FF8382 70% 90%, );
+    @include colorbox();
+}
+.linear3 {
+    background-image: linear-gradient(to right, #323B8E 10% 35%, #252B65 35% 70%, #404AB9 70% 90%, );
+}
+.linear4 {
+    background-image: linear-gradient(to right, #6D3E79 10% 35%, #52305B 35% 70%, #894C97 70% 90%, );
+    @include colorbox();
+}
+
+.yellow {
+    background-color: $box1;
+    @include colorbox();
+}
+.pink {
+    background-color: $box2;
+    @include colorbox();
+}
+.blue {
+    background-color: $box3;
+    @include colorbox();
+}
+.purple {
+    background-color: $box4;
+    @include colorbox();
+}
+
+@media screen and (min-width:1024px) {
+
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1%; }
+
+        #card-template {
+           height: 14rem;
+      
+
+    }
+   
+}
