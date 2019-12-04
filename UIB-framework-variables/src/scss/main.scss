@@ -1,23 +1,72 @@
 // This is where you can import other stylesheets or write your scss code
 // @import "../../node_modules/bootstrap/scss/bootstrap";
 
-$mobile-size: 500px;
-$navigation: inline-block;
+
 
 * {
     margin: 0 auto;
 }
-.title {
+.container {
     background-image: url(/src/images/header.jpg);
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
-    
+    height: 350px;
+    margin-bottom: 10px;
 }
 
-.title, .mountain, .surfer, article {
-    height: $mobile-size;
+.card1 {
+    background: #e0ddb2;
 }
 
 li {
-    display: $navigation;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+img, .card-body {
+    width: 80%;
+    margin: 1em;
+    padding-left: 1em;
+}
+
+.card-header {
+    display: inline-block;
+}
+
+.navbar1 {
+    background: #016690;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.navbar {
+    color: #016690;
+    text-align: center;
+    padding: 1em;
+}
+
+.card2 {
+    border: 1px solid #dad6ab;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        text-align: right;
+    }
+    .bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-right: 20px;
+    }
+    .card {
+        
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
 }
