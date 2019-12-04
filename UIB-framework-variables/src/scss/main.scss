@@ -1,6 +1,10 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// VARIABLES
+
+// MIXINS
+
 // MOBILE FIRST
 
 @media screen and (min-width: 300px) {
@@ -158,11 +162,11 @@
         display: flex;
         flex-wrap: wrap;
         width: 45%;
-        height: 25vh;
+        height: 27vh;
     }
 
     .card p {
-        width: 250px;
+        width: 270px;
         font-size: 0.7em;
     }
 }
