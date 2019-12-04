@@ -1,3 +1,214 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+
+$yellow:#ffc83f;
+$pink:#fa5e5b;
+$purple: #684e79;
+$blue: #1d508d;
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-row-gap:50px;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 50px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:
+
+        ". h ."
+        ". y ." 
+        ". pi . " 
+        ". b . " 
+        ". pu ."
+        ". stry ."  
+        ". strpi ." 
+        ". strb ." 
+        ". strpu .";
+}
+
+
+
+
+
+@mixin unit() {
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin:5%;
+}
+
+
+@mixin unit2() {
+    height: 180px;
+    border: 1px solid black;
+    width: 15rem;
+    margin:5%;
+}
+
+
+@mixin colorbox() {
+    height: 180px;
+    width: 100%;
+
+}
+
+@mixin colorbox-v(){
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    span{
+    height: 180px;
+    width: 100%;
+    }
+}
+
+h1{
+    grid-area: h;
+}
+
+.text{
+    margin:5%;
+}
+
+.color {
+    @include colorbox();
+}
+
+.color-v{
+    @include colorbox-v();
+}
+
+.yellow {
+    grid-area: y;
+    @include unit();
+
+    .color {
+        background: $yellow;
+    }
+}
+
+.pink {
+    grid-area: pi;
+    @include unit();
+
+    .color {
+        background: $pink;
+    }
+}
+
+.blue {
+    grid-area: b;
+    @include unit();
+
+    .color {
+        background: $blue;
+    }
+}
+
+
+.purple {
+    grid-area: pu;
+    @include unit();
+
+    .color {
+        background: $purple;
+    }
+}
+
+
+
+.stryellow {
+    grid-area:stry;
+    @include unit2();
+
+    .y1{
+        background: #FAD61E;
+    }
+    .y2{
+        background:#FDC500;
+    }
+    .y3{
+        background:#F9E568;
+    }
+}
+
+.strpink {
+    grid-area:strpi;
+    @include unit2();
+
+    .pi1{
+        background: #FF4749;
+    }
+    .pi2{
+        background:#FE0001;
+    }
+    .pi3{
+        background:#FC8581;
+    }
+}
+
+.strblue {
+    grid-area:strb;
+    @include unit2();
+
+    .b1{
+        background: #333B8E;
+    }
+    .b2{
+        background:	#252B65;
+    }
+    .b3{
+        background:	#424AB9;
+    }
+}
+
+
+.strpurple {
+    grid-area:strpu;
+    @include unit2();
+    
+
+    .pu1{
+        background:#6E3E7C;
+    }
+    .pu2{
+        background:#532F5B;
+    }
+    .pu3{
+        background:#8A4C99
+        ;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:568px){
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-row-gap:50px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 300px 300px;
+        grid-template-areas:
+    
+            "h h h h"
+            "y pi b pu"
+            "stry  strpi strb strpu";
+    }
+
+
+}
+
