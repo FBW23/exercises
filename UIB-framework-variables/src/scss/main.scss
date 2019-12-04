@@ -1,2 +1,141 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+.my {
+    text-align: center;
+}
+
+#nav {
+    background: url(../images/header.jpg);
+    height: 17em;
+
+    a{
+        color: #016690;
+    }
+}
+
+ul {
+    // list-style-type: none;
+    background: white;
+    display: flex;
+    flex-flow: space-around;
+    justify-content: space-around;
+
+    li {
+        position: relative;
+        left: -8%;
+        display: inline;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.mountains,
+.surfer,
+.tree {
+    background: #e0ddb2;
+    padding: 4%;
+    margin: 4%;
+    border-radius: 1%;
+    border: 1px solid black;
+
+    img {
+        width: 98%;
+        margin-left: 1%;
+    }
+}
+
+aside {
+    margin: 3%;
+    padding: 4%;
+    border: 1px solid #dad6ab;
+}
+
+article {
+    padding: 4%;
+    h2 {
+        text-align:left;
+    }
+}
+
+#nav-bottom {
+    background: #016690;
+    padding: 4%;
+    a{
+        color: white;
+    }
+
+    li {
+        position: relative;
+        left: -2%;
+
+    }
+}
+
+@media screen and (min-width:786px) and(max-width:1024) {
+    ul {
+        justify-content: flex-end;
+   
+    li {
+        position: relative;
+        margin: 2%;
+        left: 2%;
+
+    }
+}
+}
+
+.mountains,
+.surfer,
+.tree {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: #E0DDB2;
+        padding: 4%;
+        margin: 5%;
+        border-radius: 2%;
+        height: 220px;
+
+        img {
+            width: 10em;
+            margin-left: 1%;
+            height: 13em;
+        }
+        p {
+            grid-column: 2 /-1;
+            position: relative;
+            top: -10em;
+        }
+}
+
+    .art {
+        display: flex;
+        flex-flow: row wrap;
+
+        aside {
+            flex-basis: 13%;
+        }
+        article {
+            flex-basis: 48%;
+        }
+    }
+    
+    #nav-bottom {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            list-style-type: none;
+            background: white;
+
+            li {
+                position: relative;
+                margin:  2%;
+                left: 2%;
+            }
+        }
+    }

@@ -9655,5 +9655,70 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.card {
+  height: 280px;
+  width: 14rem;
+  align-content: center;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.yellow {
+  background: #ffc83f;
+  height: 280px;
+  width: 14rem;
+  align-content: center;
+}
+
+.pink {
+  background: #fa5e5b;
+  height: 280px;
+  width: 14rem;
+  align-content: center;
+}
+
+.blue {
+  background: #1d508d;
+  height: 280px;
+  width: 14rem;
+  align-content: center;
+}
+
+.purple {
+  background: #684e79;
+  height: 280px;
+  width: 14rem;
+  align-content: center;
+}
+
+#card-1 {
+  background-image: linear-gradient(to right, #fbd61f 10% 30%, #fcc500 35% 70%, #fbe466 70% 80%);
+}
+
+#card-2 {
+  background-image: linear-gradient(to right, #ff4749 10% 35%, #fd0000 35% 70%, #ff8382 70% 80%);
+}
+
+#card-3 {
+  background-image: linear-gradient(to right, #323b8e 10% 35%, #252b65 35% 70%, #404ab9 70% 80%);
+}
+
+#card-4 {
+  background-image: linear-gradient(to right, #6d3e79 10% 35%, #52305b 35% 70%, #894c97 70% 80%);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5%;
+  }
+  .container [id*=card-] {
+    height: 14rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
