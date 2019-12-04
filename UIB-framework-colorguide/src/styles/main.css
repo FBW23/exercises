@@ -9655,5 +9655,102 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.card,
+h1 {
+  width: 75%;
+  margin: 8%;
+  text-align: center;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Yellow {
+  background: yellow;
+  height: 14rem;
+}
+
+.pink {
+  background: pink;
+  height: 14rem;
+}
+
+.blue {
+  background: blue;
+  height: 14rem;
+}
+
+.purple {
+  background: purple;
+  height: 14rem;
+}
+
+section {
+  height: 14rem;
+}
+
+[class*=minion] {
+  border: 1px solid lightgray;
+  display: flex;
+  width: 75%;
+  margin: 8%;
+}
+
+.minion [class*=ch] {
+  width: 33.33%;
+  background: yellow;
+}
+.minion .ch1 {
+  opacity: 0.7;
+}
+.minion .ch3 {
+  opacity: 0.5;
+}
+
+.minion1 [class*=ch] {
+  width: 33.33%;
+  background: pink;
+}
+.minion1 .ch1 {
+  opacity: 0.7;
+}
+.minion1 .ch3 {
+  opacity: 0.5;
+}
+
+.minion2 [class*=ch] {
+  width: 33.33%;
+  background: blue;
+}
+.minion2 .ch1 {
+  opacity: 0.7;
+}
+.minion2 .ch3 {
+  opacity: 0.5;
+}
+
+.minion3 [class*=ch] {
+  width: 33.33%;
+  background: purple;
+}
+.minion3 .ch1 {
+  opacity: 0.7;
+}
+.minion3 .ch3 {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .container [class*=minion] {
+    grid-row: 2;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

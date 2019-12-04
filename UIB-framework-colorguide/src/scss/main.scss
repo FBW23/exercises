@@ -1,3 +1,100 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@mixin color($color) {
+    background: $color;
+    height: 14rem;
+}
+
+@mixin m2() {
+    border: 1px solid lightgray;
+    display: flex;
+    width: 75%;
+    margin: 8%;
+}
+
+@mixin m1($c1) {
+
+    [class*="ch"] {
+        width: 33.33%;
+        background: $c1;
+    }
+
+    .ch1 {
+        opacity: 0.7;
+    }
+
+    .ch3 {
+        opacity: 0.5;
+    }
+
+}
+
+@mixin desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card,
+h1 {
+    width: 75%;
+    margin: 8%;
+    text-align: center;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Yellow {
+    @include color(yellow);
+}
+
+.pink {
+    @include color(pink);
+}
+
+.blue {
+    @include color(blue);
+}
+
+.purple {
+    @include color(purple);
+}
+
+section {
+    height: 14rem;
+}
+
+[class*="minion"] {
+    @include m2();
+}
+
+.minion {
+    @include m1(yellow)
+}
+
+.minion1 {
+    @include m1(pink)
+}
+
+.minion2 {
+    @include m1(blue)
+}
+
+.minion3 {
+    @include m1(purple)
+}
+
+@media screen and (min-width:1024px) {
+
+    .container {
+        @include desktop();
+
+        [class*="minion"] {
+            grid-row: 2;
+        }
+    }
+}
