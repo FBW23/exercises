@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "description": "koko Staff's",
+  "description": "Fran's stuff",
   "main": "index.html",
-  "author": "Constantin",
+  "author": "Fran",
   "scripts": {
     "start": "run-p watch watch:styles",
     "build": "run-s clean clean:styles build:styles copy",
