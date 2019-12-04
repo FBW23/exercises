@@ -1,3 +1,167 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@mixin colorBox () {
+    height: 280px;
+    width: 210px;
+}
+
+@mixin colorGrid () {
+    width: 210px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 177px;
+}
+
+@mixin colorElement () {
+    margin-top: 2em;
+    padding: 20px;
+    width: 70px;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.card {
+    margin-top: 2em;
+    @include colorBox();
+}
+
+
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.yellow {
+    background: #ffc83f;
+    @include colorBox();
+}
+
+.pink {
+    background: #fa5e5b;
+    @include colorBox();
+}
+
+.blue {
+    background: #1d508d;
+    @include colorBox();
+}
+
+.purple {
+    background: #684e79;
+    @include colorBox();
+}
+
+// YELLOW
+
+.yellow-container {
+    @include colorGrid;
+}
+
+.yellow-item1,
+.yellow-item2,
+.yellow-item3 {
+    @include colorElement;
+}
+
+.yellow-item1 {
+    background: #fbd73d;
+}
+
+.yellow-item2 {
+    background: #fcc63c;
+}
+
+.yellow-item3 {
+    background: #fbe466;
+}
+
+// PINK
+
+.pink-container {
+    @include colorGrid;
+}
+
+.pink-item1,
+.pink-item2,
+.pink-item3 {
+    @include colorElement;
+}
+
+.pink-item1 {
+    background: #f74548;
+}
+
+.pink-item2 {
+    background: #f83f37;
+}
+
+.pink-item3 {
+    background: #F98282;
+}
+
+// BLUE
+
+.blue-container {
+    @include colorGrid;
+}
+
+.blue-item1,
+.blue-item2,
+.blue-item3 {
+    @include colorElement;
+}
+
+.blue-item1 {
+    background: #34428E;
+}
+
+.blue-item2 {
+    background: #252D65;
+}
+
+.blue-item3 {
+    background: #4459B9;
+}
+
+// PURPLE
+
+.purple-container {
+    @include colorGrid;
+}
+
+.purple-item1,
+.purple-item2,
+.purple-item3 {
+    @include colorElement;
+}
+
+.purple-item1 {
+    background: #6D3E79;
+}
+
+.purple-item2 {
+    background: #52305B;
+}
+
+.purple-item3 {
+    background: #894C97;
+}
+
