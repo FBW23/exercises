@@ -19,9 +19,13 @@
 
 @mixin colorbox() {
     // single source of thruth
-    height: 280px;
-    width: 14rem;
+    height: 25rem;
+    // width: 14rem;
     align-content: center;
+}
+
+h1 {
+    text-align: center;
 }
 
 .card {
@@ -70,16 +74,21 @@
     background-image: linear-gradient(to right, #6d3e79 10% 35%, #52305b 35% 70%, #894c97 70% 80%);
 } 
 
-
+#card-1, #card-2, #card-3, #card-4 {
+    height: 14rem;
+}
 
 @media screen and (min-width:1024px){
     .container {
         display: grid;
        grid-template-columns: repeat(4, 1fr);
        grid-gap: 5%;
+       height: 14rem;
+    
 
         [id*="card-"]{
-            height: 14rem;
+            height: 15rem;
+            grid-row: 2;
         }
     }
 
