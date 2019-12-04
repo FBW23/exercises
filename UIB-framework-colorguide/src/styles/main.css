@@ -9660,8 +9660,7 @@ h1 {
 }
 
 .card {
-  height: 280px;
-  width: 18rem;
+  height: 24rem;
 }
 
 .card-body {
@@ -9671,26 +9670,22 @@ h1 {
 
 .yellow {
   background: #ffeb36;
-  height: 280px;
-  width: 18rem;
+  height: 24rem;
 }
 
 .pink {
   background: #fa5a5b;
-  height: 280px;
-  width: 18rem;
+  height: 24rem;
 }
 
 .blue {
   background: #1d508d;
-  height: 280px;
-  width: 18rem;
+  height: 24rem;
 }
 
 .purple {
   background: #684e79;
-  height: 280px;
-  width: 18rem;
+  height: 24rem;
 }
 
 #card1 {

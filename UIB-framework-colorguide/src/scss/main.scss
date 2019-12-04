@@ -4,13 +4,13 @@
 
 @mixin colorbox() {
     //single source of truth
-    height: 280px;
-    width: 18rem;
+    height: 24rem;
 }
 
 h1 {
     text-align: center;
 }
+
 
 .card {
     @include colorbox();
