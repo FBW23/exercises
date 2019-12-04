@@ -54,6 +54,10 @@ dl {
     @include colorbox();
 }
 
+#card-template{
+    display: none;
+}
+
 @media screen and (min-width:1024px) {
 
 
@@ -63,6 +67,7 @@ dl {
         grid-gap: 1%; }
 
         #card-template {
+        display: inline-flex;
            height: 14rem;
       
 

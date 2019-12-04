@@ -9713,6 +9713,10 @@ dl {
   height: 24rem;
 }
 
+#card-template {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   #container {
     display: grid;
@@ -9721,6 +9725,7 @@ dl {
   }
 
   #card-template {
+    display: inline-flex;
     height: 14rem;
   }
 }
