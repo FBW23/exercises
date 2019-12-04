@@ -9676,12 +9676,10 @@ dl {
 
 .linear1 {
   background-image: linear-gradient(to right, #FBD61F 10% 35%, #FCC500 35% 70%, #FBE466 70% 90%);
-  height: 24rem;
 }
 
 .linear2 {
   background-image: linear-gradient(to right, #FF4749 10% 35%, #FD0000 35% 70%, #FF8382 70% 90%);
-  height: 24rem;
 }
 
 .linear3 {
@@ -9690,27 +9688,22 @@ dl {
 
 .linear4 {
   background-image: linear-gradient(to right, #6D3E79 10% 35%, #52305B 35% 70%, #894C97 70% 90%);
-  height: 24rem;
 }
 
 .yellow {
   background-color: #ffc83f;
-  height: 24rem;
 }
 
 .pink {
   background-color: #fa5e5b;
-  height: 24rem;
 }
 
 .blue {
   background-color: #1d508d;
-  height: 24rem;
 }
 
 .purple {
   background-color: #684e79;
-  height: 24rem;
 }
 
 #card-template {
