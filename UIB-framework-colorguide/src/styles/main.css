@@ -9655,6 +9655,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
 h1 {
   text-align: center;
 }
@@ -9666,6 +9667,10 @@ main {
 
 .card {
   height: 400px;
+=======
+.card {
+  min-height: 150px;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
   width: 18rem;
 }
 
@@ -9676,12 +9681,17 @@ main {
 
 .yellow {
   background: #ffc83f;
+<<<<<<< HEAD
   height: 400px;
+=======
+  min-height: 150px;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
   width: 18rem;
 }
 
 .pink {
   background: #fa5e5b;
+<<<<<<< HEAD
   height: 400px;
   width: 18rem;
 }
@@ -9780,5 +9790,10 @@ span {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+=======
+  min-height: 150px;
+  width: 18rem;
+}
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 
 /*# sourceMappingURL=main.css.map */
