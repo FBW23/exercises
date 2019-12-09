@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+html,
+body {
+=======
+html, body {
+>>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-top: 10px;
+<<<<<<< HEAD
+}
+.task-one {
+    background: lightskyblue;
+}
+
+.task-one::before {
+    content: "Once upon a time ...";
+    background: purple;
+}
+
+.task-one::after {
+    content: "...The end.";
+    background: purple;
+}
+
+.task-two {
+    width: 400px;
+    height: 400px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: url(assets/beach.jpg);
+}
+
+img{
+    transform: rotate(180deg);
+=======
+>>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
+}

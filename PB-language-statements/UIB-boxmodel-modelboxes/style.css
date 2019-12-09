@@ -1,0 +1,37 @@
+/* My CSS comes here*/
+body,
+h2,
+h3,
+p {
+    margin: 0;
+<<<<<<< HEAD
+=======
+    text-align: center;
+    margin: 1px 2px 3px;
+}
+>>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
+
+}
+
+.primary-box {
+    background-color: #2B2B2B;
+    color: white;
+    text-align: center;
+    border-bottom: #4e3c00 solid 5px;
+    padding-bottom: 1.1em;
+    padding-top: 1.5em;
+}
+
+.secondary-box {
+    background-color: #edecee;
+    text-align: center;
+    border-bottom: #4e3c00 solid 5px;
+    padding-top: 1.2em;
+}
+
+.inside-box {
+    background-color: #89edff;
+    padding-bottom: 1.1em;
+    padding-top: 1.3em;
+    margin-top: 1em;
+}

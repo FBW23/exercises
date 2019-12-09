@@ -7,7 +7,7 @@ These exercises are aimed at making you familiar with the arithmetic operators. 
 1. Add x and y. 
 
 2. Subtract y from x. Then, subtract x from y. 
-s
+
 3. Multiply x and y. 
 
 4. Divide x by y. 

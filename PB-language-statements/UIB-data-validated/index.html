@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Swagger</title>
+</head>
+
+<body>
+  <main class="container">
+    <form class="form">
+      <h1>Tell us more</h1>
+
+      <section class="fields">
+        <label for="firstname">First Name</label>
+        <input name="firstName" type="text" id="firstname" placeholder="First Name" minlength="4" required />
+        <label for="lastname">Last name</label>
+        <input name="lastName" type="text" id="lastname" placeholder="Last Name" minlength="4" required />
+      </section>
+
+      <section class="fields">
+        <label for="email">Your email</label>
+        <input name="email" type="email" id="email" placeholder="Tell us how to contact you" minlength="10" required />
+      </section>
+
+      <section class="fields">
+        <label for="message">Tell us about yourself</label>
+        <textarea name="textarea" id="message" maxlength="140"></textarea>
+      </section>
+
+      <section class="toggle">
+        <label class="toggle-label">Want to know more?</label>
+        <label class="switch">
+          <input name="name" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </section>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+</body>
+
+</html>

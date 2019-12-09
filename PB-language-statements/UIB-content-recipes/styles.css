@@ -1,0 +1,17 @@
+ /* My CSS comes here*/
+ body {    }
+    h1 { 
+
+    }
+    h2 {
+
+    }
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 500px;
+        height: 500px;
+      }
+    
