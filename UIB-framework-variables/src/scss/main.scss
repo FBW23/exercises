@@ -66,25 +66,42 @@ header {
 
 article {
     grid-area: ar;
+    overflow: hidden;
+    
 }
 
 #aside2 {
     grid-area: a2;
+    overflow: hidden;
 }
 
 footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    
+        padding:0;
+    
     grid-area: f;
 }
 
 
 .menu {
     display: flex;
+    flex-direction: column;
+    
     list-style-type: none;
 
 
 
 
 
+}
+
+li{
+    margin: 0 auto;
 }
 
 
@@ -196,6 +213,7 @@ article {
 
 
 }
+
 
 
 
