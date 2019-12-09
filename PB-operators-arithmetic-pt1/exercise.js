@@ -17,4 +17,4 @@ console.log(a++);
 console.log(b--);
 let d = b - a;
 console.log(d + c);
-console.log(resultOne / resultTwo);
+console.log(resultOne % resultTwo);
