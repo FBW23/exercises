@@ -9660,9 +9660,9 @@ body {
   padding: 0;
   display: grid;
   grid-row-gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 50px 300px 300px 300px 300px 300px 300px 300px;
-  grid-template-areas: ". h ." ". y ." ". pi . " ". b . " ". pu ." ". stry ." ". strpi ." ". strb ." ". strpu .";
+  grid-template-areas: ". h . . . . . ." ". y . . . . . ." ". pi . . . . . ." ". b . . . . . . " ". pu . . . . . ." ". stry . . . . . ." ". strpi . . . . . ." ". strb . . . . . . " ". strpu . . . . . .";
 }
 
 h1 {
@@ -9815,7 +9815,7 @@ h1 {
     grid-row-gap: 50px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 300px 300px;
-    grid-template-areas: "h h h h" "y pi b pu" "stry  strpi strb strpu";
+    grid-template-areas: ". . h h" "y pi b pu" "stry  strpi strb strpu";
   }
 }
 
