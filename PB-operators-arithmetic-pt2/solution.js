@@ -17,7 +17,7 @@ let part=17;
 let whole=30;
 let value=part/whole;
 console.log(value);
-//56% is how much ;
+//56% is how much the 17 out of 30;
 //
 //Q4
 let side = 4.75
@@ -45,10 +45,10 @@ l1 =5;
 l2=6;
 l3=7;
 let halfPerimeter=(l1+l2+l3)/2;
-let squareRootHalfPerimeter=3;
-let triangleArea=squareRootHalfPerimeter*(halfPerimeter-l1)*(halfPerimeter-l2)*(halfPerimeter-l3);
+//since triangleArea=squareRoot{halfPerimeter(halfPerimeter-l1)(halfPerimeter-l2)(halfPerimeter-l3)}
+let triangleArea=10.39;
 console.log(triangleArea);
-//Ara of the triangle is 72cm^2
+//Ara of the triangle is 10.39cm^2
 //
 //Q8
 let cubeSide=9;
