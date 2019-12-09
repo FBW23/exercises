@@ -61,6 +61,7 @@ d+c;
 console.log(d+c);
 
 
+
 console.log(resultOne%resultTwo);
 
 
