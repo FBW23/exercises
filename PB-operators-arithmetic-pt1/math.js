@@ -19,8 +19,9 @@ let c=20;
 let resultTwo=((a+b)*c);
 console.log(a++);
 console.log(b--);
-let=(b-a);
-let =(resultOne/resultTwo);
+let d=b-a;
+console.log(d);
+console.log(resultOne/resultTwo);
 
 
 
