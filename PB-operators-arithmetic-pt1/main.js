@@ -27,10 +27,10 @@ console.log(x/y);
 
 let z = 10;
 
-console.log('(X*Y)*z, aka resultOne:');
+console.log('(X*Y)/z, aka resultOne:');
 
 
-let resultOne = (x*y*z);
+let resultOne = (x*y/z);
 
 console.log(resultOne);
 
@@ -47,11 +47,11 @@ let resultTwo = (a+b*c);
 console.log('(a+b)*c, aka resultTwo:');
 console.log(resultTwo);
 
-console.log('resultTwo+a:');
-console.log(resultTwo+a);
+console.log('increment a:');
+console.log(a++);
 
-console.log('resultTwo+a-b:');
-console.log(resultTwo+a-b);
+console.log('decrement b:');
+console.log(b--);
 
 
 let d = a-b
