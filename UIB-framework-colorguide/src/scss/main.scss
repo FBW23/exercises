@@ -1,0 +1,96 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+<<<<<<< HEAD
+
+@mixin colorbox() {
+    //single source of truth
+    height: 24rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+=======
+@mixin colorbox() {
+    // single source of thruth 
+    min-height: 150px;
+    width: 18rem;
+}
+
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
+.card {
+    @include colorbox();
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.yellow {
+<<<<<<< HEAD
+    background: #ffeb36;
+    @include colorbox();
+}
+
+.pink {
+    background: #fa5a5b;
+    @include colorbox();
+}
+
+.blue {
+    background: #1d508d;
+    @include colorbox();
+}
+
+.purple {
+    background: #684e79;
+    @include colorbox();
+}
+
+#card1 {
+    background-image: linear-gradient(to right, #Fbd61f 10% 35%, #fcc500 35% 70%, #fbe466 70% 90%, );
+
+}
+
+#card2 {
+    background-image: linear-gradient(to right, #ff4749 10% 35%, #fd0000 35% 70%, #ff8382 70% 90%, );
+
+}
+
+#card3 {
+    background-image: linear-gradient(to right, #323b8e 10% 35%, #252b65 35% 70%, #404ab9 70% 90%, );
+
+}
+
+#card4 {
+    background-image: linear-gradient(to right, #6d3e79 10% 35%, #52305b 35% 70%, #894c97 70% 90%, );
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5%;
+
+        [id*="card"] {
+            height: 14rem;
+        }
+    }
+=======
+    background: #ffc83f;
+    @include colorbox();
+}
+
+
+.pink {
+    background: #fa5e5b;
+    @include colorbox();
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
+}

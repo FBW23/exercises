@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    color: white;
+    padding: 0 200px;
+}
+
+header {
+    background: black;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav,
+section {
+    background: #4b4b4b;
+}
+
+nav ul {
+    justify-content: center;
+}
+
+li {
+    margin: 20px;
+}
+
+div,
+section,
+nav ul {
+    display: flex;
+}
+
+aside {
+    background: white;
+    color: black;
+}
+
+section {
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+figure {
+    padding: 20px;
+}
+
+figcaption {
+    background: #1a1a1a;
+    padding: 5px 0 5px 15px;
+    margin-top: -4px;
+}

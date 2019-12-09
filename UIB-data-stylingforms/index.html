@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Style Form</title>
+</head>
+
+<body>
+    <main>
+        <img class="logo" src="/images/logo.png" alt="El amigo">
+        <div id="boxes">
+            <div id="firstBox">
+                <h2>The Best Craft Beer in Spain!</h2>
+                <p>Bienvenidoamigos! We are completely fictional location. But that does not mean we can't imagine the
+                    best beer in Spain!</p>
+            </div>
+            <div id="reservation">
+                <h3>Make a reservation</h3>
+                <p>Get your spot before somebody else does!</p>
+
+                <form action="reservation">
+
+                    <label class="inside" for="yourName">your name</label><br>
+                    <input type="text" placeholder="John B.Goode" name="yourName" id="yourName"><br>
+                    <label class="inside" for="yourMail">your email</label><br>
+                    <input type="text" placeholder="John_B_Goode@hotmail.com" name="yourMail" id="yourMail"><br>
+                    <label class="inside" for="yourName">reservation time</label><br>
+                    <input type="datetime-local" name="yourName" id="yourName" required><br>
+                    <button type="reset">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>@2018 - El Amigo</footer>
+</body>
+
+</html>

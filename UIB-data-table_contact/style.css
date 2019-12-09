@@ -1,0 +1,25 @@
+table {
+    margin: 20px;
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    width: 75%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+
+tr:nth-child(odd) {
+    background: lightgrey;
+}
+
+thead th {
+    background: white;
+}
+
+td:nth-last-child(1) {
+    text-align: right;
+}
