@@ -46,9 +46,9 @@ l2=6;
 l3=7;
 let halfPerimeter=(l1+l2+l3)/2;
 //since triangleArea=squareRoot{halfPerimeter(halfPerimeter-l1)(halfPerimeter-l2)(halfPerimeter-l3)}
-let triangleArea=10.39;
+let triangleArea = Math.sqrt(halfPerimeter*(halfPerimeter-l1)*(halfPerimeter-l2)*(halfPerimeter-l3));
 console.log(triangleArea);
-//Ara of the triangle is 10.39cm^2
+//Ara of the triangle is 14.6969cm^2
 //
 //Q8
 let cubeSide=9;
