@@ -9875,6 +9875,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
 h1 {
   margin: 10px;
   text-align: center;
@@ -9895,6 +9896,11 @@ body {
   margin-top: 2em;
   height: 280px;
   width: 210px;
+=======
+.card {
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .card-body {
@@ -9904,12 +9910,18 @@ body {
 
 .yellow {
   background: #ffc83f;
+<<<<<<< HEAD
   height: 280px;
   width: 210px;
+=======
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .pink {
   background: #fa5e5b;
+<<<<<<< HEAD
   height: 280px;
   width: 210px;
 }
@@ -10032,6 +10044,10 @@ body {
 
 .purple-item3 {
   background: #894C97;
+=======
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 /*# sourceMappingURL=main.css.map */
