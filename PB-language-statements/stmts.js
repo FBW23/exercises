@@ -10,3 +10,4 @@ console.log('This', 'is', 'my', 'first', 'js', 'file.');
 
 // it's a syntax error.
 
+console.log('hello' + 'world');
