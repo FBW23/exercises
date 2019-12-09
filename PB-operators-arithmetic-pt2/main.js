@@ -24,7 +24,7 @@ console.log(triPerimeter);
 console.log('Area of the square:');
 console.log(5*5,'cm or', 5**2,'cm');
 
-//CUBE COLUME
+//CUBE VOLUME
 console.log(' Volume of the cube:');
 console.log(9*9*9,'cm or', 9**3,'cm');
 
