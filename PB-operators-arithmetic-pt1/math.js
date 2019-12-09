@@ -24,4 +24,7 @@ let resultTwo = a + b * c;
 console.log(resultTwo);
 a++;
 b--;
+b - a;
+let d = b - a;
+d + c;
 console.log(resultOne % resultTwo);
