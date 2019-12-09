@@ -9655,5 +9655,26 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.card {
+  min-height: 150px;
+  width: 18rem;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.yellow {
+  background: #ffc83f;
+  min-height: 150px;
+  width: 18rem;
+}
+
+.pink {
+  background: #fa5e5b;
+  min-height: 150px;
+  width: 18rem;
+}
 
 /*# sourceMappingURL=main.css.map */
