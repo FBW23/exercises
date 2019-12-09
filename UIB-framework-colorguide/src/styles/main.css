@@ -9655,12 +9655,18 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
 h1 {
   text-align: center;
 }
 
 .card {
   height: 24rem;
+=======
+.card {
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .card-body {
@@ -9669,6 +9675,7 @@ h1 {
 }
 
 .yellow {
+<<<<<<< HEAD
   background: #ffeb36;
   height: 24rem;
 }
@@ -9713,6 +9720,17 @@ h1 {
   .container [id*=card] {
     height: 14rem;
   }
+=======
+  background: #ffc83f;
+  min-height: 150px;
+  width: 18rem;
+}
+
+.pink {
+  background: #fa5e5b;
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 /*# sourceMappingURL=main.css.map */
