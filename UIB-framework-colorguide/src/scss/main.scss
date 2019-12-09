@@ -1,6 +1,7 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+<<<<<<< HEAD
 
 $yellow:#ffc83f;
 $pink:#fa5e5b;
@@ -213,3 +214,30 @@ h1{
 
 }
 
+=======
+@mixin colorbox() {
+    // single source of thruth 
+    min-height: 150px;
+    width: 18rem;
+}
+
+.card {
+    @include colorbox();
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.yellow {
+    background: #ffc83f;
+    @include colorbox();
+}
+
+
+.pink {
+    background: #fa5e5b;
+    @include colorbox();
+}
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181

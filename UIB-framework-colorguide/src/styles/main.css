@@ -9655,6 +9655,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
@@ -9817,6 +9818,28 @@ h1 {
     grid-template-rows: 50px 300px 300px;
     grid-template-areas: ". . h h" "y pi b pu" "stry  strpi strb strpu";
   }
+=======
+.card {
+  min-height: 150px;
+  width: 18rem;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.yellow {
+  background: #ffc83f;
+  min-height: 150px;
+  width: 18rem;
+}
+
+.pink {
+  background: #fa5e5b;
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 /*# sourceMappingURL=main.css.map */
