@@ -1,6 +1,7 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+<<<<<<< HEAD
 @mixin color($color) {
     background: $color;
     height: 14rem;
@@ -41,6 +42,16 @@ h1 {
     width: 75%;
     margin: 8%;
     text-align: center;
+=======
+@mixin colorbox() {
+    // single source of thruth 
+    min-height: 150px;
+    width: 18rem;
+}
+
+.card {
+    @include colorbox();
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .card-body {
@@ -48,6 +59,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
 }
 
+<<<<<<< HEAD
 .Yellow {
     @include color(yellow);
 }
@@ -97,4 +109,15 @@ section {
             grid-row: 2;
         }
     }
+=======
+.yellow {
+    background: #ffc83f;
+    @include colorbox();
+}
+
+
+.pink {
+    background: #fa5e5b;
+    @include colorbox();
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }

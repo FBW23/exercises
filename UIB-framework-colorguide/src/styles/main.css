@@ -9655,11 +9655,17 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
 .card,
 h1 {
   width: 75%;
   margin: 8%;
   text-align: center;
+=======
+.card {
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .card-body {
@@ -9667,6 +9673,7 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
 }
 
+<<<<<<< HEAD
 .Yellow {
   background: yellow;
   height: 14rem;
@@ -9751,6 +9758,18 @@ section {
   .container [class*=minion] {
     grid-row: 2;
   }
+=======
+.yellow {
+  background: #ffc83f;
+  min-height: 150px;
+  width: 18rem;
+}
+
+.pink {
+  background: #fa5e5b;
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 /*# sourceMappingURL=main.css.map */
