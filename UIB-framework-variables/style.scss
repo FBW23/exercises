@@ -5,7 +5,7 @@ $my-size:210px;
 $my-display:flex;
 
 div {
-    padding-left: 20px
+    // padding-left: 20px
 }
 
 h2,
@@ -101,9 +101,11 @@ footer {
     }
 
     .aside{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        margin: 0 auto;
+        justify-content: center;
     }
 
     .left, .article, .right{
