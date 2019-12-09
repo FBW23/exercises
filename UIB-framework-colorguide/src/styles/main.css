@@ -9658,6 +9658,7 @@ h3 {
 .card {
   min-height: 150px;
   width: 18rem;
+<<<<<<< HEAD
   margin-bottom: 30px;
 }
 
@@ -9674,6 +9675,8 @@ h1 {
 main {
   text-align: center;
   margin: auto 0;
+=======
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .card-body {
@@ -9692,6 +9695,7 @@ main {
   min-height: 150px;
   width: 18rem;
 }
+<<<<<<< HEAD
 
 .blue {
   background: #1d508d;
@@ -9781,5 +9785,7 @@ main {
   min-height: 170px;
   width: 6rem;
 }
+=======
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 
 /*# sourceMappingURL=main.css.map */
