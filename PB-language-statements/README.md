@@ -7,6 +7,5 @@
 4. Comment out your second statement. 
 
 **Questions: Write your answers as a block comment in the js file**
-1. Remove a parenthesis from the first statement and run the code. Does your statement print?   i did , and the statement does not print ,
+1. Remove a parenthesis from the first statement and run the code. Does your statement print? 
 2. Is there an error? If so, what kind of error is it?  
-yes there is an error , it is a SyntaxError: missing ) after argument list;
