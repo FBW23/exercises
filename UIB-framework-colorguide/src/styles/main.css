@@ -9655,6 +9655,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
 h1 {
   text-align: center;
 }
@@ -9662,6 +9663,11 @@ h1 {
 .card {
   height: 25rem;
   align-content: center;
+=======
+.card {
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .card-body {
@@ -9671,12 +9677,18 @@ h1 {
 
 .yellow {
   background: #ffc83f;
+<<<<<<< HEAD
   height: 25rem;
   align-content: center;
+=======
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .pink {
   background: #fa5e5b;
+<<<<<<< HEAD
   height: 25rem;
   align-content: center;
 }
@@ -9724,6 +9736,10 @@ h1 {
     height: 15rem;
     grid-row: 2;
   }
+=======
+  min-height: 150px;
+  width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 /*# sourceMappingURL=main.css.map */
