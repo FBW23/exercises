@@ -9698,11 +9698,15 @@ header {
 
 article {
   grid-area: ar;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+>>>>>>> 34e1ec1907bc9077c0bbd71f091996a26a0c26a5
 }
 
 #aside2 {
   grid-area: a2;
+<<<<<<< HEAD
   overflow: hidden;
 }
 
@@ -9712,11 +9716,17 @@ footer {
   align-items: center;
   list-style-type: none;
   padding: 0;
+=======
+}
+
+footer {
+>>>>>>> 34e1ec1907bc9077c0bbd71f091996a26a0c26a5
   grid-area: f;
 }
 
 .menu {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   list-style-type: none;
 }
@@ -9725,6 +9735,11 @@ li {
   margin: 0 auto;
 }
 
+=======
+  list-style-type: none;
+}
+
+>>>>>>> 34e1ec1907bc9077c0bbd71f091996a26a0c26a5
 #mainMenu {
   color: #016690;
   position: relative;
@@ -9808,7 +9823,11 @@ article {
     grid-row-gap: 2%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1% 25% 22% 22% 22% 1%;
+<<<<<<< HEAD
     grid-template-areas: "m m m m m m m m m m m m" "l l l l l l l l l l l l" "c1 c1 c1 c1 c1 c1 c2 c2 c2 c2 c2 c2" ". . . c3 c3 c3 c3 c3 c3 . . ." "a1 a1 a1 ar ar ar ar ar ar a2 a2 a2" "f f f f f f f f f f f f";
+=======
+    grid-template-areas: "m m m m m m m m m m m m" "l l l l l l l l l l l l" "c1 c1 c1 c1 c1 c1 c2 c2 c2 c2 c2 c2" ". . . c3 c3 c3 c3 c3 c3 . . ." ". a1 a1 ar ar ar ar ar ar a2 a2 ." "f f f f f f f f f f f f";
+>>>>>>> 34e1ec1907bc9077c0bbd71f091996a26a0c26a5
   }
 
   #landing {
