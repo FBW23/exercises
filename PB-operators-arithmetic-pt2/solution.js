@@ -35,13 +35,14 @@ console.log(perimeter2);
 //
 //Q6
 let squareSide=5;
-let squareArea= squareSide*squareSide;
+// let squareArea= squareSide*squareSide;
+let squareArea=Math.pow(squareSide, 2);
 console.log(squareArea);
 //the square Area is 25cm^2
 //
 //Q7
 let l1 , l2, l3;
-l1 =5;
+l1=5;
 l2=6;
 l3=7;
 let halfPerimeter=(l1+l2+l3)/2;
@@ -52,7 +53,8 @@ console.log(triangleArea);
 //
 //Q8
 let cubeSide=9;
-let cubeVolume=cubeSide*cubeSide*cubeSide;
+// let cubeVolume=cubeSide*cubeSide*cubeSide;
+let cubeVolume=Math.pow(cubeSide, 3);
 console.log(cubeVolume);
 //Volume of the Cube is 729cm^3
 //
