@@ -43,6 +43,6 @@ console.log('5. Print a sentence using the profile variables above, adding text 
 console.log('-----------------------');
 
 
-console.log(`${name}  is a 50 year old mouse from ${city} that loves ${job}, and eating  ${food} whilst wearing a ${hat}`);
+console.log(`${name} is a 50 year old mouse from ${city} that loves ${job}, and eating  ${food} whilst wearing a ${hat}`);
 
 console.log('=========================================================================');
