@@ -35,5 +35,9 @@ zy=y-z;
 console.log('z added to x is greater than y minus z');
 console.log(zx>zy);
 console.log('z added to x is smaller than y minus z');
-console.log(zx<zy);
+console.log(zx===zy);
 
+let fe = 'kjhkhjk';
+fe += 1;
+console.log(fe);
+console.log(typeof fe);
