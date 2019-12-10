@@ -6,6 +6,11 @@ console.log(6450/15);
 console.log("Syilvia's income:");
 console.log(500*52,'$');
 
+//PERCENTAGE of 17/30
+
+console.log('percentage of 17 /30:');
+console.log(17/30*100);
+
 // SQUARE PERIMETER
 console.log('Perimeter of the square:');
 console.log(4.5*4,'cm');
@@ -47,7 +52,7 @@ console.log(' area of the triangle, sides 5, 6, 7 cm. Since the area of the tria
     console.log(x2);
     console.log('=====> x = √x2  = 5,83095')
     let x = Math.sqrt(x2);
-    
+     
 
     console.log('area of half triangle: [(a/2)*x]/2 = ');
     console.log(halfA*x/2); 
@@ -71,11 +76,12 @@ console.log('= area of the triangle')
 
 console.log("There's also Heron's formula, where we first take the half of the triangle's perimeter (s) , then calculate the area of the triangle (  √(s(s-a)*(s-b)*(s-c)  ) =")
 let s=(triPerimeter)/2;
-console.log('s');
+console.log('s=');
 console.log(s);
 
 
 let sroot=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+console.log()
 console.log(sroot);
 
 
@@ -130,16 +136,27 @@ console.log("James needs minimum:");
 
 
 
+let currentScore=78;
+console.log('Current results:', currentScore);
+let expectation=80;
+console.log('Expected result:', expectation);
+
+
+console.log(' expectation=((8*currentScore)+i)/9');
+console.log('720=(624)+i');
+let i=720-624;
+
+
+console.log('is this the correct one?');
+console.log(i, '%');
 
 
 
-
-let currentScore=(78/8);
-console.log(currentScore);
-let expectation=(80/9);
-console.log(expectation);
-
-let y=(expectation/currentScore)*100;
+//let currentScore=78/8;
+//console.log('Current results:', currentScore);
+//let expectation=80/9;
+//console.log('Expected result:', expectation);
+//let y=(expectation/currentScore)*100;
 
 
-console.log(y);
+//console.log(y);
