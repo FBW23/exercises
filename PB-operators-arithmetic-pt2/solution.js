@@ -15,8 +15,9 @@ console.log(yearly);
 //Q3
 let part=17;
 let whole=30;
-let value=part/whole;
-console.log(value);
+let value=(part*100/whole);
+let fValue = Math.round(value)+'%';
+console.log(fValue);
 //56% is how much the 17 out of 30;
 //
 //Q4
@@ -89,7 +90,7 @@ let average , subSum , sixth , numberOfTests;
 average=85;
 subSum=420;
 numberOfTests=6;
-sixth=(numberOfTests*average)-subSum;
+sixth=(numberOfTests*average)-subSum+'%';
 console.log(sixth);
 // he scored 90 in his last test
 //
@@ -99,7 +100,7 @@ let previousAverage,finalAverage,finalTestAverage;
  previousAverage=78;
  finalAverage=80;
 //Since  finalAverage=(previousAverage+finalTestAverage)/2;
- finalTestAverage=(finalAverage*2)-previousAverage;
+ finalTestAverage=(finalAverage*2)-previousAverage+'%';
  console.log(finalTestAverage);
 //he needs to get at least 82% in the final test 
 
