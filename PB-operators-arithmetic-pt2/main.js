@@ -36,45 +36,9 @@ console.log(9*9*9,'cm or', 9**3,'cm');
 
 //TRIANGLE AREA
 
-console.log(' area of the triangle, sides 5, 6, 7 cm. Since the area of the triangle is calculated based on the length of 1 side and the height belonging to that side , we need to use the Pythagorean theorem first.:');
-    console.log('b=5/|\\');
-    console.log('  / | \\');
-    console.log(' /  |x \\c=7');
-    console.log('/___|___\\');   
-    console.log('   a=6'); 
-    console.log('triangle area:(a*x)/2'); 
-    console.log('pythagoras:(a*a)=(b*b)+(c*c)=====> (x*x) = (a/2)*(a/2) + (b*b) =====> x2=3*3 + 5*5 =======> x2=9+25 = ')
-    
-    let halfA=a/2;
-    
-    let x2=(halfA)*(halfA) + (b*b);
-    
-    console.log(x2);
-    console.log('=====> x = √x2  = 5,83095')
-    let x = Math.sqrt(x2);
-     
-
-    console.log('area of half triangle: [(a/2)*x]/2 = ');
-    console.log(halfA*x/2); 
-    let halfArea=(halfA*x/2);
-    console.log('area of the whole triangle = 2 * halfarea = ' )
-    console.log(halfArea*2);
 
 
-
-
-console.log("if we assume that 1 of the angles of the triangle is 90 degree,(although, this triangle simply can not have a 90 degree angle , based on the length of it's sides) then we don't  need pythagoras and can use 1 side as base and any other side as height and the equation looks like this: ");
-
-console.log(' (a*b)/2 = (6*5)/2 =')
-console.log((a*b)/2);
-console.log(',or (a*c)/2 = (6*7)/2 =')
-console.log((a*c)/2);
-console.log(',or (b*c)/2 = (5*7)/2 =')
-console.log((b*c)/2);
-
-console.log('= area of the triangle')
-
-console.log("There's also Heron's formula, where we first take the half of the triangle's perimeter (s) , then calculate the area of the triangle (  √(s(s-a)*(s-b)*(s-c)  )  (  √(9(9-6)*(9-5)*(9-7)  )  (  √(9(3)*(4)*(2)  )  (  √(216 )=")
+console.log("There's Heron's formula, where we first take the half of the triangle's perimeter (s) , then calculate the area of the triangle (  √(s(s-a)*(s-b)*(s-c)  )  (  √(9(9-6)*(9-5)*(9-7)  )  (  √(9(3)*(4)*(2)  )  (  √(216 )=")
 let s=(triPerimeter)/2;
 console.log('s=');
 console.log(s);
