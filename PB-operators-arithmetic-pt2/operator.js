@@ -33,14 +33,15 @@ console.log(volumeCube);
 // Q9
 let billOne = 22.35, billTwo = 26.67, billThree = 35.92;
 let summeOne = billOne*0.10+billOne;
+console.log();
+console.log(summeOne);
 let summeTwo = billTwo*0.15+billTwo;
-let summeThree = billThree*0.20+billThree;
-console.log('Bill One:'+(summeOne)+'$, ','Bill Two:'+(summeTwo)+'$, ','Bill Three:'+(summeThree)+'$');
+let summeThree = billThree*1.20;
+console.log('Bill One:'+Math.round(summeOne)+'$, ','Bill Two:'+Math.round(summeTwo)+'$, ','Bill Three:'+Math.round(summeThree)+'$');
 // Q10
 let twoWeeks = 8+6+5+9+8+2+1+8.5+7+4;
-let daysWeek = 7;
-let weeks = 2;
-let hourDay = twoWeeks/(daysWeek*weeks);
+let daysWorked = 10;
+let hourDay =(twoWeeks/daysWorked);
 console.log(hourDay);
 // Q11
 let testFive = 75+70+85+90+100;
