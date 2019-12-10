@@ -1,3 +1,6 @@
 // console.log ("hello world")
-console.log ("This is my first js file"
+
+let x=20
+let y=30
+
 

@@ -51,7 +51,13 @@ let bill3=35.92;
 let tip=bill*0.10;
 let tip2=bill2*0.15;
 let tip3=bill3*0.20;
-console.log (bill+tip+bill2+tip2+bill3+tip3)
+
+console.log(bill+tip);
+console.log(bill2+tip2);
+console.log(bill3+tip3);
+let all=(bill+tip)+(bill+tip2)+(bill3+tip3);
+console.log(all)
+
 
 // Q10. The number of hours Noemy worked over the last two weeks are 8, 6, 5, 9, 8, 2, 1, 8.5, 7, 4 What is Noemy's average hours worked per day?
 

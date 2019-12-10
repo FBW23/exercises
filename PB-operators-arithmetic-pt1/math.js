@@ -20,11 +20,4 @@ let resultTwo=((a+b)*c);
 console.log(a++);
 console.log(b--);
 let d=b-a;
-console.log(d);
-console.log(resultOne/resultTwo);
-
-
-
-
-
-
+consol
