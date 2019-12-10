@@ -74,14 +74,14 @@ console.log((b*c)/2);
 
 console.log('= area of the triangle')
 
-console.log("There's also Heron's formula, where we first take the half of the triangle's perimeter (s) , then calculate the area of the triangle (  √(s(s-a)*(s-b)*(s-c)  ) =")
+console.log("There's also Heron's formula, where we first take the half of the triangle's perimeter (s) , then calculate the area of the triangle (  √(s(s-a)*(s-b)*(s-c)  )  (  √(9(9-6)*(9-5)*(9-7)  )  (  √(9(3)*(4)*(2)  )  (  √(216 )=")
 let s=(triPerimeter)/2;
 console.log('s=');
 console.log(s);
 
 
 let sroot=Math.sqrt(s*(s-a)*(s-b)*(s-c));
-console.log()
+console.log( ' √(s(s-a)*(s-b)*(s-c) ' )
 console.log(sroot);
 
 
