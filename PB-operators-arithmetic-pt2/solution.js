@@ -91,7 +91,7 @@ average=85;
 subSum=420;
 numberOfTests=6;
 sixth=(numberOfTests*average)-subSum+'%';
-console.log(sixth);
+console.log('Score in the sixth test:' +sixth);
 // he scored 90 in his last test
 //
 //Q12
@@ -101,7 +101,7 @@ let previousAverage,finalAverage,finalTestAverage;
  finalAverage=80;
 //Since  finalAverage=(previousAverage+finalTestAverage)/2;
  finalTestAverage=(finalAverage*2)-previousAverage+'%';
- console.log(finalTestAverage);
+ console.log('James needs a minimum of '+finalTestAverage+' to get an 80% average');
 //he needs to get at least 82% in the final test 
 
 
