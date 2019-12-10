@@ -24,3 +24,7 @@ console.log(d + c);
 console.log();
 // let reminder = ;
 console.log(resultOne % resultTwo);
+
+let o = 'Bianca';
+let t = ' Julia'
+console.log(o+t);
