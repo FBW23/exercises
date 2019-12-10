@@ -32,4 +32,3 @@ console.log(z+x===y-z);
 console.log(z+x<=y-z);
 console.log(z+x>=y-z);
 console.log('11. BONUS CHALLENGE: Try increasing script readability by adding question headings to your output before each result.');
-
