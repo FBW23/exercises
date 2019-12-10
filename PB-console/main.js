@@ -9,7 +9,7 @@ console.log('2. Declare a variable and give your variable the following value: T
 
 console.log('----------------------');
 let value='This is my value';
-console.log(value);
+console.log(`${value}`);
 
 
 
