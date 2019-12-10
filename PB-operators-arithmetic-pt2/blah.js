@@ -56,7 +56,7 @@ console.log(bill+tip);
 console.log(bill2+tip2);
 console.log(bill3+tip3);
 let all=(bill+tip)+(bill+tip2)+(bill3+tip3);
-console.log(all)
+system.print.out(all)
 
 
 // Q10. The number of hours Noemy worked over the last two weeks are 8, 6, 5, 9, 8, 2, 1, 8.5, 7, 4 What is Noemy's average hours worked per day?
