@@ -33,6 +33,34 @@ console.log(average/10);
 
 let percentage = 17/30;
 console.log(percentage*100);
+console.log(tipsOne*10/100+tipsOne);
+console.log(tipsTwo*15/100+tipsTwo);
+console.log(tipsThree*20/100+tipsThree);
+
+let trianguleSub = 9;
+let result = Math.sqrt(216);
+console.log(result);
+
+let resultTwo = Math.sqrt(9*(9-5)*(9-6)*(9-7));
+console.log(resultTwo);
+
+//Average
+
+let averageOne = 75+70+85+90+100;
+let averageTwo = 85;
+console.log('result of average Q2');
+console.log((averageTwo*6)-averageOne);
+
+let average = ;
+
+
+
+
+
+
+
+
+
 
 
 
