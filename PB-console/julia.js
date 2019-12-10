@@ -46,29 +46,20 @@ let job = 'Project Manager';
 let hair = 'Brown';
 let favoriteFood = 'Confort';
 
-console.log(name, city, job, hair, favoriteFood);
+console.log(`${name} lives in ${city} work as a ${job} her hair is ${hair} and her favorite food is ${favoriteFood} `);
+
 
 
 
 
 //5. Print a sentence using the profile variables above, adding text where necessary for sentence flow, i.e., "John Smith is a 43 year old teacher who lives in Berlin". **you can combine variables with text in the console by using the plus symbol (+) e.g. console.log("this is a " + variable);** 
-let where = 'lives in';
-let work = 'work as a';
-let appearence = 'her hair is';
-let food = 'and her favorite food is';
 
 
 
-console.log(name, where, city, work, job, appearence, hair, food, favoriteFood);
 
-favoriteFood= 'favorite food'
-console.log(favoriteFood);
 
-console.log(name, where, city, work, job, appearence, hair, food, favoriteFood);
-favoriteFood= 'confort food'
-console.log(favoriteFood);
 
-console.log(name, where, city, work, job, appearence, hair, food, favoriteFood);
+
 
 
 
