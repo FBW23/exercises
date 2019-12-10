@@ -13,7 +13,7 @@ console.log(17/30*100);
 
 // SQUARE PERIMETER
 console.log('Perimeter of the square:');
-console.log(4.5*4,'cm');
+console.log(4.75*4,'cm');
 
 //TRIANGLE PERIMETER
 console.log('Perimeter of the triangle:');
@@ -96,7 +96,7 @@ console.log(sum1+tip1);
 console.log('€26.67 + 15% tip');
 let sum2=26.67;
 let tip2=sum2*0.15;
-console.log(sum1+tip1);
+console.log(sum2+tip2);
 
 
 console.log('€35.92 + 20% tip');
@@ -143,7 +143,7 @@ console.log('Expected result:', expectation);
 
 
 console.log(' expectation=((8*currentScore)+i)/9');
-console.log('720=(624)+i');
+console.log('80*9=(78*8)+i');
 let i=720-624;
 
 
@@ -151,12 +151,12 @@ console.log('is this the correct one?');
 console.log(i, '%');
 
 
+console.log(8*78);
+let alap=8*78;
+console.log(alap+96);
+let alap2=alap+96;
 
-//let currentScore=78/8;
-//console.log('Current results:', currentScore);
-//let expectation=80/9;
-//console.log('Expected result:', expectation);
-//let y=(expectation/currentScore)*100;
+console.log(alap2/9);
 
 
-//console.log(y);
+
