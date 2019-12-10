@@ -16,7 +16,7 @@ console.log(myId);
 console.log("");
 console.log("4. Make a profile of someone's information. Store all the information in variables eg. name, city, job etc. (five variables total) Console log the variables.");
 console.log("");
-let someName = 'Braia Nino';
+let someName = 'Braia Nino'; 
 let someCity = 'Brera';
 let someJob = 'Singer';
 let someAge = '39';

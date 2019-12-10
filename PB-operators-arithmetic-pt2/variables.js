@@ -45,3 +45,9 @@ console.log(myString);
 myString = `Result: ${firstString} ${secondString}`;
 console.log(myString);
 
+
+// ternary operator
+let person = null; //on purpose - null, undefined and zero are considered falsy values
+let name = person ? person : "stranger";
+console.log("Howdy, " + name);
+
