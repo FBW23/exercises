@@ -11,7 +11,7 @@ console.log("3. Declare a variable called firstName and assign your first name t
 let firstName = 'Nicolo';
 let lastName = 'Tommasi';
 console.log("");
-myId = `My first and last Name: ${firstName} ${lastName}`;
+let myId = `My first and last Name: ${firstName} ${lastName}`;
 console.log(myId);
 console.log("");
 console.log("4. Make a profile of someone's information. Store all the information in variables eg. name, city, job etc. (five variables total) Console log the variables.");
@@ -21,7 +21,7 @@ let someCity = 'Brera';
 let someJob = 'Singer';
 let someAge = '39';
 let someMaritalstatus = 'Married';
-braiaNino = `Name: ${someName}, City: ${someCity}, Occupation ${someJob}, Age: ${someAge}, Marital Status: ${someMaritalstatus}`;
+let braiaNino = `Name: ${someName}, City: ${someCity}, Occupation ${someJob}, Age: ${someAge}, Marital Status: ${someMaritalstatus}`;
 console.log(braiaNino);
 console.log("");
 console.log("5. Print a sentence using the profile variables above, adding text where necessary for sentence flow");
