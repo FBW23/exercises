@@ -19,3 +19,11 @@ console.log(fun);
 console.log(PROGRAMMINGLANGUAGE[0]);
 console.log(PROGRAMMINGLANGUAGE[4]);
 console.log(PROGRAMMINGLANGUAGE.length);
+
+
+
+let helloWorld= "hello world";
+
+
+
+
