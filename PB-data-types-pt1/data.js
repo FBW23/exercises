@@ -18,3 +18,9 @@ console.log(`${programmingLanguage} is fun \:${isFun}`);
 console.log(programmingLanguage.substring(0,1));
 console.log(programmingLanguage.substring(4,5));
 console.log(programmingLanguage.length);
+
+
+
+
+
+
