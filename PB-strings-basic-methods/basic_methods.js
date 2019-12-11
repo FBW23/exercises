@@ -76,3 +76,4 @@ console.log('');
 let fox = 'the quick brown fox';
 let capitalF = fox[0].toUpperCase();
 console.log(capitalF);
+console.log('or straight in the console.log:', fox[0].toUpperCase());
