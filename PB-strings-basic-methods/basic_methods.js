@@ -59,6 +59,8 @@ let lastChar = stringNine[18];
 let middleChar = stringNine.substring(1, 18);
 console.log('The word is:', stringNine);
 console.log(`${lastChar}${middleChar}${firstChar}`);
+console.log('');
+console.log('created straight in the console log without making additional vars:', stringNine[18] + stringNine.substring(1, 18) + stringNine[0]);
 
 console.log('');
 console.log('10. Create 3 different variables about yourself, using strings as values, i.e, let firstName = "Maria"; let city = "Berlin", etc. Print a sentence to the console using the variables and string interpolation, i.e., "My name is Maria. I live in Berlin and I am a teacher".');
