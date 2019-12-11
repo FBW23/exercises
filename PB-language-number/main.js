@@ -20,6 +20,8 @@ console.log(`${string} ${num}`);
 // * In this case, what is the `+` operator doing? Comment your answer in the js file.
 
 
+console.log('I did not use "+" ');
+
 
 
 
