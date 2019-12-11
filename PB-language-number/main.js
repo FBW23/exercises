@@ -56,3 +56,10 @@ console.log(thirty%2 === 0 ? '30 is even': '30 is odd' );
 
 console.log(nine%2 === 0 ? '30 is even': '30 is odd' );
 console.log(forty%2 === 0 ? '30 is even': '30 is odd' );
+
+console.log(`Wife sends her programmer husband grocery shopping
+    She tells him:
+    I need butter, sugar and cooking oil. Also, get a loaf of bread and if they have eggs, get 6.
+    The husband returns with the butter, sugar and cooking oil, as well as 6 loaves of bread.
+    The wife asks: “Why the hell did you get 6 loaves of bread?”
+    To which the husband replies: They had eggs.`)
