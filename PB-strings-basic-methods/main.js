@@ -5,6 +5,7 @@ let walk='I can walk in the park all day!';
 
 
 console.log(walk[18]+walk[19]+walk[20]+walk[21]+walk[22]);
+console.log(walk.substring(18,22));
 
 
 
