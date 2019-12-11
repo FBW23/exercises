@@ -32,24 +32,3 @@ console.log(okMarie ==='cake'? 'Let them eat cake' : 'Oh, bother');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
