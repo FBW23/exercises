@@ -194,8 +194,28 @@ let boogie='BoogieWoogie';
 let first=boogie.substring(0,1);
 let last=boogie.substring(boogie.length-1)
 let mid=boogie.substring(1,12)
-
 console.log(last+mid+first);
+
+
+
+/// Different method
+
+let first2=boogie[0];
+console.log(first2);
+
+
+let last2=boogie[boogie.length-1];
+console.log(last2);
+
+
+let mid2=boogie.substring(1,boogie.length-1)
+console.log(mid2);
+
+
+
+console.log(last2+mid2+first2);
+
+
 
 
 
