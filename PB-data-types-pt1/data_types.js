@@ -37,3 +37,36 @@ console.log('');
 console.log('Print the length of the string "JavaScript" to the console.');
 console.log('');
 console.log(programmingLanguage.length);
+
+hotSnakes.length;
+console.log(hotSnakes.toUpperCase()); // all upper case
+
+let upperCase = hotSnakes.toUpperCase();
+console.log(upperCase);
+
+let lowerCase = hotSnakes.toLocaleLowerCase(); // all lower case
+console.log(lowerCase);
+
+console.log(hotSnakes[0].toUpperCase()); // shows the first character in upper case
+
+// String prototype substring
+
+console.log(hotSnakes.substring(0, 6));
+console.log(hotSnakes.substring(14)); // takes all included from the 14th character
+let know = hotSnakes.substring(2, 6); // shows only the word 'know'
+console.log(know);
+console.log(know.length);
+
+// Does the word 'earth' include the word 'art'
+let earth = 'Earth'; 
+let art = 'art';
+console.log(earth.includes(art)); // true
+console.log(earth.includes('sky')); // false
+console.log(hotSnakes.includes('ar')); //true
+console.log(earth.toLocaleLowerCase().includes('e')); // true
+console.log(earth.toLocaleLowerCase().includes('E')); // false
+
+// string.prototype.trim - only trims empty spaces before and after the string
+let chickenDay = ' We dn es da y ';
+console.log(chickenDay.trim());
+console.log(chickenDay.length);
