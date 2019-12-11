@@ -6,6 +6,7 @@
 * {
     margin: 0 auto;
 }
+
 .container {
     background-image: url(/src/images/header.jpg);
     font-size: 2em;
@@ -23,7 +24,8 @@ li {
     margin-right: 30px;
 }
 
-img, .card-body {
+img,
+.card-body {
     width: 80%;
     margin: 1em;
     padding-left: 1em;
@@ -55,15 +57,19 @@ img, .card-body {
     .navbar {
         text-align: right;
     }
+
     .bottom {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding-right: 20px;
     }
+    // .card1 {
+    //     display: flex;
+    //     flex-direction: row;
+    //     height: 200px;
+    // }
 }
 
 
 
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}

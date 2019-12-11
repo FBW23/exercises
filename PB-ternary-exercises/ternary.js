@@ -7,15 +7,15 @@ console.log(isDog ? 'pat, pat' : 'find me a dog to pat!');
 // 2. Declare a variable named speedCheck. If speedlimit is 50km/h, and your speed is above that, 
 // print 'you're going too fast!'. If speed is lower than 50km/h, print 'You're driving below the speed limit, Oma'.
 
-let fifty = false;
-let speedCheck= fifty ? 'you re going too fast!': 'You re driving below the speed limit, Oma';
+let mySpeed = 50;
+let speedCheck= mySpeed > 55 ? 'You re driving below the speed limit, Oma' : 'you re going too fast!';
 
 console.log(speedCheck);
 
-// 3. Declare a variable named age. If age is below 16, print "serve butter beer". Otherwise print "serve beer".
+// 3. Declare a variable named age. If age is below 16, print "serv'you re going too fast!'e butter beer". Otherwise print "serve beer".
 
-let age=true;
-let serveBeer= age? 'serve butter beer' : 'serve beer';
+let age=16;
+let serveBeer= age >= 12 ? 'serve beer':'serve butter beer';
 
 console.log(serveBeer);
 
