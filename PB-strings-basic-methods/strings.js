@@ -1,16 +1,16 @@
-const WALKING= "I can walk in the park all day!";
+const WALKING= 'I can walk in the park all day!';
 console.log(WALKING.substr(18,4));
 //-------------------------------------
-const MESSAGE="Hello World";
+const MESSAGE='Hello World';
 console.log(MESSAGE.toUpperCase());
 //-------------------------------------
-const HELLO="Hello Earthling";
+const HELLO='Hello Earthling';
 console.log(HELLO.toLowerCase());
 //-------------------------------------
-const PL="JavaScript";
+const PL='JavaScript';
 console.log(PL.substring(3,6));
 //-------------------------------------
-const NICE="nice shoes";
+const NICE='nice shoes';
 console.log(NICE.includes('l'));
 console.log(NICE.includes('n'));
 //-------------------------------------
@@ -22,12 +22,12 @@ let PART_2=HELLO.substr(12,3);
 let STEP_2=PART_2.concat(HELLO);
 console.log(STEP_2.concat(PART_2));
 //-------------------------------------
-const OI="Oi, oi, oi!";
+const OI='Oi, oi, oi!';
 let UPPER=OI.toUpperCase();
-console.log(UPPER.includes("oi"));
+console.log(UPPER.includes('oi'));
 // console.log(UPPER.toLowerCase.includes("oi"));
 //-------------------------------------
-const BOOGIE="BoogieWoogie";
+const BOOGIE='BoogieWoogie';
 let BOOGIE_SON=BOOGIE.replace(BOOGIE[0],BOOGIE[11]).slice(0,11);
 let BOOGIE_SON_2=BOOGIE[0];
 console.log(BOOGIE_SON.concat(BOOGIE_SON_2));
