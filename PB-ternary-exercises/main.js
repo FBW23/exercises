@@ -42,9 +42,7 @@ console.log('===================================================================
 
 
 console.log('Declare a variable named okMarie. Check if there is cake - if so, print "Let them eat cake". If not, print "Oh, bother"');
-console.log('==============================================================');
+
 let okMarie='cake';
 
 console.log(okMarie === 'cake' ? 'let them eat'  : 'leave');
-console.log('========================================================================================');
-console.log('==================================================================================');

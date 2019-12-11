@@ -1,0 +1,65 @@
+
+
+body{
+    height:100vh;
+}
+
+.allcards{
+     display: flex;
+     flex-grow:1;
+     justify-content: space-around;
+     margin:5%;
+     flex-flow: row wrap;
+
+    /* background: burlywood;
+    flex-basis: content;
+     */
+    
+    
+    /* flex-direction: row;
+    
+    
+    
+    justify-content: space-around;
+     */
+ }
+
+.card{
+    border: 1px solid black;
+    flex-grow:1;
+    width:40vw;
+    /* background:lightblue;
+    margin:5%; 
+    flex-basis: auto;
+    flex:0 0  22%;
+    
+    height:40vh; */
+   
+    /* 
+    flex-direction: row;
+   
+    
+     */
+    
+
+  }
+
+ 
+
+
+span{
+    /* flex-shrink:2; */
+    font-size:0.75rem;
+    width:20vw;
+    
+    
+}
+
+img{
+    width:15vw;
+    height:20vh;
+}
+
+#card3{
+    flex-grow: 0;
+}
