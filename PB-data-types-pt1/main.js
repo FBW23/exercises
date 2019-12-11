@@ -91,7 +91,7 @@ console.log('=======================');
 
 
 console.log('let isMarried = false;');
-let isMarried = false;
+let isMarried = true;
 
 
 
@@ -102,7 +102,7 @@ console.log('=======================');
 
 
 console.log("'console.log(isMarried === true ? 'is married: true' : ' is married false'  );'");
-console.log(isMarried === true ? 'is married: true' : ' is married false'  );
+console.log(`${NAME} is married: ${isMarried}`  );
 
 
 
