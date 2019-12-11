@@ -37,6 +37,8 @@ console.log(string2Num);
 console.log(string3Num);
 
 
+console.log(parseFloat(string2));
+console.log(parseFloat(string3));
 
 
 
