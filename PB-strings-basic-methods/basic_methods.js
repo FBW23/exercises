@@ -32,9 +32,9 @@ console.log('');
 console.log('6. Create a new string from a given string with the first character of the given string added at the front and back, i.e., expected output: Bananas => BBananasB.');
 console.log('');
 let kill = 'kill';
-let s = 's';
+let k = kill[0];
 console.log('the word is:', kill);
-console.log(`${s}${kill}${s}`);
+console.log(`${k}${kill}${k}`);
 
 console.log('');
 console.log('7. Create a new string from a given string taking the last 3 characters of the string and add them to both the front and back of the new string. The string length must be 3 or more, i.e., expected output: Scritch => tchScritchtch.');
