@@ -1,8 +1,9 @@
 const name = 'constantin';
 console.log(name);
-const second = name[2];
+const second = name[1];
+
 console.log(second);
-const sixth = name[6];
+const sixth = name[5];
 console.log(sixth);
 
 let age =  35;
