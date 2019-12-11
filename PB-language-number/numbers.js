@@ -5,7 +5,7 @@ let string = 'empest';
 let number = 7;
 console.log(number + string);
 console.log('');
-console.log('in this case the \"+\" works as a unifier and has no addiction function.');
+console.log('in this case the \"+\" works as a unifier and has no concatenation function.');
 console.log('');
 
 console.log('');
