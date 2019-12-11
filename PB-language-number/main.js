@@ -33,8 +33,10 @@ let string3='10.05';
 let string2Num =parseFloat(string2) ;
 let string3Num =parseFloat(string3) ;
 
-console.log(parseFloat(string2Num));
-console.log(parseFloat(string3Num));
+console.log(string2Num);
+console.log(string3Num);
+
+
 
 
 
