@@ -46,3 +46,5 @@ console.log(`My name is ${me}. I am from ${from}. Studying at the ${school}`);
 let theBrown = "the quick brown fox";
 let theBrown2 =theBrown.substr(1)  
 console.log(theBrown[0].toUpperCase()+theBrown2);
+
+
