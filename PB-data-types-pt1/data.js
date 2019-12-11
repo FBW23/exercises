@@ -1,9 +1,9 @@
-const name = 'constantin';
+let name = 'constantin';
 console.log(name);
-const second = name[1];
+let second = name[1];
 
 console.log(second);
-const sixth = name[5];
+let sixth = name[5];
 console.log(sixth);
 
 let age =  35;
@@ -12,6 +12,9 @@ console.log(`${name} is ${age} in ${year} `);
 const isMarried = true;
 console.log(`${name} is married \:${isMarried}`);
 
-let programmingLanguage = 'JavaScript';
-let isFun = true;
+const programmingLanguage = 'JavaScript';
+const isFun = true;
 console.log(`${programmingLanguage} is fun \:${isFun}`);
+console.log(programmingLanguage.substring(0,1));
+console.log(programmingLanguage.substring(4,5));
+console.log(programmingLanguage.length);
