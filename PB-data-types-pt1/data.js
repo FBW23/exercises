@@ -19,5 +19,5 @@ console.log(programmingLanguage,lie===true? `is fun`:`false`);
 
 console.log(programmingLanguage[0]);
 console.log(programmingLanguage[4]);
-console.log("JavaScript".length);
+console.log(programmingLanguage.length);
 
