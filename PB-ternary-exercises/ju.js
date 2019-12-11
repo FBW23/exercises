@@ -6,7 +6,7 @@ console.log(isDog? 'pat, pat':'find me a dog pat!');
 
 //2. Declare a variable named speedCheck. If speedlimit is 50km/h, and your speed is above that, print 'you're going too fast!'. If speed is lower than 50km/h, print 'You're driving below the speed limit, Oma'.
 
-let speedCheck= 51;
+let speedCheck= 90;
 
 
 console.log(speedCheck > 50? 'you are going too fast' : 'you are driving below the speed limit, Oma');
