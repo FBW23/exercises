@@ -2,6 +2,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 @mixin colorbox() {
+<<<<<<< HEAD
     min-height: 150px;
     width: 15rem;
 }
@@ -24,6 +25,15 @@ main {
 
 .card {
     @include colorbox()
+=======
+    // single source of thruth 
+    min-height: 150px;
+    width: 18rem;
+}
+
+.card {
+    @include colorbox();
+>>>>>>> 12aeb212ce2cb78d9dbbd5dc45d678cef5b512ec
 }
 
 .card-body {
@@ -33,6 +43,7 @@ main {
 
 .yellow {
     background: #ffc83f;
+<<<<<<< HEAD
     @include colorbox()
 }
 
@@ -114,4 +125,13 @@ main {
 .purple3 {
     background: #A873EB;
     @include colorbox2()
+=======
+    @include colorbox();
+}
+
+
+.pink {
+    background: #fa5e5b;
+    @include colorbox();
+>>>>>>> 12aeb212ce2cb78d9dbbd5dc45d678cef5b512ec
 }
