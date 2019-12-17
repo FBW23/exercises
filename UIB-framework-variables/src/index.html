@@ -5,118 +5,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Sass Webpage</title>
+  <title>Sass Page</title>
   <link rel="stylesheet" href="/styles/main.css" />
 </head>
 
 <body>
-  <header>
-    <div class="header-container">
-      <div>Home</div>
-      <div>About</div>
-      <div>Contact</div>
-    </div>
+  <header class="header-container">
+    <p class="elemHome">Home</p>
+    <p>About</p>
+    <p>Contact</p>
   </header>
 
-  <section id="personalWebsite">
-    <h1>My personal website!</h1>
-  </section>
+  <body>
+    <section id="imageSection">
+      <h1>My personal website!</h1>
+    </section>
 
-  <section id="threeCards">
-    <div class="card">
-      <img src="images/mountain.jpg" alt="a mountain">
-      <div class="cardContainer">
-        <h4>Mountain</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quasi magni illum, distinctio temporibus
-          excepturi, dolore nemo laborum voluptates cum laudantium, aut reprehenderit est doloremque deserunt dolorem
-          quaerat vero ad!</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="images/surfer.jpg" alt="a surfer">
-      <div class="cardContainer">
-        <h4>Surfer</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde tempore natus explicabo amet,
-          officiis est saepe architecto laboriosam sapiente dolores fugit blanditiis. Dolorum modi corporis neque!
-          Voluptatem, unde? Tenetur.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="images/tree.jpg" alt="a tree">
-      <div class="cardContainer">
-        <h4>Tree</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus cumque a laboriosam non error et
-          nostrum ullam saepe veniam incidunt odio unde obcaecati blanditiis alias, quam distinctio ut. Doloremque!</p>
-      </div>
-    </div>
-  </section>
+    <section id="cardSection">
+      <article class="cardMountain">
+        <img src="images/mountain.jpg" alt="Mountains">
+        <div class="container">
+          <h4><b>Mountains</b></h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos enim modi non praesentium deleniti?
+            Architecto aspernatur distinctio alias laudantium, aperiam asperiores ut qui perspiciatis!</p>
+        </div>
+      </article>
+      <article class="cardSurfer">
+        <img src="images/surfer.jpg" alt="Surfer">
+        <div class="container">
+          <h4><b>Surfer</b></h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos enim modi non praesentium deleniti?
+            Architecto aspernatur distinctio alias laudantium, aperiam asperiores ut qui perspiciatis!</p>
+        </div>
+      </article>
+      <article class="cardTree">
+        <img src="images/tree.jpg" alt="Tree">
+        <div class="container">
+          <h4><b>Tree</b></h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos enim modi non praesentium deleniti? Architecto aspernatur distinctio alias laudantium, aperiam asperiores ut qui perspiciatis!</p>
+        </div>
+      </article>
+    </section>
 
-  <!-- STYLING WITH GRID?
-  <section id="threeArticles">
-    <div class="grid-item">
-      <h4>Aside 1</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus cumque a laboriosam non error et
-        nostrum ullam saepe veniam incidunt odio unde obcaecati blanditiis alias, quam distinctio ut. Doloremque!</p>
-    </div>
-    <div class="grid-item">
-      <h4>Article</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus cumque a laboriosam non error et
-        nostrum ullam saepe veniam incidunt odio unde obcaecati blanditiis alias, quam distinctio ut. Doloremque!</p>
-    </div>
-    <div class="grid-item">
-        <h4>Aside 2</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus cumque a laboriosam non error et
-          nostrum ullam saepe veniam incidunt odio unde obcaecati blanditiis alias, quam distinctio ut. Doloremque!</p>
-    </div>
-  </section> -->
-  <section id="threeArticles">
-    <div class="asideOne">
-      <h4>Aside 1</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quasi magni illum, distinctio temporibus
-        excepturi, dolore nemo laborum voluptates cum laudantium, aut reprehenderit est doloremque deserunt dolorem
-        quaerat vero ad!</p>
-    </div>
-    </div>
-    <div class="articleMiddle">
-      <h4>Article</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, ut quibusdam fugiat voluptas cum amet, ab rerum
-        a dignissimos corrupti nostrum rem cupiditate quasi ea recusandae! Consequatur necessitatibus voluptate aperiam.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, quidem id ullam non perspiciatis unde provident
-        officiis debitis inventore! Aliquid, ducimus.
-      </p>
-    </div>
-    </div>
-    <div class="asideTwo">
-      <h4>Article</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti cumque, corporis molestiae
-        voluptate esse. Ipsum quisquam ab quaerat voluptates, pariatur non quia magni sequi similique facere doloribus,
-        dolores nemo!</p>
-    </div>
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="footer-container">
-      <div>Github</div>
-      <div>Codepen</div>
-      <div>LinkedIn</div>
-    </div>
-  </footer>
-
-
+    <section id="articleSection">
+      <article class="asideOne"></article>
+      <article class="asideTwo"></article>
+      <article class="asideThree"></article>
+    </section>
+  </body>
+  <footer></footer>
   <!-- Custom scripts, edit above this line -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
   <script src="scripts/index.js"></script>
-
 </body>
 
 </html>

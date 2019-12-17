@@ -1,172 +1,46 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// VARIABLES
-
-// MIXINS
-
-// MOBILE FIRST
-
-@media screen and (min-width: 300px) {
-
-    body {
-        margin: 0 auto;
-    }
-
-    // HEADER 
-
-    .header-container {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: white;
-    }
-
-    .header-container>div {
-        margin: 0.2vh;
-        padding: 1vh;
-        font-size: 2vh;
-        color: #016690;
-    }
-
-    // MY PERSONAL WEBPAGE SECTION
-
-    #personalWebsite {
-        width: 100%;
-        height: 300px;
-        background-image: url("../images/header.jpg");
-        background-repeat: no-repeat;
-    }
-
-    #personalWebsite>h1 {
-        font-size: 3vh;
-        text-align: center;
-        padding-top: 5vh;
-        font-weight: bolder;
-    }
-
-    // CARDS
-
-    #threeCards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card {
-        width: 45vh;
-        height: 100vh;
-        margin: 15px 15px;
-        padding: 15px 15px;
-        background-color: #e0ddb2;
-    }
-
-    .cardContainer>h4 {
-        margin-top: 10px;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    // THREE ARTICLES
-
-    #threeArticles {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .asideOne,
-    .articleMiddle,
-    .asideTwo {
-        // width: 300px;
-        margin: 15px 15px;
-        padding: 15px 15px;
-    }
-
-    .asideOne,
-    .asideTwo {
-        border: 1px solid #e0ddb2;
-    }
-
-    // FOOTER
-
-    .footer-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: #016690;
-    }
-
-    .footer-container>div {
-        margin: 0.2vh;
-        padding: 1vh;
-        font-size: 2vh;
-        color: white;
-    }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
-// TABLET 768px - tablet
-
-@media screen and (min-width: 768px) {
-
-    .header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: white;
-    }
-
-    .card {
-        margin-top: 4vh;
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-        height: 40vh;
-    }
-
-    .card p {
-        width: 280px;
-        font-size: 15px;
-    }
-
-    img {
-        margin: 10px;
-        width: 20vh;
-    }
-
-    #threeArticles {
-        display: grid;
-        grid-template-columns: auto 2fr auto;
-    }
-
-    .asideOne,
-    .asideTwo p {
-        width: 20vh;
-        font-size: 1.5vh;
-    }
-
-    h4 {
-        font-weight: bolder;
-    }
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-// DESKTOP 1024px
-
-@media screen and (min-width: 1024px) {
-
-    .card {
-        margin-top: 4vh;
-        display: flex;
-        flex-wrap: wrap;
-        width: 45%;
-        height: 27vh;
-    }
-
-    .card p {
-        width: 270px;
-        font-size: 0.7em;
-    }
+header>p {
+    margin: 10px;
+    color: #6792B9;
 }
+
+#imageSection {
+    text-align: center;
+    background: url(../images/header.jpg);
+    height: 60vh;
+}
+
+#imageSection>h1 {
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;;
+}
+.cardMountain, .cardSurfer, .cardTree {
+    margin: 15px 10px;
+    background-color: #D9E6AE;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container>h4 {
+    padding-top: 15px;
+}
+
+
+
