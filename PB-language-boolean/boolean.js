@@ -28,15 +28,17 @@ console.log(a === 'false' ? 'true':'false');
 // Given the code below, what will print when when we console log `name`? Comment your answer in the js file.
 
 // ```javascript
-// let firstName, givenName;
+let firstName, givenName;
 
 // console.log(`name`)  === name as a string printed, as `name` is not a variable($name), but a string, and we are using the backstring method, so we son't need ' '  to declare a string.
 
 // firstName = 'Stacey';
 // let name = givenName || firstName || 'John'; 
 
-// console.log(`name`) === will not rune as the variable givenName is not defined.
 
-// console.log(name); ==== same as above
+
+// console.log(name); ==== Stacey, baceause name equals either the variable called givenName(yet to be defined), the variable called firstName,  or John. Since firstName was defined, it stopped looking further for a value to become equal with.
+
 
 // ```
+
