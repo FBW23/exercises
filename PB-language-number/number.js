@@ -9,4 +9,4 @@ let myNumber_2=10.05;
 let myNUMBER_2=parseInt(myNumber_2,16);
 console.log(myNUMBER_2);
 let check = 30? 'even': 939? 'odd':40.9?'odd':'even';
-console.log(check); 
+console.log(check);
