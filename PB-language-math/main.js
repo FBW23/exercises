@@ -38,5 +38,5 @@ console.log(Math.floor(43.342));
 
 // Create a program that prints a random **_integer_** from 1 - 6.
 
-console.log(Math.ceil(Math.random()*6));
+console.log(Math.floor((Math.random()*5)+1));
 
