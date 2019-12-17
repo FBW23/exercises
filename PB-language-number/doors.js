@@ -25,16 +25,30 @@ let first=30;
 let second=939;
 let third=40.9;
 
-if (first  > 31) {
-  result = "Odd";
-} else {
-  result = "Even";
-}
-console.log(result)
+// if (first  > 31) {
+//   result = "Odd";
+// } else {
+//   result = "Even";
+// }
+// console.log(result)
 
-if (second,third  > 31) {
-  result = "Odd";
-} else {
-  result = "Even";
+// if (second,third  > 31) {
+//   result = "Odd";
+// } else {
+//   result = "Even";
+// }
+// console.log(result)
+
+
+//------------------
+
+let num=1200;
+let message;
+if (num%2){
+    message = 'odd';
 }
-console.log(result)
+else{
+    message='even';
+}
+
+console.log(message);
