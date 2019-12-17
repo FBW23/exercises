@@ -10,4 +10,4 @@ console.log("");
 console.log("Create a program that prints a random **_integer_** from 1 - 6.");
 console.log("");
 let randomNumber = Math.random();
-console.log("random number between 0 and 6 ->", Math.round(randomNumber*6));
+console.log("random number between 0 and 6 ->", Math.ceil(randomNumber*6));
