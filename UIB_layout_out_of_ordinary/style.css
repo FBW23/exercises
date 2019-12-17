@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     line-height: 100px;
 }
 
@@ -47,4 +48,49 @@ body {
 
 .b6 {
     background: red;
+=======
+    
+}
+
+
+.genres {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.genres > section{
+    width: 500px ;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+#ac{
+    background-color: dodgerblue;
+    
+}
+#th{
+    background-color:rgb(190, 178, 178);
+    flex-grow: 10;
+}
+#com{
+    background-color:rgb(225, 214, 30);
+    flex-grow: 10;
+}
+#ho{
+    background-color:black;
+    color: white;
+}
+#dra{
+    background-color: darkgray;
+}
+#rom{
+    background-color:red
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

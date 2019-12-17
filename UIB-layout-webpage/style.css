@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     box-sizing: border-box;
   }
@@ -82,3 +83,79 @@ html {
     font-weight: bold;
     text-align: center;
   } 
+=======
+body {
+    font-family: 'Arapey', serif;
+
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+    width: 650px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 5px 5px 30px black;
+    margin left: 15px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+
+.two,
+.three {
+    margin-top: 10px;
+}
+
+.page,
+.page2,
+.page3,
+.page4,
+.page5 {
+    text-align: center;
+}
+
+
+h1 {
+    text-align: right;
+    font-size: 60px;
+
+}
+
+.doors,
+.trouble,
+.unnecessary,
+.norman,
+..psy {
+    font-weight: bold;
+}
+
+.psy {
+    font-size: 10px;
+    }
+
+.menu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

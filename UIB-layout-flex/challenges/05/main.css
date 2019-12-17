@@ -5,8 +5,12 @@ body {
     border: 5px solid red;
     display: flex;
     height: 100vh;
+<<<<<<< HEAD
     flex-direction: row;
     justify-content: space-between;
+=======
+    justify-content: space-around;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 div {
@@ -18,3 +22,4 @@ div {
     border: 2px solid red;
     text-align: center;
 }
+

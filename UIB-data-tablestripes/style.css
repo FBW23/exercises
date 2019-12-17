@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table {
     margin: 20px;
     width: 75%;
@@ -7,6 +8,20 @@ td,
 th {
     text-align: left;
     padding: 10px;
+=======
+td,
+th {
+    padding: 8px;
+    padding-right: 30px;
+}
+
+}
+
+thead th {
+    background: #888888;
+    color: white;
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 tr:nth-child(odd) {
@@ -17,11 +32,20 @@ tr:nth-child(even) {
     background: #efefef;
 }
 
+<<<<<<< HEAD
 thead th {
     background: #888888;
     color: white;
 }
 
 tr:nth-child(3n) td:nth-child(2) {
+=======
+
+tr:nth-child(3) td:nth-child(2) {
+    background: #ffbbbb;
+}
+
+tr:nth-child(6) td:nth-child(2) {
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
     background: #ffbbbb;
 }

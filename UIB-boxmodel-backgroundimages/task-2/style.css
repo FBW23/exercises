@@ -1,8 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .info-1,
 .info-2,
 .info-3 {
+=======
+header{
+    margin-left: 30px;
+}
+
+.info-1,.info-2,.info-3 {
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
     width: 30%;
 =======
 main {
@@ -36,6 +44,7 @@ main {
     text-shadow: 1px 1px 1px black;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     border-radius: 10px;
     background-position: bottom;
     padding: 10px;
@@ -46,10 +55,26 @@ main {
     background-image: url(task2-bg.jpeg);
     background-size: cover;
     margin-left: 30px;
+=======
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    background-position: bottom;
+    background-size: cover;
+    
+}
+
+.info-1 {
+    background-image: url(assets/task2-bg.jpeg);
+    margin-left: 30px;
+   
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 
 }
 
 .info-2 {
+<<<<<<< HEAD
     display: inline-block;
     background-image: url(task2-bg1.jpeg);
     background-size: cover;
@@ -63,6 +88,18 @@ main {
 
 h1 {
     margin-left: 30px;
+=======
+    background-image: url(assets/task2-bg1.jpeg);
+    
+
+
+}
+
+.info-3 {
+    background-image: url(assets/task2-bg2.jpg);
+    
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 =======
     width: 30%;

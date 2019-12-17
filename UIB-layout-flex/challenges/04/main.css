@@ -3,9 +3,15 @@
 body {
     align-items: flex-end;
     border: 5px solid red;
+<<<<<<< HEAD
     height: 800px;
     flex-direction: row;
     display: flex;
+=======
+    display: flex;
+    align-items:flex-end;
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 div {

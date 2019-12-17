@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table {
     margin: 20px;
     border: 1px solid lightgrey;
@@ -22,4 +23,31 @@ thead th {
 
 td:nth-last-child(1) {
     text-align: right;
+=======
+table,
+tr,
+td,
+th {
+    border: 1px solid #DBDBDB;
+    border-collapse: collapse;
+    width: 1250px;
+    margin-left: 15px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.amount {
+    text-align: end;
+}
+
+tr:nth-child(odd), tfoot {
+    background-color: #DCDCDC;
+}
+
+#start {
+    height: 40px;
+    background: white;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

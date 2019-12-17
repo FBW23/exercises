@@ -9,8 +9,16 @@ div {
     text-align: center;
 }
 
+<<<<<<< HEAD
 body {
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
+=======
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

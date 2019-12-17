@@ -1,8 +1,29 @@
+<<<<<<< HEAD
 /* My CSS comes here*/
 body,
 h2,
 h3,
 p {
+=======
+* {
+<<<<<<< HEAD
+    text-align: center;
+    margin: 0
+}
+
+.inside-box {
+    background-color: turquoise;
+    color: gray;
+    margin: 18px 0;
+    padding: 15px 0;
+    
+}
+
+.secondary-box {
+    border-top: 15px solid #4E3C00;
+    border-bottom: 15px solid #4E3C00;
+=======
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
     margin: 0;
 <<<<<<< HEAD
 =======
@@ -11,10 +32,37 @@ p {
 }
 >>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
 
+<<<<<<< HEAD
 }
 
 .primary-box {
     background-color: #2B2B2B;
+=======
+.primary-box, .secondary-box, .inside-box {
+    font-size: 1.5em;
+>>>>>>> 7721066b045618bf6cb6bfbb4bed3177a2893702
+    padding: 15px 0;
+}
+
+.primary-box {
+<<<<<<< HEAD
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 2px 4px 2px cadetblue;
+}
+
+
+
+
+
+
+
+
+
+=======
+    background: #2B2B2B;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
     color: white;
     text-align: center;
     border-bottom: #4e3c00 solid 5px;
@@ -29,9 +77,18 @@ p {
     padding-top: 1.2em;
 }
 
+<<<<<<< HEAD
 .inside-box {
     background-color: #89edff;
     padding-bottom: 1.1em;
     padding-top: 1.3em;
     margin-top: 1em;
 }
+=======
+.secondary-box {
+    background: #EDECEE;
+    border-bottom: 16px solid #4E3B00;
+    border-top: 16px solid #4E3B00;
+}
+>>>>>>> 7721066b045618bf6cb6bfbb4bed3177a2893702
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
