@@ -24,4 +24,4 @@ console.log(Math.floor(28.329));
 
 // 3.
 let randomNumber=Math.random();
-console.log(Math.ceil(randomNumber*6));
+console.log(Math.ceil(randomNumber*5)+1);
