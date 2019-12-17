@@ -14,4 +14,5 @@ let myNumber = Math.random();
 let myInteger =Math.round(myNumber*5);
 let myResult= myInteger+1;
 console.log(myResult);
-
+console.log(Math.ceil(5.1));
+console.log(Math.ceil(Math.random()*5)+1);
