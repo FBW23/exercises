@@ -1,15 +1,19 @@
-section {
+body{
+    background: url(dffs.jpg);
+    height: 1000px;
+    background-size: ;
+}
+.fake-box{
+    position: relative;
+    height: 300px;
+    width: 310px;
     border: 1px solid black;
-    box-shadow: 5px 5px 11px black;
-    display: inline-block;
-    margin-right: 20px;
-    width: 20%;
+    margin-bottom: 10px;
+    margin-left: 9px;
 }
 
-article {
-    margin: 10px;
-}
 
+<<<<<<< HEAD
 .fake-box {
     position: relative;
 <<<<<<< HEAD
@@ -27,10 +31,14 @@ article {
     padding: 40px; 
 >>>>>>> 95c9f1ba6d761cf181891588a0974e7b200e9b90
 }
+=======
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 
 .fake-box:before, .fake-box:after {
+    content:"";
+    height: 300px;
+    width: 310px;
     border: 1px solid black;
-    content: ""; /* make the styling here visible */
     position: absolute;
 <<<<<<< HEAD
 =======
@@ -41,6 +49,7 @@ article {
 }
 
 .fake-box:after {
+<<<<<<< HEAD
     content: "";
     border: 1px solid black;
     width: 250px;
@@ -59,3 +68,23 @@ article {
     padding: 10px;
     margin: 20px
 }
+=======
+    
+    left: 20px;
+    top: 20px;
+}
+.info-box{
+    display: inline-block;
+    width: 30%;;
+    text-align: justify;
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 4px;
+    box-shadow:  5px 5px 9px black;
+
+}
+.article1{
+    padding: 30px;
+}
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
