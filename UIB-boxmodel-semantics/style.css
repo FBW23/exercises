@@ -1,0 +1,42 @@
+h1{
+    color: brown;
+}
+header{
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section1{
+    display:inline-block;
+    width: 65%;
+    vertical-align: top; 
+    padding-right:25px;  
+   
+}
+
+.section2{
+    display: inline-block;
+    width: 30%;
+    
+    
+        
+}
+.section3{
+    border-bottom: 1px solid black;
+}
+.section3 h1{
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.section2 h1{
+    text-decoration: underline;
+}
+
+.section1 h1{
+    text-decoration: underline;
+}

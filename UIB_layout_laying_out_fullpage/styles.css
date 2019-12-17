@@ -4,6 +4,53 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1{
+    background: black;
+    color: white;
+}
+body{
+    background:#1a1a1a;
+}
+.genres{
+    display: flex;
+    justify-content:center;
+    color: white;
+    margin-top: 30px;
+    
+}
+.genres2{
+    display: flex;
+    
+    background: white;
+    flex-direction: column;
+    width: 8%;
+    height: 100vw;
+   
+}
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: row;
+    
+    
+    
+}
+.thumbnail1, 
+.thumbnail2, 
+.thumbnail3, 
+.thumbnail4, 
+.thumbnail5, 
+.thumbnail6{
+     height: 140px;
+     background:black;
+     color: white;
+     width: 150px;
+     text-align: center;
+     margin: 0, auto;
+}
+    
+
 body {
     background: #1a1a1a;
     color: white;
