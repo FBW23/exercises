@@ -43,10 +43,10 @@
     box-sizing: border-box;
 >>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
 }
-
-.row {
-    height: 100vh;
+.row{
+    height: 100vw;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -54,9 +54,17 @@
 >>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
 @media screen and (min-width: 601px) {
     .row {
+=======
+/* desktop*/
+@media screen and (min-width:601px) and (max-width:992px){
+    .row{
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
         display: flex;
         flex-wrap: wrap;
+        
+    
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -73,6 +81,25 @@
 @media screen and (min-width: 993px) {
 >>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
     .column {
+=======
+    .column{
+        width: 50%    
+   
+    }
+}
+
+@media screen and (min-width:993px){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100vw;
+        
+    }
+
+    .column{
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
         flex: 1;
     }
+
 }

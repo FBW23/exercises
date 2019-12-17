@@ -46,39 +46,83 @@ body {
 
 =======
 @mixin colorbox() {
+<<<<<<< HEAD
+=======
     // single source of thruth 
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
     min-height: 150px;
     width: 18rem;
 }
 
+<<<<<<< HEAD
+@mixin colorbox2() {
+    min-height: 170px;
+    width: 6rem;
+}
+
 .card {
     @include colorbox();
+    margin-bottom: 30px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+}
+main{
+    text-align: center;
+    margin: auto 0;
+    
+=======
+.card {
+    @include colorbox();
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 >>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 .card-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+<<<<<<< HEAD
+
+=======
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .yellow {
     background: #ffc83f;
 <<<<<<< HEAD
+<<<<<<< HEAD
     @include colorBox();
+=======
+    @include colorbox()
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .pink {
     background: #fa5e5b;
+<<<<<<< HEAD
     @include colorBox();
+=======
+    @include colorbox()
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .blue {
     background: #1d508d;
+<<<<<<< HEAD
     @include colorBox();
+=======
+    @include colorbox()
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .purple {
     background: #684e79;
+<<<<<<< HEAD
     @include colorBox();
 }
 
@@ -177,6 +221,78 @@ body {
 .purple-item3 {
     background: #894C97;
 }
+=======
+    @include colorbox()
+}
+.hallo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.yellow1 {
+    background: #FFB900;
+    @include colorbox2();
+
+}
+
+.yellow2 {
+    background: #ffc83f;
+    @include colorbox2()
+}
+
+.yellow3 {
+    background: #FFF637;
+    @include colorbox2()
+}
+
+.blue1{
+    background: blue;
+    @include colorbox2()
+}
+
+.blue2{
+    background: rgb(4, 4, 109);
+    @include colorbox2();
+}
+.blue3{
+    background: rgb(181, 181, 230);
+    @include colorbox2();
+}
+
+.red1{
+    background:red;
+    @include colorbox2();
+}
+.red2{
+    background: rgb(100, 3, 26);
+    @include colorbox2()
+}
+.red3{
+    background: rgb(216, 131, 131);
+    @include colorbox2()
+}
+
+.purple1{
+    background: purple;
+    @include colorbox2()
+}
+.purple2{
+    background: rgb(87, 2, 87);
+    @include colorbox2()
+}
+.purple3{
+    background: rgb(231, 174, 231);
+    @include colorbox2()
+}
+
+
+
+
+
+ 
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 
 =======
     @include colorbox();

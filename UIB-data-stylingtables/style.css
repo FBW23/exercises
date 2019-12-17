@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 td {
     border-left: 5px solid grey;
     padding: 8px;
@@ -15,4 +16,18 @@ td:first-child {
 
 tr:nth-child(even) td:first-child {
     border-left-color: #449d45;
+=======
+
+td {
+    border-left: 3px solid #c0c0c0;
+}
+
+td:first-child {
+    border-left-color:  #cc181b;
+
+}
+
+tr:nth-child(even) td:first-child {
+    border-left-color: green;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

@@ -12,6 +12,16 @@ div {
     margin: 1em;
     border: 2px solid red;
     text-align: center;
+<<<<<<< HEAD
     align-items: flex-start;
 }
 
+=======
+   
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;;
+}
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

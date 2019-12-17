@@ -12,6 +12,7 @@ body {
     font-size: 50px;
 }
 
+
 .primary-box {
     /* font-family: Helvetica, sans-serif; */
     background: #222;
@@ -21,6 +22,13 @@ body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+
+.primary-box em {
+    color: #32b0ff;
+}
+.primary-box p{
+     font-family: helvetica, Arial, Helvetica, sans-serif;
 }
 
 .secondary-box {
@@ -36,8 +44,25 @@ body {
     color:#32b0ff;
 }
 
+<<<<<<< HEAD
 .secondary-box em {
     color:#EE83FA;
+=======
+<<<<<<< HEAD
+
+.secondary-box em {
+    color: #fc3fff;
+}
+.secondary-box p{
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+=======
+.primary-box > p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+=======
+.primary-box h2 {
+    font-family: Helvetica, sans-serif;
+>>>>>>> 5520dddc1779be466e9215d6da818b80eb3d79ee
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .prim-arial {
@@ -47,6 +72,18 @@ body {
 .prim-helv {
     font-family: Georgia, Times, serif;
 }
+<<<<<<< HEAD
+.secondary-box > p > em {
+color: #fc3fff;
 
+=======
+
+<<<<<<< HEAD
 .primary-box ul li {
     font-family: Arial, Helvetica, sans-serif;
+=======
+p em {
+    color: #fc3fff!important; /* Bad style*/
+>>>>>>> 5520dddc1779be466e9215d6da818b80eb3d79ee
+}
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

@@ -1,24 +1,29 @@
-// COLORs
-$header-color: rgba(255, 255, 0, 0.39);
-$green-color: green;
-$purple-color: purple;
-$blue-color: blue;
+$my-gold:rgba(255, 255, 0, 0.39);
+$my-blue:blue;
+$my-purple:purple;
+$my-green:green;
+$my-firstfont: Arial, Helvetica, sans-serif;
+$my-secondfont:'Times New Roman', Times, serif;
+$my-lastfont:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-// FONTs
-$page-tnr: 'Times New Roman', Times, serif;
-$page-arial: Arial, Helvetica, sans-serif;
-$page-franklin: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header {
     height: 10rem; 
-    background-color: $header-color;
+    background: $my-gold;
     text-align: center;
     padding-top: 2rem;
-    font-family: $page-arial;
+    font-family: $my-firstfont
 }
 
 h1 {
-    font-family: $page-arial;
+    font-family: $my-firstfont;
 }
 
 main {
@@ -26,48 +31,49 @@ main {
 }
 
 .huge {
-    font-family: $page-tnr;
+    font-family: $my-secondfont;
     font-size: 10rem;
-    color: $blue-color;
+    color:$my-blue;
 }
 
 
 .big {
-    font-family: $page-tnr;
+    font-family: $my-secondfont;
     font-size: 8rem;
-    color: $blue-color;
+    color: $my-blue;
 }
 
 .medium {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 3rem;
-    color: $purple-color;
+    color: $my-purple;
 }
 
 .middle {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
-    color: $purple-color;
+    color: $my-purple;
 }
 
 
 .small {
-    font-family: $page-franklin;
+    font-family: $my-lastfont;
     font-size: 2rem;
-    color: $green-color;
+    color: $my-green;
 }
 
 .tiny {
-    font-family: $page-franklin;
+    font-family: $my-lastfont;
     font-size: .5rem;
-    color: $green-color;
+    color: $my-green;
     margin-bottom: 2rem;
 }
 
 footer {
     height: 10rem;
-    background-color: $header-color;
+    background: $my-gold;
     text-align: center;
-    font-family: $page-arial;
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 1rem;
 }
+

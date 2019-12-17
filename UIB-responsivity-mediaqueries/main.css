@@ -1,8 +1,30 @@
-body {
+@media (min-width:0px) and (max-width:375px){
+ body {
     height: 100vh;
-    border: 10px solid black;
-}
+    border: 10px solid red;
+     }
+ }
 
+@media (min-width:376px) and (max-width:425px){
+    body{
+        border: 10px solid  blue;
+    }
+}
+@media (min-width:426px) and (max-width:768px){
+    body{
+        border: 10px solid green;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    body{
+        border: 10px solid  yellow;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    body{
+        border: 10px solid  hotpink;
+    }
+}
 main {
     margin: 15px;
     font-family: sans-serif;

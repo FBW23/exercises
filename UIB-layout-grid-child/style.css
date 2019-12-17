@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0 auto;
 }
@@ -40,3 +41,40 @@ section {
     align-items: flex-end;
     font-style: italic;
 }
+=======
+ main {
+     display: grid;
+     border: 2px solid red;
+     grid-template-rows: repeat(4, 1fr);
+     grid-template-columns: repeat(4, 1fr);
+     height: 95vh;
+ }
+
+ section {
+     border: 2px solid blue;
+     text-align: center;
+
+ }
+
+ .two {
+     grid-column: 2 / span 2;
+     background-color: blue;
+ }
+
+ .six {
+     grid-column: 3 / 5;
+     background-color: green;
+ }
+
+ .nine {
+     grid-column: 2 / 3;
+     grid-row: 3/ 5;
+     background-color: yellow;
+ }
+
+ .ten {
+     grid-column: 4 /5;
+     grid-row: 3 / 5;
+     background-color: purple;
+ }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
