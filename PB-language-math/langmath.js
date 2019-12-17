@@ -45,3 +45,5 @@ console.log(Infinity - Infinity); // calculate NaN
 console.log(Infinity + Infinity); // Infinity
 console.log(-Infinity + Infinity); // NaN
 // calculation with infinity possible (but strange)
+
+
