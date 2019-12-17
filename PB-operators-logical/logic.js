@@ -1,0 +1,32 @@
+let a =true;
+let b= false;
+let and = (a) && (b) ;
+console.log(and);
+console.log('both conditions need to happen in order for the output to be true');
+let or = (a) || (b);
+console.log(or);
+console.log('only one condition need to happen in order for the output to be true');
+let not = ! (a && b);
+console.log(not);
+console.log('since the and condition is not true then the Not condition is true');
+let x, y , z ;
+x=1;
+y=2;
+z=3;
+
+let check1= (x>z)&&(x>y);
+console.log(check1);
+console.log('because x<z then one condition is not happening and we get a false');
+ let check2= !(x===y);
+console.log(check2);
+console.log('x does not equal y and that is true');
+let check3= (z<y) || (z>x);
+console.log(check3);
+console.log('one condition being true is enough for the operator to output a true ');
+let check4= (x>=10) && (y<=10);
+console.log(check4);
+console.log('both conditions are needed to get a true output and one of them is not happening');
+let check5= ((x*z)<100) || ((x*y)>100);
+console.log(check5);
+console.log('only the second condition is needed to be true and we got it true ');
+
