@@ -36,6 +36,7 @@ console.log(Math.floor(43.342));
 
 // ## 3. Dice Roll!
 let randomNumber = Math.random();
-console.log(Math.ceil(randomNumber*6));
+console.log(Math.floor(randomNumber*(5)+1));
+
 
 // Create a program that prints a random **_integer_** from 1 - 6.
