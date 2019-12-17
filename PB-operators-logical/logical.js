@@ -22,7 +22,7 @@ console.log(!(a || b ));
 
 // 2. Declare three more variables "x", "y", "z". Give these variables number values. 
 let x=2;
-let y= 3;
+let y=3;
 let z=4;
 
 // 3. Check the result of whether:
