@@ -17,3 +17,4 @@ let no3 = 40.9;
 console.log(no1?"30 is even":"odd");
 console.log(no2?"939 is odd":"even");
 console.log(no3?"40.9 is odd":"even");
+console.log(no1?'even':939?'odd':40.9?'odd':'even')
