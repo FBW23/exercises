@@ -32,3 +32,17 @@ console.log("the result of false && true is:", fifthResult);
 console.log();
 let sixthResult = ((x * y) < 100 ) || ((x * y) > 100) ? 'x * y is less than 100' : 'x * y is greater than 100';
 console.log("the result of true || false is:", sixthResult);
+
+let two = 2;
+let three = 3;
+console.log(two === three);
+console.log(two !== three);
+console.log(!(two === three));
+console.log(!two === three);
+
+// BOOLEAN INVERSION WITH EXCLAMATION MARK
+
+let input = undefined;
+let myVar = null || undefined || input || '2'; // define a default value with the || OR - truthy values will win over the falsy ('2' the string that comes after all falsies)
+console.log(myVar);
+
