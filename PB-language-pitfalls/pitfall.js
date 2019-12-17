@@ -1,0 +1,13 @@
+console.log();
+console.log("What does NaN stand for? It stands for \"not a number\".");
+console.log();
+console.log("Check if \'hello\' is NaN ->", isNaN('hello'));
+console.log("Check if 3 is NaN ->", isNaN(3));
+console.log("What is the type of NaN? ->", typeof (NaN));
+console.log();
+let twoDigits = 0.1 * 0.2;
+console.log("Use a method to make sure that only \`0.02\` is printed. ->", twoDigits.toFixed(2));
+console.log();
+console.log("Divide Infinity by 0 ->", Infinity / 0);
+console.log("Divide Infinity by Infinity ->", Infinity / Infinity);
+console.log("Divide 1 by 0 ->", 1 / 0);
