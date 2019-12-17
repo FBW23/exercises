@@ -7,12 +7,12 @@
 // ### a. Lowest Number
 
 // Print out the lowest number between -1 and 4.
-console.log(Math.min(-1,4));
+console.log(Math.min(-1,0,1,2,3,4));
 
 // ### b. Highest Number
 
 // Print out the highest number between -1 and 4.
-console.log(Math.max(-1,4));
+console.log(Math.max(-1,0,1,2,3,4));
 
 // ## 2. Rounding
 
