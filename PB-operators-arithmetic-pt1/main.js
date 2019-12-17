@@ -44,6 +44,8 @@ console.log(a/b);
 let c = 20;
 let resultTwo = (a+b*c);
 
+
+
 console.log('(a+b)*c, aka resultTwo:');
 console.log(resultTwo);
 
@@ -63,3 +65,5 @@ console.log(resultOne%resultTwo);
 
 
 
+
+console.log(typeof(resultOne));

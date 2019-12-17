@@ -6,9 +6,14 @@ console.log(6450/15);
 console.log("Syilvia's income:");
 console.log(500*52,'$');
 
+//PERCENTAGE of 17/30
+
+console.log('percentage of 17 /30:');
+console.log(17/30*100);
+
 // SQUARE PERIMETER
 console.log('Perimeter of the square:');
-console.log(4.5*4,'cm');
+console.log(4.75*4,'cm');
 
 //TRIANGLE PERIMETER
 console.log('Perimeter of the triangle:');
@@ -31,51 +36,16 @@ console.log(9*9*9,'cm or', 9**3,'cm');
 
 //TRIANGLE AREA
 
-console.log(' area of the triangle, sides 5, 6, 7 cm. Since the area of the triangle is calculated based on the length of 1 side and the height belonging to that side , we need to use the Pythagorean theorem first.:');
-    console.log('b=5/|\\');
-    console.log('  / | \\');
-    console.log(' /  |x \\c=7');
-    console.log('/___|___\\');   
-    console.log('   a=6'); 
-    console.log('triangle area:(a*x)/2'); 
-    console.log('pythagoras:(a*a)=(b*b)+(c*c)=====> (x*x) = (a/2)*(a/2) + (b*b) =====> x2=3*3 + 5*5 =======> x2=9+25 = ')
-    
-    let halfA=a/2;
-    
-    let x2=(halfA)*(halfA) + (b*b);
-    
-    console.log(x2);
-    console.log('=====> x = √x2  = 5,83095')
-    let x = Math.sqrt(x2);
-    
-
-    console.log('area of half triangle: [(a/2)*x]/2 = ');
-    console.log(halfA*x/2); 
-    let halfArea=(halfA*x/2);
-    console.log('area of the whole triangle = 2 * halfarea = ' )
-    console.log(halfArea*2);
 
 
-
-
-console.log("if we assume that 1 of the angles of the triangle is 90 degree,(although, this triangle simply can not have a 90 degree angle , based on the length of it's sides) then we don't  need pythagoras and can use 1 side as base and any other side as height and the equation looks like this: ");
-
-console.log(' (a*b)/2 = (6*5)/2 =')
-console.log((a*b)/2);
-console.log(',or (a*c)/2 = (6*7)/2 =')
-console.log((a*c)/2);
-console.log(',or (b*c)/2 = (5*7)/2 =')
-console.log((b*c)/2);
-
-console.log('= area of the triangle')
-
-console.log("There's also Heron's formula, where we first take the half of the triangle's perimeter (s) , then calculate the area of the triangle (  √(s(s-a)*(s-b)*(s-c)  ) =")
+console.log("There's Heron's formula, where we first take the half of the triangle's perimeter (s) , then calculate the area of the triangle (  √(s(s-a)*(s-b)*(s-c)  )  (  √(9(9-6)*(9-5)*(9-7)  )  (  √(9(3)*(4)*(2)  )  (  √(216 )=")
 let s=(triPerimeter)/2;
-console.log('s');
+console.log('s=');
 console.log(s);
 
 
 let sroot=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+console.log( ' √(s(s-a)*(s-b)*(s-c) ' )
 console.log(sroot);
 
 
@@ -90,7 +60,7 @@ console.log(sum1+tip1);
 console.log('€26.67 + 15% tip');
 let sum2=26.67;
 let tip2=sum2*0.15;
-console.log(sum1+tip1);
+console.log(sum2+tip2);
 
 
 console.log('€35.92 + 20% tip');
@@ -130,16 +100,27 @@ console.log("James needs minimum:");
 
 
 
+let currentScore=78;
+console.log('Current results:', currentScore);
+let expectation=80;
+console.log('Expected result:', expectation);
+
+
+console.log(' expectation=((8*currentScore)+i)/9');
+console.log('80*9=(78*8)+i');
+let i=720-624;
+
+
+console.log('is this the correct one?');
+console.log(i, '%');
+
+
+console.log(8*78);
+let alap=8*78;
+console.log(alap+96);
+let alap2=alap+96;
+
+console.log(alap2/9);
 
 
 
-
-let currentScore=(78/8);
-console.log(currentScore);
-let expectation=(80/9);
-console.log(expectation);
-
-let y=(expectation/currentScore)*100;
-
-
-console.log(y);
