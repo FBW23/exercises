@@ -20,7 +20,7 @@ console.log(answer);
 // * Store the value `true` to a variable. Using a ternary operator,print the `false` option by checking the value of the initial variable.
 
 let a = true;
-console.log(a = false);
+console.log((a = false) ? true: false);
 
 // #### 3. Short Circuit
 // Given the code below, what will print when we console log `name`? Comment your answer in the js file.
