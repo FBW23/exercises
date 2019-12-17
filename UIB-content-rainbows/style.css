@@ -1,5 +1,6 @@
 h1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /* color: red */
     color: rgba(255 0 0/1);
 }
@@ -58,3 +59,38 @@ p {
     color:#9C74E9;
 }
 >>>>>>> fa5c07b04f3d2686b2693a3dcaea43facfbd9b64
+=======
+    /*color: red;*/
+    color: rgba(255, 0, 0, 0.8);
+
+}
+
+h2 {
+    /*color: orange;*/
+    color: rgba(255, 69, 0, 0.1);
+}
+
+h3 {
+    /*color:yellow;*/
+    color: rgba(255, 255, 0, 0.2);
+}
+
+h4 {
+    /*color: green;*/
+    color: rgba(0, 128, 0, 0.4);
+}
+
+h5 {
+    /*color: blue;*/
+    color: rgba(0, 0, 225, 0.5);
+}
+
+h6 {
+    /*color: indigo;*/
+    color: rgba(75, 0, 130, 0.2);
+}
+
+p {
+    color: #3cb371;
+}
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903

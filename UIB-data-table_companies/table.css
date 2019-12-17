@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 20px;
 }
@@ -20,3 +21,25 @@ th {
 img {
     width: 300px;
     }
+=======
+table, tr, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+
+tr{
+    font-weight: bold;
+}
+
+img{
+    vertical-align: bottom;
+    width: 100px;
+}
+
+tr:nth-child(odd){
+    background: cadetblue;
+}
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903

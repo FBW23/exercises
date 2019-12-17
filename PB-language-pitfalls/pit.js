@@ -9,3 +9,4 @@ console.log(b.toFixed(2));
 console.log(Infinity/0);
 console.log(Infinity/Infinity);
 console.log(1/0);
+

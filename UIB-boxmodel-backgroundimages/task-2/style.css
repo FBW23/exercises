@@ -1,14 +1,30 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .info-1,
 .info-2,
 .info-3 {
     width: 30%;
 =======
+=======
+<<<<<<< HEAD
+header{
+    margin-left: 30px;
+}
+
+.info-1,.info-2,.info-3 {
+    width: 30%;
+=======
+main {
+    margin: 0 auto;
+    width: 1000px;
+=======
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 *{
     margin-top:2vh ;
     
     padding:0;
     box-sizing: border-box;
+>>>>>>> 0afe14a7f767f87c1325643021e9c9c467239386
 }
 
 
@@ -23,25 +39,45 @@
     background-size: cover;
     box-sizing: border-box;
     border-radius: 5px;
+<<<<<<< HEAD
 >>>>>>> 52697d1bca8fbac68f3bf361e197272faf1e24c8
+=======
+>>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
     color: white;
     display: inline-block;
     padding:25px 15px;
     text-shadow: 1px 1px 1px black;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    background-position: bottom;
+    background-size: cover;
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
     
 }
 
 .info-1 {
+<<<<<<< HEAD
     display: inline-block;
     background-image: url(task2-bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+=======
+    background-image: url(assets/task2-bg.jpeg);
+    margin-left: 30px;
+   
+
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 
 }
 
 .info-2 {
+<<<<<<< HEAD
     display: inline-block;
     background-image: url(task2-bg1.jpeg);
     background-repeat: inherit;
@@ -68,6 +104,19 @@ section {
 main {
   text-align: center;
 =======
+    background-image: url(assets/task2-bg1.jpeg);
+    
+
+
+}
+
+.info-3 {
+    background-image: url(assets/task2-bg2.jpg);
+    
+
+}
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
+=======
     width: 30%;
 =======
     width: 33%;
@@ -82,7 +131,11 @@ h1 {
 
 main{
     margin:10px; 
+<<<<<<< HEAD
 >>>>>>> 52697d1bca8fbac68f3bf361e197272faf1e24c8
+=======
+>>>>>>> 0afe14a7f767f87c1325643021e9c9c467239386
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 }
 
 .info-1 {
@@ -98,3 +151,4 @@ main{
 >>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
 }
 
+>>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2

@@ -18,6 +18,7 @@ div {
   width: 20%;
 }
 
+<<<<<<< HEAD
 
 
 .strobe_1  {
@@ -54,6 +55,13 @@ div {
 
 @keyframes strobe1 {
   from,to {
+=======
+
+@keyframes strobe_1 {
+
+  from,
+  to {
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
     background-color: yellow;
   }
 
@@ -62,3 +70,50 @@ div {
   }
 }
 
+<<<<<<< HEAD
+=======
+@keyframes fadein {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.strobe_1 {
+  background-color: yellow;
+
+}
+
+.strobe_2 {
+  background: blue;
+}
+
+.strobe_3 {
+  background: brown;
+
+}
+
+.strobe_4 {
+  background: green
+}
+
+.strobe_5 {
+  background: palevioletred;
+
+}
+
+
+div:hover {
+  animation-iteration-count: infinite;
+  animation-name: strobe_1;
+  animation-duration: 3s;
+}
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903

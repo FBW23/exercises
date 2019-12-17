@@ -6,6 +6,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 header {
     font-family: monospace;
@@ -90,6 +91,55 @@ flex-wrap: wrap;
     padding: 2%;
     color: black;
 =======
+=======
+h1{
+    background: black;
+    color: white;
+}
+body{
+    background:#1a1a1a;
+}
+.genres{
+    display: flex;
+    justify-content:center;
+    color: white;
+    margin-top: 30px;
+    
+}
+.genres2{
+    display: flex;
+    
+    background: white;
+    flex-direction: column;
+    width: 8%;
+    height: 100vw;
+   
+}
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: row;
+    
+    
+    
+}
+.thumbnail1, 
+.thumbnail2, 
+.thumbnail3, 
+.thumbnail4, 
+.thumbnail5, 
+.thumbnail6{
+     height: 140px;
+     background:black;
+     color: white;
+     width: 150px;
+     text-align: center;
+     margin: 0, auto;
+}
+    
+
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 body {
     background: #1a1a1a;
     color: white;
@@ -142,5 +192,9 @@ figcaption {
     background: #1a1a1a;
     padding: 5px 0 5px 15px;
     margin-top: -4px;
+<<<<<<< HEAD
 >>>>>>> c39cf0ea924efe36b2405294c9e9697dca8ac57e
 }
+=======
+}
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903

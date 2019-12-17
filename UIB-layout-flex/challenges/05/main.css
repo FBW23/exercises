@@ -3,10 +3,15 @@
 body {
     border: 5px solid red;
     display: flex;
+<<<<<<< HEAD
     flex-direction: row;
     align-items: center;
     height: 100vh;
     
+=======
+    height: 100vh;
+    justify-content: space-around;
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 }
 
 div {
@@ -17,5 +22,10 @@ div {
     margin: 1em;
     border: 2px solid red;
     text-align: center;
+<<<<<<< HEAD
     width: 20%;
 }
+=======
+}
+
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903

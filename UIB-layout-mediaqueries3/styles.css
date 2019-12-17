@@ -56,27 +56,35 @@
 
 =======
 }
-
-.row {
-    height: 100vh;
+.row{
+    height: 100vw;
 }
-
-/* tablet */
-@media screen and (min-width: 601px) {
-    .row {
+/* desktop*/
+@media screen and (min-width:601px) and (max-width:992px){
+    .row{
         display: flex;
         flex-wrap: wrap;
+        
+    
     }
-
-    .column {
-        width: 50%;
+    .column{
+        width: 50%    
+   
     }
 }
 
-/* desktop */
-@media screen and (min-width: 993px) {
-    .column {
+@media screen and (min-width:993px){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100vw;
+        
+    }
+
+    .column{
         flex: 1;
 >>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
     }
+
 }

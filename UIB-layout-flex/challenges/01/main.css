@@ -11,9 +11,15 @@ div {
    
 }
 
+<<<<<<< HEAD
 body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+=======
+body{
+    display: flex;
+    flex-wrap: wrap;;
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 }

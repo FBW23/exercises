@@ -10,8 +10,16 @@ div {
     text-align: center;
 }
 
+<<<<<<< HEAD
 body {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
+=======
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903

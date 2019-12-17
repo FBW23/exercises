@@ -1,5 +1,7 @@
-body {
+@media (min-width:0px) and (max-width:375px){
+ body {
     height: 100vh;
+<<<<<<< HEAD
     border: 10px solid black;
 
 }
@@ -42,6 +44,32 @@ body {
 }
 
 
+=======
+    border: 10px solid red;
+     }
+ }
+
+@media (min-width:376px) and (max-width:425px){
+    body{
+        border: 10px solid  blue;
+    }
+}
+@media (min-width:426px) and (max-width:768px){
+    body{
+        border: 10px solid green;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    body{
+        border: 10px solid  yellow;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    body{
+        border: 10px solid  hotpink;
+    }
+}
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 main {
     margin: 15px;
     font-family: sans-serif;

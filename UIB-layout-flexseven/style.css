@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .secs {
 
     display: flex;
@@ -84,61 +85,89 @@ body {
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
+=======
+.violet {
+    background: violet;
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
 }
 
-section {
+.purple {
+    background: purple;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.orange {
+    background: orange;
+}
+
+.red {
+    background: red;
+}
+
+.colors {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.colors section {
+    flex-grow: 1;
     height: 100px;
-    width: 100%;
+    justify-content: center;
+
 }
 
-.first {
-    background: #8A0081;
-}
-
-.second {
-    background: #A300E6;
-}
-
-.third {
-    background: #6B00FF;
-}
-
-.fourth {
-    background: #009200;
-}
-
-.fifth {
-    background: #EDFF00;
-}
-
-.sixth {
-    background: #FE9000;
-}
-
-.seventh {
-    background: #FF0000;
-}
-
-@media screen and (min-width: 601px) {
-    /* div {
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .colors {
         display: flex;
-        width: 100%;
-    } */
-
-    .third,
-    .fourth,
-    .fifth {
-        width: 33.33%
+        flex-direction: row;
     }
+
+    .violet,
+    .purple,
+    .orange,
+    .red {
+        width: 100%;
+    }
+
+    .blue,
+    .green,
+    .yellow {
+        width: 33.33%;
+    }
+
+
+
 }
 
 @media screen and (min-width: 801px) {
-    /* body {
+    .colors {
         flex-direction: row;
-    } */
+    }
 
-    section {
+    .violet,
+    .purple,
+    .orange,
+    .red {
         width: 50%;
 >>>>>>> b0ba84e195ca8ea4fff2cd3be2f6a3ede53d57df
+    }
+
+    .blue,
+    .green,
+    .yellow {
+        width: 33.33%;
     }
 }

@@ -2,8 +2,14 @@
 
 body {
     border: 5px solid red;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
+=======
+    flex-direction: column;
+    display: flex;
+    height: 200vh;
+>>>>>>> 1f1240a70de69f80e42381f38fe5f5cf6945b903
     align-items: center;
 }
 
