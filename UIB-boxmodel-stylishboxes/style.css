@@ -1,15 +1,19 @@
-section {
+body{
+    background: url(dffs.jpg);
+    height: 1000px;
+    background-size: ;
+}
+.fake-box{
+    position: relative;
+    height: 300px;
+    width: 310px;
     border: 1px solid black;
-    box-shadow: 5px 5px 11px black;
-    display: inline-block;
-    margin-right: 20px;
-    width: 20%;
+    margin-bottom: 10px;
+    margin-left: 9px;
 }
 
-article {
-    margin: 10px;
-}
 
+<<<<<<< HEAD
 .fake-box {
     position: relative;
 <<<<<<< HEAD
@@ -51,10 +55,14 @@ article {
     height: 200px;
     padding: 40px; 
 }
+=======
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 
 .fake-box:before, .fake-box:after {
+    content:"";
+    height: 300px;
+    width: 310px;
     border: 1px solid black;
-    content: ""; /* make the styling here visible */
     position: absolute;
     width: 330px;
     height: 160px;
@@ -62,3 +70,25 @@ article {
 }
 >>>>>>> 84d9b409a2c4953c9ed0315afcbbb0a4fbb01bd9
 
+<<<<<<< HEAD
+=======
+.fake-box:after {
+    
+    left: 20px;
+    top: 20px;
+}
+.info-box{
+    display: inline-block;
+    width: 30%;;
+    text-align: justify;
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 4px;
+    box-shadow:  5px 5px 9px black;
+
+}
+.article1{
+    padding: 30px;
+}
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

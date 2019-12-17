@@ -26,6 +26,7 @@ div:hover {
 
 }
 
+<<<<<<< HEAD
 .strobe_1 {
   animation: div;
   background-color: yellow;
@@ -61,6 +62,14 @@ div:hover {
 @keyframes div {
   from {
     opacity: 1;
+=======
+
+@keyframes strobe_1 {
+
+  from,
+  to {
+    background-color: yellow;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
   }
 
   50% {
@@ -70,4 +79,49 @@ div:hover {
   to {
     opacity: 1;
   }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.strobe_1 {
+  background-color: yellow;
+
+}
+
+.strobe_2 {
+  background: blue;
+}
+
+.strobe_3 {
+  background: brown;
+
+}
+
+.strobe_4 {
+  background: green
+}
+
+.strobe_5 {
+  background: palevioletred;
+
+}
+
+
+div:hover {
+  animation-iteration-count: infinite;
+  animation-name: strobe_1;
+  animation-duration: 3s;
 }

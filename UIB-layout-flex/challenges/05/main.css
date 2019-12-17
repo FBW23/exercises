@@ -2,10 +2,16 @@
 
 body {
     border: 5px solid red;
+<<<<<<< HEAD
     display:flex;
     align-items: center;
     justify-content: center;
     height:100vh;
+=======
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 div {

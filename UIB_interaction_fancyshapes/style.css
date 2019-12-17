@@ -3,7 +3,11 @@ html,
 body {
 =======
 html, body {
+<<<<<<< HEAD
 >>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
+=======
+>>>>>>> ea6a99cd47f88d950145fae491db5247c05b657a
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
     padding: 0;
     margin: 0;
 }
@@ -12,6 +16,7 @@ section {
 <<<<<<< HEAD
     background-color: lightblue;
     margin-top: 10px;
+<<<<<<< HEAD
 }
 
 .task-one::before {
@@ -22,10 +27,28 @@ section {
 .task-one::after {
     content: "...the End";
     background-color: purple;
+=======
+<<<<<<< HEAD
+}
+
+.task-one {
+    background: blue;
+}
+
+.task-one::before {
+    content: "Once upon a time...";
+    background: purple
+}
+
+.task-one::after {
+    content: "...The End";
+    background: purple;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .task-two {
     background-image: url(assets/beach.jpg);
+<<<<<<< HEAD
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     width: 700px;
     height: 500px;
@@ -40,4 +63,16 @@ section {
 =======
     margin-top: 10px;
 >>>>>>> 0a7cfbfd38f445351e2980dba8449e9b94b7afe9
+=======
+    width: 500px;
+    height: 500px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+img {
+    transform: rotate(0.5turn);
+    
+=======
+>>>>>>> ea6a99cd47f88d950145fae491db5247c05b657a
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

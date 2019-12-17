@@ -4,6 +4,23 @@
 }
 .li {text-align: center;}
 
+<<<<<<< HEAD
 .i {font-size: 2.3em;
 }
+=======
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.review{
+    text-shadow: 2px 2px red;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ul{
+    text-align: center;
+}
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 

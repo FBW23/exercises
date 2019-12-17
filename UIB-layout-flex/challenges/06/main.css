@@ -2,11 +2,18 @@
 
 body {
     border: 5px solid red;
+<<<<<<< HEAD
     display:flex;
     align-items: center;
     justify-content: center;
     height:100vh;
     
+=======
+    flex-direction: column;
+    display: flex;
+    height: 200vh;
+    align-items: center;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 div {

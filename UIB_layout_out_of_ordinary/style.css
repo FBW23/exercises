@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     background-color: green;
 }
 <<<<<<< HEAD
@@ -79,45 +80,56 @@ body {
     align-items: center;
     display: flex;
 =======
+=======
+    
+}
+
+
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 .genres {
-    background: green;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
+    
+    
 }
 
-.genres > section {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
+.genres > section{
+    width: 500px ;
     height: 100px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 500px;
+    flex-grow: 1;
 }
 
-.action {
-    background: dodgerblue;
-}
 
-#thriller {
-    background: rgb(190, 178, 178);
+#ac{
+    background-color: dodgerblue;
+    
+}
+#th{
+    background-color:rgb(190, 178, 178);
     flex-grow: 10;
 }
-
-#comedy {
-    background: rgb(255, 214, 30);
+#com{
+    background-color:rgb(225, 214, 30);
     flex-grow: 10;
 }
-
-.horror {
-    background: black;
+#ho{
+    background-color:black;
     color: white;
 }
-
-.drama {
-    background: darkgrey;
+#dra{
+    background-color: darkgray;
 }
+<<<<<<< HEAD
 
 .romance {
     background: red;
 >>>>>>> a59ed8ec6c32174d5536f036e4e25a58256bea0f
+=======
+#rom{
+    background-color:red
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
