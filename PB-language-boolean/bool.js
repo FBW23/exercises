@@ -15,4 +15,5 @@ firstName = 'Stacey';
 let name = givenName || firstName || 'John'; 
 
 console.log(name);
-console.log('the print result is stacy cause it is the value of the first defined variable on the list' );
+console.log('the print result is stacy cause it is the value of the first defined variable on the list ' );
+console.log('that means if the firstName was not defined it will print the last backup which is \'john\'')
