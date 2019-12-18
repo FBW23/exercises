@@ -1,7 +1,7 @@
 let johnHeight,johnMass,markHeight,markMass,johnBMI,markBMI;
-johnHeight=170;
+johnHeight=1.70;
 johnMass=60;
-markHeight=150;
+markHeight=1.50;
 markMass=60;
 
 johnBMI=johnMass/(Math.pow(johnHeight,2));
