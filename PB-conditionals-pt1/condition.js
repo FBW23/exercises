@@ -45,27 +45,28 @@ if ((y > 50) && (y < 80))
 
 {
     (console.log(65));
+} else {
+    console.log(80);
 }
-else { console.log(80);  }
-    
+
 
 
 // Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 
-if (2 + 6 == 8) {
+if (2 + 6 === 8) {
     (console.log(true));
 }
 
-if (2 - 6 == 8) {
+if (2 - 6 === 8) {
     (console.log(true));
 }
 
 // Check whether either one of two integers is 15, or if their sum is 15. If one of these is the case, print true.
 let bleh = 15;
-if ((bleh = 7) && (bleh = 8)) {
+if ((bleh === 7) && (bleh === 8)) {
     console.log(true);
 }
-if (7 + 8 == bleh) {
+if (7 + 8 === bleh) {
     console.log(true);
 }
 
@@ -73,18 +74,14 @@ if (7 + 8 == bleh) {
 
 
 
-if (35 % 7 == 0 || 35 % 11 == 0) {
+if (35 % 7 === 0 || 35 % 11 === 0 || 144 % 7 === 0 || 144 % 11 === 0) {
     console.log(true);
 } else {
     console.log(false);
 }
 
 
-if (144 % 7 == 0 || 144 % 11 == 0) {
-    console.log(true);
-} else {
-    console.log(false);
-}
+
 //   Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.
 
 let i = 42;
@@ -111,13 +108,12 @@ if (s > 19) {
 let firstName = "Mulambenta";
 let age = 15;
 
-if (age < 13) {
-    console.log(firstName + "its a child");}
-    else if ((age >= 13) && (age < 20)) {
-        console.log(firstName + " " + " is a teenager");
-    }
-    else if ((age >= 20) && (age < 30)) {
-        console.log(firstName + "is a young adult");
-    }
-    else   {
-        console.log(firstName + "is an adult");}
+if (age < 1(console.log(80)) 3) {
+    console.log(firstName + "its a child");
+} else if ((age >= 13) && (age < 20)) {
+    console.log(firstName + " " + " is a teenager");
+} else if ((age >= 20) && (age < 30)) {
+    console.log(firstName + "is a young adult");
+} else {
+    console.log(firstName + "is an adult");
+}
