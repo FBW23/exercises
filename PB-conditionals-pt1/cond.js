@@ -9,16 +9,23 @@ if ((50 <= a && a <= 99) || (50 <= b && b <= 99)) {
 let c = 10,
     d = 19,
     e = 4;
-if ((50 >= c && c <= 99) || (50 >= d && c <= 99) || (50 >= e && e <= 99)) {
+if ((50 >= c && c <= 99) || (50 >= d && d <= 99) || (50 >= e && e <= 99)) {
     console.log(true);
 } else {
     console.log(false);
 }
 //3.
-let f = 9,
-    g = 8,
-    h = 8;
-console.log(Math.max(f, g, h));
+let f = 25,
+    g = 20,
+    h = 26;
+if (f > g && f > h) {
+    console.log(f);
+} else if (g > h) {
+    console.log(g);
+} else {
+    console.log(h);
+}
+
 //4.
 let originalString = "javascript";
 let py = 'Py';
