@@ -41,16 +41,14 @@ if (z = x) {
 
 y = (65 + 67);
 console.log(y)
-if ((y > 50) && (y > 80));
+if ((y > 50) && (y < 80))
 
 {
     (console.log(65));
 }
-if ((y < 50) && (y < 80));
+else { console.log(80);  }
+    
 
-{
-    (console.log(80))
-}
 
 // Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 
@@ -116,7 +114,7 @@ let age = 15;
 if (age < 13) {
     console.log(firstName + "its a child");}
     else if ((age >= 13) && (age < 20)) {
-        console.log(firstName +  "is a teenager");
+        console.log(firstName + " " + " is a teenager");
     }
     else if ((age >= 20) && (age < 30)) {
         console.log(firstName + "is a young adult");
