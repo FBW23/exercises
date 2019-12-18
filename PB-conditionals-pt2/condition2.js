@@ -9,7 +9,7 @@ console.log(johnBMI);
 let valueMarkMMI = markBMI > johnBMI;
 console.log(`Is Mark\'s BMI higher than John\'s? Why no, it\'s ${valueMarkMMI} it is?`);
 if (markBMI > johnBMI) {
-    console.log(`Mark ${markBMI}`);
+    console.log(`Mark BMI: ${markBMI}`);
 }else {
-    console.log(`John ${johnBMI}`);
+    console.log(`John BMI: ${johnBMI}`);
 }
