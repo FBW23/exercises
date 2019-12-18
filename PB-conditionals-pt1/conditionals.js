@@ -119,10 +119,11 @@ let firstName = 'Adam';
 let age = 35;
 
 if (age < 13) {
-    console.log(firstName + " is a child ");
-} else if (age <= 13 && age < 20) {
+    // console.log(firstName + " is a child ");
+    console.log(`${firstName} is a child`);
+} else if (age >= 13 && age < 20) {
     console.log(firstName + " is a teenager ");
-} else if (age = 20 && age < 30) {
+} else if (age === 20 && age < 30) {
     console.log(firstName + " is a young adult ");
 } else {
     console.log(firstName + " is a adult");
