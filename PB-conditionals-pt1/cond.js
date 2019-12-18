@@ -35,13 +35,16 @@ if ((checkString.includes(py))) {
     console.log(originalString);
 }
 //5.
-let i = 50,
-    j = 4;
+let i = 40,
+    j = 0;
 let sum = i + j;
 if (sum >= 50 && sum <= 80) {
     console.log(65);
-} else {
+} else if(sum>80){
     console.log(80);
+}
+else{
+    console.log('below the range');
 }
 
 //6.
@@ -87,8 +90,10 @@ if (number - 19 > 0) {
 }
 //11.
 let firstName = 'jamil',
-    age = 19;
-if (age < 13) {
+    age = 5;
+if (age >= 2 && age < 5) {
+    console.log('firstName is a BABY')
+} else if (age >= 5 && age < 13) {
 
     console.log('firstName is a child');
 } else if (age >= 13 && age < 20) {
