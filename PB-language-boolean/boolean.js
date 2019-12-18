@@ -24,5 +24,5 @@ let firstName, givenName;
 firstName = 'Stacey';
 let name = givenName || firstName || 'John'; 
 
-console.log(name); //Stacey because was the only one give variable.
+console.log(name); //Stacey because was the only one given variable.
 
