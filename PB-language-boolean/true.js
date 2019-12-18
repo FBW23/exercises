@@ -23,4 +23,4 @@ firstName = 'Stacey';
 let name = givenName || firstName || 'John'; 
 
 console.log(name);
-//because first name  comes  first  in the "let";
+//because first name  comes  first  in the "let"; angivenName is not  defined as variable 
