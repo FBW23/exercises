@@ -87,7 +87,7 @@ if ((x + y) == 8 || (x - y) == 8) {
 
 let name2 = 7;
 let name1 = 8;
-if ((name2 + name1) == 15 || (name2 - name1) == 15 || (name2 == 15) || (name1 == 15)) {
+if ((name2 + name1) == 15 || (name2 == 15) || (name1 == 15)) {
     console.log(true);
 }
 // 8. Check whether one of two integers is a multiple of 7 or 11. If so, print true.
@@ -102,7 +102,7 @@ if (int % 7 || int2 % 7 || int % 11 || int2 % 11) {
 let sum = 2;
 let sum1 = 2;
 
-if (sum == sum1) {
+if (sum === sum1) {
     console.log((sum + sum1) * 3);
 } else {
     console.log(sum + sum1);
@@ -112,7 +112,7 @@ if (sum == sum1) {
 let number1 = 25;
 let number2 = 19;
 if (number1 > number2)
-    console.log((number1 > number2) * 2);
+    console.log((number1 - number2) * 2);
 // 11. BONUS CHALLENGE:  Make a variable for firstName and age and give each variable values. Create an if/else statement to check whether the person's age is less than 13. If so, print "firstName is a child". If the age is equal to or more than 13 and less than 20, print "firstName is a teenager". If the person's age is equal to 20 and less than 30, then print "firstName is a young adult". If none of these conditions apply, print "firstName is a adult". 
 
 let firstName = 'Adam';
