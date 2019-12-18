@@ -43,8 +43,8 @@ console.log();
 let givenString = 'thon';
 let pyString = 'Py';
 let newString = pyString + givenString;
-if (newString.includes('Py')) {
-    console.log(newString);
+if (givenString.includes('Py')) {
+    console.log(givenString);
 } else {
     console.log('this word does not contain \"Py\"');
 }
@@ -86,11 +86,13 @@ console.log();
 console.log("8. Check whether one of two integers is a multiple of 7 or 11. If so, print true.");
 console.log();
 let e = 14;
-if ((e / 2 === 7)) {
+let h = 23;
+if ((e % 7) === 0 || (e % 11) === 0 || (h % 7) === 0 || (h % 11) === 0) {
     console.log(true);
 } else {
     console.log(false);
 }
+
 
 console.log();
 console.log("9. Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.");
@@ -130,6 +132,7 @@ if ((age === 20) && (age < 30)) {
 } 
 if (age > 30) {
     console.log(`${firstName} is an adult.`)
+
 }
 
 console.log();
