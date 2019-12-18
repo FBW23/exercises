@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 1 Check if two given integer values are in the range 50 to 99 (this includes both 50 and 99). 
 //Print true if either of them are in the rang
 
@@ -155,3 +156,26 @@ if (age < 13) {
 // BONUS CHALLENGE: Play around with each of your results, 
 //i.e., make sure they are dynamic to different inputs; 
 //is there a more efficient way of writing your code?; etc.
+=======
+// Check if two given integer values are in the range 50 to 99 (this includes both 50 and 99). Print true if either of them are in the range.
+
+let a = 50;
+let b = 49;
+
+// Easier solution
+if ((50 <= a) && (a <= 99)) {
+    console.log(true);
+}
+if ((50 <= b) && (b <= 99)) {
+    console.log(true);
+}
+console.log(false);
+
+
+// Harder solution 
+if (((50 <= a) && (a <= 99)) || ((50 <= b) && (b <= 99))) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+>>>>>>> 5a386d15b2d91ed68c8c93a3cc6ffe5b5df2d0fa
