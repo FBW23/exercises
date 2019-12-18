@@ -20,6 +20,7 @@ if (markBMI.toFixed(1) > johnBMI.toFixed(1)) {
 } else {
     console.log("Is Mark's BMI higher than John's? Why no, it's", false + ", it is not.");
 }
+
 console.log();
 console.log("5. Create an *if* statement which prints the name and BMI of the person with the highest BMI.");
 console.log();
