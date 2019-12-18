@@ -72,7 +72,7 @@ if (combined.includes(secondWord)) {
 // 6. Check whether the sum of two integers is 8, or whether their 
 //difference is 8. If one of these is the case, print true.
 let xxx, yyy;
-if ((xxx + yyy) === 8 || (8 === 8)) {
+if ((xxx + yyy) === 8 || ((xxx - yyy) === 8)) {
     console.log(true);
 }
 
@@ -121,7 +121,7 @@ else if (age >= 13 && age < 20) {
 }
 else if (age === 20 && age < 30) {
     console.log(firstName + ' is a young adult');
-}else {
+} else {
     console.log(firstName + ' Is an a Adult');
 }
 
