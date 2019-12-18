@@ -1,19 +1,29 @@
 let a = 9,
-    b = 8;
-if ((50 <= a && a <= 99) || (50 <= b && b <= 99)) {
-    console.log(true);
+    b = 8.1;
+if (Number.isInteger(a) && Number.isInteger(b)) {
+    if ((50 <= a && a <= 99) || (50 <= b && b <= 99)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 } else {
-    console.log(false);
+    console.log('please use only integers')
 }
+
 //2.
 let c = 10,
-    d = 19,
+    d = 19.4,
     e = 4;
-if ((50 >= c && c <= 99) || (50 >= d && d <= 99) || (50 >= e && e <= 99)) {
-    console.log(true);
+if (Number.isInteger(c) && Number.isInteger(d) && Number.isInteger(e)) {
+    if ((50 >= c && c <= 99) || (50 >= d && d <= 99) || (50 >= e && e <= 99)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 } else {
-    console.log(false);
+    console.log('please use only integers');
 }
+
 //3.
 let f = 25,
     g = 39.4,
@@ -39,24 +49,36 @@ if ((checkString.includes(py))) {
     console.log(originalString);
 }
 //5.
-let i = 40,
+let i = 40.3,
     j = 0;
 let sum = i + j;
-if (sum >= 50 && sum <= 80) {
-    console.log(65);
-} else if (sum > 80) {
-    console.log(80);
-} else {
-    console.log('below the range');
+if(Number.isInteger(i)&&Number.isInteger(j)){
+    if (sum >= 50 && sum <= 80) {
+        console.log(65);
+    } else if (sum > 80) {
+        console.log(80);
+    } else {
+        console.log('below the range');
+    }
 }
+else{
+    console.log('please use only integers');
+}
+
 //6.
-let k = 12,
+let k = 12.4,
     l = 4;
 let Sum = k + l;
 let minus = k - l;
-if (Sum === 8 || minus === 8) {
-    console.log(true);
+if(Number.isInteger(k)&&Number.isInteger(l)){
+    if (Sum === 8 || minus === 8) {
+        console.log(true);
+    }
 }
+else{
+    console.log('please use only integers');
+}
+
 //7.
 let m = 12,
     n = 15.4;
