@@ -119,7 +119,7 @@ if (age < 13) {
 else if (age >= 13 && age < 20) {
     console.log(firstName + ' is a teenager');
 }
-else if (age === 20 && age < 30) {
+else if (age >= 20 && age < 30) {
     console.log(firstName + ' is a young adult');
 } else {
     console.log(firstName + ' Is an a Adult');
