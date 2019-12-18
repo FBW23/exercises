@@ -21,8 +21,8 @@ console.log(`============================`);
 // 2. Check if three given integer values are in the range 50 to 99 (inclusive). Print true if one or more of them are in the range.
 console.log(`============================`);
 console.log('2. Check if three given integer values are in the range 50 to 99 (inclusive). Print true if one or more of them are in the range.');
-var a = 55;
-var b = 97;
+var a = 30;
+var b = 107;
 var c = 100;
 
 
@@ -40,9 +40,19 @@ console.log(`============================`);
 console.log(`============================`);
 console.log('3. Declare the variables a, b and c, and give them number values. Check which one out of the three variables has the largest value and print it to the console. Then change the values of the variables to see if your conditional still works. ');
 
-var a = 55;
-var b = 97;
+var a = 102;
+var b = 101;
 var c = 100;
+let highest = a > b ? a : b
+highest = highest > c ? highest : c
+
+
+console.log(highest);
+
+
+
+
+
 
 if ((a > b) && (a > c)) {
     console.log('a is the highest amount');
@@ -55,6 +65,9 @@ if ((a < b) && (c < b)) {
 if ((c > b) && (c > a)) {
     console.log('c is the highest amount');
 }
+
+
+
 
 
 
@@ -76,12 +89,14 @@ console.log(`============================`);
 // 5. Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80. 
 console.log(`============================`);
 console.log('5. Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80. ');
-let d=35;
-let f=20;
+let d = 35;
+let f = 20;
 let sum = d + f;
 console.log(`d+f=${sum}`);
 
-if ((sum>= 50) && (sum<=80)) {
+
+
+if ((sum >= 50) && (sum <= 80)) {
     console.log(65);
 } else {
     console.log(80);
@@ -93,10 +108,10 @@ console.log(`============================`);
 console.log(`============================`);
 console.log('6. Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.');
 
-let e=15;
-let g=7;
+let e = 15;
+let g = 7;
 
-if ((e-g)===8 || (e+g)===8){
+if ((e - g) === 8 || (e + g) === 8) {
     console.log(true);
 }
 
@@ -106,7 +121,7 @@ console.log(`============================`);
 console.log(`============================`);
 console.log('7. Check whether either one of two integers is 15, or if their sum is 15. If one of these is the case, print true. ');
 
-if ( e===15 || e+g===15){
+if (e === 15 || e + g === 15) {
     console.log(true);
 }
 
@@ -115,10 +130,10 @@ console.log(`============================`);
 console.log(`============================`);
 console.log('8. Check whether one of two integers is a multiple of 7 or 11. If so, print true.');
 
-let h=26;
-let j=23;
+let h = 7;
+let j = 11;
 
-if ( ((h%7===0) || (h%11===0)) || ((j%7===0) || (j%11===0)) ){
+if (((h % 7 === 0) || (h % 11 === 0)) || ((j % 7 === 0) || (j % 11 === 0))) {
     console.log(true);
 }
 
@@ -131,15 +146,15 @@ console.log(`============================`);
 console.log('9. Calculate the sum of the two given integers. If the two values are the same, then print triple their sum. ');
 
 
-let k=24;
-let m=25;
-let sum2=k+m;
+let k = 24;
+let m = 25;
+let sum2 = k + m;
 console.log('k+m= ' + sum2);
 
-if (k===m){
-    console.log(sum2*3);
+if (k === m) {
+    console.log(sum2 * 3);
 
-    
+
 }
 
 console.log(`============================`);
@@ -147,13 +162,13 @@ console.log(`============================`);
 console.log(`============================`);
 console.log('10. Calculate the difference between a specified number and 19. Print double the difference if the specified number is greater than 19.');
 
-let n=20;
-let o=19;
+let n = 20;
+let o = 19;
 
-let difference=n-19;
+let difference = n - 19;
 
-if (n>o ){
-    console.log(difference*2);
+if (n > o) {
+    console.log(difference * 2);
 }
 
 
@@ -162,21 +177,22 @@ console.log(`============================`);
 console.log(`============================`);
 console.log(`11. BONUS CHALLENGE:  Make a variable for firstName and age and give each variable values. Create an if/else statement to check whether the person's age is less than 13. If so, print "firstName is a child". If the age is equal to or more than 13 and less than 20, print "firstName is a teenager". If the person's age is equal to 20 and less than 30, then print "firstName is a young adult". If none of these conditions apply, print "firstName is a adult". `);
 
-let firstName= 'Don Corleone';
-let age=30;
+let firstName = 'Don Corleone';
+let age = 30;
 
-if (age<13 ){
+if (age < 13) {
     console.log(`${firstName} is a child`);
 }
-if ((age>=13) && (age<20)){
+if ((age >= 13) && (age < 20)) {
     console.log(`${firstName} is a teenager`);
 }
 
-if ((age ===20) && (age<30)){
+if ((age === 20) && (age < 30)) {
     console.log(`${firstName} is a young adult`);
-    
-}if (age>=30) {
-console.log(`${firstName} is an adult`);
+
+}
+if (age >= 30) {
+    console.log(`${firstName} is an adult`);
 }
 
 
