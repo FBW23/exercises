@@ -5,7 +5,7 @@
 // 1. Check if two given integer values are in the range 50 to 99 (this includes both 50 and 99). Print true if either of them are in the range.
 let a = 50;
 let b = 49;
-if (((50 <= a) && (a <= 99)) || ((50 <= b) && (b <= 99))) {
+if (((a <= 50) && (a <= 99)) || ((50 <= b) && (b <= 99))) {
     console.log(true);
 } else {
     console.log(false);
@@ -131,9 +131,9 @@ let age = 10;
 
 if (age < 13){
     console.log(`${ju} is a child`);
-} else if (age >= 13 || age < 20){
+} else if (age >= 13 && age < 20){
     console.log(`${ju} is a teenager`);
-} else if (age === 20 || age < 30){
+} else if (age === 20 && age < 30){
     console.log(`${ju} is a young adult`);
 } else{
     console.log(`${ju} is a adult`);
