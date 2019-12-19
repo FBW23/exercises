@@ -6,17 +6,17 @@
 let name = "Mark";
 let weight = 73;
 let height = 180;
-const finalBmi = weight/(height/100*height/100);
+const finalBmi = weight / (height / 100 * height / 100);
 
 
-let name1= "John";
+let name1 = "John";
 let weight1 = 80;
 let height1 = 190;
-const final1Bmi = weight1/(height1/100*height1/100);
+const final1Bmi = weight1 / (height1 / 100 * height1 / 100);
 
 console.log(finalBmi, final1Bmi);
 
-const markHigherBMI = finalBmi > final1Bmi;{}
+const markHigherBMI = finalBmi > final1Bmi;
 
 console.log(`${markHigherBMI} Is Mark's BMI higher than John's?`);
 // 2. Calculate both their BMIs and store their BMIs in variables. 
