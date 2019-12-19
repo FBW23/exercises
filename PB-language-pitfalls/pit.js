@@ -10,3 +10,18 @@ console.log(Infinity/0);
 console.log(Infinity/Infinity);
 console.log(1/0);
 
+
+let christmas = true;
+let newYearEve = false;
+let decoration = null;
+
+if(christmas) {
+    decoration = "Christmas Decoration";
+
+} else if (newYearEve) {
+    decoration ="NYE";
+} else {
+    decoration = null;
+}
+
+console.log(decoration);

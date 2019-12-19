@@ -32,22 +32,23 @@ let johnBMI = 25;
 // let markBMI = markBMI > johnBMI ? true : false;
 
 
-let isHigher =markBMI < johnBMI ? 'John' : 'Mark';
-console.log(isHigher);
+// let isHigher =markBMI < johnBMI ? 'John' : 'Mark';
+// console.log(isHigher);
 
-if (markBMI < johnBMI) {
-    let isHigher2 = 'John';
-    console.log(isHigher2);
+// if (markBMI < johnBMI) {
+//     let isHigher2 = 'John';
+//     console.log(isHigher2);
     
-} else {
-        let isHigher2 = 'Mark'; 
-        console.log(isHigher2);
-    }
-    console.log(isHigher);
-    console.log(isHigher2);
+// } else {
+//         let isHigher2 = 'Mark'; 
+//         console.log(isHigher2);
+//     }
+//     console.log(isHigher);
+//     console.log(isHigher2);
 
 
     // When to use the ternary, when the if better?
     // 1) When we have more than two cases (true/false), take the IF!
     // 2) Always when we fo more than one statement, take the IF!
     // 3) Ternary is perfect for all occasions where we just save ONE variable thing only!
+
