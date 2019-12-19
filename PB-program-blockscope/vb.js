@@ -41,7 +41,7 @@ console.log(`===========================`);
 
 
 
-if (determiner>=0){
+if (determiner<0){
     let updater='Greater or equal to 0';
     let message='Positive Integer';
     console.log(message);
@@ -50,6 +50,7 @@ if (determiner>=0){
 
 }
 
+// if we print the message outside of  the block, it would not run, as the variable is not defined outside of the block.
 
 
 
