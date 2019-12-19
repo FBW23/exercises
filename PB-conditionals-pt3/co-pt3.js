@@ -9,7 +9,7 @@ console.log("Aleeza's team average score is:", averageAleeza + ".",
     "\n\nLis' team average score is:", averageLis + ".", "\n\nMary's team average score is:", averageMary + ".");
 
 console.log();
-console.log("1b) Decide which teams wins in average (highest average score), and print the winner to the console, including their average score in the output.");
+console.log("1b) Decide which teams (between Aleeza's and Mary's) wins in average (highest average score), and print the winner to the console, including their average score in the output.");
 console.log();
 
 if (averageAleeza > averageLis) {
