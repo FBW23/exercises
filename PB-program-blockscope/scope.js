@@ -1,24 +1,19 @@
+const determiner = -3;
 
-let determiner =NaN;
-
-if(determiner<0){
-    let x;
-    x=' is smaller than 0';
+if (determiner < 0) {
+    var x;
+    x = ' is smaller than 0';
+    console.log(x);
+} else {
+    x = 'is equal or greater than 0';
     console.log(x);
 }
-
-else{
-    x='is equal or greater than 0';
-    console.log(x );
-}
-console.log(x);
 let updater;
-if(determiner>=0){
-    updater='greater or equal to 0';
+if (determiner >= 0) {
+    updater = 'greater or equal to 0';
     var message = 'Positive Integer';
-}
-else{
-    updater='less than 0';
+} else {
+    updater = 'less than 0';
 }
 console.log(updater);
 console.log(message);
