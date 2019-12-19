@@ -13,7 +13,7 @@ if (determiner < 0) {
 } else (determiner >= 0)
 {
     let x = 'Greater or equal to 0';
-   
+
 }
 
 
@@ -26,13 +26,15 @@ if (determiner < 0) {
 let updater = -4;
 if (determiner >= 0) {
     updater = 'Greater or equal to 0';
-    var message = 'Positive Integer';
+    let message = 'Positive Integer';
     console.log(message);
+}
 
-} else {
+else {
 
     updater = 'Less than 0';
 }
+//console.log(message); is not defined - outside of block 
 
 // * **Question**: What would happen if we tried to print "message" outside of the if statement? Comment your answer in the js file.
 
@@ -43,8 +45,10 @@ if (determiner >= 0) {
 // function mediumUserCost(isMember) {
 //     return (isMember ? '$5.00 / Month' : 'Free');
 //   }
-  
+
 //   console.log(mediumUserCost(true));
 
 let partyToday = 'forFree' ? '10Euro for Party' : 'its Free';
 console.log(partyToday);
+let mustang = 300000 ? 'cheaper' : 'expensive'
+console.log(mustang);
