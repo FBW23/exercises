@@ -18,7 +18,7 @@ if (chubby >= slim); {
 };
 // Print a string to the console containing the variable from step 3 using string interpolation. (e.g. "Is Mark's BMI higher than John's? Why yes, it's [boolean], it is").
 
-console.log("Is Mark's BMI higher than John's? Why yes, it's" +' '+(chubby)+ ",it is");
+console.log(`Is Mark's BMI higher than John's? Why yes, it's ${chubby} ,it is`);
 // Create an if statement which prints the name and BMI of the person with the highest BMI.
 
 if (chubby>slim )

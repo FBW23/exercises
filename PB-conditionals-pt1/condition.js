@@ -117,3 +117,25 @@ if (age < 1(console.log(80)) 3) {
 } else {
     console.log(firstName + "is an adult");
 }
+
+let a = -5;
+if (a > 0) {console.log("positive");
+}
+else
+{console.log("NOT positive");
+
+}
+
+// expected output: "NOT positive"
+
+//block scope
+let y=1;
+var x=1;
+if (true){var x=2;
+let y=2;}
+
+console.log(x);
+//expected output:2
+
+console.log(y);
+//expected output 1
