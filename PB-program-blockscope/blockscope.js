@@ -9,10 +9,11 @@
 let determiner = 10;
 
 if (determiner < 0) {
-    let x = 'Less than 0'
+    let x = 'Less than 0';
 } else (determiner >= 0)
 {
-    x = 'Greater or equal to 0'
+    let x = 'Greater or equal to 0';
+   
 }
 
 
