@@ -9,7 +9,7 @@ console.log(`===========================`);
 
 
 
-let x;
+
 
 let determiner= -5;
 
@@ -38,7 +38,7 @@ console.log(`===========================`);
 // * **Question**: What would happen if we tried to print "message" outside of the if statement? Comment your answer in the js file.
 console.log(`===========================`);
 
-let updater;
+
 
 
 if (determiner>=0){
