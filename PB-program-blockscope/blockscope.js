@@ -18,7 +18,7 @@ if (determiner < 0) {
 // If determiner is less than 0, updater's value should be "Less than 0".
 // Question: What would happen if we tried to print "message" outside of the if statement? Comment your answer in the js file.
 
-let updater = "blablabla"
+let updater;
 
 if (determiner >= 0) {
     let updater = "Greater or equal to 0";
