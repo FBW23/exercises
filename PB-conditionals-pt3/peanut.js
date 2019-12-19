@@ -1,5 +1,5 @@
-let aleeza = (89 + 120 + 103) / 3;
-let lis = (116 + 94 + 123) / 3;
+ let aleeza =(97 + 134 + 105) / 3; //(89 + 120 + 103) / 3; 
+ let lis =(97 + 134 + 105) / 3; //(116 + 94 + 123) / 3;
 
 console.log(`${aleeza.toFixed(0)} Aleeza score`);
 console.log(`${lis} + Lis score`);
@@ -19,5 +19,8 @@ if ((aleeza > mary) && (aleeza > lis)) {
 }
 else if ((lis > aleeza) && (lis > mary)) {
     console.log(`Lis has the best team`);
-} else {
+} else if((mary>aleeza) && (mary>lis)) {
 console.log(`Mary has the best team`);}
+else{console.log(`Everybody is a Winner`)}
+
+ 
