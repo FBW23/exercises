@@ -132,7 +132,6 @@ if ((age === 20) && (age < 30)) {
 } 
 if (age > 30) {
     console.log(`${firstName} is an adult.`)
-
 }
 
 console.log();
