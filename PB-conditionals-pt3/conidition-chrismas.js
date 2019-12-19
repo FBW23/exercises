@@ -12,7 +12,7 @@ if(aleezaTeamScoreAv>lizTeamScoreAv && aleezaTeamScoreAv>maryTeamScoreAv){
 else if(lizTeamScoreAv>maryTeamScoreAv ){
     console.log('winner is :' +'liz\'s team ' + 'and the score was : '+ lizTeamScoreAv);
 }
-else if(maryTeamScoreAv>lizTeamScoreAv && maryTeamScoreAv>aleezaTeamScoreAv){
+else if(maryTeamScoreAv>lizTeamScoreAv){
     console.log('winner is : ' + 'mary\'s team ' + 'and the average score was '+ maryTeamScoreAv);
 }
 else{
