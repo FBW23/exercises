@@ -11,13 +11,12 @@ let determiner = 5;
 
 
 if (determiner < 0) {
-    var x;
-    x = "Less than 0";
+    var x = "Less than 0";
     console.log(x);
 }
 //     - If determiner is greater or equal 0, `x`'s value should "Greater or equal to 0".
 if (determiner >= 0) {
-    x = "Greater or equal to 0";
+    var x = "Greater or equal to 0";
     console.log(x);
 }
 console.log(x);
@@ -31,10 +30,8 @@ console.log(x);
 //     - If determiner is greater of equal to 0, `updater`'s value should be "Greater or equal to 0" and create another variable called `message`, assign a value of "Positive Integer" and print message. 
 
 if (determiner >= 0) {
-    var message;
-    message = "positive integer";
-    var updater;
-    updater = "Greater or equal to 0";
+    var message = "positive integer";
+    var updater = "Greater or equal to 0";
     console.log(message);
 
 } else {
@@ -55,5 +52,5 @@ console.log("when the determiner is positive, the message will have a value");
 // #### 3. Ternary v.s. If statement 
 // * When do you use a ternary v.s. an if statement? Give an example.
 
-let car= 'renault'? true : false;
+let car = 'renault' ? true : false;
 console.log(car);
