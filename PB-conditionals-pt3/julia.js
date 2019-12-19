@@ -7,27 +7,30 @@
 // 1. Aleeza and Lis both play basketball in different teams. In the latest 3 games, Aleeza's team scored 89, 120 and 103 points, while Lis's team scored 116, 94 and 123 points.
 
 // - 1a) Calculate the average score for each team.
-let averageAleezasteam = (89+120+103)/3;
+let averageAleezasteam = (99 + 97 + 97) / 3;
 console.log(averageAleezasteam);
 
-let averageListeam = (116+94+123)/3;
+let averageListeam = (97 + 97 + 97) / 3;
 console.log(averageListeam);
 
-let averageMarysteam = (97+0+105)/3;
+let averageMarysteam = (97 + 97 + 97) / 3;
 
 // - 1b) Decide which teams wins in average (highest average score), and print the winner to the console, including their average score in the output.
-if (averageAleezasteam > averageListeam){
+if (averageAleezasteam > averageListeam) {
     console.log('Aleeza team');
-}else{
+} else {
     console.log('Lis team');
 }
 // - 1c) Then change the scores to show different winners. Don't forget to take into account there might be a draw (the same average score).
 // - 1d) Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console.
-if ((averageAleezasteam > averageListeam) && (averageAleezasteam > averageMarysteam)){
+if ((averageAleezasteam > averageListeam) && (averageAleezasteam > averageMarysteam)) {
     console.log('Aleeza team');
-} else if ((averageListeam > averageAleezasteam) && (averageListeam > averageMarysteam)){
+} else if ((averageListeam > averageAleezasteam) && (averageListeam > averageMarysteam)) {
     console.log('Lis team');
-} else {
+} else if ((averageMarysteam > averageListeam) && (averageMarysteam > averageAleezasteam)) {
     console.log('Marys team');
+} else  {
+    console.log('Draw!');
 }
+
 // - 1e) Like before, change the scores to generate different winners, keeping in mind that there might be draws.
