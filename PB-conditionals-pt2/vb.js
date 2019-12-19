@@ -44,13 +44,13 @@ console.log(` 3. Create a boolean variable containing information about whether 
 
 
 
-let comparison=JBMI>MBMI;
-if (comparison===true){
-    comparison=JBMI;
-    console.log("John's BMI is higher");
-}else{
-    comparison=MBMI;
+let comparison= MBMI>JBMI;
+if (comparison){
     console.log("Mark's BMI is higher");
+    
+}else{
+    console.log("John's BMI is higher");
+    
 }
 
 console.log(`=======================`);
