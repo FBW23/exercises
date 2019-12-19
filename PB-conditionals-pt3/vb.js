@@ -8,12 +8,12 @@
 console.log `(====================);`
 console.log(`1. Aleeza and Lis both play basketball in different teams. In the latest 3 games, Aleeza's team scored 89, 120 and 103 points, while Lis's team scored 116, 94 and 123 points.`);
 
-let a1 = 89;
-let a2 = 120;
-let a3 = 103;
-let l1 = 116;
-let l2 = 94;
-let l3 = 123;
+let a1 = 300;
+let a2 = 300;
+let a3 = 300;
+let l1 = 300;
+let l2 = 300;
+let l3 = 300;
 
 
 
@@ -86,9 +86,9 @@ console.log `(====================);`
 
 console.log(`- 1d) Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console.`)
 
-let m1 = 97;
-let m2 = 134;
-let m3 = 105;
+let m1 = 300;
+let m2 = 300;
+let m3 = 300;
 
 
 let mAverage = (m1 + m2 + m3) / 3;
@@ -101,10 +101,15 @@ if ((aAverage > lAverage) && (aAverage > mAverage)) {
 } else if ((aAverage < lAverage) && (mAverage < lAverage)) {
     winner = 'Lis';
     console.log(`The winner is: ${winner}!!`);
-} else {
-     winner = 'Mary';
+} else if ((aAverage < mAverage) && (mAverage > lAverage)){
+    let winner = 'Mary';
     console.log(`The winner is: ${winner}!!`);
 }
+    else{
+         winner ='the result is a draw';
+        console.log(winner);
+    }
+
 
 
 
@@ -167,18 +172,23 @@ console.log('switch');
 
 
     switch (winner) {
-        case winner:
+        case 'Azela':
             winner = 'Azela';
-            break;
+            
             console.log(`The winner is: ${winner}!!`);
-        case winner:
-                console.log(`The winner is: ${winner}!!`);
-            winner = 'Lis';
             break;
-        case winner:
+        case 'Lis':
+                
+            winner = 'Lis';
+            console.log(`The winner is: ${winner}!!`);
+            break;
+        case 'Mary':
             winner = 'Mary';
             console.log(`The winner is: ${winner}!!`);
-        
+            break;
+            default: 
+            console.log("It's a draw");
+
     }
 
 
