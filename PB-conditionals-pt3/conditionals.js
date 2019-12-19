@@ -12,9 +12,9 @@
 // - 1d) Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console.
 // - 1e) Like before, change the scores to generate different winners, keeping in mind that there might be draws.
 
-let scoreAleeza = (120 + 120 + 120) / 3;  //104
-let scoreLis = (120 + 120 + 120) / 3;     //111
-let scoreMary = (120 + 120 + 120) / 3;    //112
+let scoreAleeza = (120 + 120 + 120) / 3; 
+let scoreLis = (120 + 120 + 120) / 3; 
+let scoreMary = (120 + 120 + 120) / 3; 
 console.log(scoreAleeza);
 console.log(scoreLis);
 console.log(scoreMary);
