@@ -1,12 +1,14 @@
 
-var determiner = x;
+var determiner =NaN;
 
 if(determiner<0){
     var x;
-    console.log('x is smaller than 0');
+    x=' is smaller than 0';
+    console.log(x);
 }
 else{
-    console.log('x is equal or greater than 0');
+    x='is equal or greater than 0';
+    console.log(x );
 }
 
 let updater;
