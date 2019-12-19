@@ -15,7 +15,7 @@ if (determiner >= 0) {
 }
 
 console.log();
-console.log("1. New Variables")
+console.log("2. New Variables");
 console.log();
 if (determiner >= 0) {
     updater = 'Greater or equal to zero';
