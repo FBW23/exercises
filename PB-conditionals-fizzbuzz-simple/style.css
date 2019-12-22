@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+#buzzMe {
+    background-color: pink;
+    width: 35rem;
+    height: 10rem;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 9rem;
+    cursor: pointer;
+    border-radius: 200px;
+    outline: none;
+}
