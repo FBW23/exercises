@@ -1,4 +1,4 @@
-# Programming Basics: Conditionals Part 3 
+ # Programming Basics: Conditionals Part 3 
 
 Attempt this exercise using only simple "if" conditionals (and only what you have learnt this far into the course, so no loops, functions or arrays just yet!) 
 

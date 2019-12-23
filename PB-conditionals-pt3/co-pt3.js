@@ -40,7 +40,7 @@ if (averageMary > averageAleeza && averageMary > averageLis) {
     console.log(winnerPhrase, "Lis':", averageLis);
 } else if (averageAleeza > averageLis && averageAleeza > averageMary) {
     console.log(winnerPhrase, "Aleeza's:", averageAleeza);
-}
+} 
 
 console.log();
 console.log("1e) Like before, change the scores to generate different winners, keeping in mind that there might be draws.");
