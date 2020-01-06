@@ -32,7 +32,7 @@ let z = 6;
 
 // - a) x is greater than z AND x is greater than y. 
 
-let greater = (x===z) && (x===y) ? true : false;
+let greater = (x>z) && (x>y) ? true : false;
 console.log(greater);
 
 

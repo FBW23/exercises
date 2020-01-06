@@ -45,10 +45,10 @@ let py ='Pypoca';
 let string = 'Py'
 
 if (py.includes(string)){
-    console.log(string);
+    console.log(py);
 
 }else{
-    console.log(py);
+    console.log(string);
 }
 // 5. Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80. 
 let one = 87;
@@ -79,7 +79,7 @@ if ((sum === 8) || (dif === 8)){
 let w = 15;
 let u = 4;
 
-if ((w || u === 15) || (w + u === 15)){
+if ((w===15) || (u === 15) || (w + u === 15)){
     console.log(true);
 } else{
     console.log(false);
@@ -87,23 +87,20 @@ if ((w || u === 15) || (w + u === 15)){
 
 // 8. Check whether one of two integers is a multiple of 7 or 11. If so, print true.
 
-let mult = 49
+let mult = 9
 let nMult = 30;
 
 
-if (mult % 7 === 0){
+if ((mult % 7 === 0) || (mult % 11 === 0) ||(nMult % 7 === 0) || (nMult % 11 === 0)) {
     console.log(true);
+} else{
+    console.log(false);
+}
 
-} if (nMult %7 === 0) {
-    console.log(true);
 
-} if (mult % 11 === 0) {
-    console.log(true);
+
     
-} if (nMult %7 === 0) {
-    console.log(true);
 
-} 
 
 
 
@@ -127,7 +124,7 @@ if (difTwo > 19){
 // 11. BONUS CHALLENGE:  Make a variable for firstName and age and give each variable values. Create an if/else statement to check whether the person's age is less than 13. If so, print "firstName is a child". If the age is equal to or more than 13 and less than 20, print "firstName is a teenager". If the person's age is equal to 20 and less than 30, then print "firstName is a young adult". If none of these conditions apply, print "firstName is a adult". 
 
 let ju = 'Julia';
-let age = 10;
+let age = 32;
 
 if (age < 13){
     console.log(`${ju} is a child`);

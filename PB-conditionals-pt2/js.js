@@ -20,7 +20,7 @@ console.log(bigger) ? true : false;
 
 
 // 4. Print a string to the console containing the variable from step 3 using string interpolation. (e.g. "Is Mark's BMI higher than John's? Why yes, it's [boolean], it is"). 
-console.log(bigger) ? true : false;
+console.log(bigger);
 console.log(`Is Mark's BMI higher than John's? Why yes, it's ${bigger}, it is`) 
 
 // 5. Create an *if* statement which prints the name and BMI of the person with the highest BMI. 
