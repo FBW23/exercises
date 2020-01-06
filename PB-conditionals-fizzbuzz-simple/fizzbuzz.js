@@ -1,10 +1,10 @@
-let myNumber = 15;
+let myNumber = 5;
 
-if((myNumber % 3 === 0) && (myNumber % 5 === 0)){
+if (!(myNumber % 3) && !(myNumber % 5)){
     console.log('FizzBuzz');
-} else if (myNumber % 5 === 0){
+} else if (!(myNumber % 5)){
     console.log('Buzz');
-}else if (myNumber % 3 === 0){
+}else if (!(myNumber % 3)){
     console.log('Fizz')
 }else{
     console.log(myNumber);
