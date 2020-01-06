@@ -1,53 +1,28 @@
-console.log();
-let number = 37;
+/*Let's play mini FizzBuzz! For any given number, if the number is:
 
-if ((number % 3 === 0) && (number % 5 === 0)) {
-    console.log('FizzBuzz')
-} else if (number % 3 === 0) {
-    console.log('Fizz');
-} else if (number % 5 === 0) {
-    console.log('Buzz')
-} else {
-    console.log(number);
-}
+divisible by 3, print "Fizz".
+divisible by "5", print "Buzz".
+divisible by both 3 and 5, print "FizzBuzz".
+That is, if any of the above conditions apply, print the above words instead of the number.
 
-// BONUS
-
-if (!(number % 3) && !(number % 5)) { // if ((number % 15 === 0)) - using only one condition
-    console.log('FizzBuzz')
-} else if (!(number % 3)) {
-    console.log('Fizz');
-} else if (!(number % 5)) {
-    console.log('Buzz');
-} else {
-    console.log(number);
-}
-
-// A MORE ELABORATED CODE
-
-// const myNumber = 15;
-// let myString = '';
-// if (myNumber % 3 === 0) {
-//     myString = 'Fizz';
-// }
-// console.log(myString);
-// if (myNumber % 5 === 0) {
-//     myString += 'Buzz';
-// } else if (myString === '') {
-//     myString = myNumber;
-// }
-// console.log(myString);
+Otherwise, just print the number.*/
 
 const myNumber = Math.round(Math.random()*15);
+// Numbers must be Math.ceil() => rounds up
+// Math.floor() => rounds down
+// Math.round() => Rounds accordingly
 console.log(myNumber);
-let myString = ''; // undefined
+let myString = ''; // STRING, but empty!
 if (myNumber % 3 === 0) {
     myString = 'Fizz';
 }
-console.log(myString);
+//console.log(myString);
 if (myNumber % 5 === 0) {
     myString += 'Buzz';
-} else if (myString === undefined) {
+}
+//console.log(myString.length);
+//if (myString === undefined) { //myString === undefined
+if (!myString.length) {
     myString = myNumber;
 }
 console.log(myString);
