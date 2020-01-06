@@ -1,10 +1,14 @@
 // ALL VARIABLES
-let averageAleeza = (89 + 120 + 103) / 3;
-let averageLis = (116 + 94 + 123) / 3;
-let averageMary = (97 + 134 + 105) / 3;
+// let averageAleeza = (89 + 120 + 103) / 3;
+// let averageLis = (116 + 94 + 123) / 3;
+// let averageMary = (97 + 134 + 105) / 3;
 
-let highestScore = 'the highest score is';
-let equalScore = 'all scores are equal.'
+let averageAleeza = (89 + 120 + 103) / 3;
+let averageLis = (89 + 120 + 103) / 3;
+let averageMary = (89 + 120 + 103) / 3;
+
+let highestScore = 'The highest score is';
+let equalScore = 'All scores are equal.'
 
 console.log();
 console.log("1. Aleeza and Lis both play basketball in different teams. In the latest 3 games, Aleeza's team scored 89, 120 and 103 points, while Lis's team scored 116, 94 and 123 points. Calculate the average score for each team.");
@@ -25,7 +29,7 @@ console.log();
 if (averageAleeza > averageLis) {
     console.log(highestScore, averageAleeza + ". Aleeza's team wins!");
 } else if (averageAleeza === averageLis) {
-    console.log("both scores are equal.")
+    console.log(equalScore);
 } else {
     console.log(highestScore, averageLis + ". Lis' team has the highest score.");
 }
