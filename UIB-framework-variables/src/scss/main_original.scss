@@ -1,0 +1,297 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+$cardBackground:#e0ddb2;
+$border:#dad6ab;
+$bottomMenuFontColor:white;
+$mainMenuFontcolor:#016690;
+$bottomMenuBackground:#016690;
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 15% auto auto auto auto auto auto auto;
+    grid-template-areas:
+
+        "m m m m m m m m m m m m"
+        "l l l l l l l l l l l l"
+        ". c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 ."
+        ". c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 ."
+        ". c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 ."
+        ". a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 ."
+        ". ar ar ar ar ar ar ar ar ar ar ."
+        ". a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 ."
+        "f f f f f f f f f f f f";
+}
+
+header {
+    grid-area: m;
+}
+
+#landing {
+    grid-area: l;
+    text-align: center;
+    background: url(../images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    h1 {
+        font-size: 4em;
+        font-weight: bold;
+        margin-top: 15%;
+
+    }
+
+
+}
+
+#card1 {
+    grid-area: c1;
+}
+
+#card2 {
+    grid-area: c2;
+}
+
+#card3 {
+    grid-area: c3;
+}
+
+#aside1 {
+    grid-area: a1;
+}
+
+article {
+    grid-area: ar;
+    overflow: hidden;
+    
+}
+
+#aside2 {
+    grid-area: a2;
+    overflow: hidden;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    
+        padding:0;
+    
+    grid-area: f;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    
+    list-style-type: none;
+
+
+
+
+
+}
+
+li{
+    margin: 0 auto;
+}
+
+
+#mainMenu {
+    color: $mainMenuFontcolor;
+    position: relative;
+    top: 20%;
+    justify-content: space-evenly;
+
+
+}
+
+#bottomMenu {
+    background: #016690;
+    color: $bottomMenuFontColor;
+    margin: 0;
+    padding: 5%;
+    justify-content: space-between;
+
+
+}
+
+
+.card {
+    background: $cardBackground;
+
+}
+
+.card,
+aside {
+    border: 2px solid $border;
+
+}
+
+.card,
+aside,
+article {
+
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+img {
+    height: 40%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+section,
+aside,
+article {
+    margin: 0 0 2% 0
+}
+
+
+
+
+@media screen and (min-width:768px) {
+
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+
+            "m m m m m m m m m m m m"
+            "l l l l l l l l l l l l"
+            ". c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 ."
+            ". c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 ."
+            ". c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 ."
+            ". a1 a1 ar ar ar ar ar ar a2 a2 ."
+            "f f f f f f f f f f f f";
+    }
+
+
+
+    .card {
+        flex-direction: row;
+    }
+
+
+    img {
+        height: 100%;
+        width: 30%;
+        
+    }
+
+
+
+    #mainMenu {
+        color: $mainMenuFontcolor;
+        justify-content: flex-end;
+
+       
+    }
+
+    .menu li, img{
+        margin-right: 5%;
+    }
+
+    #bottomMenu {
+        background: $bottomMenuBackground;
+        color: $bottomMenuFontColor;
+        justify-content: center;
+
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+
+
+    body {
+        display: grid;
+        grid-column-gap: 1%;
+        grid-row-gap: 2%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1% 25% 22% 22% 22% 1%;
+        grid-template-areas:
+
+            "m m m m m m m m m m m m"
+            "l l l l l l l l l l l l"
+            "c1 c1 c1 c1 c1 c1 c2 c2 c2 c2 c2 c2"
+            ". . . c3 c3 c3 c3 c3 c3 . . ."
+            "a1 a1 a1 ar ar ar ar ar ar a2 a2 a2"
+            "f f f f f f f f f f f f";
+    }
+
+
+    #landing {
+
+        height: 100%;
+
+
+        h1 {
+            font-size:3em;
+            margin-top: 1%;
+
+        }
+    }
+
+
+    .card {
+        flex-direction: row;
+        margin:0 5% 0 5%;
+
+    }
+
+
+    h2,
+    h3,
+    p{
+        font-size: 1em;
+    }
+
+    img {
+
+        width: 40%;
+    }
+
+
+
+    #mainMenu {
+        color: $mainMenuFontcolor;
+        justify-content: flex-end;
+        top:50%;
+        
+
+
+    
+    }
+
+
+    .menu li, img{
+        margin-right: 5%;
+    }
+
+    #bottomMenu {
+        background: $bottomMenuBackground;
+        color: $bottomMenuFontColor;
+        justify-content: center;
+        padding: 1%;
+
+    }
+
+
+}

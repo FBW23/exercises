@@ -1,7 +1,7 @@
-let x = 4;
+let x = 3;
 
 
-if ((x % 5 === 0) && (x % 3 === 0)) {
+if (x % 15 === 0) {
     console.log("FizzBuzz");
 } else if (x % 5 === 0) {
     console.log("Buzz");
