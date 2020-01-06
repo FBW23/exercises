@@ -30,7 +30,7 @@ console.log(number_Two);
 let first= 30;
 let second= 939;
 let third= 40.9;
-console.log(typeof(first), typeof(second), typeof(third));
+console.log('30 is a '+ typeof(first), '939 is a '+typeof(second), '40.9 is a '+typeof(third));
 
 console.log(first% 2==0 ? '30 is even':'30 is odd');
 console.log(second% 2==0 ? '939 is even':'939 is odd');
