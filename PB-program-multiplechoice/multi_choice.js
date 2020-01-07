@@ -1,6 +1,6 @@
 console.log();
 console.log('Create a switch statement that prints a different statement for each color possibility (red, blue, green, yellow).');
-let color = 'red';
+let color = 'fucsia';
 console.log('the color is', color, 'and...');
 switch (color) {
     case 'red':
@@ -62,8 +62,8 @@ console.log();
 console.log('Percentage Complete 0 to 100%');
 console.log();
 let percentageValue = Math.round(Math.random()*100);
-// let percentageValue = 100;
-if (percentageValue < 30) {
+// let percentageValue = -3; 
+if ((percentageValue < 30) && (percentageValue >= 0)) {
     console.log("Still a long way to go! Your score is", percentageValue+".");
 } else if ((percentageValue >= 30) && (percentageValue <= 50)) {
     console.log("Slowly getting there! Your score is", percentageValue+".");
@@ -74,5 +74,7 @@ if (percentageValue < 30) {
 } else if (percentageValue === 100) {
     console.log("You're there. Well done! Your score is", percentageValue+".");
 } else {
-    console.log('invalid values. Your score is', percentageValue+'.');
+    console.log("invalid values. Your score is", percentageValue+".");
 }
+
+// 
