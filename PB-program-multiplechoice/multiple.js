@@ -42,7 +42,7 @@ switch (expr1) {
         console.log('You\'re a professional!!');
         break;
     default:
-        console.log('not an option, please chose another one')
+        console.log('not an option, please chose another one');
 }
 
 // #### 3. Fruits
@@ -54,33 +54,35 @@ switch (expr2) {
         console.log('Banana bread');
         break;
     case 'orange':
-            console.log('Orange juice');
-            break;
+        console.log('Orange juice');
+        break;
     case 'strawberry':
-            console.log('Strawberry milkshake');
-            break;
+        console.log('Strawberry milkshake');
+        break;
     case 'apple':
-            console.log('Apple pie');
-            break;
+        console.log('Apple pie');
+        break;
     default:
-            console.log('There\'s nothing about ' + expr2)
+        console.log('There\'s nothing about ' + expr2);
 }
 
 // #### 4. Percentage Complete. 
 
 
-let myPercentage = 84;
+let myPercentage = ;
 
-if (myPercentage < 30) {
+if ((myPercentage >= 0) && (myPercentage < 30)) {
     console.log("Still a long way to go");
 } else if ((myPercentage >= 30) && (myPercentage <= 50)) {
     console.log("Slowly getting there");
-} else if ((myPercentage > 50) && (myPercentage < 80)) {
+} else if ((myPercentage > 50) && (myPercentage <= 80)) {
     console.log("You can do it!");
-} else if  ((myPercentage > 80) && (myPercentage < 100)) {
+} else if ((myPercentage > 80) && (myPercentage < 100)) {
     console.log("This is the last push!");
+} else if (myPercentage === 100) {
+    console.log("You're there. Well done!");
 } else {
-    console.log("You're there. Well done!")
+    console.log("error");
 }
 
 // #### 5. Differences
