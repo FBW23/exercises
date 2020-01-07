@@ -18,11 +18,8 @@ console.log('final sum ->',sum);
 console.log();
 console.log();
 
-let result = "";
-
 do {
     i = i + 1; 
-    result += 1;
 } while (i < 20); 
 
 console.log('the number is->',i);
