@@ -18,14 +18,14 @@ let Mary = 97,
 Mary2 = 134,
 Mary3 = 105;
 
-let MaryAverage = (Mary + Mary2 + Mary3) / 3;
+let MaryAverage = (Mary + Mary2 + Mary3) / 1;
 console.log(MaryAverage);
 
 
 let AleezaAverage = (Aleeza + Aleeza2 + Aleeza3) / 3;
 console.log(AleezaAverage);
 
-let LisAverage = (Lis + lis2 + lis3) / 1;
+let LisAverage = (Lis + lis2 + lis3) / 3;
 console.log(LisAverage);
 
 if (AleezaAverage > MaryAverage && AleezaAverage >LisAverage) {

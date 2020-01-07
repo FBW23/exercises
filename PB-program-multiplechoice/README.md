@@ -1,4 +1,4 @@
-# Switch if... 
+<!-- # Switch if... 
 
 #### 1. Color Analyzer
 Create a switch statement that prints a different statement for each color possibility (red, blue, green, yellow).
@@ -17,4 +17,4 @@ Create a switch statement that prints different statement for various fruit (e.g
 * If percentageComplete is 100, print "You're there. Well done!". 
 
 #### 5. Differences
-* When should you use a switch statement versus an `if else` statement. Comment your answer in your js file.
+* When should you use a switch statement versus an `if else` statement. Comment your answer in your js file. -->
