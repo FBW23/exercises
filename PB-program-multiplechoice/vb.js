@@ -25,18 +25,18 @@ switch (color) {
 
 // let color = "green";
 
-// if (color == "yellow") {
+// if (color === "yellow") {
 //     console.log("yellow color");
-// } else if (color == "red") {
+// } else if (color === "red") {
 //     console.log("red color");
-// } else if (color == "blue") {
+// } else if (color ==="blue") {
 //     console.log("blue color");
-// } else if (color == "green") {
+// } else if (color === "green") {
 //     console.log("green color");
-// } else if (color == "black") {
+// } else if (color === "black") {
 //     console.log("black color");
 // } else {
-//     alert("no color specified");
+//     console.log("no color specified");
 // }
 
 
