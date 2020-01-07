@@ -2,6 +2,7 @@ console.log(`1. Color Analyzer
 Create a switch statement that prints a different statement for each color possibility (red, blue, green, yellow).`);
 console.log(`=============================`);
 const color = 'yellow';
+console.log(`the color is: ${color}`);
 switch (color) {
 
     case 'red':
@@ -28,7 +29,8 @@ console.log(`#### 2. Grading
     Create a switch statement that prints different comments depending on a grade.`);
 console.log(`=============================`);
 
-const grade = 6;
+const grade = 1;
+console.log(`the grade is: ${grade}`);
 switch (grade) {
 
     case 1:
@@ -47,7 +49,7 @@ switch (grade) {
         console.log('Excellent!');
         break;
     default:
-        console.log('If you think there are more than 5 grades, you should have failed!')
+        console.log('If you think there are more than 5 grades, you should have failed!');
 
 }
 
@@ -63,6 +65,7 @@ Create a switch statement that prints different statement for various fruit (e.g
 console.log(`=============================`);
 
 const fruit = 'banana';
+console.log(`the fruit is: ${fruit}`);
 switch (fruit) {
 
     case 'orange':
@@ -98,8 +101,9 @@ console.log(` #### 4. Percentage Complete.
 console.log(`=============================`);
 
 let percentageComplete=100;
+console.log(`the percentage is: ${percentageComplete}`);
 
-if (percentageComplete < 30) {
+if && (percentageComplete >= 0))(percentageComplete < 30) {
     console.log('Still a long way to go.');
 } else if ((percentageComplete >= 30) && (percentageComplete <= 50)) {
     console.log('Slowly getting there');
@@ -109,6 +113,8 @@ if (percentageComplete < 30) {
     console.log('This is the last push!');
 } else if (percentageComplete ===100) {
     console.log('You are there. Well done!');
+}else{
+    console.log(`error`);
 }
 
 
