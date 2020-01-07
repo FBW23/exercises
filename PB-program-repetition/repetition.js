@@ -26,10 +26,8 @@ console.log(sum);
 // ## 3. Do this while i...
 // Use a `do`, `while` loop to print `The number is [i]` while i is less than 20. 
 
-let result = 'The number is ';
 
 do {
     i++;
-    result = result + i;
 } while (i < 20);
-console.log(result);
+console.log('the number is ' + i);
