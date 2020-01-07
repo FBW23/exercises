@@ -29,5 +29,5 @@ console.log(sum);
 
 do {
     i++;
+    console.log('the number is ' + i);
 } while (i < 20);
-console.log('the number is ' + i);
