@@ -13,6 +13,7 @@ console.log(i);
 
 
 let sum = 0;
+i = 0;
 
 while (i < 20) {
     i++;
@@ -25,7 +26,6 @@ console.log(sum);
 
 // ## 3. Do this while i...
 // Use a `do`, `while` loop to print `The number is [i]` while i is less than 20. 
-
 
 do {
     i++;
