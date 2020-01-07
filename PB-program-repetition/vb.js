@@ -28,17 +28,21 @@ console.log(`## 2. Add it up
 Create a function that adds numbers from 1-20 together using a while loop. `);
 
 
-let myNumber=1;
-console.log(`number at the beginning:`);
-console.log(myNumber);
+let baseNumber=1;
+let nextNumber=baseNumber+1;
 
-while(myNumber<20){
-    myNumber++;
-    console.log(`previous result +1 : `);
-    console.log(myNumber);
+console.log(`number at the beginning:`);
+console.log(baseNumber);
+console.log(`next number:`);
+console.log(nextNumber);
+
+while(baseNumber<20){
+   baseNumber= baseNumber+nextNumber;
+    console.log(`baseNumber + nextNumber; : `);
+    console.log(`${baseNumber}+${nextNumber}`);
 }
 console.log(`end result :`) ;
-console.log(myNumber);
+console.log(baseNumber);
 
 
 
@@ -47,6 +51,7 @@ console.log(``);
 console.log(``);
 console.log(``);
 console.log(`=======================`);
+
 
 
 console.log(`## 3. Do this while i...
