@@ -20,8 +20,5 @@ console.log();
 
 do {
     i = i + 1; 
+    console.log('the number is->',i);
 } while (i < 20); 
-
-console.log('the number is->',i);
-console.log();
-console.log();
