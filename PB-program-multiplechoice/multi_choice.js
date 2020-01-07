@@ -61,7 +61,7 @@ switch (fruit) {
 console.log();
 console.log('Percentage Complete 0 to 100%');
 console.log();
-let percentageValue = Math.round(Math.random()*100);
+let percentageValue = Math.round(Math.random()*100); // RANDOMISED NUMBERS
 // let percentageValue = -3; 
 if ((percentageValue < 30) && (percentageValue >= 0)) {
     console.log("Still a long way to go! Your score is", percentageValue+".");
@@ -77,4 +77,4 @@ if ((percentageValue < 30) && (percentageValue >= 0)) {
     console.log("invalid values. Your score is", percentageValue+".");
 }
 
-// 
+// you should use a switch statement and not and if else statement when...
