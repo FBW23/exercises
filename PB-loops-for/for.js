@@ -45,19 +45,6 @@ for (beer = 1; beer <= 5; beer++) {
     // console.log("There is " + i + " Bottle of Beer on the Wall");
 }
 
-// let bottles;
-// for (beer = 0; beer >= 5; beer++) {
-//     if (beer == 1) {
-//         bottles = 'bottle';
-//     } else {
-//         bottles = 'bottles';
-//     }
-//     console.log(beer + " " + bottles + " of beer on the wall.");
-//     if (beer < 5) {
-//         console.log("");
-//         console.log(beer + " " + bottles + " of beer on the wall.");
-//     }
-// }
 
 
 // 3. **The odd/even reporter.**
