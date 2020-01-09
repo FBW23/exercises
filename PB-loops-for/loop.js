@@ -48,7 +48,7 @@ for (let m = 0; m <= 10; m++) {
 
 console.log("......................................");
 
-for (let z = 0; z <= 100; z++) {
+for (let z = 1; z <= 100; z++) {
     if (z % 3 === 0 && z % 5 === 0) {
         console.log(z + " FizzBuzz");
     } else if (z % 3 === 0) {
@@ -63,3 +63,73 @@ for (let z = 0; z <= 100; z++) {
 console.log(".......................................");
 
 
+let que = 0;
+for (let time = 0; time <= 1000; time++) {
+    if (time % 3 === 0 && time % 5 === 0) {
+        // console.log(time);
+        que += time;
+        console.log(que);
+    }
+}
+
+console.log(".......................................");
+
+let out = 0;
+for (let put = 0; put <= 1000; put++) {
+    if (put % 100 === 0) {
+        console.log(put);
+    }
+}
+
+console.log(".......................................");
+
+let set = 0;
+for (let double = 1; double <= 128;) {
+    console.log(double);
+    double += double;
+
+}
+
+console.log(".......................................");
+
+let set1 = 0;
+for (let double2 = 0; double2 <= 10; double2++) {
+    if (double2 % 2 === 0) {
+        console.log(double2);
+    }
+}
+
+console.log(".......................................");
+
+let set2 = 0;
+for (let double3 = 1; double3 <= 15; double3++) {
+    if (double3 % 3 === 0) {
+        console.log(double3);
+    }
+}
+
+console.log(".......................................");
+
+let numb = 0;
+for (number = 9; number >= 0; number--) {
+    numb += number;
+    console.log(number);
+}
+
+console.log(".......................................");
+
+let numb1 = "";
+
+for (number1 = 1; number1 <= 4; number1++) {
+    numb1 = numb1 + number1 + number1 + number1;
+}
+console.log(numb1);
+
+console.log(".......................................");
+
+let numb2 = "";
+for (number2 = 0; number2 <= 4; number2++) {
+    numb2 = numb2 + number2;   
+
+}
+console.log(numb2 + numb2 + numb2);
