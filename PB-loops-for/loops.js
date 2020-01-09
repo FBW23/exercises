@@ -24,23 +24,61 @@ console.log(sum);
 
 
 for (let bottlesOfbeer = 1; bottlesOfbeer < 6; bottlesOfbeer ++){
-    
-    console.log(`there are ${bottlesOfbeer} bottle of beer on the wall`);
+    if(bottlesOfbeer ===1 ){
+    console.log(`there is one bottle of beer on the wall`);
+}else {
+    console.log(`there are ${bottlesOfbeer} bottle of beer on the wall`)
+}
 }
 
 // 3. **The odd/even reporter.**
 // Write a program that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
 
 
+
+for (let n = 0; n <= 20; n++){
+    if (n % 2 === 0){
+        console.log(`${n} is even`);
+    } else {
+        console.log(`${n} is odd`)
+    }
+
+}
+
 // 4. **Multiplication Tables.**
 // Write a program that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18").
 // **Bonus:** Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 
+let mult = 0;
+for (let numberTwo = 0; numberTwo < 11; numberTwo ++){
+    mult = numberTwo*9;
+    console.log(mult);
+
+}
+
 // 5. **Fizz Buzz**
 // Write a program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
+for ( let thirdNumber = 0; thirdNumber <=100; thirdNumber++){
+    if (thirdNumber%3 === 0 && thirdNumber % 5 === 0){
+        console.log(thirdNumber);
+        console.log("Fizz Buzz");
+        
+    } else if (thirdNumber % 3 === 0);{
+        console.log(thirdNumber);
+        console.log("Fizz");
+    }
+}
 // 6. **Sum of Multiples**
 // Write a program to add the multiples of 3 and 5 under 1000.
+
+let multiplesOfthree = fourthNumber % 3 === 0;
+let multiplesOffive = fourthNumber % 5 === 0;
+let sumTwo = 0;
+for (let fourthNumber = 0; fourthNumber <= 1000; fourthNumber ++){
+    sumTwo += fourthNumber
+    console.log(sumTwo);
+}
 
 // **Bonus** 
 
