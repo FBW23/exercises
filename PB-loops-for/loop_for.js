@@ -82,3 +82,76 @@ for (let cocoNuts = 1; cocoNuts <= 100; cocoNuts++) {
         console.log(cocoNuts);
     }
 }
+
+console.log('------------------6----------');
+let newNumber = 0;
+for (myKoko = 1; myKoko <= 1000; myKoko++) {
+    if (myKoko % 3 === 0 && myKoko % 5 === 0) {
+        newNumber = newNumber + myKoko;
+        console.log(newNumber);
+
+    }
+}
+console.log('------------------7a----------');
+let testSeven = 0;
+for (testSeven = 1; testSeven <= 1000; testSeven++) {
+    if (testSeven % 100 === 0)
+        console.log(testSeven);
+}
+
+console.log('------------------7b----------');
+let dubluUP;
+for (dubluUP = 1; dubluUP <= 128;) {
+    console.log(dubluUP);
+    dubluUP += dubluUP;
+
+}
+
+
+
+
+
+console.log('------------------7c----------');
+for (let kokoTip = 0; kokoTip <= 10; kokoTip++) {
+    if (kokoTip % 2 === 0) { console.log(kokoTip); }
+
+}
+
+
+console.log('------------------7d----------');
+for (let kokoTip = 0; kokoTip <= 15; kokoTip++) {
+    if (kokoTip % 3 === 0) { console.log(kokoTip); }
+
+}
+console.log('------------------7e----------');
+
+
+
+for (let kokoMud = 9; kokoMud >= 0; kokoMud--) {
+    console.log(kokoMud);
+
+}
+
+console.log('------------------7f----------');
+let mimiKey = "";
+for (let kokoMistake = 1; kokoMistake <= 4; kokoMistake++) {
+    mimiKey = mimiKey + kokoMistake + kokoMistake + kokoMistake;
+
+
+}
+console.log(mimiKey);
+
+
+
+
+
+
+
+console.log('------------------7g----------');
+
+let wantHome = "";
+for (let home = 0; home <= 4; home++) {
+    wantHome = wantHome + home;
+
+}
+console.log(wantHome + wantHome + wantHome);
