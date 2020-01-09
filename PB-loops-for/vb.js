@@ -271,14 +271,7 @@ console.log(`8. **isPalindrome.**
 console.log(`========================`);
 console.log(``);
 <<<<<<< HEAD
-console.log(`========================`);
 
-let wantHome = "";
-for (let home = 0; home <= 4; home++) {
-    wantHome = wantHome + home;
-
-}
-console.log(wantHome + wantHome + wantHome)
 =======
 console.log(``);
 
