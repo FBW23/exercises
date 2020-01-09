@@ -1,7 +1,7 @@
 console.log('------------------1----------');
 let sum = 0;
-for (i=1;i<=20;i++){
-sum += i;
+for (i = 1; i <= 20; i++) {
+    sum += i;
 }
 console.log(sum);
 console.log('------------------2----------');
@@ -15,20 +15,70 @@ let r = 0;
 //     console.log('There is ' +r+bottle);
 // } while (r < 5);
 
-for (r=1;r<=5; r++) {
-    if (r ===1) {
+for (r = 1; r <= 5; r++) {
+    if (r === 1) {
         console.log('There is one bottle of beer on the wall');
-    }else if (r === 2){
+    } else if (r === 2) {
         console.log('There is two bottles of beer on the wall');
-    }else if (r === 3){
+    } else if (r === 3) {
         console.log('There is three bottles of beer on the wall');
-    }else if (r === 4){
+    } else if (r === 4) {
         console.log('There is four bottles of beer on the wall');
-    }else if (r === 5){
+    } else if (r === 5) {
         console.log('There is five bottles of beer on the wall');
     }
-    
+
 }
 
 console.log('------------------2---second solution-------');
-let 
+let bar = ['one', 'two', 'three', 'four', 'five'];
+wall = 0;
+for (wall = 1; wall <= 5; wall++) {
+    if (wall === 1) {
+        console.log('There is ' + bar[0] + ' bottle on the wall');
+
+    } else if (wall === 2) {
+        console.log('There are ' + bar[1] + ' bottles on the wall');
+
+    } else if (wall === 3) {
+        console.log('There are ' + bar[2] + ' bottles on the wall');
+
+    } else if (wall === 4) {
+        console.log('There are ' + bar[3] + ' bottles on the wall');
+
+    } else { console.log('There are ' + bar[4] + ' bottles on the wall'); }
+
+}
+
+console.log('------------------3----------');
+
+let myNumber = 0;
+for (myNumber = 1; myNumber <= 20; myNumber++)
+    if (myNumber % 2) {
+        console.log(myNumber + '  Odd');
+    } else {
+        console.log(myNumber + '  Even');
+    }
+
+
+
+console.log('------------------4----------');
+
+let multiply;
+
+for (multiply = 0; multiply <= 10; multiply++) {
+    console.log(multiply * 9);
+}
+
+console.log('------------------5----------');
+for (let cocoNuts = 0; cocoNuts <= 100; cocoNuts++) {
+    if (cocoNuts % 3 === 0 && cocoNuts % 5 === 0) {
+        console.log(cocoNuts + ' FizzBuzz');
+    } else if (cocoNuts % 3 === 0) {
+        console.log(cocoNuts + ' Fizz ');
+    } else if (cocoNuts % 5 === 0) {
+        console.log(cocoNuts + ' Buzz ');
+    } else {
+        console.log(cocoNuts);
+    }
+}
