@@ -24,3 +24,42 @@ for (i = 1; i <= 5; i++) {
 }
 
 console.log("...........................................");
+
+
+for (let n = 1; n <= 20; n++) {
+    //  if (n === 0) {
+    //     console.log(n + " is even");
+    // }
+
+    if (n % 2) {
+        console.log(n + " is odd");
+    } else {
+        console.log(n + " is even");
+    }
+}
+
+console.log("........................................");
+
+for (let m = 0; m <= 10; m++) {
+    if (m * 9) {
+        console.log(m * 9);
+    }
+}
+
+console.log("......................................");
+
+for (let z = 0; z <= 100; z++) {
+    if (z % 3 === 0 && z % 5 === 0) {
+        console.log(z + " FizzBuzz");
+    } else if (z % 3 === 0) {
+        console.log(z + " Buzz");
+    } else if (z % 5 === 0) {
+        console.log(z + "  Fizz");
+    } else {
+        console.log(z);
+    }
+}
+
+console.log(".......................................");
+
+
