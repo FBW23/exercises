@@ -8,17 +8,18 @@ while (i < 15) {
 }
 
 let sum = 0;
+i = 0;
 
 while (i < 20) {
     i++;
-    sum += i; 
+    sum += i;
     console.log();
 }
-console.log('final sum ->',sum);
+console.log('final sum ->', sum);
 console.log();
 console.log();
 
 do {
-    i = i + 1; 
-    console.log('the number is->',i);
-} while (i < 20); 
+    i = i + 1;
+    console.log('the number is->', i);
+} while (i < 20);
