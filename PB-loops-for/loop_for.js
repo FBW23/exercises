@@ -71,7 +71,7 @@ for (multiply = 0; multiply <= 10; multiply++) {
 }
 
 console.log('------------------5----------');
-for (let cocoNuts = 0; cocoNuts <= 100; cocoNuts++) {
+for (let cocoNuts = 1; cocoNuts <= 100; cocoNuts++) {
     if (cocoNuts % 3 === 0 && cocoNuts % 5 === 0) {
         console.log(cocoNuts + ' FizzBuzz');
     } else if (cocoNuts % 3 === 0) {
