@@ -26,9 +26,9 @@ for (let i = 1; i <= 5; i++) {
         text = `There are two bottles of beer on the wall`;
     } else if (i === 3) {
         text = `There are three bottles of beer on the wall`;
-    }else if (i === 4) {
+    } else if (i === 4) {
         text = `There are four bottles of beer on the wall`;
-    }else  {
+    } else {
         text = `There are five bottles of beer on the wall`;
     }
     console.log(text);
@@ -97,12 +97,12 @@ for (let x = 1; x <= 10; x++) {
     //BONUS TASK
     console.log(`bonus task`);
     for (let w = 1; w <= 10; w++) {
-        
+
         w2 = x * w;
-        
+
         console.log(`   ${x} * ${w} = ${w2}`);
-        
-   
+
+
     }
     console.log(`bonus task`);
     //BONUS TASK
@@ -158,9 +158,22 @@ console.log(`========================`);
 console.log(``);
 console.log(``);
 
-// for(let multiples=3*5;1000 % Multiples=0; ){
+let sum = 0;
 
-// }
+for (let start = 1; start <= 1000; start++) {
+
+    if (start % 15 === 0) {
+
+
+        sum = start + sum;
+
+    }
+
+}
+console.log(sum);
+
+
+
 
 
 
@@ -186,11 +199,66 @@ console.log(`7. Write programs that produce the following outputs:
 // >1 1 1 2 2 2 3 3 3 4 4 4
 // >
 // >0 1 2 3 4 0 1 2 3 4 0 1 2 3 4`);
-console.log(``);
-console.log(``);
 console.log(`========================`);
 console.log(``);
-console.log(`========================`);
+console.log(``);
+
+console.log(`>`);
+for (let n1 = 0; n1 < 1000;) {
+    n1 = n1 + 100
+
+    console.log(n1);
+}
+console.log(`>`);
+console.log(`>`);
+for (let n1 = 1; n1 <= 128;) {
+    console.log(n1);
+    n1 = n1 + n1;
+
+
+}
+
+
+console.log(`>`);
+console.log(`>`);
+for (let n1 = 0; n1 <= 10;) {
+    console.log(n1);
+    n1 = n1 + 2;
+
+
+}
+
+console.log(`>`);
+console.log(`>`);
+for (let n1 = 3; n1 <= 15;) {
+    console.log(n1);
+    n1 = n1 + 3;
+
+
+}
+
+console.log(`>`);
+console.log(`6`);
+for (let n1 = 9; n1 >= 0;) {
+    console.log(n1);
+    n1 = n1-1;
+
+
+}
+
+console.log(`>`);
+console.log(`>`);
+for (let n1 = 1; n1 <5;n1++) {
+    
+    console.log(n1);
+    console.log(n1);
+    console.log(n1);
+   
+ 
+}
+
+console.log(`>`);
+// >0 1 2 3 4 0 1 2 3 4 0 1 2 3 4`);
 
 
 
@@ -200,8 +268,55 @@ console.log(`========================`);
 console.log(`8. **isPalindrome.**
 // Write a program to check whether a word is a palindrome or not. 
 // Note: a palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or tarrattarrat`);
-console.log(``);
-console.log(``);
 console.log(`========================`);
 console.log(``);
-console.log(`========================`);
+console.log(``);
+
+
+let name="DCI";
+console.log(name);
+
+
+
+let l1=name.substring(0,1);
+let l2=name.substring(1,2);
+let l3=name.substring(2,3);
+let l4=name.substring(3,4);
+let l5=name.substring(4,5);
+let l6=name.substring(5,6);
+let l7=name.substring(6,7);
+let l8=name.substring(7,8);
+let l9=name.substring(8,9);
+let l10=name.substring(9,10);
+let l11=name.substring(10,11);
+let l12=name.substring(11,12);
+let l13=name.substring(13,14);
+let l14=name.substring(14,15);
+let l15=name.substring(16,17);
+let l16=name.substring(17,18);
+
+let reverse=l16+l15+l14+l13+l14+l12+l11+l10+l9+l8+l7+l6+l5+l4+l3+l2+l1
+console.log(reverse);
+console.log(name === reverse ? 'they match' : 'they dont match' );
+
+let name2="nicolo";
+
+
+ for(let i = name2.substr(name2.length -1);name2.length>=0;){
+
+     i=i+name2.substr(name2.length -1);
+    console.log(i);
+ }
+ 
+// console.log(name2.slice(name2.length - 1))
+  
+  
+
+
+
+
+
+
+
+
+console.log(``);
