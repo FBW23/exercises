@@ -205,3 +205,10 @@ console.log(``);
 console.log(`========================`);
 console.log(``);
 console.log(`========================`);
+
+let wantHome = "";
+for (let home = 0; home <= 4; home++) {
+    wantHome = wantHome + home;
+
+}
+console.log(wantHome + wantHome + wantHome)
