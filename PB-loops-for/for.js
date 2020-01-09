@@ -50,28 +50,58 @@ for (beer = 1; beer <= 5; beer++) {
 // 3. **The odd/even reporter.**
 // Write a program that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
 
-// for (let x = 0; x <= 20; x++) {
-//     if (x % 2 ====0) {
-//         console.log(x + "is even");
-//     } else {
-//         console.log(x + "is odd");
-//     }
-// }
+for (let x = 0; x <= 20; x++) {
+    if (x % 2 === 0) {
+        console.log(x + " is even ");
+    } else {
+        console.log(x + " is odd ");
+    }
+}
 
 // 4. **Multiplication Tables.**
 // Write a program that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18").
 // **Bonus:** Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
+// Multiplication tables
+
+let multiply = 9;
+for (let y = 0; y <= 10; y++) {
+    let result = y * multiply;
+    console.log(y + ' * ' + multiply + ' = ' + result);
+}
+
+// for (let multiply = 0; multiply <= 10; multiply++) {
+//  for (let y = 1; y <= 10; y++) {
+//    let result = multiply * y;
+//    console.log(multiply + ' * ' + y + ' = ' + result);
+//  }
+// }
 
 
 
 // 5. **Fizz Buzz**
 // Write a program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
-
+for (let a = 1; a <= 100; a++) {
+    if (a % 3 === 0 && a % 5 === 0) {
+        console.log(a + " FizzBuzz");
+    } else if (a % 3 === 0) {
+        console.log(a + " Fizz");
+    } else if (a % 5 === 0) {
+        console.log(a + " Buzz");
+    } else {
+        console.log(a);
+    }
+}
 
 // 6. **Sum of Multiples**
 // Write a program to add the multiples of 3 and 5 under 1000.
 
+let sum2 = 0;
+for ( let b = 0; b < 1000; b++){
+    if (b % 3 === 0 || b % 5 === 0);
+    sum2 = sum2 + b;
+    console.log(sum2)
+}
 
 
 
@@ -80,6 +110,8 @@ for (beer = 1; beer <= 5; beer++) {
 // 7. Write programs that produce the following outputs: 
 // >100 200 300 400 500 600 700 800 900 1000
 // >
+
+
 // >1 2 4 8 16 32 64 128
 // >
 // >0 2 4 6 8 10
