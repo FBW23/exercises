@@ -95,14 +95,20 @@ for (let a = 1; a <= 100; a++) {
 
 // 6. **Sum of Multiples**
 // Write a program to add the multiples of 3 and 5 under 1000.
+// let sum2 = 0;
+// for (let b = 0; b < 1000; b++) {
+//     if (b % 3 === 0 || b % 5 === 0);
+//     sum2 += b;
+//     console.log(sum2)
+// }
 
 let sum2 = 0;
-for ( let b = 0; b < 1000; b++){
-    if (b % 3 === 0 || b % 5 === 0);
-    sum2 = sum2 + b;
-    console.log(sum2)
+for (let x = 0; x < 1000; x++) {
+    if (x % 3 === 0 && x % 5 === 0) {
+        sum2 += x;
+    }
 }
-
+console.log(sum2);
 
 
 // **Bonus** 
@@ -110,20 +116,45 @@ for ( let b = 0; b < 1000; b++){
 // 7. Write programs that produce the following outputs: 
 // >100 200 300 400 500 600 700 800 900 1000
 // >
+for (let k = 0; k <= 10; k++) {
+    console.log(k * 100)
+}
 
 
 // >1 2 4 8 16 32 64 128
+let i;
+for (i = 1; i <= 128; i *= 2) {
+    console.log(i);
+}
 // >
 // >0 2 4 6 8 10
-// >
+for (let i = 0; i <= 10; i += 2) {
+    console.log(i + " ");
+}
+
 // >3 6 9 12 15
-// >
+for (let i = 3; i <= 15; i += 3) {
+    console.log(i + " ");
+}
 // >9 8 7 6 5 4 3 2 1 0
-// >
+for (let x = 9; x >= 0; x--) {
+    console.log(x);
+}
 // >1 1 1 2 2 2 3 3 3 4 4 4
-// >
+
+let ab = " ";
+for (ba = 1; ba <= 4; ba++) {
+    ab = ab + ba + ba + ba;
+}
+console.log(ab);
+
 // >0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
 
+let xy = " ";
+for (yx = 0; yx <= 4; yx++) {
+    xy = xy + yx;
+}
+console.log(xy + xy + xy);
 // 8. **isPalindrome.**
 // Write a program to check whether a word is a palindrome or not. 
 // Note: a palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or tarrattarrat
