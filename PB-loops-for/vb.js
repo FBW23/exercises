@@ -1,3 +1,4 @@
+
 console.log(` Write a program to add up the numbers 1 to 20.`);
 console.log(``);
 console.log(``);
@@ -241,27 +242,49 @@ console.log(`>`);
 console.log(`6`);
 for (let n1 = 9; n1 >= 0;) {
     console.log(n1);
-    n1 = n1-1;
+    n1 = n1 - 1;
 
 
 }
+//Create a for loop that prints the following:  >1 1 1 2 2 2 3 3 3 4 4 4;
+console.log(`>`);
+console.log(`>`);
+// for (let n1 = 1; n1 < 5; n1++) {
 
-console.log(`>`);
-console.log(`>`);
-for (let n1 = 1; n1 <5;n1++) {
-    
-    console.log(n1);
-    console.log(n1);
-    console.log(n1);
-   
- 
+//     console.log(n1);
+//     console.log(n1);
+//     console.log(n1);
+
+
+// }
+
+
+let count = 0;
+for (let i = 1; i <= 4;) {
+
+    if ((count !== 0) && (count % 3 === 0)) {
+        i++;
+
+    }
+    console.log(i);
+    count++;
 }
 
-console.log(`>`);
+
+
+
+console.log(`777777>`);
 // >0 1 2 3 4 0 1 2 3 4 0 1 2 3 4`);
 
 
 
+for (let number = 0; number <= 4; number++) {
+    if (count >= 0 && count <= 4) {
+        console.log(number)
+
+    }
+    count++
+}
 
 
 
@@ -270,47 +293,42 @@ console.log(`8. **isPalindrome.**
 // Note: a palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or tarrattarrat`);
 console.log(`========================`);
 console.log(``);
+
 console.log(``);
 
 
-let name="DCI";
+let name = "DCI";
 console.log(name);
 
 
 
-let l1=name.substring(0,1);
-let l2=name.substring(1,2);
-let l3=name.substring(2,3);
-let l4=name.substring(3,4);
-let l5=name.substring(4,5);
-let l6=name.substring(5,6);
-let l7=name.substring(6,7);
-let l8=name.substring(7,8);
-let l9=name.substring(8,9);
-let l10=name.substring(9,10);
-let l11=name.substring(10,11);
-let l12=name.substring(11,12);
-let l13=name.substring(13,14);
-let l14=name.substring(14,15);
-let l15=name.substring(16,17);
-let l16=name.substring(17,18);
+let l1 = name.substring(0, 1);
+let l2 = name.substring(1, 2);
+let l3 = name.substring(2, 3);
+let l4 = name.substring(3, 4);
+let l5 = name.substring(4, 5);
+let l6 = name.substring(5, 6);
+let l7 = name.substring(6, 7);
+let l8 = name.substring(7, 8);
+let l9 = name.substring(8, 9);
+let l10 = name.substring(9, 10);
+let l11 = name.substring(10, 11);
+let l12 = name.substring(11, 12);
+let l13 = name.substring(13, 14);
+let l14 = name.substring(14, 15);
+let l15 = name.substring(16, 17);
+let l16 = name.substring(17, 18);
 
-let reverse=l16+l15+l14+l13+l14+l12+l11+l10+l9+l8+l7+l6+l5+l4+l3+l2+l1
+let reverse = l16 + l15 + l14 + l13 + l14 + l12 + l11 + l10 + l9 + l8 + l7 + l6 + l5 + l4 + l3 + l2 + l1;
 console.log(reverse);
-console.log(name === reverse ? 'they match' : 'they dont match' );
-
-let name2="nicolo";
+console.log(name === reverse ? 'they match' : 'they dont match');
 
 
- for(let i = name2.substr(name2.length -1);name2.length>=0;){
 
-     i=i+name2.substr(name2.length -1);
-    console.log(i);
- }
- 
-// console.log(name2.slice(name2.length - 1))
-  
-  
+
+
+
+console.log(`========================`);
 
 
 
@@ -318,5 +336,64 @@ let name2="nicolo";
 
 
 
+let str = "angelika";
 
-console.log(``);
+let reversed = str.toLowerCase().split("").reverse().join("");
+console.log(reversed);
+if (reversed === str) {
+    console.log(`It is a palindrome`)
+} else {
+    console.log(`It is not a palindrome`)
+}
+
+
+console.log(`========================`);
+
+
+// let firstCharacterCount = 0;
+// for (let characterCount = str.length; characterCount >= 0; characterCount--) {
+
+//     console.log(firstCharacterCount);
+//     let first = str.charAt(firstCharacterCount);
+
+
+//     let lastCharacter = str.charAt(characterCount);
+//     console.log(`last : ${lastCharacter}`);
+
+//     let remain = str.substring(str.length, 0);
+//     console.log(remain);
+
+//     let reversed = lastCharacter + remain;
+//     console.log(reversed)
+// }
+
+
+
+
+
+
+
+let firstCharacterCount = 0;
+for (let characterCount = str.length; characterCount >= firstCharacterCount; characterCount--) {
+    str = str.toLowerCase();
+     console.log(characterCount)
+
+    // console.log(firstCharacterCount)
+
+    let firstCharacter = str.charAt(firstCharacterCount);
+    firstCharacter = str.charAt(firstCharacterCount);
+
+    let lastCharacter = str.charAt(characterCount - 1);
+    // console.log('last character: ' + lastCharacter);
+    // console.log('first character: ' + firstCharacter);
+    ++firstCharacterCount;
+console.log(firstCharacterCount)
+
+
+    if ((firstCharacter !== lastCharacter) && (characterCount<=firstCharacterCount)){
+        console.log(` not a palindrome`)
+    } else if (characterCount<=firstCharacterCount){
+        console.log(`it is a palindrome`)
+    }
+}
+
