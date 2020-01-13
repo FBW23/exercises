@@ -376,23 +376,24 @@ console.log(`========================`);
 let firstCharacterCount = 0;
 for (let characterCount = str.length; characterCount >= firstCharacterCount; characterCount--) {
     str = str.toLowerCase();
-     console.log(characterCount)
+    //  console.log(characterCount)
 
-    // console.log(firstCharacterCount)
+    //  console.log(firstCharacterCount)
 
     let firstCharacter = str.charAt(firstCharacterCount);
     firstCharacter = str.charAt(firstCharacterCount);
 
     let lastCharacter = str.charAt(characterCount - 1);
-    // console.log('last character: ' + lastCharacter);
-    // console.log('first character: ' + firstCharacter);
-    ++firstCharacterCount;
-console.log(firstCharacterCount)
+     console.log('last character: ' + lastCharacter);
+     console.log('first character: ' + firstCharacter);
+    firstCharacterCount++;
+// console.log(firstCharacterCount)
 
 
     if ((firstCharacter !== lastCharacter) && (characterCount<=firstCharacterCount)){
         console.log(` not a palindrome`)
     } else if (characterCount<=firstCharacterCount){
+       
         console.log(`it is a palindrome`)
     }
 }
