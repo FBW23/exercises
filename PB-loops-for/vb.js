@@ -1,4 +1,3 @@
-
 console.log(` Write a program to add up the numbers 1 to 20.`);
 console.log(``);
 console.log(``);
@@ -336,18 +335,32 @@ console.log(`========================`);
 
 
 
-let str = "angelika";
+// let str = "";
 
-let reversed = str.toLowerCase().split("").reverse().join("");
-console.log(reversed);
-if (reversed === str) {
-    console.log(`It is a palindrome`)
-} else {
-    console.log(`It is not a palindrome`)
-}
+
+// let reversed = str.toLowerCase().split("").reverse().join("");
+
+
+// console.log(reversed);
+
+
+
+// if (reversed === str) {
+//     console.log(`It is a palindrome`)
+// } else {
+//     console.log(`It is not a palindrome`)
+// }
+
+
+
+
+
+
+
 
 
 console.log(`========================`);
+let str = "madam";
 
 
 // let firstCharacterCount = 0;
@@ -367,34 +380,99 @@ console.log(`========================`);
 //     console.log(reversed)
 // }
 
+let reversed = '';
+for (let m = 1; m <= str.length; m++) {
 
+    reversed += str.charAt(str.length - m);
+    console.log(reversed);
 
-
-
-
-
-let firstCharacterCount = 0;
-for (let characterCount = str.length; characterCount >= firstCharacterCount; characterCount--) {
-    str = str.toLowerCase();
-    //  console.log(characterCount)
-
-    //  console.log(firstCharacterCount)
-
-    let firstCharacter = str.charAt(firstCharacterCount);
-    firstCharacter = str.charAt(firstCharacterCount);
-
-    let lastCharacter = str.charAt(characterCount - 1);
-     console.log('last character: ' + lastCharacter);
-     console.log('first character: ' + firstCharacter);
-    firstCharacterCount++;
-// console.log(firstCharacterCount)
-
-
-    if ((firstCharacter !== lastCharacter) && (characterCount<=firstCharacterCount)){
-        console.log(` not a palindrome`)
-    } else if (characterCount<=firstCharacterCount){
-       
-        console.log(`it is a palindrome`)
-    }
+}
+if (reversed === str) {
+    console.log('It is a palindrome')
+} else {
+    console.log('It is not a palindrome')
 }
 
+
+
+
+// let firstCharacterCount = 0;
+// for (let characterCount = str.length; characterCount >= firstCharacterCount; characterCount--) {
+//     str = str.toLowerCase();
+//     //  console.log(characterCount)
+//     //  console.log(firstCharacterCount)
+//     let firstCharacter = str.charAt(firstCharacterCount);
+//     let lastCharacter = str.charAt(characterCount - 1);
+//     //  console.log('last character: ' + lastCharacter);
+//     //  console.log('first character: ' + firstCharacter);
+//     firstCharacterCount++;
+//     // console.log(firstCharacterCount)
+
+//     if ((firstCharacter !== lastCharacter) && (characterCount <= firstCharacterCount)) {
+//         console.log(` not a palindrome`)
+//     } else if (characterCount <= firstCharacterCount) {
+
+//         console.log(`it is a palindrome`)
+//     }
+// }
+
+
+
+
+
+
+
+
+
+// Write a program that outputs: 9 7 5 3 1;
+
+
+for (let num = 9; num >= 0;num-=2) {
+    console.log(num);
+    
+    
+}
+
+// "Peter Picker picked pickles" isAllitaretion?
+
+
+let sentence = "Peter Picker picked pickles";
+
+console.log(sentence);
+
+for (let startIndex=0;startIndex<=sentence.length-1;startIndex++) {
+    firstChar = sentence.charAt(startIndex) //the first character of the sentence
+
+
+    let otherChar=firstChar;// the character we compare to the first character( first character of the next word
+
+
+
+    sentence = sentence.toLowerCase();// turns the sentence into lowercase , so we can look for similarities
+
+    for(let space=sentence.search(" "); space>=sentence.length // searches for the position of the first "SPACE" in the sentence, loop runs until it had looked for spaces across the whole word
+
+
+    let remain =sentence.substr(space+1); //cuts the first word off including the first space, so we could potentially repeat the previous search for the "new first SPACE" (The one after the 2nd word)
+
+            startIndex=remain.search(" ");// Was hoping to search for the next new space,by  but it did not work out
+
+
+
+
+
+            console.log(startIndex)
+            
+       
+    
+    
+    
+       
+
+    //console.log(firstChar)
+
+
+
+
+
+}
