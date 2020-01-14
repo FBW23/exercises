@@ -22,7 +22,7 @@ function remainder(number, number2) {
 }
 remainder(24, 34);
 
-const remainder2 = function remainder(number, number2) {
+const remainder2 = function (number, number2) {
     if (number % number2 === 0) {
         console.log(number + ' is divisible by ' + number2);
     } else {
