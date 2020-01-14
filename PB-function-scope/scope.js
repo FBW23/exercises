@@ -9,7 +9,7 @@
 
 // const myNumbers = (numb1, numb2) {
 //     if ((typeof numb1 === 'number') && (typeof numb2 === 'number')) {
-       
+
 //         }
 //     }
 // }
@@ -23,9 +23,22 @@
 
 let myFruit = 'ananas';
 
-const printFavoriteFruit = function (fruit) {
+const printFavoriteFruit = function () {
     myFruit = 'peach';
     console.log('My favourite fruit is: ' + myFruit);
 };
 printFavoriteFruit();
 
+
+// #### 3. Multiply a Number by Itself
+// * Create a function named `exponent` that takes two numbers as parameters. 
+// The second parameter defines how many times the first number should be multiplied by itself. 
+// Save the output in a variable named `result`. 
+// * Then, try to access the variable `result` outside of the `exponent` function. Is this possible? Why/Why not? 
+// Comment your answer in the `index.js` file.
+
+function exponent(numberOne, numberTwo) {
+    let result = Math.pow(numberOne, numberTwo);
+    console.log(result);
+}
+exponent(4,10);
