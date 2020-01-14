@@ -18,9 +18,9 @@ switch (expr) {
         break;
     case 'yellow':
         console.log('yellow');
-        break;    
+        break;
     default:
-        console.log('Invalid color' +  '.');
+        console.log('Invalid color' + '.');
 }
 
 // #### 2. Grading
@@ -38,34 +38,32 @@ switch (expr2) {
 
         break;
     case 10:
-        console.log ('yes! You got it!');
+        console.log('yes! You got it!');
         break;
-    
+
     default:
-        console.log('try it harder!' +  '.');
+        console.log('try it harder!' + '.');
 }
 
 // #### 3. Fruits
 // Create a switch statement that prints different statement for various fruit (e.g. banana, orange, strawberry, apple).
 
 
-let fruit = 'orange';
+let fruit = 'apple';
 
-let expr3 = fruit;
-switch (expr3) {
+
+switch (fruit) {
     case 'banana':
         console.log('if you don\'t like banana, mix it with strawberry!');
         break;
     case 'strawberry':
         console.log('it is too sour, put some condensed milk on it!!');
-
         break;
     case 'orange':
-        console.log ('finally! let\'s make a juice :)');
+        console.log('finally! let\'s make a juice :)');
         break;
-    
     default:
-        console.log('this fruit or whatever is a bad choice..' +  '.');
+        console.log('this fruit or whatever is a bad choice..' + '.');
 }
 
 
@@ -78,18 +76,18 @@ switch (expr3) {
 
 let percentageComplete = 1000;
 
-if (percentageComplete < 30){
+if (percentageComplete < 30) {
     console.log('Still a long way to go');
 
-}else if ((percentageComplete >= 30) && (percentageComplete <= 50)){
+} else if ((percentageComplete >= 30) && (percentageComplete <= 50)) {
     console.log('Slowly getting there');
-} else if((percentageComplete >=51 && percentageComplete <=80)){
+} else if ((percentageComplete >= 51 && percentageComplete <= 80)) {
     console.log('You can do it');
-} else if ((percentageComplete >= 81) && (percentageComplete <= 99)){
+} else if ((percentageComplete >= 81) && (percentageComplete <= 99)) {
     console.log('This is the last push');
 } else if (percentageComplete === 100) {
     console.log('You\'re there. Well done!');
-} else{
+} else {
     console.log('this is an invalid value');
 }
 
@@ -98,4 +96,4 @@ if (percentageComplete < 30){
 
 let answer = 'A switch case should be used when you have more conditions and cases, but if you have comparisons you should use \`if else` statement.';
 
-console.log (answer);
+console.log(answer);
