@@ -17,6 +17,7 @@ while (i < 21) {
 
 console.log(sum);
 
+<<<<<<< HEAD
 
 
 // 2. **There are i bottles of beer on the wall.** 
@@ -157,3 +158,6 @@ for (let k = 1; k < 4; k++){
 for (let p = 10; p < 0; p--){
     console.log(p);
 }
+=======
+// There are i bottles of beer on the wall. Write a program that will output, "There is one bottle of beer on the wall." "There are two bottles of beer on the wall" up until there are five bottles.
+>>>>>>> 72c5985a21f0ac1e4d579f817a1f4cd981016f91
