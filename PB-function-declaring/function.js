@@ -1,9 +1,9 @@
 function multiplyByNumber(number, number2) {
-    console.log('Create a function that multiples a number by another number >', number * number2);
+    console.log('Create a function that multiples a number by another number >', number * number2) ;
 }
-multiplyByNumber(5, 65);
+multiplyByNumber(25, 65);
 
-const myFunction = function multiplyByNumber(number, number2) {
+const myFunction = function (number, number2) { // anonym function 
     console.log('Rework the syntax of the above function so that the function declaration is stored as a value >', number * number2);
 };
 myFunction(45, 45);
