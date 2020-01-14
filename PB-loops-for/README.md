@@ -42,4 +42,4 @@ Write a program to add the multiples of 3 and 5 under 1000.
 Write a program to check whether a word is a palindrome or not. 
 Note: a palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or tarrattarrat
 
-
+HINT: Which String Methods did we learn? If you forgot, research them again ;-)
