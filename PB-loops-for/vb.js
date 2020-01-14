@@ -472,20 +472,46 @@ for (let num = 9; num >= 0; num -= 2) {
 
 
 //===========================================================================================
+let sentence = "Peter Picker picked pickles pickle";
+sentence = sentence.toLowerCase();
+lastSpace = sentence.lastIndexOf(" ");
+sentenceFirstLetter = sentence.charAt(0)
+lastWordFirstLetter = sentence.charAt(lastSpace + 1);
 
-// for (let startIndex=0;startIndex<=sentence.length;startIndex++) {
-//     firstChar = sentence.charAt(startIndex) 
+console.log(lastSpace);
+spaceOne = sentence.indexOf(" ");
+console.log(spaceOne);
+otherSpaces = sentence.indexOf(" ", spaceOne + 1);
 
-//     let otherChar=firstChar; 
 
-//   // let spaceIndex=sentence.search(" "); 
-//   let space= sentence.indexOf(' ');
 
-//   console.log(space);
 
-//   let remain =sentence.substr(space+1);
+for (let spaces = sentence.indexOf(" "); spaces <= lastSpace; spaces++) {
 
-//   console.log(remain)
+    // var str = "food",
+    // index1 = str.indexOf("o"),
+    // index2 = str.indexOf("o", index1+1);
+
+
+    otherSpaces = sentence.indexOf(" ", spaces + 1);
+    if (sentenceFirstLetter === lastWordFirstLetter) {
+        console.log(`could be an alliteration`);
+    } else {
+        console.log('not an alliteration')
+    }
+
+
+    // console.log(spaces);
+
+}
+
+
+
+
+
+//  let remain =sentence.substr(space+1);
+
+//    console.log(remain)
 //   let nextSpace=remain.indexOf(' ');
 
 //   console.log(nextSpace)
@@ -499,33 +525,68 @@ for (let num = 9; num >= 0; num -= 2) {
 
 
 
-//===============================================================================
-//let sentence = "Peter Picker picked pickles";
-let sentence = `jdss jdkjn jdgkn jdhfudh jbsvdvfdvdv`;
-sentence = sentence.toLowerCase();
-console.log(sentence);
-let firstLetter = sentence.charAt(0);
-//console.log(`firstletter:${firstLetter}`)
-let alliteration;
 
-let lastSpaceindex = sentence.lastIndexOf(' ');
-for (let firstSpaceIndex = sentence.indexOf(' '); firstSpaceIndex <= lastSpaceindex; firstSpaceIndex++) {
-    //console.log(firstSpaceIndex)
-   // console.log(lastSpaceindex)
-    let nextLetter = sentence.charAt(firstSpaceIndex + 1)
-  //  console.log(`${nextLetter} at ${firstSpaceIndex}`)
-  //  console.log(`Is ${firstLetter} matching ${nextLetter}?`)
-  //  console.log(`Is ${firstLetter} matching ${nextLetter} ?`)
-    if (firstLetter === nextLetter) {
-        alliteration = true;
-    } else {
-        alliteration = false;
+
+
+
+
+
+
+
+
+
+// //===============================================================================
+// //let sentence = "Peter Picker picked pickles";
+// let sentence = `jdss jdkjn jdgkn jdhfudh jbsvdvfdvdv`;
+// sentence = sentence.toLowerCase();
+// console.log(sentence);
+// let firstLetter = sentence.charAt(0);
+// //console.log(`firstletter:${firstLetter}`)
+// let alliteration;
+
+// let lastSpaceindex = sentence.lastIndexOf(' ');
+// for (let firstSpaceIndex = sentence.indexOf(' '); firstSpaceIndex <= lastSpaceindex; firstSpaceIndex++) {
+//     //console.log(firstSpaceIndex)
+//    // console.log(lastSpaceindex)
+//     let nextLetter = sentence.charAt(firstSpaceIndex + 1)
+//   //  console.log(`${nextLetter} at ${firstSpaceIndex}`)
+//   //  console.log(`Is ${firstLetter} matching ${nextLetter}?`)
+//   //  console.log(`Is ${firstLetter} matching ${nextLetter} ?`)
+//     if (firstLetter === nextLetter) {
+//         alliteration = true;
+//     } else {
+//         alliteration = false;
+//     }
+
+// }
+// if (alliteration) {
+//     console.log(`It is an alliteration`)
+// } else {
+//     console.log(`It is not an Alliteration `)
+
+// }
+
+
+
+let isAllitaretion = false;
+const input = "Peter Picker picked pickles";
+const myString = input.toLowerCase().trim();
+const firtsChar = myString.charAt(0);
+
+
+
+for (let nextSpace = myString.indexOf(' '); nextSpace != -1;  nextSpace = myString.indexOf(' ', nextSpace + 1)) {
+
+    console.log(nextSpace);
+ if (firtsChar === myString.charAt(nextSpace + 1)) {
+        isAllitaretion=true;
+        console.log(`It's a match! It could be an alliteration`);
+    }else{
+        isAllitaretion=false;
+        console.log(`It's not an alliteration`);
+        break;
     }
-
+   
 }
-if (alliteration) {
-    console.log(`It is an alliteration`)
-} else {
-    console.log(`It is not an Alliteration `)
 
-}
+console.log(`Your sentence: ${input} is an Allitaretion : ${isAllitaretion}`);
