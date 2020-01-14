@@ -15,27 +15,27 @@ myArrowFunction(5, 5);
 
 function remainder(number, number2) {
     if (number % number2 === 0) {
-        console.log('it is divisible for 5.');
+        console.log('it is divisible by 5.');
     } else {
-        console.log('it is not divisible for 5.')
+        console.log('it is not divisible by 5.')
     }
 }
 remainder(24, 34);
 
 const remainder2 = function remainder(number, number2) {
     if (number % number2 === 0) {
-        console.log('it is divisible for 5.');
+        console.log('it is divisible by 5.');
     } else {
-        console.log('it is not divisible for 5.');
+        console.log('it is not divisible by 5.');
     }
 };
 remainder2(300, 50);
 
 const remainder3 = (number, number2) => {
     if (number % number2 === 0) {
-        console.log('it is divisible for 5.');
+        console.log('it is divisible by 5.');
     } else {
-        console.log('it is not divisible for 5.');
+        console.log('it is not divisible by 5.');
     }
 };
 remainder3(70, 5);
