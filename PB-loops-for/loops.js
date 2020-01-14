@@ -48,9 +48,97 @@ let myResult = '';
 
 for (m = 0; m <=10; m++) {
     myResult = m*9;
-    console.log(myResult);
+    console.log(m + ' times 9 = ' + myResult);
+}
+
+// 5. **Fizz Buzz**
+// Write a program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" 
+// instead of the number and for the multiples of five print "Buzz". 
+// For numbers which are multiples of both three and five print "FizzBuzz".
+
+for (let fizz = 1; fizz <= 100; fizz++) {
+    if (fizz % 15 === 0) {
+        console.log('FizzBuzz');
+    } else if (fizz % 5 === 0) {
+        console.log('Buzz');
+    } else if (fizz % 3 === 0) {
+        console.log('Fizz');
+    } else {
+        console.log(fizz);
+    }
 }
 
 
 // 6. **Sum of Multiples**
 // Write a program to add the multiples of 3 and 5 under 1000.
+
+let sum1 = 0;
+
+for (let myNumber = 0; myNumber < 1000; myNumber++) {
+    if (!(myNumber % 15)) {
+        sum1 += myNumber;
+    }
+}
+console.log(sum1);
+
+// 7. Write programs that produce the following outputs: 
+// >100 200 300 400 500 600 700 800 900 1000
+// >
+
+for (let firstRow = 1; firstRow <= 1000; firstRow++) {
+    if (firstRow % 100 === 0){
+        console.log(firstRow);
+    }
+}
+console.log();
+
+// >1 2 4 8 16 32 64 128
+
+for (let secondRow = 1; secondRow <= 128;) {
+    console.log(secondRow);
+    secondRow = secondRow + secondRow;
+    }
+
+console.log();
+
+// >0 2 4 6 8 10
+
+for (let thirdRow = 0; thirdRow <=10; thirdRow++){
+    if (thirdRow % 2 ===0) {
+        console.log(thirdRow);
+    }
+}
+console.log();
+
+// >3 6 9 12 15
+
+for (let fourthRow = 1; fourthRow <=15; fourthRow++) {
+    if (fourthRow % 3 === 0) {
+        console.log(fourthRow);
+    }
+}
+console.log();
+
+
+// >9 8 7 6 5 4 3 2 1 0
+
+for (let fifthRow = 9; fifthRow >=0; fifthRow--) {
+    console.log(fifthRow);
+}
+
+console.log();
+
+// >1 1 1 2 2 2 3 3 3 4 4 4
+
+for (let sixthRow = 1; sixthRow <=4; sixthRow++) {
+        console.log(sixthRow, sixthRow, sixthRow);
+
+}
+console.log();
+
+
+// >0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+
+for (let seventhRow = 0; seventhRow <=4; seventhRow++) {
+    console.log(seventhRow, seventhRow, seventhRow, seventhRow);
+}
