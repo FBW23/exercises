@@ -26,6 +26,35 @@ const myArrowFunction = (number) => {
 };
 myArrowFunction(8);
 
-console.log("....................Exercise.............................");
+console.log(".................................................");
+console.log(".................calling Arrow Function.........");
 
 
+function newFunction(param) {
+    console.log('hello World ' + param); // Parameter scope
+    console.log(param);
+}
+newFunction('Nagster');
+newFunction('Bendis');
+
+// Declare Variables in function
+
+const myfunction3 = function (firstName1, lastName1) {
+    // let functionVeriable = Parameter
+
+    let firstName = firstName1;
+    let lastName = lastName1;
+    console.log('hello World ' + firstName1 + ' ' + lastName1); // Parameter scope
+    console.log(firstName);
+}
+
+myfunction3('Consta', 'Tine');
+myfunction3('Julia', 'Reis');
+
+console.log("......................................");
+
+testFunction();
+funtion testFunction(); {
+    console.log('How R You');
+
+}
