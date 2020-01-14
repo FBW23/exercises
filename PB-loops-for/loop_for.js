@@ -62,13 +62,6 @@ for (myNumber = 1; myNumber <= 20; myNumber++)
 
 
 
-console.log('------------------4----------');
-
-let multiply;
-
-for (multiply = 0; multiply <= 10; multiply++) {
-    console.log(multiply * 9);
-}
 
 console.log('------------------5----------');
 for (let cocoNuts = 1; cocoNuts <= 100; cocoNuts++) {
@@ -132,26 +125,131 @@ for (let kokoMud = 9; kokoMud >= 0; kokoMud--) {
 
 }
 
-console.log('------------------7f----------');
+
+
+
+
+
+
+
+
+
+// console.log('------------------7g----------');
+
+// let wantHome = "";
+// for (let home = 0; home <= 4; home++) {
+//     wantHome = wantHome + home;
+
+// }
+// console.log(wantHome + wantHome + wantHome);
+
+
+console.log('------------------4----------');
+
+let multiply;
+
+for (multiply = 0; multiply <= 10; multiply++) {
+    console.log(multiply + ' * 9 = ' + multiply * 9);
+}
+
+let stars = '';
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 10 - i; j++) {
+        stars += ' '; // add whitespace accordingly
+    }
+    for (let k = 0; k < 2 * i + 1; k++) {
+        stars += '*';
+    }
+    if (i < 4) {
+        stars += '\n';
+    }
+}
+console.log(stars);
+
+///////////////////=----------LOOP NESTED_______-----------------
+
+console.log('------------------111222333444----------');
 let mimiKey = "";
 for (let kokoMistake = 1; kokoMistake <= 4; kokoMistake++) {
-    mimiKey = mimiKey + kokoMistake + kokoMistake + kokoMistake;
-
-
+    for (let numberOne = 1; numberOne <= 3; numberOne++) {
+        mimiKey += kokoMistake;
+    }
 }
 console.log(mimiKey);
-
-
-
-
-
-
-
-console.log('------------------7g----------');
+console.log('------------------012340123401234----------');
 
 let wantHome = "";
-for (let home = 0; home <= 4; home++) {
-    wantHome = wantHome + home;
+for (let home = 1; home < 4; home++) {
+    for (let dci = 0; dci < 5; dci++) {
+        wantHome += dci;
+    }
 
 }
-console.log(wantHome + wantHome + wantHome);
+console.log(wantHome);
+
+console.log(`_______________________Palindrome____________________`);
+console.log('\n');
+
+let checkWord = "andrew"
+let bigWord = checkWord.toUpperCase();
+console.log(bigWord);
+let isPalindrome = false;
+for (let i=0; i< bigWord.length/2;i++) //checking for the even word
+if (bigWord.charAt(i) === bigWord.charAt(bigWord.length - (i+1))) {
+    console.log('It might be a palindrome ! ');
+    isPalindrome = true;
+
+}else {
+    console.log('It is not a palindrome !');
+    isPalindrome = false;
+    break;
+}
+console.log(bigWord + ' Is a palindrome? Answer is ' + isPalindrome);
+
+
+// if (bigWord.charAt(0) === bigWord.charAt(bigWord.length - 1)) {
+//     console.log('It might be a palindrome ! ');
+//     if (bigWord.charAt(1) === bigWord.charAt(bigWord.length - 2)) {
+//         console.log('It might be a palindrome ! ');
+//     } else { console.log('It is not a palindrome !'); }
+console.log(`---------------------reverse the characters---------------------`);
+let str = 'mango';
+let reversed = '';
+for (let m =1;m <=str.length;m++) {
+    reversed +=str.charAt(str.length-m);
+}
+console.log(reversed);
+console.log(`---------------------reverse the characters---------------------`);
+
+let numberOdd = '===>>> ';
+for (let theLast = 9; theLast >0; theLast--) {
+ if (theLast%2) {
+    console.log(theLast);
+    numberOdd += theLast
+ }
+ 
+    
+}
+console.log(numberOdd + ' <<<=====');
+
+const alliteration = 'Peter Piper Picked Peck Pickled Peppers';
+const isAlliteration = alliteration.toLowerCase().trim();
+console.log(isAlliteration);
+let succes = false;
+let firstChar = isAlliteration.charAt(0); //took the first letter 
+console.log(firstChar);//--- p
+let nextSpace;// = isAlliteration.indexOf(' '); //looking for the empty space between words
+// console.log(nextSpace);// ---5
+for (nextSpace=isAlliteration.indexOf(' '); nextSpace !== -1;nextSpace = isAlliteration.indexOf(' ', nextSpace +1)) {
+    console.log(nextSpace);
+    if (firstChar === isAlliteration.charAt(nextSpace+1)) {
+        succes = true;
+    }else {
+        succes = false;
+    }
+
+} 
+console.log('The given example " ' + alliteration + ' " is an Alliteration ' + succes);
+
+
+
