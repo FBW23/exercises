@@ -1,17 +1,17 @@
-function multiplyByNumber(number) {
-    console.log('Create a function that multiples a number by another number >', number * 5);
+function multiplyByNumber(number, number2) {
+    console.log('Create a function that multiples a number by another number >', number * number2);
 }
-multiplyByNumber(5);
+multiplyByNumber(5, 5);
 
-const myFunction = function multiplyByNumber(number) {
-    console.log('Rework the syntax of the above function so that the function declaration is stored as a value >', number * 5);
+const myFunction = function multiplyByNumber(number, number2) {
+    console.log('Rework the syntax of the above function so that the function declaration is stored as a value >', number * number2);
 };
-myFunction(5);
+myFunction(5, 5);
 
-const myArrowFunction = (number) => {
-    console.log('Rework the syntax of the function declaration so that is uses the arrow function shorthand >', number * 5);
+const myArrowFunction = (number, number2) => {
+    console.log('Rework the syntax of the function declaration so that is uses the arrow function shorthand >', number * number2);
 };
-myArrowFunction(5);
+myArrowFunction(5, 5);
 
 function remainder(number, number2) {
     if (number % number2 === 0) {
