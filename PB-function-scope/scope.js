@@ -9,6 +9,8 @@ const twoNumbers = (number1, number2) => {
     }
 }
 twoNumbers(3, 5);
+twoNumbers(2,8);
+
 
 console.log(`----------------------FRUITS---------------`);
 let x = 'Banana'
