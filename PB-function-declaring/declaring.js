@@ -1,25 +1,25 @@
 // #### 1. Multiply - Function Declaration
 // * Create a function that multiples a number by another number.
 
-function myFunction (number) {
-    console.log(number * 5);
+function myFunction (number1, number2) {
+    console.log(number1 * number2);
 }
-myFunction(5);
+myFunction(5,12);
 
 // #### 2. Multiply - Function Declarations as Values
 // * Rework the syntax of the above function so that the function declaration is stored as a value.
 
-const myFunctionTwo = function (number){
-    console.log(number * 4);
+const myFunctionTwo = function (number1, number2){
+    console.log(number1 * number2);
 };
-myFunctionTwo(6);
+myFunctionTwo(6,11);
 
 // #### 3. Multiply - Arrow Function
 // * Rework the syntax of the function declaration so that is uses the arrow function shorthand.
-const myArrow = (number) => {
-    console.log(number * 10);
+const myArrow = (number1, number2) => {
+    console.log(number1 * number2);
 };
-myArrow(5);
+myArrow(5,10);
 
 
 // #### 4. Declarations
