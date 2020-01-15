@@ -54,7 +54,7 @@ console.log(sumOfCubes());
 console.log('3. String Check');
 
 const myString = (string, word) => {
-    if (word.slice(0,string.length) === string) {
+    if (word.startsWith(string)) {
         return true;
     } else {
         return false;
