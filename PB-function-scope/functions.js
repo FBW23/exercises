@@ -36,7 +36,7 @@ myFirst (9, 2);
 let myFavoriteFruit = 'papaya';
 
 const myFavFruitFunc = function (string){
-    myFavoriteFruit = string;
+    myFavoriteFruit = 'jambo';
     console.log('My favorite fruit is ' + string);
 }
 
