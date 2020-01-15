@@ -67,10 +67,33 @@ console.log(myString("beau", "pastry"));
 console.log(myString("cho", "chateau"));
 
 // **4. Less Than or Equal to Zero?**
-// Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+// Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, 
+// otherwise return false.
 
 // Examples:
 // * lessThanOrEqualToZero(3) ➞ false
 // * lessThanOrEqualToZero(0) ➞ true
 // * lessThanOrEqualToZero(-4) ➞ true
 // * lessThanOrEqualToZero(10) ➞ false
+
+console.log('4. Less Than or Equal to Zero?');
+
+const lessThanOrEqualToZero = (numb4) => {
+    if (numb4 <= 0) {
+        return true;
+    } else {
+        return false
+    };
+}
+
+console.log(lessThanOrEqualToZero(3));
+console.log(lessThanOrEqualToZero(0));
+console.log(lessThanOrEqualToZero(-4));
+console.log(lessThanOrEqualToZero(100));
+
+
+// **5. Count Occurrences.** 
+// Create a function that accepts two arguments: a string and a letter. The function should count the number of occurrences of that letter in the string. 
+
+// i.e. 
+// countOccurrences("this is a string", "i") ➞ 3 
