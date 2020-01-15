@@ -4,9 +4,14 @@ body {
     align-items: center;
     border: 5px solid red;
     display: flex;
+<<<<<<< HEAD
     flex-direction: row;
     height: 100vh;
     justify-content: space-between;
+=======
+    height: 100vh;
+    justify-content: space-around;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 
 div {
@@ -18,3 +23,4 @@ div {
     border: 2px solid red;
     text-align: center;
 }
+

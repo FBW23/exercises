@@ -1,4 +1,21 @@
 * {
+<<<<<<< HEAD
+    text-align: center;
+    margin: 0
+}
+
+.inside-box {
+    background-color: turquoise;
+    color: gray;
+    margin: 18px 0;
+    padding: 15px 0;
+    
+}
+
+.secondary-box {
+    border-top: 15px solid #4E3C00;
+    border-bottom: 15px solid #4E3C00;
+=======
     margin: 0;
 <<<<<<< HEAD
 =======
@@ -7,6 +24,7 @@
 >>>>>>> 355d11085c675ce8d68fb53af0e5082e86ec4bf2
 }
 
+<<<<<<< HEAD
 .primary-box,
 .secondary-box {
     border-bottom: 0.6em solid #4E3C00;
@@ -16,6 +34,32 @@
 
 .primary-box {
     background-color: #2B2B2B;
+=======
+.primary-box, .secondary-box, .inside-box {
+    font-size: 1.5em;
+>>>>>>> 7721066b045618bf6cb6bfbb4bed3177a2893702
+    padding: 15px 0;
+}
+
+.primary-box {
+<<<<<<< HEAD
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 2px 4px 2px cadetblue;
+}
+
+
+
+
+
+
+
+
+
+=======
+    background: #2B2B2B;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
     color: white;
 }
 
@@ -36,3 +80,12 @@ section:hover + article{
     transition-duration: 100ms;
 }
 
+<<<<<<< HEAD
+=======
+.secondary-box {
+    background: #EDECEE;
+    border-bottom: 16px solid #4E3B00;
+    border-top: 16px solid #4E3B00;
+}
+>>>>>>> 7721066b045618bf6cb6bfbb4bed3177a2893702
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a

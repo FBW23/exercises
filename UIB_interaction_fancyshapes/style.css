@@ -1,11 +1,21 @@
+<<<<<<< HEAD
 html,
 body {
+=======
+<<<<<<< HEAD
+html,
+body {
+=======
+html, body {
+>>>>>>> ea6a99cd47f88d950145fae491db5247c05b657a
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
     padding: 0;
     margin: 0;
 }
 
 .task-one {
     margin-top: 10px;
+<<<<<<< HEAD
     background: skyblue;
 }
 
@@ -31,3 +41,35 @@ body {
 } 
 #s { transition: all .2s ease-in-out; }
 #s:hover { transform: scale(0.5,0.5); }
+=======
+<<<<<<< HEAD
+}
+
+.task-one {
+    background: blue;
+}
+
+.task-one::before {
+    content: "Once upon a time...";
+    background: purple
+}
+
+.task-one::after {
+    content: "...The End";
+    background: purple;
+}
+
+.task-two {
+    background-image: url(assets/beach.jpg);
+    width: 500px;
+    height: 500px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+img {
+    transform: rotate(0.5turn);
+    
+=======
+>>>>>>> ea6a99cd47f88d950145fae491db5247c05b657a
+}
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a

@@ -15,6 +15,7 @@ body {
 >>>>>>> c850082d0ca361127bce820e6559d9e6400f5915
 }
 
+
 .primary-box {
     /* font-family: Helvetica, sans-serif; */
     background: #222;
@@ -25,6 +26,13 @@ body {
     font-family: Helvetica;
 }
 
+.primary-box em {
+    color: #32b0ff;
+}
+.primary-box p{
+     font-family: helvetica, Arial, Helvetica, sans-serif;
+}
+
 .secondary-box {
     background: #eee;
     color: #222;
@@ -33,6 +41,7 @@ body {
     padding: 10px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .primary-box p {
     font-family: Helvetica;
@@ -54,8 +63,20 @@ body {
 .h2 {
     font-family: arial;
 =======
+
+.secondary-box em {
+    color: #fc3fff;
+}
+.secondary-box p{
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+=======
+.primary-box > p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
+=======
 .primary-box h2 {
     font-family: Helvetica, sans-serif;
+>>>>>>> 5520dddc1779be466e9215d6da818b80eb3d79ee
 }
 
 .secondary-box p {
@@ -65,8 +86,17 @@ body {
 .primary-box em {
     color: #32b0ff;
 }
+<<<<<<< HEAD
+.secondary-box > p > em {
+color: #fc3fff;
+
+=======
 
 p em {
     color: #fc3fff!important; /* Bad style*/
+<<<<<<< HEAD
 >>>>>>> c850082d0ca361127bce820e6559d9e6400f5915
+=======
+>>>>>>> 5520dddc1779be466e9215d6da818b80eb3d79ee
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }

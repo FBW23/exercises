@@ -11,5 +11,15 @@ div {
     height: 100px;
     margin: 1em;
     text-align: center;
+<<<<<<< HEAD
     width: 150px;
 }
+=======
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a

@@ -9,7 +9,17 @@ div {
     height: 100px; 
     background-color: darkgray;
     border: 2px solid red;
+<<<<<<< HEAD
     margin: 1em;
     text-align: center;
     width: 200px;
+=======
+    text-align: center;
+   
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }

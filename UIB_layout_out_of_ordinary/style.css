@@ -3,8 +3,10 @@ html,
 body {
     margin: 0;
     padding: 0;
+    
 }
 
+<<<<<<< HEAD
 .genres {
     display: flex;
     flex-flow: row wrap;
@@ -73,4 +75,46 @@ body {
         flex-grow: 1;
         flex-basis: 100%;
     }
+=======
+
+.genres {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.genres > section{
+    width: 500px ;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+#ac{
+    background-color: dodgerblue;
+    
+}
+#th{
+    background-color:rgb(190, 178, 178);
+    flex-grow: 10;
+}
+#com{
+    background-color:rgb(225, 214, 30);
+    flex-grow: 10;
+}
+#ho{
+    background-color:black;
+    color: white;
+}
+#dra{
+    background-color: darkgray;
+}
+#rom{
+    background-color:red
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }

@@ -3,8 +3,15 @@
 body {
     align-items: center;
     border: 5px solid red;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
+=======
+    flex-direction: column;
+    display: flex;
+    height: 200vh;
+    align-items: center;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 
 div {

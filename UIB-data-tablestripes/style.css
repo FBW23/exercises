@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 th{
     background: #888888;
 }
@@ -15,4 +16,35 @@ tr:nth-child(3n) td:nth-child(2){
 }
 td , th::first-letter{
     text-transform: capitalize;
+=======
+td,
+th {
+    padding: 8px;
+    padding-right: 30px;
+}
+
+}
+
+thead th {
+    background: #888888;
+    color: white;
+
+}
+
+tr:nth-child(odd) {
+    background: #c0c0c0;
+}
+
+tr:nth-child(even) {
+    background: #efefef;
+}
+
+
+tr:nth-child(3) td:nth-child(2) {
+    background: #ffbbbb;
+}
+
+tr:nth-child(6) td:nth-child(2) {
+    background: #ffbbbb;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }

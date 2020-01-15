@@ -4,8 +4,13 @@ body {
     align-items: flex-end;
     border: 5px solid red;
     display: flex;
+<<<<<<< HEAD
     height: 800px;
     flex-direction: row;
+=======
+    align-items:flex-end;
+
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 
 div {

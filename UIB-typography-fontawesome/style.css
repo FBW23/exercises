@@ -16,5 +16,18 @@ i{
 }
 
 
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.review{
+    text-shadow: 2px 2px red;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ul{
+    text-align: center;
+}
 
 
