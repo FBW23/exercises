@@ -2,6 +2,9 @@
 
 body {
     border: 5px solid red;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
 }
 
 div {
@@ -13,3 +16,4 @@ div {
     border: 2px solid red;
     text-align: center;
 }
+
