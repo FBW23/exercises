@@ -34,11 +34,11 @@ console.log();
 console.log('Exercise Three');
 console.log();
 
+
 function exponent(numberOne, numberTwo) {
-    for (i = 0; i < numberTwo; i++) {
-        let result = numberOne * numberOne;
-        console.log(result);
-    }
+    let result = Math.pow(numberOne, numberTwo);
+    console.log(result);
 }
+// console.log(result);
 // console.log(result); this is not possible because the result is defined as a local variable
-exponent(5, 5);
+exponent(3, 5);
