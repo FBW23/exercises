@@ -41,9 +41,9 @@ const powerCub = (a, b, c) => {
 
     const dictionary = (string1, string2) => {
         if (string2.startsWith(string1) === true) {
-            return true
+            return true;
         } else {
-            return false
+            return false;
         }
 
     }
@@ -71,7 +71,7 @@ const powerCub = (a, b, c) => {
 
     function char_count(str, letter) {
         let letter_Count = 0;
-        for (var position = 0; position < str.length; position++) {
+        for (let position = 0; position < str.length; position++) {
             if (str.charAt(position) == letter) {
                 letter_Count += 1;
             }
@@ -80,3 +80,5 @@ const powerCub = (a, b, c) => {
     }
 
     console.log(char_count("this is a string", "i"));
+
+    console.log(`------------Task6--------------`);
