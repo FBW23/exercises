@@ -11,3 +11,24 @@
 
 #### 4. Declarations
 * Create functions (using all three declarations) to check the remainder of division given two numbers. 
+
+function multiplyWithTwo(number){
+    //here we can define what should happen
+    //function block
+    console.log(number * 2);
+}
+
+multiplyWithTwo(5);
+
+const myFunction = function (number) {
+    console.log(number * 2);
+};
+
+//calling a function
+multiplyWithTwo(15);
+
+//Arrow function
+
+const myArrowFunction = (number) => {
+    console.log (number *2);
+};

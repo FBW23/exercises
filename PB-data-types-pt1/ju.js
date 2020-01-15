@@ -61,3 +61,5 @@ console.log(fourC);
 //11. Print the length of the string "JavaScript" to the console.
 let length = programmingLanguage.length;
 console.log(length);
+
+

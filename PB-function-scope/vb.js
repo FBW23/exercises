@@ -51,13 +51,17 @@ myFunction2(2, 8);
 
 // 2. Fruits
 // Create a function named printFavoriteFruit. Declare a variable outside of the function and store your favorite fruit as a value. Reassign the variable within the function and print "My favorite fruit is: x".
-let myVariable = `banana`;
 
-myFunction3 = (myVariable) => {
+
+const myFunction3 = () => {
+    myVariable='ananas';
     console.log(`My favourite fruis is: ${myVariable}`);
+    
 }
+let myVariable = `banana`;
+console.log(myVariable);
+myFunction3();
 
-myFunction3('ananas')
 
 
 
@@ -65,12 +69,12 @@ myFunction3('ananas')
 // Create a function named exponent that takes two numbers as parameters. The second parameter defines how many times the first number should be multiplied by itself. Save the output in a variable named result.
 // Then, try to access the variable result outside of the exponent function. Is this possible? Why/Why not? Comment your answer in the index.js file.
 
-exponent = (par1,par2) => {
-let result=par2*(par1*par1);
-//console.log(result);
+const exponent = (par1,par2) => {
+let result=Math.pow(par1,par2);
+console.log(result);
 }
 
-exponent(2,3);
+exponent(3,5);
 
 //console.log(result); //Can not be accessed outside of the function, as it had not been declaired before the function.
 
