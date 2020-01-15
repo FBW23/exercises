@@ -78,13 +78,16 @@ console.log(myString("cho", "chateau"));
 
 console.log('4. Less Than or Equal to Zero?');
 
-const lessThanOrEqualToZero = (numb4) => {
-    if (numb4 <= 0) {
-        return true;
-    } else {
-        return false
-    };
-}
+// longer way :
+// const lessThanOrEqualToZero = (numb4) => {
+//     if (numb4 <= 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
+
+const lessThanOrEqualToZero = (numb4) => numb4 <= 0;
 
 console.log(lessThanOrEqualToZero(3));
 console.log(lessThanOrEqualToZero(0));
