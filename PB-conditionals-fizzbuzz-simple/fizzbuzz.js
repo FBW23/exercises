@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 let num = 30;
 
 if((num % 3 === 0) && (num % 5 === 0)) {
@@ -12,31 +13,21 @@ if((num % 3 === 0) && (num % 5 === 0)) {
 }
 =======
 /*Let's play mini FizzBuzz! For any given number, if the number is:
+=======
+let myNumber = 5;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 
-divisible by 3, print "Fizz".
-divisible by "5", print "Buzz".
-divisible by both 3 and 5, print "FizzBuzz".
-That is, if any of the above conditions apply, print the above words instead of the number.
-
-Otherwise, just print the number.*/
-
-const myNumber = Math.round(Math.random()*15);
-// Numbers must be Math.ceil() => rounds up
-// Math.floor() => rounds down
-// Math.round() => Rounds accordingly
-console.log(myNumber);
-let myString = ''; // STRING, but empty!
-if (myNumber % 3 === 0) {
-    myString = 'Fizz';
+if (!(myNumber % 3) && !(myNumber % 5)){
+    console.log('FizzBuzz');
+} else if (!(myNumber % 5)){
+    console.log('Buzz');
+}else if (!(myNumber % 3)){
+    console.log('Fizz')
+}else{
+    console.log(myNumber);
 }
-//console.log(myString);
-if (myNumber % 5 === 0) {
-    myString += 'Buzz';
-}
-//console.log(myString.length);
-//if (myString === undefined) { //myString === undefined
-if (!myString.length) {
-    myString = myNumber;
-}
+<<<<<<< HEAD
 console.log(myString);
 >>>>>>> e0d48b5cf863929099674555ecc858c035db9d03
+=======
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a

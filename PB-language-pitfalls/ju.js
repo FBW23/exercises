@@ -8,7 +8,7 @@
  console.log(typeof('hello'));
  console.log(typeof(3));
  console.log(typeof(NaN));
- 
+
 
 
 
@@ -20,7 +20,7 @@
 // Use a method to make sure that only `0.02` is printed.
 
 let a = 0.1 * 0.2;
-console.log(a.toFixed(2));
+console.log((0.1*0.2).toFixed(2));
 
 // #### 3. Infinity
 // * Divide Infinity by `0`. 
