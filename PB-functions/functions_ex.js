@@ -8,7 +8,7 @@ const addUp = (number) => {
 console.log(addUp(4));
 console.log(addUp(13));
 console.log(addUp(600));
-
+console.log('\n');
 console.log(`------------Task2--------------`);
 // 2. Cubed. Create a function that takes in three numbers and returns the sum of its cubes.
 
@@ -37,6 +37,7 @@ const powerCub = (a, b, c) => {
 console.log(powerCub(1, 5, 9));
 console.log(powerCub(2));
 console.log(powerCub());
+console.log('\n');
 console.log(`------------Task3--------------`);
 
 const dictionary = (string1, string2) => {
@@ -51,7 +52,7 @@ console.log(dictionary("bu", "button"));
 console.log(dictionary("tri", "triplet"));
 console.log(dictionary("beau", "pastry"));
 
-
+console.log('\n');
 console.log(`------------Task4--------------`);
 const lessThanOrEqualToZero = (nummer) => {
     if (nummer <= 0) {
@@ -66,7 +67,7 @@ console.log(lessThanOrEqualToZero(-4));
 console.log(lessThanOrEqualToZero(10));
 
 
-
+console.log('\n');
 console.log(`------------Task5--------------`);
 
 function char_count(str, letter) {
@@ -80,10 +81,16 @@ function char_count(str, letter) {
 }
 
 console.log(char_count("this is a string", "i"));
-
+console.log('\n');
 console.log(`------------Task6--------------`);
 const calculateBaseToExponent = (base, exponent) => (Math.pow(base, exponent));
 //    return Math.pow(base,exponent);
 console.log(calculateBaseToExponent(5, 5));
 console.log(calculateBaseToExponent(10, 10));
 console.log(calculateBaseToExponent(3, 3));
+console.log('\n');
+console.log(`------------Task7--------------`);
+const dogAge = (age) => (`Your doggo is ${age*7} years old in dog years`)
+console.log(dogAge(4));
+console.log(dogAge(7));
+console.log(dogAge(10));
