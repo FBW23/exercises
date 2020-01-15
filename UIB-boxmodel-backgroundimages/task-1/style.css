@@ -7,8 +7,13 @@ body {
 header {
     height: 30%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-image: url(/task-1/assets/background.jpg);
     background-repeat: repeat;
+=======
+    background-image: url(assets/background.jpg);
+    background-size: 20%;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 =======
     background-image: url("/task-1/assets/background.jpg");
     background-repeat: repeat;

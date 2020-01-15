@@ -7,11 +7,16 @@
     list-style: none;
 }
 
+<<<<<<< HEAD
 h1 {
+=======
+h1{
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
     text-align: center;
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 .review {
     text-align: center;
     text-shadow: 1px 1px 3px red;
@@ -37,6 +42,15 @@ i {
 
 .fa-grin-hearts {
     color: royalblue;
+=======
+.review{
+    text-shadow: 2px 2px red;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ul{
+    text-align: center;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 
 .fa-football-ball {

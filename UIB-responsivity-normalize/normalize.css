@@ -9,6 +9,9 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -348,6 +351,7 @@
   [hidden] {
     display: none;
   }
+<<<<<<< HEAD
 =======
 html {
   line-height: 1.15; /* 1 */
@@ -689,3 +693,5 @@ template {
   display: none;
 }
 >>>>>>> 2d7afc8ca2058ebd7cf72a38f4c43c8f314ab145
+=======
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a

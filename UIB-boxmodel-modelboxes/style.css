@@ -1,4 +1,21 @@
 * {
+<<<<<<< HEAD
+    text-align: center;
+    margin: 0
+}
+
+.inside-box {
+    background-color: turquoise;
+    color: gray;
+    margin: 18px 0;
+    padding: 15px 0;
+    
+}
+
+.secondary-box {
+    border-top: 15px solid #4E3C00;
+    border-bottom: 15px solid #4E3C00;
+=======
     margin: 0;
     text-align: center;
     margin: 1px 2px 3px;
@@ -35,10 +52,27 @@ body {
 
 .primary-box, .secondary-box, .inside-box {
     font-size: 1.5em;
+>>>>>>> 7721066b045618bf6cb6bfbb4bed3177a2893702
     padding: 15px 0;
 }
 
 .primary-box {
+<<<<<<< HEAD
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 2px 4px 2px cadetblue;
+}
+
+
+
+
+
+
+
+
+
+=======
     background: #2B2B2B;
     color: white;
 }

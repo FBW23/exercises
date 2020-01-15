@@ -1,5 +1,6 @@
 img {
     width: 100%;
+<<<<<<< HEAD
 
 }
 /* .container {
@@ -12,3 +13,14 @@ img {
     display: grid;
     grid-template-columns: minmax(100px, 350px) 1fr minmax(100px,350px);
 }  
+=======
+}
+
+.container {
+    display: grid;
+    /*grid-template-columns: 33.33% 33.33%, 33.33%*/
+    grid-template-columns: minmax(100px, 350px) 1fr minmax(100px, 350px);
+    grid-template-rows: 1fr;
+    grid-gap: 10px 10px;
+}
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a

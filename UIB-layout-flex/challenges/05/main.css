@@ -9,12 +9,17 @@
     border: 5px solid red;
     display: flex;
     height: 100vh;
+<<<<<<< HEAD
     width: 100%;
+=======
+    justify-content: space-around;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 
  div {
     height: 100px;
     background-color: darkgray;
+<<<<<<< HEAD
     border: 1px solid red;
 .up {
 display: flex;
@@ -24,5 +29,10 @@ height: 100%;
 .up div {
     background-color: yellowgreen;
     
+=======
+    margin: 1em;
+    border: 2px solid red;
+    text-align: center;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 

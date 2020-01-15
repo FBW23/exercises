@@ -8,8 +8,18 @@ div {
     border: 2px solid red;
     text-align: center;
 }
+<<<<<<< HEAD
 body {
     display: flex;
    flex-direction: column-reverse;
 align-items: center;
        }
+=======
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
