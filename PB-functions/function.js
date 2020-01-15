@@ -58,6 +58,16 @@ console.log(cubes);
 // dictionary("tri", "triplet") ➞ true
 // dictionary("beau", "pastry") ➞ false
 
-// const wordFunction = function(c, d) {
-//     if (d)
-// }
+ 
+const wordFunction = function(c, d) {
+    let word = c.charAt(0); // "b"
+    let string = d.charAt(0);
+    if (string === word) {
+        return true
+    } else {
+        return false;
+    }
+}
+
+const wordFunction2 = wordFunction("bianca", "richa"); //print false
+console.log(wordFunction2);
