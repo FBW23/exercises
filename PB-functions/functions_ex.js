@@ -27,58 +27,63 @@ const powerCub = (a, b, c) => {
         sum += Math.pow(c, 3);
     } return sum;
 }
-    //     if (a && b && c) {
-    //         return (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3));
-    //     } else if (a && b) {
-    //         return (Math.pow(a, 3) + Math.pow(b, 3));
-    //     } else if (a) { return Math.pow(a, 3); }
-    //     else { return 0; }
-    // }
-    console.log(powerCub(1, 5, 9));
-    console.log(powerCub(2));
-    console.log(powerCub());
-    console.log(`------------Task3--------------`);
+//     if (a && b && c) {
+//         return (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3));
+//     } else if (a && b) {
+//         return (Math.pow(a, 3) + Math.pow(b, 3));
+//     } else if (a) { return Math.pow(a, 3); }
+//     else { return 0; }
+// }
+console.log(powerCub(1, 5, 9));
+console.log(powerCub(2));
+console.log(powerCub());
+console.log(`------------Task3--------------`);
 
-    const dictionary = (string1, string2) => {
-        if (string2.startsWith(string1) === true) {
-            return true;
-        } else {
-            return false;
-        }
-
-    }
-    console.log(dictionary("bu", "button"));
-    console.log(dictionary("tri", "triplet"));
-    console.log(dictionary("beau", "pastry"));
-
-
-    console.log(`------------Task4--------------`);
-    const lessThanOrEqualToZero = (nummer) => {
-        if (nummer <= 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    console.log(lessThanOrEqualToZero(3));
-    console.log(lessThanOrEqualToZero(0));
-    console.log(lessThanOrEqualToZero(-4));
-    console.log(lessThanOrEqualToZero(10));
-
-
-
-    console.log(`------------Task5--------------`);
-
-    function char_count(str, letter) {
-        let letter_Count = 0;
-        for (let position = 0; position < str.length; position++) {
-            if (str.charAt(position) == letter) {
-                letter_Count += 1;
-            }
-        }
-        return letter_Count;
+const dictionary = (string1, string2) => {
+    if (string2.startsWith(string1) === true) {
+        return true;
+    } else {
+        return false;
     }
 
-    console.log(char_count("this is a string", "i"));
+}
+console.log(dictionary("bu", "button"));
+console.log(dictionary("tri", "triplet"));
+console.log(dictionary("beau", "pastry"));
 
-    console.log(`------------Task6--------------`);
+
+console.log(`------------Task4--------------`);
+const lessThanOrEqualToZero = (nummer) => {
+    if (nummer <= 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(lessThanOrEqualToZero(3));
+console.log(lessThanOrEqualToZero(0));
+console.log(lessThanOrEqualToZero(-4));
+console.log(lessThanOrEqualToZero(10));
+
+
+
+console.log(`------------Task5--------------`);
+
+function char_count(str, letter) {
+    let letter_Count = 0;
+    for (let position = 0; position < str.length; position++) {
+        if (str.charAt(position) == letter) {
+            letter_Count += 1;
+        }
+    }
+    return letter_Count;
+}
+
+console.log(char_count("this is a string", "i"));
+
+console.log(`------------Task6--------------`);
+const calculateBaseToExponent = (base, exponent) => (Math.pow(base, exponent));
+//    return Math.pow(base,exponent);
+console.log(calculateBaseToExponent(5, 5));
+console.log(calculateBaseToExponent(10, 10));
+console.log(calculateBaseToExponent(3, 3));
