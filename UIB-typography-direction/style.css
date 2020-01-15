@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 h1, h2 {
     text-align: center;
+=======
+h1,
+h2 {
+    text-align: center;
+     text-shadow: 10px 10px 10px yellow;
+
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 
 p {
     text-align: justify;
+<<<<<<< HEAD
 }
 
 .arabic {
@@ -12,4 +21,14 @@ p {
 
 i {
     font-size: 500px;
+=======
+    text-transform:lowercase;
+   
+}
+
+.arabic {
+    text-align: right;
+    text-decoration: underline;
+   
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }

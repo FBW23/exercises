@@ -9672,6 +9672,25 @@ main {
   min-height: 150px;
 >>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
   width: 18rem;
+<<<<<<< HEAD
+  margin-bottom: 30px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  margin: auto 0;
+=======
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 
 .card-body {
@@ -9794,6 +9813,100 @@ span {
   min-height: 150px;
   width: 18rem;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+.blue {
+  background: #1d508d;
+  min-height: 150px;
+  width: 18rem;
+}
+
+.purple {
+  background: #684e79;
+  min-height: 150px;
+  width: 18rem;
+}
+
+.hallo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.yellow1 {
+  background: #FFB900;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.yellow2 {
+  background: #ffc83f;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.yellow3 {
+  background: #FFF637;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.blue1 {
+  background: blue;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.blue2 {
+  background: #04046d;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.blue3 {
+  background: #b5b5e6;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.red1 {
+  background: red;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.red2 {
+  background: #64031a;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.red3 {
+  background: #d88383;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.purple1 {
+  background: purple;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.purple2 {
+  background: #570257;
+  min-height: 170px;
+  width: 6rem;
+}
+
+.purple3 {
+  background: #e7aee7;
+  min-height: 170px;
+  width: 6rem;
+}
+=======
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 >>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 
 /*# sourceMappingURL=main.css.map */

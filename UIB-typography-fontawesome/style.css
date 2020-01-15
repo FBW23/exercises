@@ -3,10 +3,26 @@
     list-style: none;
 }
 
+<<<<<<< HEAD
 h1 {
     text-align: center;
     text-decoration: underline;
 }
+=======
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.review{
+    text-shadow: 2px 2px red;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ul{
+    text-align: center;
+}
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 
 .review {
     text-align: center;

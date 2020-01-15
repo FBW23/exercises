@@ -6,7 +6,14 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 div {
+=======
+.halloworld,
+.box1,
+.box2,
+.box3 {
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
     width: 200px;
     height: 200px;
 }
@@ -14,6 +21,7 @@ div {
 .halloworld {
     background: orange;
     position: relative;
+<<<<<<< HEAD
     margin-left: 40%;
     align-self: center;
     text-align: center;
@@ -48,17 +56,27 @@ div {
 /* i m aware of alphabetical order but i m tired */
 body {
     font-family: Arapey, Montserrat, sans-serif;
+=======
+    /* top: 50%;
+    left: 50%;
+    para combinar porcentagem com pixels usa-se a propriedade calc
+    left:calc(50% + 5px)
+    transform: translate(-50%, -50%); */
+    margin: 0 auto;
+    right: 5px;
+    top: 7px;
+    text-align: center;
+
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a
 }
 
-main {
-    overflow: scroll;
-    width: 80%;
+.box1,
+.box2,
+.box3 {
     position: absolute;
-    left: 20%;
-    top: 100px;
-    height: 100%;
 }
 
+<<<<<<< HEAD
     [id *="section"] {
         border: 1px solid black;
         padding: 0.8em;
@@ -102,3 +120,27 @@ main {
 
     }
 >>>>>>> 4ba9acee11bb9effbdfe83968c41ed7b7f70cb50
+=======
+.box1 {
+    background: red;
+    bottom: 0;
+
+}
+
+.box2 {
+    background-color: rgb(0, 225, 85);
+
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.box3 {
+
+    background: rgb(0, 183, 255);
+    bottom: 20px;
+    left: 20px;
+    z-index: -1;
+
+}
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a

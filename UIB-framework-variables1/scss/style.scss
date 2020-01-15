@@ -1,0 +1,146 @@
+<<<<<<< HEAD:UIB-framework-variables1/style.css
+.huge,
+.big {
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.medium,
+.middle {
+  color: purple;
+  font-size: 3rem;
+}
+
+.small,
+.tiny {
+  color: green;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header,
+footer {
+  background: rgba(255, 255, 0, 0.39);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 10rem;
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 2rem;
+=======
+$my-gold:rgba(255, 255, 0, 0.39);
+$my-blue:blue;
+$my-purple:purple;
+$my-green:green;
+$my-firstfont: Arial, Helvetica, sans-serif;
+$my-secondfont:'Times New Roman', Times, serif;
+$my-lastfont:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10rem; 
+    background: $my-gold;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: $my-firstfont
+}
+
+h1 {
+    font-family: $my-firstfont;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a:UIB-framework-variables1/scss/style.scss
+}
+
+main {
+  margin: 0.5rem;
+}
+
+.huge {
+<<<<<<< HEAD:UIB-framework-variables1/style.css
+  font-size: 10rem;
+=======
+    font-family: $my-secondfont;
+    font-size: 10rem;
+    color:$my-blue;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a:UIB-framework-variables1/scss/style.scss
+}
+
+.big {
+<<<<<<< HEAD:UIB-framework-variables1/style.css
+  font-size: 8rem;
+}
+
+.medium {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+.middle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+=======
+    font-family: $my-secondfont;
+    font-size: 8rem;
+    color: $my-blue;
+}
+
+.medium {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 3rem;
+    color: $my-purple;
+}
+
+.middle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: $my-purple;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a:UIB-framework-variables1/scss/style.scss
+}
+
+.small {
+<<<<<<< HEAD:UIB-framework-variables1/style.css
+  font-size: 2rem;
+}
+
+.tiny {
+  font-size: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding-top: 1rem;
+=======
+    font-family: $my-lastfont;
+    font-size: 2rem;
+    color: $my-green;
+}
+
+.tiny {
+    font-family: $my-lastfont;
+    font-size: .5rem;
+    color: $my-green;
+    margin-bottom: 2rem;
+}
+
+footer {
+    height: 10rem;
+    background: $my-gold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1rem;
+>>>>>>> 67b86d63b5a7f483c338539ddf25515be07ae52a:UIB-framework-variables1/scss/style.scss
+}
+
+/*# sourceMappingURL=style.css.map */

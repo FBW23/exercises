@@ -1,8 +1,38 @@
-main {
-    font-family: sans-serif;
-    font-size: 15px;
+@media (min-width:0px) and (max-width:576px){
+    main {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    background-color: burlywood;
+   
+}
+}
+@media (min-width:577px) and (max-width:992px){
+    main {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: crimson;
+    background-color: burlywood;
+    margin: 30px;
+    margin: 20px;
+    }
+    li {
+        margin: 10px;
+    }
+   
 }
 
+@media (min-width:993px){
+    main {
+    font-family: cursive;
+    color: darkmagenta;
+    font-size: 30px;
+    
+}
+    body{
+        background-color: darksalmon;
+
+    }
 li {
     margin: 10px;
+}
 }

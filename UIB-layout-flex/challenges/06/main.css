@@ -2,6 +2,10 @@
 
 body {
     border: 5px solid red;
+    flex-direction: column;
+    display: flex;
+    height: 200vh;
+    align-items: center;
 }
 
 div {
