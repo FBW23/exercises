@@ -52,6 +52,10 @@ console.log(cubed(1, 5, 9));
 console.log(cubed(2));
 console.log(cubed());
 
+// JAMILS LÖSUNG
+// const cube2 = (...args) => args.length === 0 ? a = 0 : args.map(value => Math.pow(value, 3)).reduce((a, b) => a + b);
+// console.log(cubed2(2, 2));
+
 console.log();
 console.log('**3. String Check.**');
 console.log();
@@ -64,7 +68,25 @@ const compare = (word, str) => {
     }
 }
 
-let word = 'cheese';
-let str = 'bft';
+let word = 'motorhead';
+let str = 'mot';
 let result = compare(word, str);
 console.log(result);
+
+// // JAMILS LÖSUNG
+// const cubed3 = (a, b) => b.slice(0, a.length) === a ? true : false;
+// console.log(cubed3('c', 'cheese')); // expected result: true.
+
+console.log();
+console.log('**4. Less Than or Equal to Zero?**');
+console.log();
+
+const lessThanOrEqualToZero = (a) => a <= 0 ? true : false;
+
+let result4 = lessThanOrEqualToZero(-3);
+console.log(result4);
+
+console.log();
+console.log('**5. Count Occurrences.**');
+console.log();
+
