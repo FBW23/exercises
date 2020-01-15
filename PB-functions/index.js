@@ -25,21 +25,20 @@ console.log(myFunction(600));
 // * sumOfCubes() ➞ 0
 console.log('2. Cubed');
 
-let sum1 = 0;
 
 const sumOfCubes = (numb1, numb2, numb3) => {
     if (numb1, numb2, numb3) {
-        return sum1 = Math.pow(numb1,3) + Math.pow(numb2,3) + Math.pow(numb3,3);
+        return Math.pow(numb1, 3) + Math.pow(numb2, 3) + Math.pow(numb3, 3);
     } else if (numb1, numb2) {
-        return sum1 = Math.pow(numb1,3) + Math.pow(numb2,3);
-    }else if (numb1) {
-        return sum1 = Math.pow(numb1,3);
+        return Math.pow(numb1, 3) + Math.pow(numb2, 3);
+    } else if (numb1) {
+        return Math.pow(numb1, 3);
     } else {
-        return (0);
+        return 0;
     }
 };
 
-console.log(sumOfCubes(1,5,9));
+console.log(sumOfCubes(1, 5, 9));
 console.log(sumOfCubes(2));
 console.log(sumOfCubes());
 
@@ -52,3 +51,26 @@ console.log(sumOfCubes());
 // * dictionary("bu", "button") ➞ true
 // * dictionary("tri", "triplet") ➞ true
 // * dictionary("beau", "pastry") ➞ false
+console.log('3. String Check');
+
+const myString = (string, word) => {
+    if (word.slice(0,string.length) === string) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(myString("bu", "button"));
+console.log(myString("tri", "triplet"));
+console.log(myString("beau", "pastry"));
+console.log(myString("cho", "chateau"));
+
+// **4. Less Than or Equal to Zero?**
+// Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+
+// Examples:
+// * lessThanOrEqualToZero(3) ➞ false
+// * lessThanOrEqualToZero(0) ➞ true
+// * lessThanOrEqualToZero(-4) ➞ true
+// * lessThanOrEqualToZero(10) ➞ false
