@@ -157,8 +157,8 @@ console.log(`------------Task12--------------`);
 
 const isPrime = x => {
 
-    for (koko = 2; koko < x; koko++)
-        if (x % koko === 0) { return false; }
+    for (let koko = 2; koko < x; koko++)
+       { if (x % koko === 0) { return false; }}
 
 
     return x > 1;
@@ -184,7 +184,7 @@ console.log(`------------Task13--------------`);
 const looksLikeMail = (mailtoCheck) => {
     let lastAtPos = mailtoCheck.lastIndexOf('@');
     let lastDotPos = mailtoCheck.lastIndexOf('.');
-    return (lastAtPos < lastDotPos && lastAtPos > 0 && mailtoCheck.indexOf('@@') == -1 && lastDotPos > 2 && (mailtoCheck.length - lastDotPos) > 2);
+    return (lastAtPos < lastDotPos && lastAtPos > 0 && mailtoCheck.indexOf('@@') === -1 && lastDotPos > 2 && (mailtoCheck.length - lastDotPos) > 2);
 }
 
 console.log(looksLikeMail('john.smith@email.com'));
