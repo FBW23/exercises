@@ -106,6 +106,8 @@ console.log(calcSupply(40, 3));
 console.log('\n');
 console.log(`------------Task9--------------`);
 const isWaldoHere = (waldo) => waldo.toLowerCase().includes('waldo');
+
+
 console.log(isWaldoHere("I found you Waldo!"));
 console.log(isWaldoHere("is wally here?"));
 console.log(isWaldoHere("I found you Waldo!"));
