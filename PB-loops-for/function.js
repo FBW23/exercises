@@ -53,8 +53,24 @@ myfunction3('Julia', 'Reis');
 
 console.log("......................................");
 
-testFunction();
-funtion testFunction(); {
-    console.log('How R You');
+// testFunction();
+// funtion testFunction(); {
+//     console.log('How R You');
 
-}
+// }
+console.log("................... FunctionConvert................");
+
+const convert = (minutes) => {
+    //calculate from Minutes to Seconds
+    // minutes * 60 seconds = seconds
+console.log(minutes*60);
+return minutes*60;
+};
+    let output = convert(5);
+    console.log(output);
+
+    console.log("................shorter version...............");
+
+    const convert2 = (minutes) => minutes*60;
+    const myOutput2 = convert2(100);
+    console.log(myOutput2);
