@@ -122,5 +122,6 @@ Create a function that takes a string, checks if it's a valid email address, and
 * The "." and the "@" must be in the appropriate places.
 * e.g. "john.smith@com" is invalid while "john.smith@email.com" is valid.
 
+
 **Good Luck & Enjoy :)**
 
