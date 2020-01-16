@@ -243,6 +243,12 @@ console.log('**12. isPrime?**');
 console.log();
 
 const isPrime = (number) => {
+    if (number === 0) {
+        return false;
+    }
+    if (number === 1){
+        return false;
+    }
     for (let i = 2; i < number; i++) { // start from 2, stop at the number, increment
         if (number % i === 0) {
             return false;
@@ -250,6 +256,6 @@ const isPrime = (number) => {
     } return true;
 }
 
-console.log(isPrime(7));
-console.log(isPrime(9));
 console.log(isPrime(10));
+console.log(isPrime(1001));
+console.log(isPrime(10001));
