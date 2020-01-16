@@ -94,15 +94,25 @@ const countOccurrences = (string, letter) => {
     let letterPosition = 0;
     let matchingSpot = 0;
     for (let i = 0; i < string.length; i++) {
-        if (string.indexOf(letter, firstMatch) > -1) {
+        if (string.indexOf(letter, matchingSpot) > -1) {
             letterPosition++;
             matchingSpot = string.indexOf(letter, matchingSpot) + 1;
         }
-    } return letterPosition;
+    }
+    return letterPosition;
 }
-let result5 = countOccurrences('precipitelissimevolmente', 'e');
-console.log(countOccurrences);
+let result5 = countOccurrences('precipitevolissimevolmente', 'e');
+console.log(result5);
 
+// JOAOS SOLUTION
+// function countOccurrences(string, letter) {
+//     let RegEx = new RegExp(letter, 'g');
+//     console.log(RegEx);
+//     let result = string.match(regEx).legth;
+//     console.log('there are '+ result + ' ' + letter);
+// }
+// console.log('task5');
+// console.log(countOccurrences('pupipupupupi', 'p'));
 
 console.log();
 console.log('**6. X To The Power of X.**');
@@ -124,6 +134,10 @@ const dogAge = (a) => {
     return a * 7;
 }
 
+//JULIENS LÖSUNG
+// const dogAge = (age) => 'Your dog is ' + age * 7 + ' in dog years.';
+// console.log(dogAge(4));
+
 let finalAge = dogAge(5);
 console.log(`Your dog is ${finalAge} years old in dog years!`);
 
@@ -131,14 +145,27 @@ console.log();
 console.log('**8. A Lifetime Supply...**');
 console.log();
 
-const calcSupply = (presentAge, numberOfSnacks) => {
-    let amountSoFar = presentAge * numberOfSnacks * 365;
-    let lifetimeAmount = 80 * 365 * numberOfSnacks;
-    return lifetimeAmount - amountSoFar;
-}
+// const calcSupply = (presentAge, numberOfSnacks) => {
+//     let amountSoFar = presentAge * numberOfSnacks * 365;
+//     let lifetimeAmount = 80 * 365 * numberOfSnacks;
+//     return lifetimeAmount - amountSoFar;
+// };
 
-let result8 = calcSupply(37, 2);
-console.log('You will need ' + result8 + ' chocolate bars (3 a day) to last you til the age of 80.');
+// const calcSupply2 = (presentAge, numberOfSnacks) => {
+//     let leftoverYears = 80 - presentAge;
+//     return leftoverYears * 365 * numberOfSnacks;
+// };
+
+// const calcSupply3 = (presentAge, numberOfSnacks) => (80 - presentAge) * 365 * numberOfSnacks;
+// let varNumOfSnacks = 33;
+// let result8 = calcSupply3(25, varNumOfSnacks);
+// console.log('You will need ' + result8 + ' chocolate bars (' + varNumOfSnacks +  ' a day) to last you til the age of 80.'); 
+
+const calcSupply4 = (presentAge, numberOfSnacks) => {
+    return 'You will need ' + (80 - presentAge) * 365 * numberOfSnacks + ' chocolate bars (' + numberOfSnacks + ' a day) to last you til the age of 80.';
+};
+
+console.log(calcSupply4(25, 2));
 
 console.log();
 console.log('**9. Where\'s Waldo?**');
@@ -153,12 +180,76 @@ const isWaldoHere = (str) => {
     }
 };
 
- isWaldoHere("is there wal here ?");
- console.log('is there wal here? ->', isWaldoHere("is there wal here ?"));
- console.log("I found you Waldo! ->", isWaldoHere("I found you Waldo!"));
- console.log("is wally here? ->", isWaldoHere("is wally here?"));
- console.log("waldo is here ->", isWaldoHere("waldo is here"));
+isWaldoHere("is there wal here ?");
+console.log('is there wal here? ->', isWaldoHere("is there wal here ?"));
+console.log("I found you Waldo! ->", isWaldoHere("I found you Waldo!"));
+console.log("is wally here? ->", isWaldoHere("is wally here?"));
+console.log("waldo is here ->", isWaldoHere("waldo is here"));
 
- console.log();
- console.log('**10. Pie.**');
- console.log();
+console.log();
+console.log('**10. Pie.**');
+console.log();
+
+const equalSlices = (numOfTotalSlices, numOfRecipients, numOfSlicesPerIndividual) => numOfTotalSlices >= numOfRecipients * numOfSlicesPerIndividual;
+console.log(equalSlices(11, 5, 3));
+
+console.log();
+console.log('**11. XO**');
+console.log();
+
+
+// TEST-DRIVER DESIGN
+function XO(myString) {
+    // format string correctly
+    // counting
+    // comparing
+    // decision: true or false?
+
+    // Do something
+    // Counting
+    if (myString) {
+        // Matching
+
+        let matchXs = myString.match(/x/gi); // we need the "g" to check the whole thing and the "i" to ignore case sensitivity.
+        let matchOs = myString.match(/o/gi);
+        let allXs = 0;
+        let allOs = 0;
+        // Counting
+        if (matchXs) {
+            allXs = matchXs.length;
+        }
+        if (matchOs) {
+            allOs = matchOs.length;
+        }
+        console.log(allXs);
+        console.log(allOs);
+        // Comparing
+        if (allXs === allOs) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(XO());
+console.log(XO("xxoo"));
+console.log(XO("ooxXm"));
+console.log(XO("zpzpzpp"));
+console.log(XO("zzoo"));
+
+console.log();
+console.log('**12. isPrime?**');
+console.log();
+
+const isPrime = (number) => {
+    for (let i = 2; i < number; i++) { // start from 2, stop at the number, increment
+        if (number % i === 0) {
+            return false;
+        } 
+    } return true;
+}
+
+console.log(isPrime(7));
+console.log(isPrime(9));
+console.log(isPrime(10));
