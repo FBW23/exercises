@@ -120,7 +120,7 @@ console.log(equalSlices(24, 12, 2));
 
 console.log('\n');
 console.log(`------------Task11--------------`);
-const XO=(string5)=> {
+const XO = (string5) => {
     string5 = string5.toLowerCase();
     let arrayOfCharacters = string5.split("");
 
@@ -130,9 +130,9 @@ const XO=(string5)=> {
     let countO = arrayOfCharacters.reduce(function (n, val) {
         return n + (val === "o");
     }, 0);
-     
+
     return countX === countO;
-    
+
 }
 console.log(XO("ooxx"));
 console.log(XO("xooxx"));
@@ -156,14 +156,13 @@ console.log('\n');
 console.log(`------------Task12--------------`);
 
 const isPrime = x => {
-   
-        for (koko = 2; koko < x; koko++)
-        if (x % koko === 0) 
-            {return false;}
+
+    for (koko = 2; koko < x; koko++)
+        if (x % koko === 0) { return false; }
 
 
-            return x>1;
-    } 
+    return x > 1;
+}
 console.log(isPrime(7));
 console.log(isPrime(9));
 console.log(isPrime(10));
@@ -182,12 +181,13 @@ console.log(`------------Task13--------------`);
 // * e.g. "john@example.com" is valid while "@example.com" is invalid.
 // * The "." and the "@" must be in the appropriate places.
 // * e.g. "john.smith@com" is invalid while "john.smith@email.com" is valid.
-const looksLikeMail = (mailtoCheck)=> {
+const looksLikeMail = (mailtoCheck) => {
     let lastAtPos = mailtoCheck.lastIndexOf('@');
     let lastDotPos = mailtoCheck.lastIndexOf('.');
-    return (lastAtPos < lastDotPos && lastAtPos > 0 && mailtoCheck.indexOf('@@') == -1 && lastDotPos > 2 && (mailtoCheck.length - lastDotPos) > 2);}
+    return (lastAtPos < lastDotPos && lastAtPos > 0 && mailtoCheck.indexOf('@@') == -1 && lastDotPos > 2 && (mailtoCheck.length - lastDotPos) > 2);
+}
 
-    console.log(looksLikeMail('john.smith@email.com'));
-    console.log(looksLikeMail('john.smith@com'));
-    console.log(looksLikeMail('disposable.style.email.with+symbol@example.com'));
-    console.log(looksLikeMail('üñîçøðéüñîçøðé.com'));
+console.log(looksLikeMail('john.smith@email.com'));
+console.log(looksLikeMail('john.smith@com'));
+console.log(looksLikeMail('disposable.style.email.with+symbol@example.com'));
+console.log(looksLikeMail('üñîçøðéüñîçøðé.com'));
