@@ -253,6 +253,23 @@ const isPrime = (number) => {
     } return true;
 }
 
-console.log(isPrime(7));
+console.log(isPrime(4));
 console.log(isPrime(9));
 console.log(isPrime(5));
+
+console.log();
+console.log('**13. Validate Email.**');
+console.log();
+
+const validateEmail = (mail) => {
+    let matchAt = mail.match(/x/gi);
+    let matchDot = myString.match(/./gi);
+    let allAts = 0;
+    let allDots = 0;
+    if (matchAt) {
+        all = matchXs.length;
+    }
+    if (matchOs) {
+        allAts = matchOs.length;
+    }
+}
