@@ -5,11 +5,12 @@
 // **1. Add Up.**
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
 const myFunction = (number1) => {
-    let  myFinal = 0; 
+    let myFinal = 0;
     for (let myResult = 1; myResult <= number1; myResult++) {
-        myFinal+=myResult;
-    
-    } return myFinal;
+        myFinal += myResult;
+
+    }
+    return myFinal;
 }
 console.log(myFunction(4));
 console.log(myFunction(13));
@@ -29,39 +30,41 @@ console.log(".....................1..............");
 // **2. Cubed.**
 // Create a function that takes in three numbers and returns the sum of its cubes.
 
-const myValue = (a,b,c) => {
+const myValue = (a, b, c) => {
     if (a && b && c) {
-        return Math.pow(a,3)+Math.pow(b,3)+Math.pow(c,3);
+        return Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3);
+    } else if (a && b) {
+        return Math.pow(a, 3) + Math.pow(b, 3);
+    } else if (a) {
+        return Math.pow(a, 3);
+    } else {
+        return 0;
     }
- else if (a && b) {
-    return Math.pow(a,3)+Math.pow(b,3);
- } else if (a) {
-    return Math.pow(a,3);
- } else {
-     return 0;
- }
-  
- }
- 
 
-const myCube=myValue(1,5,9);
-    console.log(myCube);
-    console.log(myValue(2));
-    console.log(myValue());
+}
 
-    console.log("..............2.................");
 
-const powerCub = (a,b,c) => {
+const myCube = myValue(1, 5, 9);
+console.log(myCube);
+console.log(myValue(2));
+console.log(myValue());
+
+console.log("..............2.................");
+
+const powerCub = (a, b, c) => {
     let sum = 0;
     if (a) {
-        sum += Math.pow(a,3);
-    }if (b) {
-        sum += Math.pow(b,3);
-    } if (c) {
-        sum += Math.pow(c,3);
-    } return sum;
+        sum += Math.pow(a, 3);
+    }
+    if (b) {
+        sum += Math.pow(b, 3);
+    }
+    if (c) {
+        sum += Math.pow(c, 3);
+    }
+    return sum;
 }
-console.log(powerCub(1,5,9));
+console.log(powerCub(1, 5, 9));
 console.log(powerCub(4));
 console.log(powerCub());
 
@@ -86,21 +89,21 @@ console.log("......................2....................");
 
 
 // startsWith = method determines whether a string begins with the characters of a specified string, returning true or false as appropriate.
-const dictionary = (string1, string2) => { 
-    if (string2.startsWith(string1) === true) { 
+const dictionary = (string1, string2) => {
+    if (string2.startsWith(string1) === true) {
         return true
 
-    }else {
+    } else {
         return false
     }
 }
-console.log(dictionary("bu","button"));
-console.log(dictionary("tri","triplet"));
+console.log(dictionary("bu", "button"));
+console.log(dictionary("tri", "triplet"));
 console.log(dictionary("beau", "pastry"));
 
 console.log("...........3a.............");
 
-const cubed3 = (y,z) => y.startsWith(z)? true : false; 
+const cubed3 = (y, z) => y.startsWith(z) ? true : false;
 console.log(cubed3("ij", "ijojijo"));
 
 
@@ -115,12 +118,12 @@ console.log("..................3......................");
 
 const lessThanOrEqualToZero = (number) => {
     if (number <= 0) {
-        return true 
+        return true
 
-        } else {
-            return false
-        }
+    } else {
+        return false
     }
+}
 console.log(lessThanOrEqualToZero(3));
 console.log(lessThanOrEqualToZero(0));
 console.log(lessThanOrEqualToZero(-4));
@@ -130,7 +133,7 @@ console.log(".........................Shorter way 4.....................");
 
 const lessThan = (f) => f <= 0;
 console.log('jgklfjlk')
-console.log(  3<=0);
+console.log(3 <= 0);
 let result4 = lessThan(3);
 console.log(result4);
 
@@ -149,14 +152,14 @@ console.log(".........................4.....................");
 // i.e. 
 // countOccurrences("this is a string", "i") ➞ 3 
 
-const countOccurrences = (string , letter) => {
-        let sum5 = 0;
-        for (let count = 0; count < string.length; count++) {
-            if (string.charAt(count)=== letter) {
-                sum5 += 1;
-            }
+const countOccurrences = (string, letter) => {
+    let sum5 = 0;
+    for (let count = 0; count < string.length; count++) {
+        if (string.charAt(count) === letter) {
+            sum5 += 1;
         }
-        return sum5
+    }
+    return sum5
 }
 console.log(countOccurrences("this is a string", "i"));
 
@@ -174,9 +177,9 @@ const calculateBase = (base, exponent) => {
     return Math.pow(base, exponent);
 }
 
-console.log(calculateBase(5,5));
-console.log(calculateBase(10,10));
-console.log(calculateBase(3,3));
+console.log(calculateBase(5, 5));
+console.log(calculateBase(10, 10));
+console.log(calculateBase(3, 3));
 
 
 console.log("...........................6..........................")
@@ -186,7 +189,7 @@ console.log("...........................6..........................")
 // i.e. 
 //  dogAge(4) ➞ "Your doggo is 28 years old in dog years!"
 
-const doggie =(years) => {
+const doggie = (years) => {
     return (years * 7)
 }
 console.log(doggie(4));
@@ -203,7 +206,7 @@ console.log("...........................7..........................");
 // calcSupply(40, 3) ➞ "You will need 43,800 packets of crisps  (3 a day) to last you til the age of 80."
 
 let maxAge = 80;
-const calcSupply = (age, amount) => (80-age)*365*(amount);
+const calcSupply = (age, amount) => (80 - age) * 365 * (amount);
 console.log(calcSupply(25, 2));
 console.log(calcSupply(40, 3));
 
@@ -218,7 +221,7 @@ console.log("......................8............................");
 // * isWaldoHere("is wally here?") ➞ false
 // * isWaldoHere("waldo is here") ➞ true
 
-const Waldo =(o) => o.toLowerCase().includes("waldo");
+const Waldo = (o) => o.toLowerCase().includes("waldo");
 
 
 console.log(Waldo("is there wal here ?"));
@@ -241,7 +244,7 @@ console.log("......................9..............................");
 // * equalSlices(8, 3, 3) ➞ false
 // * equalSlices(24, 12, 2) ➞ true
 
-const equalSlices = (g,h,j) =>  g>=h*j;
+const equalSlices = (g, h, j) => g >= h * j;
 
 console.log(equalSlices(8, 3, 2));
 
@@ -250,7 +253,41 @@ console.log("............10......................");
 // Create a function that takes a string, checks if it has the same number of 'x's and 'o's and returns either true or false.
 
 // Notes:
-	
+
+// const XO = (string) => string.toLowerCase().includes('ooxx')? true : false;
+
+
+//G IS FOR THE SEARCH GLOBAL
+//i is for ignore case sensitivity
+function XO(myString) {
+    if (myString) {
+        let matchXs = myString.match(/x/gi); // gi searching for the x
+        let matchOs = myString.match(/o/gi); // searching for the o
+        let allXs = 0;
+        let allOs = 0;
+        if (matchXs) {
+            allXs = matchXs.length;
+        }
+        if (matchOs) {
+            allOs = matchOs.length;
+        }
+        if (allXs === allOs) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+// const XO = (o,x) => o.substring(x)? true : false;
+console.log(XO("ooxx"));
+console.log(XO("xooxx"));
+console.log(XO("ooxXm"));
+console.log(XO("zpzpzpp"));
+console.log(XO("zzoo"));
+
 // * Return a boolean value (true or false).
 // * The string can contain any character.
 // * When neither an x nor an o is in the string, return true.
@@ -262,13 +299,28 @@ console.log("............10......................");
 // * XO("zpzpzpp") ➞ true (returns true if no x and o)
 // * XO("zzoo") ➞ false
 
+console.log("........................11.............................");
+
 // **12. isPrime?**
 // Create a function that returns true if a number is prime and false if it's not. **NB:** a prime number is any positive integer *greater than 1*, which is *only evenly divisible by two divisors: itself and 1*. The first ten prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29.
+const isPrime = prime => {
+    for (let nex = 2; nex < prime; nex++)
+        if (prime % nex === 0) return false;
+    return prime > 1;
+}
+// nex is = 2 but smaller then prime with the increament ++
+// prime devide by nex will be 0
+
+console.log(isPrime(7));
+console.log(isPrime(9));
+console.log(isPrime(11));
 
 // Examples:
 // * isPrime(7) ➞ true
 // * isPrime(9) ➞ false
 // * isPrime(10) ➞ false
+
+console.log("........................12..................");
 
 // **13. Validate Email.**
 // Create a function that takes a string, checks if it's a valid email address, and then accordingly returns either true or false.
@@ -281,4 +333,3 @@ console.log("............10......................");
 // * e.g. "john.smith@com" is invalid while "john.smith@email.com" is valid.
 
 // **Good Luck & Enjoy :)**
-
