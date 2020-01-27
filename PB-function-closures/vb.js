@@ -50,9 +50,9 @@ console.log(multiplier(6)(5));
 
 
 let currentAge = 40;
-let retirementAge = 60;
-let monthlyIncome = 1000;
-let saving = 0.1;
+let retirementAge = 65;
+let monthlyIncome = 2000;
+let saving = 0.05;
 
 !function (currentAge, retirementAge, monthlyIncome, saving) {
     return console.log(`${(retirementAge - currentAge )* 12 * monthlyIncome * saving}`);
