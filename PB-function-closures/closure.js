@@ -25,3 +25,14 @@ let wage = (1000 * 0.1);
  return console.log('output = '+`${(age - person) * 12 * wage}`)
 
 })(person,age,wage)
+
+console.log(".........................");
+
+let person1 = 40;
+let age1 = 65;
+let wage1 = (2000 * 0.05);
+
+(output = function (person1, age1, wage1) {
+ return console.log('output = '+`${(age1 - person1) * 12 * wage1}`)
+
+})(person1,age1,wage1)
