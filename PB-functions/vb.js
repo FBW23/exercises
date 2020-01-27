@@ -1,29 +1,47 @@
+// # Functions Exercises
 
-//Declaring a function
+// Print your answers to the console.
 
-function multiplyWithTwo(number){
-    //here we can define what should happen
-    //function block
-    console.log(number*2);
+// **1. Add Up.**
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+// Examples:
+// * addUp(4) ➞ 10
+// * addUp(13) ➞ 91
+// * addUp(600) ➞ 180300
+
+console.log(`// # Functions Exercises
+
+// Print your answers to the console.
+
+// **1. Add Up.**
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+// Examples:
+// * addUp(4) ➞ 10
+// * addUp(13) ➞ 91
+// * addUp(600) ➞ 180300`);
+
+
+const exercise = (addUp) => {
+    let sum = 0;
+    for (let i = 1; i <= addUp; i++) {
+
+        sum += i;
+    }
+    return sum;
 }
 
-//calling function with an argument 
-multiplyWithTwo(5);
+let sum = exercise(600);
+console.log(sum);
 
-// Anonymus function //Function declaration as values
-const myFunction= function (number) {
-    //here we can define what should happen
-    //function block
-    console.log(number*2);
-}
 
-//Calling a function with an argument
-myFunction(15);
 
-//THIRD DECLARATION 1048
 
-//Arrow function
-const myArrowFunction= (number) => {
-    console.log(number*2);
-}
-myArrowFunction(8);
+
+
+
+
+balazs=5;
+console.log(balazs);
+
