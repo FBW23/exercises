@@ -55,12 +55,12 @@ console.log(multiplier(6)(5));
 console.log('3. Calculate Money Saved till Pension Day!');
 
 
-(function moneySaver(currentAge, retirementAge, incomes, percentage) { 
-    let sumTimeLeft = retirementAge - currentAge;
-    let moneyEarned = (sumTimeLeft * 12) * incomes;
+(function (currentAge, retirementAge, incomes, percentage) { 
     if (currentAge>= retirementAge) {
         return console.log('You\'re already retired!');
     } else {
+        let sumTimeLeft = retirementAge - currentAge;
+        let moneyEarned = (sumTimeLeft * 12) * incomes;    
         let moneySaved = moneyEarned*percentage;
         return console.log('You will save ' + moneySaved + '€');
     }
