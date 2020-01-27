@@ -1,4 +1,4 @@
-// add
+// #### 1. Addition
 function add(a) {
     return function(b) {
         return a + b;
@@ -6,7 +6,7 @@ function add(a) {
     
 }
 
-// Multiplier
+// #### 2. Multiply
 const multiplier = function(a) {
     return function(b) {
         return a * b;
@@ -16,7 +16,7 @@ const multiplier = function(a) {
 console.log(multiplier(2)(2));
 console.log(multiplier(3)(4));
 
-// Pension
+// #### 3. Calculate Money Saved till Pension Day!
 (function(age,retAge,mWage,percentage) {
     
     let result;
