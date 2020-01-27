@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 function add (a) {
     return function(b) {
         return a + b;
+=======
+// Default regular function
+function add(a) {
+    return function(b) {
+        return a+b;
+>>>>>>> a2b661b7b4ded5fce0a81d9bea9a3f30160626cf
     };
 }
 console.log(add(3)(4));
 console.log(add(5)(10));
 
+<<<<<<< HEAD
 //=======================================
 
 function multiply(c) {
@@ -45,3 +53,17 @@ if (age >= retirementAge){
 
 }
 }(40, 65, 2000, 0.05));
+=======
+// break 1245 
+
+// Anonymous function
+const multiplier = function (c) {
+    return function (d) {
+        return c * d;
+    }; // closing the return from line 14 
+}; // closing the const statement
+console.log(multiplier(3)(4));
+
+
+
+>>>>>>> a2b661b7b4ded5fce0a81d9bea9a3f30160626cf
