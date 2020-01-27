@@ -2,13 +2,11 @@
 // Example: passing 3 arguments when calling the function should return the number 3, passing 15 arguments should return the umber 15
 
 const howManyArgs = (...args) => {
-    let total=0;
-    for(let i = 0; i < args.length;i++) {
-          
+             
          return args.length
     }; 
     
-    }
+    
     
 
 
