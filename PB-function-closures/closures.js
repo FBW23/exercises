@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 console.log(`---------------1-------------------`);
 function add (a) {
     return function (b){
+=======
+// Default regular function
+function add(a) {
+    return function(b) {
+>>>>>>> 83f655015c05631cb3892d6a23f1cbbe7943c7b3
         return a+b;
     };
 }
