@@ -6,12 +6,12 @@ const exponent = (num, exp = 2) => {
   let result = 1; // starts from one
 
   for (let i = 0; i < exp; i++) { // i < exp (second argument = exp = 3)
-    // * for the first case *
+    // *** for the first case ***
     // first loop result = 3 (num) * 1 (result) = 3
     // second loop result = 3 (num) * 3 (result) = 9
     // third loop result = 3 (num) * 9 (result) = 27
 
-    // * for the second case * exp = 2 set to default
+    // *** for the second case *** exp = 2 set to default
     // first loop result = 3 (num) * 1 (result) = 3
     // second loop result = 3 (num) * 3 (result) = 9
     result = num * result;
