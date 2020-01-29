@@ -427,52 +427,166 @@ if (reversed === str) {
 // Write a program that outputs: 9 7 5 3 1;
 
 
-for (let num = 9; num >= 0;num-=2) {
+for (let num = 9; num >= 0; num -= 2) {
     console.log(num);
-    
-    
+
+
 }
 
 // "Peter Picker picked pickles" isAllitaretion?
 
 
-let sentence = "Peter Picker picked pickles";
+// let sentence = "Peter Picker picked pickles";
 
-console.log(sentence);
+// console.log(sentence);
 
-for (let startIndex=0;startIndex<=sentence.length-1;startIndex++) {
-    firstChar = sentence.charAt(startIndex) //the first character of the sentence
-
-
-    let otherChar=firstChar;// the character we compare to the first character( first character of the next word
+// for (let startIndex=0;startIndex<=sentence.length-1;startIndex++) {
+//     firstChar = sentence.charAt(startIndex) //the first character of the sentence
 
 
-
-    sentence = sentence.toLowerCase();// turns the sentence into lowercase , so we can look for similarities
-
-    for(let space=sentence.search(" "); space>=sentence.length // searches for the position of the first "SPACE" in the sentence, loop runs until it had looked for spaces across the whole word
-
-
-    let remain =sentence.substr(space+1); //cuts the first word off including the first space, so we could potentially repeat the previous search for the "new first SPACE" (The one after the 2nd word)
-
-            startIndex=remain.search(" ");// Was hoping to search for the next new space,by  but it did not work out
+//     let otherChar=firstChar;// the character we compare to the first character( first character of the next word
 
 
 
+//     sentence = sentence.toLowerCase();// turns the sentence into lowercase , so we can look for similarities
+
+//     for(let space=sentence.search(" "); space>=sentence.length;){ // searches for the position of the first "SPACE" in the sentence, loop runs until it had looked for spaces across the whole word
 
 
-            console.log(startIndex)
-            
-       
-    
-    
-    
-       
+//     let remain =sentence.substr(space+1); 
+//     //cuts the first word off including the first space, so we could potentially repeat the previous search for the "new first SPACE" (The one after the 2nd word)
 
-    //console.log(firstChar)
+//             startIndex=remain.search(" ");// Was hoping to search for the next new space,  but it did not work out
 
 
 
 
+
+
+//     }
+//     console.log(startIndex)
+
+
+// }
+
+
+
+//===========================================================================================
+let sentence = "Peter Picker picked pickles pickle";
+sentence = sentence.toLowerCase();
+lastSpace = sentence.lastIndexOf(" ");
+sentenceFirstLetter = sentence.charAt(0)
+lastWordFirstLetter = sentence.charAt(lastSpace + 1);
+
+console.log(lastSpace);
+spaceOne = sentence.indexOf(" ");
+console.log(spaceOne);
+otherSpaces = sentence.indexOf(" ", spaceOne + 1);
+
+
+
+
+for (let spaces = sentence.indexOf(" "); spaces <= lastSpace; spaces++) {
+
+    // var str = "food",
+    // index1 = str.indexOf("o"),
+    // index2 = str.indexOf("o", index1+1);
+
+
+    otherSpaces = sentence.indexOf(" ", spaces + 1);
+    if (sentenceFirstLetter === lastWordFirstLetter) {
+        console.log(`could be an alliteration`);
+    } else {
+        console.log('not an alliteration')
+    }
+
+
+    // console.log(spaces);
 
 }
+
+
+
+
+
+//  let remain =sentence.substr(space+1);
+
+//    console.log(remain)
+//   let nextSpace=remain.indexOf(' ');
+
+//   console.log(nextSpace)
+//   remain2=remain.substr(nextSpace+1);
+//   console.log(remain2)
+
+//   let nextSpace2=remain2.indexOf(' ');
+//   console.log(nextSpace2)
+//   remain3=remain2.substr(nextSpace+1);
+//   console.log(remain3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //===============================================================================
+// //let sentence = "Peter Picker picked pickles";
+// let sentence = `jdss jdkjn jdgkn jdhfudh jbsvdvfdvdv`;
+// sentence = sentence.toLowerCase();
+// console.log(sentence);
+// let firstLetter = sentence.charAt(0);
+// //console.log(`firstletter:${firstLetter}`)
+// let alliteration;
+
+// let lastSpaceindex = sentence.lastIndexOf(' ');
+// for (let firstSpaceIndex = sentence.indexOf(' '); firstSpaceIndex <= lastSpaceindex; firstSpaceIndex++) {
+//     //console.log(firstSpaceIndex)
+//    // console.log(lastSpaceindex)
+//     let nextLetter = sentence.charAt(firstSpaceIndex + 1)
+//   //  console.log(`${nextLetter} at ${firstSpaceIndex}`)
+//   //  console.log(`Is ${firstLetter} matching ${nextLetter}?`)
+//   //  console.log(`Is ${firstLetter} matching ${nextLetter} ?`)
+//     if (firstLetter === nextLetter) {
+//         alliteration = true;
+//     } else {
+//         alliteration = false;
+//     }
+
+// }
+// if (alliteration) {
+//     console.log(`It is an alliteration`)
+// } else {
+//     console.log(`It is not an Alliteration `)
+
+// }
+
+
+
+let isAllitaretion = false;
+const input = "Peter Picker picked pickles";
+const myString = input.toLowerCase().trim();
+const firtsChar = myString.charAt(0);
+
+
+
+for (let nextSpace = myString.indexOf(' '); nextSpace != -1;  nextSpace = myString.indexOf(' ', nextSpace + 1)) {
+
+    console.log(nextSpace);
+ if (firtsChar === myString.charAt(nextSpace + 1)) {
+        isAllitaretion=true;
+        console.log(`It's a match! It could be an alliteration`);
+    }else{
+        isAllitaretion=false;
+        console.log(`It's not an alliteration`);
+        break;
+    }
+   
+}
+
+console.log(`Your sentence: ${input} is an Allitaretion : ${isAllitaretion}`);

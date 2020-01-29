@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Create a for loop that prints the following:  >1 1 1 2 2 2 3 3 3 4 4 4;
 console.log(`>`);
 console.log(`>`);
@@ -54,8 +55,21 @@ for (let i = 0; i <= 2; i++) {
     for (let j = 0; j <= 4; j++) {
         output2 += j;
         
+=======
+
+let output = '';
+for (let i = 0; i < 3; i++){
+    for (let j = 0; j < 5; j++){
+        
+    console.log(j);
+>>>>>>> a7b3eb40d3f136c74d79d8bce3d310b2e5ce66c4
     }
 }
 
 
+<<<<<<< HEAD
 console.log(output2);
+=======
+
+
+>>>>>>> a7b3eb40d3f136c74d79d8bce3d310b2e5ce66c4
