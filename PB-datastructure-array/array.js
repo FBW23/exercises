@@ -5,3 +5,5 @@ console.log(thirdElement);
  myArray[3]=['fourth element'];
  
   console.log(myArray);
+
+  
