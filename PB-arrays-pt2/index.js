@@ -53,14 +53,81 @@ console.log(reverse(111222));
 //string in its parameters and counts the number of 
 //vowels (i.e. in English, "a, e, i, o, u") in the string.
 
-const findVowels = (str) => {
-  let vowels = ["a", "e", "i", "o", "u"];
-  let arrStr = str.split(' ').join('').split('');
-  for(let i = 0; i < arrStr.length; i ++) {
-    console.log( arrStr[i]);
+// const findVowels = (str) => {
+//   let vowels = ["a", "e", "i", "o", "u"];
+//   let arrStr = str.split(' ').join('').split('');
+//   for(let i = 0; i < arrStr.length; i ++) {
+//     console.log( arrStr[i]);
+//   }
+
+
+// };
+
+// findVowels("this is a string");
+
+// DA PREGLEDAM 
+const findVowels = str => {
+  let sum = 0;
+  let strSpl = str.split("");
+  // console.log(strSpl);
+  for (let i = 0; i < strSpl.length; i++) {
+    if (strSpl[i] === "a" || strSpl[i] === "e" || strSpl[i] === "o" || strSpl[i] === "i" || strSpl[i] === "u") {
+      //console.log("sum ¬>", sum);
+      sum += 1;
+    }
   }
+  return sum;
+}
 
+console.log(findVowels("this is a string"));
 
+const findVowels2 = str => {
+  let sum = 0;
+  let strVowels = "aeiou";
+
+  for (let i = 0; i < str.length; i++) {
+    if (strVowels.indexOf(str[i]) !== -1) {
+      sum++;
+    }
+  }
+  return sum;
+}
+console.log(findVowels2("this is a string"));
+
+//5. Missing Number. Create a function that takes an 
+//array of all integers between 1 and 10 (excluding one) 
+//and returns the missing integer.
+
+// const missingNums = (arr) => {
+  
+// };
+// missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]);
+// missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]);
+// missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]);
+
+//6. Cubed. Create a function that takes in an 
+// array of numbers and returns the sum of its cubes.
+
+const sumOfCubes = (arr) => {
+  let sum = [];
+  let finalSum = [];
+  let newSum = 0;
+  for(let i = 0; i < arr.length; i++) {
+     
+     sum.push(arr[i] ** 3);
+  }
+  finalSum =  sum;
+  for (let i = 0; i < finalSum.length; i++) {
+    newSum += finalSum[i];
+  }
+  return newSum;
 };
 
-findVowels("this is a string");
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([0]));
+
+//7. Dictionary. Create a function that takes an 
+//initial string and an array of words, and returns a 
+//filtered array of the words that start with the same letters 
+//as the initial string.
