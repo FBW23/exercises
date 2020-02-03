@@ -5,7 +5,7 @@
 - Write a function `add` that uses a closure that performs addition on arguments in two separate function calls.
 
 ```javascript
-add(3)(4);
+add(3)(4);asd
 // returns 7
 ```
 
