@@ -2,8 +2,13 @@
 //
 // Example: Calling the function with 2 and 4 will return 8 (2 to the power of 4), If you call it with just 2, it should return 4 (2 to the power of 2).
 
+<<<<<<< HEAD
 const exponent = (num, exp = 2) => {
   let result = 1; // starts from one
+=======
+const exponent = (num, exp=2) => {
+  let result = 1;
+>>>>>>> 2f3975d0cdae0feedbdc55bc4cd02a5b41c80663
 
   for (let i = 0; i < exp; i++) { // i < exp (second argument = exp = 3)
     // *** for the first case ***
@@ -20,4 +25,10 @@ const exponent = (num, exp = 2) => {
 };
 
 console.log(exponent(3, 3)); // -> 27
+<<<<<<< HEAD
 console.log(exponent(3)); // -> 9
+=======
+console.log(exponent(3)); // -> 9
+console.log(exponent(4,));
+
+>>>>>>> 2f3975d0cdae0feedbdc55bc4cd02a5b41c80663
