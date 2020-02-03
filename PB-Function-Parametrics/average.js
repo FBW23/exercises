@@ -6,12 +6,23 @@
 // 42 / 3 = 14
 
 const average = (...args) => {
+<<<<<<< HEAD
     let sum = 0;
     for (let i = 0; i < args.length; i++) {
         sum += args[i];
     }
     return sum / args.length;
 };
+=======
+        let sum1 = 0;
+        for (i=0; i<args.length; i++){
+            sum1 += args[i];
+    
+        } return sum1/args.length;
+         
+    };
+
+>>>>>>> f205c8b4608b3ce1a67671eedeca0937cb0a91b2
 
 console.log(average(0)); // -> 0
 console.log(average(1, 2)); // -> 1.5
