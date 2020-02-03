@@ -8,7 +8,7 @@
 const average = (...args) => {
     let sum=0;
     for ( let i=0;i<args.length;i++) {
-        sum+=args[i];
+        sum+=args[i]; // adding arguments - in aceasta situatie aduce cite o variabila in dependenta de cite avariabile are sirul de variabile
     }
 
     return sum/args.length;
