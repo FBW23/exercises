@@ -5,6 +5,14 @@ const sum = (...args) => {
         sum += args[i];
     }
     return sum;
+
+const sum = (...args) => {
+    let sum1 = 0;
+    for (i=0; i<args.length; i++){
+        sum1 += args[i];
+
+    } return sum1;
+     
 };
 
 console.log(sum(1)); // -> 1
