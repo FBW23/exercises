@@ -3,7 +3,7 @@
 const sum = (...args) => {
     let sum = 0;
     for (let i = 0; i < args.length; i++) { 
-        sum += args[i]; // sum = sum + args[i] -> it takes at each time the array indicated by the loop and performs the sum of the the previous calculation plus the next array. 
+        sum += args[i]; // sum = sum + args[i] -> it takes at each time the array indicated by the loop and performs the sum of the previous calculation plus the next array. 
 
         // *** first case ***
         // only one loop because the length of the arguments is 1. so:
