@@ -16,6 +16,7 @@ const multiplier = function(a) {
 console.log(multiplier(2)(2));
 console.log(multiplier(3)(4));
 
+
 // #### 3. Calculate Money Saved till Pension Day!
 (function(age,retAge,mWage,percentage) {
     
@@ -30,3 +31,4 @@ console.log(multiplier(3)(4));
         }
 })(40, 65, 2000, 0.05);
 
+ 
