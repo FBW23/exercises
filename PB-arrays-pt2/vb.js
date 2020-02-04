@@ -144,9 +144,9 @@ console.log("===========================");
 console.log("===========================");
 console.log("5")
 
- //if we know the the maximum amount of numbers our array can hold, we can make the function 
- //find and count the missing numbers, even when more than 1 item is absent..
- 
+//if we know the the maximum amount of numbers our array can hold, we can make the function 
+//find and count the missing numbers, even when more than 1 item is absent..
+
 
 
 
@@ -160,7 +160,7 @@ const missingNums = (myArray) => {
     for (let i = 0; i <= 10; i++) {
         totalShouldBe += i;
     }
-    
+
 
     for (let i = 0; i < myArray.length; i++) {
         sum += myArray[i];
@@ -183,10 +183,11 @@ console.log("===========================");
 // * sumOfCubes([]) ➞ 0
 console.log("===========================");
 console.log("6")
-const sumOfCubes = (myArray) => {
+
+const sumOfCubes = myArray => {
     let cube = 0;
     for (let i = 0; i < myArray.length; i++) {
-        cube += Math.pow(myArray[i], 3);
+        cube += myArray[i] ** 3;
     }
     return cube;
 
@@ -272,7 +273,7 @@ console.log("===========================");
 // i.e. alphaOrder("webdev") ➞ "bdeevw" 
 console.log("===========================");
 console.log("Bonus")
-const alphaOrder=(myString)=>{
+const alphaOrder = (myString) => {
 
     return myString.toLowerCase().split('').sort().join('');
 
