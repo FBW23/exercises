@@ -6,7 +6,7 @@
 
 // findGreatest([3, 4, 5], 4) ➞ 5
 
-console.log("===========================")
+console.log("===========================");
 console.log("1")
 
 
@@ -29,7 +29,7 @@ const findGreatest = (myArray, myNumber) => {
 findGreatest([2, 4, 5], 4);
 findGreatest([10, 20, 30], 12);
 findGreatest([0, 10, 3], 4);
-console.log("===========================")
+console.log("===========================");
 // findGreatest([10, 20, 30], 12) ➞ 20, 30
 
 // findGreatest([0, 10, 3],4) ➞ 10
@@ -39,7 +39,7 @@ console.log("===========================")
 // i.e. longestWord("this is a web development course") ➞  "development"
 
 
-console.log("===========================")
+console.log("===========================");
 console.log("2")
 const longestWord = (Mystring) => {
     let myArray = Mystring.split(' ');
@@ -62,28 +62,28 @@ const longestWord = (Mystring) => {
 };
 console.log(longestWord("this is a web development course"));
 
-console.log("===========================")
+console.log("===========================");
 
 
 // **3. Reverse.**
 // Create a function to reverse a number. 
 
 // i.e. reverse(34532) ➞ 23543
-console.log("===========================")
+console.log("===========================");
 console.log("3")
 const reverse = (number) => {
     let reversed = number.toString().split('').reverse().join('');
     return Number(reversed);
 };
 console.log(reverse(34532));
-console.log("===========================")
+console.log("===========================");
 // **4. AEIOU: Vowels.**
 // Create a function that takes a string in its parameters and counts the number of vowels (i.e. in English, "a, e, i, o, u") in the string. 
 
 
 
 // i.e. findVowels("this is a string") ➞ 4
-console.log("===========================")
+console.log("===========================");
 console.log("4")
 
 const findVowels2 = (myString) => {
@@ -133,7 +133,7 @@ console.log(findVowels("abrakadabra"));
 
 
 
-console.log("===========================")
+console.log("===========================");
 // **5. Missing Number.**
 // Create a function that takes an array of all integers between 1 and 10 (excluding one) and returns the missing integer.
 
@@ -141,7 +141,7 @@ console.log("===========================")
 // * missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]) ➞ 5
 // * missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]) ➞ 10
 // * missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7 
-console.log("===========================")
+console.log("===========================");
 console.log("5")
 const missingNums2 = (myArray) => {};
 
@@ -169,7 +169,7 @@ const missingNums = (myArray) => {
 console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]));
 console.log(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]));
 console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
-console.log("===========================")
+console.log("===========================");
 // **6. Cubed.**
 // Create a function that takes in an array of numbers and returns the sum of its cubes. 
 
@@ -189,11 +189,11 @@ console.log(sumOfCubes([1, 5, 9]));
 console.log(sumOfCubes([2]));
 console.log(sumOfCubes([]));
 
-console.log("===========================")
+console.log("===========================");
 console.log("6")
 
 
-console.log("===========================")
+console.log("===========================");
 // **7. Dictionary.**
 // Create a function that takes an initial string and an array of words, and returns a filtered array of the words that start with the same letters as the initial string.
 
@@ -205,32 +205,26 @@ console.log("===========================")
 // * dictionary("bu", ["button", "breakfast", "border"]) ➞ ["button"]
 // * dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]) ➞ ["triplet", "tries", trip"]
 // * dictionary("beau", ["pastry", "delicious", "name", "boring"]) ➞ []
-console.log("===========================")
+console.log("===========================");
 console.log("7")
 const dictionary = (myString, myArray) => {
-    let StringFirst = myString.charAt(0);
+
+    let newArray = [];
 
     for (let i = 0; i < myArray.length; i++) {
-        console.log(i)
-        myArray = myArray[i];
-        console.log(myArray)
-
-        //    if(myArray.charAt(0)===StringFirst){
-        //        myArray=myArray;
-
-        // }
-
+        if (myArray[i].startsWith(myString)) {
+            newArray.push(myArray[i]);
+        }
     }
 
-
-
+    return newArray;
 };
-//console.log(dictionary("bu", ["button", "breakfast", "border"]) ;
-console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]))
-// * dictionary("beau", ["pastry", "delicious", "name", "boring"]) ➞ []
+console.log(dictionary("bu", ["button", "breakfast", "border"]));
+console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
+console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
 
 
-console.log("===========================")
+console.log("===========================");
 // **8. Even Number Generator.**
 // Create a function that finds all even numbers from 1 to the given number.
 
@@ -241,7 +235,7 @@ console.log("===========================")
 // **Notes:** 
 // * If there are no even numbers, return an empty array. 
 // * Do not include 0. 
-console.log("===========================")
+console.log("===========================");
 console.log("8")
 const evenNums = (myArray) => {
     let even = [];
@@ -255,8 +249,10 @@ const evenNums = (myArray) => {
 };
 
 console.log(evenNums(8));
+console.log(evenNums(4));
+console.log(evenNums(2));
 
-console.log("===========================")
+console.log("===========================");
 
 
 
@@ -269,8 +265,12 @@ console.log("===========================")
 
 
 // i.e. alphaOrder("webdev") ➞ "bdeevw" 
-console.log("===========================")
+console.log("===========================");
 console.log("Bonus")
+const alphaOrder=(myString)=>{
 
+    return myString.split('').reverse('').join('');
 
-console.log("===========================")
+};
+console.log(alphaOrder("webdev"));
+console.log("===========================");
