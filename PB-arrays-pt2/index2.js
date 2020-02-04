@@ -130,12 +130,18 @@ console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
 // * sumOfCubes([1, 5, 9]) ➞ 855 // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
 // * sumOfCubes([2]) ➞ 8
 // * sumOfCubes([]) ➞ 0
+console.log('6. Cubed');
 
 const sumOfCubes = (array) => {
     let newSum = 0;
-
+    for (let i = 0; i < array.length; i++) {
+        newSum += Math.pow(array[i], 3);
+    }
+    return newSum;
 };
-sumOfCubes([1, 5, 9]);
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([]));
 
 // **7. Dictionary.**
 // Create a function that takes an initial string and an array of words, and returns a filtered array of the words that start with the same letters as the initial string.
@@ -148,12 +154,16 @@ sumOfCubes([1, 5, 9]);
 // * dictionary("bu", ["button", "breakfast", "border"]) ➞ ["button"]
 // * dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]) ➞ ["triplet", "tries", trip"]
 // * dictionary("beau", ["pastry", "delicious", "name", "boring"]) ➞ []
+console.log('7. Dictionary');
 
 const dictionary = (string, array) => {
-    let newString = array.join();
+    let newArray = [];
     for (let i = 0; i < array.length; i++) {
-        if (array[i].startsWith(string)) {}
+        if (array[i].startsWith(string)) {
+            newArray.push(array[i]);
+        }
     }
+    return newArray;
 };
 console.log(dictionary("bu", ["button", "breakfast", "border"]));
 console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
