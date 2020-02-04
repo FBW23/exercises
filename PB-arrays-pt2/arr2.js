@@ -189,9 +189,11 @@ console.log(evenNums(2));
 // Create a function to sort a string into alphabetical order. **NB:** assume numbers, symbols and punctuation are not included in the string.
 
 const alphaOrder = string => {
-    let sort = string.split("");
+    let sort = string.toLowerCase().split("");
     return sort.sort().join(""); // join turns the array objects into a string
 }
 
 console.log(alphaOrder("webdev"));
+console.log(alphaOrder("AGAmeNNOnE"));
+console.log(alphaOrder("PATER familias"));
 // ➞ "bdeevw" 
