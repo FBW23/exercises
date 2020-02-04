@@ -190,7 +190,7 @@ console.log(evenNums(2));
 
 const alphaOrder = string => {
     let sort = string.split("");
-    return sort.sort().join("");
+    return sort.sort().join(""); // join turns the array objects into a string
 }
 
 console.log(alphaOrder("webdev"));
