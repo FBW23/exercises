@@ -181,6 +181,8 @@ console.log("===========================");
 // * sumOfCubes([1, 5, 9]) ➞ 855 // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
 // * sumOfCubes([2]) ➞ 8
 // * sumOfCubes([]) ➞ 0
+console.log("===========================");
+console.log("6")
 const sumOfCubes = (myArray) => {
     let cube = 0;
     for (let i = 0; i < myArray.length; i++) {
@@ -193,8 +195,7 @@ console.log(sumOfCubes([1, 5, 9]));
 console.log(sumOfCubes([2]));
 console.log(sumOfCubes([]));
 
-console.log("===========================");
-console.log("6")
+
 
 
 console.log("===========================");
@@ -273,7 +274,7 @@ console.log("===========================");
 console.log("Bonus")
 const alphaOrder=(myString)=>{
 
-    return myString.split('').reverse('').join('');
+    return myString.toLowerCase().split('').sort().join('');
 
 };
 console.log(alphaOrder("webdev"));
