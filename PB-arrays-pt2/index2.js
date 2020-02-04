@@ -10,13 +10,13 @@
 // findGreatest([0, 10, 3], 4) ➞ 10
 
 const findGreatest = (myArray, myNumber) => {
-    if(myArray[0] > myNumber) {
+    if (myArray[0] > myNumber) {
         console.log(myArray[0]);
     }
-    if(myArray[1] > myNumber) {
+    if (myArray[1] > myNumber) {
         console.log(myArray[1]);
     }
-    if(myArray[2] > myNumber) {
+    if (myArray[2] > myNumber) {
         console.log(myArray[2]);
     }
 };
@@ -28,7 +28,7 @@ const findGreatest = (myArray, myNumber) => {
 //         }
 //     }
 // };
-findGreatest([3, 4, 5], 4); 
+findGreatest([3, 4, 5], 4);
 findGreatest([10, 20, 30], 12);
 findGreatest([0, 10, 3], 4);
 
@@ -59,7 +59,7 @@ const longestWord = (myString) => {
     }
     if (newArray[5].length > newArray.length) {
         console.log(newArray[5]);
-    }  
+    }
 };
 
 longestWord("this is a web development course"); // ➞  "development"
@@ -72,8 +72,7 @@ longestWord("this is a web development course"); // ➞  "development"
 // i.e. reverse(34532) ➞ 23543
 
 const myReverse = (n) => {
-    // n = n + "";
-	return n.toString().split("").reverse().join("");
+    return n.toString().split("").reverse().join("");
 };
 console.log(myReverse(34532));
 
@@ -84,10 +83,17 @@ console.log(myReverse(34532));
 // i.e. findVowels("this is a string") ➞ 4
 
 const findVowels = (s) => {
- 
-    
+    let sum = 0;
+    for (i = 0; i < s.length; i++) {
+        if ((s[i] === "a") || (s[i] === "e") || (s[i] === "i") || (s[i] === "o") || (s[i] === "u")) {
+            sum++;
+        }
+    }
+    return sum;
 };
-findVowels("this is a string");
+console.log(findVowels("this is a string"));
+console.log(findVowels("stop smoking"));
+
 
 
 
@@ -99,6 +105,23 @@ findVowels("this is a string");
 // * missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]) ➞ 5
 // * missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]) ➞ 10
 // * missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7 
+console.log('5. Missing Number');
+
+const missingNums = (array) => {
+    for (let i = 1; i <= 10; i++) {
+        if (array.indexOf(i) === -1) {
+            return i;
+        }
+    }
+};
+
+console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]));
+console.log(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]));
+console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
+
+
+
+
 
 // **6. Cubed.**
 // Create a function that takes in an array of numbers and returns the sum of its cubes. 
@@ -107,6 +130,12 @@ findVowels("this is a string");
 // * sumOfCubes([1, 5, 9]) ➞ 855 // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
 // * sumOfCubes([2]) ➞ 8
 // * sumOfCubes([]) ➞ 0
+
+const sumOfCubes = (array) => {
+    let newSum = 0;
+
+};
+sumOfCubes([1, 5, 9]);
 
 // **7. Dictionary.**
 // Create a function that takes an initial string and an array of words, and returns a filtered array of the words that start with the same letters as the initial string.
@@ -119,6 +148,16 @@ findVowels("this is a string");
 // * dictionary("bu", ["button", "breakfast", "border"]) ➞ ["button"]
 // * dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]) ➞ ["triplet", "tries", trip"]
 // * dictionary("beau", ["pastry", "delicious", "name", "boring"]) ➞ []
+
+const dictionary = (string, array) => {
+    let newString = array.join();
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].startsWith(string)) {}
+    }
+};
+console.log(dictionary("bu", ["button", "breakfast", "border"]));
+console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
+console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
 
 // **8. Even Number Generator.**
 // Create a function that finds all even numbers from 1 to the given number.
@@ -134,4 +173,4 @@ findVowels("this is a string");
 // **Bonus: Alphabetical Order.**
 // Create a function to sort a string into alphabetical order. **NB:** assume numbers, symbols and punctuation are not included in the string.
 
-// i.e. alphaOrder("webdev") ➞ "bdeevw" 
+// i.e. alphaOrder("webdev") ➞ "bdeevw" //
