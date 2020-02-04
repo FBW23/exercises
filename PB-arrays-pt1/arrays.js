@@ -78,3 +78,15 @@ console.log(allNames[3]);
 // 7. change
 allNames[2] = 'Felizitas';
 console.log(allNames);
+
+// **2. For the longest word.**
+// Create a function to find the longest word in a given string. 
+
+// i.e. longestWord("this is a web development course") ➞  "development"
+
+const longestWord = (str) => {
+    let str = str.split();
+    console.log(str);
+};
+
+longestWord("this is a web development course");
