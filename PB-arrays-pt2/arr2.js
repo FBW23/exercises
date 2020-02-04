@@ -146,8 +146,8 @@ const dictionary = (item, arr) => {
     let matchingWord = [];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].startsWith(item)) {
-            matchingWord.push(arr[i]); 
-        } 
+            matchingWord.push(arr[i]);
+        }
     }
     return matchingWord
 };
@@ -188,5 +188,10 @@ console.log(evenNums(2));
 // **Bonus: Alphabetical Order.**
 // Create a function to sort a string into alphabetical order. **NB:** assume numbers, symbols and punctuation are not included in the string.
 
-// alphaOrder("webdev");
+const alphaOrder = string => {
+    let sort = string.split("");
+    return sort.sort().join("");
+}
+
+console.log(alphaOrder("webdev"));
 // ➞ "bdeevw" 
