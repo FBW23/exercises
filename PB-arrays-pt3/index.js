@@ -88,11 +88,11 @@ console.log("------------------ 4.One is not like the others... ----------------
 
 const unique2 = myArray => {
   for (let i = 0; i < myArray.length; i++) {
-    if(myArray.indexOf(myArray[i], i + 1) === -1) {
+    if (myArray.indexOf(myArray[i]) === myArray.lastIndexOf(myArray[i])) {
       return myArray[i];
     }
   }
-}
+};
 
 console.log(unique2([3, 3, 3, 7, 3, 3]));
 console.log(unique2([0, 0, 0.77, 0, 0]));
@@ -119,7 +119,7 @@ const hackerSpeak = str => {
   let newArr = str.split(' ');
   let hackArr = [];
   for (let i = 0; i < newArr.length; i++) {
-     hackArr.push(newArr[i].replace('a', '4').replace('e','3').replace('i', '1').replace('o','0').replace('o','0').replace('s', '5').replace('e','3'));
+    hackArr.push(newArr[i].replace('a', '4').replace('e', '3').replace('i', '1').replace('o', '0').replace('o', '0').replace('s', '5').replace('e', '3'));
     //  console.log(hackArr);
   }
   return hackArr.join(' ').toString();
@@ -138,4 +138,3 @@ console.log(hackerSpeak("become a coder"));
 //its reverse.
 console.log("------------------ *BONUS* ------------------");
 console.log("------------------ Is it Symmetrical? ------------------");
-
