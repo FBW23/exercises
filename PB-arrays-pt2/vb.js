@@ -143,10 +143,7 @@ console.log("===========================")
 // * missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7 
 console.log("===========================")
 console.log("5")
-const missingNums2 = (myArray) => {
-
-
-};
+const missingNums2 = (myArray) => {};
 
 
 
@@ -248,15 +245,13 @@ console.log("===========================")
 console.log("8")
 const evenNums = (myArray) => {
     let even = ''
-    for (let i = 0; i < myArray.length; i++) {
-        for (let j = 0; j < myArray[0]; j++) {
-
-        if (myArray[i] % 2 === 0) {
-            even += j;
-            return (even)
+    //console.log(myArray)
+    for (let i = 1; i <= myArray; i++) {
+        if (i % 2 === 0) {
+            even += `${i} `;
         }
     }
-    }
+    return even;
 };
 
 console.log(evenNums(8));
