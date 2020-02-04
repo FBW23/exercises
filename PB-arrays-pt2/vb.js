@@ -244,11 +244,11 @@ console.log("===========================")
 console.log("===========================")
 console.log("8")
 const evenNums = (myArray) => {
-    let even = ''
+    let even = [];
     //console.log(myArray)
     for (let i = 1; i <= myArray; i++) {
         if (i % 2 === 0) {
-            even += `${i} `;
+            even.push(i);
         }
     }
     return even;
