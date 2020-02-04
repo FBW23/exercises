@@ -181,7 +181,6 @@ console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
 // * Do not include 0. 
 console.log('8. Even Number Generator.');
 
-
 const evenNums = (number) => {
     let resultArray = [];
     for (let i = 1; i <= number; i++) {
@@ -205,8 +204,8 @@ console.log(evenNums(1));
 console.log('Bonus: Alphabetical Order');
 
 const alphaOrder = (string) => {
-    let alphaArray = string.split('');
+    let alphaArray = string.toLowerCase().split('');
     return alphaArray.sort().join('');
 };
 
-console.log(alphaOrder("webdev"));
+console.log(alphaOrder('Webdev'));
