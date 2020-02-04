@@ -75,7 +75,7 @@ const myVowels = mV => mV.replace(/[^aeuio]/gi, '').length;
 
 
 
-    console.log(myVowels('aeiou'));
+console.log(myVowels('aeiou'));
 console.log(myVowels('this is a string'));
 
 
@@ -89,14 +89,60 @@ console.log(myVowels('this is a string'));
 // * missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7 
 console.log(`_______________________Number5____________________`);
 
-const missingNums =(nummer)=> {
-let missingU = -1;
-for(let i =0;i<=nummer.length;i++){
-    if (nummer.indexOf(i) === -1) {
-        missingU = i;
+const missingNums = (nummer) => {
+    let missingU = 0;
+    for (let i = 1; i <= nummer.length + 1; i++) {
+        if (nummer.indexOf(i) === -1) {
+            missingU = i;
+        }
     }
-}return missingU;
+    return missingU;
 }
 console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]));
 console.log(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]));
 console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
+
+console.log(`_______________________Number6____________________`);
+
+
+const sumOfCubes = (cub) => {
+    let numCube = 0;
+    for (let z = 0; z < cub.length; z++) {
+        numCube += Math.pow(cub[z], 3); // cub[z] ** 3;
+    }
+    return numCube;
+    //Math.pow(cub[0],3)+Math.pow(cub[1],3)+Math.pow(cub[2],3);
+};
+console.log(sumOfCubes([1, 5, 9]));
+
+console.log(`_______________________Number7____________________`);
+
+const dictionary = (startWord, wholeWord) => {
+    let newDictionary = [];
+    for (let w = 0; w < wholeWord.length; w++) {
+        if (wholeWord[w].startsWith(startWord)) {
+            newDictionary.push(wholeWord[w]);
+        }
+    }
+    return "We have '" + newDictionary.length + "' match word '" + newDictionary + "'";
+    // console.log(newDictionary); 
+};
+console.log(dictionary("bu", ["button", "breakfast", "border"]));
+console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
+console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
+
+console.log(`_______________________Number7____________________`);
+const evenNums = (shuoldEven) => {
+    let newNumber = [];
+    for (let k = 1; k <= shuoldEven; k++) {
+        if (k % 2 === 0) {
+            newNumber.push(k)
+        }
+    }
+    return newNumber;
+
+};
+
+console.log(evenNums(8));
+console.log(evenNums(7));
+console.log(evenNums(2));
