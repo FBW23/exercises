@@ -6,6 +6,7 @@
 // 42 / 3 = 14
 
 const average = (...args) => {
+<<<<<<< HEAD
     let sum=0;
     for ( let i=0;i<args.length;i++) {
         sum+=args[i]; // adding arguments - in aceasta situatie aduce cite o variabila in dependenta de cite avariabile are sirul de variabile
@@ -13,6 +14,16 @@ const average = (...args) => {
 
     return sum/args.length;
 };
+=======
+        let sum1 = 0;
+        for (i=0; i<args.length; i++){
+            sum1 += args[i];
+    
+        } return sum1/args.length;
+         
+    };
+
+>>>>>>> 3a989455f12040c8fec9eb6930ecec99ddac31c2
 
 console.log(average(0)); // -> 0
 console.log(average(1, 2)); // -> 1.5
