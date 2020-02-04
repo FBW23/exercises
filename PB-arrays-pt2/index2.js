@@ -179,6 +179,23 @@ console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
 // **Notes:** 
 // * If there are no even numbers, return an empty array. 
 // * Do not include 0. 
+console.log('8. Even Number Generator.');
+
+
+const evenNums = (number) => {
+    let resultArray = [];
+    for (let i = 1; i <= number; i++) {
+        if (i % 2 === 0) {
+            resultArray.push(i);
+        }
+    }
+    return resultArray;
+};
+console.log(evenNums(8));
+console.log(evenNums(4));
+console.log(evenNums(2));
+
+
 
 // **Bonus: Alphabetical Order.**
 // Create a function to sort a string into alphabetical order. **NB:** assume numbers, symbols and punctuation are not included in the string.
