@@ -121,8 +121,9 @@ console.log('**6. Cubed.**');
 const sumOfCubes = (arr) => {
     let cubesSumVar = 0;
     for (let i = 0; i < arr.length; i++) {
-        let cubeArg = Math.pow(arr[i], 3);
-        cubesSumVar += cubeArg;
+        // let cubeArg = Math.pow(arr[i], 3);
+        // cubesSumVar += cubeArg; -> this can be substitued with this:
+        cubesSumVar += Math.pow(arr[i], 3); // or cubesSumVar += arr[i] ** 3;
     }
     return cubesSumVar;
 };
