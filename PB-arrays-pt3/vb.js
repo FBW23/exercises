@@ -83,21 +83,21 @@ console.log('=====================');
 console.log('=====================');
 console.log(4);
 const unique = (myArray) => {
-    let output = 0;
-    for (i = 0; i<myArray.length; i++) {
 
-        if (myArray[i] !== myArray[i+1]) {
-            console.log(myArray[i])
-            //output = myArray[i+1];
-            
+    for (let i = 0; i < myArray.length; i++) {
+
+        if (myArray.indexOf(myArray[i], i + 1) === -1) {
+            return myArray[i];
+
         }
     }
-    return output;
+
 }
 console.log(unique([3, 3, 3, 7, 3, 3]));
-//console.log(unique([0, 0, 0.77, 0, 0]));
-//console.log(unique([0, 1, 1, 1, 1, 1, 1, 1]));
+console.log(unique([0, 0, 0.77, 0, 0]));
+console.log(unique([0, 1, 1, 1, 1, 1, 1, 1]));
 console.log('=====================');
+
 // **5. Word Ranking.**
 // Create a function that takes a string of words and returns the highest scoring word. Each letter of a word scores points according to it's position in the alphabet: a = 1, b = 2, c = 3, etc.
 // * The returned string should only contain alphabetic characters (a-z).
@@ -157,65 +157,102 @@ console.log('=====================');
 console.log('=====================');
 console.log(6);
 const hackerSpeak = (myString) => {
-        let myArray = myString.split('')
-        let letters = ["a", "e", "i", "o", "s"];
-        let numbers = [4, 3, 1, 0, 5];
+    let myArray = myString.split('')
+    let letters = ["a", "e", "i", "o", "s"];
+    let numbers = [4, 3, 1, 0, 5];
 
-        for (let i = 0; i < myString.length; i++) {
-            if (myString.charAt(i) === letters[0]) {
-                myArray.splice(i, 1, numbers[0]);
+    for (let i = 0; i < myString.length; i++) {
 
-            }
-            if (myString.charAt(i) === letters[1]) {
-                myArray.splice(i, 1, numbers[1]);
-            }
-
-            if (myString.charAt(i) === letters[2]) {
-                myArray.splice(i, 1, numbers[2]);
-            }
-
-            if (myString.charAt(i) === letters[3]) {
-                myArray.splice(i, 1, numbers[3]);
-            }
-
-            if (myString.charAt(i) === letters[4]) {
-                myArray.splice(i, 1, numbers[4]);
-            }
+        switch(myString.charAt(i)){
+            case letters[0]: myArray.splice(i, 1, numbers[0]);
+            break;
+            case letters[1]: myArray.splice(i, 1, numbers[1]);
+            break;
+            case letters[2]: myArray.splice(i, 1, numbers[2]);
+            break;
+            case letters[3]: myArray.splice(i, 1, numbers[3]);
+            break;
+            case letters[4]: myArray.splice(i, 1, numbers[4]);
+            break;
+            default:'not hackable';
+            break;
         }
-            return myArray.join('');
-        };
-        console.log(hackerSpeak("javascript is cool"));
-        console.log(hackerSpeak("programming is fun"));
-        console.log(hackerSpeak("become a coder"));
-        console.log('=====================');
-        // **1. Is it Symmetrical?**
-        // Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not. **NB:** A number is symmetrical when it is the same as its reverse.
 
-        // Examples:
-        // * isSymmetrical(7227) ➞ true
-        // * isSymmetrical(12567) ➞ false
-        // * isSymmetrical(44444444) ➞ true
-        // * isSymmetrical(9939) ➞ false
-        // * isSymmetrical(1112111) ➞ true
 
-        // **2. snake_case ➞ camelCase**
-        // Create a function toCamelCase() that takes a single string in `snake_case` and converts it into `camelCase`. 
 
-        // Examples:
-        // * toCamelCase("hello_world") ➞ "helloWorld"
-        // * toCamelCase("javascript_is_fun") ➞ "javaScriptIsFun"
+        // if (myString.charAt(i) === letters[0]) {
+        //     myArray.splice(i, 1, numbers[0]);
 
-        // **3. Pig Latin Translation.** 
-        // Create a function that takes a string of words and moves the first letter of each word to the end of it, then adds 'ay' to the end of the word. This is a basic form of "Pig Latin". 
+        // }
+        // if (myString.charAt(i) === letters[1]) {
+        //     myArray.splice(i, 1, numbers[1]);
+        // }
 
-        // * Move the first letter of each word to the end of the word.
-        // * Add "ay" to the end of the word.
-        // * Words starting with a vowel (A, E, I, O, U) append "way" to the end instead.
+        // if (myString.charAt(i) === letters[2]) {
+        //     myArray.splice(i, 1, numbers[2]);
+        // }
 
-        // **Extra Practice**
-        // * Preserve proper capitalization as in the examples below.
+        // if (myString.charAt(i) === letters[3]) {
+        //     myArray.splice(i, 1, numbers[3]);
+        // }
 
-        // Examples:
-        // * pigLatin("Cats are great pets.") ➞ "Atscay areway reatgay etspay."
-        // * pigLatin("Tom got a small piece of pie.") ➞ "Omtay otgay away allsmay iecepay ofway iepay."
-        // * pigLatin("He told us a very exciting tale.") ➞ "Ehay oldtay usway away eryvay excitingway aletay."
+        // if (myString.charAt(i) === letters[4]) {
+        //     myArray.splice(i, 1, numbers[4]);
+        // }
+    }
+    
+
+
+
+
+    return myArray.join('');
+};
+console.log(hackerSpeak("javascript is cool"));
+console.log(hackerSpeak("programming is fun"));
+console.log(hackerSpeak("become a coder"));
+console.log('=====================');
+// **1. Is it Symmetrical?**
+// Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not. **NB:** A number is symmetrical when it is the same as its reverse.
+
+// Examples:
+// * isSymmetrical(7227) ➞ true
+// * isSymmetrical(12567) ➞ false
+// * isSymmetrical(44444444) ➞ true
+// * isSymmetrical(9939) ➞ false
+// * isSymmetrical(1112111) ➞ true
+
+
+console.log('=====================');
+console.log(7);
+const isSymmetrical = (num) => {
+    
+  
+};
+console.log(isSymmetrical(7227));
+console.log(isSymmetrical(12567));
+console.log( isSymmetrical(44444444));
+console.log( isSymmetrical(9939));
+console.log( isSymmetrical(1112111));
+console.log('=====================');
+
+// **2. snake_case ➞ camelCase**
+// Create a function toCamelCase() that takes a single string in `snake_case` and converts it into `camelCase`. 
+
+// Examples:
+// * toCamelCase("hello_world") ➞ "helloWorld"
+// * toCamelCase("javascript_is_fun") ➞ "javaScriptIsFun"
+
+// **3. Pig Latin Translation.** 
+// Create a function that takes a string of words and moves the first letter of each word to the end of it, then adds 'ay' to the end of the word. This is a basic form of "Pig Latin". 
+
+// * Move the first letter of each word to the end of the word.
+// * Add "ay" to the end of the word.
+// * Words starting with a vowel (A, E, I, O, U) append "way" to the end instead.
+
+// **Extra Practice**
+// * Preserve proper capitalization as in the examples below.
+
+// Examples:
+// * pigLatin("Cats are great pets.") ➞ "Atscay areway reatgay etspay."
+// * pigLatin("Tom got a small piece of pie.") ➞ "Omtay otgay away allsmay iecepay ofway iepay."
+// * pigLatin("He told us a very exciting tale.") ➞ "Ehay oldtay usway away eryvay excitingway aletay."
