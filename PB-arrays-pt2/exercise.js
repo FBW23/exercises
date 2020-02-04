@@ -9,12 +9,12 @@
 
 //findGreatest([0, 10, 3], 4) ➞ 10
 
-const findGreatest=(myArray, myNumber) => {
-    if(myArray[0] > myNumber) {
-console.log(myArray[0]);
+const findGreatest = (myArray, myNumber) => {
+    if (myArray[0] > myNumber) {
+        console.log(myArray[0]);
     }
     if (myArray[1] > myNumber) {
-console.log((myArray[1]));
+        console.log((myArray[1]));
     }
     if (myArray[2] > myNumber) {
         console.log(myArray[2]);
@@ -52,9 +52,9 @@ function longestWord(text) {
     }
     return result;
 }
-  console.log(longestWord("this is a web development course"));
+console.log(longestWord("this is a web development course"));
 
-  // **3. Reverse.**
+// **3. Reverse.**
 // Create a function to reverse a number. 
 
 // i.e. reverse(34532) ➞ 2354
@@ -89,8 +89,8 @@ console.log(myVowels("this is a string"));
 const missNum = (Num) => {
 
     let missing = -1;
-    for (let i=0; i < Num.length; i++) {
-        if (Num.indexOf(i)=== -1) {
+    for (let i = 0; i <= 10; i++) {
+        if (Num.indexOf(i) === -1) {
             missing = i;
         }
     } return missing;
@@ -98,3 +98,66 @@ const missNum = (Num) => {
 
 }
 console.log(missNum([1, 2, 3, 4, 6, 7, 8, 9, 10]));
+console.log(missNum([7, 2, 3, 6, 5, 9, 1, 4, 8]));
+console.log(missNum([10, 5, 1, 2, 4, 6, 8, 3, 9]));
+
+
+// **6. Cubed.**
+// Create a function that takes in an array of numbers and returns the sum of its cubes. 
+
+// Examples: 
+// * sumOfCubes([1, 5, 9]) ➞ 855 // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
+// * sumOfCubes([2]) ➞ 8
+// * sumOfCubes([]) ➞ 0
+
+function sumOfCubes(ofCube) {
+    let sum = 0;
+    for (let i = 0; i < ofCube.length; i++) {
+
+        sum += Math.pow(ofCube[i], 3); // sum += (ofCube[i]**3;)
+
+    } return sum;
+}
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([]));
+
+
+// **7. Dictionary.**
+// Create a function that takes an initial string and an array of words, and returns a filtered array of the words that start with the same letters as the initial string.
+
+// Notes:
+// * If none of the words match, return an empty array.
+// * Keep the filtered array in the same relative order as the original array of words.
+
+// Examples:
+// * dictionary("bu", ["button", "breakfast", "border"]) ➞ ["button"]
+// * dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]) ➞ ["triplet", "tries", trip"]
+// * dictionary("beau", ["pastry", "delicious", "name", "boring"]) ➞ []
+
+const dictionary = (myString, myDic) => {
+    let newArray = [];
+    for (let i = 0; i < myDic.length; i++) 
+    {
+        if (myDic[i].startsWith(myString)) 
+        {
+            newArray.push(myDic[i]);
+        }
+    }
+    return newArray;
+};
+console.log(dictionary("bu", ["button", "breakfast", "border"]));
+console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
+
+// **8. Even Number Generator.**
+// Create a function that finds all even numbers from 1 to the given number.
+
+// Examples:
+// * evenNums(8) ➞ [2, 4, 6, 8]
+// * evenNums(4) ➞ [2, 4]
+// * evenNums(2) ➞ [2]
+// **Notes:** 
+// * If there are no even numbers, return an empty array. 
+// * Do not include 0. 
+
+
