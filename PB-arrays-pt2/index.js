@@ -7,11 +7,11 @@
 console.log("1. The Greater Numbers._________________________________________________________")
 
 const findGreatest = (arrOfNum, num) => {
-  if(arrOfNum[0] > num) {
+  if (arrOfNum[0] > num) {
     return arrOfNum[0];
-  } else if(arrOfNum[1] > num) {
+  } else if (arrOfNum[1] > num) {
     return arrOfNum[1];
-  } else if(arrOfNum[2] > num) {
+  } else if (arrOfNum[2] > num) {
     return arrOfNum[2];
   }
 };
@@ -29,10 +29,10 @@ console.log("2. For the longest word.___________________________________________
 const longestWord = (str) => {
   let strArr = str.split(" "); // turn the string into an array
   let chars = strArr[0]; // add the first element of the array for comparison
-  for(let i = 0; i < strArr.length; i++) { // create a loop to go trough the elements in the array
+  for (let i = 0; i < strArr.length; i++) { // create a loop to go trough the elements in the array
     //console.log(strArr[i]); // 
     if (strArr[i].length > chars.length) { // compare every elements length to the length of the first element
-    chars = strArr[i]; // saves the longest string in the array
+      chars = strArr[i]; // saves the longest string in the array
     }
   }
   return `The  longest word is: ${chars}`; // prints it to the screen
@@ -103,17 +103,17 @@ console.log(findVowels2("this is a string"));
 //and returns the missing integer.
 console.log("5. Missing Number_________________________________________________________")
 
-const missingNums = (arr) => { 
-  let missing; 
+const missingNums = (arr) => {
+  let missing;
   for (var i = 1; i <= arr.length + 1; i++) {
-    if (arr.indexOf(i) === -1) { 
+    if (arr.indexOf(i) === -1) {
       missing = i;
     }
   }
   return missing;
-  };
-  
-console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10])); 
+};
+
+console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]));
 console.log(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]));
 console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
 
@@ -125,11 +125,11 @@ const sumOfCubes = (arr) => {
   let sum = [];
   let finalSum = [];
   let newSum = 0;
-  for(let i = 0; i < arr.length; i++) {
-     
-     sum.push(arr[i] ** 3);
+  for (let i = 0; i < arr.length; i++) {
+
+    sum.push(arr[i] ** 3);
   }
-  finalSum =  sum;
+  finalSum = sum;
   for (let i = 0; i < finalSum.length; i++) {
     newSum += finalSum[i];
   }
@@ -164,8 +164,8 @@ const dictionary = (str, arr) => {
     let newStr = arr[i];
     if (newStr.startsWith(str)) {
       // console.log(newStr);
-       emptyArr.push(newStr);
-    } 
+      emptyArr.push(newStr);
+    }
   }
   return emptyArr;
 };
@@ -180,7 +180,7 @@ console.log("8. Even Number Generator.__________________________________________
 const evenNums = num => {
   let newArr = [];
   for (; 0 < num; num--) {
-    if (num % 2  === 0) {
+    if (num % 2 === 0) {
       // newArr.push(num);
       newArr.unshift(num);
     }
@@ -201,9 +201,9 @@ console.log(evenNums());
 console.log(". BONUS ._________________________________________________________")
 
 const alphaOrder = str => {
-  
+
   let newArr = str.split('').sort().join('');
-  return newArr;  
+  return newArr;
 }
 
 console.log(alphaOrder("webdev"));
