@@ -193,11 +193,20 @@ const evenNums = (number) => {
 };
 console.log(evenNums(8));
 console.log(evenNums(4));
-console.log(evenNums(2));
+console.log(evenNums(1));
 
 
 
 // **Bonus: Alphabetical Order.**
-// Create a function to sort a string into alphabetical order. **NB:** assume numbers, symbols and punctuation are not included in the string.
+// Create a function to sort a string into alphabetical order. **NB:** assume numbers, 
+// symbols and punctuation are not included in the string.
 
 // i.e. alphaOrder("webdev") ➞ "bdeevw" //
+console.log('Bonus: Alphabetical Order');
+
+const alphaOrder = (string) => {
+    let alphaArray = string.split('');
+    return alphaArray.sort().join('');
+};
+
+console.log(alphaOrder("webdev"));
