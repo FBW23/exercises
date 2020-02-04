@@ -143,7 +143,11 @@ console.log("===========================");
 // * missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7 
 console.log("===========================");
 console.log("5")
-const missingNums2 = (myArray) => {};
+
+ //if we know the the maximum amount of numbers our array can hold, we can make the function 
+ //find and count the missing numbers, even when more than 1 item is absent..
+ 
+
 
 
 
@@ -156,7 +160,7 @@ const missingNums = (myArray) => {
     for (let i = 0; i <= 10; i++) {
         totalShouldBe += i;
     }
-    //console.log(totalShouldBe)
+    
 
     for (let i = 0; i < myArray.length; i++) {
         sum += myArray[i];
