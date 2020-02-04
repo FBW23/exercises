@@ -4,6 +4,7 @@
 //and the second argument being a number. The 
 //function should return the elements of the 
 //array which are greater than the second argument
+console.log("1. The Greater Numbers._________________________________________________________")
 
 const findGreatest = (arrOfNum, num) => {
   if(arrOfNum[0] > num) {
@@ -23,6 +24,7 @@ console.log(findGreatest([0, 10, 3], 4));
 
 //2. For the longest word. Create a function to 
 //find the longest word in a given string.
+console.log("2. For the longest word._________________________________________________________")
 
 const longestWord = (str) => {
   let strArr = str.split(" "); // turn the string into an array
@@ -41,6 +43,7 @@ console.log(longestWord("123 1234 12345 123456"));
 console.log(longestWord("1234567 123 1234 12345 123456"));
 
 //3. Reverse. Create a function to reverse a number.
+console.log("3. Reverse._________________________________________________________")
 
 const reverse = (num) => {
   return parseInt(num.toString().split('').reverse().join(''));
@@ -64,6 +67,7 @@ console.log(reverse(111222));
 // };
 
 // findVowels("this is a string");
+console.log("4. AEIOU: Vowels._________________________________________________________")
 
 // DA PREGLEDAM 
 const findVowels = str => {
@@ -97,16 +101,25 @@ console.log(findVowels2("this is a string"));
 //5. Missing Number. Create a function that takes an 
 //array of all integers between 1 and 10 (excluding one) 
 //and returns the missing integer.
+console.log("5. Missing Number_________________________________________________________")
 
-// const missingNums = (arr) => {
+const missingNums = (arr) => { 
+  let missing; 
+  for (var i = 1; i <= arr.length + 1; i++) {
+    if (arr.indexOf(i) === -1) { 
+      missing = i;
+    }
+  }
+  return missing;
+  };
   
-// };
-// missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]);
-// missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]);
-// missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]);
+console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10])); 
+console.log(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]));
+console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
 
 //6. Cubed. Create a function that takes in an 
 // array of numbers and returns the sum of its cubes.
+console.log("6. Cubed._________________________________________________________")
 
 const sumOfCubes = (arr) => {
   let sum = [];
@@ -127,7 +140,70 @@ console.log(sumOfCubes([1, 5, 9]));
 console.log(sumOfCubes([2]));
 console.log(sumOfCubes([0]));
 
+// BETTER WAY ¬>
+const sumOfCubes2 = (myArray) => {
+  let cube = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    cube += Math.pow(myArray[i], 3)
+  }
+  return cube;
+};
+
+console.log(sumOfCubes2([1, 5, 9]));
+console.log(sumOfCubes2([2]));
+console.log(sumOfCubes2([0]));
+
 //7. Dictionary. Create a function that takes an 
 //initial string and an array of words, and returns a 
 //filtered array of the words that start with the same letters 
 //as the initial string.
+console.log("7. Dictionary._________________________________________________________")
+const dictionary = (str, arr) => {
+  let emptyArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let newStr = arr[i];
+    if (newStr.startsWith(str)) {
+      // console.log(newStr);
+       emptyArr.push(newStr);
+    } 
+  }
+  return emptyArr;
+};
+console.log(dictionary("bu", ["button", "breakfast", "border"]));
+console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
+console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
+
+//8. Even Number Generator. Create a 
+//function that finds all even numbers from 1 to the given number.
+console.log("8. Even Number Generator._________________________________________________________")
+
+const evenNums = num => {
+  let newArr = [];
+  for (; 0 < num; num--) {
+    if (num % 2  === 0) {
+      // newArr.push(num);
+      newArr.unshift(num);
+    }
+  }
+  return newArr;
+};
+
+console.log(evenNums(8));
+console.log(evenNums(4));
+console.log(evenNums(2));
+console.log(evenNums());
+
+
+// Bonus: Alphabetical Order. Create a function to 
+//sort a string into alphabetical order. NB: assume 
+//numbers, symbols and punctuation are not included 
+//in the string.
+console.log(". BONUS ._________________________________________________________")
+
+const alphaOrder = str => {
+  
+  let newArr = str.split('').sort().join('');
+  return newArr;  
+}
+
+console.log(alphaOrder("webdev"));
