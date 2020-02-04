@@ -193,7 +193,19 @@ console.log(evenNums(4));
 console.log(evenNums(2));
 console.log(evenNums());
 
-
+const evenNums2 = item => {
+  let allEvenNums = [];
+  for (let i = 2; i <= item; i++) {
+    if (i%2 === 0) {
+      allEvenNums.push(i);
+    }
+  }
+  return allEvenNums;
+}
+console.log(evenNums2(8));
+console.log(evenNums2(4));
+console.log(evenNums2(2));
+console.log(evenNums2());
 // Bonus: Alphabetical Order. Create a function to 
 //sort a string into alphabetical order. NB: assume 
 //numbers, symbols and punctuation are not included 
