@@ -97,14 +97,14 @@ function missingNums(arr) {
     let total = ((n + 2) * (n + 1)) / 2; //N+2 =11 (first case) * N+1=10= 110/2= 55-the  sum of the array =5 (the  missing number)
     for (let i = 0; i < arr.length; i++) {
         total -= arr[i];
-    };
-    console.log(total);
+    }
+    return total;
 }
 
 
-missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]);
-missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]);
-missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]);
+console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]));
+console.log(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]));
+console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
 
 
 console.log('=======Task 6 =====')
@@ -116,14 +116,14 @@ function sumOfCubes(array) {
         i = array.length;
     while (i--)
         sum += Math.pow(array[i], 3);
-    console.log(sum);
+    return sum;
 }
 
 Examples:
 
-    sumOfCubes([1, 5, 9]); // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
-sumOfCubes([2]);
-sumOfCubes([]);
+    console.log(sumOfCubes([1, 5, 9])); // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([]));
 
 // 7. Dictionary. Create a function that takes an initial string and an array of words, and returns a filtered array of the words that start with the same letters as the initial string.
 
@@ -156,16 +156,11 @@ console.log('===== Task 8 ======')
 // If there are no even numbers, return an empty array.
 // Do not include 0.
 
-
-
-
 function evenNums(even) {
     let empty = [];
-    // empty.push(even);
-    for (let i = 2; i <= even; i++) {
+        for (let i = 2; i <= even; i++) {
         if (i % 2 === 0) {
             empty.push(i);
-
         }
 
     }
