@@ -110,6 +110,8 @@ console.log('4. One is not like the others');
 
 const unique = array =>  {
     for (let i= 0; i < array.length; i++) {
+        // console.log('indexof ->', array.indexOf(array[i]));
+        // console.log('lastindexof ->', array.lastIndexOf(array[i]));
         if (array.indexOf(array[i]) === array.lastIndexOf(array[i])) {
             return array[i];
         }
@@ -118,3 +120,17 @@ const unique = array =>  {
 console.log(unique([3, 3, 3, 7])); // ➞ 7
 console.log(unique([0, 0, 0.77, 0, 0])); // ➞ 0.77
 console.log(unique([0, 1, 1, 1, 1, 1, 1, 1])); // ➞ 0
+
+
+// **5. Word Ranking.**
+// Create a function that takes a string of words and returns the highest scoring word. 
+// Each letter of a word scores points according to it's position in the alphabet: a = 1, b = 2, c = 3, etc.
+// * The returned string should only contain alphabetic characters (a-z).
+// * Preserve case in the returned string (see 4th example above).
+console.log('5. Word Ranking.');
+
+Examples:
+* wordRank("The quick brown fox.") ➞ "brown"
+* wordRank("Nancy is very pretty.") ➞ "pretty"
+* wordRank("Check back tomorrow, man!") ➞ "tomorrow"
+* wordRank("Today is Wednesday.") ➞ "Wednesday"
