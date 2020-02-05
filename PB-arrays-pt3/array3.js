@@ -42,12 +42,13 @@ const amplify = number1 => {
     for (let g = 1; g <= number1; g++) {
         //console.log(g);
         if (g % 4 === 0) {
-            countingNumber.push(g*10);
-        }else{
+            countingNumber.push(g * 10);
+        } else {
             countingNumber.push(g);
         }
-    }return countingNumber;
-    
+    }
+    return countingNumber;
+
 };
 console.log(amplify(4));
 console.log(amplify(25));
@@ -55,9 +56,9 @@ console.log(`-----------------EX4---------------`);
 
 const unique = setNumber => {
     let perfectNumber;
-    for (let q=1;q<=setNumber.length;q++) {
+    for (let q = 1; q <= setNumber.length; q++) {
         console.log(q);
-        if (setNumber.indexOf(setNumber[q],q+1)===-1){
+        if (setNumber.indexOf(setNumber[q], q + 1) === -1) {
             return setNumber[q];
         }
     }
@@ -67,38 +68,41 @@ console.log(unique([3, 3, 3, 7, 3, 3]));
 console.log(`-----------------EX5---------------`);
 const howMuchIsOneWord = word => {
     let sum = 0;
+    let currentChar, curentNumber;
     const ALPHABET = ['alphabet', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    console.log(ALPHABET.length);
+    //console.log(ALPHABET.length); 27
     for (let k = 0; k < word.length; k++) {
-        let currentChar = word.charAt(k);
-        let curentNumber = ALPHABET.indexOf(currentChar);
+        currentChar = word.charAt(k).toLowerCase();
+        curentNumber = ALPHABET.indexOf(currentChar);
         sum += curentNumber;
         console.log(sum);
     }
     return sum;
-}
+};
+console.log(`conting word`);
 console.log(howMuchIsOneWord('hello'));
+console.log(`conting word`);
 
 
-const wordRank =sentence => {
-let word = '';
-const newArray = new Array();
-const myArray = sentence.split(' ');
-for (let p =0;p<myArray.length;p++) {
-    newArray.push(howMuchIsOneWord(myArray[p]));
-    console.log(newArray);
-}
-let theBiggestNumber = Math.max(...myArray);
-let position = newArray.indexOf(theBiggestNumber);
-word = myArray[position];
+const wordRank = sentence => {
+    let word = '';
+    let newArray = new Array(); // cream un Array gol posibil si [] fara nimik este egal;
+    const myArray = sentence.split(' ');
+    for (let p = 0; p < myArray.length; p++) {
+        newArray.push(howMuchIsOneWord(myArray[p]));
+       // console.log(newArray);
+    }
+    let theBiggestNumber = Math.max(...newArray);
+    let position = newArray.indexOf(theBiggestNumber);
+    word = myArray[position];
     return word;
 }
 
 
 console.log(wordRank("The quick brown fox.")) //"brown"
-console.log(`_________________________________________________`);
-console.log(wordRank("Nancy is very pretty.")) // "pretty"
-console.log(`______________________________________________________`);
-console.log(wordRank("Check back tomorrow, man!")) // "tomorrow"
-console.log(`_____________________________________________________`);
-console.log(wordRank("Today is Wednesday.")) 
+// console.log(`_________________________________________________`);
+// console.log(wordRank("Nancy is very pretty.")) // "pretty"
+// console.log(`______________________________________________________`);
+// console.log(wordRank("Check back tomorrow, man!")) // "tomorrow"
+// console.log(`_____________________________________________________`);
+// console.log(wordRank("Today is Wednesday."))
