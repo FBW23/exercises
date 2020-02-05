@@ -75,13 +75,10 @@ const howMuchIsOneWord = word => {
         currentChar = word.charAt(k).toLowerCase();
         curentNumber = ALPHABET.indexOf(currentChar);
         sum += curentNumber;
-        console.log(sum);
+        // console.log(sum);
     }
     return sum;
 };
-console.log(`conting word`);
-console.log(howMuchIsOneWord('hello'));
-console.log(`conting word`);
 
 
 const wordRank = sentence => {
@@ -96,13 +93,14 @@ const wordRank = sentence => {
     let position = newArray.indexOf(theBiggestNumber);
     word = myArray[position];
     return word;
+    
 }
 
 
 console.log(wordRank("The quick brown fox.")) //"brown"
-// console.log(`_________________________________________________`);
-// console.log(wordRank("Nancy is very pretty.")) // "pretty"
-// console.log(`______________________________________________________`);
-// console.log(wordRank("Check back tomorrow, man!")) // "tomorrow"
-// console.log(`_____________________________________________________`);
-// console.log(wordRank("Today is Wednesday."))
+console.log(`_________________________________________________`);
+console.log(wordRank("Nancy is very pretty .")) // "pretty"
+console.log(`______________________________________________________`);
+console.log(wordRank("Check back tomorrow , man!")) // "tomorrow"
+console.log(`_____________________________________________________`);
+console.log(wordRank("Today is Wednesday ."))
