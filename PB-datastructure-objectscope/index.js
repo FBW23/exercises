@@ -26,7 +26,7 @@ const person = {
     return `The length of the object is ${Object.keys(this).length}`;
   }
 
-}
+};
 
 console.log(person.printPerson());
 // Bonus
