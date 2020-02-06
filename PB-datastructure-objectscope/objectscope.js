@@ -36,9 +36,13 @@ const personObject = {
     city: "Paris",
     getToKnow: function() {
         return this.nameFirst + this.nameLast + ' is a ' + this.agePerson + ' year old ' + this.job + ' living in ' + this.city;
+    },
+    getTheLength: function() {
+        return  Object.keys(personObject).length;
     }
 };
 console.log(personObject.getToKnow());
+console.log(personObject.getTheLength());
 
 
 // ## Bonus
