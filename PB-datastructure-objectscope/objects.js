@@ -19,10 +19,15 @@ const man = {
   getInfo: function () {
     return (`${this.firstName1} ${this.secondName} is a ${this.age} year old ${this.job} living in ${this.country}`);
 
+  },
+  getLength: function() {
+    return Object.keys(this).length;
   }
 }
 
 console.log(man.getInfo());
+console.log(man.getLength());
+
 
 console.log(`:::::::::::::::::::::::::::Bonus:::::::::::::::::::::::::::::`)
 
