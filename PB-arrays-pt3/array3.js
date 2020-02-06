@@ -69,13 +69,13 @@ console.log(`-----------------EX5---------------`);
 const howMuchIsOneWord = word => {
     let sum = 0;
     let currentChar, curentNumber;
-    const ALPHABET = ['alphabet', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    const ALPHABET ='_abcdefghijklmnopqrstuvwxz';
+    // ['alphabet', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     //console.log(ALPHABET.length); 27
     for (let k = 0; k < word.length; k++) {
         currentChar = word.charAt(k).toLowerCase();
-        curentNumber = ALPHABET.indexOf(currentChar);
+        curentNumber = ALPHABET.split('').indexOf(currentChar);
         sum += curentNumber;
-        // console.log(sum);
     }
     return sum;
 };
