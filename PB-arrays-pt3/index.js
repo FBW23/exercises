@@ -119,12 +119,14 @@ const hackerSpeak = str => {
   let newArr = str.split(' ');
   let hackArr = [];
   for (let i = 0; i < newArr.length; i++) {
-    hackArr.push(newArr[i].replace('a', '4').replace('e', '3').replace('i', '1').replace('o', '0').replace('o', '0').replace('s', '5').replace('e', '3'));
+    hackArr.push(newArr[i].replace(/a/gi, 4).replace(/o/gi,"0").replace(/e/gi, "3").replace(/i/gi, "1").replace(/s/gi, "5"));
+
     //  console.log(hackArr);
   }
-  return hackArr.join(' ').toString();
-};
+  return hackArr.join(' ');
+}
 
+console.log(hackerSpeak("bEcOmE a coder"));
 console.log(hackerSpeak("javascript is cool"));
 console.log(hackerSpeak("programming is fun"));
 console.log(hackerSpeak("become a coder"));
