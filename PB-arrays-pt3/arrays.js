@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // **1. Where Have My Four Letter Words Gone?**
 // Create a function that takes an array of strings. Return all words in the array that are exactly four letters.
 
@@ -123,3 +124,21 @@ console.log(monthName(3));
 // * pigLatin("Cats are great pets.") ➞ "Atscay areway reatgay etspay."
 // * pigLatin("Tom got a small piece of pie.") ➞ "Omtay otgay away allsmay iecepay ofway iepay."
 // * pigLatin("He told us a very exciting tale.") ➞ "Ehay oldtay usway away eryvay excitingway aletay."
+=======
+// One is not like the others... Create a function that takes an array of numbers and return the number that's unique.
+
+//Examples:
+
+function unique(myArray) {
+    for (let i = 0; i < myArray.length; i++) {
+        if (myArray.indexOf(myArray[i]) === myArray.lastIndexOf(myArray[i])) {
+            return myArray[i];
+        }
+    }
+}
+
+
+console.log(unique([3, 3, 3, 7, 3, 3]));
+console.log(unique([0, 0, 0.77, 0, 0]));
+console.log(unique([0, 1, 1, 1, 1, 1, 1, 1]));
+>>>>>>> d6648d314727e93c027f664d40584ed734fa3e1f
