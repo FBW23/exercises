@@ -27,7 +27,8 @@ console.log('2. Months');
 
 const monthName = num1 => {
     let myCalendar = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
-        'October', 'November', 'December'];
+        'October', 'November', 'December'
+    ];
     let myMonth = '';
     switch (num1) {
         case 1:
@@ -88,14 +89,16 @@ console.log('3. Amplify the Multiples of 4');
 
 const amplify = number3 => {
     let mySum = [];
-    for(let i= 1; i<=number3; i++){
-        if(number3[i] % 4 !== 0) {
+    for (let i = 1; i <= number3; i++) {
+        if (number3[i] % 4 !== 0) {
             mySum += i++;
             console.log(mySum);
-        } if (number3[i] % 4 === 0) {
-            mySum = number3[i]*10;
-        } return mySum;
-    } 
+        }
+        if (number3[i] % 4 === 0) {
+            mySum = number3[i] * 10;
+        }
+        return mySum;
+    }
 };
 
 
@@ -108,8 +111,8 @@ console.log(amplify(4)); //  ➞ [1, 2, 3, 40]
 // Create a function that takes an array of numbers and return the number that's unique.
 console.log('4. One is not like the others');
 
-const unique = array =>  {
-    for (let i= 0; i < array.length; i++) {
+const unique = array => {
+    for (let i = 0; i < array.length; i++) {
         // console.log('indexof ->', array.indexOf(array[i]));
         // console.log('lastindexof ->', array.lastIndexOf(array[i]));
         if (array.indexOf(array[i]) === array.lastIndexOf(array[i])) {
@@ -129,8 +132,33 @@ console.log(unique([0, 1, 1, 1, 1, 1, 1, 1])); // ➞ 0
 // * Preserve case in the returned string (see 4th example above).
 console.log('5. Word Ranking.');
 
-Examples:
-* wordRank("The quick brown fox.") ➞ "brown"
-* wordRank("Nancy is very pretty.") ➞ "pretty"
-* wordRank("Check back tomorrow, man!") ➞ "tomorrow"
-* wordRank("Today is Wednesday.") ➞ "Wednesday"
+
+
+// Examples:
+// * wordRank("The quick brown fox.") ➞ "brown"
+// * wordRank("Nancy is very pretty.") ➞ "pretty"
+// * wordRank("Check back tomorrow, man!") ➞ "tomorrow"
+// * wordRank("Today is Wednesday.") ➞ "Wednesday"
+
+
+// **6. c4n y0u r34d th15?**
+// Create a function that takes a string as an argument and returns a coded (h4ck3r 5p34k) version of the string. 
+// **NB:** for your program to work properly, the function should replace all 'a's with 4, 'e's with 3, 
+// 'i's with 1, 'o's with 0, and 's's with 5.
+console.log('6. c4n y0u r34d th15?');
+
+
+const hackerSpeak = str => {
+    let newArr = str.split(' ');
+    let hackArr = [];
+    for (let i = 0; i < newArr.length; i++) {
+        hackArr.push(newArr[i].replace(/a/gi, 4).replace(/o/gi, "0").replace(/e/gi, "3").replace(/i/gi, "1").replace(/s/gi, "5"));
+        //  console.log(hackArr);
+    }
+    return hackArr.join(' ');
+};
+
+
+console.log(hackerSpeak("javascript is cool")); // ➞ "j4v45cr1pt 15 c00l"
+console.log(hackerSpeak("programming is fun")); // ➞ "pr0gr4mm1ng 15 fun"
+console.log(hackerSpeak("become a coder")); // ➞ "b3c0m3 4 c0d3r"
