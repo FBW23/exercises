@@ -83,7 +83,7 @@ console.log(objectToArray({
 console.log("------------------------------BONUS-----------------------------------")
 console.log("------------------------------2. List Properties. -----------------------------------")
 
-let student = {
+const student = {
   name: "Mike",
   class: "4A",
   course: "English"
@@ -135,15 +135,15 @@ const switchKeysValues = obj => {
   let arrValues = [];
   let newObj = {};
   for (key in obj) {
-    arrKeys.push(keys);
+    arrKeys.push(key);
     arrValues.push(obj[key]);
   };
-  let key1 = arrKeys[0].toString();
-  let key2 = arrKeys[1].toString();
-  let val1 = arrValues[0].toString();
-  let val2 = arrValues[1].toString();
-  // console.log(key1);
-  // console.log(key2);
+  const key1 = arrKeys[0].toString();
+  const key2 = arrKeys[1].toString();
+  const val1 = arrValues[0].toString();
+  const val2 = arrValues[1].toString();
+  console.log(key1);
+  console.log(key2);
   // console.log(val1);
   // console.log(val2);
   newObj[val1] = key1;
