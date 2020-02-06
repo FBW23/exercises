@@ -13,10 +13,7 @@
 //         console.log(`${this.firstName} ${this.lastName} is a student in class ${this.class} `);
 //     }
 // };
-// student.getInfo();
-
-//=============================================
-
+// student.getInfo();2,
 const person = {
     firstName: "Bianca",
     lastName: "Richa",
@@ -78,3 +75,8 @@ const object = {
 string += array[index];
  }
  console.log(string); //expected output
+
+ //also for strings
+for(const i in string) {
+    console.log('hello ' + string.charAt(i));
+}
