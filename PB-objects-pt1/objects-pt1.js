@@ -31,8 +31,8 @@ console.log('2. Get Values');
 
 const getObjectValues = object => {
     let newArray = [];
-    for (const values in object) {
-        newArray.push(object[values]);
+    for (const value in object) {
+        newArray.push(object[value]);
     }
     return newArray;
 };
@@ -62,13 +62,13 @@ console.log(getObjectValues({
 console.log('3. Add A Method');
 
 const newPerson = {
-    name: 'Natasha',
-    lastName: 'Lshifi',
-    job: 'cook',
-    age: 42,
-    city: 'Moscow',
-    getToKnow: function () {
-        return `${this.name} ${this.lastName} is a ${this.age} year old ${this.job} in ${this.city}`;
+    name: 'Michael',
+    lastName: 'Smith',
+    job: 'driver',
+    age: 20,
+    city: 'Paris',
+    getToKnow() {
+        return `${this.name} ${this.lastName} is a ${this.age} year old ${this.job} in ${this.city}.`;
     }
 };
 console.log(newPerson.getToKnow());
@@ -89,4 +89,15 @@ console.log(newPerson.getToKnow());
 // ```
 console.log('Convert keys and values into an array');
 
-const objectToArray
+const objectToArray = object => {
+    let myArray = [];
+    for (key in object) {
+        myArray.push(key + Object.keys(object));
+    }
+    return  myArray;
+};
+console.log(objectToArray({
+      A: 1,
+      B: 2,
+      C: 3
+    }));
