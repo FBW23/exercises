@@ -1,10 +1,10 @@
 // 1. Create the following object: 
 
-const student = { 
-  firstName: "John", 
-  lastName: "Smith", 
+const student = {
+  firstName: "John",
+  lastName: "Smith",
   class: 12,
-  printsStudent: function() {
+  printsStudent: function () {
     return `${this.firstName} ${this.lastName} is a student in class ${this.class}`
   }
 };
@@ -19,9 +19,10 @@ const person = {
   age: 41,
   job: 'engineer',
   city: 'France',
-  printPerson: 
-   function(){  return `${this.firstName} ${this.lastName} is a ${this.age} year old ${this.job} living in ${this.city}`},
-  getLength: function(){
+  printPerson: function () {
+    return `${this.firstName} ${this.lastName} is a ${this.age} year old ${this.job} living in ${this.city}`
+  },
+  getLength: function () {
     return `The length of the object is ${Object.keys(this).length}`;
   }
 
