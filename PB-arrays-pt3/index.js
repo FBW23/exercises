@@ -115,12 +115,28 @@ console.log("------------------ 5. Word Ranking. ------------------");
 
 console.log("------------------ 6. c4n y0u r34d th15? ------------------");
 
+// const hackerSpeak = str => {
+//   let newArr = str.split(' ');
+//   let hackArr = [];
+//   for (let i = 0; i < newArr.length; i++) {
+//     hackArr.push(newArr[i].replace('a', '4').replace('e', '3').replace('i', '1').replace('o', '0').replace('o', '0').replace('s', '5').replace('e', '3'));
+//     //  console.log(hackArr);
+//   }
+//   return hackArr.join(' ').toString();
+// };
+// console.log("------------------ 6. c4n y0u r34d th15? ------------------");
+
 const hackerSpeak = str => {
   let newArr = str.split(' ');
   let hackArr = [];
   for (let i = 0; i < newArr.length; i++) {
+<<<<<<< HEAD
     hackArr.push(newArr[i].replace(/a/gi, 4).replace(/o/gi,"0").replace(/e/gi, "3").replace(/i/gi, "1").replace(/s/gi, "5"));
 
+=======
+  
+    hackArr.push(newArr[i].replace(/a/g,"4").replace(/o/g,"0").replace(/e/g, "3").replace(/i/g, "1").replace(/s/g, "5"));
+>>>>>>> 5cf710a2c4ec110d3fbfd3713922f52a1f009b38
     //  console.log(hackArr);
   }
   return hackArr.join(' ');
