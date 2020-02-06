@@ -39,7 +39,6 @@ const personObject = {
     }
 };
 console.log(personObject.getToKnow());
-console.log(personObject.getTheLength());
 
 
 // ## Bonus
