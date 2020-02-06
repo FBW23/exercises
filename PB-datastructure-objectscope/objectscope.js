@@ -35,16 +35,14 @@ const personObject = {
     job: "train driver",
     city: "Paris",
     getToKnow: function() {
-        return this.nameFirst + this.nameLast + ' is a ' + this.agePerson + ' year old ' + this.job + ' living in ' + this.city;
+        return `${this.nameFirst} ${this.nameLast} is a ${this.agePerson} year old ${this.job} living in ${this.city}`;
     },
     getTheLength: function() {
-        return  Object.keys(personObject).length;
+        Object.keys(this).length
     }
 };
 console.log(personObject.getToKnow());
-console.log(personObject.getTheLength());
-
-
 // ## Bonus
 
 // 3. Write a method to get the length of the person object.
+console.log(personObject.getTheLength());
