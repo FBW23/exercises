@@ -10,31 +10,31 @@ const person = {
     hobbies: 'cooking'
 }
 
-for (const prop in person){
-   console.log(`${prop} ${person[prop]}`);
+for (const prop in person) {
+    console.log(`${prop} ${person[prop]}`);
 };
 
 
- // **2. Get Values.** 
+// **2. Get Values.** 
 // Create a function that returns an array of all **values** of an object's properties. 
 // * Examples:
 // ```javascript
-const obj ={
+const obj = {
     choice1: "tea",
     choice2: "coffee",
     choice3: "milk"
 };
-const getObjectValues = (obj) =>{
+const getObjectValues = (obj) => {
     let array = [];
-    for (const values in obj){
-        
-        array.push(obj[values]); 
-        
+    for (const value in obj) {
+
+        array.push(obj[value]);
+
     } return array;
 };
 
 console.log(getObjectValues(obj));
- 
+
 
 // ```
 // * Expected output: 
@@ -46,20 +46,20 @@ console.log(getObjectValues(obj));
 // Create an object and add a method to that object which prints the values of the objects in a string. 
 // * Example
 // ```javascript
-const  person2 = {
-  firstName: "Michael",
-  lastName: "Smith", 
-  job: "driver",
-  age: 20, 
-  city: 'Paris',
-  prints: function(){
-      
-      for (const values in person2){
-        return `${this.firstName} ${this.lastName} is a ${this.age} years old ${this.job} in ${this.city}`
-          
-      } 
-  } 
-}; 
+const person2 = {
+    firstName: "Michael",
+    lastName: "Smith",
+    job: "driver",
+    age: 20,
+    city: 'Paris',
+    prints: function () {
+
+        for (const values in person2) {
+            return `${this.firstName} ${this.lastName} is a ${this.age} years old ${this.job} in ${this.city}`
+
+        }
+    }
+};
 
 
 console.log(person2.prints());
@@ -73,7 +73,20 @@ console.log(person2.prints());
 // Create a function that converts an object into an array of keys and values. 
 // * Examples:
 // ```javascript
-// objectToArray({
+const keys = {
+    A: 1,
+    B: 2,
+    C: 3
+}
+const objectToArray = (keys) => {
+    let newArray = [];
+    for (const value in keys){
+        newArray.push(value + keys[value]);
+    } return newArray;
+}
+
+console.log(objectToArray(keys));
+// ({
 //   A: 1,
 //   B: 2,
 //   C: 3
