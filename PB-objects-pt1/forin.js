@@ -190,6 +190,27 @@ const switchKeys = (person4)=>{
 
 // **5. Return Keys and Values.**
 // Write a program that takes an object and returns an array which contains two arrays: one for the keys of the object and the other for the values of the object.
+const objectsTwoArrays = {
+    // a: 1,
+    // b: 2,
+    // c: 3
+    key: true
+};
+
+const twoArrays = (objectsTwoArrays)=>{
+    let newArray=[];
+    let newArray2=[];
+    let newConcat = [];
+    for (const prop in objectsTwoArrays){
+        newArray.push(prop); 
+        newArray2.push(objectsTwoArrays[prop]);
+        newConcat.push(newArray, newArray2)
+      
+         
+    }   return newConcat;
+}
+
+console.log(twoArrays(objectsTwoArrays));
 
 
 // * Examples:
