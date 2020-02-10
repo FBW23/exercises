@@ -188,7 +188,7 @@ const programming = {
     jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
     newMethod: function () {
         if (this.isChallenging === true && this.isRewarding === true) {
-            return `Learning the programming languages: "JavaScript, Python, Ruby, Go".`;
+            return `Learning the programming languages: ${this.languages} is rewarding and challenging.`;
         }
     }
 };
