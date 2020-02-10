@@ -238,6 +238,6 @@ console.log(programming.newMethod());
 // **Bonus**:
 // - Make sure that any other code cannot delete or change properties of the object.
 
-console.log(Object.freeze(programming));
+console.log(Object.freeze(programming)); // this freezes the object
 delete programming.languages;
 console.log(programming);
