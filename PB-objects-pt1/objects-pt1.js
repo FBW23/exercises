@@ -1,6 +1,6 @@
 // **1. Object Person.**
 // Create an object named person. Loop through the object and print both the property and value of the object. 
-console.log('1. Object Person');
+console.log('------------------------------ 1. Object Person');
 
 const person = {
     name: 'Jesus ',
@@ -26,7 +26,7 @@ for (const property in person) {
 // ```javascript
 // ["tea", "coffee", "milk"] 
 // ```
-console.log('2. Get Values');
+console.log('------------------------------ 2. Get Values');
 
 
 const getObjectValues = object => {
@@ -59,7 +59,7 @@ console.log(getObjectValues({
 // ```
 // * Example of Expected Output 
 // "Michael Smith is a 20 year old driver in Paris".
-console.log('3. Add A Method');
+console.log('------------------------------ 3. Add A Method');
 
 const newPerson = {
     name: 'Michael',
@@ -87,17 +87,76 @@ console.log(newPerson.getToKnow());
 // ```javascript
 // [["A", 1], ["B", 2], ["C", 3]]
 // ```
-console.log('Convert keys and values into an array');
+console.log('-------------------------Convert keys and values into an array');
 
 const objectToArray = object => {
-    let myArray = [];
     for (key in object) {
-        myArray.push(key + Object.keys(object));
+        return Object.entries(object);
     }
-    return  myArray;
 };
+
+
 console.log(objectToArray({
-      A: 1,
-      B: 2,
-      C: 3
-    }));
+    A: 1,
+    B: 2,
+    C: 3
+}));
+console.log(objectToArray({
+    cats: 1,
+    dogs: 2,
+    turtles: 4
+}))
+
+
+//   **2. List Properties.**
+// Create a function that returns an array of **properties** of a javascript object. 
+// * Example
+// ```javascript
+// let student = {
+//   name: "Mike", 
+//   class: "4A" 
+//   course: "English"
+// }
+// ```
+// * Expected output: 
+// ```javascript
+// ["name", "class", "course"]
+// ;
+
+console.log('------------------------------List Properties');
+
+let student = {
+    name: "Mike",
+    class: "4A",
+    course: "English"
+}
+
+function arrayOfProperties() {
+    return Object.keys(student);
+}
+console.log(arrayOfProperties(student));
+
+
+// **3. Merge.**
+// Create a function that takes two objects as its parameters and merges them together into a new object. 
+// * Example
+// ```javascript
+// let first = {firstName: "John"}
+// let last = {lastName: "Smith"}
+// ```
+// ```
+// **Extra Credit:** What happens if you merge two objects with the same property values? 
+// In merging these two objects, do you expect to change either or both of the original objects? 
+// Why or why not? Comment your answers.
+console.log('------------------------------Merge');
+
+
+let first = {firstName: "John"};
+let last = {lastName: "Smith"};
+
+const newName = () => {
+    return newObject
+};
+
+
+console.log(newName);
