@@ -289,3 +289,9 @@ printValues(programming);
 // and challenging. 
 console.log("-------------Create an object method where-------------------")
 console.log(programming.printLanguages());
+
+Object.freeze(programming); // 
+programming.isChallenging = false;
+programming.difficulty = 2;
+delete programming.difficulty;
+console.log(programming);
