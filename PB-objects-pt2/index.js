@@ -143,20 +143,35 @@ console.log(isEmpty({
 console.log("-------------------------- 4. Counting Letters.-------------------------------")
 
 
-const countLetters = str => {
-  let newArr = [];
-  let count = 0;
-  newArr = str.split('');
-  console.log(newArr);
-  for (i in newArr) {
-    console.log(newArr[i]);
-    result = newArr.indexOf(newArr[i])
-    // console.log(result);
-  }
-};
+// const countLetters = str => {
+//   let newArr = [];
+//   let count = 0;
+//   newArr = str.split('');
+//   console.log(newArr);
+//   for (i in newArr) {
+//     console.log(newArr[i]);
+//     result = newArr.indexOf(newArr[i])
+//     // console.log(result);
+//   }
+// };
 
-countLetters("tree");
-console.log(' ☝ Not working !');
+// countLetters("tree");
+// console.log(' ☝ Not working !');
+// To look later !!!!!!!!!!!!!!!!!!!!!!!!!!
+const countLetters = (string) => {
+  let object = {};
+  let myString = string.toLowerCase();
+  for (let index in string) {
+    if (object[string[index]]) {
+      object[string[index]]++;
+    } else {
+      object[string[index]] = 1; // push
+    }
+  }
+  return object;
+}
+console.log(countLetters("tree"));
+
 //5. Free Shipping. Create a function that 
 //determines whether an online order should get 
 //free shipping. An order gets free shipping if the total 
@@ -205,12 +220,72 @@ const programming = {
   isChallenging: true,
   isRewarding: true,
   difficulty: 8,
-  jokes:
-    "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
-  addLanguage: function(string) {
+  jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
+  addLanguage: function (string) {
     this.languages.push(string);
+  },
+  printLanguages: function () {
+    if (this.isChallenging === true && this.isRewarding === true) {
+      return `Learning the programming languages ${this.languages} is rewarding and challenging.`;
+    }
+    return `False`;
+
+  }
+};
+// Add Go to the end of languages array
+console.log("----1.Add go to the end of the lang arr--------");
+programming.addLanguage('Go');
+// console.log(programming);
+
+// Changing the difficulty level to 7
+console.log("-----2.Change the difficulty level level to 7");
+programming.difficulty = 7;
+// console.log(programming);
+
+//Using the delete keyword, write the command to remove the jokes key from the programming object.
+console.log("-----3.Delete the jokes key:value-------");
+delete programming.jokes;
+// console.log(programming);
+
+//Write a command to add a new key called isFun and a value of true to the programming object.
+programming.isFun = true;
+// console.log(programming);
+
+// Using a loop, iterate through the languages array and console.log all of the languages.
+
+const loopTroughLanguages = obj => {
+  langArr = obj.languages;
+  for (index in langArr) {
+    console.log(langArr[index]);
   }
 };
 
-programming.addLanguage('GO');
-console.log(programming);
+loopTroughLanguages(programming);
+
+// Using a loop, console.log all of the keys in the programming object.
+console.log('----------------------KEYS ---------------')
+const printKeys = obj => {
+  for (key in obj) {
+    console.log(key);
+  }
+};
+
+printKeys(programming);
+
+//Using a loop, console.log all of the values in the programming object
+console.log('-------------------------VALUES-----------------------')
+
+const printValues = obj => {
+  for (key in obj) {
+    console.log(obj[key])
+  }
+};
+
+printValues(programming);
+
+//Create an object method where if the keys "isChallenging" and 
+//"isRewarding" have values of "true", then return "Learning the 
+//programming languages: "JavaScript, Python, Ruby, Go" is rewarding
+// and challenging. 
+console.log("-------------Create an object method where-------------------")
+console.log(programming.printLanguages());
