@@ -75,13 +75,13 @@ const maxScore = (myArray) => {
 
 
 console.log(maxScore([{ tile: "N", score: 1 },
-    { tile: "K", score: 5 },
-    { tile: "X", score: 8 },
-    { tile: "Z", score: 10 },
-    { tile: "D", score: 2 },
-    { tile: "A", score: 1 },
-    { tile: "E", score: 1 }]));
-    console.log(`==================================`);
+{ tile: "K", score: 5 },
+{ tile: "X", score: 8 },
+{ tile: "Z", score: 10 },
+{ tile: "D", score: 2 },
+{ tile: "A", score: 1 },
+{ tile: "E", score: 1 }]));
+console.log(`==================================`);
 // **3. Is it an empty object?**
 // Write a program that returns true if an object is empty, and false if otherwise.
 
@@ -94,11 +94,11 @@ console.log(maxScore([{ tile: "N", score: 1 },
 
 console.log(`==================================`);
 console.log(`3.`);
-const isEmpty=(object)=>{
+const isEmpty = (object) => {
     Object.keys(object).length;
- }
- console.log(isEmpty({a: 1}));
- console.log(isEmpty({}));
+}
+console.log(isEmpty({ a: 1 }));
+console.log(isEmpty({}));
 console.log(`==================================`);
 
 // **4. Counting Letters.**
@@ -112,71 +112,31 @@ console.log(`==================================`);
 console.log(`4.`);
 console.log(`==================================`);
 
-let myObject={};
-let letters={a:0,b:0,c:0,d:0,e:0,f:0,g:0,h:0,i:0,j:0,k:0,l:0,m:0,n:0,o:0,p:0,u:0,x:0,y:0,z:0};
+let myObject = {};
+let letters = { a: 0, b: 0, c: 0, d: 0, e: 0, f: 0, g: 0, h: 0, i: 0, j: 0, k: 0, l: 0, m: 0, n: 0, o: 0, p: 0, u: 0, x: 0, y: 0, z: 0 };
 
-const countLetters=(myString)=>{
-    
+const countLetters = (myString) => {
 
-    for (let i =0 ; i<myString.length;i++){
-        if (myString.charAt(i)==='a'){
-            myObject.a=1;
-        }
-        if (myString.charAt(i)==='b'){
-            myObject.b=1;
-        }
-        if (myString.charAt(i)==='c'){
-            letters.c+=1;
-        }
-        if (myString.charAt(i)==='d'){
-            letters.d+=1;
-        }
-        if (myString.charAt(i)==='e'){
-            letters.e+=1;
-        }
-        if (myString.charAt(i)==='f'){
-            letters.f+=1;
-        }
-        if (myString.charAt(i)==='g'){
-            letters.g+=1;
-        }
-        if (myString.charAt(i)==='h'){
-            letters.h+=1;
-        }
-        if (myString.charAt(i)==='j'){
-            letters.j+=1;
-        }
-        if (myString.charAt(i)==='k'){
-            letters.k+=1;
-        }
-        if (myString.charAt(i)==='l'){
-            myObject.l=1;
-        }
-        if (myString.charAt(i)==='m'){
-            letters.m+=1;
-        }
-        if (myString.charAt(i)==='n'){
-            letters.n+=1;
-        }
-        if (myString.charAt(i)==='o'){
-            letters.o+=1;
-        }
-        if (myString.charAt(i)==='p'){
-            letters.p+=1;
-        }
-        if (myString.charAt(i)==='u'){
-            letters.u+=1;
-        }
-        if (myString.charAt(i)==='x'){
-            letters.x+=1;
-        }
-        if (myString.charAt(i)==='y'){
-            letters.y+=1;
-        }
-        if (myString.charAt(i)==='z'){
-            letters.z+=1;
+
+    for (let i = 0; i < myString.length; i++) {
+        for (const key in letters) {
+            if (key === myString.charAt(i)) {
+
+                if (myObject[key]) {
+                    myObject[key] += 1;
+                }
+                else {
+                    myObject[key] = 1
+
+                }
+            }
         }
     }
+
+
+
+
+
     return myObject;
 
 }
@@ -197,7 +157,20 @@ console.log(`==================================`);
 console.log(`5.`);
 
 
+const freeShipping = (order) => {
+    let sum = 0;
 
+    for (const key in order) {
+        sum += order[key];
+    }
+
+    if (sum > 50) {
+        return true;
+    } else { return false }
+};
+console.log(freeShipping({ "Sponge": 3.50, "Soap": 5.99 }));
+console.log(freeShipping({ "Surround Sound Equipment": 499.99 }));
+console.log(freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }));
 
 console.log(`==================================`);
 // **6. Programming Object.**
@@ -229,3 +202,80 @@ console.log(`==================================`);
 console.log(`6.`);
 console.log(`==================================`);
 
+
+
+
+
+
+
+
+
+const programming = {
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes:
+        "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
+    myFunction: function () {
+        if (this.isChallenging === true && this.isRewarding === true) {
+            return `Learning programming languages: "${this.languages}" is rewarding and challenging`;
+        }
+    }
+};
+
+
+console.log(` `);
+console.log(`Write the command to add the language "Go" to the end of the languages array. `);
+
+console.log(` `);
+console.log(` `);
+programming.languages.push('Go');
+
+console.log(` `);
+console.log(`Change the difficulty to the value of 7. `);
+
+console.log(` `);
+programming.difficulty = 7;
+
+console.log(` `);
+console.log(` - Using the delete keyword, write the command to remove the jokes key from the programming object.`);
+
+console.log(` `);
+delete programming.jokes;
+
+console.log(` `);
+console.log(` - Write a command to add a new key called isFun and a value of true to the programming object.`);
+
+console.log(` `);
+programming["isFun"] = true;
+
+console.log(` `);
+console.log(`- Using a loop, iterate through the languages array and console.log all of the languages. `);
+
+console.log(` `);
+for (const index in programming.languages) {
+    console.log(programming.languages[index])
+};
+
+
+
+console.log(` `);
+console.log(`- Using a loop, console.log all of the keys in the programming object.`);
+
+console.log(` `);
+
+for (const index in programming) {
+    console.log(programming[index]);
+}
+
+console.log(` `);
+console.log(`- Create an object method where if the keys "isChallenging" and "isRewarding" have values of "true", then return "Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging. **Bonus:** In a comment, explain what is printed if we console.log an object method without calling it and why.`);
+
+console.log(``);
+
+
+
+
+
+console.log(programming.myFunction());
