@@ -225,10 +225,7 @@ const programming = {
     this.languages.push(string);
   },
   printLanguages: function () {
-    if (this.isChallenging === true && this.isRewarding === true) {
-      return `Learning the programming languages ${this.languages} is rewarding and challenging.`;
-    }
-    return `False`;
+    return this.isChallenging && this.isRewarding ? `Learning the programming languages ${this.languages} is rewarding and challenging.` : false;
 
   }
 };
@@ -295,3 +292,33 @@ programming.isChallenging = false;
 programming.difficulty = 2;
 delete programming.difficulty;
 console.log(programming);
+
+// programming.languages = undefined; // delete the values but keep the key!
+// delete programing.languages // delete the key and value
+
+// programming[add] ='hello' // [add] -> think of it as a variable
+// console.log(programming);
+// programming.add = 'hello world';
+// console.log(programming)
+// update
+// programming.difficulty = 10; // update with dot notation
+// programing['difficulty'] = 12; // update with bracket notation
+
+// add method
+// programming.myMethod = function() {
+//   console.log("Hello World!");
+// }
+// programming.myMethod();
+
+// update method
+// programming.myMethod = function(name = '') {
+//   console.log(`Hello World ${name}`)
+// };
+//programming.myMethod('');
+// programming.myMethod("Plamen");
+
+// delete method
+
+// delete programming.myMethod;
+// console.log(programming);
+// programming.myMethod('Plamen'); not possible
