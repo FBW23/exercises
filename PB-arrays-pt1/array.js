@@ -44,7 +44,7 @@ console.log(worldCities.join(', '),(' + '));
 // Write a program to reverse the string: "Hello World".
 const phrase='Hello world';
 let new1=phrase.split('');
-console.log(new1);
+console.log(new1); 
 console.log(new1.reverse());
 console.log(new1.join(''));
 console.log(phrase.split('').reverse().join(''));
