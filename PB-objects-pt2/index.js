@@ -287,11 +287,12 @@ printValues(programming);
 console.log("-------------Create an object method where-------------------")
 console.log(programming.printLanguages());
 
-Object.freeze(programming); // 
+Object.freeze(programming); // makes the object IMMUTABLE
 programming.isChallenging = false;
 programming.difficulty = 2;
 delete programming.difficulty;
 console.log(programming);
+console.log(programming.languages.push('hello'));
 
 // programming.languages = undefined; // delete the values but keep the key!
 // delete programing.languages // delete the key and value
