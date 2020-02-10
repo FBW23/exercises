@@ -2,15 +2,19 @@
 
 // **1. Check if a number is within a given range.**
 // Write a program that checks if a number is within the range of an object's min and max properties. Assume min <= max is always true.
-// const withinAgivenRange = (number, objectMinMax)=>{
-//     let isWithin = false;
-//     if (number >= objectMinMax.min && objectMinMax.max){
-//         isWithin = true,
+console.log('================task 1=================');
+const withinAgivenRange = (number, objectMinMax)=>{
+    let isWithin = false;
+    if (number >= objectMinMax.min && objectMinMax.max){
+        isWithin = true;
 
-//     };
-//     return isWithin
-// };
+    } return isWithin
+};
 
+console.log( withinAgivenRange(4, {
+    min: 0,
+    max: 5
+}));
 
 // Examples:
 
@@ -18,6 +22,8 @@
 // - 4, { min: 4, max: 5 }) ➞ true
 // - 4, { min: 6, max: 10 }) ➞ false
 // - 5, { min: 5, max: 5 }) ➞ true
+
+console.log('================task 2=================');
 
 // **2. Scrabble.**
 // Write a program that, given an array of scrabble tiles, counts the maximum score that a player can earn from the tiles in their hand.
@@ -54,7 +60,7 @@ console.log(scrable(arrayObject));
 // ]
 
 // The player's maximum score: 1 + 5 + 10 + 8 + 2 + 1 + 1 = 28
-
+console.log('================task 3=================');
 // **3. Is it an empty object?**
 // Write a program that returns true if an object is empty, and false if otherwise.
 const object = {};
@@ -70,19 +76,19 @@ console.log(isEmpty(object));
 
 // - {} ➞ true
 // - {a: 1} ➞ false
-
+console.log('================task 4=================');
 // **4. Counting Letters.**
 // Create a function that counts the number of occurrences of each letter in a string. Return an object with key pair values of letters and the number of occurrences for each letter.
-const countLetters2 = (string)=>{
-    let object ={};
-    for (let index in string){
+const countLetters2 = (string) => {
+    let object = {};
+    for (let index in string) {
         let currentLetter = string[index];
-        if(object[currentLetter]){
+        if (object[currentLetter]) {
             object[currentLetter]++
-        } else{
+        } else {
             object[currentLetter] = 1;
         }
-    }return object
+    } return object
 };
 console.log(countLetters2('tree'));
 
@@ -103,7 +109,7 @@ console.log(countLetters("tree"));
 // Example:
 
 // - countLetters("tree") ➞ {t: 1, r: 1, e: 2}
-
+console.log('================task 5=================');
 // **5. Free Shipping.**
 // Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50.
 const priceList = {
@@ -113,8 +119,8 @@ const priceList = {
 
 const freeShipping = priceList => {
     let total = 0;
-    for (key in priceList) {
-        total += priceList[key];
+    for (value in priceList) {
+        total += priceList[value];
     } if (total > 50) {
         return true;
     } else {
@@ -143,28 +149,57 @@ console.log(freeShipping(priceList));
 
 // - freeShipping({ "Surround Sound Equipment": 499.99 }) ➞ true
 // - freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }) ➞ false
-
+console.log('================task 6=================');
 // **6. Programming Object.**
 
 // ```javascript
 const programming = {
-  languages: ["JavaScript", "Python", "Ruby"],
-  isChallenging: true,
-  isRewarding: true,
-  difficulty: 8,
-  jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
-  addLanguage: function(string){
-      this.languages.push(string);
-      return this.languages;     
-  },
-  changeDifficulty: function(number){
-      this.difficulty.number;
-      return this.difficulty;
-  }
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
+    addLanguage: function (string) {
+        this.languages.push(string);
+        return this.languages;
+    },
+    changeDifficulty: function (number) {
+        this.difficulty = 7;
+        return this.difficulty;
+    },
+    addKey: function () {
+        Object.assign(programming, { IsFun: true });
+
+    },
+    checkingBoolean: function () {
+        if (this.isChallenging && this.isRewarding) {
+            return `Learning the programming languages: ${this.languages}  is rewarding and challenging.`
+        };
+    }
+
 };
 
+const allLanguages = (programming) => {
+
+    for (let i = 0; i < programming.languages.length; i++) {
+        console.log(programming.languages[i]);
+    }
+};
+
+const allkeys = (programming) => {
+    return Object.keys(programming)
+};
+
+
+
+
 console.log(programming.addLanguage('Go'));
-console.log(programming.changeDifficulty(7))
+console.log(programming.changeDifficulty(7));
+console.log(programming.addKey());
+console.log(programming);
+allLanguages(programming);
+console.log(allkeys(programming));
+console.log(programming.checkingBoolean());
 // ```
 
 // - Write the command to add the language "Go" to the end of the languages array.
@@ -179,3 +214,4 @@ console.log(programming.changeDifficulty(7))
 
 // **Bonus**:
 // - Make sure that any other code cannot delete or change properties of the object.
+//freeze property
