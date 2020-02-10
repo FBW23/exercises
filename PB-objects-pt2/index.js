@@ -162,10 +162,10 @@ const countLetters = (string) => {
   let object = {};
   let myString = string.toLowerCase();
   for (let index in string) {
-    if (object[string[index]]) {
-      object[string[index]]++;
+    if (object[string[index]]) { // check if key/value is present
+      object[string[index]]++; // add only if already present
     } else {
-      object[string[index]] = 1; // push
+      object[string[index]] = 1; // push only if not present
     }
   }
   return object;
