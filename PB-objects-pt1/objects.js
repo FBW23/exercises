@@ -143,7 +143,6 @@ let student = {
 
 function arrayOfProperties() {
     return Object.keys(student);
-    // KEINE AHNUNG!!!
 }
 console.log(arrayOfProperties(student));
 

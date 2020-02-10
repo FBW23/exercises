@@ -187,7 +187,7 @@ const programming = {
     difficulty: 8,
     jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
     newMethod: function () {
-        if (programming.isChallenging === true && programming.isRewarding === true) {
+        if (this.isChallenging === true && this.isRewarding === true) {
             return `Learning the programming languages: "JavaScript, Python, Ruby, Go".`;
         }
     }
@@ -233,7 +233,6 @@ for (const value in programming) {
 }
 
 // - Create an object method where if the keys "isChallenging" and "isRewarding" have values of "true", then return "Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging. **Bonus:** In a comment, explain what is printed if we console.log an object method without calling it and why.
-
 console.log(programming.newMethod());
 
 // **Bonus**:
