@@ -1,17 +1,21 @@
-const isWhole = arr => {
-  let result = arr.reduce((a, b) => (a + b));
-  result /= 4;
-  if (parseInt(result) === result) {
-    return true;
+const calcAverage = (num) => {
+  let sum = 0;
+  for (number in num) {
+    sum += num[number];
   }
-  return false
+  let average = sum /num.length;
+  return average;
 };
 
+let result = calcAverage([1, 2 ,3 ,4 ]);
+const isInteger = (result) => Number.isInteger(result);
 
-console.log(isWhole([2, 2, 2, 2]));
-console.log(isWhole([2, 2, 2, 5]));
-// console.log(isWhole(2, 2, 2, 2));  
+console.log(isInteger(result));
 
-const isWhole2 = (...arr) => {
 
-};
+const isWhole =( num ) => {
+  let sum = 0;
+  for (number in num) {
+    sum += num[number];
+  }
+}
