@@ -34,6 +34,7 @@ console.log(cloneMyArray);
 
 //3. Find the Largest...
 //Create a function to find the largest number in an array.
+console.log("~~~~~~~~~~~~~~~3. Find the Largest...~~~~~~~~~~~~~~~~");
 
 const findLargest = arr => {
   return Math.max(...arr);
@@ -43,6 +44,7 @@ console.log(findLargest([1, 2, 3, 4, 5]));
 
 // 4. Find the Smallest
 // Create a function to find the smallest number in an array.
+console.log("~~~~~~~~~~~~~~~4. Find the Smallest~~~~~~~~~~~~~~~~");
 
 const findSmallest = arr => {
   return Math.min(...arr);
@@ -53,6 +55,8 @@ console.log(findSmallest([1, 2, 3, 4, 5]));
 
 // 5. Clone and Merge
 ///Given two objects:
+console.log("~~~~~~~~~~~~~~~5. Clone and Merge~~~~~~~~~~~~~~~~");
+
 const person = {
   name: "John"
 };
@@ -86,19 +90,22 @@ console.log(employee);
 // Create a function that takes 4 integers as parameters and 
 //returns true or false depending on whether 
 //the average of all the arguments is a whole number or not.
+console.log("~~~~~~~~~~~~~~~Bonus: 6. Is the average a whole number?~~~~~~~~~~~~~~~~");
 
 const isWhole = (...arr) => {
-  function sum(a, x, y, z, ) {
+  function sum(a, x, y, z) {
     return (a + x + y + z) / 4;
   };
-  if (sum(...arr) % 2 === 0) {
+
+  if (parseInt(sum(...arr)) === sum(...arr)) {
     return true;
   } else {
     return false;
   }
+
 };
 
 console.log(isWhole(1, 2, 3, 4));
 console.log(isWhole(9, 2, 2, 5));
 console.log(isWhole(2, 2, 2, 2));
-console.log(isWhole[2, 2, 2, 2]); // Prints undefined 
+console.log(isWhole([2, 2, 2, 2])); // Prints false should be true
