@@ -1,11 +1,12 @@
 // #### 1. Combining Arrays 
 // * Create two arrays. e.g. euroCountries and asianCountries. Add asianCountries items to the end of euroCountries array. 
-// * Once again create two arrays. Save all elements of both arrays to another variable. 
 console.log('---------------------1. Combining Arrays');
 const euroCountries = ['france', 'Spain', 'Portugal'];
 const asianCountries = ['China', 'India', 'Thailand'];
-euroCountries.push(asianCountries.join(', '));
+euroCountries.push(...asianCountries);
 console.log(euroCountries);
+
+// * Once again create two arrays. Save all elements of both arrays to another variable. 
 
 const americanCountries = ['USA', 'Canada', 'Mexico'];
 const africanCountries = ['Morocco', 'Nigeria', 'South Africa'];
@@ -66,18 +67,22 @@ console.log('---------------------6.  Is the average a whole number?');
 
 const isWhole = (...numList) => {
     let sum = 0;
-    console.log(numList);
     for (let number in numList) {
         sum += numList[number];
     } if(sum % numList.length === 0) {
         return true;
     } return false;
 };
+
+// const isWhole = arr => arr.reduce((p,c) => p +c ) / arr.length);
+
 console.log(isWhole(1, 2, 3, 4));
 console.log(isWhole(9, 2, 2, 5));
 console.log(isWhole(9, 2, 4, 9));
 
 // * Once you have created a function, pass in an array as an argument which contains four elements - 
 // check if this method still outputs the correct result!
+console.log();
 
-console.log(isWhole(...[9, 2, 4, 9]));  
+console.log(isWhole([9, 2, 4, 9]));  // => wrong result
+console.log(isWhole(...[9, 2, 4, 9]));  // => correct result
