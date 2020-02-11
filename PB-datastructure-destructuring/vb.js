@@ -18,7 +18,7 @@
 console.log(`==================1=================`);
 
 let fruit, vegetable, food;
-[fruit,vegetable,food]=["banana", "cucumber", ["bread", "cakes", "pizza"]];
+[fruit, vegetable, food] = ["banana", "cucumber", ["bread", "cakes", "pizza"]];
 console.log(fruit);
 console.log(vegetable);
 console.log(food);
@@ -27,13 +27,9 @@ console.log(`====================================`);
 
 console.log(`==================2=================`);
 
-const object = {
-    fran:"witch", joao:"darthvader",balazs: "batman"
-};
-let fran, joao, balazs; 
-({
-    fran,joao,balazs
-} = object);
+const object = { fran: "witch", joao: "darthvader", balazs: "batman" };
+let fran, joao, balazs;
+({ fran, joao, balazs } = object);
 
 console.log(fran);
 console.log(joao);
@@ -51,7 +47,7 @@ const bandObject = {
     genre: "polish rap"
 }
 
-const bandDetails = ({bandname, greatesthit, nationality, genre}) => {
+const bandDetails = ({ bandname, greatesthit, nationality, genre }) => {
     return `${bandname} is a ${nationality} band playing ${genre}, and their greatest hit is ${greatesthit}`
 }
 console.log(bandDetails(bandObject));
