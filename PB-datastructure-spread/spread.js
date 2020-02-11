@@ -22,18 +22,16 @@ console.log(copyAfricanCountries);
 // Create a function to find the largest number in an array.
 console.log('---------------------3. Find the Largest');
 
-const largestNumber = array => {
-    for (let number in array) {
-        if (array[number] > array.) {
-            return array[number];
-        }
-    }
-};
-console.log(largestNumber([1, 4, 6]));
+const largestNumber = array => Math.max(...array);
+
+console.log(largestNumber([1, 19, 6]));
 
 // #### 4. Find the Smallest
 // Create a function to find the smallest number in an array.
-console.log('---------------------4. Find the Smallest')
+console.log('---------------------4. Find the Smallest');
+const smallestNumber = array => Math.min(...array);
+
+console.log(smallestNumber([38, 23, 100]));
 
 // #### 5. Clone and Merge
 // Given two objects:
@@ -41,15 +39,45 @@ console.log('---------------------4. Find the Smallest')
 // const person = {name: "John"}
 // const job = {role: "Teacher"}
 // ```
+console.log('---------------------5. Clone and Merge');
+const person = {name: "John"};
+const job = {role: "Teacher"};
+
 // * 5.1 Clone the person object.
+const newPerson = {...person};
+console.log(newPerson);
+
 // * 5.2 Merge these two objects into one object: "employee". Use the spread operator to do so. 
+const employee = {...person, ...job};
+console.log(employee);
 // * 5.3 Then change the values of the properties in the employee object.
-console.log('---------------------5. Clone and Merge')
+employee.name = 'Julien';
+employee.role = 'Student';
+console.log(employee);
 
 // #### Bonus: 6.  Is the average a whole number?
-// Create a function that takes 4 integers as parameters and returns true or false depending on whether the average of all the arguments is a whole number or not.
+// Create a function that takes 4 integers as parameters and returns true or false depending on whether the average 
+// of all the arguments is a whole number or not.
 // * Examples
 // * isWhole(1, 2, 3, 4) ➞ false
 // * isWhole(9, 2, 2, 5) ➞ false
 
-// * Once you have created a function, pass in an array as an argument which contains four elements - check if this method still outputs the correct result!
+console.log('---------------------6.  Is the average a whole number?');
+
+const isWhole = (...numList) => {
+    let sum = 0;
+    console.log(numList);
+    for (let number in numList) {
+        sum += numList[number];
+    } if(sum % numList.length === 0) {
+        return true;
+    } return false;
+};
+console.log(isWhole(1, 2, 3, 4));
+console.log(isWhole(9, 2, 2, 5));
+console.log(isWhole(9, 2, 4, 9));
+
+// * Once you have created a function, pass in an array as an argument which contains four elements - 
+// check if this method still outputs the correct result!
+
+console.log(isWhole(...[9, 2, 4, 9]));  
