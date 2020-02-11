@@ -89,11 +89,10 @@ const isWhole = (...numbers) => {
     let sum = 0;
     let average = 0;
     for (let num in numbers) {
-        console.log('num ->', num)
-        sum += num;   
+        sum += numbers[num];   
         console.log('sum ->', sum); 
         average = sum / numbers.length;
-        console.log('average ->', average);
+        // console.log('average ->', average);
     }
     console.log(`average ->`, average);
     return Number.isInteger(average);
