@@ -56,11 +56,28 @@ const job = { role: "Teacher" };
 // * 5.1 Clone the person object.
 const personClone = { ...person };
 // * 5.2 Merge these two objects into one object: "employee". Use the spread operator to do so.
-
+const employee = {...personClone, ...job};
+console.log(employee);
 // * 5.3 Then change the values of the properties in the employee object.
+employee.name = 'Julia';
+employee.role = 'student';
 
+console.log(employee);
 // #### Bonus: 6.  Is the average a whole number?
 // Create a function that takes 4 integers as parameters and returns true or false depending on whether the average of all the arguments is a whole number or not.
+const isWhole = (...args) =>{
+    let sum = 0;
+    
+    for(item in args){
+        sum += args[item]; 
+    
+    } let average = sum/args.length;
+    return Math.floor(average)===average
+
+    };
+
+console.log(isWhole(4, 4));
+console.log(isWhole(9, 2, 2, 5));
 // * Examples
 // * isWhole(1, 2, 3, 4) ➞ false
 // * isWhole(9, 2, 2, 5) ➞ false
