@@ -31,10 +31,29 @@ const person = {
 const job = {
     role: "Teacher"
 };
-let clonedPerson = { ... person};
+let clonedPerson = {
+    ...person
+};
 console.log(clonedPerson);
 let employee = {
     ...person,
     ...job
 };
 console.log(employee);
+employee.name = 'constantin';
+employee.role = 'student';
+console.log(employee);
+
+console.log(`----------------------------------------------`);
+const isWhole = (arr) => {
+    let sum = 0;
+    for (number in arr) {
+        sum += arr[number];
+    }
+    let average = sum / arr.length;
+    return average
+
+};
+        let result = isWhole([1, 2, 3, 4]);
+        const isInteger = result = Number.isInteger(result); 
+        console.log(result);
