@@ -181,7 +181,7 @@ console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
 // * Do not include 0. 
 console.log('8. Even Number Generator.');
 
-const evenNums = number => {
+const evenNums = (number => {
     let resultArray = [];
     for (let i = 1; i <= number; i++) {
         if (i % 2 === 0) {
