@@ -43,9 +43,7 @@ const myBand = {
     genre: 'Hip-Hop'
 };
 
-const display = (object) => {
-    let name, greatestHit, nationality, genre;
-    ({name, greatestHit, nationality, genre} = object);
+const display = ({name, greatestHit, nationality, genre}) => {
     return name + ' is an ' + nationality + ' singer/songwriter. The artist sings ' + genre + ' and his greatest hit is \"' + greatestHit + '\".';
 };
 
