@@ -43,10 +43,10 @@ const rockStar = {
     bandName: 'the murder junkies'
 }
 
-let name, nationality, age, hit, genre, bandName;
+// let name, nationality, age, hit, genre, bandName;
 
 const whosTheRockStar = ({name, nationality, age, hit, bandName}) => {
-    return `${name} is a ${age} ${nationality} singer and his most famous hit is ${hit}. He used to play in a band called ${bandName}`;
+    return `${name} is a ${age} ${nationality} singer and his most famous hit is ${hit}. He used to play ${genre} in a band called ${bandName}`;
 };
 
 console.log(whosTheRockStar(rockStar));
