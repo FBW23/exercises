@@ -168,3 +168,4 @@ let last = {
 // {firstName: "John", lastName: "Smith"}
 // ```
 // 3
+const employee = {...first, ...last};
