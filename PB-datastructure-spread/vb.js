@@ -154,8 +154,8 @@ console.log(`======================================`);
 console.log(``);
 
 const isWhole = (num1, num2, num3, num4) => {
-    const average = (num1 + num2 + num3 + num4) / 4
-    return Math.floor(average)===average;
+    const average = (num1 + num2 + num3 + num4) / 4;
+    return Math.floor(average) === average;
 }
 
 console.log(isWhole(1, 2, 3, 4));
@@ -166,17 +166,10 @@ console.log(isWhole(9, 2, 2, 5));
 
 const isWhole2 = (...num) => {
     let sum = 0;
-
-
-
     for (let i = 0; i < num.length; i++) {
-        
         sum += num[i];
-       //console.log(num[i]);
     }
     let average = sum / num.length;
-   // console.log(sum);
-   // console.log(average);
-    return Math.floor(average)===average;
+    return Math.floor(average) === average;
 }
-console.log(isWhole2(...[5, 5, 5, 5]));
+console.log(isWhole2(...[5, 5, 6, 5]));
