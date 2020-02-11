@@ -156,7 +156,17 @@ console.log(countLetters('bambula'));
 console.log(`==================================`);
 console.log(`5.`);
 
+const freeShipping2=(order)=> {
+    const prices=Object.values(order);
+    const reducerFunction = (sumOfPrices,currentPrice) => sumOfPrices+currentPrice
 
+
+    return prices.reduce(reducerFunction,0);
+
+}
+console.log(freeShipping2({ "Sponge": 3.50, "Soap": 5.99 }));
+
+/* console.log(freeShipping2({}))
 const freeShipping = (order) => {
     let sum = 0;
 
@@ -170,7 +180,7 @@ const freeShipping = (order) => {
 };
 console.log(freeShipping({ "Sponge": 3.50, "Soap": 5.99 }));
 console.log(freeShipping({ "Surround Sound Equipment": 499.99 }));
-console.log(freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }));
+console.log(freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 })); */
 
 console.log(`==================================`);
 // **6. Programming Object.**
@@ -279,3 +289,17 @@ console.log(``);
 
 
 console.log(programming.myFunction());
+
+
+console.log(`freeze`);
+
+//Object.freeze(programming);
+console.log(programming);
+console.log(``);
+//programming.difficulty = 5;
+console.log(programming)
+
+const programming2 = programming;
+
+programming2.difficulty = 5;
+console.log(programming2)
