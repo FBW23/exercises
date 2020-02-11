@@ -4,38 +4,45 @@
 console.log('====== Task 1 =====')
 const euroCountries = ['France', 'Latvia', 'Belarus', 'Cyprus', 'San Marino'];
 const asianCountries = ['Nepal', 'Mongolia', 'Bhutan', 'Indonesia', 'Philipines'];
-let concaty = euroCountries.concat(asianCountries);
-console.log(concaty);
+euroCountries.push(...asianCountries);
+console.log(euroCountries);
 // Once again create two arrays. Save all elements of both arrays to another variable.
+const euroBubbles = ['France', 'Latvia', 'Belarus', 'Cyprus', 'San Marino'];
+const asianBubbles = ['5', 'Mongolia', 'Bhutan', 'Indonesia', 'Philipines'];
+const euroAsianBubbles = euroBubbles.concat(asianBubbles);
+console.log(euroAsianBubbles);
 // 2. Copying Arrays
 console.log('====== Task 2 =====')
 const sobremesas = ['Bolo', 'Brigadeiro', 'Quindim'];
-const novaSobremesa = {
+const novaSobremesa = [
     ...sobremesas
-};
-console.log(novaSobremesa)
+];
+console.log(novaSobremesa);
 
 // Copy an array using the spread operator. Store the copied array in another variable.
 // 3. Find the Largest...
 // Create a function to find the largest number in an array.
 console.log('=======Task 3 =====')
-
+const biggestNumber = num => Math.max(...num);
 const bigNumbers = [2, 3, 4, 5, 899];
-console.log(Math.max(...bigNumbers));
+console.log(biggestNumber(bigNumbers));
 
 // 4. Find the Smallest
 // Create a function to find the smallest number in an array.
 console.log('======Task 4  ====')
+const smallestNumber = num => Math.min(...num)
 const smallNumbers = [2, 3, 4, 5, 899];
-console.log(Math.min(...smallNumbers));
+console.log(smallestNumber(smallNumbers));
 // 5. Clone and Merge
 // Given two objects:
 
-const person = {let values = [2, 56, 3, 41, 0, 4, 100, 23];
-    let count = values.length;
+const person = {
+    name: "John"
+};
 const job = {
     role: "Teacher"
 };
+// 5.1 Clone the person object.
 // 5.1 Clone the person object.
 const newPerson = {
     ...person
@@ -51,6 +58,7 @@ console.log(employee);
 console.log('======Task 5.3======')
 // 5.3 Then change the values of the properties in the employee object.
 employee.role = 'Magician';
+employee.name = "Epaminondas"
 console.log(employee);
 
 // Bonus: 6. Is the average a whole number?
@@ -62,8 +70,8 @@ console.log(employee);
 
 // isWhole(9, 2, 2, 5) ➞ false
 
-// function isWhole(a, b, c, d) => (a, b, c, d)
+const isWhole = arr => arr.reduce((p, c) => p + c) / arr.length;
 
+const result = isWhole([1, 2, 3, 4]);
 
-
-// Once you have created a function, pass in an array as an argument which contains four elements - check if this method still outputs the correct result!/*  */
+console.log(Number.isInteger(result));
