@@ -151,3 +151,20 @@ console.log(arrayOfProperties(student));
 // ```javascript
 // ["name", "class", "course"]
 // ```
+
+console.log(`**3. Merge.**`);
+// Create a function that takes two objects as its parameters and merges them together into a new object. 
+// * Example
+// ```javascript
+let first = {
+    firstName: "John"
+}
+let last = {
+    lastName: "Smith"
+}
+// ```
+// * Expected output:
+// ```javascript
+// {firstName: "John", lastName: "Smith"}
+// ```
+// 3
