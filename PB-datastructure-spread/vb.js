@@ -116,8 +116,8 @@ console.log(`======================================`);
 console.log(``);
 
 
- const person2={...person};
- console.log(person2);
+const person2 = { ...person };
+console.log(person2);
 
 console.log(``);
 console.log(`======================================`);
@@ -125,7 +125,7 @@ console.log(`(5.2.)`);
 console.log(` Merge these two objects into one object: "employee". Use the spread operator to do so.`);
 console.log(`======================================`);
 console.log(``);
-const employee={...person,...job};
+const employee = { ...person, ...job };
 console.log(employee);
 
 console.log(``);
@@ -134,8 +134,8 @@ console.log(`(5.3.)`);
 console.log(` Then change the values of the properties in the employee object.`);
 console.log(`======================================`);
 console.log(``);
-employee.role='soldier';
-employee.name='Ultimate';
+employee.role = 'soldier';
+employee.name = 'Ultimate';
 console.log(employee);
 console.log(``);
 console.log(`======================================`);
@@ -153,12 +153,30 @@ console.log(`  Create a function that takes 4 integers as parameters and returns
 console.log(`======================================`);
 console.log(``);
 
-const isWhole=(num1,num2,num3,num4)=>{
-    const average=(num1+num2+num3+num4)/4
-    return average%2===0;
+const isWhole = (num1, num2, num3, num4) => {
+    const average = (num1 + num2 + num3 + num4) / 4
+    return average % 2 === 0;
 }
 
-console.log(isWhole(1,2,3,4));
+console.log(isWhole(1, 2, 3, 4));
 console.log(isWhole(9, 2, 2, 5));
 
+
 // * Once you have created a function, pass in an array as an argument which contains four elements - check if this method still outputs the correct result!
+
+const isWhole2 = (...num) => {
+    let sum = 0;
+
+
+
+    for (let i = 0; i < num.length; i++) {
+        
+        sum += num[i];
+       console.log(num[i]);
+    }
+    let average = sum / num.length;
+    console.log(sum);
+    console.log(average);
+    return average % 2 === 0;
+}
+console.log(isWhole2(...[9, 2, 2, 5]));
