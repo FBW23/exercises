@@ -24,3 +24,22 @@ let julia, bianca, jaoa;
     jaoa: 'Wolfverine'
 });
 console.log(julia);
+console.log(jaoa);
+
+// #### 3. Parameters: Object Destructuring 
+// * Create an object with band/musician details e.g. name of the band/musician, greatest hit, nationality, genre etc. 
+// * Then, create a function to display all of the band/musician's data. 
+// * Example
+
+const object = {
+    name: 'Eminem',
+    style: 'Rapper',
+    greatest: 'SlimShady',
+    nationality: 'USA',
+};
+
+const musician = ({name, style, greatest, nationality}) => {
+    return name + ' from ' + nationality + ' is the biggest '+ style + ' with the Album ' + greatest + ', which he won few Oscar';
+};
+
+console.log(musician(object));
