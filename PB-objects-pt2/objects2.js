@@ -68,26 +68,48 @@ console.log(shortest(5, {
 
 // 3. Is it an empty object? Write a program that returns true if an object is empty, and false if otherwise.
 console.log("===task3===");
-const isEmpty = (array) => {
-    if(isEmpty == null) {
-        return true
+const isEmpty = (object) => {
+    
+    if(Object.keys(object).length === 0) {
+        return true;
     } else {
-        return false
+        return false;
     }
 }
-console.log(isEmpty([]));
+console.log(isEmpty({}));
+
+
+
 
 //4. Counting Letters. Create a function that counts the number of occurrences of each letter in a string. 
 //Return an object with key pair values of letters and the number of occurrences for each letter.
 console.log("===task4===");
 
 const countLetters = (string) => {
+    let objLetter = {};
     for(let i = 0; i < string.length; i++){
-       return string.indexOf(i).count(i);
+       let current = string[i]; 
+     if(objLetter[current]) {
+        objLetter[current] += 1; 
+     } else {
+        objLetter[current] = 1; 
+     }
+       console.log(objLetter);
     }
-    
+    return;
 }
 
 
-Example:
+
 console.log(countLetters("tree"));
+
+//countLetters("tree") ➞ {t: 1, r: 1, e: 2}
+//==================================================================================
+
+// 5. Free Shipping. Create a function that determines whether an online order should get free shipping. 
+// An order gets free shipping if the total cost of items exceeds €50.
+
+
+// freeShipping({ "Sponge": 3.50, "Soap": 5.99 }) ➞ false
+// freeShipping({ "Surround Sound Equipment": 499.99 }) ➞ true
+// freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }) ➞ false
