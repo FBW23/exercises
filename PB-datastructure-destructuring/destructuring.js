@@ -21,4 +21,32 @@ let fran, mike, lucas, steffi;
     fran: 'witch',
     mike: 'rich',
     lucas: 'snitch',
+    steffi: '...'
 });
+
+console.log(`fran is a ${fran}, mike is a ${mike}, lucas is a ${lucas} and steffi is a ${steffi}`);
+
+console.log(`#### 3. Parameters: Object Destructuring`);
+// * Create an object with band/musician details e.g. name of the band/musician, greatest hit, nationality, genre etc. 
+// * Then, create a function to display all of the band/musician's data. 
+// * Example
+// ```javascript
+// `Regina Spektor is a American-Russian singer/songwriter and pianist. The musician sings indie-pop and their greatest hit is "Us"`.
+// ```
+
+const rockStar = {
+    name: 'G. G. Allin',
+    nationality: 'american',
+    age: 'deceased',
+    hit: '"legalise murder"',
+    genre: 'punk',
+    bandName: 'the murder junkies'
+}
+
+let name, nationality, age, hit, genre, bandName;
+
+const whosTheRockStar = ({name, nationality, age, hit, genre}) => {
+    return `${name} is a ${age} ${nationality} singer and his most famous hit is ${hit}. He used to play in a band called ${bandName}`;
+};
+
+console.log(whosTheRockStar(rockStar));
