@@ -150,13 +150,13 @@ console.log(programming);
 
 // // Make sure that any other code cannot delete or change properties of the object.
 
-Object.freeze(programming);
+Object.seal(programming);
 console.log('====bonus bonus===')
  
-console.log(programming);
+console.log(programming.languages);
 console.log('======Task====')
 
-delete programming;
-console.log(programming);
+delete programming.languages;
+console.log(programming.languages);
 // cannot delete when sealed
-;
+
