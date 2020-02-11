@@ -76,7 +76,7 @@ let person = {
 };
 console.log(person.getInfo());
 
-console.log("................................"),
+console.log("................................");
 
 
 const oldObject = {
@@ -88,13 +88,13 @@ const oldObject = {
 
 };
 
-Object.seal(oldObject);
-Object
-const newObject = oldObject;
+Object.seal(oldObject); // this does not help
+Object.freeze(oldObject); // this helps
+const newObject = oldObject; // link to the old reference
 console.log(newObject);
-newObject.spring = 'bunny';
+newObject.spring = 'bunny'; // chnage also the old Object
 console.log(newObject);
-console.log(oldObject);
+console.log(oldObject); // unwanted side effect
 
 const thirdObject = newObject;
 thirdObject.autumn = 'fall';
