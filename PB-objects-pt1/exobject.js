@@ -75,3 +75,48 @@ let person = {
     }
 };
 console.log(person.getInfo());
+
+console.log("................................"),
+
+
+const oldObject = {
+
+    winter: 'cold',
+    spring: 'sexy',
+    summer: 'hot',
+    autumn: 'orange'
+
+};
+
+Object.seal(oldObject);
+Object
+const newObject = oldObject;
+console.log(newObject);
+newObject.spring = 'bunny';
+console.log(newObject);
+console.log(oldObject);
+
+const thirdObject = newObject;
+thirdObject.autumn = 'fall';
+console.log(thirdObject);
+console.log(newObject);
+console.log(oldObject);
+
+//.......... The Spread Operator
+
+const numbers = [1, 2, 3];
+console.log(...numbers); // array becomes numbers
+
+const objClone = { ...oldObject }; // makes a real clone of the object
+console.log(objClone);
+objClone.summer = 'i have been under the shower'; // this change is only on the new object
+console.log(objClone);
+console.log(oldObject);
+
+const arrayClone = [...numbers]; // makes a real clone of the array
+arrayClone[0] = 5; // this change is only on the new array
+console.log(arrayClone);
+console.log(numbers);
+
+// Deep cloning objects and array : recursive function
+// will go as deepcd ..
