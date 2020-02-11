@@ -89,7 +89,7 @@ const isWhole = (...numbers) => {
     let sum = 0;
     let average = 0;
     for (let num in numbers) {
-        sum += numbers[num];   
+        sum += numbers[num]; // this works not only for arrays
         console.log('sum ->', sum); 
         average = sum / numbers.length;
         // console.log('average ->', average);
@@ -97,8 +97,6 @@ const isWhole = (...numbers) => {
     console.log(`average ->`, average);
     return Number.isInteger(average);
 };
-
-// KEINE AHNUNG!!!
 
 console.log(isWhole(1, 2, 3, 4));
 console.log(isWhole(9, 2, 2, 5));
