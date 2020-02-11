@@ -21,6 +21,11 @@ const myHalloween = {
     Julia: 'Nun of your business'
 };
 
+({Julien, Nicolo, Julia} = myHalloween);
+console.log(Julien);
+console.log(Nicolo);
+console.log(Julia);
+
 
 // #### 3. Parameters: Object Destructuring 
 // * Create an object with band/musician details e.g. name of the band/musician, greatest hit, nationality, genre etc. 
@@ -30,3 +35,18 @@ const myHalloween = {
 // `Regina Spektor is a American-Russian singer/songwriter and pianist. The musician sings indie-pop and 
 // their greatest hit is "Us"`.
 console.log('----------------3. Parameters: Object Destructuring');
+
+const myBand = {
+    name: 'Mykki Blanco',
+    greatestHit: 'haze, boogy, life',
+    nationality: 'american',
+    genre: 'Hip-Hop'
+};
+
+const display = (object) => {
+    let name, greatestHit, nationality, genre;
+    ({name, greatestHit, nationality, genre} = object);
+    return name + ' is an ' + nationality + ' singer/songwriter. The artist sings ' + genre + ' and his greatest hit is \"' + greatestHit + '\".';
+};
+
+console.log(display(myBand));
