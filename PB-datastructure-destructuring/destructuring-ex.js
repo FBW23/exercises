@@ -2,12 +2,21 @@
 // * Declare the variables `fruit`, `vegetable`, `food`. Assign the following values to the variables 
 // respectively: "banana", "cucumber", "bread", "cakes", "pizza" (assign the "bread", "cakes" and "pizza" to `food`). 
 // Use array destructuring assignment to complete this task.
-console.log('----------------1. Array Destructuring');
+console.log('----------------1.Array Destructuring');
 let fruit, vegetable, food;
-[fruit, vegetable, ...food] = ["banana", "cucumber", "bread", "cakes", "pizza"];
+[fruit, vegetable, ...food] = ['banana', 'cucumber', 'bread', 'cakes', 'pizza'];
 console.log(fruit);
 console.log(vegetable);
 console.log(food);
+
+
+// const bubba ={
+//     fruit1:"Banana",
+//     vegetable1:"Cucumber"
+// }
+// const { fruit1, vegetable1,food1 } = bubba;
+// console.log(fruit1);
+// console.log(vegetable1);
 
 
 // #### 2.Object Destructuring
@@ -17,7 +26,7 @@ console.log('----------------2.Object Destructuring');
 
 const myHalloween = {
     Julien: 'Cereal killer',
-    Nicolo: 'Walking dead moustache',
+    Nicolo: 'Sand\'witch',
     Julia: 'Nun of your business'
 };
 
@@ -34,7 +43,7 @@ console.log(Julia);
 // ```javascript
 // `Regina Spektor is a American-Russian singer/songwriter and pianist. The musician sings indie-pop and 
 // their greatest hit is "Us"`.
-console.log('----------------3. Parameters: Object Destructuring');
+console.log('----------------3.Parameters: Object Destructuring');
 
 const myBand = {
     name: 'Mykki Blanco',
