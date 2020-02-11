@@ -35,3 +35,6 @@ let personalitet = {
     }
 };
 console.log(personalitet.biography());
+
+console.log(`------------------------------ex4----------------`);
+
