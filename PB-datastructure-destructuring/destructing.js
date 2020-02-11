@@ -11,7 +11,7 @@ console.log(`* Create an object which contains key pair values of names and the 
 console.log(`_____________________________________________________________________`);
 
 let constantin, negs, bendis, someOneElse;
- ({
+({
     constantin,
     negs,
     bendis,
@@ -26,3 +26,29 @@ console.log(constantin);
 console.log(negs);
 console.log(bendis);
 console.log(someOneElse);
+
+console.log(`_____________________________________________________________________`);
+// * Create an object with band/musician details e.g. name of the band/musician, greatest hit, nationality, genre etc. 
+// * Then, create a function to display all of the band/musician's data. 
+// * Example
+// ```javascript
+// `Regina Spektor is a American-Russian singer/songwriter and pianist. The musician sings indie-pop and their greatest hit is "Us"`.
+// ```
+console.log(`_____________________________________________________________________`);
+
+const band = {
+        name: 'The prodigy',
+        greatestHit: 'Smack my b*$ch up',
+        country: 'Usa',
+        genre: 'rave'
+
+    };
+    // ({
+    //     name,
+    //     greatestHit,
+    //     country,
+    //     genre
+    // } = musician);
+const bestMusic = ({name,greatestHit,country,genre}) => `This is  ${name} with the greatest Hit ${greatestHit} from ${country} playing good ${genre} music `;
+
+console.log(bestMusic(band));
