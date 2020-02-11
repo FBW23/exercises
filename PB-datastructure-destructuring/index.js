@@ -49,9 +49,15 @@ const band = {
   nationality: "American",
   genre: "Heavy Metal",
   formed: 1994,
-  printBand: function () {
-    return `${this.name} is a ${this.nationality} ${this.genre} band formed in ${this.formed}.The band vocalist is ${this.vocalist}.${this.name} greatest hit is ${this.greatestHit}`
+  // printBand: function () {
+    // return `${this.name} is a ${this.nationality} ${this.genre} band formed in ${this.formed}.The band vocalist is ${this.vocalist}.${this.name} greatest hit is ${this.greatestHit}`
 
-  }
+  // }
 };
-console.log(band.printBand());
+// console.log(band.printBand());
+
+const printBand = ({name, vocalist, greatestHit, nationality, genre, formed}) => {
+  return `${name} is a ${nationality} ${genre} band formed in ${formed}.The band vocalist is ${vocalist}.${name} greatest hit is ${greatestHit}`;
+};
+
+console.log(printBand(band));
