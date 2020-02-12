@@ -26,7 +26,7 @@ console.log('----------------2.Object Destructuring');
 
 const myHalloween = {
     Julien: 'Cereal killer',
-    Nicolo: 'Sand\'witch',
+    Nicolo: 'Sandwitch',
     Julia: 'Nun of your business'
 };
 
