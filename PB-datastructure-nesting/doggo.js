@@ -5,8 +5,9 @@ let board = [
 ];
 for (let i = 0; i < board.length; i++) {
 
-    for (let j = 0; j < board[i].length; j++)
+    for (let j = 0; j < board[i].length; j++) {
         console.log(board[i][j]);
+    }
 };
 
 console.log(`-------------------ex2---------------`);
@@ -19,17 +20,21 @@ console.log(`-------------------ex2---------------`);
 const doggo = {
     name: 'felix',
     breed: 'toyterrier',
-    favoriteFood: ['fish', 'meat', 'whiskas']
+    favoriteFood: ['fish', 'meat', 'whiskas'],
+    doggosFavorite: function(){
+        for (let k = 0; k < this.favoriteFood.length; k++) {
+
+            console.log(this.favoriteFood[k])
+        };
+    }
+
 }
 let dogFood = [];
 console.log(`----2.3---`);
 console.log(doggo.favoriteFood[1]);
 console.log(`----2.4---`);
-for (let k = 0; k < doggo.favoriteFood.length; k++) {
-
-    console.log(doggo.favoriteFood[k])
-};
-
+doggo.doggosFavorite();
+    // console.log(doggo.favoriteFood[k])
 // * 3.1 Create an object called recipes.
 // * 3.2 Inside this object, you should create another object for ingredients and store ingredients as properties butter, sugar, flour etc. Each property should have a string as its value. 
 // * 3.3 Without changing the previous code, add another ingredient - let's add `ginger`. 
@@ -39,24 +44,26 @@ console.log(`----------------ex3-----------------`);
 const recipes = {
     ingredients: {
         buter: '250gr',
-        sugar:'2pks',
+        sugar: '2pks',
         flour: '1kg'
     },
     allIngredients: function () {
-        let bigBox = [];
-        for (key in recipes) {
-          for (key in this.ingredients) {
-            bigBox.push(this.ingredients[key]);
-          }
-          return bigBox;
-    } 
-}
-};
-recipes.ingredients.ginger='2slices';
+        console.log(Object.values(this.ingredients));
+    }
+    // {
+    //     // for (key in recipes) {
+    //         for (key in this.ingredients) {
+    //             console.log(this.ingredients[key]);
+    //         }
+            // return bigBox;
+        // }
+    }
+
+recipes.ingredients.ginger = '2slices';
 console.log(recipes);
 console.log(`-----------------------`);
-recipes.ingredients.sugar='brown sugar';
+recipes.ingredients.sugar = 'brown sugar';
 console.log(`-----------------------`);
 console.log(recipes);
 console.log(`-----------------------`);
-console.log(recipes.allIngredients());
+recipes.allIngredients();
