@@ -66,22 +66,22 @@ const recipes = {
         flour: 'white'
     },
     printIngriedents: function () {
-       for (keys in this.ingredients) {
+        for (keys in this.ingredients) {
 
-    console.log(this.ingredients[keys]);
-}
+            console.log(this.ingredients[keys]);
+        }
     }
 
 };
 
- console.log(recipes);
+console.log(recipes);
 console.log(`========addGinger=========`);
 recipes.ingredients.ginger = 'spicy';
 
 console.log(recipes);
 console.log(`========sugarToBrownSugar=========`);
 recipes.ingredients.sugar = 'brown sugar';
-console.log(recipes); 
+console.log(recipes);
 
 
 /* for (keys in recipes.ingredients) {
