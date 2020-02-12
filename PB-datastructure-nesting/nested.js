@@ -35,7 +35,7 @@ const doggo = {
             };
         }
     }
-doggo.allFoods()
+doggo.allFoods();
 
 
 console.log(doggo.favouriteFoods[1]);
@@ -53,16 +53,26 @@ const recipes = {
         butter: "oi",
         sugar: "not too much",
         flour: "good",
-        print: function(){
+        
+        },
+    print: function(){
             for (prop in this.ingredients){
-                for (value in this.ingredients[value]){
-                console.log(this.print[value][prop]);
-            }
-        }
+                console.log(this.ingredients[prop])
+            } ; 
     }
-}
-}
+};
+
+recipes.print()
+
+
+recipes.ingredients.ginger = "Not too much";
+console.log(recipes);
+
+recipes.ingredients.sugar = "brown sugar";
+console.log(recipes);
+
 //* 3.2 Inside this object, you should create another object for ingredients and store ingredients as properties butter, sugar, flour etc. Each property should have a string as its value. 
 //* 3.3 Without changing the previous code, add another ingredient - let's add `ginger`. 
+
 //* 3.4 Change the ingredient `sugar` to `brown sugar`. 
 //* 3.5 Write a method in the recipes object that prints the value of each ingredient in the ingredients object. 
