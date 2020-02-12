@@ -64,21 +64,32 @@ const recipes = {
         butter: 'fatty',
         sugar: 'sweet',
         flour: 'white'
+    },
+    printIngriedents: function () {
+       for (keys in this.ingredients) {
+
+    console.log(this.ingredients[keys]);
+}
     }
 
 };
+
+ console.log(recipes);
+console.log(`========addGinger=========`);
+recipes.ingredients.ginger = 'spicy';
+
 console.log(recipes);
-
-recipes.ingredients.ginger='spicy';
-
-console.log(recipes);
-
-recipes.ingredients.sugar='brown sugar';
-console.log(recipes);
+console.log(`========sugarToBrownSugar=========`);
+recipes.ingredients.sugar = 'brown sugar';
+console.log(recipes); 
 
 
-for(keys in recipes.ingredients){
+/* for (keys in recipes.ingredients) {
 
     console.log(recipes.ingredients[keys]);
-}
+} */
+
+console.log(`========printValuesOfIngredients=========`);
+recipes.printIngriedents();
+
 console.log(`========================3=======================`);
