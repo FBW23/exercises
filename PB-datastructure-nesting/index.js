@@ -64,9 +64,10 @@ const recipes = {
     "flour": "white flour"
   },
   printIngredients: function () {
-    for (key in this.ingredients) {
-      console.log(this.ingredients[key]);
-    }
+    console.log(Object.values(this.ingredients)); // shortest way to take the values of an object
+    // for (key in this.ingredients) {
+    //   console.log(this.ingredients[key]);
+    // }
   }
 };
 
