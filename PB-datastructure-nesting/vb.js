@@ -22,9 +22,12 @@ let board = [
 ];
 
 
-for (subArray in board) {
 
-    console.log(board[subArray]);
+
+for (subArray in board) {
+    for ( keys in board[subArray]) {
+        console.log( board[subArray][keys]);
+    }
 }
 
 
