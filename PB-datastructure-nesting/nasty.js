@@ -49,9 +49,6 @@ doggo.allTheFood();
 // * 3.1 Create an object called recipes.
 // * 3.2 Inside this object, you should create another object for ingredients and store ingredients as properties butter, 
 // sugar, flour etc. Each property should have a string as its value. 
-// * 3.3 Without changing the previous code, add another ingredient - let's add `ginger`. 
-// * 3.4 Change the ingredient `sugar` to `brown sugar`. 
-// * 3.5 Write a method in the recipes object that prints the value of each ingredient in the ingredients object. 
 console.log('----------------------3. recipes')
 
 const recipes = {
@@ -60,6 +57,18 @@ const recipes = {
         sugar: '100g', 
         flour: '500g', 
         water: 'some'
+    },
+    allIngredients: function(){
+        for (value in this.ingredients) {
+            console.log(this.ingredients[value]);
+        }
     }
 };
+// * 3.3 Without changing the previous code, add another ingredient - let's add `ginger`. 
+recipes.ingredients.ginger = '20g';
 
+// * 3.4 Change the ingredient `sugar` to `brown sugar`. 
+recipes.ingredients.sugar = '100g brown sugar';
+
+// * 3.5 Write a method in the recipes object that prints the value of each ingredient in the ingredients object. 
+recipes.allIngredients();
