@@ -12,7 +12,7 @@ let board = [
 console.log('=====for loop=====')
 for (i = 0; i < board.length; i++) {
   for (j = 0; j < board[i].length; j++) {
-    console.log(board[i][j])
+    console.log(board[i][j]);
   }
 };
 
@@ -20,12 +20,12 @@ for (i = 0; i < board.length; i++) {
 console.log('=====for in loop=====')
 for (i in board) {
   for (j in board[i]) {
-    console.log(board[i][j])
+    console.log(board[i][j]);
   }
 };
 
 // 2.Doggo 
-console.log("*** 2 === 👇 Doggo 👇 === 2 ***")
+console.log("*** 2 === 👇 Doggo 👇 === 2 ***");
 
 //2.1 Create a doggo object. Add name and breed as properties of the object.
 //2.2 Create an array within the doggo object named favorite 
@@ -50,7 +50,7 @@ console.log(doggo.favoriteFoods[1]);
 console.log(doggo.printFoods());
 
 //3, Recipes
-console.log("*** 3 === 👇 Recipes 👇 === 3 ***")
+console.log("*** 3 === 👇 Recipes 👇 === 3 ***");
 //3.1 Create an object called recipes.
 //3.2 Inside this object, you should create another object for
 // ingredients and store ingredients as properties butter, sugar,
