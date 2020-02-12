@@ -28,18 +28,17 @@ const doggo = {
     fara: "Husk",
     Ozzy: "Labrador",
     Malbec: "Buldog",
-    favoriteFoods: ["banana", "avocado", "chicken"],
+    favouriteFoods: ["banana", "avocado", "chicken"],
     allFoods: function(){
-        for(let key = 0; key < this.length; key++){
-            for (let value = 0; value < this[key].length; value++){
-                console.log(this.allFoods[value][key]);
+            for (let value = 0; value < this.favouriteFoods.length; value++){
+                console.log(this.favouriteFoods[value]);
             };
         }
     }
-};
+doggo.allFoods()
 
 
-
+console.log(doggo.favouriteFoods[1]);
 
 
 //* 2.2 Create an array within the doggo object named favorite foods and add the doggo's favorite foods to the array.
