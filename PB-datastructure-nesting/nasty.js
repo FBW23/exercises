@@ -35,8 +35,7 @@ const doggo = {
         for (food in this.favoriteFood) {
             console.log(this.favoriteFood[food]);
         }
-    }
-    
+    } 
 };
 // * 2.3 Access the second element of the doggo's favorite foods. 
 console.log(doggo.favoriteFood[1]);
@@ -61,6 +60,7 @@ const recipes = {
     allIngredients: function(){
         for (value in this.ingredients) {
             console.log(this.ingredients[value]);
+            // console.log(Object.values(this.ingredients)); => instead of the for...in loop
         }
     }
 };
