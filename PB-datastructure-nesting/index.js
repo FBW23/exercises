@@ -64,26 +64,27 @@ const recipes = {
     "flour": "white flour"
   },
   printIngredients: function () {
-    let ingredientsArr = [];
-    for (key in recipes) {
-      for (key in this.ingredients) {
-        ingredientsArr.push(this.ingredients[key]);
-      }
-      return ingredientsArr;
-
+    for (key in this.ingredients) {
+      console.log(this.ingredients[key]);
     }
-    // return ingredientsArr;
   }
 };
 
 //3.3 Without changing the previous code, add another ingredient - 
 // let's add ginger.
+console.log('=====add ginger=====')
+recipes.ingredients.ginger = "ginger";
 console.log(recipes);
 
+
 //3.4 Change the ingredient sugar to brown sugar.
+console.log('=====change sugar to brown sugar=====')
+
 recipes.ingredients.sugar = "brown sugar";
 console.log(recipes);
 
 //3.5 Write a method in the recipes object that prints the value of each
 // ingredient in the ingredients object.
-console.log(recipes.printIngredients());
+console.log('=====print the value of each ingredient=====')
+
+recipes.printIngredients();
