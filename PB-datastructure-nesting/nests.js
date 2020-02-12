@@ -44,4 +44,22 @@ console.log();
 // * 3.4 Change the ingredient `sugar` to `brown sugar`. 
 // * 3.5 Write a method in the recipes object that prints the value of each ingredient in the ingredients object. 
 
-const recipies = { ingredient: {a: butter, b: sugar}};
+const recipes = {
+  ingredients: {
+    butter: '250 gr',
+    sugar: '4 spoons',
+    flour: '200 gr',
+  },
+  methodThatLoops2: function () {
+    for (const item in this.ingredients) {
+      console.log(this.ingredients[item]);
+    }
+  }
+};
+
+recipes.ingredients.ginger = '30 gr';
+// delete recipes.ingredients.sugar;
+// recipes.ingredients.brown_sugar = '4 spoons';
+recipes.ingredients.sugar = '14 spoons of black sugar'
+console.log(recipes);
+recipes.methodThatLoops2();
