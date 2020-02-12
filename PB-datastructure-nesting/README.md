@@ -1,7 +1,7 @@
-# Nests
+//# Nests
 
-#### 1. 2D Array
-* Given the 2D Array below, **loop** through the arrays to print the values.
+//#### 1. 2D Array
+//* Given the 2D Array below, **loop** through the arrays to print the values.
 
 ```javascript
 let board = [
