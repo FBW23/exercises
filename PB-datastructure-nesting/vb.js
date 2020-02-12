@@ -43,15 +43,19 @@ const doggo = {
     name: 'Ubul',
     breed: 'yellow dog',
     favouriteFoods: ['pizza', 'ribs', 'chicken'],
+    doggoFood:function(){
+       for(keys in this.favouriteFoods){
+            console.log(this.favouriteFoods[keys])
+            
+        }
+    }
 }
 
 
 console.log(doggo.favouriteFoods[1]);
+console.log(`================loop==================`)
 
-for (keys in doggo) {
-    console.log(doggo[keys]);
-}
-
+doggo.doggoFood()
 console.log(`========================2=======================`);
 // #### 3. 
 // * 3.1 Create an object called recipes.
