@@ -57,20 +57,27 @@ const recipes = {
         flour: '1kg'
         
     },
-  ingredients: function (){
+  allIngredients: function (){
 
-    let ingredient = [];
+    let ai = [];
     for (key in recipes) {
-        for (key in this.ingredient[key]);
-        
-    }
-  }
+        for (key in this.ingredient){
+        ai.push(this.ingredient[key])
 
+    } return ai;
+  }
+  }
 };
 recipes.ingredient.ginger='2slice';    
 console.log(recipes);
+console.log("...................................");
+
 
 recipes.ingredient.sugar='brown sugar';
 console.log(recipes);
+
+console.log("............................................");
+
+console.log(recipes.allIngredients());
 
 
