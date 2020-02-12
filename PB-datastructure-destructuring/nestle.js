@@ -25,20 +25,17 @@ const doggo = {
     // 2.2 Create an array within the doggo object named favorite foods and add the doggo's favorite foods to the array.
     food: ['treatos', 'more treatos', 'chimken'],
     getInfo: function () {
-        for(let keys in this.food){
-            console.log( "Doggo's favorite foods are  : " + this.food[keys] + "!");
-            }
-}
+        for (let keys in this.food) {
+            console.log("Doggo's favorite foods are  : " + this.food[keys] + "!");
+        }
+    }
 };
-
-
-
 
 // 2.3 Access the second element of the doggo's favorite foods.
 console.log(doggo.food[1]);
 // 2.4 Add a method that loops through and print all the doggo's favorite food.
 // console.log(doggo.getInfo());
-doggo.getInfo()
+doggo.getInfo();
 // 3.
 // 3.1 Create an object called recipes.
 console.log('========Task 3 =======')
@@ -46,14 +43,21 @@ const recipes = {
     ingredients: {
         butter: 'butter',
         sugar: 'sugar',
-        flour: 'flour'
-    } // 3.2 Inside this object, you should create another object for ingredients and store ingredients as properties butter, sugar, flour etc. Each property should have a string as its value.
-}; // 3.3 Without changing the previous code, add another ingredient - let's add ginger.
-
-recipes.ingredients.ginger='Ginger';
+        flour: 'flour',
+         // 3.2 Inside this object, you should create another object for ingredients and store ingredients as properties butter, sugar, flour etc. Each property should have a string as its value.
+    },
+    getInfo: function () {
+        for (let keys in this.ingredients) {
+            console.log(this.ingredients[keys]);
+        }
+    }
+} // 3.3 Without changing the previous code, add another ingredient - let's add ginger.
+recipes.getInfo();
+recipes.ingredients.ginger = 'Ginger';
 console.log(recipes)
 // 3.4 Change the ingredient sugar to brown sugar.
 recipes.ingredients.sugar = 'Brown sugar';
 console.log(recipes);
+
 
 // 3.5 Write a method in the recipes object that prints the value of each ingredient in the ingredients object.
