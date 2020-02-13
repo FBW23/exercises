@@ -22,11 +22,11 @@ const orders = [
 ];
 const total = orders.reduce(function (a, b) {
     return {
-      amount: a.amount + b.amount
+        amount: a.amount + b.amount
     }
-  });
-  
-  console.log(total.amount);
+});
+
+console.log(total.amount);
 
 
 console.log(`===============================================`);
@@ -103,8 +103,8 @@ console.log(``);
 console.log(`====================== 5 ======================`);
 
 const sum = (array) => {
-    return array.reduce((a, b) => 
-         a + b, 0);
+    return array.reduce((a, b) =>
+        a + b, 0);
 
     //     console.log(a);
     //     console.log(b);   
@@ -121,9 +121,9 @@ console.log(``);
 // * Given an array of numbers, find the square root of each element in the array.console.log(``);
 console.log(`====================== 6 ======================`);
 
-const squares=[1,4,16,25];
+const squares = [1, 4, 16, 25];
 
-const normals=squares.map(x=>Math.sqrt(x));
+const normals = squares.map(x => Math.sqrt(x));
 
 console.log(normals)
 
