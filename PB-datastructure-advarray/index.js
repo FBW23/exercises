@@ -94,4 +94,5 @@ const squareRootOfArr = arr => {
   return newArr;
 };
 
-console.log(squareRootOfArr([9, 10, 8]));
+console.log(squareRootOfArr([4, 9, 16]));
+
