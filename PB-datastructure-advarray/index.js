@@ -54,7 +54,7 @@ console.log("========== 4. Filter Friends ==========")
 const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
 const filterItems = (arr, word) => {
   return result = arr.filter(value => value.includes(word)).map(value => value.charAt(0).toUpperCase() + value.slice(1));
-}
+};
 
 
 console.log(filterItems(friends, 'ka'));
