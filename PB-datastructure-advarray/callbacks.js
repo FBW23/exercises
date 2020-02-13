@@ -23,7 +23,7 @@ const orders = [{
 
 const totalAmount = orders.reduce(function (a, b) {
     return a + b.amount;
-}, 0); // WHAT IS THIS?!
+}, 0); // -> the zero stands as second value which determines the "a" in the reduce() method.
 
 console.log(totalAmount);
 
@@ -44,7 +44,7 @@ console.log(incrementedArrayOfNumber);
 console.log('#### 3. Filter Evens');
 // * Create a function called filterEvens that filters an array and only return even numbers. The function should take an array of numbers as an argument, and should not use a loop.
 
-function filterEvens (numbers) {
+function filterEvens(numbers) {
     return numbers.filter(item => item % 2 === 0);
 }
 
@@ -57,7 +57,7 @@ filterEvens([22, 2, 31, 110, 6, 13]); //returns [22,2,110,6]
 console.log('#### 4. Filter Friends');
 // * Given an array, create a function which filters array based on a search query.
 
-function filterItems (names, search) {
+function filterItems(names, search) {
     return names.filter(item => item.includes(search));
 }
 
@@ -72,14 +72,14 @@ console.log(filterItems(friends, 'e')); // ["Jenna", "Bleda", "Oliver"];
 console.log('#### 5. Sum Up');
 // * Write a function called sum that uses the reduce method to sum up an array of numbers. 
 
-function sum (arr) {
-   return arr.reduce((a, b) => a + b);
+function sum(arr) {
+    return arr.reduce((a, b) => a + b, 0); // 0 is the starting point.
 }
 
 // * Examples:
 // ```javascript
-console.log(sum([1,2,3,4,5])); //returns 15
-console.log(sum([6,7,7])); //returns 20
+console.log(sum([1, 2, 3, 4, 5])); //returns 15
+console.log(sum([6, 7, 7])); //returns 20
 // ```
 
 console.log('#### 6. Square Root');
@@ -88,3 +88,25 @@ console.log('#### 6. Square Root');
 const squareArray = arr => arr.map(item => Math.sqrt(item));
 
 console.log(squareArray([4, 9, 16]));
+
+// # create map, filter, reduce functions from image
+// Transform the examples on the picture in real code.
+console.log('Transform the examples on the picture in real code.');
+// ```
+const food = ['cow', 'potato', 'chicken', 'corn']
+var cook = (foodItem) => {
+    switch (foodItem) {
+        case 'cow':
+            return 'hamburger';
+        case 'potato':
+            return 'fries';
+        case 'chicken':
+            return 'fried chicken';
+        case 'corn':
+            return 'pop corn';
+        default:
+            console.log('this is no valid input');
+    }
+}
+const processedFood = food.map(foodItem => cook(foodItem));
+console.log(processedFood);
