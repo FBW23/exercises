@@ -22,7 +22,12 @@ const totalAmountOfOrders = orders.reduce(function (acc, value) {
   }
 });
 
+const newSum = orders.reduce((a, b) => {
+  return a + b.amount;
+}, 0); // the 0 is the value of a
+
 console.log(totalAmountOfOrders.amount);
+console.log(newSum);
 
 
 //2. Increment by 1
