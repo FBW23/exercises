@@ -31,7 +31,7 @@ console.log('------------------------------2. Increment by 1');
 
 const arrayOfNumbers = [3, 45, 6, 56, 7, 9];
 
-const increment = arrayOfNumbers.map(num => num + 1);
+const increment = arrayOfNumbers.map(num => num + 1); //or ++num
 
 console.log(increment);
 
@@ -67,10 +67,8 @@ console.log('------------------------------4. Filter Friends');
 
 const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
 
-const filterItems = (array, string) => {
-    let selection = array.filter(name => name.includes(string));
-    return selection;
-};
+const filterItems = (array, string) => array.filter(name => name.includes(string));
+
 
 console.log(filterItems(friends, 'ka')); // ["Rika"];
 console.log(filterItems(friends, 'e')); // ["Jenna", "Bleda", "Oliver"];
@@ -85,7 +83,7 @@ console.log(filterItems(friends, 'e')); // ["Jenna", "Bleda", "Oliver"];
 // ```
 console.log('------------------------------5. Sum Up');
 
-const sum = array => array.reduce((a, b) => a + b);
+const sum = array => array.reduce((a, b) => a + b, 0);
 
 console.log(sum([1, 2, 3, 4, 5])); //returns 15
 console.log(sum([6, 7, 7])); //returns 20
