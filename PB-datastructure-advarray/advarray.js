@@ -16,7 +16,7 @@ const orders = [{
     }
 ];
 
-const total = orders.reduce(function(a, b) {
+const total = orders.reduce(function (a, b) {
     return a + b.amount;
 }, 0);
 
@@ -29,7 +29,7 @@ console.log(total);
 // * Create a function that increments each element in the `arrayOfNumbers` by 1. Return the a new array of modified elements.
 console.log('------------------------------2. Increment by 1');
 
-const arrayOfNumbers = [3, 45, 6, 56, 7, 9]; 
+const arrayOfNumbers = [3, 45, 6, 56, 7, 9];
 
 const increment = arrayOfNumbers.map(num => num + 1);
 
@@ -48,8 +48,8 @@ console.log('------------------------------3. Filter Evens');
 
 const filterEvens = array => array.filter(item => item % 2 === 0);
 
-console.log(filterEvens([1,2,3,11,12,13])); //returns [2,12]
-console.log(filterEvens([22,2,31,110,6,13])); //returns [22,2,110,6]
+console.log(filterEvens([1, 2, 3, 11, 12, 13])); //returns [2,12]
+console.log(filterEvens([22, 2, 31, 110, 6, 13])); //returns [22,2,110,6]
 
 
 
@@ -85,10 +85,10 @@ console.log(filterItems(friends, 'e')); // ["Jenna", "Bleda", "Oliver"];
 // ```
 console.log('------------------------------5. Sum Up');
 
-const sum = array => array.reduce((a,b) => a+b);
+const sum = array => array.reduce((a, b) => a + b);
 
-console.log(sum([1,2,3,4,5])); //returns 15
-console.log(sum([6,7,7])); //returns 20
+console.log(sum([1, 2, 3, 4, 5])); //returns 15
+console.log(sum([6, 7, 7])); //returns 20
 
 
 // #### 6. Square Root
@@ -97,4 +97,4 @@ console.log('------------------------------6. Square Root');
 
 const squareRoot = array => array.map(num => Math.sqrt(num));
 
-console.log(squareRoot([4,9, 16])); // => 2, 3, 4
+console.log(squareRoot([4, 9, 16])); // => 2, 3, 4
