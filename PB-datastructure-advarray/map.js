@@ -57,7 +57,7 @@ console.log("=================== 5 ======================");
 //#### 5. Sum Up
 //* Write a function called sum that uses the reduce method to sum up an array of numbers. 
 const sum3 = (array) =>{
-    return array.reduce(((a, b )=> a + b ),0)
+    return array.reduce(((a, b )=> a + b ),0);
 };
 
 //* Examples:
