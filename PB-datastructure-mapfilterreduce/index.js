@@ -29,6 +29,8 @@ console.log(sum([6, 7, 7]));
 
 //3. instanceOf
 console.log("===== 3. instanceOf =====");
+console.log("===== NOT DONE =====");
+
 //Sum up the instances of each of these:
 //const data = ['car', 'car', 'truck', 'truck', 
 //'bike', 'walk', 'car', 'van', 'bike', 'walk', 
@@ -132,6 +134,68 @@ const livedYears = inventors.reduce((acc, val) => {
 }, 0);
 console.log(livedYears);
 
-// const totalYears = inventors.reduce((acc, val) => {
-//   return 
-// });
+// 5. Square Root
+console.log("===== 5. Square Root =====");
+// Given an array of numbers, 
+// find the square root of those numbers using map.
+
+const myArrOfNum = [4, 9, 16];
+
+const sqrArr = myArrOfNum.map( item => Math.sqrt(item));
+console.log(sqrArr);
+
+// 6. Instances of Letters
+console.log("===== 6. Instances of Letters =====");
+console.log("===== NOT DONE =====");
+
+// Create a function that takes a string as an argument 
+// and counts the number of each letter in that string.
+
+// 7. List of Movies
+console.log("===== 7. List of Movies =====");
+// Given the code below, complete the task
+// Create a function that returns an array of your friends 
+// favourite films!
+
+let friends = [{
+  name: 'Maria',
+  films: ['Avengers: Infinity War', 'Avatar' ],
+  age: 22
+}, {
+  name: 'John',
+  films: ['Forest Gump', 'Pulp Fiction', 'Spider-Man'],
+  age: 29
+}, {
+  name: 'Jean',
+  films: ['Deadpool', 'Incredibles 2'],
+  age: 20
+}];
+
+const favoriteFilms = arr => {
+  const filmArr =  arr.map(item => item["films"]);
+  return filmArr.flat();
+};
+
+console.log(favoriteFilms(friends));
+
+// 8. Filter Evens
+console.log("===== 8. Filter Evens =====");
+// Write a function called filterEvens that uses the filter 
+// method to filter an array and only return the even numbers. 
+// The function should take in an array of numbers as an argument, 
+// and should not use a loop.
+// filterEvens([1,2,3,11,12,13]); //returns [2,12]
+// filterEvens([22,2,31,110,6,13]); //returns [22,2,110,6]
+
+const filterEvens = arr => {
+  return arr.filter(item => item % 2 === 0);
+};
+
+console.log(filterEvens([1,2,3,11,12,13]));
+console.log(filterEvens([22,2,31,110,6,13]));
+
+// 9. Search
+console.log("===== 9. Search =====");
+// Given an array, create a function which uses filter() 
+// to filter an array based on a search query.
+
