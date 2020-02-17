@@ -45,9 +45,9 @@ console.log(filterEvens([22, 2, 31, 110, 6, 13])); //returns [22,2,110,6]
 
 // Examples
 const filterItems = (items, word) => {
-    return items.filter(filterItems => filterItems.includes(word))
-}
-const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
+    return items.filter(filterItem => filterItem.includes(word));
+};
+const friends = ["Rika", "Jenna", "Bleda", "Oliver", "Itamar"];
 console.log(filterItems(friends, 'ka')); // ["Rika"];
 console.log(filterItems(friends, 'e')); // ["Jenna", "Bleda", "Oliver"];
 
@@ -57,10 +57,7 @@ console.log('====== Task 5 =====')
 // Write a function called sum that uses the reduce method to sum up an array of numbers.
 
 // Examples:
-const summ = (array) => {
-    return array.reduce((a, b) => a + b);
-};
-
+const summ = (array) => array.reduce((a, b) => a + b);
 
 console.log(summ([1, 2, 3, 4, 5])); //returns 15
 console.log(summ([6, 7, 7])); //returns 20
@@ -70,3 +67,71 @@ console.log('====== Task 6 ======')
 let numbers = [144, 49, 25];
 let shorter = numbers.map(num => Math.sqrt(num));
 console.log(shorter);
+
+const food = ['cow','potato','hen','corn'];
+const cook=(foodItem)=>{
+    switch(foodItem){
+        case 'cow':
+            return 'Hamburger';
+            case 'potato':
+        return 'French Fries';
+        case 'hen':
+            return 'chicken';
+            case 'corn':
+                return 'popcorn';
+                default:
+                    console.log('this is no valid input')
+    }
+};
+const processedFood=food.map(foodItem=>cook(foodItem));
+console.log(processedFood);
+
+    
+const transformers = [
+    {
+      name: 'Optimus Prime',
+      form: 'Freightliner Truck',
+      team: 'Autobot'
+    },
+    {
+      name: 'Megatron',
+      form: 'Gun',
+      team: 'Decepticon'
+    },
+    {
+      name: 'Bumblebee',
+      form: 'VW Beetle',
+      team: 'Autobot'
+    },
+    {
+      name: 'Soundwave',
+      form: 'Walkman',
+      team: 'Decepticon'
+    }
+  ];
+
+  const allTheForms=transformers.map(object=>object.form)
+    
+    console.log(allTheForms)
+
+
+    //Filters
+    //Array.prototype.filter(callback(item))
+console.log('=======blah=======')
+function isAutobot(transformer){
+   return transformer.team==='Autobot';
+
+}
+
+    const autobots=transformers.filter(isAutobot)
+console.log(autobots)
+
+function countAutobot(previous,transformer){
+    if( transformer.team==='Autobot'){
+        return previous +1;
+    } else {
+        return previous;
+    }
+}
+const countAutobots =transformers.reduce(countAutobot,0)
+console.log(countAutobots);
