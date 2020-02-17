@@ -96,3 +96,29 @@ console.log('------------------------------6. Square Root');
 const squareRoot = array => array.map(num => Math.sqrt(num));
 
 console.log(squareRoot([4, 9, 16])); // => 2, 3, 4
+
+// Transform the examples on the picture in real code.
+console.log('------------------------------7.food chain');
+
+
+const food = ['cow', 'potato', 'chicken', 'corn'];
+let cook = (foodItem) => {
+    switch (foodItem) {
+        case 'cow':
+            return 'burger';
+        case 'potato':
+            return 'fries';
+        case 'chicken':
+            return 'fried chicken';
+        case 'corn':
+            return 'pop corn';
+        default:
+            return 'not in stock';
+    }
+};
+
+let cookedFood = food.map(foodItem => cook(foodItem));
+
+console.log(cookedFood);
+
+
