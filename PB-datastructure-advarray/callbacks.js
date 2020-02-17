@@ -94,7 +94,7 @@ console.log(squareArray([4, 9, 16]));
 console.log('Transform the examples on the picture in real code.');
 // ```
 const food = ['cow', 'potato', 'chicken', 'corn']
-var cook = (foodItem) => {
+let cook = (foodItem) => {
     switch (foodItem) {
         case 'cow':
             return 'hamburger';
