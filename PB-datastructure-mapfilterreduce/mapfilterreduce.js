@@ -114,29 +114,3 @@ console.log(squareRoot);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const filterEvens = arr => {
-//         return arr.filter(value => value % 2 === 0)
-//         const filterEvens = arr => {
-//                 console.log(filterEvens([1, 2, 3, 11, 12, 13]));
-//                 console.log(filterEvens([22, 2, 31, 110, 6, 13]));
-
-
-//                 const squareRootOfArr = arr => {
-//                     const newArr = arr.map(element => Math.sqrt(element));
-//                     return newArr;
-//                 };
-
-//                 console.log(squareRootOfArr([9, 10, 8]));
