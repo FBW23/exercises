@@ -93,9 +93,9 @@ const getTotalYears = getIndividualAge.reduce((a, b) => (a + b));
 console.log(getTotalYears);
 
 
+const total= inventors.map(age => age.passed - age.year).reduce((a,b) => (a+b));
 
-
-
+console.log(total)
 console.log(`===================================REDUCE===================================`);
 
 
