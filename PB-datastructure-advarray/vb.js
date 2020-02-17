@@ -41,7 +41,7 @@ console.log(`====================== 2 ======================`);
 const arrayOfNumbers = [3, 45, 6, 56, 7, 9];
 
 console.log(arrayOfNumbers);
-const plusOne = arrayOfNumbers.map(x => x + 1);
+const plusOne = arrayOfNumbers.map(x => ++x);
 
 console.log(plusOne);
 
@@ -129,3 +129,83 @@ console.log(normals)
 
 console.log(`===============================================`);
 console.log(``);
+
+
+
+/* Transform the examples on the picture in real code.
+![Image](./image.jpg)
+### Starting poing:
+```
+const food = ['cow', 'potato', 'chicken', 'corn']
+var cook = (food) => {
+  switch ...
+}
+map(food => cook)
+``` */
+
+
+const food = ['cow', 'potato', 'chicken', 'corn'];
+
+var cook = (fooditem) => {
+
+
+    switch (fooditem) {
+        case 'cow':
+            return 'hamburger';
+
+        case 'potato':
+            return 'chips';
+
+        case 'chicken':
+            return 'KFC';
+        case 'corn':
+            return 'popcorn';
+        default: "can't cook that";
+            break;
+    }
+    
+
+}
+
+
+
+console.log(cook(food[3]))
+
+
+const meal=food.map(fooditem=>cook(fooditem));
+console.log(meal);
+
+
+
+
+console.log(`====================== Filter ======================`);
+const vegetarian=(mealitem)=>{
+
+ switch (mealitem) {
+        case 'hamburger':
+            return 'meat';
+
+        case 'chips':
+            return 'vegetarian';
+
+        case 'KFC':
+            return 'meat';
+        case 'popcorn':
+            return 'vegetarian';
+        default: "not edible";
+            break;
+    }
+    
+
+}
+
+
+
+console.log(cook(meal[3]))
+
+
+const type=meal.map(mealitem=>vegetarian(mealitem));
+console.log(type);
+
+
+Math.min
