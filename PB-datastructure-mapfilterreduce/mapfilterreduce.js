@@ -3,23 +3,29 @@
 // that increments each element by 1. Return the a new array of modified elements. 
 console.log('----------------------------1. Increment by 1')
 
-const arrayOfNumbers = arr => arr.map(x => x+1);
+const arrayOfNumbers = arr => arr.map(x => x + 1);
 
 console.log(arrayOfNumbers([3, 45, 6, 56, 7, 9]));
 
 // #### 2. Sum Up
-// Write a function called sum that uses the reduce to sum up an array of numbers. Do NOT use a typical loop; just use the reduce method.
+// Write a function called sum that uses the reduce to sum up an array of numbers. 
+// Do NOT use a typical loop; just use the reduce method.
 
 // * Examples:
 // * sum([1,2,3,4,5]); //returns 15
 // * sum([6,7,7]); //returns 20
 console.log('----------------------------2. Sum Up');
 
+const sum = arr => arr.reduce((a, b) => a + b, 0);
+console.log(sum([1, 2, 3, 4, 5]));
+console.log(sum([6, 7, 7]));
+
 // #### 3. instanceOf
 // ##### Reduce
 // Sum up the instances of each of these:
 // ```javascript
-// const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
+// const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 
+// 'car', 'van', 'car', 'truck', 'pogostick'];
 // ```
 // * Expected Output: 
 // ```javascript
@@ -33,26 +39,90 @@ console.log('----------------------------2. Sum Up');
 // }
 // ```
 console.log('----------------------------3. instanceOf');
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 
+'car', 'van', 'car', 'truck', 'pogostick'];
+
+
+
 
 // #### 4. Inventors
 // Look at the piece of code below and complete the tasks and questions.
 
 console.log('----------------------------4. Inventors');
 
-const inventors = [
-      { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
-      { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
-      { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-      { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
-      { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-      { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
-      { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
-      { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
-      { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
-      { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
-      { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
-      { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
-    ];
+const inventors = [{
+        first: 'Albert',
+        last: 'Einstein',
+        year: 1879,
+        passed: 1955
+    },
+    {
+        first: 'Isaac',
+        last: 'Newton',
+        year: 1643,
+        passed: 1727
+    },
+    {
+        first: 'Galileo',
+        last: 'Galilei',
+        year: 1564,
+        passed: 1642
+    },
+    {
+        first: 'Marie',
+        last: 'Curie',
+        year: 1867,
+        passed: 1934
+    },
+    {
+        first: 'Johannes',
+        last: 'Kepler',
+        year: 1571,
+        passed: 1630
+    },
+    {
+        first: 'Nicolaus',
+        last: 'Copernicus',
+        year: 1473,
+        passed: 1543
+    },
+    {
+        first: 'Max',
+        last: 'Planck',
+        year: 1858,
+        passed: 1947
+    },
+    {
+        first: 'Katherine',
+        last: 'Blodgett',
+        year: 1898,
+        passed: 1979
+    },
+    {
+        first: 'Ada',
+        last: 'Lovelace',
+        year: 1815,
+        passed: 1852
+    },
+    {
+        first: 'Sarah E.',
+        last: 'Goode',
+        year: 1855,
+        passed: 1905
+    },
+    {
+        first: 'Lise',
+        last: 'Meitner',
+        year: 1878,
+        passed: 1968
+    },
+    {
+        first: 'Hanna',
+        last: 'Hammarström',
+        year: 1829,
+        passed: 1909
+    }
+];
 
 
 
@@ -65,8 +135,8 @@ console.log(completeName(inventors));
 // * How many years did all of the inventors live? 
 
 
-const howLong = array => array.reduce((a,b) => a + (b.passed - b.year), 0);
-    
+const howLong = array => array.reduce((a, b) => a + (b.passed - b.year), 0);
+
 console.log(howLong(inventors));
 
 // #### 5. Square Root
@@ -84,7 +154,7 @@ console.log('----------------------------6. Instances of Letters');
 
 const howManyLetters = string =>
 
-console.log(howManyLetters('This is not a pipe'));
+    console.log(howManyLetters('This is not a pipe'));
 
 
 // #### 7. List of Movies
@@ -108,7 +178,8 @@ console.log(howManyLetters('This is not a pipe'));
 // * Create a function that returns an array of your friends favourite films!
 
 // #### 8. Filter Evens
-// Write a function called filterEvens that uses the filter method to filter an array and only return the even numbers. The function should take in an array of numbers as an argument, and should not use a loop.
+// Write a function called filterEvens that uses the filter method to filter an array and only return the even numbers. 
+// The function should take in an array of numbers as an argument, and should not use a loop.
 
 // * Examples:
 
@@ -141,14 +212,16 @@ console.log(howManyLetters('This is not a pipe'));
 // ```
 // * Reformat the array as follow: 
 // ```javascript
-// let newArray = [{1: "John"}, {2: "Maria"}, {3: "Oliver"}, {4: "Jane"}, {5: "Jack"}, {6: "Albert"}, {7: "Harry"}, {8: "Ron"}, {9: "Kenneth"}, {10: "Kyle"}];
+// let newArray = [{1: "John"}, {2: "Maria"}, {3: "Oliver"}, {4: "Jane"}, {5: "Jack"}, {6: "Albert"}, {7: "Harry"}, 
+// {8: "Ron"}, {9: "Kenneth"}, {10: "Kyle"}];
 
 // #### 11. Sorting Numbers
 // Given the following array of numbers, sort from smallest to largest. 
 // ```javascript
 // let arrayOfIntegers = [4, 200, 90, 30, 12, 75, 21, 3];
 // ```
-// * Once you are finished, answer the following questions: **Which method did you use to solve the problem? Why did you have to use this method?** 
+// * Once you are finished, answer the following questions: **Which method did you use to solve the problem? 
+// Why did you have to use this method?** 
 
 // #### 12. Sort Shapes
 // Given the following array of shapes, complete the task below:
@@ -161,7 +234,8 @@ console.log(howManyLetters('This is not a pipe'));
 //     [6, "Hexagon"],
 //     [10, "Decagon"]
 //     ];
-// * Sort the 2D array based on the shapes' sides. Sorting should be in ascending order from smaller number to greater number. 
+// * Sort the 2D array based on the shapes' sides. Sorting should be in ascending order from 
+// smaller number to greater number. 
 // * Example of output:
 // ``` javascript
 // [ [ 3, 'Triangle' ],
