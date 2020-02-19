@@ -36,10 +36,12 @@ console.log(Cylo1.describe());
 
 //////////////////////////////////////////////////
 
+*/
 class Clock {
-    constructor(template) {
+    constructor({ template }) {
+        this.timer;
         this.template = template;
-     }
+    }
 
     render() {
         let date = new Date();
@@ -53,7 +55,7 @@ class Clock {
         let secs = date.getSeconds();
         if (secs < 10) secs = '0' + secs;
 
-        let output = template
+        let output = this.template
             .replace('h', hours)
             .replace('m', mins)
             .replace('s', secs);
@@ -63,42 +65,39 @@ class Clock {
     }
 
     stop() {
-        clearInterval(timer);
+        clearInterval(this.timer);
     };
 
     start() {
         this.render();
-        timer = setInterval(render, 1000);
+        this.timer = setInterval(() => this.render(), 1000);
     };
 }
 
-const template = {
-    template: 'h:m:s'
-}
 
-const myClock = new Clock(template);
-console.log(myClock.start());
-*/
 
+const myC = new Clock({template: 'h:m:s'});
+myC.start();
+
+
+/*
 class TV {
-    constructor(brand, channel=1, volume=50) {
+    constructor(brand, channel = 1, volume = 50) {
         this.brand = brand;
         this.channel = channel;
         this.volume = volume;
     }
 
     increaseVol() {
-        if (this.volume >= 100) return;
-        this.volume = this.volume + 5;
+        if (this.volume < 100) this.volume = this.volume + 1;
     }
-    
+
     decreaseVol() {
-        if (this.volume <= 0) return;
-        this.volume = this.volume - 5;
+        if (this.volume > 0) this.volume = this.volume - 1;
     }
 
     goRndChannel() {
-        this.channel = Math.random();
+        this.channel = Math.floor(Math.random() * 50) + 1;
     }
 
     resetTV() {
@@ -107,7 +106,16 @@ class TV {
     }
 
     getInfo() {
-        return ``
+        return `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
     }
-
 }
+
+let myTV1 = new TV('Syronix');
+myTV1.volume = 98;
+myTV1.increaseVol();
+myTV1.increaseVol();
+myTV1.increaseVol();
+
+
+console.log(myTV1.getInfo());
+*/
