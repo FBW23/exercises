@@ -92,21 +92,24 @@ class TV {
         this.volume = 50;
     }
 
-    volumeIncDec() {
-        let vol = 0;
-        if (this.volume <= 0) {
-            return this.volume = 0;
-        } else if (this.volume >= 100) {
-            return this.volume = 100;
-        } else {
-            return this.volume;
+    volumeInc() {
+        if (this.volume >= 100) {
+            return ++this.volume;
         }
 
     }
 
+    volumeDec() {
+        if (this.volume <= 0) {
+            return ++this.volume;
+        }
+    }
+
     randomChannel() {
-        let randomChannel = Math.ceil(Math.random() * 50);
-        
+        //return  Math.ceil(Math.random() * 50);
+        return `${this.brand} at channel ${Math.ceil(Math.random() * 50)}, volume ${this.volume}`
+
+
 
     }
 
@@ -115,5 +118,5 @@ class TV {
     }
 }
 
-const newTV = new TV("Grundig", randomChannel.randomChannel(), this.volume.volumeIncDec());
-console.log(`${this.brand} at channel ${this.channel}, volume ${this.volume}`)
+const status = new TV("Sony", this.volume, this.channel);
+console.log(status.randomChannel());
