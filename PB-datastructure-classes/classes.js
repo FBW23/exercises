@@ -37,6 +37,81 @@ console.log(cylinder.calculation());
 console.log('#### 3. Tick Tock');
 // Rewrite the following code to use the "class" syntax. 
 
+class Clock {
+    constructor({ template }) {
+        this.timer;
+        this.template = template;
+    }
+    render = function() {
+        let date = new Date();
+        let hours = date.getHours();
+        if (hours < 10) hours = '0' + hours;
+        let mins = date.getMinutes();
+        if (mins < 10) mins = '0' + mins;
+        let secs = date.getSeconds();
+        if (secs < 10) secs = '0' + secs;
+        let output = this.template
+            .replace('h', hours)
+            .replace('m', mins)
+            .replace('s', secs);
+        console.log(output);
+    }
+    stop = function() {
+        clearInterval(this.timer);
+    };
+    start = function() {
+        this.render();
+        this.timer = setInterval(() => this.render(), 1000);
+    };
+}
+let myC = new Clock({template: 'h:m:s'});
+myC.start();
+setTimeout(() => myC.stop(), 10000);
+
+
+// class Clock {
+//     constructor(template) {
+//         // let timer;
+//         this.template = template;
+//     }
+
+//     render = function (date, hours, secs) {
+//         let date = new Date();
+
+//         let hours = date.getHours();
+//         if (hours < 10) hours = '0' + hours;
+
+//         let mins = date.getMinutes();
+//         if (mins < 10) mins = '0' + mins;
+
+//         let secs = date.getSeconds();
+//         if (secs < 10) secs = '0' + secs;
+
+//         let output = template
+//             .replace('h', hours)
+//             .replace('m', mins)
+//             .replace('s', secs);
+
+//         console.log(output);
+//     }
+
+//     stop = function () {
+//         clearInterval(timer);
+//     };
+
+//     start = function () {
+//         render();
+//         timer = setInterval(render, 1000);
+//     };
+// }
+
+
+
+let clock = new Clock({
+    template: 'h:m:s'
+});
+clock.start();
+
 console.log('#### 4. TV Class');
 // * Create a TV class with properties like brand, channel and volume.
 // * Specify brand in a constructor parameter. Channel should be 1 by default. Volume should be 50 by default.
@@ -52,11 +127,11 @@ class Television {
         this.volume = 50;
     }
     volumeSetPlus() {
-        if (this.volume <= 100) return this.volume + 1;
+        if (this.volume < 100) this.volume = this.volume + 1;
         return this.volume;
     }
     volumeSetMinus() {
-        if (this.volume >= 0) return this.volume - 1;
+        if (this.volume >= 0) this.volume = this.volume - 1;
         return this.volume;
     }
     status() {
@@ -72,7 +147,7 @@ class Television {
     }
 }
 
-const tvBrand = new Television;
+const tvBrand = new Television();
 console.log(tvBrand);
 console.log('random channel ->', tvBrand.setChannel());
 console.log('raise volume ->', tvBrand.volumeSetPlus());
