@@ -93,9 +93,9 @@ const getTotalYears = getIndividualAge.reduce((a, b) => (a + b));
 console.log(getTotalYears);
 
 
-const total= inventors.map(age => age.passed - age.year).reduce((a,b) => (a+b));
+const total = inventors.map(age => age.passed - age.year).reduce((acc, prev) => (acc + prev));
 
-console.log(total)
+console.log(total);
 console.log(`===================================REDUCE===================================`);
 
 
@@ -106,7 +106,9 @@ console.log(`===================================4===============================
 // Given an array of numbers, find the square root of those numbers using map. 
 console.log(`===================================4===================================`);
 
-
+const myNumbers = [64, 4, 25, 9, 16];
+const squareRoot = myNumbers.map(sqrt => Math.sqrt(sqrt));
+console.log(squareRoot);
 
 
 
@@ -116,7 +118,7 @@ console.log(`===================================4===============================
 // Create a function that takes a string as an argument and counts the number of each letter in that string. 
 console.log(`===================================4===================================`);
 
-
+let myString = "random string letter counting"
 
 
 
@@ -220,3 +222,45 @@ console.log(`===================================4===============================
 
 
 
+//  const isSpecialArray=arr=>{
+//   if(arr.every((a,b)=>a%2===b%2) ){
+//       return true
+  
+//  }else{return false}
+// }
+      
+
+function isSpecialNumber(number,index){
+    let isIndexEven=index%2 ? true:false;
+    let isNumberEven=number%2 ? true:false;
+    return(isIndexEven=== isNumberEven);
+ }
+
+
+function isSpecialArray(arr){
+    return arr.reduce(isSpecialNumber);
+}
+
+
+// console.log([2, 7, 4, 9, 6, 1, 6, 3].reduce(isSpecialNumber));
+// console.log([2, 7, 9, 1, 6, 1, 6, 3].reduce(isSpecialNumber));
+// console.log([2, 7, 8, 8, 6, 1, 6, 3].reduce(isSpecialNumber));
+// console.log([1, 1, 1, 2].reduce(isSpecialNumber));
+// console.log([2, 2, 2, 2].reduce(isSpecialNumber));
+// console.log([2, 1, 2, 1].reduce(isSpecialNumber));
+// console.log([4, 5, 6, 7].reduce(isSpecialNumber));
+// console.log([4, 5, 6, 7, 0, 5].reduce(isSpecialNumber))
+
+
+console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
+console.log(isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3]));
+console.log(isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]));
+console.log(isSpecialArray([1, 1, 1, 2]));
+console.log(isSpecialArray([2, 2, 2, 2]));
+console.log(isSpecialArray([2, 1, 2, 1]));
+console.log(isSpecialArray([4, 5, 6, 7]));
+console.log(isSpecialArray([4, 5, 6, 7, 0, 5]))
+
+const myArray=[1,6,50000000,4,9,10000,2]
+
+console.log(myArray.sort((a, b) => a - b));
