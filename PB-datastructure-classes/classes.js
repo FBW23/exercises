@@ -46,13 +46,21 @@ console.log('#### 4. TV Class');
 // * It's useful to write a status, that returns info about the TV status like: "Panasonic at channel 8, volume 75".
 
 class Television {
-    constructor(brand) {
+    constructor() {
         this.brand = 'Brand Onwalsh 90210';
         this.channel = 1;
         this.volume = 50;
     }
-    volumeSet() {
-        return this.volume = Math.floor((Math.random() * 100) + 1)
+    volumeSetPlus() {
+        if (this.volume <= 100) return this.volume + 1;
+        return this.volume;
+    }
+    volumeSetMinus() {
+        if (this.volume >= 0) return this.volume - 1;
+        return this.volume;
+    }
+    status() {
+        return `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
     }
     setChannel() {
         return this.channel = Math.floor((Math.random() * 50) + 1); // return a random number between 1 and 50
@@ -60,14 +68,14 @@ class Television {
     resetTV() {
         this.channel = 1;
         this.volume = 50;
-    }
-    status() {
-        return `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
+        return `${this.brand} is back at channel ${this.channel}, and back at volume ${this.volume}`;
     }
 }
 
 const tvBrand = new Television;
 console.log(tvBrand);
-console.log(tvBrand.setChannel());
-console.log(tvBrand.volumeSet());
-console.log(tvBrand.status());
+console.log('random channel ->', tvBrand.setChannel());
+console.log('raise volume ->', tvBrand.volumeSetPlus());
+console.log('lower volume ->', tvBrand.volumeSetMinus());
+console.log('tv status ->', tvBrand.status());
+console.log('tv reset ->', tvBrand.resetTV())
