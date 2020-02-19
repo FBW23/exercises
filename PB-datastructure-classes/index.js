@@ -1,4 +1,3 @@
-/*
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -7,13 +6,12 @@ class Person {
     describe() {
         return `${this.name}, ${this.age} years old`
     }
-
 }
 
 const Aghy = new Person("allogie", 32);
 console.log(Aghy.describe());
 
-//////////////////////////////////////////////////////////
+//////////////////////////////
 
 class Cylinder{
     constructor(radius, height) {
@@ -34,9 +32,8 @@ class Cylinder{
 const Cylo1 = new Cylinder(4,5);
 console.log(Cylo1.describe());
 
-//////////////////////////////////////////////////
+//////////////////////////////
 
-*/
 class Clock {
     constructor({ template }) {
         this.timer;
@@ -74,14 +71,12 @@ class Clock {
     };
 }
 
-
-
 let myC = new Clock({template: 'h:m:s'});
 myC.start();
 setTimeout(() => myC.stop(), 10000);
 
+//////////////////////////////
 
-/*
 class TV {
     constructor(brand, channel = 1, volume = 50) {
         this.brand = brand;
@@ -94,7 +89,7 @@ class TV {
     }
 
     decreaseVol() {
-        if (this.volume > 0) this.volume = this.volume - 1;
+        if (this.volume >= 0) this.volume = this.volume - 1;
     }
 
     goRndChannel() {
@@ -112,11 +107,5 @@ class TV {
 }
 
 let myTV1 = new TV('Syronix');
-myTV1.volume = 98;
-myTV1.increaseVol();
-myTV1.increaseVol();
-myTV1.increaseVol();
-
 
 console.log(myTV1.getInfo());
-*/
