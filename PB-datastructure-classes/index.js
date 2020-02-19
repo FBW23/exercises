@@ -28,6 +28,53 @@ class Cylinder {
 const volumeOfaCylinder = new Cylinder (2, 2);
 volumeOfaCylinder.volume();
 
+
+//3
+
+class Clock {
+  constructor ({ template }){
+      this.template = template;
+      
+  }
+  
+     render  () {
+         
+      let date = new Date();
+  
+      let hours = date.getHours();
+      if (hours < 10) hours = '0' + hours;
+  
+      let mins = date.getMinutes();
+      if (mins < 10) mins = '0' + mins;
+  
+      let secs = date.getSeconds();
+      if (secs < 10) secs = '0' + secs;
+  
+      let output = this.template
+        .replace('h', hours)
+        .replace('m', mins)
+        .replace('s', secs);
+  
+      console.log(output);
+    }
+  
+    stop () {
+      clearInterval(this.timer);
+    };
+  
+    start () {
+      this.render();
+      this.timer = setInterval(() => this.render(), 1000);
+    }
+}
+
+  
+  
+  const clock = new Clock({template: 'h:m:s'});
+  clock.start();
+  setTimeout (() => clock.stop(), 5000);
+  
+
 /*#### 4. TV Class
 * Create a TV class with properties like brand, channel and volume.
 * Specify brand in a constructor parameter. Channel should be 1 by default. Volume should be 50 by default.
@@ -44,18 +91,21 @@ class Tv {
         
     }
     volIncrease (){
-          
+        for(let i= 0; i <= 100; i++){
             if (this.volume <100) {
                 ++ this.volume; 
-                console.log(this.volume);
-            } 
+                
+            } return this.volume;
+        
         } 
+    }
     volDecrease (){
-        if (this.volume >= 0){
-            this.volume -1;
-            console.log(this.volume);
-        }
-    }   
+          if (this.volume >= 0){
+                -- this.volume ;
+                
+            } return this.volume;
+        
+    }
     
     setChannel (){
         let randon = (Math.random () *50)
@@ -67,8 +117,18 @@ class Tv {
 }
 
 
-const myTv = new Tv ("Sony", 100);
+const myTv = new Tv ("Sony");
 myTv.resetTv();
 myTv.setChannel();
-myTv.volIncrease();
-myTv.volDecrease();
+console.log(myTv.volIncrease());
+console.log(myTv.volDecrease());
+console.log(myTv.volIncrease());
+console.log(myTv.volIncrease());
+console.log(myTv.volIncrease());
+console.log(myTv.volIncrease());
+console.log(myTv.volDecrease());
+console.log(myTv.volDecrease());
+console.log(myTv.volDecrease());
+console.log(myTv.volDecrease());
+console.log(myTv.volDecrease());
+
