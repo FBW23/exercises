@@ -37,12 +37,38 @@ volumeOfaCylinder.volume();
 * It's useful to write a status, that returns info about the TV status like: "Panasonic at channel 8, volume 75".*/
 
 class Tv {
-    constructor (brand, channel, volume){
+    constructor (brand){
         this.brand = brand;
         this.channel = 1;
         this.volume = 50;
-    }
-    volMesure (){
         
     }
+    volIncrease (){
+          
+            if (this.volume <100) {
+                ++ this.volume; 
+                console.log(this.volume);
+            } 
+        } 
+    volDecrease (){
+        if (this.volume >= 0){
+            this.volume -1;
+            console.log(this.volume);
+        }
+    }   
+    
+    setChannel (){
+        let randon = (Math.random () *50)
+        console.log (randon.toFixed(0));
+    }
+    resetTv (){
+        console.log(`${this.brand} at channel ${this.channel}, volume ${this.volume}.`);
+    }
 }
+
+
+const myTv = new Tv ("Sony", 100);
+myTv.resetTv();
+myTv.setChannel();
+myTv.volIncrease();
+myTv.volDecrease();
