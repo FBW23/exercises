@@ -1,3 +1,5 @@
+console.log("=== task 1 ===")
+
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -10,7 +12,6 @@ class Person {
 
 }
 const nameAge = new Person("John", 19);
-console.log("=== task 1 ===")
 console.log(nameAge.describe());
 
 //================================================
@@ -79,31 +80,40 @@ console.log(cylinderValues.volume())
 // Create a TV class with properties like brand, channel and volume.
 // Specify brand in a constructor parameter. Channel should be 1 by default. Volume should be 50 by default.
 // Add methods to increase and decrease volume. Volume can't never be below 0 or above 100.
+
 // Add a method to set the channel randomly. Let's say the TV has only 50 channels.
 // Add a method to reset TV so it goes back to channel 1 and volume 50.
 // It's useful to write a status, that returns info about the TV status like: "Panasonic at channel 8, volume 75".
 
-// class TV {
-//     constructor(brand, channel, volume) {
-//         this.bran = "Panasonic";
-//         this.channel = 1;
-//         this.volume = 50;
-//     }
+class TV {
+    constructor(brand, channel, volume) {
+        this.brand = brand;
+        this.channel = 1;
+        this.volume = 50;
+    }
 
-//     volumeIncDec() {
-//         if (this.volume =< 0) {
-//             return 0;
-//         } else if (this.volume => 100) {
-//             return 100;
-//         } else {
-//             return this.volume;
-//         }
-
-//     }
-
-    randomChannel() {
-let max = this.channel(Math.random()Math.ceil(50));
-console.log(max); 
+    volumeIncDec() {
+        let vol = 0;
+        if (this.volume <= 0) {
+            return this.volume = 0;
+        } else if (this.volume >= 100) {
+            return this.volume = 100;
+        } else {
+            return this.volume;
+        }
 
     }
+
+    randomChannel() {
+        let randomChannel = Math.ceil(Math.random() * 50);
+        
+
+    }
+
+    resetTV() {
+        return `${this.brand} at channel ${this.channel}, volume ${this.volume}`
+    }
 }
+
+const newTV = new TV("Grundig", randomChannel.randomChannel(), this.volume.volumeIncDec());
+console.log(`${this.brand} at channel ${this.channel}, volume ${this.volume}`)
