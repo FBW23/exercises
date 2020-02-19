@@ -8,8 +8,8 @@ class Person {
     }
 }
 
-const Aghy = new Person("allogie", 32);
-console.log(Aghy.describe());
+const newGuy = new Person("al logie", 32);
+console.log(newGuy.describe());
 
 //////////////////////////////
 
@@ -25,12 +25,12 @@ class Cylinder{
     }
 
     describe() {
-        return `volume of the cylinder is ${this.calcVolume()}`
+        return `volume of the cylinder is ${this.calcVolume()}`;
     }
 }
 
-const Cylo1 = new Cylinder(4,5);
-console.log(Cylo1.describe());
+const myCylo = new Cylinder(4,5);
+console.log(myCylo.describe());
 
 //////////////////////////////
 
@@ -38,9 +38,9 @@ class Clock {
     constructor({ template }) {
         this.timer;
         this.template = template;
-    }
+    };
 
-    render = function() {
+    render() {
         let date = new Date();
 
         let hours = date.getHours();
@@ -58,22 +58,21 @@ class Clock {
             .replace('s', secs);
 
         console.log(output);
+    };
 
-    }
-
-    stop = function() {
+    stop() {
         clearInterval(this.timer);
     };
 
-    start = function() {
+    start() {
         this.render();
         this.timer = setInterval(() => this.render(), 1000);
     };
 }
 
-let myC = new Clock({template: 'h:m:s'});
-myC.start();
-setTimeout(() => myC.stop(), 10000);
+let myClock = new Clock({template: 'h:m:s'});
+myClock.start();
+setTimeout(() => myClock.stop(), 10000);
 
 //////////////////////////////
 
@@ -82,30 +81,31 @@ class TV {
         this.brand = brand;
         this.channel = channel;
         this.volume = volume;
-    }
+    };
 
     increaseVol() {
         if (this.volume < 100) this.volume = this.volume + 1;
-    }
+    };
 
     decreaseVol() {
-        if (this.volume >= 0) this.volume = this.volume - 1;
-    }
+        if (this.volume > 0) this.volume = this.volume - 1;
+    };
 
     goRndChannel() {
-        this.channel = Math.floor(Math.random() * 50) + 1;
-    }
+        this.channel = Math.floor(Math.random() * 49) + 1;
+    };
 
     resetTV() {
         this.volume = 50;
         this.channel = 1;
-    }
+    };
 
     getInfo() {
         return `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
-    }
+    };
 }
 
-let myTV1 = new TV('Syronix');
-
-console.log(myTV1.getInfo());
+let myTV = new TV('Syronix');
+myTV.goRndChannel();
+myTV.increaseVol();
+console.log(myTV.getInfo());
