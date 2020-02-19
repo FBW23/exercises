@@ -153,7 +153,73 @@ class TV {
         this.channel = 1;
         this.volume = 50;
     }
+    volumeUp() {
+        if (this.volume < 100) {
+            return this.volume++
+        }
+    }
+
+    volumeDown() {
+        if (this.volume > 0) {
+            return this.volume--;
+        }
+    }
+
+    randomChannel() {
+        let random = (Math.random()* 100).toFixed(0);
+        if (random < 50) {
+            this.channel = random;
+            return this.channel;
+        }
+        else {
+            this.channel = 50;
+            return this.channel;
+        }
+    }
+    reset() {
+
+        this.volume = 1;
+
+        this.channel = 50;
+
+        return this;
+
+    }
+
+
 }
+
+
+const sony = new TV("Sony");
+
+console.log(sony);
+
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+sony.volumeUp()
+
+
+console.log(sony);
+
+sony.volumeDown()
+sony.volumeDown()
+sony.volumeDown()
+sony.volumeDown()
+console.log(sony);
+
+console.log(`random channel: ${sony.randomChannel()}`);
+
+
+//console.log(sony.reset())
+
+console.log(`${sony.brand} at channel:${sony.channel}, and volume:${sony.volume}`)
 
 console.log(``);
 console.log(`=================================================================`);
