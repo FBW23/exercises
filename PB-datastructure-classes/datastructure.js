@@ -70,7 +70,7 @@ class Clock {
 
     start() {
         this.render();
-        this.timer = setInterval(() => this.render(), 10);
+        this.timer = setInterval(() => this.render(), 1000);
     }
 }
 
@@ -78,13 +78,33 @@ let clock = new Clock({
     template: 'h:m:s'
 });
 clock.start();
-setTimeout(() => clock.stop(), 10);
+setTimeout(() => clock.stop(), 10000);
 
 console.log(`:::::::::::::::::::::::: Task:4 :::::::::::::::::::::::::::::::`)
 
-class Properties {
-constructor(brand, channel, volume) {
- this.brand = brand;
- this.channel = channel;
-this.volume = volume;
- }
+class TV {
+    constructor(brand) {
+        this.brand = brand;
+        this.channel = 1;
+        this.volume = 50;
+    }
+    increaseVolume() {
+        if (this.volume > 100);
+        return (this.volume = this.volume + 1);
+    }
+    decreaseVolume() {
+        if (this.volume <= 0);
+        return (this.volume = this.volume - 1);
+    }
+    setChannel() {
+        this.channel = Math.floor(Math.random() * 49) + 1;
+    }
+    status() {
+        return `${this.brand} at channel ${this.channel}, volume ${this.volume}`
+    }
+}
+const myTv = new TV("Panasonic");
+myTv.increaseVolume();
+myTv.decreaseVolume();
+myTv.setChannel();
+console.log(myTv.status());
