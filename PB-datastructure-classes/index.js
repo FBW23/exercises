@@ -43,7 +43,7 @@ class Clock {
         this.template = template;
     }
 
-    render() {
+    render = function() {
         let date = new Date();
 
         let hours = date.getHours();
@@ -64,11 +64,11 @@ class Clock {
 
     }
 
-    stop() {
+    stop = function() {
         clearInterval(this.timer);
     };
 
-    start() {
+    start = function() {
         this.render();
         this.timer = setInterval(() => this.render(), 1000);
     };
@@ -76,8 +76,9 @@ class Clock {
 
 
 
-const myC = new Clock({template: 'h:m:s'});
+let myC = new Clock({template: 'h:m:s'});
 myC.start();
+setTimeout(() => myC.stop(), 10000);
 
 
 /*
