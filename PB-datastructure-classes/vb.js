@@ -90,12 +90,11 @@ console.log(`=================================================================`)
 
 console.log(`================================3================================`);
 console.log(``);
-/* class tikTok {
-    constructor(date, hours, mins, secs) {
-        this.date = date;
-        this.hours = hours;
-        this.mins = mins;
-        this.secs = secs;
+/* class TikTok {
+    constructor(template) {
+        this.template = template;
+        this.timer;
+
     }
     render() {
         if (this.hours < 10) this.hours = '0' + this.hours;
@@ -105,37 +104,76 @@ console.log(``);
 
         if (this.secs < 10) this.secs = '0' + this.secs;
 
-        let output = timer
+        let output = this.template
             .replace('h', this.hours)
             .replace('m', this.mins)
             .replace('s', this.secs);
 
         console.log(output);
-    } */
 
-//     this.stop = function() {
-//       clearInterval(timer);
-//     };
-
-//     this.start = function() {
-//       render();
-//       timer = setInterval(render, 1000);
-//     };
-
-//   }
-
-//   let clock = new Clock({template: 'h:m:s'});
-//   clock.start();
-// }
-
-// }
+    }
 
 
-/* const timer = new tikTok(new Date(), new Date().getHours(), new Date().getMinutes(), new Date().getSeconds());
+    stop() {
+        clearInterval(this.timer);
+    };
 
-console.log(timer.render())
+    start() {
+        this.render();
+        this.timer = setInterval(this.render, 1000);
+    };
 
-console.log(timer)  */
+}
+
+let clock = new TikTok({ template: 'h:m:s' });
+clock.start();
+
+
+
+const timer = new TikTok(new Date(), new Date().getHours(), new Date().getMinutes(), new Date().getSeconds());
+
+
+
+console.log(timer); */
+
+
+class Clock {
+    constructor({ template }) {
+        this.timer;
+        this.template = template;
+    }
+    render() {
+        let date = new Date();
+        let hours = date.getHours();
+        if (hours < 10) hours = '0' + hours;
+        let mins = date.getMinutes();
+        if (mins < 10) mins = '0' + mins;
+        let secs = date.getSeconds();
+        if (secs < 10) secs = '0' + secs;
+        let output = this.template
+            .replace('h', hours)
+            .replace('m', mins)
+            .replace('s', secs);
+        console.log(output);
+    }
+    stop() {
+        clearInterval(this.timer);
+    };
+    start() {
+        this.render();
+        this.timer = setInterval(() => this.render(), 1000);
+    };
+}
+let myC = new Clock({template: 'h:m:s'});
+myC.start();
+setTimeout(() => myC.stop(), 10000);
+let clock = new Clock({
+    template: 'h:m:s'
+});
+//clock.start();
+
+
+
 console.log(``);
 console.log(`=================================================================`);
 // #### 4. TV Class
@@ -166,15 +204,9 @@ class TV {
     }
 
     randomChannel() {
-        let random = (Math.random()* 100).toFixed(0);
-        if (random < 50) {
-            this.channel = random;
-            return this.channel;
-        }
-        else {
-            this.channel = 50;
-            return this.channel;
-        }
+        this.channel = (Math.random() * 50).toFixed(0);
+        return this.channel;
+
     }
     reset() {
 
@@ -194,28 +226,20 @@ const sony = new TV("Sony");
 
 console.log(sony);
 
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-sony.volumeUp()
-
+for (i = 1; i < 15; i++) {
+    sony.volumeUp();
+};
 
 console.log(sony);
 
-sony.volumeDown()
-sony.volumeDown()
-sony.volumeDown()
-sony.volumeDown()
+//sony.reset();
+//console.log(sony);
+for (i = 1; i < 15; i++) {
+    sony.volumeDown();
+};
 console.log(sony);
 
 console.log(`random channel: ${sony.randomChannel()}`);
-
 
 //console.log(sony.reset())
 
