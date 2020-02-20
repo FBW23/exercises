@@ -40,45 +40,10 @@ console.log(newCylinder.getVolume());
 // #### 3. Tick Tock
 // Rewrite the following code to use the "class" syntax. 
 // ```javascript
-  // function Clock({ template }) {
-  
-  //   let timer;
-  
-  //   function render() {
-  //     let date = new Date();
-  
-  //     let hours = date.getHours();
-  //     if (hours < 10) hours = '0' + hours;
-  
-  //     let mins = date.getMinutes();
-  //     if (mins < 10) mins = '0' + mins;
-  
-  //     let secs = date.getSeconds();
-  //     if (secs < 10) secs = '0' + secs;
-  
-  //     let output = template
-  //       .replace('h', hours)
-  //       .replace('m', mins)
-  //       .replace('s', secs);
-  
-  //     console.log(output);
-  //   }
-  
-  //   this.stop = function() {
-  //     clearInterval(timer);
-  //   };
-  
-  //   this.start = function() {
-  //     render();
-  //     timer = setInterval(render, 1000);
-  //   };
-
-  // }
-  
-  // let clock = new Clock({template: 'h:m:s'});
-  // clock.start();
-// ```
 console.log('----------------------3. Tick Tock');
+
+
+
 
 
 
@@ -96,12 +61,37 @@ console.log('----------------------3. Tick Tock');
 console.log('----------------------4. TV Class');
 
 class TV {
-  constructor(brand = 'cool brand', channel = 1, volume = 50){
-    this.brand = brand;
-    this.channel = channel;
-    this.volume = volume;
+  constructor(){
+    this.brand = 'Kool Brand';
+    this.channel = 1;
+    this.volume = 50;
   }
-  
+  plusVolume() {
+    if(this.volume < 100) {
+      this.volume = this.volume+1;
+      return this.volume;
+    } 
+  }
+  minusVolume() {
+    if(this.volume >= 0) {
+      this.volume = this.volume-1;
+      return this.volume;
+    } 
+  }
+  getChannel() {
+    return Math.floor(Math.random() * 49) +1;
+  }
+  reset() {
+    this.channel = 1;
+    this.volume = 50;
+    return `${this.brand} at channel ${this.channel}, volume ${this.volume}.`;
+  }
 }
+
+let newChannel = new TV();
+console.log('Channel: ' + newChannel.getChannel());
+console.log('Volume: ' + newChannel.plusVolume());
+console.log(newChannel.reset());
+
 
 
