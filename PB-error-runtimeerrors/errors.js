@@ -28,10 +28,42 @@ function reverseStr(str) {
 }
 
 try {
-    const newStr = reverseStr({'k':1});
+    const newStr = reverseStr({ 'k': 1 });
 
     console.log(newStr);
 
 } catch (e) {
     console.log(e);
 }
+
+//////////////////////////////////
+
+function compareArrays(ar1, ar2) {
+    if (ar1.length !== ar2.length) {
+        return console.log(false);
+    }
+    for (let i = 0; i < ar1.length; i++) {
+        if (ar1[i] !== ar2[i]) {
+            return console.log(false);
+        }
+    }
+    return console.log(true);
+}
+
+compareArrays([1, 2, 3], [1, 2, 3]);
+
+
+///////////////////////
+
+let arr1 = [2,4,6,8];
+
+function sumArr(arr) {
+    if (arr.length === 1) {
+        return arr[0];
+    }
+    else {
+        return arr.pop() + sumArr(arr);
+    }
+};
+
+sumArr(arr1);
