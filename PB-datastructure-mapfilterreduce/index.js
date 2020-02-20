@@ -132,6 +132,12 @@ const livedYears = inventors.reduce((acc, val) => {
 }, 0);
 console.log(livedYears);
 
-// const totalYears = inventors.reduce((acc, val) => {
-//   return 
-// });
+// 5. Square Root
+// Given an array of numbers, find the square root of those 
+// numbers using map.
+console.log("===== 5. Square Root =====");
+
+myArrOfNumb = [4, 9, 16];
+
+const sqrtArr = myArrOfNumb.map( item => Math.sqrt(item));
+console.log(sqrtArr);
