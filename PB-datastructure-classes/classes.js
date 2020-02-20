@@ -16,7 +16,7 @@ const john = new Person('John', 19);
 john.describe();
 
 console.log('#### 2. Volume');
-// * Write a JavaScript program to get the volume of a cylinder with four decimal places using a class. 
+// * Write a JavaScript program to get the volume of a cylinder with four decimal places using a class.
 
 class Volume {
     constructor(radius, height) {
@@ -38,11 +38,13 @@ console.log('#### 3. Tick Tock');
 // Rewrite the following code to use the "class" syntax. 
 
 class Clock {
-    constructor({ template }) {
+    constructor({
+        template
+    }) {
         this.timer;
         this.template = template;
     }
-    render = function() {
+    render() {
         let date = new Date();
         let hours = date.getHours();
         if (hours < 10) hours = '0' + hours;
@@ -56,22 +58,24 @@ class Clock {
             .replace('s', secs);
         console.log(output);
     }
-    stop = function() {
+    stop() {
         clearInterval(this.timer);
     };
-    start = function() {
+    start() {
         this.render();
         this.timer = setInterval(() => this.render(), 1000);
     };
 }
-let myC = new Clock({template: 'h:m:s'});
+let myC = new Clock({
+    template: 'h:m:s'
+});
 myC.start();
 setTimeout(() => myC.stop(), 10000);
 
 let clock = new Clock({
     template: 'h:m:s'
 });
-clock.start();
+// clock.start();
 
 console.log('#### 4. TV Class');
 // * Create a TV class with properties like brand, channel and volume.
@@ -88,12 +92,16 @@ class Television {
         this.volume = 50;
     }
     volumeSetPlus() {
-        if (this.volume < 100) this.volume = this.volume + 1;
-        return this.volume;
+        if (this.volume < 100) {
+            this.volume = this.volume + 1;
+            return this.volume;
+        }
     }
     volumeSetMinus() {
-        if (this.volume >= 0) this.volume = this.volume - 1;
-        return this.volume;
+        if (this.volume > 0) {
+            this.volume = this.volume - 1;
+            return this.volume;
+        }
     }
     status() {
         return `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
@@ -114,4 +122,4 @@ console.log('random channel ->', tvBrand.setChannel());
 console.log('raise volume ->', tvBrand.volumeSetPlus());
 console.log('lower volume ->', tvBrand.volumeSetMinus());
 console.log('tv status ->', tvBrand.status());
-console.log('tv reset ->', tvBrand.resetTV())
+console.log('tv reset ->', tvBrand.resetTV());
