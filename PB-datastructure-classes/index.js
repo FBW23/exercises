@@ -14,13 +14,13 @@ const john = new Person ("John", 19);
 john.describe();
 
 class Cylinder {
-    constructor(radio, heigth) {
-        this.radio = radio;
-        this.heigth = heigth;
+    constructor(r, h) {
+        this.r = r;
+        this.h = h;
     }
 
     volume () {
-        let calc = (Math.PI * Math.pow(this.radio, 2))*this.heigth;
+        let calc = (3.14 * Math.pow(this.r, 2))*this.h;
         console.log(calc.toFixed(4));
     }
 }
@@ -108,8 +108,8 @@ class Tv {
     }
     
     setChannel (){
-        let randon = (Math.random () *50)
-        console.log (randon.toFixed(0));
+        return Math.florr(Math.random () *49) + 1;
+       
     }
     resetTv (){
         console.log(`${this.brand} at channel ${this.channel}, volume ${this.volume}.`);

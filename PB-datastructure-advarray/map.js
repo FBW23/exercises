@@ -12,7 +12,7 @@ const orders = [
 ];
 const sum = orders.reduce(function (total, currentValue) {
     return total + currentValue.amount;
-}, initialValue);
+},);
 
 console.log(sum);
 
@@ -72,3 +72,101 @@ const aRei = [1,4,6,7,99];
 const squareRoot = aRei.map(aRei => Math.sqrt(aRei));
 
 console.log(squareRoot);
+
+//# create map, filter, reduce functions from image
+//Transform the examples on the picture in real code.
+//![Image](./image.jpg)
+//### Starting poing:
+//```
+const food = ['cow', 'potato', 'hen', 'corn']
+var cook = (foodItem) => {
+    
+  switch (foodItem){
+      case "cow":
+            return "hamburguer";
+      case "potato":
+           return "fries";
+      case "hen":
+           return "chicken";
+      case "corn":
+           return "popcorn" ;
+      default:
+          console.log("notvalid");        
+         
+  }
+};
+const processedFood = food.map(foodItem => cook(foodItem));
+console.log(processedFood);
+
+let veggie = (veggieItem) => {
+    switch(veggieItem){
+        case "fries":
+            return "fries";
+        case "popcorn":
+            return "popcorn";
+        default :
+             break;       
+    };
+};
+
+const veggieFood = processedFood.filter( veggieItem => veggie(veggieItem));
+console.log(veggieFood);
+
+//japanese robots
+const transformers = [
+    {
+      name: 'Optimus Prime',
+      form: 'Freightliner Truck',
+      team: 'Autobot'
+    },
+    {
+      name: 'Megatron',
+      form: 'Gun',
+      team: 'Decepticon'
+    },
+    {
+      name: 'Bumblebee',
+      form: 'VW Beetle',
+      team: 'Autobot'
+    },
+    {
+      name: 'Soundwave',
+      form: 'Walkman',
+      team: 'Decepticon'
+    }
+  ];
+
+  /*function countAutobots(transformer) {
+      if (transformer.team === "Autobot"){
+          return 1;
+      } else{
+          return 0;
+      }
+  };
+
+  const countAutobots2 = transformers.reduce(countAutobot, 0);
+  console.log(countAutobots2);*/
+
+  const allTheForms = transformers.map(function(object) {
+      //return object.form ; both way of accessing the objects are fine. 
+      return object["form"];
+  });
+
+  console.log(allTheForms);
+
+  const allTheForms2 = transformers.map(object => object.form);
+
+console.log(allTheForms2);
+
+  
+//filter only for auto bots
+//array.prototype.filter(callback(item))
+function areYouAuto(transformer) {
+    if ( transformer.team === "Autobot") {
+        return transformer.team;
+    };
+}
+
+const autobots = transformers.filter(areYouAuto);
+console.log(autobots);
+
