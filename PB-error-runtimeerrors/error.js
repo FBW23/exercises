@@ -19,15 +19,75 @@ fido.bark() //TypeError: fido.bark is not a function
 
 // Example
 // getMonthName(15) -> Invalid Month Number!
+console.log('========Task 2 =======')
+getMonthName = (number) => {
+    switch (number) {
+        case 1:
+            console.log("January");
+            break;
+        case 2:
+            console.log("February");
+            break;
+        case 3:
+            console.log("April");
+            break;
+        case 4:
+            console.log("May");
+            break;
+        case 5:
+            console.log("June");
+            break;
+        case 6:
+            console.log("July");
+            break;
+        case 7:
+            console.log("August");
+            break;
+        case 8:
+            console.log("September");
+            break;
+        case 10:
+            console.log("October");
+            break;
+        case 11:
+            console.log("November");
+            break;
+        case 12:
+            console.log("December");
+            break;
+        default:
+            const notAvalidMonth = new Error("are you crazy?This month does not exist");
+            try {
+                if (number > 0 && number < 13) {
+                    console.log(getMonthName(number));
+                } else {
+                    throw `${notAvalidMonth}`;
+                }
+            } catch (e) {
+                console.log(e)
+            }
+    }
+};
+getMonthName(109);
 
 console.log('========Task 3 =======')
 // 3. Reverse
 // Create a function that reverses a string. Throw a custom error if the user inputs another type as an argument.
- const reverseString = function(string) {
-    return string.split('').reverse().join('');
-}
-reverseString("hello");
-reverseString(80085);
+;
+const reverseString = str => {
+    const stringError=new Error('not a string dummy!');
+        try {
+            if ( typeof (str)=== 'string') {
+             console.log(str.split('').reverse('').join(''));
+            } else {
+                throw `${stringError}`;
+            }
+
+        } catch (e) {
+            console.error(e);
+        }}
+        reverseString("hello");
+        reverseString(80085);
 // Example
 // reverseString(2019) -> ERROR! This is not a string!
 
@@ -61,7 +121,7 @@ console.log('======Task 5 ======')
 // 5. Recursion
 // The following code should get the sum of the array items, but it does not work. Fix it so that it will.
 
-const sum = (array) => array.reduce((a, b) => a + b);
+const sum = (array) => array.reduce((a, b) => a + b)
 
 
 
