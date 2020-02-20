@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 class Person {
     constructor(name, age) {
@@ -113,3 +114,12 @@ class TV {
 let myTV = new TV('Syronix');
 myTV.goRndChannel();
 console.log(myTV.getInfo());
+=======
+let number = 0;
+
+while (number !== 50) {
+    number = Math.floor(Math.random() * 49) + 1;
+    console.log(number);
+}
+console.log(50);
+>>>>>>> 482ed7ccc5d50440df01f0ac4483b0cdcdf24e55
