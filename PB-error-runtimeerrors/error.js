@@ -50,11 +50,54 @@ const getMonthName = num => {
             case 12:
                 return 'December';
             default:
-                throw new Error();
-        }
+                throw new Error('Invalid Month Number!');
+        };
     } catch (e) {
-        return 'Invalid Month Number!';
+        return console.error(e);
     }
-
 };
 console.log(getMonthName(15));
+
+// #### 3. Reverse 
+// Create a function that reverses a string. Throw a custom error if the user inputs another type as an argument. 
+
+// * Example 
+// * reverseString(2019) -> `ERROR! This is not a string!`
+console.log('----------------------3. Reverse');
+
+const reverseString = string => {
+    try {
+        if (string === '') {
+            return string.reverse();
+        } else {
+            return new Error('ERROR! This is not a string!');
+        }
+    } catch (e){
+        return console.error(e);
+    }
+};
+console.log(reverseString(2019));
+
+
+// #### 4. Comparing Arrays
+// Create a function that returns true if two arrays contain identical values, and false otherwise.
+
+// Someone wrote the following code: 
+// * Why doesn't the code work? 
+// * Fix the code (or restart) to solve the problem.
+console.log('----------------------4. Comparing Arrays');
+
+function compareArrays(arr1, arr2) {
+  if (arr1 === arr2) {
+    return true
+   } else {
+    return false
+   }
+}
+
+
+
+console.log(compareArrays([1, 2], [1, 3])); // ➞ false
+console.log(compareArrays([1, 2], [1, 2])); // ➞ true
+console.log(compareArrays([4, 5, 6], [4, 5, 6])); // ➞ true
+console.log(compareArrays([4, 7, 6], [4, 5, 6])); // ➞ false
