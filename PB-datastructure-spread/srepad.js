@@ -32,13 +32,14 @@ console.log(myClone);
 // Create a function to find the largest number in an array.
 const numbers = [1, 2, 3, 4];
 
-const findTheLargest = (numbers) => {
+const findTheLargest = (...numbers) => {
     let max = Math.max(...numbers);
     return max;
 };
 
 
-console.log(findTheLargest(numbers));
+
+console.log(findTheLargest(...numbers));
 
 // #### 4. Find the Smallest
 // Create a function to find the smallest number in an array.
@@ -65,19 +66,25 @@ employee.role = 'student';
 console.log(employee);
 // #### Bonus: 6.  Is the average a whole number?
 // Create a function that takes 4 integers as parameters and returns true or false depending on whether the average of all the arguments is a whole number or not.
-const isWhole = (...args) =>{
+const calcAverage = (...args) =>{
     let sum = 0;
     
     for(item in args){
         sum += args[item]; 
     
     } let average = sum/args.length;
-    return Math.floor(average)===average
+    return average;
 
     };
 
-console.log(isWhole(4, 4));
-console.log(isWhole(9, 2, 2, 5));
+    let result = calcAverage;
+    const isInteger = (result) => Number.isInteger(result);
+
+
+    console.log(isInteger(result));
+
+console.log(isInteger(4, 4));
+console.log(isInteger(9, 2, 2, 5));
 // * Examples
 // * isWhole(1, 2, 3, 4) ➞ false
 // * isWhole(9, 2, 2, 5) ➞ false
