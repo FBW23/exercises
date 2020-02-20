@@ -66,7 +66,7 @@ class Clock {
 
     stop() {
         clearInterval(this.timer);
-    };
+    }
 
     start() {
         this.render();
@@ -76,9 +76,9 @@ class Clock {
 
 let clock = new Clock({
     template: 'h:m:s'
-});
+}); //Instance
 clock.start();
-setTimeout(() => clock.stop(), 10000);
+setTimeout(() => clock.stop(), 20000);
 
 console.log(`:::::::::::::::::::::::: Task:4 :::::::::::::::::::::::::::::::`)
 
