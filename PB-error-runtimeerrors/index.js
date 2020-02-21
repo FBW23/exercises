@@ -66,3 +66,5 @@ const getMontName = number => {
 console.log(getMontName(12));
 console.log(getMontName(14));
 console.log(getMontName(0));
+
+// 3. Reverse
