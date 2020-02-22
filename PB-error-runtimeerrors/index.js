@@ -68,3 +68,57 @@ console.log(getMontName(14));
 console.log(getMontName(0));
 
 // 3. Reverse
+console.log("==== 3. Reverse ====");
+
+const reverseString = (str) => {
+  const notStrErr = new Error('This is not a string!')
+  try {
+    if (typeof (str) != "string") {
+      throw `${notStrErr}`
+    } else {
+      return str.split("").reverse().join("");
+    }
+  } catch (err) {
+    return err;
+  }
+};
+
+console.log(reverseString('hello'));
+console.log(reverseString(2019));
+console.log(reverseString(false));
+
+//4. Comparing Arrays
+console.log("==== 4. Comparing Arrays ====");
+// Why doesn't the code work? 
+// "===" Compare the two references arr1, arr2. They point to 
+// different objects in different locations in memory, and
+// this is considered not equal
+
+function compareArrays(arr1, arr2) {
+  if (arr1.toString() === arr2.toString()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(compareArrays([1, 2], [1, 3]));
+console.log(compareArrays([1, 2], [1, 2]));
+console.log(compareArrays([4, 5, 6], [4, 5, 6]));
+console.log(compareArrays([4, 7, 6], [4, 5, 6]));
+
+//5. Recursion
+console.log("==== 5. Recursion ====");
+
+function sum(array) {
+  if (array.length === 0) {
+    return 0;
+  } else {
+    let result = array.pop() + sum(array);
+    return result;
+  }
+
+}
+
+console.log(sum([1, 2, 3]));
+console.log(sum([1, 1, 3]));
