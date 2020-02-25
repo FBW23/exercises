@@ -36,7 +36,7 @@ Create a function that returns true if two arrays contain identical values, and 
 Someone wrote the following code: 
 ```javascript
 function compareArrays(arr1, arr2) {
-  if (arr1 === arr2) {
+  if (arr1.sort() === arr2.sort()) {
     return true
    } else {
     return false
