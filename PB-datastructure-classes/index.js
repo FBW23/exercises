@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 1. Person Class
 console.log("==== 1.Person Class ====");
 // Create a class called Person which accepts the name of a 
@@ -104,33 +103,13 @@ console.log("==== 4. TV Class ====");
 
 class TV {
 
-  constructor(brand, channel = 1, volume = 50) {
+  constructor(brand) {
     this.brand = brand;
-    this.channel = channel;
-    this.volume = volume;
-  }
-
-  increase() {
-      return `Volume: ${this.volume = 100}%`
- }
-
-  decrease() {
-    return `Volume: ${this.volume = 0}%`
-
+    this.channel = 1;
+    this.volume = 50;
   }
 }
 
 
 let newTv = new TV("LG");
 console.log(newTv);
-console.log(newTv.increase());
-console.log(newTv.decrease());
-=======
-let number = 0;
-
-while (number !== 50) {
-    number = Math.floor(Math.random() * 49) + 1;
-    console.log(number);
-}
-console.log(50);
->>>>>>> 482ed7ccc5d50440df01f0ac4483b0cdcdf24e55
