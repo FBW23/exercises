@@ -1,0 +1,16 @@
+{
+  "name": "pb-error-runtimeerrors",
+  "version": "1.0.0",
+  "description": "#### 1. Fido says... * In the following code, we want fido to bark. Instead, we get an error. Why?",
+  "main": "dog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3"
+  },
+  "dependencies": {}
+}
