@@ -4,7 +4,7 @@ class Dog {
     constructor(name) {
         this.name = name;
     }
-    bark = function () {
+    bark () {
         console.log(`${this.name} says woof`);
     } //first error 
 }
@@ -88,7 +88,7 @@ function compareArrays(arr1,arr2){
    
      let result;
    
-   arr1.forEach((e1,i)=>arr2.forEach(e2=>{
+   arr1.forEach((e1, i)=>arr2.forEach(e2=>{
      
           if(e1.length > 1 && e2.length){
              result = compareArrays(e1,e2);

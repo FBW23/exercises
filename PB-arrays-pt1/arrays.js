@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //1. Declare a variable named "euroCities" and assign an array to the variable e.g. ["Paris", "London", "Valletta", "Prague", "Rome"]. Declare another variable and assign the second item of the array as a value.
 console.log(`::::::::::::::::::::::::::::::::::Task 1:::::::::::::::::::::::::::::::`)
 
@@ -20,11 +21,33 @@ console.log(euroCities);
 //5. Use an array method to add "Budapest" to the euroCities array. 
 console.log(`::::::::::::::::::::::::::::::::::Task 5:::::::::::::::::::::::::::::::`)
 euroCities.push('Budapest');
+=======
+// 1. Declare a variable named 'euroCities' and assign an array to the variable e.g. ['Paris', 'London', 'Valletta', 'Prague', 'Rome']. Declare another variable and assign the second item of the array as a value.
+const euroCities = ['Paris', 'London', 'Valletta', 'Prague', 'Rome'];
+console.log(euroCities);
+const second = euroCities[1];
+console.log(second); // London
+// 2. Change the first item in the array to 'Berlin'.
+euroCities[0] = 'Berlin';
+console.log(euroCities);
+// 3. Print the length of the array 'euroCities'
+console.log(euroCities.length); // 5
+// 4. Remove the last item of the array 'euroCities'
+// POP
+euroCities.pop();
+console.log(euroCities);
+// 5. Use an array method add 'Budapest'
+euroCities.push('Budapest');
+console.log(euroCities);
+// 6. Bonus:
+euroCities[1] = undefined; // not enough???
+>>>>>>> a7a0015a16810ec9d371e1d227826cd72f0578ea
 console.log(euroCities);
 //6. **Bonus**: Remove the second and third items from the euroCities array. 
 console.log(`::::::::::::::::::::::::::::::::::Task 6:::::::::::::::::::::::::::::::`)
 euroCities.splice(1, 2);
 console.log(euroCities);
+<<<<<<< HEAD
 //7. Create another variable named asianCities and assign an array of at least 5 cities to the variable.
 console.log(`::::::::::::::::::::::::::::::::::Task 7:::::::::::::::::::::::::::::::`)
 const asianCities = ['Manila', 'Tokyo', 'Bangkok', 'Beijing', 'Kuala Lumpur'];
@@ -33,18 +56,33 @@ console.log(asianCities);
 console.log(`::::::::::::::::::::::::::::::::::Task 8:::::::::::::::::::::::::::::::`)
 const newCities = asianCities.splice(2,4);
 console.log(newCities);
+=======
+// 7. asianCitites
+const asianCities = ['Manila', 'Bangkok', 'Beijing', 'Kuala Lumpur', 'Tokyo'];
+// 8. Use an array method to select items 2-4 from the array of asianCities and store this in another variable
+
+const newCities = asianCities.splice(2, 4); // cuts out 3 from the original
+console.log(newCities);
+// only 2 cities left
+console.log(asianCities.length); // 2
+>>>>>>> a7a0015a16810ec9d371e1d227826cd72f0578ea
 
 console.log(asianCities.length); //2
 //9. **Bonus**: Use a method to concat euroCities with asianCities. Store the result in a variable (eg. worldCities).  
 console.log(`::::::::::::::::::::::::::::::::::Task 9:::::::::::::::::::::::::::::::`)
 const worldCities = euroCities.concat(asianCities);
+<<<<<<< HEAD
 console.log(worldCities); //length of 5
+=======
+console.log(worldCities); // length of 5
+>>>>>>> a7a0015a16810ec9d371e1d227826cd72f0578ea
 
 //10. Reverse the order of worldCities.
 console.log(`::::::::::::::::::::::::::::::::::Task 10:::::::::::::::::::::::::::::::`)
 worldCities.reverse();
 console.log(worldCities);
 
+<<<<<<< HEAD
 
 //11. **Bonus**: Replace the 3rd item in the array of worldCities with "Toronto". 
 console.log(`::::::::::::::::::::::::::::::::::Task 11:::::::::::::::::::::::::::::::`)
@@ -91,6 +129,37 @@ console.log(myArray.join(""));
 
 const mySiblings = ["Gazmend", "Astrit", "Blerina"];
 const parentsNames = ["Adem", "Miliha"];
+=======
+// 11. Replace 3rd item with toronto
+worldCities[2] = 'Toronto';
+console.log(worldCities);
+
+// 12. Washington should be added at 2nd, nothing is removed!
+worldCities.splice(1, 0, 'Washington');
+console.log(worldCities);
+
+// 13. write a program to put an array into a string
+console.log(worldCities.toString()); // puts everything together with a comma
+console.log(worldCities.join(', ')); // puts all arrays together into one string with a seperator
+console.log(worldCities.join('+'));
+
+// 14. program to reverse the string hello world
+const myString = 'hello world';
+const myArray = myString.split('');
+console.log(myArray.length);
+myArray.reverse();
+console.log(myArray);
+console.log(myArray.join('')); // Without seperator
+// shorter!!!
+console.log(myString.split('').reverse().join(''));
+
+// Sibling names = Katharina and Isabella
+// 15.
+const mySiblings = ['Katharina', 'Isabella'];
+const parentsNames = ['Josef', 'Claudia'];
+const allNames = mySiblings.concat(parentsNames); // add both together
+console.log(allNames);
+>>>>>>> a7a0015a16810ec9d371e1d227826cd72f0578ea
 
 const allNames = mySiblings.concat(parentsNames);
 console.log(allNames);
@@ -128,14 +197,14 @@ findGreatest([3, 4, 5], 4); // ➞ 5
 findGreatest([10, 20, 30], 12); // ➞ 20, 30
 findGreatest([0, 10, 3], 4); // ➞ 10
 
-// 2. For the longest word. Create a function to find the longest word in a given string. i.e. tip: use split method!  
+// 2. For the longest word. Create a function to find the longest word in a given string. i.e. tip: use split method!
 
-// longestWord("this is a web development course"); // ➞ "development"
+// longestWord('this is a web development course'); // ➞ 'development'
 
 
 const findVowels = str => {
     let sum = 0;
-    let strVowels = "aeiou";
+    const strVowels = 'aeiou';
     for (let i = 0; i < str.length; i++) {
         if (strVowels.indexOf(str[i]) !== -1) {
             sum++;
@@ -143,7 +212,7 @@ const findVowels = str => {
     }
     return sum;
 };
-console.log(findVowels("this is a string"));
+console.log(findVowels('this is a string'));
 
 const myVowels = mV => mV.replace(/[^aeiou]/gi, '').length;
 
