@@ -8,12 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thebigJulien/exercises.git"
+    "url": "git+https://github.com/FBW23/exercises.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thebigJulien/exercises/issues"
+    "url": "https://github.com/FBW23/exercises/issues"
   },
-  "homepage": "https://github.com/thebigJulien/exercises#readme"
+  "homepage": "https://github.com/FBW23/exercises#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3"
+  }
 }
