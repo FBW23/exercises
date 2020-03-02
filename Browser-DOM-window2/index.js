@@ -5,9 +5,10 @@ let attempts = 1;
 let newArr = [];
 newArr.push(userNumber);
 
-for (; attempts < 4; attempts++) {
+for (; attempts < 3; attempts++) {
   if (newArr.includes(randomNumber)) {
     alert(`Success, the number was ${randomNumber}. Attempts: ${attempts}`);
+    break;
   } else {
     userNumber = parseInt(prompt('Wrong!!! Try Again!'))
     newArr.push(userNumber);
