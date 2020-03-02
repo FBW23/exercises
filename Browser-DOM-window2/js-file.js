@@ -15,11 +15,11 @@ function randomFunction() {
 
   let attempts = 3;
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 1; i < 4; i++) {
     if (message == randomNumber) {
       alert(`Congratulations! You guessed the right number.`);
       return `The right number was ${randomNumber}.`;
-    } else {
+    } else if (i < 3) {
       message = prompt(`Your number was wrong. You have ${--attempts} attempts left. Type a new number!`);
     }
   }
