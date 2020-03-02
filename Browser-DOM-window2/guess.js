@@ -12,17 +12,19 @@
 // AND what the number was. e.g. "Sorry, you failed to guess the number in three attempts. The number was 0!"
 // ![alt text](./images/game-lost.png "Lost Game") 
 
-let guess = prompt('Guess a number between 1 and 10');
+ 
 function guessGame() {
-    let randomize = Math.floor(Math.random()*11);
-    let number = 0;
-    for (let i=0 ; i<2; i++) {
-        if(number !== randomize[i]) {
-            prompt('Nope, sorry! Try again!');
+    let randomize = Math.floor(Math.random()*10 +1);
+    let guess = prompt('Guess a number between 1 and 10. => ' +  randomize);
+    for (let i=1 ; i<3; i++) {
+        if (guess == randomize) {
+            guess = alert('Congrats, you found it in ' + i + ' attempts.');
+            break;
+        } else {
+            guess = prompt('Nope, sorry! Try again!');
         } 
-        else if (number === randomize[i]){
-            prompt('Congrats, you found it in ' + randomize[i] + ' attempts.');
-        }
-    } alert('The number was ' + randomize);
+        
+    }  alert('The number was ' + randomize);
+    
 }
 guessGame();
