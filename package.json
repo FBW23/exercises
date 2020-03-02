@@ -8,16 +8,28 @@
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "git+https://github.com/FBW23/exercises.git"
+=======
+    "url": "git+https://github.com/o0pmitev/exercises.git"
+>>>>>>> d6f117b96213a188aa754b6ae5a2fac471d9eb7c
   },
   "author": "",
   "license": "ISC",
   "bugs": {
+<<<<<<< HEAD
     "url": "https://github.com/FBW23/exercises/issues"
   },
   "homepage": "https://github.com/FBW23/exercises#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.18.3"
+=======
+    "url": "https://github.com/o0pmitev/exercises/issues"
+  },
+  "homepage": "https://github.com/o0pmitev/exercises#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+>>>>>>> d6f117b96213a188aa754b6ae5a2fac471d9eb7c
   }
 }
