@@ -9,17 +9,17 @@
 // }
 
 function randomFunction() {
-  let randomNumber = Math.floor(Math.random() * 11);
+  let randomNumber = Math.floor(Math.random() * 10 + 1); // max +  min
 
   let message = prompt(`Guess the number between 1 and 10. (The right number is ${randomNumber}).`);
 
   let attempts = 3;
 
   for (let i = 1; i < 4; i++) {
-    if (message == randomNumber) {
+    if (parseInt(message) === randomNumber) { // (message == randomNumber)
       alert(`Congratulations! You guessed the right number.`);
       return `The right number was ${randomNumber}.`;
-    } else if (i < 3) {
+    } else if (attempts > 1) { // as long as you have 1 attempt left
       message = prompt(`Your number was wrong. You have ${--attempts} attempts left. Type a new number!`);
     }
   }
@@ -28,3 +28,17 @@ function randomFunction() {
 }
 
 randomFunction();
+
+console.log(document);
+console.log(document.head);
+console.log(document.title);
+let title = document.getElementById('websiteTitle');
+console.log(title);
+
+title.style.color = 'green';
+
+let links = document.querySelectorAll('a');
+console.log(links);
+for (let i = 0; i < links.length; i++) {
+  links[i].style.color = 'hotpink'
+}
