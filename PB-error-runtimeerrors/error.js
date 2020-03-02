@@ -121,8 +121,8 @@ console.log('======Task 5 ======')
 // 5. Recursion
 // The following code should get the sum of the array items, but it does not work. Fix it so that it will.
 
-const sum = (array) => array.reduce((a, b) => a + b)
+const sum = (array) => array.reduce((accumulator, previous) => accumulator + previous)
 
 
 
-console.log(sum([1, 2, 3]));
+console.log(sum([1, 2, 3,7]));
