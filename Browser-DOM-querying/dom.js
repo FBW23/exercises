@@ -83,7 +83,7 @@ item.style.justifyContent = 'space-around';
 item.style.borderRadius = '50%';
 item.style.border = '5px solid orange';
 item.style.fontSize= '1rem';
-item.style.width='7rem';
+item.style.width='5rem';
 item.style.padding='3rem 3rem'
 
 });
