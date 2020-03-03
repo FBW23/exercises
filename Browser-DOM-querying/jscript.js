@@ -21,7 +21,7 @@ for (let i = 0; i < categoryElements.length; i++) {
 
 // * Create a function named "_colorGenerator_" that returns a different color. The returned random color should also include set transparency. Select the unordered lists with the class of `food-category`. Give each list a different background color using the function that you created. 
 
-let color = document.querySelectorAll('ul.food-category');
+let foodCategory = document.querySelectorAll('ul.food-category');
 
 function colorGenerator() {
     let r = Math.floor(Math.random() * 256);
@@ -30,6 +30,22 @@ function colorGenerator() {
     let a = Math.floor(Math.random() * 10 + 1);
     return "rgba(" + r + "," + g + "," + b + "," + a + ")";
 }
-for (let i = 0; i < color.length; i++) {
-    color[i].style.background = colorGenerator();
+for (let i = 0; i < foodCategory.length; i++) {
+    foodCategory[i].style.background = colorGenerator();
+}
+
+// * Align the `food-category` lists in a row on desktop. Make sure that the page is responsive and also works on mobile.
+
+let ulAlign = document.querySelectorAll('ul');
+
+if (window.matchMedia("(min-width: 400px)").matches) {
+    /* the viewport is at least 400 pixels wide */
+    for (let i = 0; i < foodCategory.length; i++) {
+        foodCategory[i].style.width = '25%';
+        // foodCategory[i].style.textAlign = 'center';
+        foodCategory[i].style.flex = 'flex-grow';
+        foodCategory[i].style.margin = "30px 10px 10px 30px";
+    }
+} else {
+    /* the viewport is less than 400 pixels wide */
 }
