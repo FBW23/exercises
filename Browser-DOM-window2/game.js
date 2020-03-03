@@ -56,15 +56,33 @@
 //     alert('You ran out of tries.  The number was ' + answer + '.');
 // }
 
-let randomNumber = Math.floor(Math.random() * 10 + 1);
+// let randomNumber = Math.floor(Math.random() * 10 + 1);
 // alert(randomNumber);
-let guess = prompt("Guess a number between 1-10");
-for (let i = 1; i < 3; i++) {
-  if (randomNumber == guess) {
-    alert("Congratulation you Got right NUMBER. \n \nThe Correct number is " +randomNumber );
-    break; // \n \ is to move into a new line
-  } else {
-    guess = prompt("Please try again");
-  }
-}
-alert("Wrong Answer. The correct Number was " + randomNumber);
+// let guess = prompt("Guess a number between 1-10");
+// for (let i = 1; i < 3; i++) {
+//   if (randomNumber == guess) 
+// // const result = parseInt(randomNumber, guess)
+//   {
+//     alert("Congratulation you Got right NUMBER. \n \nThe Correct number is " +randomNumber );
+//     break; // \n \ is to move into a new line
+//   } else {
+//     guess = prompt("Please try again");
+//   }
+// }
+// alert("Wrong Answer. The correct Number was " + randomNumber);
+
+// let randomNumber = Math.floor(Math.random() * 10 + 1);
+// alert(randomNumber);
+// let guess = prompt("Guess a number between 1-10");
+// for (let i = 1; i < 3; i++) {
+// //   if (randomNumber == guess) 
+// if (parseInt(guess)===randomNumber)
+// // const result = parseInt(randomNumber, guess)
+//   {
+//     alert("Congratulation you Got right NUMBER. \n \nThe Correct number is " +randomNumber );
+//     break; // \n \ is to move into a new line
+//   } else {
+//     guess = prompt("Please try again");
+//   }
+// }
+// alert("Wrong Answer. The correct Number was " + randomNumber);
