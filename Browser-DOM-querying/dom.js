@@ -19,12 +19,18 @@ function generateRandomColor() {
 let a=document.querySelectorAll('.food-category');
 for (let b = 0; b < a.length; b++) {
     a[b].style.backgroundColor = generateRandomColor();
+    // a[b].style.flexbox.insertRow();
 }
+function myFunction(b) {
+    if (b.matches) { // If media query matches
+      document.body.style.backgroundColor = "yellow";
+    } else {
+     document.body.style.backgroundColor = "white";
+    }
+  }
+  let b = window.matchMedia("(max-width: 700px)")
+  myFunction(b) // Call listener function at run time
+  b.addListener(myFunction) // Attach listener function on state changes
 
-// function myFunction() {
-//     var table = document.getElementById(".food-category");
-//     var row = table.insertRow(0);
-    // var cell1 = row.insertCell(0);
-    // var cell2 = row.insertCell(1);
-    // cell1.innerHTML = "NEW CELL1";
-    // cell2.innerHTML = "NEW CELL2";
+  
+ 
