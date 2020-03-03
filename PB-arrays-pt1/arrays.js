@@ -30,7 +30,7 @@ const asianCities = ['Manila', 'Bangkok', 'Kuala Lumpur', 'Tokyo'];
 
 // 8. **Bonus**: Use an array method to select items 2-4 from the array of asianCities and store this in another variable.  
 
-let newCities = asianCities.splice(2,3);
+let newCities = asianCities.spli(2,3);
 console.log(newCities);
 
 
@@ -87,7 +87,6 @@ allNames.push('Malbec', 'Ozzy');
 console.log(allNames);
 
 allNames.reverse();
-<<<<<<< HEAD
 console.log(allNames)
 
 // 3. Combine these two arrays.
@@ -95,57 +94,3 @@ console.log(allNames)
 // 5. Reverse the order of the array.
 // 6. Access one of your parents' names.
 // 7. Update the name of one of your parents. 
-=======
-console.log(allNames);
-// 6. access parent
-console.log(allNames[3]);
-// 7. change
-allNames[2] = 'Felizitas';
-console.log(allNames);
-
-// 1. The Greater Numbers. Create a function which accepts two arguments: the first argument being an array of numbers, and the second argument being a number. The function should return the elements of the array which are greater than the second argument.
-
-const findGreatest = (myArray, myNumber) => {
-    if (myArray[0] > myNumber) {
-        console.log(myArray[0]);
-    }
-    if (myArray[1] > myNumber) {
-        console.log(myArray[1]);
-    }
-    if (myArray[2] > myNumber) {
-        console.log(myArray[2]);
-    }
-};
-findGreatest([3, 4, 5], 4); // ➞ 5
-findGreatest([10, 20, 30], 12); // ➞ 20, 30
-findGreatest([0, 10, 3], 4); // ➞ 10
-
-// 2. For the longest word. Create a function to find the longest word in a given string. i.e. tip: use split method!  
-
-// longestWord("this is a web development course"); // ➞ "development"
-
-
-const findVowels = str => {
-    let sum = 0;
-    let strVowels = "aeiou";
-    for (let i = 0; i < str.length; i++) {
-        if (strVowels.indexOf(str[i]) !== -1) {
-            sum++;
-        }
-    }
-    return sum;
-};
-console.log(findVowels("this is a string"));
-
-const myVowels = mV => mV.replace(/[^aeiou]/gi, '').length;
-
-console.log(myVowels('this is a string'));
-
-//5. Missing Number. Create a function that takes an array of all integers between 1 and 10 (excluding one) and returns the missing integer.
-
-//Examples:
-
-//missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]) ➞ 5
-//missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]) ➞ 10
-//missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7
->>>>>>> 4ecd04586d265f8509f7a1cbf325acaf21e4fa48
