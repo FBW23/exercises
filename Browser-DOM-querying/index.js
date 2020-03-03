@@ -134,11 +134,11 @@ let footerDesc = document.querySelectorAll(".food-desc");
 
 
 footerDesc.forEach((item) => {
-  item.style.fontSize = "0.7rem";
+  item.style.fontSize = "1.5rem";
   item.style.border = "5px solid orange";
-  item.style.padding = "5em";
+  item.style.padding = "3em";
   item.style.borderRadius = "50%";
-  item.style.width = "5%";
+  item.style.width = "9rem";
   item.style.margin = "1em 1.5em";
   item.style.textAlign = "center";
 });
