@@ -2,17 +2,34 @@
   "name": "exercises",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "index.js",
+=======
+  "main": "booboo.js",
+  "dependencies": {
+    "jest": "^25.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^6.8.0"
+  },
+>>>>>>> 7d5610813bd7566f8a0f9f8347e89f9db5b36262
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "git+https://github.com/FBW23/exercises.git"
+=======
+    "url": "git+https://github.com/joaodefariajunior/exercises.git"
+>>>>>>> 7d5610813bd7566f8a0f9f8347e89f9db5b36262
   },
   "author": "",
   "license": "ISC",
   "bugs": {
+<<<<<<< HEAD
     "url": "https://github.com/FBW23/exercises/issues"
   },
   "homepage": "https://github.com/FBW23/exercises#readme",
@@ -20,4 +37,9 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.18.3"
   }
+=======
+    "url": "https://github.com/joaodefariajunior/exercises/issues"
+  },
+  "homepage": "https://github.com/joaodefariajunior/exercises#readme"
+>>>>>>> 7d5610813bd7566f8a0f9f8347e89f9db5b36262
 }

@@ -4,8 +4,14 @@ img {
 
 .container {
     display: grid;
+<<<<<<< HEAD
+    /*    grid-template-columns: repeat(3, 1fr);*/
+    grid-gap: 1%;
+grid-template-columns: minmax(100px,350px) 1fr minmax(100px,350px);
+=======
     /*grid-template-columns: 33.33% 33.33%, 33.33%*/
     grid-template-columns: minmax(100px, 350px) 1fr minmax(100px, 350px);
     grid-template-rows: 1fr;
     grid-gap: 10px 10px;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

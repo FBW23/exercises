@@ -7,12 +7,13 @@ const exponent = (num, exp=2) => {
 
   for (let i = 0; i < exp; i++) {
     result *= num;
+    
   }
 
   return result;
 };
 
-console.log(exponent(3, 3)); // -> 27
+console.log(exponent(3,3)); // -> 27
 console.log(exponent(3)); // -> 9
 console.log(exponent(4,));
 

@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+table {
+    border: 1px solid#dcdcdc;
+    border-collapse: collapse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    font-size: 20px;
+}
+ 
+
+td:nth-child(3) {
+    text-align: right;
+}
+
+.blah {
+    text-align: right;
+}
+th {background-color:white;}
+tr:nth-child(odd),
+tfoot {
+    background-color: #dcdcdc;
+=======
 table,
 tr,
 td,
@@ -23,4 +45,5 @@ tr:nth-child(odd), tfoot {
 #start {
     height: 40px;
     background: white;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

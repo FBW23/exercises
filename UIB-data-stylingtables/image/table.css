@@ -1,0 +1,33 @@
+table {
+    border: 1px solid black;
+    display: table;
+    padding-left: 10px solid black;
+    background-color: lightgray;
+}
+
+td:nth-child(even) {
+    background-color: gray;
+}
+
+td:nth-child(odd) {
+    background-color: gray;
+}
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+tr:nth-child(3) td:last-child {
+    background-color: #cc181b;
+}
+
+tr:nth-child(5) td:last-child {
+    background-color: #cc181b;
+}
+
+
+
+
+/*tr:first-child:not(odd) {border-left:2px solid#449d45}
+td {border-left:2px solid#cc181d}

@@ -7,6 +7,17 @@ div {
     margin: 1em;
     border: 2px solid red;
     text-align: center;
+<<<<<<< HEAD
+    
+}
+
+body {flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    display:flex;
+    align-items: center;
+}
+    
+=======
 }
 
 body{
@@ -15,3 +26,4 @@ body{
     flex-direction: column-reverse;
     align-content: center;
 }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

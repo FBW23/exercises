@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+h1, h2 {text-align: center;
+    text-shadow: -15px -20px -15px purple;
+}
+
+ .arabic {direction: rtl;
+}
+.p {text-align: justify;
+=======
 h1,
 h2 {
     text-align: center;
@@ -15,4 +24,5 @@ p {
     text-align: right;
     text-decoration: underline;
    
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
