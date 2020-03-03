@@ -1,9 +1,10 @@
-//1. 
+//Change the font of the body element.
 document.querySelector('body').style.fontFamily = 'Trade Winds';
 
-
+//Center the text of h1 on the page.
 document.querySelector("h1").style.textAlign = "center";
-
+/*The menu headings have a class named `category`. 
+Select the elements by class name. Then, change the `color` and `font-style` of each element. */
 let x = document.querySelectorAll(".category");
 
 for (let i = 0; i < x.length; i++) {
@@ -12,32 +13,38 @@ for (let i = 0; i < x.length; i++) {
     x[i].style.fontSize = "1.5rem";
     x[i].style.fontFamily = 'Tangerine';
     x[i].style.fontStyle = "italic";
-
-
-
 }
 
-function generateRandomColor() {
+
+/*Create a function named "_colorGenerator_" that returns a different color. 
+The returned random color should also include set transparency. 
+Select the unordered lists with the class of `food-category`. 
+Give each list a different background color using the function that you created. */
+function colorGenerator() {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     return randomColor;
 }
 let a = document.querySelectorAll('.food-category');
 for (let i = 0; i < a.length; i++) {
-    a[i].style.backgroundColor = generateRandomColor();
+    a[i].style.backgroundColor = colorGenerator();
 }
 
+/*Align the `food-category` lists in a row on desktop. 
+Make sure that the page is responsive and also works on mobile.*/
 const foodCategories = document.querySelectorAll(".food-category");
 
 foodCategories.forEach(({
     style: categoryBox
 }) => {
-    categoryBox.backgroundColor = generateRandomColor();
+    categoryBox.backgroundColor = colorGenerator();
     categoryBox.width = '30%';
     categoryBox.lineHeight = "1.8rem";
 })
 const main = document.querySelector('main');
 main.style.display = 'flex';
 main.style.justifyContent = 'space-between';
+
+
 
 /* Select the warning at the end of the page by its id `warning`. 
 Select the id without using a querySelector. Change the size and font of the `warning`.*/
@@ -70,23 +77,24 @@ for (let i = 0; i < evenAllergyInfo.length; i++) {
 /*The descriptions in the footer should also be styled, e.g. a rounded border with a background color. 
 They should appear in a column for mobile and in a row for desktop.*/
 
-let footer = document.querySelectorAll('.footer');
+let footer = document.querySelector('.footer');
+footer.style.display = "flex";
+footer.style.justifyContent = "center";
+footer.style.marginTop = "3em";
+footer.style.alignItems = "center";
+footer.style.textFamily = 'bookman'
 
 
-footer.forEach((item) => {
-    item.style.display = 'flex';
-    item.style.fontFamily = 'bookman';
-    item.style.fontSize = '2rem';
-    item.style.textAlign = 'right';
-    item.style.justifyContent = "center";
-    item.style.fontSize = "0.7rem";
+let footerDesc = document.querySelectorAll(".food-desc");
+
+
+footerDesc.forEach((item) => {
     item.style.fontSize = "1.5rem";
     item.style.border = "5px solid orange";
-    item.style.padding = "5em";
     item.style.padding = "3em";
     item.style.borderRadius = "50%";
-    item.style.width = "5%";
-    item.style.width = "9rem";
+    item.style.width = "100px";
+    item.style.height = "100px";
     item.style.margin = "1em 1.5em";
     item.style.textAlign = "center";
 });
