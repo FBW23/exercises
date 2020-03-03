@@ -25,7 +25,7 @@ class Cylinder {
         this.radius = radius;
     }
     volume() {
-        const totalVolume = Math.PI * Math.pow(this.radius, 2) * this.height;
+        const totalVolume = (Math.PI * Math.pow(this.radius, 2) * this.height).toFixed(2);
         return totalVolume;
     }
 }
@@ -84,6 +84,7 @@ console.log(cylinderValues.volume())
 // Add a method to set the channel randomly. Let's say the TV has only 50 channels.
 // Add a method to reset TV so it goes back to channel 1 and volume 50.
 // It's useful to write a status, that returns info about the TV status like: "Panasonic at channel 8, volume 75".
+console.log("=== task 4 ===")
 
 class TV {
     constructor(brand, channel, volume) {
@@ -101,13 +102,13 @@ class TV {
 
     volumeDec() {
         if (this.volume <= 0) {
-            return ++this.volume;
+            return --this.volume;
         }
     }
 
     randomChannel() {
         //return  Math.ceil(Math.random() * 50);
-        return `${this.brand} at channel ${Math.ceil(Math.random() * 50)}, volume ${this.volume}`
+        return `${this.brand} at channel ${Math.floor(Math.random() * 50)}, volume ${this.volume}`
 
 
 
