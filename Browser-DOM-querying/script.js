@@ -39,6 +39,8 @@ foodCategories.forEach(({
     categoryBox.backgroundColor = colorGenerator();
     categoryBox.width = '30%';
     categoryBox.lineHeight = "1.8rem";
+    categoryBox.border = "8px solid white";
+
 })
 const main = document.querySelector('main');
 main.style.display = 'flex';
