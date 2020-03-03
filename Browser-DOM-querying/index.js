@@ -16,15 +16,15 @@ heading.style.textAlign = "center";
 //the color and font-style of each element.
 
 let menuHeadings = document.querySelectorAll(".category");
-for (let i = 0; i < menuHeadings.length; i++) {
-  menuHeadings[i].style.color = "red";
-  menuHeadings[i].style.fontFamily = "serif";
-  menuHeadings[i].style.fontSize = "2rem";
-  menuHeadings[i].style.borderBottom = "2px solid black";
-  menuHeadings[i].style.display = "block";
-  menuHeadings[i].style.marginBottom = "1em"
-}
 
+menuHeadings.forEach((item) => {
+  item.style.color = "red";
+  item.style.fontFamily = "serif";
+  item.style.fontSize = "3rem";
+  item.style.borderBottom = "2px solid black";
+  item.style.display = "block";
+  item.style.marginBottom = "1em"
+});
 /*
 Create a function named "colorGenerator" that returns a 
 different color. The returned random color should also 
@@ -41,13 +41,16 @@ function randomRgba() {
 }
 
 let unorderedLists = document.querySelectorAll(".food-category");
-console.log(unorderedLists)
-for (let i = 0; i < unorderedLists.length; i++) {
-  unorderedLists[i].style.backgroundColor = randomRgba();
-  unorderedLists[i].style.padding = "2em";
-  unorderedLists[i].style.width = "80%";
-  unorderedLists[i].style.margin = "1em 0"
-}
+console.log(unorderedLists);
+
+
+unorderedLists.forEach((item) => {
+  item.style.backgroundColor = randomRgba();
+  item.style.padding = "2em";
+  item.style.width = "80%";
+  item.style.margin = "1em 0";
+});
+
 
 /*
 Align the food-category lists in a row on 
@@ -56,7 +59,7 @@ page is responsive and also works on mobile.
 */
 
 let main = document.querySelector(".main");
-let screenWidth = window.matchMedia("(max-width: 615px)")
+let screenWidth = window.matchMedia("(max-width: 615px)");
 main.style.display = "flex";
 main.style.width = "100%";
 
@@ -98,14 +101,17 @@ the center of the page.
 
 
 let evenAllergyInfo = document.querySelectorAll('.allergy-info');
-for (let i = 0; i < evenAllergyInfo.length; i++) {
-  evenAllergyInfo[i].style.textAlign = "left";
-  evenAllergyInfo[i].style.listStyle = "none";
-  evenAllergyInfo[i].style.display = "flex";
-  evenAllergyInfo[i].style.justifyContent = "flex-start";
-  evenAllergyInfo[i].style.width = "30%";
-  evenAllergyInfo[i].style.margin = "0 auto";
-}
+
+
+evenAllergyInfo.forEach((item) => {
+  item.style.textAlign = "left";
+  item.style.listStyle = "none";
+  item.style.display = "flex";
+  item.style.justifyContent = "flex-start";
+  item.style.width = "30%";
+  item.style.margin = "0 auto";
+});
+
 for (let i = 0; i < evenAllergyInfo.length; i++) {
   evenAllergyInfo[++i].style.backgroundColor = "lightblue";
 
@@ -125,13 +131,14 @@ footer.style.alignItems = "center";
 
 
 let footerDesc = document.querySelectorAll(".food-desc");
-for (let i = 0; i < footerDesc.length; i++) {
-  footerDesc[i].style.fontSize = "0.5em"
-  footerDesc[i].style.border = "5px solid orange"
-  footerDesc[i].style.padding = "5em";
-  footerDesc[i].style.borderRadius = "50%"
-  footerDesc[i].style.width = "5%";
-  footerDesc[i].style.margin = "1em 1.5em";
-  footerDesc[i].style.textAlign = "center";
 
-}
+
+footerDesc.forEach((item) => {
+  item.style.fontSize = "0.7rem";
+  item.style.border = "5px solid orange";
+  item.style.padding = "5em";
+  item.style.borderRadius = "50%";
+  item.style.width = "5%";
+  item.style.margin = "1em 1.5em";
+  item.style.textAlign = "center";
+});
