@@ -20,14 +20,7 @@ for (let i = 0; i < a.length; i++) {
     a[i].style.backgroundColor = generateRandomColor();
 }
 
-function myFunction(b) {
-    if (b.matches) { // If media query matches
-      document.body.style.backgroundColor = "yellow";
-    } else {
-     document.body.style.backgroundColor = "pink";
-    }
-  }
-  
-  let b = window.matchMedia("(max-width: 700px)")
-  myFunction(b) // Call listener function at run time
-  b.addListener(myFunction) // Attach listener function on state changes
+let main = document.querySelector(".main");
+let screenWidth = window.matchMedia("(max-width: 700px)");
+main.style.display = "flex";
+main.style.width = "100%";
