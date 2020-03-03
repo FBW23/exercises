@@ -84,17 +84,37 @@ function evenSort() {
             evenElements[i].style.background = 'rgb(135, 200, 238)';
         }
     }
-    for (let item of evenElements) {
-        item.style.width = '30%';
-    }
 }
-
-evenSort();
 
 // * Make the `allergy-warning` appear as a column in the center of the page.
 
-const section = document.querySelector('.allergy-warning');
+const evenElementsUl = document.querySelector('ul.allergies');
+evenElementsUl.style.width = '300px';
+evenElementsUl.style.margin = '0 auto';
+evenElementsUl.style.listStyleType = 'none';
 
-console.log(section)
+evenSort();
+
+// * The descriptions in the footer should also be styled, e.g. a rounded border with a background color. They should appear in a column for mobile and in a row for desktop.
+
+const circles = document.querySelectorAll('.food-desc');
+for (item of circles) {
+    item.style.border = "thick solid #fcad00";
+    item.style.borderRadius = "50%";
+    item.style.margin = "20px";
+    item.style.width = '50px';
+    item.style.height = '50px';
+    item.style.textAlign = 'center';
+    item.style.padding = "5em";
+}
+
+const footerFlex = document.querySelector('footer');
+footerFlex.style.display = 'flex';
+footerFlex.style.flexDirection = 'row';
+footerFlex.style.justifyContent = 'center';
+footerFlex.style.justifyContent = 'space-around';
+
+const h3 = document.querySelectorAll('h3');
+h3.style.padding = '13em';
 
 // KEINE AHNUNG ICH DREHE DURCH
