@@ -20,6 +20,7 @@ let menuHeadings = document.querySelectorAll(".category");
 menuHeadings.forEach((item) => {
   item.style.color = "red";
   item.style.fontFamily = "serif";
+  item.style.fontStyle = "italic";
   item.style.fontSize = "3rem";
   item.style.borderBottom = "2px solid black";
   item.style.display = "block";
@@ -33,11 +34,11 @@ the class of food-category. Give each list a different
 background color using the function that you created.
 */
 
-function randomRgba() {
+function colorGenerator() {
   let o = Math.round,
     r = Math.random,
     s = 255;
-  return 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ',' + r().toFixed(1) + ')';
+  return 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ',' + 0.2 + ')';
 }
 
 let unorderedLists = document.querySelectorAll(".food-category");
@@ -45,8 +46,8 @@ console.log(unorderedLists);
 
 
 unorderedLists.forEach((item) => {
-  item.style.backgroundColor = randomRgba();
-  item.style.padding = "2em";
+  item.style.backgroundColor = colorGenerator();
+  item.style.padding = "0 2em 2em";
   item.style.width = "80%";
   item.style.margin = "1em 0";
 });
@@ -63,6 +64,12 @@ let screenWidth = window.matchMedia("(max-width: 615px)");
 main.style.display = "flex";
 main.style.width = "100%";
 
+let foodItems = document.querySelectorAll(".food-item");
+foodItems.forEach((item) => {
+  item.style.marginBottom = "0.8em";
+  item.style.fontWeight = "900";
+  item.style.fontSize = "1.2em";
+});
 
 function responsivePage() {
   if (screenWidth.matches) {
@@ -88,7 +95,7 @@ Change the size and font of the warning.
 */
 
 let warning = document.getElementById("warning");
-warning.style.fontSize = "1.5rem";
+warning.style.fontSize = "2.5rem";
 warning.style.textAlign = "center";
 warning.style.fontFamily = "serif";
 
@@ -136,9 +143,11 @@ let footerDesc = document.querySelectorAll(".food-desc");
 footerDesc.forEach((item) => {
   item.style.fontSize = "1.5rem";
   item.style.border = "5px solid orange";
-  item.style.padding = "3em";
+  item.style.padding = "2em";
   item.style.borderRadius = "50%";
-  item.style.width = "9rem";
+  item.style.width = "7rem";
   item.style.margin = "1em 1.5em";
   item.style.textAlign = "center";
+  item.style.display = "flex";
+  item.style.justifyContent = "center";
 });
