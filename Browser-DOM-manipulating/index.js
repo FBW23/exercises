@@ -27,3 +27,16 @@ const books = [
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
 ];
+
+let ul = document.querySelector("ul");
+
+for (let i = 0; i < books.length; i++) {
+  let book = books[i];
+
+  let listItem = document.createElement("li");
+  listItem.innerHTML = book;
+
+  ul.appendChild(listItem);
+  }
+ 
+  
