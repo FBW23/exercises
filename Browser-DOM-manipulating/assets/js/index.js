@@ -29,17 +29,40 @@ const books = [
 ];
 
 
+let cards = document.querySelector('.book-list.card-column');
+let author = books[0].author.split(' ');
+author = `${author[1]} ${author[0]}`;
 
-// for(i=0;i<3;i++){
-//   document.querySelector('.book-list.card-column').innerHTML +=  '<li></li>';
+
+
+// for(let i=0;i<author.length;i++){
+//   if(author[i]===" "){
+//     for(let j=author[i];j<author.length;j++){
+//       author.push(author[j]);
+//     }
+//     author.push(author[i]);
+//   }
+
 // };
-let img1=books[0].img;
-document.querySelector('.book-list.card-column').innerHTML +=  `<div class="card" style="width: 18rem;">
-<img class="card-img-top" src="books[0].img" alt="Card image cap">
-<div class="card-body">
-  <h5 class="card-title">Card title</h5>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  <a href="#" class="btn btn-primary">Go somewhere</a>
-</div>
-</div>`:
-document.querySelector('.book-list.card-column').style.listStyleType=("none");
+
+
+
+
+
+
+for (let i = 0; i < books.length; i++) {
+  document.querySelector('.book-list.card-column').innerHTML += `<li class="card" style="width: 18rem;">
+    <img class="card-img-top" src=${books[i].img} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">
+      ${books[i].title}
+        </h5>
+      <p class="card-text">${books[i].author}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </li>` ;
+};
+
+
+
+
