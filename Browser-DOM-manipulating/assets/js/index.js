@@ -55,5 +55,16 @@ const books = [
   }
 ];
 
-document.querySelector('ul').innerHTML = document.querySelector('ul').innerHTML + '<li>/li>';
+
+document.querySelector('ul').innerHTML = document.querySelector('ul').innerHTML + '<li></li>';
+document.querySelector('ul').innerHTML += '<li></li>';
+document.querySelector('ul').innerHTML += '<li>new third item</li>';
+document.querySelector('ul').innerHTML += '<li>new third item</li>';
+const li = document.querySelectorAll('li');
+for(let i=0; i<li.length; i++){
+  li[i].classList.add('book');
+}
+
+document.querySelector('li').innerText = books[1].title;
+
 
