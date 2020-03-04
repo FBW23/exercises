@@ -10,6 +10,7 @@ let category = document.querySelectorAll(".category");
 for (let i = 0; i < category.length; i++) {
     category[i].style.color = 'grey';
     category[i].style.fontSize = "30px";
+
 }
 
 function randomColors() {
@@ -20,7 +21,7 @@ let foodie = document.querySelectorAll('.food-category');
 for (let i = 0; i < foodie.length; i++) {
     foodie[i].style.background = randomColors();
     foodie[i].style.width = "30%";
-
+   foodie[i].style.borderRadius="5px";
 
 }
 const main = document.querySelector('main');
@@ -62,7 +63,7 @@ let footy = document.querySelector('.footer');
 footy.style.display = "flex";
 footy.style.flexDirection = "row";
 footy.style.justifyContent = "space-around";
-footy.style.padding = "20px"
+footy.style.padding = "10px"
 
 let h3 = document.querySelectorAll(".footer h3");
 for (let i = 0; i < h3.length; i++) {
