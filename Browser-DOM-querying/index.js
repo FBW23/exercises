@@ -264,6 +264,7 @@ console.log(a);
 a.setAttribute('href', 'http://helloworld.com');
 // Create a fully link
 document.querySelector('.title').appendChild(a);
+<<<<<<< HEAD
 // add newly created element to the title
 
 
@@ -276,3 +277,6 @@ document.querySelector('.title').appendChild(a);
             item.listStyle = "none";
         });
 >>>>>>> ac7a6bcf68d3cbb79cb2c61654b42c126dfdbb42
+=======
+// add newly created element to the title
+>>>>>>> 7237e84f3079b2a6f4c7e11bd8e3706136025680

@@ -27,4 +27,3 @@ const books = [
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
 ];
-
