@@ -102,4 +102,27 @@ lastMargin.forEach((last) => {
     last.style.marginTop = '65px';
 });
 
+// this is to overwrite on HTML index
+// document.querySelector('h1').innerText = 'Testing for the New InnerText';
+
+// to add more classes
+//document.querySelector('h1').classList.add('Nags');
+
+//to remove class
+// document.querySelector('h1').classList.remove('Nags');
+
+//document.write(); is to delete all site!!!!!!! Becarefull
+
+//document.write('<script>alert("hello world");</script>');
+// Cross site scripting ATTACk. 
+// Please be aware of this problems if you include any third party
+
+let h = document.createElement('a');
+h.innerText ='hello world';
+h.setAttribute('href', 'http://hellowworld.com');
+// create a fully link
+document.querySelector('.title').appendChild(h);
+// add newly created element of the title
+
+
 
