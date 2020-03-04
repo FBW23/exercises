@@ -70,8 +70,9 @@ columnWarning.forEach((item)=> {
 
   const descriptionFooter = document.querySelector('.footer');
   descriptionFooter.style.display= 'flex';
-  descriptionFooter.style.justifyContent = 'space-around';
+  descriptionFooter.style.justifyContent = 'center';
   descriptionFooter.style.marginTop = '3%';
+
  
 
   /* Make the allergy-warning appear as a column in the center of the page. */
@@ -79,12 +80,14 @@ columnWarning.forEach((item)=> {
 const footerItems = document.querySelectorAll('.food-desc');
 footerItems.forEach((item)=>{
 item.style.display = 'flex';
-item.style.justifyContent = 'space-around';
+// item.style.justifyContent = 'space-around';
 item.style.borderRadius = '50%';
 item.style.border = '5px solid orange';
 item.style.fontSize= '1rem';
 item.style.width='5rem';
 item.style.padding='3rem 3rem'
+item.style.margin='20px'
+
 
 });
 
