@@ -27,3 +27,17 @@ const books = [
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
 ];
+
+let firstBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(firstBook);
+
+let secondBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(secondBook);
+
+let thirdBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(thirdBook);
+
+let fourthBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(fourthBook);
+
+document.querySelectorAll('li').forEach(item => item.classList.add('book-cover'));
