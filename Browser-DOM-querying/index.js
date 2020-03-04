@@ -94,13 +94,3 @@ a.setAttribute('href', 'http://helloworld.com');
 // Create a fully link
 document.querySelector('.title').appendChild(a);
 // add newly created element to the title
-
-
-
-
-        const foodItems = document.querySelectorAll(".food-item"); foodItems.forEach(({
-            style: item
-        }) => {
-            item.marginTop = "1rem";
-            item.listStyle = "none";
-        });
