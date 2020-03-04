@@ -23,31 +23,6 @@ const books = [{
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
 ];
-// bookImgLinks <- an Array with book image links
-// bookAuthors <- an Array with author names
-// booksTitle  <- an Array with books titles
-
-// const bookImgLinks = books.map(item => {
-//   return item.img;
-// });
-
-// // author names
-// const bookAuthors = books.map(item => {
-//   return item.author;
-// })
-
-// // book title
-// const booksTitle = books.map(item => {
-//   return item.title;
-// })
-// console.log(booksTitle);
-
-// // true or false arr
-// const readOrNot = books.map(item => {
-//   return item.alreadyRead;
-// })
-
-// console.log(readOrNot)
 
 function compare(a, b) {
   const bookA = a.author.split(' ').reverse().join(' ').toUpperCase();
@@ -88,8 +63,8 @@ allListElements.forEach((item, index) => {
   item.innerHTML += `<a href="${bookImgLinks[index]}"><img class="book-cover card-img-top" src="${bookImgLinks[index]}"></a>`;
 })
 
-allListElements.forEach(item => item.innerHTML += "<div class='card-body'></div>")
-const allDivElements = document.querySelectorAll(".card-body");
+allListElements.forEach(item => item.innerHTML += "<div class='card-Body'></div>")
+const allDivElements = document.querySelectorAll(".card-Body");
 
 
 // BOOKS TITLE
@@ -122,17 +97,17 @@ allDivElements.forEach((item, index) => {
 
 
 // style
-const cardBody = document.querySelectorAll(".card-body");
-cardBody.forEach(item => {
-  item.style.display = "flex";
-  item.style.flexDirection = "column";
-  item.style.justifyContent = "space-between";
-})
+const cardBody = document.querySelectorAll(".card-Body");
+
+
+
+
+
+
 
 const buttons = document.querySelectorAll('.btn');
 buttons.forEach(item => {
-  item.style.width = "70%";
-  item.style.borderRadius = "35%";
+  item.style.width = "30%";
   item.style.placeSelf = "flex-end"
 });
 
@@ -146,4 +121,9 @@ buttons.forEach(item => {
     item.classList.remove("btn-success");
     item.classList.add("btn-secondary");
   }
+  let parentDiv = document.createElement('div');
+  parentDiv.classList.add("card-footer");
+  let replace = item.parentNode;
+  replace.replaceChild(parentDiv, item);
+  parentDiv.appendChild(item);
 });

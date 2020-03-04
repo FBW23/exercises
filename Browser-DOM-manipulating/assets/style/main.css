@@ -5,7 +5,7 @@
   }
   
   .book {
-    width: 12rem;
+    width: 20rem;
   }
   
   .status {
@@ -13,7 +13,7 @@
   }
   
   .book-cover {
-    max-height: 15rem;
+    max-height: 24rem;
     object-fit: cover;
     border: 0.2rem solid black;
   }
