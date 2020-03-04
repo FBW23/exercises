@@ -28,9 +28,25 @@ const books = [
   }
 ];
 
-for (let i = 0; i < books.length; i++) {
-  const bookP = document.createElement('p');
-  const bookDescription = document.createTextNode(books[i].title + ' by ' + books[i].author);
-  bookP.appendChild(bookDescription);
-  document.body.appendChild(bookP);
+const createParagraph = (book) => {
+  const paragraph = document.createElement("p");
+  // write content to paragraph
+  paragraph.innerText = `${book.title} - by ${book.author}`;
+  return paragraph;
 }
+
+books.forEach((book) => {
+  const bookParagraph = createParagraph(book);
+
+  // insert into the html after <h1>
+  // target h1
+  const h1 = document.querySelector('h1');
+
+  // insert adjacent to h1
+  // insertAdjacentElement because `bookParagraph` is an HTML element
+  // not a string
+  h1.insertAdjacentElement('afterend', bookParagraph);
+})
+
+
+
