@@ -71,7 +71,7 @@ foodItems.forEach((item) => {
   item.style.fontSize = "1.2em";
 });
 
-function responsivePage() {
+function responsivePage(screenWidth) {
   if (screenWidth.matches) {
     main.style.flexDirection = "column";
     main.style.padding = "1em";
@@ -151,3 +151,19 @@ footerDesc.forEach((item) => {
   item.style.display = "flex";
   item.style.justifyContent = "center";
 });
+
+
+
+
+
+
+
+
+
+
+
+// foodCategories.forEach(({
+//   style: categoryBox 
+// }) => {
+//     categoryBox.width = "100%"
+// });
