@@ -27,3 +27,23 @@ const books = [
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
 ];
+
+
+
+let firstBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(firstBook);
+
+
+let secondBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(secondBook);
+
+let thirdBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(thirdBook);
+
+let forthBook = document.createElement('li');
+document.querySelector('.book-list').appendChild(forthBook);
+
+document.querySelectorAll('li').forEach(item => item.classList.add('book-cover'));
+
+firstBook.setAttribute('href', books[0][3]);
+document.querySelector('.book-cover').appendChild();
