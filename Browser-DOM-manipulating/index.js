@@ -34,9 +34,30 @@ for (let i = 0; i < books.length; i++) {
   let book = books[i];
 
   let listItem = document.createElement("li");
-  listItem.innerHTML = book;
+  listItem.innerHTML = [book.title,book.author,book.alreadyRead]
+  
+
 
   ul.appendChild(listItem);
   }
+  let img = new Image();
+let div = document.querySelector('ul');
  
-  
+img.onload = function() {
+  div.appendChild(img);
+};
+ 
+img.src = ["https://eloquentjavascript.net/img/cover.jpg"]
+// img.src="https://images-na.ssl-images-amazon.com/images/I/518%2BxIiELFL._SX258_BO1,204,203,200_.jpg";
+
+// document.querySelector("ul").style.height = "300px";
+// document.querySelector("ul").style.width = "300px";
+
+
+let elements = document.querySelector(".book-list card-column");
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+
