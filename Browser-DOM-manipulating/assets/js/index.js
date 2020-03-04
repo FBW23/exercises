@@ -51,18 +51,17 @@ author = `${author[1]} ${author[0]}`;
 
 
 for (let i = 0; i < books.length; i++) {
-  document.querySelector('.book-list.card-column').innerHTML += `<li class="card" style="width: 18rem;">
-    <img class="card-img-top" src=${books[i].img} alt="Card image cap">
+    document.querySelector('.book-list.card-column').innerHTML += `<li class="card" style="width: 18rem;">
+    <a href=${books[i].img}><img class="card-img-top" src=${books[i].img} alt=${books[i].title}></a>
     <div class="card-body">
-      <h5 class="card-title">
-      ${books[i].title}
-        </h5>
-      <p class="card-text">${books[i].author}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">${books[i].title}</h5>
+      <p class="card-text">${ books[i].author.split(' ').reverse().join(', ')}</p>
+      <a href="#" class="btn btn-primary">Read</a>
     </div>
   </li>` ;
 };
 
-
+for(let i=0;i<document.querySelector.length)
+document.querySelector(".btn").style.backgroundColor="green"
 
 
