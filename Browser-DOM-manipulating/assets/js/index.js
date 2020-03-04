@@ -28,16 +28,37 @@ const books = [
   }
 ];
 
+// FLEX CONTAINER
+document.querySelector('ul').classList.add('book-list');
+
+// FIRST BOOK
+
+
 let firstBook = document.createElement('li');
 document.querySelector('.book-list').appendChild(firstBook);
 
+let image = document.createElement('img');
+document.querySelector('li').appendChild(image);
+image.setAttribute('src', 'http://t2.gstatic.com/images?q=tbn:ANd9GcRqNE0qeS4ldVIC9DbGkx9MOwJ4WWKi6HVvtrtZ8XTKVodonSBy');
+document.querySelector('img').classList.add('book', 'book-cover');
+
+let h4 = document.createElement('h4');
+document.querySelector('li').appendChild(h4);
+document.querySelector('h4').innerText = "The Most Human Human";
+document.querySelector('h4').classList.add('book');
+
+// SECOND BOOK
 let secondBook = document.createElement('li');
 document.querySelector('.book-list').appendChild(secondBook);
 
+
+// THIRD BOOK
 let thirdBook = document.createElement('li');
 document.querySelector('.book-list').appendChild(thirdBook);
 
+// FOURTH BOOK
 let fourthBook = document.createElement('li');
 document.querySelector('.book-list').appendChild(fourthBook);
 
-document.querySelectorAll('li').forEach(item => item.classList.add('book-cover'));
+document.querySelectorAll('li').forEach(item => item.classList.add('book-cover', 'li-dot',));
+
