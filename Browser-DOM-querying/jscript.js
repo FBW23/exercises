@@ -114,7 +114,4 @@ footerFlex.style.flexDirection = 'row';
 footerFlex.style.justifyContent = 'center';
 footerFlex.style.justifyContent = 'space-around';
 
-const h3 = document.querySelectorAll('h3');
-h3.style.padding = '13em';
-
 // KEINE AHNUNG ICH DREHE DURCH
