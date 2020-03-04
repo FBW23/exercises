@@ -74,6 +74,53 @@ console.log(orderedObject);
 
 const bookList = document.querySelector(".book-list");
 // Add row class to the bookList
-bookList.classList.add("row");
+bookList.style.listStyle = "none";
+// create 4 <li> items with class col-sm
+for( let i = 0; i < 4; i ++) {
+  bookList.innerHTML += '<li class="book card"></li>'
+}
 
-bookList.innerHTML += '<li>hello</li>'
+const allListElements = document.querySelectorAll("li");
+// allListElements.forEach(item => item.innerHTML += "<div class='card-body'></div>")
+// BOOKS IMAGE
+const bookImgLinks = orderedObject.map(item => {
+  return item.img;
+});
+
+console.log(bookImgLinks);
+allListElements.forEach((item,index) => {
+  item.innerHTML += `<a href="${bookImgLinks[index]}"><img class="book-cover card-img-top" src="${bookImgLinks[index]}"></a>`;
+})
+
+allListElements.forEach(item => item.innerHTML += "<div class='card-body'></div>")
+const allDivElements = document.querySelectorAll(".card-body");
+
+
+// BOOKS TITLE
+const booksTitle = orderedObject.map(item => {
+  return item.title;
+})
+
+allDivElements.forEach((item, index) => { 
+  item.innerHTML += `<h5 class="card-title">${booksTitle[index]}</h5>`;
+})
+
+// BOOKS AUTHOR
+const bookAuthors = orderedObject.map(item => {
+  return item.author;
+})
+
+allDivElements.forEach((item, index) => { 
+  item.innerHTML += `<p class="card-text">${bookAuthors[index].split(' ').reverse().join(' ')}</p>`;
+})
+
+// READ OR NOT
+
+const readOrNot = orderedObject.map(item => {
+  return item.alreadyRead;
+})
+
+allDivElements.forEach((item, index) => { 
+  item.innerHTML += `<button type="button" class="status btn btn-primary">${readOrNot[index]}</button>`;
+})
+
