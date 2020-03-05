@@ -237,26 +237,19 @@ console.log(document.querySelector('h1').innerText); // get text on the console
 document.querySelector('h1').innerText = 'Put a different text for showcase'; // change text
 document.querySelector('h1').innerText = ''; // hide text / hide nodes 
 // error messaging - feedback to the user in case of errors
-
 document.querySelector('h1').innerText = 'You forgot to put in your birthday';
-
 console.log(document.querySelector('ul').innerHTML);
 document.querySelector('ul').innerHTML = document.querySelector('ul').innerHTML + '<li>new list item</li>';
-
 document.querySelector('ul').innerHTML += '<li>new third item</li>';
-
 document.querySelector('h1').innerHTML = '<i>' + document.querySelector('h1').innerHTML + '</i>';
-
 document.querySelector('h1').innerHTML = '<a>' + document.querySelector('h1').innerHTML;
 // make sure to still use proper html valid = check with validator after executing js 
-
 document.write(''); // deletes the whole dom = will not be executed by good browsers!!
 // DONT USE EVER EVER!!!
 // document.write('<script>alert("hello world");</script>');
 // XSS CROSS SITE SCRIPTING ATTACK 
 // TAKE CARE VERY PROPERLY !!! 
 // PLEASE BE AWARE OF THESE PROBLEMS IF YOU INCLUDE ANY THIRD PARTY CODE 
-
 let a = document.createElement('a');
 console.log(a);
 a.innerText = 'hello world';
