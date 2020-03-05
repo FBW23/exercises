@@ -56,15 +56,47 @@ const books = [
 ];
 
 
-document.querySelector('ul').innerHTML = document.querySelector('ul').innerHTML + '<li></li>';
-document.querySelector('ul').innerHTML += '<li></li>';
-document.querySelector('ul').innerHTML += '<li>new third item</li>';
-document.querySelector('ul').innerHTML += '<li>new third item</li>';
-const li = document.querySelectorAll('li');
-for(let i=0; i<li.length; i++){
-  li[i].classList.add('book');
+
+
+
+for (let i=0; i<books.length; i++){
+
+  document.querySelector('ul').innerHTML += `
+  <li class="card" style="width: 18rem;">
+  <img class="card-img-top" src=${books[i].img} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">${books[i].title}</h5>
+    <p class="card-text">${books[i].author.split(' ').reverse().join(', ')}</p>
+    <a href="#" class="btn btn-primary">Read</a>
+  </div>
+  </li>
+  `
 }
+// document.querySelector('ul').innerHTML = document.querySelector('ul').innerHTML + '>img';
+// // document.querySelector('ul').innerHTML += '<li></li>';
+// // document.querySelector('ul').innerHTML += '<li>new third item</li>';
+// // document.querySelector('ul').innerHTML += '<li>new third item</li>';
+// const li = document.querySelectorAll('li');
+// for(let i=0; i<li.length; i++){
+//   li[i].classList.add('book');
+// }
+// document.querySelector('li').innerHTML = document.querySelector('li').innerHTML + '<img>';
+// let a = document.createElement('a');
 
-document.querySelector('li').innerText = books[1].title;
+// a.innerText = 'book1';
+// a.setAttribute('href', 'http://t2.gstatic.com/images?q=tbn:ANd9GcRqNE0qeS4ldVIC9DbGkx9MOwJ4WWKi6HVvtrtZ8XTKVodonSBy');
 
+// document.querySelector('img').appendChild(a);
+// document.querySelector('li').innerText = books[1].title;
 
+// <ul class="class-columns book-list">
+// <li class="card book" style="width: 18rem;">
+//   <img class="card-img-top book-cover" src="..." alt="Card image cap">
+//   <section class="card-body">
+//     <h5 class="card-title">Card title</h5>
+//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//     <a href="#" class="btn btn-primary status">Go somewhere</a>
+//   </section>
+// </li>
+// ...
+// </ul> 
