@@ -63,8 +63,8 @@ allListElements.forEach((item, index) => {
   item.innerHTML += `<a href="${bookImgLinks[index]}"><img class="book-cover card-img-top" src="${bookImgLinks[index]}"></a>`;
 })
 
-allListElements.forEach(item => item.innerHTML += "<div class='card-Body'></div>")
-const allDivElements = document.querySelectorAll(".card-Body");
+allListElements.forEach(item => item.innerHTML += "<div class='card-body'></div>")
+const allDivElements = document.querySelectorAll(".card-body");
 
 
 // BOOKS TITLE
@@ -97,7 +97,7 @@ allDivElements.forEach((item, index) => {
 
 
 // style
-const cardBody = document.querySelectorAll(".card-Body");
+const cardBody = document.querySelectorAll(".card-body");
 
 
 
@@ -106,10 +106,10 @@ const cardBody = document.querySelectorAll(".card-Body");
 
 
 const buttons = document.querySelectorAll('.btn');
-buttons.forEach(item => {
-  item.style.width = "30%";
-  item.style.placeSelf = "flex-end"
-});
+// buttons.forEach(item => {
+//   item.style.width = "30%";
+//   item.style.placeSelf = "flex-end"
+// });
 
 // read or to read 
 
@@ -121,9 +121,12 @@ buttons.forEach(item => {
     item.classList.remove("btn-success");
     item.classList.add("btn-secondary");
   }
+
   let parentDiv = document.createElement('div');
   parentDiv.classList.add("card-footer");
   let replace = item.parentNode;
   replace.replaceChild(parentDiv, item);
   parentDiv.appendChild(item);
 });
+
+// to put the card footer outside the card body !
