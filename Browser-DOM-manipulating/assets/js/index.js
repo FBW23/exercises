@@ -23,6 +23,7 @@ const books = [{
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
 ];
+<<<<<<< HEAD
 
 /*const createParagraph = (book) => {
   const paragraph = document.createElement("p");
@@ -68,3 +69,5 @@ document.querySelector('ul').innerHTML +=
   </section>
 </li>`
 }
+=======
+>>>>>>> b88af36c797154c274c11279c92ac448f3c18c24
