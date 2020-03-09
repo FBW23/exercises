@@ -21,7 +21,11 @@ while (element.parentNode) {
 }
 
 for (let i = 1; i < nodes.length; i++) {
-  str += nodes[i].tagName + ' > ';
+  if(nodes[i].className === '') {
+    str += nodes[i].tagName  + ' > ';
+  } else {
+    str += nodes[i].tagName + '.' + nodes[i].className + ' > ';
+  }
 }
 
 console.log(str.toLowerCase());
