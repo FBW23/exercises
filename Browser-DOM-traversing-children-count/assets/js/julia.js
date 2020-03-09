@@ -9,14 +9,17 @@
 // ## 1.
 // * Get the children of the element with id `wrapper` and print them to the console as a list.
 const Wrapper = document.querySelector('#wrapper');
-console.log(Wrapper.childNodes);
+const wrapChild = Wrapper.childNodes;
 
 
 
 // * Iterate over them and print their children to the console, as well as how many they are.
 
-for (let i=0; i<Wrapper; i++){
-    
+
+for (var i = 0; i < wrapChild.length; i++) {
+  let wrapper2 = wrapChild[i];
+  console.log(wrapper2);
+  console.log(wrapper2.length)
 }
 
 // Note: We do not want to do this operation recursively, we just do it for the children of wrapper and its children.
