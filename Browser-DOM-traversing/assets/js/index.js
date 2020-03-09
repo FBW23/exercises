@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // * Select the `header` that is the closest to the first `h1` heading. 
 // Give the `header` a solid border of 5px. ![alt text](assets/images/header.png "Header")
 
@@ -10,7 +9,6 @@ document.querySelector('h1').closest('header').classList.add('borderGray');
 const infoArray = document.querySelector('.info');
 const packages = document.querySelector('info-package');
 const allPackageTitles = document.querySelectorAll('.package-title');
-=======
 // Select the header that is the closest to the first h1 heading. Give the header a solid border of 5px. 
 const h1 = document.querySelector('h1');
 console.log(h1);
@@ -23,7 +21,6 @@ header.classList.add('borderGray');
 const infoArray = document.querySelector(".info");
 const packages = document.querySelector('.info-package');
 const allPackageTitles = document.querySelectorAll(".package-title");
->>>>>>> 98dc5440db84ac10902c5b49aceb6201320b1031
 
 if (infoArray.contains(packages)) {
     allPackageTitles.forEach(item => {
@@ -53,29 +50,21 @@ allLabels.forEach(label => {
     }
 });
 
-<<<<<<< HEAD
 
 // * Add all the children of the `.nav-list` to the footer's unordered list, `.site-map`. 
 // Note: the `.nav-list` should still contain its children. 
 // ![alt text](assets/images/footer.png "Footer")
 
-=======
-//Add all the children of the .nav-list to the footer's unordered list, .site-map. Note: the .nav-list should still contain its children. 
->>>>>>> 98dc5440db84ac10902c5b49aceb6201320b1031
 const navList = document.querySelector('.nav-list');
 const siteMap = document.querySelector('.site-map');
 const children = navList.children;
 console.log(children);
-<<<<<<< HEAD
 
-=======
->>>>>>> 98dc5440db84ac10902c5b49aceb6201320b1031
 for (let i = 0; i < children.length; i++) {
     const newLi = document.createElement('li');
     const content = children[i].innerText;
     newLi.innerText = content;
     siteMap.append(newLi);
-<<<<<<< HEAD
 }
 
 
@@ -84,6 +73,3 @@ for (let i = 0; i < children.length; i++) {
 // After you completed the assignment and published the solution branch, 
 // you can create a new branch `feature/restyle` and change the design of the landing-page. 
 // You can publish it on GitHub Pages when you are satisfied with the result.
-=======
-}
->>>>>>> 98dc5440db84ac10902c5b49aceb6201320b1031
