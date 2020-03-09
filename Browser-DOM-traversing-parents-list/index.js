@@ -17,16 +17,21 @@
 
 // let x = document.querySelector("cite");
 
+const cite =document.querySelector('cite');
+let x=cite;
+while(x.parentNode){
+    x=x.parentNode;
+    // console.log(x)
+}
+let string='';
+while(x.childElementCount){
+    string+=x.tagName.toLowerCase()+' ';
+    x=x.parentNode;
+    console.log(string);
+    console.log(x);
+}
+let array=string.split('<');
+array=array.join('>');
+console.log(string)
 
-
-for (let i=0;x.parentElement;i++){
-    x=x.parentElement;
-    console.log(x)
-    
-   
-    }
-// element.parentNode
-// const listItems = document.querySelector('cite');
-// const listArray = Array.from(x);
-// listArray.forEach((x) => {console.log(...()});
 
