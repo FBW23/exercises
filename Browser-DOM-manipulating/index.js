@@ -48,10 +48,9 @@ img.onload = function() {
 };
  
 img.src = ["https://eloquentjavascript.net/img/cover.jpg"]
-// img.src="https://images-na.ssl-images-amazon.com/images/I/518%2BxIiELFL._SX258_BO1,204,203,200_.jpg";
 
-// document.querySelector("ul").style.height = "300px";
-// document.querySelector("ul").style.width = "300px";
+
+
 
 
 let elements = document.querySelector(".book-list card-column");
