@@ -4,12 +4,34 @@
 
 // We want to print them as a string in the following format:
 let cite = document.querySelector('cite');
-let newArray = [];
+console.log(cite.parentElement);
+let x = cite
 
-for (let i=0; cite.parentElement ; i++){
-    cite = cite.parentElement;
-    console.log(cite)
+//go up the letter
+while(x.parentNode){
+   x = x.parentNode;
+//    console.log(x)
 }
+
+let str = '';
+while (x.ChildNodes()){
+    str += x.tagName;
+    x = x.childNodes
+}
+
+// console.log(str)
+// let newArray = [];
+// let string = "";
+// newArray.push(cite);
+
+// const nodes = cite =>{
+//     cite=cite.parentNode;
+//     newArray.unshift(cite);
+//     cite.parentNode && nodes(cite)
+// };
+
+
+
 
 
 
