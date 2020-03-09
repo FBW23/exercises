@@ -5,8 +5,12 @@
 // console.log(second);
 
 const x = document.querySelector('cite');
+let string = '';
+
 while(x.parentNode) {
-    
+    string += x.tagName.toLowerCase() + ' ';
+    x = x.parentNode;
+
 }
 
 
