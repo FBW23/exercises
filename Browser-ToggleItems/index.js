@@ -18,5 +18,39 @@
 
 // ![screenshot](select.gif)
 
+
 const button = document.querySelector('button');
-button.style.textAlign = 'left'
+
+
+
+
+
+function hideContent() {
+    const div = document.querySelector('div');
+    if(div.classList.contains('invisible')){
+        div.classList.add('visible')
+    } else{
+        div.classList.add('invisible');
+        button.innerText = 'Show destinations ';
+    }
+   
+   
+}
+
+// function showContent(){
+//     const div = document.querySelector('div');
+//     div.classList.add('visible');
+//     button.innerText = 'Hide destinations ';
+// }
+
+  
+  // add event listener to table
+
+
+
+// // add event listener to table
+
+
+button.addEventListener("click", hideContent);
+
+
