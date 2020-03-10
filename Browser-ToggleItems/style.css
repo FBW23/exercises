@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+}
+
+.list-group-item-action:hover {
+    background-color: #0469d9;
+    color: white;
+}
+
+button {
+    text-align: right;
+}
