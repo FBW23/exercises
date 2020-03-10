@@ -8,5 +8,10 @@ btn.addEventListener("click", (e) => {
     let day = new Date().getDay();
     let num = 5 - day;
     let name = text.value;
-    target.innerText = `Hello ${name}. Today is ${weekdays[day]}. Only ${num} days left until weekend!`;
+
+    if(day < 5) {
+        target.innerText = `Hello ${name}. Today is ${weekdays[day]}. Only ${num} days left until weekend!`;
+    } else {
+        target.innerText = `Hello ${name}. It is already the weekend!`;
+    }
 });
