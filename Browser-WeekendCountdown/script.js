@@ -1,5 +1,11 @@
 const button = document.querySelector('button');
 const p = document.querySelector('p');
+
+const form = document.querySelector('form');
+function handleForm(event) {
+  event.preventDefault();
+}
+
 let date = new Date();
 console.log(date)
 let day = date.getDay();
@@ -20,6 +26,8 @@ if (currentDay === "Monday") {
   daysLeft = 2;
 } else if (currentDay === "Friday") {
   daysLeft = 1;
+} else {
+  daysLeft = 0;
 }
 
 function getInputValue() {
@@ -33,3 +41,4 @@ function getInputValue() {
 }
 
 button.addEventListener('click', getInputValue);
+form.addEventListener('submit', handleForm);
