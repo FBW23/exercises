@@ -4,13 +4,13 @@ let date = new Date();
 console.log(date)
 let day = date.getDay();
 console.log(day)
-const week = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const currentDay = week[day];
 
 let daysLeft;
 
-if(currentDay === "Monday") {
+if (currentDay === "Monday") {
   daysLeft = 5;
 } else if (currentDay === "Tuesday") {
   daysLeft = 4;
@@ -23,8 +23,13 @@ if(currentDay === "Monday") {
 }
 
 function getInputValue() {
-  let inputValue = document.querySelector('#myInput').value
-  p.innerText = `Hello ${inputValue}. Today is ${currentDay}. Only ${daysLeft} days left until weekend`
+  let inputValue = document.querySelector('#myInput').value;
+  if (inputValue === '') {
+    p.innerText = `Hello Stranger. Today is ${currentDay}. Only ${daysLeft} days left until weekend!`
+
+  } else {
+    p.innerText = `Hello ${inputValue}. Today is ${currentDay}. Only ${daysLeft} days left until weekend!`
+  }
 }
 
 button.addEventListener('click', getInputValue);

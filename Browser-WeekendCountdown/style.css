@@ -2,9 +2,29 @@
   margin: 0;
   padding: 0;
   background-color: red;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.5px;
 }
 
 main {
+  margin-top: 5em;
   text-align: center;
 }
 
+h1, p {
+  margin-bottom: 2em;
+}
+
+p {
+  font-size: 1.2rem;
+  color: yellow;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.input-form {
+  width: 50%;
+}
