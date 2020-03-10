@@ -7,6 +7,16 @@ body {
     color: white;
 }
 
-button {
-    text-align: right;
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.collapse, .alert, .alert-primary {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
 }
