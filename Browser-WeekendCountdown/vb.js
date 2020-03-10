@@ -22,13 +22,20 @@ const myFunction = (e) => {
     let input = document.querySelector("#input");
     let output = document.querySelector("label");
     let today = new Date().getDay();
-    let day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-    day = day[today - 1]
+
+    // let day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    // day = day[today - 1]
     let daysRemaining = 5 - today;
+    day = new Date().toLocaleString('en-EN', {
+        weekday: 'long'
+    })
+    if (daysRemaining < 1) {
+        daysRemaining = 0;
+    }
     if (input.value) {
 
         output.innerText = `Hello ${input.value}, Today is ${day}. Only  ${daysRemaining} days until Weekend!`;
-       
+
     }
 
 };
