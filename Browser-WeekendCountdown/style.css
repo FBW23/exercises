@@ -8,3 +8,11 @@ body {
 #submit {
     width: 50px;
 }
+
+h1 {
+    padding: 50px;
+}
+
+p {
+    margin-bottom: 30px;
+}
