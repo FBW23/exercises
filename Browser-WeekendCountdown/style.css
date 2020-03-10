@@ -1,0 +1,10 @@
+body {
+    background-color: yellow;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#submit {
+    width: 50px;
+}
