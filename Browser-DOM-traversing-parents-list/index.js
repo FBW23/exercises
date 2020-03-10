@@ -24,14 +24,14 @@ let string = '';
 while (x.parentNode) {
     string += x.tagName.toLowerCase() + ' ';
     x = x.parentNode;
-    console.log(string)
-    console.log(x);
+    //console.log(string)
+    //console.log(x);
 }
 let array = string.trim().split(' ');
 
-console.log(array);
+//console.log(array);
 array = array.reverse();
-console.log(array);
+//console.log(array);
 string = array.join(' > ');
 >>>>>>> 69c238ee016a9944fa8f42009cba279736656f86
 console.log(string);
