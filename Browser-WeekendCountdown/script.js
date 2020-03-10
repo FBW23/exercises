@@ -1,7 +1,9 @@
 const target = document.querySelector("#target");
 const btn = document.querySelector("#btn");
+const text = document.querySelector("#text");
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
     let weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let d = new Date();
     let day = d.getDay();
