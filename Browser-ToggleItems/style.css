@@ -1,0 +1,31 @@
+.full_list {
+    display: none;
+}
+
+.nav-expanded {
+		display: block;
+	}
+
+@media (min-width: 720px) {
+    .full_list {
+        display: block;
+    }
+
+    .menu button {
+        display: none;
+    }
+
+    .menu {
+        display: table;
+        background: #fff;
+        margin: 0 auto;
+    }
+
+    li {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    ul {
+        white-space: nowrap;
+    
