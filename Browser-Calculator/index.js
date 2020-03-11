@@ -26,6 +26,17 @@
 // - Modulo
 
 // 3. Create a function which calculates the result of two numbers depending on whether the inputs are being added, subtracted, multiplied or divided.
+const x = document.querySelector('.addition-one');
+const y = document.querySelector('.addition-two');
+let result = document.querySelector('.third-form-control');
+const calculatesSum = () => {
+    result.value = Number(x.value) + Number(y.value)   
+};
+
+x.addEventListener('change', calculatesSum);
+y.addEventListener('change', calculatesSum);
+
+
 
 // 4. Required Calculations: addition, subtraction, multiplication, division and remainder of division.
 
