@@ -1,7 +1,8 @@
-let screenLog = document.querySelector('#screen-log');
+let closebtns = document.getElementsByClassName("close");
+let i;
 
-const logkey= => {
-    screenLog.innerText=
-    Screen X/Y: ${event.screenX}, ${event.screenY}
-    Client X/Y:
+for (i = 0; i < closebtns.length; i++) {
+    closebtns[i].addEventListener("click", function () {
+        this.parentElement.style.display = 'none';
+    });
 }
