@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="calculator.js" defer></script>
 </head>
 
 <body>
@@ -19,23 +20,108 @@
 
   <h2>Basic Arithmetic</h2>
   <div class="input-group mb-3 ">
-    <select class="custom-select h-25 d-inline-block" id="inputGroupSelect01">
-      <option selected>0</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
-    <p class="p-2">+</p>
     <select class="custom-select" id="inputGroupSelect01">
       <option selected>0</option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
     </select>
-    <div class="input-group-prepend ">
-      <label class="input-group-text" for="inputGroupSelect01"></label>
+    <p class="p-2">+</p>
+    <select class="custom-select " id="inputGroupSelect02">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">=</p>
+    <div class="input-group-prepend">
+      <input type="text" class="input-group-text mb-3" id= "result1" disabled>
     </div>
   </div>
+
+  <div class="input-group mb-3 ">
+    <select class="custom-select" id="inputGroupSelect03">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">-</p>
+    <select class="custom-select " id="inputGroupSelect04">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">=</p>
+    <div class="input-group-prepend">
+      <input type="text" class="input-group-text mb-3" disabled>
+    </div>
+  </div>
+
+  <div class="input-group mb-3 ">
+    <select class="custom-select" id="inputGroupSelect05">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">x</p>
+    <select class="custom-select " id="inputGroupSelect06">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">=</p>
+    <div class="input-group-prepend">
+      <input type="text" class="input-group-text mb-3" disabled>
+    </div>
+  </div>
+
+  <div class="input-group mb-3 ">
+    <select class="custom-select" id="inputGroupSelect07">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">÷</p>
+    <select class="custom-select " id="inputGroupSelect08">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">=</p>
+    <div class="input-group-prepend">
+      <input type="text" class="input-group-text mb-3" disabled>
+    </div>
+  </div>
+
+  <div>
+  <h2>Special operations</h2>
+  <h4>Modulo</h4>
+  <div class="input-group mb-3 ">
+    <select class="custom-select" id="inputGroupSelect09">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">%</p>
+    <select class="custom-select " id="inputGroupSelect10">
+      <option selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p class="p-2">=</p>
+    <div class="input-group-prepend">
+      <input type="text" class="input-group-text mb-3" disabled>
+    </div>
+  </div>
+</div>
 
 </body>
 
