@@ -35,7 +35,7 @@ num6.addEventListener("change", mulValues);
 num7 = document.getElementById("num7");
 num8 = document.getElementById("num8");
 function divValues() {
-  let result3 = parseFloat(num7.value) / parseFloat(num8.value);
+  let result3 = (parseFloat(num7.value) / parseFloat(num8.value)).toFixed(3);
   if (!isNaN(result3)) {
     document.getElementById("result3").value = result3;
   }
