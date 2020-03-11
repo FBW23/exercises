@@ -4,3 +4,14 @@
 h1{
   text-align: center;
 }
+
+
+.input-group {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 95%;
+}
+
+.form-control {
+  margin: 0 2em;
+}

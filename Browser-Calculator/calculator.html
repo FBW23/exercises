@@ -6,7 +6,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="calculator.css";
-  <script src="calculator.js" defer></script>
 </head>
 <body>
   <header class="jumbotron jumbotron-fluid">
@@ -16,59 +15,56 @@
     <h5>Basic Arithmetic</h5>
     <div class="container-fluid">
 
-      <div class="input-group">
-        <input type="text" aria-label="First name" class="form-control">
+      <div class="input-group addition">
+        <input type="number" aria-label="first number" class="form-control add1">
         <span> + </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="second number" class="form-control add2">
         <span> = </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="result" class="form-control result-addition" disabled>
       </div>
 
-      <div class="input-group">
-        <input type="text" aria-label="First name" class="form-control">
+      <div class="input-group subtraction">
+        <input type="number" aria-label="first number" class="form-control sub1">
         <span> - </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="second number" class="form-control sub2">
         <span> = </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="result" class="form-control result-subtraction" disabled>
       </div>
 
-      <div class="input-group">
-        <input type="text" aria-label="First name" class="form-control">
+      <div class="input-group multiplication">
+        <input type="number" aria-label="first number" class="form-control mul1">
         <span> * </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="second number" class="form-control mul2">
         <span> = </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="result" class="form-control result-multiplication" disabled>
       </div>
 
-      <div class="input-group">
-        <input type="text" aria-label="First name" class="form-control">
+      <div class="input-group division">
+        <input type="number" aria-label="first number" class="form-control div1">
         <span> / </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="second number" class="form-control div2">
         <span> = </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="result" class="form-control result-division" disabled>
       </div>
 
       <h5>Special Option</h5>
       <p>Modulo</p>
-      <div class="input-group">
-        <input type="text" aria-label="First name" class="form-control">
+      <div class="input-group modulo">
+        <input type="number" aria-label="first number" class="form-control mod1">
         <span> % </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="second number" class="form-control mod2">
         <span> = </span>
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="number" aria-label="result" class="form-control result-modulo" disabled>
       </div>
 
     </div>
   </main>
 
-
-
-
-
-
 <!-- BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="calculator.js" ></script>
+
 </body>
 </html>
