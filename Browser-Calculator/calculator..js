@@ -5,6 +5,8 @@ function sumValues() {
   let result = parseFloat(num1.value) + parseFloat(num2.value);
   if (!isNaN(result)) {
     document.getElementById("result").value = result;
+    document.getElementById("result").style.boxShadow =
+      "1px 1px 12px 6px rgb(212, 27, 27)";
   }
 }
 num1.addEventListener("change", sumValues);
@@ -16,6 +18,8 @@ function minValues() {
   let result1 = parseFloat(num3.value) - parseFloat(num4.value);
   if (!isNaN(result1)) {
     document.getElementById("result1").value = result1;
+    document.getElementById("result1").style.boxShadow =
+      "1px 1px 12px 6px rgb(212, 27, 27)";
   }
 }
 num3.addEventListener("change", minValues);
@@ -27,6 +31,8 @@ function mulValues() {
   let result2 = parseFloat(num5.value) * parseFloat(num6.value);
   if (!isNaN(result2)) {
     document.getElementById("result2").value = result2;
+    document.getElementById("result2").style.boxShadow =
+      "1px 1px 12px 6px rgb(212, 27, 27)";
   }
 }
 num5.addEventListener("change", mulValues);
@@ -38,6 +44,8 @@ function divValues() {
   let result3 = (parseFloat(num7.value) / parseFloat(num8.value)).toFixed(3);
   if (!isNaN(result3)) {
     document.getElementById("result3").value = result3;
+    document.getElementById("result3").style.boxShadow =
+      "1px 1px 12px 6px rgb(212, 27, 27)";
   }
 }
 num7.addEventListener("change", divValues);
@@ -49,6 +57,8 @@ function modValues() {
   let result4 = parseFloat(num_r4.value) % parseFloat(num_r5.value);
   if (!isNaN(result4)) {
     document.getElementById("result4").value = result4;
+    document.getElementById("result4").style.boxShadow =
+      "1px 1px 12px 6px rgb(212, 27, 27)";
   }
 }
 num_r4.addEventListener("change", modValues);
