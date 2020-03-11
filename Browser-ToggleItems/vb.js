@@ -18,15 +18,21 @@
 
 // ![screenshot](select.gif)
 
-let li=document.querySelector("li")
-let hide=document.querySelector("li").classList.add("hide");
-let show=document.querySelector("li").classList.add("show");
 
-div.classList.toggle("visible");
-myFunction=()=>{
-    for(let i=1;i<li.clientHeight;i++){
-        
-    }
-}
+let button=document.querySelector("#button");
 
-document.querySelector("button").addEventListener("click",myFunction)
+
+
+
+const toggleList=()=>{
+    let container=document.querySelector(".list-group");
+   if(container.classList.contains("d-none")){
+       container.classList.remove("d-none");
+       button.innerText="Hide destinations! "
+   }else{
+       container.classList.add("d-none");
+       button.innerText="Show destinations! "
+   }
+};
+
+button.addEventListener("click",toggleList)
