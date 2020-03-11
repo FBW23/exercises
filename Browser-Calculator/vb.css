@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    height:100vh;
+}
+
 header{
     background-color: yellow;
     height:25vh;
@@ -25,7 +34,8 @@ p{
 }
 
 section,h2,h3{
-    margin-left:12.5vw
+    margin-left:12.5vw;
+    margin-right:12.5vw
 }
 
 input{
@@ -34,6 +44,7 @@ input{
     
 }
 
-.result{
+/* .result{
     pointer-events:none;
-}
+    background:lightgrey
+} */
