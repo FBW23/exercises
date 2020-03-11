@@ -25,7 +25,7 @@ function modifyText() {
 
 function clearText() {
     text.innerText = `Please enter your name`;
-    text.inputMode = 'reset';
+    
 }
 
 const nameEnter = document.querySelector('#submit');
