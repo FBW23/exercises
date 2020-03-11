@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <h1 class="text-center">My Favourite Destinations</h1>
+    <div class="alert alert-primary" role="alert">
+        Toggle the list of my favourite destinations
+    </div>
+    <!-- <ul class="list-group d-none">
+        <li class="list-group-item active">Munich</li>
+        <li class="list-group-item">Africa</li>
+        <li class="list-group-item">Florence</li>
+        <li class="list-group-item">Milano</li>
+        <li class="list-group-item">Cuba Libre</li>
+    </ul> -->
+    <div class="list-group d-none">
+        <a href="#" class="list-group-item list-group-item-action active">
+            Munich
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Africa</a>
+        <a href="#" class="list-group-item list-group-item-action">Florence</a>
+        <a href="#" class="list-group-item list-group-item-action">Milano</a>
+        <a href="#" class="list-group-item list-group-item-action disabled">Cuba libre</a>
+    </div>
+    <div class="alert alert-info d-none mt-3" role="alert">
+        You selected Munich
+    </div>
+    <button type="button" class="btn btn-primary float-right mt-3">Show destinations!</button>
+    
+</body>
+
+</html>
