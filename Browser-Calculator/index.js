@@ -23,11 +23,11 @@ subtractionElement.addEventListener('change', (event) => {
     const num2 = parseInt(document.querySelector('.subtraction .fieldTwo').value);
     const result = document.querySelector('.subtraction .result');
 
-    const addition = (x, y) => {
+    const subtraction = (x, y) => {
         return (x - y);
     }
     
-    result.value = addition(num1, num2); 
+    result.value = subtraction(num1, num2); 
 })
 
 // MULTIPLICATION
@@ -39,11 +39,11 @@ multiplicationElement.addEventListener('change', (event) => {
     const num2 = parseInt(document.querySelector('.multiplication .fieldTwo').value);
     const result = document.querySelector('.multiplication .result');
 
-    const addition = (x, y) => {
+    const multiplication = (x, y) => {
         return (x * y);
     }
     
-    result.value = addition(num1, num2); 
+    result.value = multiplication(num1, num2); 
 })
 
 // DIVISION 
@@ -55,11 +55,11 @@ divisionElement.addEventListener('change', (event) => {
     const num2 = parseInt(document.querySelector('.division .fieldTwo').value);
     const result = document.querySelector('.division .result');
 
-    const addition = (x, y) => {
+    const division = (x, y) => {
         return (x / y);
     }
     
-    result.value = addition(num1, num2); 
+    result.value = division(num1, num2); 
 })
 
 // MODULO 
@@ -71,9 +71,9 @@ moduloElement.addEventListener('change', (event) => {
     const num2 = parseInt(document.querySelector('.modulo .fieldTwo').value);
     const result = document.querySelector('.modulo .result');
 
-    const addition = (x, y) => {
+    const modulo = (x, y) => {
         return (x % y);
     }
     
-    result.value = addition(num1, num2); 
+    result.value = modulo(num1, num2); 
 })
