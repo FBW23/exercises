@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#popup {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background: orange;
+    width: 35vw;
+    height: 30vh;
+    text-align: center;
+}
+
+#text {
+    margin-top:2%;
+    width: 60%;
+    height:20%;
+}
+
+h1 {
+    margin-top:8%;
+    font-size: medium;
+}
+
+#button {
+    background: red;
+    width: 15%;
+    color: white;
+    border: none;
+    height:18%;
+    border-radius:5px;
+    margin-bottom:3%;
+    
+}
