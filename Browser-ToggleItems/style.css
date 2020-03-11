@@ -2,21 +2,21 @@ body {
     margin: 0 auto;
 }
 
-.list-group-item-action:hover {
+/* .list-group-item-action:hover {
     background-color: #0469d9;
     color: white;
-}
+} */
 
-.button-container {
+/* .button-container {
     display: flex;
     justify-content: flex-end;
     margin: 20px;
-}
+} */
 
 .collapse, .alert, .alert-primary {
     margin: 20px;
 }
 
-h1 {
+/* h1 {
     text-align: center;
-}
+} */
