@@ -20,37 +20,43 @@
 
 
 const button = document.querySelector('button');
+const div = document.querySelector('div');
 
 
 
 
-
-function hideContent() {
-    const div = document.querySelector('div');
-    if(div.classList.contains('invisible')){
-        div.classList.add('visible')
-    } else{
-        div.classList.add('invisible');
-        button.innerText = 'Show destinations ';
-    }
+ function toggleList() {
+    
+    if(div.classList.contains('d-none')){
+         div.classList.remove('d-none');
+           button.innerText = 'Hide destinations!'; 
+     } else{
+         div.classList.add('d-none');
+         button.innerText = 'Show destinations!'
+         
+     }
    
    
-}
-
-// function showContent(){
-//     const div = document.querySelector('div');
-//     div.classList.add('visible');
-//     button.innerText = 'Hide destinations ';
-// }
-
-  
-  // add event listener to table
+ }
 
 
+ function clickListItem (event){
+     const alertInfo = document.querySelector('.alert-info');
+     if (alertInfo.classList.contains('d-none')){
+         alertInfo.classList.remove('d-none');
+        
+     }
+     const city = event.target.innerText;
+     alertInfo.innerText = `You selected ${city}`;
+     for(let i=0; i< div; i++){
+         div.children[i].classList.remove('active')
+     }
+     event.target.classList.add('active')
+ }
 
-// // add event listener to table
 
+button.addEventListener("click", toggleList);
+div.addEventListener('click', clickListItem)
 
-button.addEventListener("click", hideContent);
 
 
