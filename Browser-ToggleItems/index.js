@@ -1,7 +1,15 @@
-$(document).ready(function() {		
-	$(".showList").click(function() {		
-		$(".full_list").slideToggle(400, function() {
-			$(this).toggleClass("nav-expanded").css('display', '');
-		});		
-	});	
-});
+const myButton = document.querySelector('button');
+
+const toggleList = ()=> {
+    const myList = document.querySelector('.list-group');
+    if(myList.classList.contains('d-none')){
+        myList.classList.remove('d-none');
+        myButton.innerText= 'Hide destinations!';
+    } else {
+        myList.classList.add('d-none');
+        myButton.innerText= 'Show destinations!';
+    }
+};
+
+
+myButton.addEventListener('click', toggleList);

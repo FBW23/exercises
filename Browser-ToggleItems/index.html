@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script defer src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class='menu'>
-        <button type='button' class='showList'>Menu</button>
-        <div class='full_list'>
-            <ul>
-               <li>One</li>
-               <li>Two</li>
-               <li>Three</li>
-               <li>Four</li>
-               <li>Five</li>
-            </ul>
-         </div>
-    </div> type="button" id="submit">Submit</button>
-</form>
+    <h1 class="text-center">My Favourite Destinations</h1>
+    <div class="alert alert-primary" role="alert">
+        Toggle the list of my favourite destinations
+    </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active">
+          Shkoder
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Budva</a>
+        <a href="#" class="list-group-item list-group-item-action">Dubrovnik</a>
+        <a href="#" class="list-group-item list-group-item-action">Florence</a>
+        <a href="#" class="list-group-item list-group-item-action disabled">Rome</a>
+      </div>
+      <button type="button" class="btn btn-primary float-right mt-3" data-toggle="button" aria-pressed="false" >
+        Show the destinations
+      </button>
+
 </body>
+
 </html>
