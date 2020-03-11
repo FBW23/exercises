@@ -1,0 +1,22 @@
+body {
+    background: grey;
+}
+
+#abc {
+    background: purple;
+}
+
+#popup {
+    background: yellow;
+}
+h2{
+    margin-top: 15%;
+}
+form {display:none;
+    height: 200px;
+    width: 250px;
+    border-radius: 2%;
+    margin:0 auto;
+    text-align:center;
+margin-top:20%;
+}
