@@ -8,21 +8,107 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
+    <script src="index.js" defer></script>
+    <title>Online Kack-ulator</title>
 </head>
 
 <body>
 
 <h1>CALCULATION X</h1>
 <h2>Basic Arithmetic</h2>
-<div class="form-group form-group-xm">
+
+<div class="form-row addition">
+    <div class="form-group col-md-3">
+      <label for="inputEmail4"></label>
+      <input type="number" class="form-control fieldOne" id="number-input">
+    </div>
+    <p class="m-4">+</p>
+    <div class="form-group col-md-3">
+      <label for="inputPassword4"></label>
+      <input type="number" class="form-control fieldTwo" id="number-input">
+    </div>
+    <p class="m-4">=</p>
+    <div class="form-group col-md-3">
+        <label for="inputPassword4"></label>
+        <input type="number" class="form-control bg-light result" id="number-input" disabled>
+      </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputEmail4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">-</p>
+    <div class="form-group col-md-3">
+      <label for="inputPassword4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">=</p>
+    <div class="form-group col-md-3">
+        <label for="inputPassword4"></label>
+        <input type="number" class="form-control bg-light" id="number-input" disabled>
+      </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputEmail4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">×</p>
+    <div class="form-group col-md-3">
+      <label for="inputPassword4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">=</p>
+    <div class="form-group col-md-3">
+        <label for="inputPassword4"></label>
+        <input type="number" class="form-control bg-light" id="number-input" disabled>
+      </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputEmail4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">÷</p>
+    <div class="form-group col-md-3">
+      <label for="inputPassword4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">=</p>
+    <div class="form-group col-md-3">
+        <label for="inputPassword4"></label>
+        <input type="number" class="form-control bg-light" id="number-input" disabled>
+      </div>
+  </div>
+
+<!-- <div class="form-group form-group-xm ">
 <input class="form-control" type="number" id="number-input"> +
 <input class="form-control" type="number" id="number-input"> =
 <input class="form-control" type="number" id="number-input">
-</div>
+</div> -->
 <div>
 <h2>Special Operations</h2>
 <h3>Modulo</h3>
+<div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputEmail4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">%</p>
+    <div class="form-group col-md-3">
+      <label for="inputPassword4"></label>
+      <input type="number" class="form-control" id="number-input">
+    </div>
+    <p class="m-4">=</p>
+    <div class="form-group col-md-3">
+        <label for="inputPassword4"></label>
+        <input type="number" class="form-control bg-light" id="number-input" disabled>
+      </div>
+  </div>
 </div>
 
 
