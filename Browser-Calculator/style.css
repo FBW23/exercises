@@ -1,6 +1,6 @@
 input {
     width: 30%;
-    margin-top: 10px;
+    margin-top: 15px;
     display: inline-block;
 }
 
@@ -15,8 +15,7 @@ h1 {
     padding: 45px;
 }
 
-input[type=number]:focus {
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+input[type=number] {
     padding: 3px 0 3px 3px;
     margin: 5px 1px 3px 0;
     border: 1px solid rgba(81, 203, 238, 1);
@@ -25,4 +24,7 @@ input[type=number]:focus {
 
 body {
     font-family: monospace;
+}
+label {
+    color: darkorange;
 }

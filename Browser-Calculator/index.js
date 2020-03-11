@@ -12,7 +12,6 @@ num1.addEventListener('change', sumValues);
 num2.addEventListener('change', sumValues);
 
 
-
 ////
 let a, b;
 a = document.getElementById("a");
