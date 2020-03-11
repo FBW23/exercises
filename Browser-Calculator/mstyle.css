@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+   
+}
+h1 {
+    text-align: center;
+    border: 1px solid blue;
+    padding: 30px;
+    background-color: lightblue;
+}
+h2 {
+    text-align: left;
+}
+.calculator {
+    border: 1px solid red;
+    background-color: lightsalmon;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    font-family: monospace;
+}
+input {
+    display: inline-block;
+    margin: 5px
+  
+}
