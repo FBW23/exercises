@@ -1,56 +1,49 @@
-// # Calculator
 
-// Description:
-
-// - The user will be able to input two numbers for which they would like to do two types of calculations: Basic Arithmatic and Special Operations.
-
-// - Basic arithmatic will involve addition, subtraction, multiplication and division.
-
-// - Special operations will deal with the calculation of modulo. 
-
-// - As soon as the users input the numbers, they will see an immediate result on the page as an outcome of the operation.
-
-// Instructions:
-
-// Create a Calculator app with the following operations:
-
-// 1. Basic Arithmatic
-
-// - Addition
-// - Subtraction
-// - Multiplication
-// - Division
-
-// 2. Special Operations
-
-// - Modulo
-
-// 3. Create a function which calculates the result of two numbers depending on whether the inputs are being added, subtracted, multiplied or divided.
 const x = document.querySelector('.addition-one');
 const y = document.querySelector('.addition-two');
-let result = document.querySelector('.third-form-control');
+const a = document.querySelector('.sub-one');
+const b= document.querySelector('.sub-two');
+const c = document.querySelector('.times-one');
+const d = document.querySelector('.times-two');
+const e = document.querySelector('.div-one');
+const f = document.querySelector('.div-two');
+const g = document.querySelector('.modul-one');
+const h = document.querySelector('.modul');
+
+
 const calculatesSum = () => {
+    let result = document.querySelector('.result-add');
     result.value = Number(x.value) + Number(y.value)   
 };
+const calculatesSub = () => {
+    const resultSub = document.querySelector('.result-sub')
+    resultSub.value = Number(a.value) - Number(b.value)   
+};
+const calculatesTimes = ()=>{
+    let resultTimes = document.querySelector('.result-times');
+    resultTimes.value = Number(c.value) * Number(d.value)
+     
+};
+const calculatesDiv = ()=>{
+    let resultDiv = document.querySelector('.result-div');
+    resultDiv.value = Number(e.value) / Number(f.value)
+     
+};
+const calculatesModulo = ()=>{
+    let resultModul = document.querySelector('.result-modul');
+    resultModul.value = Number(g.value) % Number(g.value)
+     
+ };
 
 x.addEventListener('change', calculatesSum);
 y.addEventListener('change', calculatesSum);
+a.addEventListener('change', calculatesSub);
+b.addEventListener('change', calculatesSub);
+c.addEventListener('change', calculatesTimes);
+d.addEventListener('change', calculatesTimes);
+e.addEventListener('change', calculatesDiv);
+f.addEventListener('change', calculatesDiv);
+g.addEventListener('change', calculatesModulo);
+h.addEventListener('change', calculatesModulo);
 
 
-
-// 4. Required Calculations: addition, subtraction, multiplication, division and remainder of division.
-
-// 5. Display the result of the calculation to the user immediately.
-
-// 6. Include a header on the page.
-
-// 7. Create a simple UI so that the user can input two numbers to perform a calculation.
-
-// Note: the calculations should only include two operands.
-
-// 8. **Optional:** 
-// - Feel free to use Bootstrap for styling.
-
-// > Hint: Refer to the representation below, for an idea of what your result should look like.
-
-// ![demo](demo.gif)
