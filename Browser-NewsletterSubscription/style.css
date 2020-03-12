@@ -1,0 +1,65 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+#pop-up-window {
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    margin: 15% auto;
+   padding: 20px;
+   line-height: 50px;
+   text-align: center;
+   display: none;
+   box-shadow: 0 0 20px 3px gray;
+   border-radius: 10px;
+   color: white;
+   
+
+}
+#pop-up-window p {
+    margin-top: 50px;
+    font-size: 1rem;
+    text-shadow: 0 0 4px 3px red;
+    
+    
+}
+form {
+    padding: 10px;
+    
+}
+input[type="email"]{
+width: 80%;
+height: 30px;
+padding: 5px;
+
+
+}
+
+input[type="submit"] {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    background: red;
+    color: WHITE;
+    font-weight: bold;
+    cursor: pointer;
+ 
+    
+}
+button {
+    position: absolute;
+    right:37%;
+    border: none;
+    outline: none;
+    background:none;
+    cursor: pointer;
+    color: red;
+}
+button:hover {
+    font-size: 1.5rem;
+}
