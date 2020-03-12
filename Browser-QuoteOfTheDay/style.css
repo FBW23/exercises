@@ -1,72 +1,64 @@
-html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: yellowgreen;
-  }
-  
-  .app {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    min-height: 300px;
-    background-color: white;
-    border-radius: 5px;
-  }
-  
-  .quotes {
-    padding: 20px 50px;
-  }
-  
-  .quote-text {
-    padding-bottom: 20px;
-    font-size: 25px;
-  }
-  
-  .controls {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-  }
-  
-  .button {
-    display: block;
-    color: white;
-    border-radius: 4px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .tweet {
-    background-color: #1da1f2;
-    text-decoration: none;
-  }
-  
-  .new-quote {
-    background-color: #4A2B0F;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .app {
-      width: 100%;
-    }
-    .quote-text {
-      font-size: 18px;
-    }
-  }
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+
+#container{
+	width:800px;
+	margin:50px auto;
+	padding: 20px;
+	width:50%;
+}
+#container h2{
+	text-align:center;
+	color:#045;
+}
+
+#quoteContainer{
+	width:75%;
+	background: #fff;
+	padding:10px;
+	margin:30px auto;
+	text-align: center;
+  height:70px;
+}
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+#quoteButton{
+	width:200px;
+	margin-top: 10px;
+	border:2px solid #46b8da;
+	color:#045;
+	font-family: inherit;
+	font-weight: bold;
+	padding:5px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#quoteButton:hover{
+	cursor:pointer;
+	background:#09c;
+	color: #fff;	
+}
+#quoteButton:active{
+	cursor: pointer;
+}
+#quoteButton{
+	display: inline-block;
+}
+#quoteGenius{
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and(max-width:760px){
+	#quoteButton,#addNew{
+		display: block;
+	}
+}
