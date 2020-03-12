@@ -1,30 +1,74 @@
-<html>
-<!-- service area -->
+<html lang="en" >
 <head>
- <title>Password generator</title>
- <meta charset="utf-8"> 
- <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- next line loads the MD5 hashing function -->
- <script src="https://thecode.media/wp-content/uploads/2019/05/js-md5.js"></script>
+  <meta charset="UTF-8">
+  <title>JavaScript Password Generate | Webdevtrick.com</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Kanit:300,500,700'>
 <link rel="stylesheet" href="style.css">
 <script defer src="index.js"></script>
 </head>
-
 <body>
- <!-- Our page will be here -->
-<div class="container"  "margin: auto;">
- <h2 class="todo__caption">Password generator</h2>
- <br>
- <!-- Interface begins -->
- <input type="text" id="site_url" size="50" placeholder="Where do you need this password? Paste the address">
- <br>
- <input type="text" id="keyword" size="50" placeholder="Some key word here">
- <br> <br>
- <!-- Main button -->
- <button style="font-size: 100%; padding:5px 10px 10px 10px" onclick="generate()">Generate password</button>
- <p>Your password is:</p>
- <div id = "pass_text" style="font-weight: bold"></div>  
+ 
+  <div class="wrapper">
+  <div class="title-section">
+    <h1 class="title">JS Password Generator</h1>
+  </div>
+  <div class="inner-section">
+    <div class="password-section">
+    <div class="pass-field" id="pass-field">
+    ----
+  </div>
+    <button id="copy" class="copy">Copy</button>
+    <div class="alert" id="alert"><span class="message" id="message"></div>
+  </div>
+  <p class="info">Select your options and click the "Generate" button. Then your password will appear above.</p>
+  <div class="controls">
+    <div class="control length" id="length-box" >
+      <label for="length">Password Length</label>
+      <input type="range" id='length' min="4" max="20" list="ranges">
+      <datalist id="ranges">
+        <option value="4" label="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">        
+        <option value="9">
+        <option value="10">
+        <option value="11">
+        <option value="12" label="12">
+        <option value="13">
+        <option value="14">
+        <option value="15">
+        <option value="16">
+        <option value="17">
+        <option value="18">
+        <option value="19">
+        <option value="20">
+      </datalist>
+    </div>
+    <div class="control">
+      <input type="checkbox" id="lowercase">
+      <label class="check-label" for="lowercase"><span class="checkbox">Use Lowercase Characters</span></label>
+    </div>
+    <div class="control">
+      <input type="checkbox" id="uppercase">
+      <label class="check-label" for="uppercase"><span class="checkbox">Use Uppercase Characters</span></label>
+    </div>
+    <div class="control">
+      <input type="checkbox" id="numbers">
+      <label class="check-label" for="numbers"><span class="checkbox">Use Numbers</span></label>
+    </div>
+    <div class="control">
+      <input type="checkbox" id="punctuation">
+      <label class="check-label" for="punctuation"><span class="checkbox">Use special characters</span></label>
+    </div>
+    
+    <button class="generate" id="generate">Generate!</button>
+  </div>
+  </div>
 </div>
+ 
+<script src='https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js'></script>
+ 
 </body>
 </html>
