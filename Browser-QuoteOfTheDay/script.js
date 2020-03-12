@@ -1,0 +1,41 @@
+//const quotes = [
+    "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
+    "Don't watch the clock; do what it does. Keep going.",
+    "The secret of getting ahead is getting started.",
+    "Well done is better than well said.",
+    "You miss 100% of the shots you don’t take.",
+    "A goal is a dream with a deadline.",
+    "Outstanding people have one thing in common: An absolute sense of mission.",
+    "Trying is winning in the moment.",
+    "Fall down seven times and stand up eight.",
+    "You just can't beat the person who never gives up.",
+    "There is little success where there is little laughter.",
+    "We cannot solve our problems with the same thinking we used when we created them."
+  //]; 
+
+  
+ const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
+
+function getQuote() {
+  fetch(endpoint)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      displayQuote(data.message);
+    })
+    .catch(function () {
+      console.log("An error occurred");
+    });
+}
+
+function displayQuote(quote) {
+  const quoteText = document.querySelector('.quote-text');
+  quoteText.textContent = quote;
+
+}
+
+const newQuoteButton = document.querySelector('.new-quote');
+newQuoteButton.addEventListener('click', getQuote);
+
+getQuote();
