@@ -15,21 +15,13 @@ const quotes = [
 
 
 
- const button = document.querySelector("#button");
- const text = document.querySelector("#text");
+const button = document.querySelector("#button");
+const text = document.querySelector("#text");
 
 
 const swap = () => {
-    let min = 0;
-    console.log(min)
-    let max = quotes.length
-
-    console.log(max)
-    let random = Math.floor(Math.random() * (max - min)) + min;
-    console.log(random)
+    let random = Math.floor(Math.random() * quotes.length);
     text.value = quotes[random];
 };
-
-swap()
-
- button.addEventListener("click",swap);
+swap();
+button.addEventListener("click", swap);
