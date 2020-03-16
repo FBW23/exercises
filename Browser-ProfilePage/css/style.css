@@ -68,23 +68,33 @@ span:hover {
 }
 
 
-div{
-  background:blue;
-  height:50vh;
-  width:80vw;
-  margin:0 auto;
- text-align: center;
+div {
+  background: blue;
+ height:30vh;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
-#photoValue{
-  background:black;
-  height:250px;
-  width: 150px;
-  margin:0 auto;
-
-}
-
-#languages{
-  display:flex;
+#photoValue {
   
+  background: black;
+  
+  width:10vw;
+  margin: 0 auto;
+
+}
+
+#close {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 70vw;
+
+}
+
+.languages {
+  display: flex;
+
+
+
 }

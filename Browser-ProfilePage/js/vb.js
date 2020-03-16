@@ -32,6 +32,9 @@ const php = document.querySelector("#php");
 const checkbox = document.querySelectorAll(".checkbox");
 const submit = document.querySelector("#submit");
 const reset = document.querySelector("#reset");
+const closebtn = document.querySelector("#close");
+
+
 let textValue = document.querySelector("#textValue");
 let dateValue = document.querySelector("#dateValue");
 let fileValue = document.querySelector("#fileValue");
@@ -54,7 +57,8 @@ const values = () => {
 
 
 
-    document.querySelector("#languages").innerText=`The programming skills of ${text.value} are:` 
+    document.querySelector("#languages").innerText = `The programming skills of ${text.value} are:`;
+
     if (js.checked) {
         jsValue.innerText = "Javascript";
     }
@@ -99,6 +103,11 @@ const values = () => {
 
 // }
 
+const close=()=>{
+    document.querySelector("#preview").style.display="none";
+}
+
 
 submit.addEventListener("click", values);
 // checkbox.addEventListener("change", checks);
+closebtn.addEventListener("click", close);
