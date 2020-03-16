@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js" defer></script>
 </head>
 <body>
     <main>
         <section class="password-generator">
         <form action="#">
-            <input type="" name="password" id="password">
+            <input type="text" id="password"  min="1" max="20"  value="" readonly>
          </section>
-         <input type="number" name="number" id="number">
+         <input type="number" name="number" id="length" value="">
          <input type="checkbox" name="checkbox" id="checkbox">
          <label for="number">Use mixed cases?</label>
          <section class="button">
