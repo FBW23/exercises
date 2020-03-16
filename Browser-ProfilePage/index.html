@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Profile</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <form>
-      <fieldset>
-        <legend>Put your details here!</legend>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>36_CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <label>Put your name here</label>
-        <input type="text" />
+<body>
 
-        <label>Put your birthday here</label>
-        <input type="date" />
+    <form action="">
+        <fieldset>
+            <legend> Put your details here! </legend>
+            <label for="name">Put your name here</label>
+            <input type="text" name="name" id="name" required>
+            <label for="birthday">Put your birthday here</label>
+            <input type="date" name="birthday" id="birthday" required>
+            <label for="photo">Upload a photo of yours</label>
+            <input type="file" name="photo" id="photo" required>
+            <div>
+                <label for="preferredColor1">Pick the background-colour of your CV</label>
+                <input type="color" name="preferredColor1" id="preferredColor1" value="#ff0000">
+            </div>
+            <div>
+                <label for="preferredColor2">Pick the font-colour of your CV</label>
+                <input type="color" name="preferredColor2" id="preferredColor2" value="#000000">
+            </div>
 
-        <label>Upload a photo of yours</label>
-        <input type="file" /><br />
+            <textarea id="description" cols="50" rows="5" maxlength="140"
+                placeholder="Write a paragraph about yourself"required></textarea>
 
-        <label>Pick your favorite color</label>
-        <input id="primaryColor" type="color" /><br />
+            <h3>Type all you need in 140 characters</h3>
 
-        <label>Pick your secondary color</label>
-        <input id="secondaryColor" type="color" /><br />
+            <div>
+                <p>Pick your Skills:</p>
+                <input type="checkbox" class="skills" value="Javascript">
+                Javascript
+            </div>
+            <div>
+                <input type="checkbox" class="skills" value="Ruby">
+                Ruby
+            </div>
+            <div>
+                <input type="checkbox" class="skills" value="Python">
+                Python
+            </div>
+            <div>
+                <input type="checkbox" class="skills" value="Java">
+                Java
+            </div>
+            <div>
+                <input type="checkbox" class="skills" value="PHP">
+                PHP
+            </div>
 
-        <textarea
-          placeholder="Write a paragraph about yourself"
-          maxlength="140"
-        ></textarea>
-        <p class="countermessage">Type all you need in 140 characters</p>
 
-        <label>Pick your Skills: </label><br />
-
-        <li><input type="checkbox" />JavaScript</li>
-        <li><input type="checkbox" />Ruby</li>
-        <li><input type="checkbox" />Python</li>
-        <li><input type="checkbox" />Java</li>
-        <li><input type="checkbox" />PHP</li>
-      </fieldset>
+        </fieldset>
     </form>
 
-    <script src="js/index.js"></script>
-  </body>
+    <button id="create">Create CV</button>
+    <button id="reset">Reset Form</button>
+
+
+
+
+    <div id="cv">
+        <!-- <div class="lebenslauf">
+            <h1>Holger Beispiel</h1>
+            <h2>Holger Beispiel ist 50 Jahre alt</h2>
+            <div class="foto">
+            </div>
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, culpa in! Voluptatum velit eveniet
+                tempora est totam delectus animi aliquam fugit non. Qui iure, explicabo sequi, dolore debitis incidunt,
+                amet aut officia commodi quos nemo optio velit? Temporibus, recusandae nobis!
+            </h2>
+            <h4>The skills of _______________________ are: </h4>
+        </div> -->
+    </div>
+    <script src="main.js">
+    </script>
+
+</body>
+
 </html>

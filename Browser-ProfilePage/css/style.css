@@ -1,68 +1,80 @@
-input,
-textarea {
-  margin: 1vw;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+fieldset {
+  margin: 5px;
+  padding: 10px;
+}
+
+input {
   display: block;
-}
+  margin: 10px;
 
-p.countermessage {
-  color: blue;
 }
+#favcolor1, #favcolor2 {
+  display: inline;
 
-input[type='checkbox'],
-input[type='color'] {
-  display: inline-block;
 }
 
 textarea {
-  width: 45%;
-  height: 8vw;
-  font-size: 1.4vw;
-  margin-left: 0.5vw;
-  padding: 1vw;
+  font-size: 25px;   
+  padding: 5px; 
 }
 
 h3 {
-  text-align: center;
-  font-size: 2.5vw;
-  margin: 1vw auto;
-  padding: 2vw;
+  margin: 10px 10px 30px 10px;
+  color: blue;
 }
 
-p {
-  font-size: 1.75vw;
-  padding: 1vw;
+.skills {
+  display: inline;    
+}
+button {
+  margin: 5px 0 0 5px;
 }
 
-section {
-  text-align: center;
-  width: 50vw;
-  margin: 3vw auto;
-  position: relative;
-}
-
-article {
-  font-size: 1.5vw;
-  font-family: tahoma;
-  padding: 1vw;
-}
-
-img {
+.lebenslauf {
   width: 50%;
-  height: 25vw;
+  margin: 0 auto;
+  background: lightcoral;
+  min-height: 1000px;
 }
 
-span {
-  font-size: 2.5vw;
-  position: absolute;
-  right: 0.5vw;
-  top: 0.5vw;
+.lebenslauf h1 {
+  padding: 50px 10px 0 10px;
+  text-align: center;
 }
 
-li {
-  list-style-type: none;
-  padding: 0.5vw;
+.lebenslauf h2 {
+  padding-top: 100px;
+  font-size: 25px;
+  text-align: center; 
 }
 
-span:hover {
+.lebenslauf h4 {
+  padding: 20px 10px 0 10px;
+  font-size: 25px;
+  text-align: center; 
+}
+
+
+
+.foto {
+  margin: 50px auto;
+  width: 25%;
+  height: 40vh;
+  border: 1px solid black;
+}
+
+.removebtn {
+  margin: 5px 5px 0 0;
+  float: right;
+  border: none;
+  background: transparent;    
+  font-size: 25px;
+  font-weight: bold;
   cursor: pointer;
 }

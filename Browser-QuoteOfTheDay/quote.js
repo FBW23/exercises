@@ -12,10 +12,10 @@ const quotes = [
   "There is little success where there is little laughter.",
   "We cannot solve our problems with the same thinking we used when we created them."
 ];
-let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 //1. Create a loop for array
 //2.create a function that take randomly a number from array
 function changeText() {
+let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   let input = document.getElementById("quote");
   input.innerHTML = `" ${randomQuote} "`;
 }
