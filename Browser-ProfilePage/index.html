@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <form>
+    <form id="Form">
       <fieldset>
         <legend>Put your details here!</legend>
 
@@ -21,7 +21,8 @@
 
         <label>Upload a photo of yours</label>
         <input type="file" /><br />
-
+        <img id="myImg" src="#" alt="your image" height=200 width=100><br>
+        
         <label>Pick your favorite color</label>
         <input id="primaryColor" type="color" /><br />
 
@@ -41,8 +42,12 @@
         <li><input type="checkbox" />Python</li>
         <li><input type="checkbox" />Java</li>
         <li><input type="checkbox" />PHP</li>
+
+       
+
       </fieldset>
     </form>
+    <input type="reset" value="Reset the form">
 
     <script src="js/index.js"></script>
   </body>
