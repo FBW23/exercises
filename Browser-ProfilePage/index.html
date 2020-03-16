@@ -13,14 +13,14 @@
       <fieldset>
         <legend>Put your details here!</legend>
 
-        <label>Put your name here</label>
-        <input type="text" />
+        <label for="nameInput">Put your name here</label>
+        <input id="nameInput" type="text" name="nameInput" />
 
         <label>Put your birthday here</label>
-        <input type="date" />
+        <input id="birthdayInput" type="date" />
 
         <label>Upload a photo of yours</label>
-        <input type="file" /><br />
+        <input type="file" id="avatar"/><br />
 
         <label>Pick your favorite color</label>
         <input id="primaryColor" type="color" /><br />
@@ -43,7 +43,15 @@
         <li><input type="checkbox" />PHP</li>
       </fieldset>
     </form>
-
+    <button type='submit'>Create CV</button>
+    <button type='reset'>Reset Form</button>
+    <div class="container">
+      <div>
+        <h1 id="userName"></h1>
+        <p id="userAge"></p>
+        <img id="image">
+      </div>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
