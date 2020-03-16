@@ -41,7 +41,7 @@ function generate() {
   if (numbersInput.checked) {
     passwordCharSet += numbers;
   }
-  plength = Number(lengthInput.value);
+  console.log(plength = Number(lengthInput.value));
 
   for (let i = 0; i < plength; i++) {
     userPassword += passwordCharSet.charAt(
@@ -86,3 +86,5 @@ clipboard.on('error', function(e) {
       alertbox.classList.remove('fail');
     }, 3000);
 });
+
+console.log('Ctrl+shift+p')
