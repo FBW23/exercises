@@ -6,7 +6,7 @@ const birthdayInput = document.querySelector('#birthdayInput');
 const primaryColor = document.querySelector('#primaryColor');
 const secondaryColor = document.querySelector('#secondaryColor');
 const textArea = document.querySelector('textarea');
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const checkboxes = document.querySelectorAll('.skills');
 const form = document.querySelector('form');
 
 
@@ -39,9 +39,13 @@ document.addEventListener('submit', function () {
   reader.readAsDataURL(userImage);
 
   // Adding the Skills
+  const userSkills = document.querySelector('#userSkills');
+  const skillsArr = [];
   for (let i = 0; i < checkboxes.length; i++) {
     if (checkboxes[i].checked === true) {
-      console.log(checkboxes[i].innerHTML)
+      skillsArr.push(checkboxes[i].nextSibling.wholeText);
     }
+    userSkills.innerHTML = `The programing skills of ${name} are ${[...skillsArr]}`
   }
+
 });
