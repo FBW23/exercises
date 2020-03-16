@@ -8,14 +8,19 @@ const secondaryColor = document.querySelector('#secondaryColor');
 const textArea = document.querySelector('textarea');
 const checkboxes = document.querySelectorAll('.skills');
 const form = document.querySelector('form');
+const profileContainer = document.querySelector('.container');
 
 
-
-// values
 
 // Submit
 document.addEventListener('submit', function () {
   event.preventDefault();
+  // Colors 
+  const userPrimaryColor = primaryColor.value;
+  const userSecondaryColor = secondaryColor.value;
+
+  profileContainer.style.backgroundColor = userPrimaryColor;
+  profileContainer.style.color = userSecondaryColor;
 
   // Adding the value of the nameInput into the h4 element
   const userName = document.querySelector('#userName');
@@ -37,6 +42,12 @@ document.addEventListener('submit', function () {
     };
   })(image);
   reader.readAsDataURL(userImage);
+
+  // Add paragraph about yourself 
+  const aboutMe = document.querySelector('#aboutMe')
+  const userText = textArea.value;
+  aboutMe.innerHTML = userText;
+
 
   // Adding the Skills
   const userSkills = document.querySelector('#userSkills');
