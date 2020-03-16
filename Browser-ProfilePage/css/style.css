@@ -66,3 +66,25 @@ li {
 span:hover {
   cursor: pointer;
 }
+
+
+div{
+  background:blue;
+  height:50vh;
+  width:80vw;
+  margin:0 auto;
+ text-align: center;
+}
+
+#photoValue{
+  background:black;
+  height:250px;
+  width: 150px;
+  margin:0 auto;
+
+}
+
+#languages{
+  display:flex;
+  
+}
