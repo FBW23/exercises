@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Put your details here!</legend>
+
+        <label>Put your name here</label>
+        <input type="text" />
+
+        <label>Put your birthday here</label>
+        <input type="date" />
+
+        <label>Upload a photo of yours</label>
+        <input type="file" /><br />
+
+        <label>Pick your favorite color</label>
+        <input id="primaryColor" type="color" /><br />
+
+        <label>Pick your secondary color</label>
+        <input id="secondaryColor" type="color" /><br />
+
+        <textarea
+          placeholder="Write a paragraph about yourself"
+          maxlength="140"
+        ></textarea>
+        <p class="countermessage">Type all you need in 140 characters</p>
+
+        <label>Pick your Skills: </label><br />
+
+        <li><input type="checkbox" />JavaScript</li>
+        <li><input type="checkbox" />Ruby</li>
+        <li><input type="checkbox" />Python</li>
+        <li><input type="checkbox" />Java</li>
+        <li><input type="checkbox" />PHP</li>
+      </fieldset>
+    </form>
+
+
+    <button id="create">Create CV</button>
+    <button id="reset">Reset Form</button>
+
+
+
+
+    <div id="cv">
+        <!-- <div class="lebenslauf">
+            <h1>Holger Beispiel</h1>
+            <h2>Holger Beispiel ist 50 Jahre alt</h2>
+            <div class="foto">
+            </div>
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, culpa in! Voluptatum velit eveniet
+                tempora est totam delectus animi aliquam fugit non. Qui iure, explicabo sequi, dolore debitis incidunt,
+                amet aut officia commodi quos nemo optio velit? Temporibus, recusandae nobis!
+            </h2>
+            <h4>The skills of _______________________ are: </h4>
+        </div> -->
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
