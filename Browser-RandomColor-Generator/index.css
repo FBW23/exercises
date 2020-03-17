@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.box{
+    width: 250px;
+    height: 175px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: transparent;
+    text-align: center;
+    margin: 5px;
+}
+
+.rgb{
+    margin: 0 auto;
+    padding-top: 25%;
+    font-family: monospace;
+}
+
+
+  
