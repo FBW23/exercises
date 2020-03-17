@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Profile</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Put your details here!</legend>
+
+      <label>Put your name here</label>
+      <input class="nameInput" type="text" />
+
+      <label>Put your birthday here</label>
+      <input class="dateInput" type="date" />
+
+      <label>Upload a photo of yours</label>
+      <input class="imgInput" type="file" /><br />
+
+      <label>Pick your favorite color</label>
+      <input class="firstColorInput" id="primaryColor" type="color" /><br />
+
+      <label>Pick your secondary color</label>
+      <input class="secondColorInput" id="secondaryColor" type="color" /><br />
+
+      <textarea placeholder="Write a paragraph about yourself" maxlength="140"></textarea>
+      <p class="countermessage">Type all you need in 140 characters</p>
+
+      <label>Pick your Skills: </label><br />
+
+      <li><input type="checkbox" />JavaScript</li>
+      <li><input type="checkbox" />Ruby</li>
+      <li><input type="checkbox" />Python</li>
+      <li><input type="checkbox" />Java</li>
+      <li><input type="checkbox" />PHP</li>
+    </fieldset>
+  </form>
+
+  <button type="button" class="btn btn-primary">Submit</button>
+
+  <div id="profile" class="d-none">
+    <!-- d-none -->
+    <h1 class="nameOutput"></h1> <!-- NAME -->
+    <h3 class="ageOutput"></h3> <!-- Name is 0 years old -->
+    <img class="imgOutput">
+    <h3 class="statusOutput"></h3> <!-- a Happy developer -->
+    <h3 class="skillsOutput"></h3> <!-- The programming skills of Name are: Java... -->
+  </div>
+</body>
+
+</html>
