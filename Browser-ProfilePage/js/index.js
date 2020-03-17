@@ -54,7 +54,7 @@ document.addEventListener('submit', function () {
   const skillsArr = [];
   for (let i = 0; i < checkboxes.length; i++) {
     if (checkboxes[i].checked === true) {
-      skillsArr.push(checkboxes[i].nextSibling.wholeText);
+      skillsArr.push(checkboxes[i].value);
     }
     userSkills.innerHTML = `The programing skills of ${name} are ${[...skillsArr]}`
   }
