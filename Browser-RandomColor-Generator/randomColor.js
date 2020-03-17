@@ -7,6 +7,42 @@ const randomColorGenerator = () => {
 
 console.log(randomColorGenerator())
 
+// 2. Create a function to add a new color item to the list, passing the color code as argument
+
+const createCards = () => {
+  const parentDiv = document.querySelector('.flex-box-container');
+  let div = document.createElement('div');
+  let i = document.createElement('i')
+  let a = document.createElement('a');
+  let p = document.createElement('p');
+  let innerDiv = document.createElement('div');
+
+  div.classList.add('card');
+  div.style.width = '20rem';
+  div.appendChild(a);
+  a.appendChild(i);
+  i.classList.add('fa');
+  i.classList.add('fa-times');
+  div.appendChild(innerDiv);
+  innerDiv.classList.add('card-body');
+  innerDiv.appendChild(p);
+  p.classList.add('color-code');
+  div.appendChild(innerDiv);
+  parentDiv.appendChild(div);
+
+}
+
+
+createCards()
+createCards()
+createCards()
+createCards()
+createCards()
+createCards()
+createCards()
+createCards()
+createCards()
+// ===================================================================
 const colorCodes = document.querySelectorAll('.color-code');
 const cardsBodies = document.querySelectorAll('.card');
 const x = document.querySelectorAll('a');
@@ -28,17 +64,3 @@ for(let i = 0; i < colorCodes.length; i++) {
 
 
 
-// 2. Create a function to add a new color item to the list, passing the color code as argument
-
-
-function createACardElement () {
-  const body = document.querySelector('body');
-  let div = document.createElement('div');
-  div.classList.add = 'card';
-  let a = document.createElement('a');
-  let p = document.createElement('p');
-  
-  body.appendChild(div);
-}
-const button = document.querySelector('.button');
-button.addEventListener('click', createACardElement);
