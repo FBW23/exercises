@@ -1,24 +1,26 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.js"> </script>
 
-    <body>
-        <div class="header">
-            <h1>Add random color div</h1>
-            <button class="pure-button" id="addDiv" onclick="addDiv()">Click</button>
-        </div>
-        <hr>
-        <br>
-        <script src="main.js "></script>
-    </body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
 
-    </html>
+<body>
+  <div id="btns"><span class="close">&times;</span>
+    <button onclick="removeall()">Remove All</button>
+    <br>
+    <button onclick="addnum()">+ Add color</button>
+    <input type="text" name="num" id="num" value="">
+  </div>
+  <div id="wrapper"></div>
+</body>
+
+</html>
