@@ -1,0 +1,24 @@
+div{
+   
+    display: flex;
+    
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+   
+} 
+a{
+   padding-left: 210px; 
+}
+
+section{
+    border: 1px, black;
+    width: 20%;
+    height: 100px;
+    text-align: center;
+    margin: 20px;
+    
+    
+}
+
+
