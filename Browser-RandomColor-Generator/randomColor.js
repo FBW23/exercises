@@ -1,4 +1,5 @@
 
+// Event listeners
 //  1. Create a function to generate a random color HEX code
 
 const randomColorGenerator = () => {
@@ -29,19 +30,26 @@ const createCards = () => {
   p.classList.add('color-code');
   div.appendChild(innerDiv);
   parentDiv.appendChild(div);
-
 }
 
 
 createCards()
 createCards()
 createCards()
-createCards()
-createCards()
-createCards()
-createCards()
-createCards()
-createCards()
+// ==============================Event listeners===================================
+const form = document.querySelector('form');
+form.addEventListener('submit', function(){
+  const colorNumberInput = document.querySelector('.form-control');
+  const numberColors = colorNumberInput.value;
+  console.log(numberColors);
+  event.preventDefault();
+  for(let i=0; i < numberColors; i++) {
+    createCards(numberColors);
+  }
+});
+// ===========================================================================
+
+
 // ===================================================================
 const colorCodes = document.querySelectorAll('.color-code');
 const cardsBodies = document.querySelectorAll('.card');
@@ -60,6 +68,7 @@ for(let i = 0; i < colorCodes.length; i++) {
     cardsBodies[i].style.display = 'none';
   })
 }
+
 
 
 

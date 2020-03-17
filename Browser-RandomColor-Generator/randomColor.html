@@ -9,13 +9,17 @@
   <link rel="stylesheet" href="randomColor.css">
 </head>
 <body>
+  <h1>Random Color Generator</h1>
+
+  <form>
+    <div class="form-group">
+      <input name="colors" type="number" class="form-control" id="numberForm" aria-describedby="numberOfColors">
+    </div>
+    <button for="colors" type="submit" class="btn btn-primary" id="btn">+ Add Color</button>
+  </form>
 
   <main class="container">
-
-    <h1>Random Color Generator</h1>
-
     <div class="flex-box-container row">
-
       <!-- <div class="card" style="width: 20rem;">
         <a href="#"><i class="fas fa-times"></i></a>
         <div class="card-body">
@@ -36,13 +40,10 @@
           <p class="color-code"></p>
         </div>
       </div> -->
-
     </div> <!-- /flex-box-container -->
-    
   </main> <!-- /container-fluid -->
 
-  <button id="button">BUTTON</button>
-
+ 
 
   
 
