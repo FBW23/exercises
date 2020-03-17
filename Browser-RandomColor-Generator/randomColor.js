@@ -1,14 +1,10 @@
-
-// Event listeners
-//  1. Create a function to generate a random color HEX code
-
 const randomColorGenerator = () => {
   return '#'+Math.floor(Math.random()*16777215).toString(16);
 }
 
-console.log(randomColorGenerator())
+// console.log(randomColorGenerator());
 
-// 2. Create a function to add a new color item to the list, passing the color code as argument
+// ==============================TOP===================================
 
 const createCards = () => {
   const parentDiv = document.querySelector('.flex-box-container');
@@ -30,45 +26,52 @@ const createCards = () => {
   p.classList.add('color-code');
   div.appendChild(innerDiv);
   parentDiv.appendChild(div);
+
+//const cardsBodies = document.querySelectorAll('.card');
+
+
+  // Add the random color string to the card body
+  const newColor = randomColorGenerator();
+  p.innerHTML = newColor;
+  
+  // Add background color to the card-bodies
+  div.style.backgroundColor = newColor;
+  
 }
 
 
-createCards()
-createCards()
-createCards()
+createCards();
+createCards();
+createCards();
+
+
+
 // ==============================Event listeners===================================
 const form = document.querySelector('form');
 form.addEventListener('submit', function(){
+  event.preventDefault();
   const colorNumberInput = document.querySelector('.form-control');
   const numberColors = colorNumberInput.value;
   console.log(numberColors);
-  event.preventDefault();
   for(let i=0; i < numberColors; i++) {
-    createCards(numberColors);
+    createCards();
   }
-});
-// ===========================================================================
+}); 
+// ===============================================================================
 
 
-// ===================================================================
-const colorCodes = document.querySelectorAll('.color-code');
-const cardsBodies = document.querySelectorAll('.card');
+// ====================Bottom==============================
 const x = document.querySelectorAll('a');
+const colorCodes = document.querySelectorAll('.color-code');
+
 
 for(let i = 0; i < colorCodes.length; i++) {
   
-  // Add the random color string to the card body
-  colorCodes[i].innerHTML = randomColorGenerator();
-  
-  // Add background color to the card-bodies
-  cardsBodies[i].style.backgroundColor = randomColorGenerator();
-  
-  // removes the random colors on 'X' click
-  x[i].addEventListener('click', function() {
-    cardsBodies[i].style.display = 'none';
-  })
-}
-
+// removes the random colors on 'X' click
+x[i].addEventListener('click', function() {
+  cardsBodies[i].style.display = 'none';
+})}
+// ==========================================================
 
 
 
