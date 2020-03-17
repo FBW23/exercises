@@ -29,6 +29,7 @@ const button = document.querySelector('#button');
 
 // function to erase a div
 function closeCrossFunction (e){
+    event.preventDefault();
     let singleDivElement = e.target.parentNode.parentNode;
     singleDivElement.remove();
 }
@@ -38,22 +39,27 @@ const newDivCreator = () => {
     event.preventDefault();
     const numberDiv = numberInput.value;
     for (i = 0; i < numberDiv; i++) {
+
         // create a div element
-        let divContainer = document.createElement('div');
-        divContainer.className = 'div-container';
-        document.querySelector('.section').appendChild(divContainer);
         let newDiv = document.createElement('div');
         newDiv.className = 'card';
-        document.querySelector('.div-container').appendChild(newDiv);
+        let section = document.querySelector('.section');
+        section.appendChild(newDiv); // index.js:45 Uncaught TypeError: Cannot read property 'appendChild' of null at HTMLButtonElement.newDivCreator (index.js:45)
         newDiv.style.width = '21rem';
         newDiv.style.height = '7rem';
+
+        // assign each div a random color
         let hexColor = randomColor();
         newDiv.style.backgroundColor = hexColor;
         newDiv.innerText = hexColor.toUpperCase();
+
+        // create a cross-shaped remove button
         let closeCross = document.createElement('button');
         closeCross.className = 'close';
         closeCross.setAttribute('aria-label', 'Close');
         closeCross.innerHTML = '<span aria-hidden="true">&times;</span>';
+
+        // insert the remove button into the div
         newDiv.appendChild(closeCross);
         closeCross.addEventListener('click', closeCrossFunction)
     }
