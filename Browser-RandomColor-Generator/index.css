@@ -22,5 +22,7 @@
     font-family: monospace;
 }
 
-
+.close {
+    float: right;
+}
   
