@@ -66,3 +66,11 @@ li {
 span:hover {
   cursor: pointer;
 }
+
+
+.hidden{
+  background-color: blue;
+  height: 700px;
+  width: 40%;
+  
+}
