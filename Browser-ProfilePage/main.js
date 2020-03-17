@@ -10,8 +10,6 @@ const resetObj = document.getElementById(`reset`);
 createObj.onclick = function(event) {
   event.preventDefault();
 
-  
-
   const cvObj = document.getElementById(`cv`);
   const nameObj = document.getElementById(`name`);
   const birthdayObj = document.getElementById(`birthday`);
@@ -20,7 +18,6 @@ createObj.onclick = function(event) {
   const favColor2Obj = document.getElementById(`preferredColor2`);
   const descriptionObj = document.getElementById(`description`);
   const skillsObj = document.getElementsByClassName(`skills`);
-
   const newCvObj = document.createElement(`div`);
   newCvObj.classList.add(`yourCV`);
 

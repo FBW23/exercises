@@ -1,0 +1,58 @@
+* {color: red;
+    background-color: black;
+    text-align: center;
+}
+
+#create {
+    width: 25%;
+    height: 10vh;
+    outline: none;
+    border: none;
+    background-color: aqua;
+    border-radius: 300px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 2%;
+    height:3vh;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 4px;
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 2px 20px 2px rgb(221, 7, 7);
+}
+
+#create:hover {
+    font-size: 2.5rem;
+    border-radius: 0 300px;
+}
+
+#squareArea {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.quote {
+    width: 10%;
+    height: 22vh;
+    margin: 15px;
+    box-shadow: 0 2px 45px 5px rgb(236, 2, 2);
+    display: block;
+    color: black;
+    text-shadow: 3px 3px 4px white;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    line-height: 100px;
+ }

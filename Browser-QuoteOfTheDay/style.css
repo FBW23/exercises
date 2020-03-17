@@ -2,7 +2,11 @@ body{
     text-align: center;
     background-color: black;
     color: red;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2345ab816298e8db4666db4445bed0b81eb30b6c
 }
 
 #quote {
@@ -28,4 +32,8 @@ body{
 }
 #icon {
     display: none;
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 2345ab816298e8db4666db4445bed0b81eb30b6c
