@@ -1,11 +1,10 @@
+// Random color function
 const randomColorGenerator = () => {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
-// console.log(randomColorGenerator());
 
-// ==============================TOP===================================
-
+// Function that creates and deletes cards
 const createCards = () => {
   const parentDiv = document.querySelector('.flex-box-container');
   let div = document.createElement('div');
@@ -27,6 +26,7 @@ const createCards = () => {
   div.appendChild(innerDiv);
   parentDiv.appendChild(div);
 
+  // delete the created colors
   const x = document.querySelectorAll('a');
   const cardsBodies = document.querySelectorAll('.card');
   const colorCodes = document.querySelectorAll('.color-code');
@@ -46,10 +46,10 @@ const createCards = () => {
 
   // Add background color to the card-bodies
   div.style.backgroundColor = newColor;
-
 }
 
 
+// Create 3 random color cards
 createCards();
 createCards();
 createCards();
@@ -69,7 +69,7 @@ form.addEventListener('submit', function () {
 });
 // ===============================================================================
 
-
+// delete the first 3 created cards
 const x = document.querySelectorAll('a');
 const cardsBodies = document.querySelectorAll('.card');
 const colorCodes = document.querySelectorAll('.color-code');
