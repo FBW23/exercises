@@ -18,6 +18,7 @@ div {
   display: flex;
   flex-direction: column;
   color: white;
+
 }
 #pic {
   background-image: url("/assets/img/music.jpg");
