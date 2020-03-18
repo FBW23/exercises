@@ -1,5 +1,5 @@
 const randomColorGenerator = () => {
-  return '#'+Math.floor(Math.random()*16777215).toString(16);
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 // console.log(randomColorGenerator());
@@ -27,16 +27,26 @@ const createCards = () => {
   div.appendChild(innerDiv);
   parentDiv.appendChild(div);
 
-//const cardsBodies = document.querySelectorAll('.card');
+  const x = document.querySelectorAll('a');
+  const cardsBodies = document.querySelectorAll('.card');
+  const colorCodes = document.querySelectorAll('.color-code');
 
+
+  for (let i = 0; i < colorCodes.length; i++) {
+    console.log(x[i])
+    // removes the random colors on 'X' click
+    x[i].addEventListener('click', function () {
+      cardsBodies[i].style.display = 'none';
+    })
+  }
 
   // Add the random color string to the card body
   const newColor = randomColorGenerator();
   p.innerHTML = newColor;
-  
+
   // Add background color to the card-bodies
   div.style.backgroundColor = newColor;
-  
+
 }
 
 
@@ -48,31 +58,27 @@ createCards();
 
 // ==============================Event listeners===================================
 const form = document.querySelector('form');
-form.addEventListener('submit', function(){
+form.addEventListener('submit', function () {
   event.preventDefault();
   const colorNumberInput = document.querySelector('.form-control');
   const numberColors = colorNumberInput.value;
   console.log(numberColors);
-  for(let i=0; i < numberColors; i++) {
+  for (let i = 0; i < numberColors; i++) {
     createCards();
   }
-}); 
+});
 // ===============================================================================
 
 
-// ====================Bottom==============================
 const x = document.querySelectorAll('a');
+const cardsBodies = document.querySelectorAll('.card');
 const colorCodes = document.querySelectorAll('.color-code');
 
 
-for(let i = 0; i < colorCodes.length; i++) {
-  
-// removes the random colors on 'X' click
-x[i].addEventListener('click', function() {
-  cardsBodies[i].style.display = 'none';
-})}
-// ==========================================================
-
-
-
-
+for (let i = 0; i < colorCodes.length; i++) {
+  console.log(x[i])
+  // removes the random colors on 'X' click
+  x[i].addEventListener('click', function () {
+    cardsBodies[i].style.display = 'none';
+  })
+}
