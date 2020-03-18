@@ -43,7 +43,7 @@ let secColorValue = document.querySelector("#secColorValue");
 let jsValue = document.querySelector("#jsValue");
 let rubyValue = document.querySelector("#rubyValue");
 let javaValue = document.querySelector("#javaValue");
-let pythonValue = document.querySelector("#jsValue");
+let pythonValue = document.querySelector("#pythonValue");
 let phpValue = document.querySelector("#phpValue");
 let textareaValue = document.querySelector("#textareaValue");
 
