@@ -18,8 +18,14 @@ div {
   display: flex;
   flex-direction: column;
   color: white;
-
+ 
 }
+.track{
+  width:5rem;
+  height: 2rem;
+  
+}
+
 #pic {
   background-image: url("/assets/img/music.jpg");
   background-position: center;
