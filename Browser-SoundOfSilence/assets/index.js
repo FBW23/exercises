@@ -13,7 +13,7 @@ for (let i = 0; i < 5; i++) {
     currentArtist.innerText = music[i]['artistName'];
     let currentCollection = line[i].children[3];
     currentCollection.innerText = music[i]['collectionName'];
-    // KEW
+    // KEWL
     let releaseDate = line[i].children[4];
     let releaseYear = music[i]['releaseDate'];
     releaseDate.innerText = releaseYear.substr(0,4);
