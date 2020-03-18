@@ -47,7 +47,7 @@ const music = [
         trackId: 192775853,
         artistName: "Simon & Garfunkel",
         collectionName: "The Best of Simon & Garfunkel",
-        trackName: "The Sound of Silence",
+        trackName: "Second Track name",
         collectionCensoredName: "The Best of Simon & Garfunkel",
         trackCensoredName: "The Sound of Silence",
         artistViewUrl:
@@ -87,7 +87,7 @@ const music = [
         trackId: 192480260,
         artistName: "Simon & Garfunkel",
         collectionName: "Sounds of Silence",
-        trackName: "The Sound of Silence",
+        trackName: "Third Track name",
         collectionCensoredName: "Sounds of Silence",
         trackCensoredName: "The Sound of Silence",
         artistViewUrl:
@@ -127,7 +127,7 @@ const music = [
         trackId: 201365007,
         artistName: "Simon & Garfunkel",
         collectionName: "The Essential Simon & Garfunkel",
-        trackName: "The Sound of Silence",
+        trackName: "Fourth Track name",
         collectionCensoredName: "The Essential Simon & Garfunkel",
         trackCensoredName: "The Sound of Silence",
         artistViewUrl:
@@ -167,7 +167,7 @@ const music = [
         trackId: 941959391,
         artistName: "Simon & Garfunkel",
         collectionName: "The Concert In Central Park (Live)",
-        trackName: "The Sound of Silence",
+        trackName: "Fifth Track name",
         collectionCensoredName: "The Concert In Central Park (Live)",
         trackCensoredName: "The Sound of Silence (Live)",
         artistViewUrl:
