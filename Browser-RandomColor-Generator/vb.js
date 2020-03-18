@@ -1,31 +1,38 @@
 const colors = document.querySelector("#colors");
-const closing = document.querySelector(".close");
 const button = document.querySelector("#submit");
-
-
 
 const colorGenerator = () => {
     let randomColor = "#";
+    let letters='ABCDEF0123456789';
     for (let i = 0; i < 6; i++) {
-        randomNumber = Math.floor(Math.random() * 10)
-        randomColor += randomNumber;
+        randomNumber = Math.floor(Math.random() * letters.length);
+        randomColor += letters[randomNumber];
     }
-    return randomColor;
+    return randomColor; // '#ABD456'
 }
 
+const hideIt = (event) => {
+  
+    const parent = event.target.parentNode;
+    parent.remove();
+    
+}
 
 const divGenerator = () => {
     const colorNumber = document.querySelector("#number").value;
     const myNum = Number(colorNumber);
     for (let i = 0; i < myNum; i++) {
         const myDiv = document.createElement('div');
-        myDiv.style.background = colorGenerator();
+        const hexcode = colorGenerator();
+        myDiv.style.background = hexcode;
         myDiv.classList.add('color');
-        myDiv.setAttribute('id', `color${i}`);
+        
+        myDiv.innerText = hexcode;
         const paragraph = document.createElement("p");
         paragraph.classList.add("close");
-        paragraph.setAttribute('id', `x${i}`);
-        paragraph.innerText="x"
+        
+        paragraph.innerText = "x";
+        paragraph.addEventListener("click", hideIt);
         myDiv.append(paragraph);
         colors.append(myDiv);
     }
@@ -33,14 +40,6 @@ const divGenerator = () => {
 divGenerator();
 
 
-const hideIt = () => {
-    for(let i=0;i<document.querySelector(".close").clientHeight;i++){
-        
-        document.querySelector(`p`).parentElement.style.display = "none";
-       
-    }
-    console.log(typeof(document.querySelector(".close")))
-}
+
 
 button.addEventListener("click", divGenerator);
-document.querySelector("p").addEventListener("click", hideIt);
