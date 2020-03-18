@@ -26,7 +26,7 @@ div {
   
 }
 
-#pic {
+.pic {
   background-image: url("/assets/img/music.jpg");
   background-position: center;
   background-size:cover;
@@ -36,7 +36,7 @@ div {
   /* border:white 1px solid; */
   margin-left:.5rem;
 }
-#date{
+.date{
   border:grey 1px solid;
   width:3rem;
   height: 2rem;
