@@ -18,7 +18,4 @@ for (let i = 0; i < 5; i++) {
     // console.log('artist name', music[i]['artistName']); // TOP!
     // console.log('artist name', music[i]['collectionName']);
     // let's add the key values to the html
-
-    
-
 }
