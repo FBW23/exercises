@@ -1,18 +1,16 @@
-let tbody = document.querySelector('tbody')
+let tbody = document.querySelector('tbody');
 
-
-
-let table2 = ''
+let table = '';
 music.forEach(element => {
-console.log(element);
-table2 +=  `
+    console.log(element);
+    table += `
 <tr class='line'>
-<th scope="col" class="pic"><img src="assets/img/music.jpg"></th>
-<th scope="col" class="track">${element.trackName}</th>
-<th scope="col" class="artist">${element.artistName}</th>
-<th scope="col" class="type">${element.collectionName}</th>
-<th scope="col" class="date">${element.releaseDate}</th>
+<td scope="col" class="pic"><img src="assets/img/music.jpg"></td>
+<td scope="col" class="track">${element.trackName}</td>
+<td scope="col" class="artist">${element.artistName}</td>
+<td scope="col" class="type">${element.collectionName}</td>
+<td scope="col" class="date">${element.releaseDate}</td>
 </tr>
 `;
-tbody.innerHTML = table2;
+    tbody.innerHTML = table;
 })
