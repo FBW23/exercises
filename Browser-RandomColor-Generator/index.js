@@ -13,7 +13,7 @@ function colorGenerator() {
 
 function createSquares() {
     let inputValue = document.querySelector("#color").value;
-    for (let i = 0; i < i < parseInt(inputValue); i++) {
+    for (let i = 0; i < parseInt(inputValue); i++) {
         let newSection = document.createElement("section");
         let backColor = colorGenerator(); 
         newSection.classList.add("box");
