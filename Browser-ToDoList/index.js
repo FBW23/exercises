@@ -16,44 +16,10 @@ function submit(e) {
 function addTask(task){
   let ul = document.querySelector('ul');
   let li = document.createElement('li');
-  li.innerHTML = `<span class="delete">x<input type="checkbox"><label>${task}</label>`;
+  li.innerHTML = `<span class="delete"><i class="fas fa-times"></i></span><input type="checkbox"><label>${task}</label>`;
   ul.appendChild(li);
   document.querySelector('.container-fluid').classList.remove('d-none');
-  // remove a "li"
-  li.addEventListener('click', removeElement);
-  // check a task
-  let inputCheck = document.querySelector('input');
-  inputCheck.addEventListener('click', taskChecked);
 }
-
-// remove element
-function removeElement (e) {
-  event.preventDefault();
-  let singleTask = e.target.parentNode.parentNode.parentNode;
-  singleTask.remove();
-}
-
-// mark element as "complete"
-function taskChecked (e) {
-  const task = e.target.nextSibling;
-  if (e.target.checked) {
-    task.style.textDecoration = "line-through";
-  } else {
-    task.style.textDecoration = "none";
-  }
-}
-
-// tick a task
-// function tickTask(e){
-//   const task = e.target.nextSibling;
-//   if(e.target.checked){
-//     task.style.textDecoration = "line-through";
-//     task.style.color = "#ff0000";
-//   }else {
-//     task.style.textDecoration = "none";
-//     task.style.color = "#2f4f4f";
-//   }
-// }
 
 
 
