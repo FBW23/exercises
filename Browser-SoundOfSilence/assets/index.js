@@ -1,12 +1,3 @@
-// // HTML elements saved in Lets
-//  let row = document.querySelectorAll('.row');
-// let track = document.querySelector('.track');
-// let artist = document.querySelector('.artist');
-// let date = document.querySelector('.date');
-// let content=document.querySelector("#content");
-//  let body = document.querySelector("body");
-// Looping the HTML elements modifications
-
 
 for (let i = 0; i < music.length; i++) {
 
@@ -24,19 +15,6 @@ for (let i = 0; i < music.length; i++) {
   content.append(table);
 }
 
-
-
-// let currentTrack = line[i].children[1];
-// currentTrack.innerText = music[i]['trackName'];
-// let currentArtist = line[i].children[2];
-// currentArtist.innerText = music[i]['artistName'];
-// let currentCollection = line[i].children[3];
-// currentCollection.innerText = music[i]['collectionName'];
-// // KEWL
-// let releaseDate = line[i].children[4];
-// let releaseYear = music[i]['releaseDate'];
-// releaseDate.innerText = releaseYear.substr(0, 4);
-
 const row = document.querySelectorAll(".row");
 
 for (let i = 0; i < music.length; i++) {
@@ -45,10 +23,7 @@ for (let i = 0; i < music.length; i++) {
   let type = music[i].primaryGenreName;
   let releaseDate = music[i].releaseDate;
 
-
-
-
-  let typeNow = row[i].children[3];
+let typeNow = row[i].children[3];
   typeNow.style.backgroundColor = "pink";
   typeNow.innerText = type;
 
