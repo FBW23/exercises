@@ -1,0 +1,66 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(42, 42, 42);
+    color: white;
+  }
+  
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .row > * {
+    flex: 1;
+  }
+  
+  .row > div {
+    padding: 0 0 0 1.2em
+  }
+  
+  .row > img {
+    width: auto;
+  }
+  
+  .th {font-weight: bold;padding-bottom:1em}
+  
+  .search{
+    position: absolute;
+    right: 1em;
+  }
+  .filter{
+    position: absolute;
+    right: 1em;
+    top: 3em;
+  }
+  
+  #filter-input, #search-input, #search-button {
+    padding: .5em .9em;
+    border: none;
+    border-radius: 0.3em;
+    outline: none;
+  }
+  #filter-input{
+    width:17em;
+  }
+  
+  label {
+    float: right;
+    padding: .3em;
+    border: none;
+    outline: none;
+  }
+  
+  p{ 
+    font-size: smaller;
+  }
+  
+  #price,#artist,#track{
+    cursor: pointer;
+  }
+  
+  .counter{
+    font-size: large;
+  }

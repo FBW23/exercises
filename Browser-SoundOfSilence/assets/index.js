@@ -11,7 +11,7 @@ tracks.forEach(x => {
     let time=minutes+':'+seconds;
    
     
-  list.innerHTML += 
+  list.innerHTML +=
   `<div class='box2'>
    <div class='card text-white bg-dark'>
    <div class='card-body'>
