@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ol li {
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.6rem;
+    background-color: black;
+    color:white;
+}
+ol li:hover {
+    background-color: rgb(87, 85, 85);
+   
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px 15px;
+
+}
+.close {
+    background-color: rgb(136, 136, 136);
+    color: white;
+ 
+}
+.create-button {
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(12, 11, 11);
+    cursor: pointer;
+    color: aliceblue;
+
+}
+.create-button:hover {
+background-color: rgb(124, 115, 115);
+}
