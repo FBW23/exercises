@@ -1,13 +1,17 @@
 
+const table=document.querySelector("#table")
+
+
 for (let i = 0; i < music.length; i++) {
 
-  let table = document.createElement("table");
-  table.classList.add("table");
+  
   let row = document.createElement("tr");
   row.classList.add("row");
   table.append(row);
   for (let j = 0; j < 5; j++) {
     let column = document.createElement("td");
+    //switch case
+
     column.classList.add("column");
     columnNow = column[j];
     row.append(column);
@@ -29,9 +33,9 @@ let typeNow = row[i].children[3];
 
   let imgNow = row[i].children[0];
   
-  //imgNow.style.backgroundImage = "url('assets/img/music.jpg')";
+  imgNow.style.background = "url('assets/img/music.jpg')";
   //imgNow.innerText = "here goes the image";
-  imgNow.style.backgroundColor = "blue";
+  //imgNow.style.backgroundColor = "blue";
 
   let trackNow = row[i].children[1];
   trackNow.innerText = trackName;
