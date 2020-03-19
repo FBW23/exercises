@@ -6,7 +6,6 @@ let date = document.querySelector('.date');
 // Looping the HTML elements modifications
 for (let i = 0; i < 5; i++) {
     // console.log('music array object ', music[i]); // we get the five array objects - KEWL
-   
     let currentTrack = line[i].children[1];
     currentTrack.innerText = music[i]['trackName'];
     let currentArtist = line[i].children[2];
@@ -19,6 +18,5 @@ for (let i = 0; i < 5; i++) {
     releaseDate.innerText = releaseYear.substr(0,4);
    
     // let's add the key values to the html
-    
-
 }
+

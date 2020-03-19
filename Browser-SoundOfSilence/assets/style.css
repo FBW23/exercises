@@ -17,13 +17,13 @@ body {
 div {
   /* margin-left: 10em; */
   color: white;
-  display: block;
- 
+  /* display: block; */
+ margin-top: 1em;
 }
 .track{
   width:10rem;
   height: 2rem;
-  border:1px solid white;
+  /* border:1px solid white; */
   }
 
 .pic {
@@ -35,7 +35,7 @@ div {
   width: 50px;
   /* border:white 1px solid; */
   margin-left:.5rem;
-  border:1px solid white;
+  /* border:1px solid white; */
 }
 .date{
   border:grey 1px solid;
@@ -45,11 +45,11 @@ div {
 }
 
 .artist{
-  border:1px solid white;
+  /* border:1px solid white; */
 }
 
 .type{
-  border:1px solid white;
+  /* border:1px solid white; */
 }
 
 .container{
