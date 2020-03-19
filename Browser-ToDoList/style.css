@@ -1,3 +1,48 @@
-body{
-   
+#addItemName {
+    width: 10rem;
+    height: 1.5em;
+}
+
+#addItemName:focus {
+    border: 1px solid lightskyblue;
+}
+
+#button {
+    margin-top: 1em;
+    background: lightskyblue;
+    border: none;
+    width: 6rem;
+    height: 4em;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem,.done {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    margin-top: 1em;
+    color: white;
+    height: 2rem;
+}
+
+.task {
+    margin-left: 1rem;
+}
+
+.closing {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.done {
+   text-decoration: line-through;
+}
+
+.crossing{
+    cursor: pointer;
 }

@@ -1,31 +1,64 @@
-
-const textField = document.querySelector('#addItemName');
-const button = document.querySelector("#button");
+// const button = document.querySelector("#button");
 const form = document.querySelector("#form");
-const listContainer = document.querySelector("#listContainer");
-const p = document.querySelector("p");
+
 
 
 
 const myFunction = () => {
     event.preventDefault();
-    const text = textField.value;
-    for(let i=0;i<listContainer.length;i++){ 
-       const listItem=document.createElement("div");
-       const listItemText= listItem.innerText;
-       listItemText[i]=text;
+    const textField = document.querySelector('#addItemName');
+
+    if (textField.value) {
+        const text = textField.value;
+
+        const listItem = document.createElement("div");
+        listItem.classList.add("listItem");
+        const task = document.createElement("p");
+        const closeButton = document.createElement("p");
+        const done = document.createElement("p");
+
+
+        task.classList.add("task");
+        done.classList.add("crossing");
+        closeButton.classList.add("closing");
+
+
+
+        const close = (event) => {
+            const parent = event.target.parentNode;
+            parent.remove();
+        }
+
+        closeButton.addEventListener("click", close);
+
+
+
+        const crossIt = (event) => {
+            const box = event.target.parentNode;            
+            box.firstChild.classList.add("done"); 
+        }
+        
+
+        done.addEventListener("click", crossIt);
+
+        done.innerText = "done";
+        task.innerText = text;
+        closeButton.innerText = "X";
+
+
+        listItem.append(task);
+        listItem.append(done);
+        listItem.append(closeButton);
+        listContainer.append(listItem);
     }
-    // listContainer.innerText = text;
 };
+
+
 
 form.addEventListener("submit", myFunction);
 
-// 2. Add a _Delete_ button in the form of **X**, to enable the user delete a To-Do from the list.
 
-// 3. **Optional:** Style to your pleasing.
 
 // ## Bonus
 // - Add a button to show that the item is complete. 
 // - You can add styling to cross-out an item.
-
-// > Hint: Refer to the representation below, for an idea of what your result should look like.
