@@ -2,31 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <title>Dom Manipulation | VLS</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <div id=the-header" class="the-header">
-            <h1>My amazing to do list</h1>
-            <input type="text" id="the-input" placeholder="What do you want to do...">
-            <span class="create-button">Create Todo</span>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="intro col-12">
+                    <h1>To-Do List App</h1>
+                    <div>
+                        <div class="border1"></div>
+                    </div>
 
-        </div>
-<ul id="the-ul">
-    <li>Work smartly</li>
-    <li>Eat bio</li>
-    <li>Exercise everyday</li>
-    <li>Study hard</li>
-    <li>Be humble</li>
-</ul>
+                    <div class="row">
+                        <div class="col-12">
+                            <input id="userInput" type="text" placeholder="New item..." maxlength="27">
+                            <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+                        </div>
+                    </div>
 
-    </div>
+                    <!-- Empty List -->
+                    <div class="row">
+                        <div class="listItems col-12">
+                            <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
 </body>
 
 </html>
