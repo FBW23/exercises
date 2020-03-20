@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: rgba(011, 011, 011, .8);
+}
+
+body {
+    background-color: rgb(71, 66, 40);
+
+}
+
+form {
+    margin: 0 auto;
+    height: 60vh;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: beige;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+.container {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 40vw;
+}
+
+.delTodo {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    right: 1px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.todoItem {
+    position: relative;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.doneItem {
+    text-decoration: line-through;
+}
+
+.watermark {
+    padding-left: 20px;
+    text-shadow: rgba(011, 011, 011, .5);
+    color: rgba(255, 255, 255, .5);
+    font-style: italic;
+    font-size: small;
+}
+
+#todoList {
+    height: 90%;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+#todoInput {
+    padding: 5px;
+    width: 80%;
+    border-style: none;
+    border-bottom: 1px solid;
+    background-color: none;
+    opacity: .6;
+}
+
+#btn {
+    width: 15%;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    border: 1px solid white;
+}
