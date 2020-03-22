@@ -1,4 +1,4 @@
-(function init2() {
+l(function init2() {
     let name = "Mozilla";
     (function () {
         console.log(name);
