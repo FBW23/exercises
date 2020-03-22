@@ -11,7 +11,7 @@ for (let i = 0; i < music.length; i++) {
     const img = document.createElement("img");
     img.setAttribute("src", "music.jpg");
     img.setAttribute("alt", "playbutton");
-    </table>
+    
     const track = document.createElement("td");
     track.classList.add("track");
     const author = document.createElement("td");
