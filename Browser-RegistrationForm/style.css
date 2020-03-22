@@ -104,4 +104,19 @@ body {
   #photoLabel {
     width: 250px;
   }
+    #closeBtn{
+      background-color: white;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      left: 64%;
+      margin-top: 9%;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: bold;
+
+    }
+  
   

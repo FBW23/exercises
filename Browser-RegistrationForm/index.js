@@ -10,12 +10,12 @@ let photoLabel = document.getElementById("photoLabel");
 let registerBtn = document.getElementById("registerBtn");
 function registration() {
   document.getElementById("registrationForm").style.display = "block";
-  document.getElementById("personalDiv").style.display = "block";
+
 }
 registerBtn.addEventListener("click", registration);
 
 //cancel Registration 
-let cancelRegistration = document.getElementById('cancelRegistration');
+let cancelRegistration = document.getElementById('closeBtn');
 function noRegistration() {
     document.getElementById("registrationForm").style.display= 'none';
 }
