@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    background-color: #b72a8b;
+}
+
+#input-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    height: 10em;
+    background-color: black;
+    border-bottom: 3px solid yellow;
+}
+
+.button {
+    width: 15em;
+    height: 4em;
+    background-color: yellow;
+    color: #b72a8b;
+    border: 5px solid #b72a8b;
+}
+
+#input-box {
+    width: 20em;
+    height: 3em;
+    background-color: yellow;
+    color: #b72a8b;
+    border: 5px solid #b72a8b;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.line-none {
+    text-decoration: none;
+}
