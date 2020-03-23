@@ -1,4 +1,64 @@
+<<<<<<< HEAD
 body{
     background: white;
 }
 
+=======
+* {
+    font-size: large;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    color: rgb(100, 100, 100);
+}
+
+.container {
+    padding: 50px;
+}
+
+#colorPallette {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-auto-rows: 200px;
+    padding: 50px;
+    width: 750px;
+    margin: auto;
+}
+
+.pallette {
+    width: 200px;
+    height: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
+    color: rgb(236, 236, 236);
+    padding-top: 60px;
+}
+
+#numFields {
+    border-radius: 5px;
+    border: solid rgb(110, 109, 109) 1px;
+    padding: 5px;
+}
+
+#btn {
+    border-radius: 5px;
+    border: solid rgb(120, 211, 84) 1px;
+    padding: 5px;
+    background-color: limegreen;
+    color: linen;
+}
+
+#btn:focus {
+    outline: none;
+}
+#numFields:focus {
+    outline: none;
+} 
+>>>>>>> b54d375f3c088fb244f79043840ef3bac0c41a6b

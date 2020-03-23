@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let section = document.querySelectorAll(".box");
 let a = document.querySelectorAll("a");
 let button = document.querySelector("button");
@@ -30,15 +29,4 @@ function createSquares() {
 
 createSquares();
 
-button.addEventListener("click", createSquares);
-=======
-const hexLetter = 'abcdef0123456789';
-
-for (let i = 0; i < 6; i++) {
-    let hex = "";
-    const colorNumber = Math.floor(Math.random() * hexLetter.length); 
-    hex += `#${hexLetter[colorNumber]}`;
-    console.log(hex);
-}
-
->>>>>>> b54d375f3c088fb244f79043840ef3bac0c41a6b
+button.addEventListener("click", createSquares); 
