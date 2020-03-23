@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background: lightblue;
+}
+
+.nav-item {
+    margin: 0 3em;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+
+.dropdown-menu {
+    background-color: black;
+    text-align: center;
+    padding: .5em;
+}
+
+.dropdown-item {
+    color: white;
+    padding: .5em;
+
+}
