@@ -2,31 +2,42 @@
     margin: 0;
     padding: 0;
 }
+
 .header {
     background-color: black;
     color: white;
     text-align: center;
 }
 
-.navbar {
+ul {
     background: lightblue;
 }
 
+
+li {
+    color: white;
+    padding: .5em;
+}
+
+
 .nav-item {
-    margin: 0 3em;
     font-size: 1.2rem;
     letter-spacing: 1px;
-}
+} 
 
 
 .dropdown-menu {
     background-color: black;
     text-align: center;
-    padding: .5em;
+    padding: 1.8em;
 }
 
-.dropdown-item {
+ .dropdown-item {
     color: white;
-    padding: .5em;
+    text-align: center;
+    padding: 0 1em;
+} 
 
+.nav {
+    justify-content: space-around;
 }
