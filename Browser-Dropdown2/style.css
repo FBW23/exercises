@@ -30,7 +30,6 @@ h1 {
 
 ul {
     list-style: none;
-
 }
 
 .nav {
@@ -43,14 +42,14 @@ ul {
 }
 
 .dropdown-menu {
-    display: none;
     flex-direction: column;
+    display: none;
 }
 
 li:hover,
 li:focus,
 a:hover,
-a:focus {
+a:focus {   
     background-color: black;
     color: lightblue;
 }
