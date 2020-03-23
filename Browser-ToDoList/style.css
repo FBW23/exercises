@@ -30,3 +30,7 @@ li{
 .cross{
     
 }
+
+.done {
+	text-decoration: line-through;
+}
