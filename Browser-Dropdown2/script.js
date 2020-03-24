@@ -18,3 +18,7 @@ const showBlock = function () {
 titles.forEach(title => {
     title.addEventListener('mouseover', showBlock);
 })
+
+window.addEventListener('mouseover', e => {
+    lists.style.display ='none';
+});
