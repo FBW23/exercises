@@ -1,6 +1,3 @@
-// Work on your tasks here
-
-
 $(document).ready(function(){
     $('.submit').on("click",function(){
       $('.modal').css("display","block")
@@ -8,20 +5,12 @@ $(document).ready(function(){
     $('.modal-close').on("click",function(){
       $('.modal').css("display","none")
     });
-  });
-  
-  $(document).ready(function() {
     $(".teapot").on("click", function() {
       $(".teapot").css("-webkit-transform", "rotate(20deg)");
     });
     $(".teapot").on("dblclick", function() {
       $(".teapot").css("-webkit-transform", "rotate(0)");
     });
-  });
-  
-  // changing text on hover
-  
-  $(document).ready(function() {
     $(".tea-desc").on("mouseenter ", function() {
       let text = "";
       let phrases = new Array(
@@ -36,4 +25,3 @@ $(document).ready(function(){
       $(event.target).text(text);
     });
   });
-  
