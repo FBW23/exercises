@@ -1,10 +1,11 @@
 $(document).ready(function(){
-    $('.submit').on("click",function(){
-      $('.modal').css("display","block")
-    });
-    $('.modal-close').on("click",function(){
-      $('.modal').css("display","none")
-    });
+  $('form').on("submit",function(){
+    event.preventDefault();
+    $('.modal').show();//display Div Modal Block
+  });
+  $('.modal-close').on("click",function(){
+    $('.modal').hide(); //hide Div modal
+  });
     $(".teapot").on("click", function() {
       $(".teapot").css("-webkit-transform", "rotate(20deg)");
     });
