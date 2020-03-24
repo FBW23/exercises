@@ -1,17 +1,17 @@
 $(document).ready(function(){
   $('.submit').on("click",function(){
-    $('.modal').css("display","block")
+    $('.modal').css("display","block")//display Div Modal Block
   });
   $('.modal-close').on("click",function(){
-    $('.modal').css("display","none")
+    $('.modal').css("display","none") //hide Div modal
   });
-  $(".teapot").on("click", function() {
-    $(".teapot").css("-webkit-transform", "rotate(20deg)");
+  $(".teapot").on("click", function() {//create function that rotate Tea Pot
+    $(".teapot").css("-webkit-transform", "rotate(20deg)"); // no empty space after ' rotate ()-this is wrong'
   });
   $(".teapot").on("dblclick", function() {
     $(".teapot").css("-webkit-transform", "rotate(0)");
   });
-  $(".tea-desc").on("mouseenter ", function() {
+  $(".tea-desc").on("mouseenter ", function() { 
     let text = "";
     let phrases = new Array(
       "Great tea for a cold night",
@@ -19,10 +19,10 @@ $(document).ready(function(){
       "Best tea from Brasil",
       "Strong black tea"
     );
-    let randomPhrase = Math.floor(Math.random() * phrases.length);
-    text += phrases[randomPhrase];
+    let randomPhrase = Math.floor(Math.random() * phrases.length);//take random Phrase from array
+    text += phrases[randomPhrase];//adding phrase to our variable
 
-    $(event.target).text(text);
+    $(event.target).text(text);        // event.target- used to the event where we action our function 
   });
 });
 
