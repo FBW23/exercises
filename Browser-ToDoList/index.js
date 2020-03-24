@@ -21,17 +21,28 @@ function addTask(task) {
   document.querySelector('.container-fluid').classList.remove('d-none');
   // checkbox.addEventListener('click', checked);
   let checkboxTick = document.querySelectorAll('.checkbox');
-  let label = document.querySelector('label');
-  console.log('checkboxTick.length ' + checkboxTick.length); //
+  let label = document.querySelectorAll('label');
   for (let i = 0; i < checkboxTick.length; i++) {
-    checkboxTick[i].addEventListener('change', function () { // here <-and to change the label of ithe e
-      if (checkboxTick[i].checked === true) { // 
-        label.classList.add('line-trough'); // hello error my old friend this should work :@  but why it was working with = line trough :D 
+    checkboxTick[i].addEventListener('change', function () {
+      if (checkboxTick[i].checked === true) { 
+        label[i].classList.add('line-through'); 
       } else { // 
-        label.classList.add = ('line-none'); // yeah but only for the first "li"
+        label[i].classList.add('line-none'); 
       }
     })
   }
+
+
+  let icon = document.querySelectorAll('.fas');
+  icon.forEach(element => {
+    element.addEventListener('click', function (e) {
+      // e.target.parentNode.parentNode.style.display = "none";
+      let singleElement = e.target.parentNode.parentNode;
+      singleElement.remove();
+    })
+  })
+}
+
   // checkboxTick.forEach(item => {
   //   item.addEventListener('change', function () { // 
   //     if (.checked === true) {
@@ -48,13 +59,3 @@ function addTask(task) {
   //     label.className = "line-none"; // 
   //   }
   // })
-
-  let icon = document.querySelectorAll('.fas');
-  icon.forEach(element => {
-    element.addEventListener('click', function (e) {
-      // e.target.parentNode.parentNode.style.display = "none";
-      let singleElement = e.target.parentNode.parentNode;
-      singleElement.remove();
-    })
-  })
-}

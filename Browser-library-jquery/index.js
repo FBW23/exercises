@@ -9,16 +9,17 @@ let randomQuote = () => {
  return phrases[randomNumber];
  }
 console.log(randomQuote()); 
-// perfect it works so now we just had to give them on the things and remove it with the toggle thing and .hover event 
-// can you push this :D to not get lost :D 
-// of course, sekunde
+
+
+
 // get html elements 
 const submit = $('.submit');
-console.log(submit);
 const modal = $('.modal'); 
 const html = $('html');
 const teapot = $('.image');
-console.log('teapot', teapot);
+const teaDescriptions = $('.tea-desc');
+console.log(teaDescriptions);
+
 // close modal
 
 const closeCross = $('.modal-close');
@@ -53,33 +54,25 @@ const rotateBack = () => {
 submit.on('click', showModal); 
 closeCross.on('click', hideModal); 
 teapot.on('click', rotateBack);
-
-
+teaDescriptions.forEach
 //        ~=Chat=~
 // *-*-*-* NICOLO *-*-*-*
-/*
-yes
+/** check
+again lagging as fuck
 */
 
 //======== PLAMEN ========
 
 /*
-I think we can put this on the top in place of the other things*/
-
-
+okey
 /* 
 ==== TASK ====  
 TOOLS :
+
 .hover()
-
-let randomQuote = () => {
-   // Array of Phrases
-let randomPhrase = ['Oh a cup of tea is always my cup of tea!', 'Rich in flavours', 'Great tea for a cold night', 'Tooling for a warm tea bag!'];
-
-// Random number 
-let randomNumber = Math.floor((Math.random() * randomPhrase.length));
-return randomPhrase[randomNumber];
-}
+.text()
+randomQuote() 
+<-
 --------------------
 * If the user hovers over the `.tea-desc` nested in the `selection__option`s, 
 the text should change to a random phrase, e.g. "Great tea for a cold night", 
