@@ -50,9 +50,15 @@ const randomText=()=>{
     const words=["Great tea for a cold night","Rich in flavours","If you don't like coffee"];
 
     const randomizer=Math.floor(Math.random()*3);
-    console.log(randomizer)
+    
+    const target = $( event.target );
+    console.log(target)
+    if ( target.is( description) ) {
+      target.text(words[randomizer]);
+    }
+   
 
-     description.text(words[randomizer])
+    //  description.text(words[randomizer])
    
 }
 
