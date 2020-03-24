@@ -9655,6 +9655,170 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 300px 300px 300px 300px 300px 300px 300px;
+  grid-template-areas: ". h . . . . . ." ". y . . . . . ." ". pi . . . . . ." ". b . . . . . . " ". pu . . . . . ." ". stry . . . . . ." ". strpi . . . . . ." ". strb . . . . . . " ". strpu . . . . . .";
+}
+
+h1 {
+  grid-area: h;
+}
+
+.text {
+  margin: 5%;
+}
+
+.color {
+  height: 180px;
+  width: 100%;
+}
+
+.color-v {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.color-v span {
+  height: 180px;
+  width: 100%;
+}
+
+.yellow {
+  grid-area: y;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin: 5%;
+}
+.yellow .color {
+  background: #ffc83f;
+}
+
+.pink {
+  grid-area: pi;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin: 5%;
+}
+.pink .color {
+  background: #fa5e5b;
+}
+
+.blue {
+  grid-area: b;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin: 5%;
+}
+.blue .color {
+  background: #1d508d;
+}
+
+.purple {
+  grid-area: pu;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin: 5%;
+}
+.purple .color {
+  background: #684e79;
+}
+
+.stryellow {
+  grid-area: stry;
+  height: 180px;
+  border: 1px solid black;
+  width: 15rem;
+  margin: 5%;
+}
+.stryellow .y1 {
+  background: #FAD61E;
+}
+.stryellow .y2 {
+  background: #FDC500;
+}
+.stryellow .y3 {
+  background: #F9E568;
+}
+
+.strpink {
+  grid-area: strpi;
+  height: 180px;
+  border: 1px solid black;
+  width: 15rem;
+  margin: 5%;
+}
+.strpink .pi1 {
+  background: #FF4749;
+}
+.strpink .pi2 {
+  background: #FE0001;
+}
+.strpink .pi3 {
+  background: #FC8581;
+}
+
+.strblue {
+  grid-area: strb;
+  height: 180px;
+  border: 1px solid black;
+  width: 15rem;
+  margin: 5%;
+}
+.strblue .b1 {
+  background: #333B8E;
+}
+.strblue .b2 {
+  background: #252B65;
+}
+.strblue .b3 {
+  background: #424AB9;
+}
+
+.strpurple {
+  grid-area: strpu;
+  height: 180px;
+  border: 1px solid black;
+  width: 15rem;
+  margin: 5%;
+}
+.strpurple .pu1 {
+  background: #6E3E7C;
+}
+.strpurple .pu2 {
+  background: #532F5B;
+}
+.strpurple .pu3 {
+  background: #8A4C99;
+}
+
+@media screen and (min-width: 568px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 300px 300px;
+    grid-template-areas: ". . h h" "y pi b pu" "stry  strpi strb strpu";
+  }
+=======
 .card {
   min-height: 150px;
   width: 18rem;
@@ -9694,6 +9858,7 @@ main {
   background: #fa5e5b;
   min-height: 150px;
   width: 18rem;
+>>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
 }
 <<<<<<< HEAD
 

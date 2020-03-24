@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Profile</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <form>
-      <fieldset>
-        <legend>Put your details here!</legend>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/vb.js"></script>
+</head>
 
-        <label>Put your name here</label>
-        <input type="text" />
+<body>
+  <form>
+    <fieldset>
+      <legend>Put your details here!</legend>
 
-        <label>Put your birthday here</label>
-        <input type="date" />
+      <label>Put your name here</label>
+      <input type="text" id="text" />
 
-        <label>Upload a photo of yours</label>
-        <input type="file" /><br />
+      <label>Put your birthday here</label>
+      <input type="date" id="date" />
 
-        <label>Pick your favorite color</label>
-        <input id="primaryColor" type="color" /><br />
+      <label>Upload a photo of yours</label>
+      <input type="file" id="photo" /><br />
 
-        <label>Pick your secondary color</label>
-        <input id="secondaryColor" type="color" /><br />
+      <label>Pick your favorite color</label>
+      <input type="color" id="favColor" /><br />
 
-        <textarea
-          placeholder="Write a paragraph about yourself"
-          maxlength="140"
-        ></textarea>
-        <p class="countermessage">Type all you need in 140 characters</p>
+      <label>Pick your secondary color</label>
+      <input type="color" id="secColor" /><br />
 
-        <label>Pick your Skills: </label><br />
+      <textarea placeholder="Write a paragraph about yourself" maxlength="140" id="textarea"></textarea>
+      <p class="countermessage">Type all you need in 140 characters</p>
 
-        <li><input type="checkbox" />JavaScript</li>
-        <li><input type="checkbox" />Ruby</li>
-        <li><input type="checkbox" />Python</li>
-        <li><input type="checkbox" />Java</li>
-        <li><input type="checkbox" />PHP</li>
-      </fieldset>
-    </form>
+      <label>Pick your Skills: </label><br />
 
-    <script src="js/index.js"></script>
-  </body>
+      <li><input type="checkbox" class="checkbox" id="js" />JavaScript</li>
+      <li><input type="checkbox" class="checkbox" id="ruby" />Ruby</li>
+      <li><input type="checkbox" class="checkbox" id="python" />Python</li>
+      <li><input type="checkbox" class="checkbox" id="java" />Java</li>
+      <li><input type="checkbox" class="checkbox" id="php" />PHP</li>
+    </fieldset>
+    <input type="button" value="Submint CV" id="submit">
+    <input type="reset" value="Reset form" id="reset">
+  </form>
+
+
+  <div id="preview">
+    <p id="close">X</p>
+    <p id="textValue"></p>
+    <p id="dateValue"></p>
+    <p id="fileValue"></p>
+    <p id="favColorValue"></p>
+    <p id="secColorValue"></p>
+
+    <p id="photoValue"></p>
+
+    <div class="languages">
+      <p id="languages"></p>
+      <p id="jsValue"></p>
+      <p id="rubyValue"></p>
+      <p id="javaValue"></p>
+      <p id="pythonValue"></p>
+      <p id="phpValue"></p>
+    </div>
+
+
+
+
+  </div>
+
+
+</body>
+
 </html>

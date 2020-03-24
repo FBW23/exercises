@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    height:100vh;
+}
+
+input{
+    border-radius: 10px;
+}
+
+input,header{
+    text-align: center;
+    
+}
+
+
+header{
+    background-color: yellow;
+    height:25vh;
+    margin-bottom:10vh
+}
+
+h1{
+    padding-top:7vh;
+}
+
+h2{
+    margin-bottom:2vh;
+}
+
+.line{
+    display:flex;
+    margin-top:2vh;
+    margin-bottom:2vh;
+}
+
+p{
+    margin-left:1vw;
+    margin-right:1vw;
+       
+}
+
+section,h2,h3{
+    margin-left:12.5vw;
+    margin-right:12.5vw
+}
+
+input{
+    height:8vh;
+    width:25vw;
+    
+}
+

@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(to right, green, blue, red);
+}
+
+div {
+  background: black;
+  width: 250px;
+}
+div:hover {
+  background: white;
+}
+div h1 {
+  color: yellow;
+}
+div h1:hover {
+  color: blue;
+}
+div h1 span {
+  color: red;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
