@@ -1,0 +1,68 @@
+
+
+body {
+    background-image: url(/Browser-Dropdown/john.jpg);
+   
+}
+h1 {
+    opacity:1;
+    background-color: cadetblue;
+    width:100%;
+    height:100px;
+    margin-top:-10px;
+    margin-bottom: -10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: cornsilk;
+    text-shadow: 2px 2px 2px black ;
+    line-height: 100px;
+}
+ 
+
+.nav {
+    display: flex;
+    background-color: #009578;
+  }
+  
+  .nav * {
+    font: 500 15px sans-serif;
+  }
+  
+  .nav__link, .nav__link  {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #009578;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.2s;
+
+  } 
+  .nav__link:hover {
+    background-color: #0a0a0a;
+    color:#009578;
+  }
+  
+  .nav__link-group {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden; 
+    transform: translateY(-100px); 
+  }
+  
+  .nav__link:hover .nav__link-group {
+    opacity: 1;
+    /* visibility: visible; */
+    transform: translateY(0px);
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s; 
+    
+  } 
+   
