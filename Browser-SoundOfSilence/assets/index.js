@@ -41,6 +41,8 @@ for (let i = 0; i < 50; i++) {
     type.innerText = wrapperType;
     date.innerText = releaseDate;
 
+    
+
     // append here 
     td.append(img);
     row.append(td);
