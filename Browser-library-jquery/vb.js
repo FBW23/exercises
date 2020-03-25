@@ -7,62 +7,48 @@
 
 const form = $("#form");
 const button = $(".submit mt-2");
-
+const modal = $(".modal");
 const modalFunction = () => {
     event.preventDefault();
-    const modal = $(".modal");
+    
     modal.show();
-    closeIt = () => {
-        modal.hide()
-    };
-    $("#closing").click(closeIt);
-}
 
+}
+const closeIt = () => {
+    modal.hide();
+};
+$("#closing").click(closeIt);
 form.on("submit", modalFunction);
 
 // * If the user clicks the teapot image at the top of the page, the teapot should rotate by 20degrees. If the user clicks the teapot again, the image should pop back into place.
 // ![alt text](./images/teapot.png "Modal")
 
 
-const teapot=$(".teapot");
+const teapot = $(".teapot");
 
-const turnIt=()=>{
-   // teapot.rotate(20);
-   teapot.attr("class","teapot-rotate");
+const turnIt = () => {
 
+    teapot.toggleClass("teapot-rotate");
 
-   const turnItBack=()=>{
-    teapot.attr("class","teapot");
-   }
-   teapot.click(turnItBack)
-}
+};
 
 
- teapot.click(turnIt)
+teapot.on("click",turnIt);
 
 // * If the user hovers over the `.tea-desc` nested in the `selection__option`s, the text should change to a random phrase, e.g. "Great tea for a cold night", "Rich in flavours" etc.
 // ![alt text](./images/tea-descriptions.png "Modal")
 
 
-const description=$(".tea-desc");
+const description = $(".tea-desc");
 
-const randomText=()=>{
-    const words=["Great tea for a cold night","Rich in flavours","If you don't like coffee"];
+const randomText = () => {
+    const words = ["Great tea for a cold night", "Rich in flavours", "If you don't like coffee"];
 
-    const randomizer=Math.floor(Math.random()*3);
-    
-    const target = $( event.target );
-    console.log(target)
-    if ( target.is( description) ) {
-      target.text(words[randomizer]);
-    }
-   
+    const randomizer = Math.floor(Math.random() * words.length);
 
-    //  description.text(words[randomizer])
-   
+    const target = $(event.target);
+    target.text(words[randomizer]);
 }
-
-
 
 description.hover(randomText);
 
