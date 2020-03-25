@@ -14,8 +14,8 @@
   }));
   
   
-  console.log(document.querySelector('h1'));
-  document.querySelector('h1').append(data);
+  
+  document.querySelector('body').append(data);
   
   
   
