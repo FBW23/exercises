@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Handlebars: emojis</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="index.js" defer></script>
+    <script src="julia.js" defer></script>
+
+    <script id="emoji-template" type="text/x-handlebars-template">
+      <dl>
+     {{#each this}}
+         <dd><img src='{{this}}'>{{@key}}</dd>
+    {{/each}}
+ </dl>  
+    </script>
 </head>
 <body>
     <section id="output"></section>
