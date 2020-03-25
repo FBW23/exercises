@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Handlebars 01</title>
-    <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.js"></script>
     <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <section id="output"></section>
 
+    <script id="card-template" type="text/x-handlebars-template">
+        <div class="card">
+            <h1>{{ firstName }} {{ lastName }}</h1>
+            <p><label>Position: </label>{{ jobTitle }}</p>
+            <p><label>Joined: </label>{{ startDate }}</p>
+            <p><label>Birthday: </label>{{ birthday }}</p>
+            <p><label>Reports to: </label>{{ manager.firstName }} {{ manager.lastName }}</p>
+        </div>
+    </script>
 </body>
 </html>
