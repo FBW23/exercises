@@ -1,0 +1,50 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: grey;
+}
+
+img {
+    width: 60rem;
+}
+
+.bold, h1 {
+    font-weight: bold;
+    color: grey;
+    font-size: 30px;
+}
+
+.content-placeholder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: grey;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+.visuals-placeholder {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+.content-placeholder {
+    padding-bottom: 5rem;
+}
