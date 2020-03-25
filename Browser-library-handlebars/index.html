@@ -16,8 +16,9 @@
     <script>
         // HTML structure       
         const structure = `
-        <h1>{{name}}</h1> 
         <img src='{{image}}'> 
+        <h1>{{name}}: Fan Page</h1> 
+        <p class='albums'>Albums:</p>
         <ul>
             {{#each albums}} 
                 <li>
@@ -25,9 +26,9 @@
                 </li>
             {{/each}}
         </ul>
-        <p>Find out more<a href='{{wikipedia}}'> here </a> !</p>
+        <p class="more-info">Find out more<a href='{{wikipedia}}'> here </a> !</p>
         `;
-
+        // Compile the html structure
         let template = Handlebars.compile(structure);
         
         // Object with band info
@@ -38,7 +39,7 @@
             wikipedia: 'https://en.wikipedia.org/wiki/Disturbed_(band)'
         })
         
-        const container = document.getElementById('container');
+        const container = document.querySelector('#container');
 
         container.innerHTML += bandData;
 
