@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="best.css">
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="bests.js" defer></script>
+      <script id="address-template" type="text/x-handlebars-template">
+        <p><strong>{{bandName}}</strong> is a band from {{country}} and they have {{albums}} albums.</p>
+    </script>
+    <script id="personal-template" type="text/x-handlebars-template">
+        <p>Some fo their most famous songs .</p>
+    </script>
+    <script id="ul-template" type="text/x-handlebars-template">
+        <ul class="song_list">
+            {{#each song}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul> 
+    </script>
+</head>
+
+<body>
+    <h1></h1>
+    <div><img src="ghost1.jpg" alt="Ghost"></div>
+    <!--Your new content will be displayed in here-->
+    <div class="content-placeholder"></div>
+    <div class="personal-placeholder"></div>
+    <div class="ul-placeholder"></div>
+    <script src="best.js"></script>
+</body>
+
+
+
+
+</html>
