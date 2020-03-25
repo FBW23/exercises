@@ -8,7 +8,7 @@ const person = {
         firstName: 'Big',
         lastName: 'Boss'
     }
-}
+};
 let card = `
 <div class="card">
     <h1>{{ firstName }} {{ lastName }}</h1>
@@ -17,9 +17,10 @@ let card = `
     <p><label>Birthday: </label>{{ birthday }}</p>
     <p><label>Reports to: </label>{{ manager.firstName }} {{ manager.lastName }}</p>
 </div>
-`
-console.log(card)
+`;
+console.log(card);
+
 let template = Handlebars.compile(card);
 const personTemplate = template(person);
 
-document.getElementById('output').innerHTML = personTemplate
+document.getElementById('output').innerHTML = personTemplate;
