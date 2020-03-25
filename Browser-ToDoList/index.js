@@ -19,6 +19,9 @@ const myFunction = () => {
 
         task.classList.add("task");
         done.classList.add("crossing");
+
+
+
         closeButton.classList.add("closing");
 
 

@@ -20,7 +20,8 @@
     flex-direction: column;
 }
 
-.listItem,.done {
+.listItem,
+.done {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,9 +41,9 @@
 }
 
 .done {
-   text-decoration: line-through;
+    text-decoration: line-through;
 }
 
-.crossing{
+.crossing {
     cursor: pointer;
 }

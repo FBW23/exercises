@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url(/images/missy-elliott-mtv-networks-s-580x384.jpg);
+    width: 100%;
+    height: 380px;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 180px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.ul-placeholder {
+    margin-left: 23px;
+}
+
+.content-placeholder {
+    margin-left: 20px;
+}
