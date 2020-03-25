@@ -36,3 +36,18 @@ body {
 .line-none {
     text-decoration: none;
 }
+
+.li-container {
+    width: 8rem;
+    height: 10rem;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

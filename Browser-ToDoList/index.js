@@ -16,7 +16,7 @@ button.addEventListener('click', submit);
 function addTask(task) {
   let ul = document.querySelector('ul');
   let li = document.createElement('li');
-  li.innerHTML = `<span class="delete"><i class="fas fa-times"></i></span><input class='checkbox' type="checkbox"><label>${task}</label>`; //<i class="fas fa-times"></i>
+  li.innerHTML = `<span class="delete"><i class="fas fa-times"> close </i></span><input class='checkbox' type="checkbox"> check as finished <label>${task}</label>`; //<i class="fas fa-times"></i>
   ul.appendChild(li);
   document.querySelector('.container-fluid').classList.remove('d-none');
   // checkbox.addEventListener('click', checked);
