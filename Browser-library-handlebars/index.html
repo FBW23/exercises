@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disturbed Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- <script src="data.js" defer></script>
+    <script src="script.js" defer></script> -->
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+    <script>
+        // HTML structure       
+        const structure = `
+        <h1>{{name}}</h1> 
+        <img src='{{image}}'> 
+        <ul>
+            {{#each albums}} 
+                <li>
+                    {{this}}
+                </li>
+            {{/each}}
+        </ul>
+        <p>Find out more<a href='{{wikipedia}}'> here </a> !</p>
+        `;
+
+        let template = Handlebars.compile(structure);
+        
+        // Object with band info
+        const bandData = template({
+            name: 'Disturbed',
+            image: 'https://wallpapermemory.com/uploads/196/disturbed-wallpaper-full-hd-1080p-269572.jpg',
+            albums: ['The Sickness 2000', 'Believe 2002', 'Ten Thousand Fists 2005', 'Indestructible 2008', 'Asylum 2010', 'Immortalized 2015', 'Evolution 2018'],
+            wikipedia: 'https://en.wikipedia.org/wiki/Disturbed_(band)'
+        })
+        
+        const container = document.getElementById('container');
+
+        container.innerHTML += bandData;
+
+    </script>
+</body>
+</html>
