@@ -1,0 +1,31 @@
+
+body{
+    background:black;
+    color:white;
+    text-align: center;
+}
+
+
+
+header{
+    background:url("images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height:35vh;
+
+}
+
+.trackContainer{
+    margin-top:15vh;
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.trackBox{
+    display:flex;
+    justify-content: space-between;
+   
+    width:16vw;
+}
