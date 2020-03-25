@@ -1,30 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
-    const hits = {
-        tracks: [
-            "Get Ur Freak On 2001",
-            "One Minute Man 2001",
-            "Gossip Folks 2002",
-            "Work It 2002",
-            "Throw It Back 2019"
-        ]
-    };
-
-    const theUlScript = document.querySelector("#ul-template").innerHTML;
-    const theUl = Handlebars.compile(theUlScript);
-    const theCompiledUl = theUl(hits);
-    document.querySelector('.ul-placeholder').innerHTML = theCompiledUl;
-
+// Object with artist info
     const artist = {
-        "firstName": "Missy",
-        "lastName": "Elliot",
+        name: "Missy Elliot",
+        image: 'images/missy-elliott.jpg',
+        albums: ['Supa Dupa Fly 1997', 'Da Real World 1999', 'Miss E... So Addictive 2001', 'Under Contruction 2002', 'This is not a test 2003', 'The Cookbook 2005'],
+        wikipedia: 'https://en.wikipedia.org/wiki/Missy_Elliott'
     };
 
-    const thePersonalScript = document.querySelector("#personal-template").innerHTML;
-    const thePersonal = Handlebars.compile(thePersonalScript);
-    const theCompiledPersonal = thePersonal(artist);
-    document.querySelector('.content-placeholder').innerHTML = theCompiledPersonal;
+    // get the container html element by its ID
+    const container = document.querySelector('#container');
 
+     // HTML structure       
+    const structure = `
+   <img src='{{image}}'> 
+   <h1>{{name}}: Fan Page</h1> 
+   <p class='discography'>Discography:</p>
+   <ul>
+       {{#each albums}} 
+           <li>
+               {{this}}
+           </li>
+       {{/each}}
+   </ul>
+   <p class="more-info">Find out more<a href='{{wikipedia}}'> here </a></p>
+   `;
+
+    // Compile the html structure
+    let template = Handlebars.compile(structure);
+    // put bandData inside the template function;
+    const templateArtist = template(artist);
+    // add the content of the compiled object inside the container
+    container.innerHTML += templateArtist;
 
 });

@@ -8,33 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script src="handlebars.js" defer></script>
-
-    <script id="personal-template" type="text/x-handlebars-template">
-        <p>{{firstName}} {{lastName}} greatest hits:</p>
-    </script>
-
-    <script id="ul-template" type="text/x-handlebars-template">
-        <ul class="artist-hits">
-            {{#each tracks}}
-                <li>{{this}}</li>
-            {{/each}}
-        </ul> 
-    </script>
-    <script id="address-template" type="text/x-handlebars-template">
-        <p>Find out more {{here}}.</p>
-    </script>
+    <script src="handlebars.js"></script>
 </head>
 
 <body>
-    <header></header>
-    <h1>Missy Elliot Fan Page</h1>
-
-    <div class="content-placeholder"></div>
-    
-    <div class="ul-placeholder"></div>
-
-    <div class="another-placeholder"></div>
+    <div id="container"></div>
 
 </body>
 
