@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     display: flex;
     justify-content: space-around;
@@ -70,12 +71,67 @@ nav {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+=======
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.dropbtn {
+    width: 240px;
+    background-color: rgb(233, 157, 35);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: rgb(223, 194, 65);
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #e0e0e0;
+    width: 240px;
+}
+
+.dropdown-list a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: rgb(204, 204, 204);
+>>>>>>> 9560c2a3e43e6373911307dd695b5a8cbd8b3d5f
 }
 
 .show {
     display: block;
 }
 
+<<<<<<< HEAD
 h1 {
     color: #ddd;
 }
+=======
+.header {
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 15px;
+} 
+>>>>>>> 9560c2a3e43e6373911307dd695b5a8cbd8b3d5f
