@@ -1,0 +1,14 @@
+img{
+    width: 80%;
+    height: 500px;
+    padding-left: 190px;
+}
+
+p{
+    font-size: 30px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+}

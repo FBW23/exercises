@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="handle.js" defer></script>
+    <!-- <script>
+        // compile the template
+        var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+        // execute the compiled template and print the output to the console
+        console.log(template({
+            doesWhat: "rocks!"
+        }));
+    </script> -->
+    <script id="hits-template" type="text/x-handlebars-template">
+        <p> {{band}}'s Greatest Hits!</p>
+    </script>
+    <script id="personal-template" type="text/x-handlebars-template">
+        <p></p>
+    </script>
+    <script id="ul-template" type="text/x-handlebars-template">
+        <ul class="people_list">
+            {{#each people}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul> 
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="pinkfloyd.jpg" alt="pink floyd cover">
+    </header>
+    <h1></h1>
+    <!--Your new content will be displayed in here-->
+    <div class="content-placeholder"></div>
+    <div class="personal-placeholder"></div>
+    <div class="ul-placeholder"></div>
+</body>
+
+</html>
