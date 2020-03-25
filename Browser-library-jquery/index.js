@@ -1,9 +1,10 @@
 $(document).ready(function(){
-  $('.submit').on("click",function(){
-    $('.modal').css("display","block")//display Div Modal Block
+  $('form').on("submit",function(){
+    event.preventDefault();
+    $('.modal').show();//display Div Modal Block
   });
   $('.modal-close').on("click",function(){
-    $('.modal').css("display","none") //hide Div modal
+    $('.modal').hide(); //hide Div modal
   });
   $(".teapot").on("click", function() {//create function that rotate Tea Pot
     $(".teapot").css("-webkit-transform", "rotate(20deg)"); // no empty space after ' rotate ()-this is wrong'

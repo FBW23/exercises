@@ -26,7 +26,7 @@ function previous(element) {
         break;
     }
   }
-
+document.querySelector
 
 
 //   let checkNationality = document
