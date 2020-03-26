@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Profile</title>
     <link rel="stylesheet" href="css/style.css" />
+  
   </head>
 
   <body>
-    <form>
+    <form class="form">
       <fieldset>
         <legend>Put your details here!</legend>
 
@@ -20,7 +21,7 @@
         <input type="date" />
 
         <label>Upload a photo of yours</label>
-        <input type="file" /><br />
+        <input type="file" src="./../Browser-ProfilePage/"/> <br />
 
         <label>Pick your favorite color</label>
         <input id="primaryColor" type="color" /><br />
@@ -41,8 +42,15 @@
         <li><input type="checkbox" />Python</li>
         <li><input type="checkbox" />Java</li>
         <li><input type="checkbox" />PHP</li>
+
+        <input type="button" value="Create CV"> 
+        <input type="button" id="resetButton" value="Reset form">
       </fieldset>
     </form>
+
+    <div class="hidden-container">
+<h1></h1>
+    </div>
 
     <script src="js/index.js"></script>
   </body>

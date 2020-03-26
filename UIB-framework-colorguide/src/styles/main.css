@@ -9655,9 +9655,27 @@ h3 {
     border-color: #dee2e6;
   }
 }
+<<<<<<< HEAD
+h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  min-height: 150px;
+  width: 15rem;
+=======
 .card {
   min-height: 150px;
   width: 18rem;
+<<<<<<< HEAD
+>>>>>>> 12aeb212ce2cb78d9dbbd5dc45d678cef5b512ec
+=======
 <<<<<<< HEAD
   margin-bottom: 30px;
 }
@@ -9677,6 +9695,7 @@ main {
   margin: auto 0;
 =======
 >>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .card-body {
@@ -9687,13 +9706,110 @@ main {
 .yellow {
   background: #ffc83f;
   min-height: 150px;
+<<<<<<< HEAD
+  width: 15rem;
+=======
   width: 18rem;
+>>>>>>> 12aeb212ce2cb78d9dbbd5dc45d678cef5b512ec
 }
 
 .pink {
   background: #fa5e5b;
   min-height: 150px;
+<<<<<<< HEAD
+  width: 15rem;
+}
+
+.blue {
+  background: #1d508d;
+  min-height: 150px;
+  width: 15rem;
+}
+
+.purple {
+  background: #684e79;
+  min-height: 150px;
+  width: 15rem;
+}
+
+.yellow1 {
+  background: #FFB900;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.yellow2 {
+  background: #ffc83f;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.yellow3 {
+  background: #FFF637;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.color-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pink1 {
+  background: #FA5A52;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.pink2 {
+  background: #fa5e5b;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.pink3 {
+  background: #E87490;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.blue1 {
+  background: #0B2F8F;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.blue2 {
+  background: #1d508d;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.blue3 {
+  background: #396D8F;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.purple1 {
+  background: #59317A;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.purple2 {
+  background: #684e79;
+  min-height: 150px;
+  width: 5rem;
+}
+
+.purple3 {
+  background: #A873EB;
+  min-height: 150px;
+  width: 5rem;
+=======
   width: 18rem;
+>>>>>>> 12aeb212ce2cb78d9dbbd5dc45d678cef5b512ec
 }
 <<<<<<< HEAD
 

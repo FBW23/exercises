@@ -29,9 +29,7 @@
                 impedit repellendus quod veniam illo harum iusto, tenetur debitis vel voluptatibus facere? Omnis soluta
                 dolore nobis!</p>
         </section>
-        <img class="image teapot"
-            src="teapot.png"
-            alt="Tea Pot">
+        <img class="image teapot" src="teapot.png" alt="Tea Pot">
         <section class="intro__about m-1">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsum facere excepturi. Dolor magni
                 dolores, officiis accusantium doloribus itaque libero perferendis? Incidunt et odio, officiis similique
@@ -42,21 +40,22 @@
     <main class="main">
         <section class="selection d-flex flex-row flex-wrap justify-content-around align-items-start">
             <section class="selection__option d-flex flex-column align-items-center justify-content-around m-2">
-                <img class="selection__image"
+                <img class="selection__image" 
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6MtC9zmO-sSEqoj4nKhSrrgDKafYGSfk6afyWRtbQLDonw3CLDQ"
                     alt="Tea Option">
-                <p class="tea-desc border-top border-warning pt-3">Tea Option 1</p>
+                <p id="teaDesc1" class="tea-desc border-top border-warning pt-3">English Breakfast</p>
             </section>
             <section class="selection__option d-flex flex-column align-items-center justify-content-around m-2">
-                <img class="selection__image" src="https://www.cfteas.com/images/185/225/packets1.jpg?h=97c71140"
+                <img  class="selection__image" 
+                src="https://www.cfteas.com/images/185/225/packets1.jpg?h=97c71140"
                     alt="Tea Option">
-                <p class="tea-desc border-top border-warning pt-3">Tea Option 2</p>
+                <p id="teaDesc2" class="tea-desc border-top border-warning pt-3">Taous</p>
             </section>
             <section class="selection__option d-flex flex-column align-items-center justify-content-around m-2">
                 <img class="selection__image"
                     src="http://content.oppictures.com/Master_Images/Master_Variants/Variant_1500/122820.JPG"
                     alt="Tea Option">
-                <p class="tea-desc border-top border-warning pt-3">Tea Option 3</p>
+                <p id="teaDesc3" class="tea-desc border-top border-warning pt-3">Lipton</p>
             </section>
         </section>
     </main>
@@ -75,7 +74,7 @@
                 <!-- <input type="submit" class="submit mt-2"> -->
 
             </form>
-            <input type="submit" class="submit m-2">
+            <input type="submit" id="submit" class="submit m-2">
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -101,7 +100,7 @@
     </footer>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

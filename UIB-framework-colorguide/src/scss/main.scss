@@ -3,6 +3,31 @@
 
 @mixin colorbox() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+    min-height: 150px;
+    width: 15rem;
+}
+
+@mixin colorbox2() {
+    min-height: 150px;
+    width: 5rem;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    @include colorbox()
+=======
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 =======
     // single source of thruth 
 >>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
@@ -35,7 +60,11 @@ main{
 =======
 .card {
     @include colorbox();
+<<<<<<< HEAD
+>>>>>>> 12aeb212ce2cb78d9dbbd5dc45d678cef5b512ec
+=======
 >>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .card-body {
@@ -67,11 +96,14 @@ main{
     background: #684e79;
     @include colorbox()
 }
+<<<<<<< HEAD
+=======
 .hallo{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
 }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 
 .yellow1 {
     background: #FFB900;
@@ -89,6 +121,55 @@ main{
     @include colorbox2()
 }
 
+<<<<<<< HEAD
+.color-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.pink1 {
+    background: #FA5A52;
+    @include colorbox2()
+}
+
+.pink2 {
+    background: #fa5e5b;
+    @include colorbox2()
+}
+
+.pink3 {
+    background: #E87490;
+    @include colorbox2()
+}
+
+.blue1 {
+    background: #0B2F8F;
+    @include colorbox2()
+}
+
+.blue2 {
+    background: #1d508d;
+    @include colorbox2()
+}
+
+.blue3 {
+    background: #396D8F;
+    @include colorbox2()
+}
+
+.purple1 {
+    background: #59317A;
+    @include colorbox2()
+}
+.purple2 {
+    background: #684e79;
+    @include colorbox2()
+}
+.purple3 {
+    background: #A873EB;
+    @include colorbox2()
+=======
 .blue1{
     background: blue;
     @include colorbox2()
@@ -136,6 +217,7 @@ main{
  
 
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 =======
     @include colorbox();
 }
@@ -144,5 +226,10 @@ main{
 .pink {
     background: #fa5e5b;
     @include colorbox();
+<<<<<<< HEAD
+>>>>>>> 12aeb212ce2cb78d9dbbd5dc45d678cef5b512ec
+}
+=======
 }
 >>>>>>> fda4ecdb704719006c5f76bf51ed02b52887b181
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

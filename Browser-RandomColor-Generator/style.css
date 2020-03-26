@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+body{
+    background: white;
+}
+
+=======
 * {
     font-size: large;
     text-align: center;
@@ -55,3 +61,4 @@ h2 {
 #numFields:focus {
     outline: none;
 } 
+>>>>>>> b54d375f3c088fb244f79043840ef3bac0c41a6b

@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+#nav {
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+}
+ li a:hover {
+     background-color: blue;
+ }
+=======
 * {
     margin: 0;
     box-sizing: 0;
@@ -65,3 +77,4 @@ ul li {
         transform: translateX(100%);
     }
 }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

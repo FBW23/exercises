@@ -1,2 +1,61 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+$colornav: #016690;
+$colorcard: #e0ddb2;
+$border: 1px solid black;
+$primary-font: "Franklin Gothic Medium",
+"Arial Narrow",
+Arial,
+sans-serif;
+
+
+.card {
+    height: 10%;
+}
+
+.card1 {
+    background-color: $colorcard;
+}
+
+.card-body1 {
+    padding: 20px;
+}
+
+nav li {
+    color: $colornav;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+    text-align: center;
+    float: right;
+}
+
+footer {
+    background-color: $colornav;
+    padding: 18px
+}
+
+footer li {
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: inline;
+    text-align: center;
+}
+
+.asides {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-column-gap: 15px;
+   padding: 10px;
+    
+}
+
+aside {
+    border: $border;
+    border-color: $colorcard;
+    padding: 5px;
+}

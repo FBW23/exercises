@@ -1,12 +1,27 @@
+<<<<<<< HEAD
+h1, h2{
+    text-align: center;
+=======
 h1,
 h2 {
     text-align: center;
      text-shadow: 10px 10px 10px yellow;
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 p {
     text-align: justify;
+<<<<<<< HEAD
+}
+ 
+.arabic {
+    direction: rtl;
+}
+
+i {
+    font-size: 6em; 
+=======
     text-transform:lowercase;
    
 }
@@ -15,4 +30,5 @@ p {
     text-align: right;
     text-decoration: underline;
    
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

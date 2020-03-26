@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+const h1 = document.querySelector("h1");
+console.log(h1);
+const header = h1.closest("header");
+console.log(header);
+header.classList.add("borderGray");
+
+//If the .info section contains an .info-package, select all package-titles 
+//and give the title's previous element a border. 
+const info = document.querySelector(".info");
+console.log(info);
+const packageTitles = info.querySelectorAll(".package-title");
+console.log(packageTitles);
+
+packageTitles.forEach(packageTitle => {
+    if (packageTitle.matches(".info-package")) {
+        console.log(packageTitle)
+        packageTitle.previousSibling().classList.add("imgBorder")
+    }
+
+});
+=======
 // Select the header that is the closest to the first h1 heading. Give the header a solid border of 5px. 
 const h1 = document.querySelector('h1');
 console.log(h1);
@@ -42,3 +64,4 @@ for (let i = 0; i < children.length; i++) {
     newLi.innerText = content;
     siteMap.append(newLi);
 }
+>>>>>>> 98dc5440db84ac10902c5b49aceb6201320b1031

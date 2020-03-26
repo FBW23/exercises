@@ -1,13 +1,24 @@
 //Get the children of the element with id wrapper and print them to the console as a list.
 
+<<<<<<< HEAD
+const wrapper = document.querySelector('#wrapper');
+console.log(wrapper);
+const children = wrapper.children;
+console.log(children)
+=======
 const wrapper = document.getElementById('wrapper');
 console.log(wrapper);
 const children = wrapper.children;
 console.log(children);
+>>>>>>> b3fd307a8aa773b3f1d01a56bfe63bdb9906f67a
 console.log(children.length);
 
 for (let i = 0; i < children.length; i++) {
     const element = children[i];
+<<<<<<< HEAD
+    console.log(element.children);
+}
+=======
     //console.log(element.children, element.children.length);
     // second method of counting the children? 
     console.log(element.children, element.childElementCount)
@@ -45,3 +56,4 @@ function highestNumberOfClasses(node) {
 }
 // Call the function
 console.log(highestNumberOfClasses(children));
+>>>>>>> b3fd307a8aa773b3f1d01a56bfe63bdb9906f67a

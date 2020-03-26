@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+
+.box1 {
+  font-size: 1.2em;
+  width: 45%;
+  display: inline-block;
+}
+
+.box2 {
+  font-size: 1.2em;
+  width: 45%;
+  display: inline-block;
+}
+=======
 h1{
     color: brown;
 }
@@ -40,3 +58,4 @@ header{
 .section1 h1{
     text-decoration: underline;
 }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

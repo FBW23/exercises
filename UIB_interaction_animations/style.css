@@ -4,6 +4,21 @@ body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+<<<<<<< HEAD
+li {
+    display: inline-block;
+    background: turquoise;
+    padding: 7px;
+}
+
+ li:hover {
+    background: red;
+    animation-name: kenburns-top;
+    animation-duration: 1s;
+}
+
+@keyframes kenburns-top {
+=======
 nav ul li{
     
     display: inline-block;
@@ -35,6 +50,7 @@ nav ul li{
   } */
 
   @keyframes kenburns-top {
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
     0% {
       -webkit-transform: scale(1) translateY(0);
               transform: scale(1) translateY(0);
@@ -48,6 +64,8 @@ nav ul li{
               transform-origin: top;
     }
   }
+<<<<<<< HEAD
+=======
 
   li:hover{
       animation-name: kenburns-top;
@@ -57,3 +75,4 @@ nav ul li{
   }
 
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

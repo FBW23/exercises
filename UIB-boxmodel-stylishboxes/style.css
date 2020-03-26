@@ -13,6 +13,26 @@ body{
 }
 
 
+<<<<<<< HEAD
+.fake-box {
+    position: relative;
+<<<<<<< HEAD
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    font-size: 12px;
+    margin: 23px
+=======
+    border: none;
+    box-shadow: none;
+    display: block;
+    height: 200px;
+    padding: 40px; 
+>>>>>>> 95c9f1ba6d761cf181891588a0974e7b200e9b90
+}
+=======
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 
 .fake-box:before, .fake-box:after {
     content:"";
@@ -20,12 +40,35 @@ body{
     width: 310px;
     border: 1px solid black;
     position: absolute;
+<<<<<<< HEAD
+=======
     width: 330px;
     height: 160px;
+>>>>>>> 95c9f1ba6d761cf181891588a0974e7b200e9b90
 
 }
 
 .fake-box:after {
+<<<<<<< HEAD
+    content: "";
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    top: -15px;
+    left: -15px;
+}
+
+.info-box {
+    font-size: 12px;
+    display: inline-block;
+    width: 25%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    margin: 20px
+}
+=======
     
     left: 20px;
     top: 20px;
@@ -44,3 +87,4 @@ body{
 .article1{
     padding: 30px;
 }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

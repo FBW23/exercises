@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+        <header>Forms</header>
+    <form>
+        <fieldset>
+            <legend>Personal data</legend>
+
+            <label for="fn"><strong>First Name</strong></label><br>
+            <input type="text" name="firstName" id="fn" required><br><br>
+
+            <label for="ln"><strong>Lastname</strong></label><br>
+            <input type="text" name="lastName" id="ln" required><br><br>
+
+            <label for="zc"><strong>Zipcode</strong></label><br>
+            <input type="number" name="zipC ode" id="zc" required><br><br>
+
+            <label for="city"><strong>City</strong></label><br>
+            <input type="text" name="city" id="city" required><br><br>
+
+            <label for="tel"><strong>Phone</strong></label><br>
+            <input type="tel" name="phone" pattern="[0-9]{4}-[0-9]{8}"><br><br>
+
+            <label for="email"><strong>Email</strong></label><br>
+            <input type="email" name="email" placeholder="email@email.com"><br><br>
+
+            <label for="msg"><strong>Comments</strong></label><br>
+            <textarea name="comments" id="msg" placeholder="Write your message..."></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Products</legend>
+
+            <label for="webDesign"><strong>Web Design</strong></label><br>
+            <input type="radio" name="webDesign" value="individual" id="individual" checked><label>Individual</label>
+            <input type="radio" name="webDesign" value="template" id="template"> <label>Template</label><br><br>
+
+            <label for="webDev"><strong>Web Development</strong></label><br>
+            <input type="checkbox" name="option1" value="html">HTML & CSS<br>
+            <input type="checkbox" name="option2" value="js">JavaScript<br>
+            <input type="checkbox" name="option3" value="db">Mongo DB<br><br>
+            
+            <label for="start"><strong>Project Start</strong></label><br>
+            <input type="date" name="ps" id="ps" required><br><br>
+            
+            <label for="start"><strong>Project End</strong></label><br>
+            <input type="date" name="epe" id="pe" required><br><br>
+
+            <label for="category"><strong>Category</strong></label><br>
+    <select name="category" id="category">
+        <option value="nn">Choose your Category</option>
+        <option value="n1">1</option>
+        <option value="n2">2</option>
+        <option value="n3">3</option>
+    </select><br><br>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Order our Services">
+    </form>
+</body>
+
+</html>

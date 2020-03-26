@@ -17,6 +17,28 @@ div {
 }
 
 
+<<<<<<< HEAD
+.strobe_2 {
+  background-color: greenyellow;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_3 {
+  background-color: green;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_4 {
+  background-color: blue;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_5 {
+  background-color: red;
+  animation: first 2s infinite alternate-reverse;
+}
+
+=======
 @keyframes strobe_1 {
 
   from,
@@ -66,10 +88,23 @@ div {
   background: palevioletred;
 
 }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 
 
 div:hover {
   animation-iteration-count: infinite;
+<<<<<<< HEAD
+  animation-name: fadein;
+  animation-duration: 2s;
+
+}
+ 
+@keyframes fadein {
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+=======
   animation-name: strobe_1;
   animation-duration: 3s;
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
