@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Simple Ember Hello World for Bek" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
+<script src="http://builds.emberjs.com.s3.amazonaws.com/tags/v1.0.0/ember.js"></script>
+  <meta charset="utf-8">
+  <title>Ember Demo for Bek</title>
+</head>
+<body>
+<script type="text/x-handlebars">
+  <h2>Hello World</h2><br>
+  {{#link-to 'index'}}Home{{/link-to}} 
+  {{#link-to 'news'}}News{{/link-to}}
+  {{#link-to 'about'}}About{{/link-to}}
+  <hr>
+  {{outlet}}
+</script>
+<script type="text/x-handlebars" data-template-name="index">
+    </b>Home page</b><br>
+    {{#each model}}
+      {{name}} <br>
+    {{/each}}
+</script>
+<script type="text/x-handlebars" data-template-name="news">
+    <b>News</b> <br>
+    {{text}}
+</script>
+<script type="text/x-handlebars" data-template-name="about">
+    <b>About</b><br>
+    {{text}}
+</script>
+
+<script>
+App = Ember.Application.create();
+  
+App.Router.map(function() {
+  this.route("news");
+  this.route("about");
+});
+  
+App.IndexRoute = Ember.Route.extend({
+  model: function() {
+    return [
+        {
+          "name" : "Sharavaa"
+        },
+        {
+          "name" : "Bek"
+        }
+    ];
+  }
+});
+App.NewsRoute = Ember.Route.extend({
+  model: function() {
+    return {
+      "text" : "fuckushimashdaa"
+    };
+  }
+});
+App.AboutRoute = Ember.Route.extend({
+  model: function() {
+    return {
+      "text" : "Abba mama miya"
+    };
+  }
+});
+</script>
+</body>
+</html>
