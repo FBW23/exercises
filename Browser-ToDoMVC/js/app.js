@@ -73,16 +73,21 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('.footer').addEventListener(
         'click',
         this.destroyCompleted.bind(this)
-      );
-    //   document.querySelector('.todo-list')
-    //     .addEventListener('change', '.toggle', this.classList.toggle.bind(this))
-    //     .addEventListener('dblclick', 'label', this.editingMode.bind(this))
-    //     .addEventListener('keyup', '.edit', this.editKeyup.bind(this))
-    //     .addEventListener('focusout', '.edit', this.update.bind(this))
-    //     .addEventListener('click', '.destroy', this.destroy.bind(this))
-    let todoList = document.querySelector('.todo-list');
+        );
+        //   document.querySelector('.todo-list')
+        //     .addEventListener('change', '.toggle', this.classList.toggle.bind(this)) x
+        //     .addEventListener('dblclick', 'label', this.editingMode.bind(this)) x
+        //     .addEventListener('keyup', '.edit', this.editKeyup.bind(this))x
+        //     .addEventListener('focusout', '.edit', this.update.bind(this))x
+        //     .addEventListener('click', '.destroy', this.destroy.bind(this))
+        let todoList = document.querySelector('.todo-list');
     delegateEvent(todoList, 'change', '.toggle', todoList.classList.toggle.bind(this))
+    delegateEvent(todoList, 'dblclick', 'label', this.editingMode.bind(this))
+    delegateEvent(todoList, 'keyup', '.edit', this.editKeyup.bind(this))
+    delegateEvent(todoList, 'focusout', '.edit', this.update.bind(this))
+    delegateEvent(todoList, 'click', 'destroy', this.destroy.bind(this))   
     }
+    
     ,
     render: function () {
       let todos = this.getFilteredTodos();
@@ -182,15 +187,15 @@ document.addEventListener('DOMContentLoaded', function () {
       this.render();
     },
     editingMode: function (e) {
-      let $input = $(e.target)
+      let input = e.target
         .closest('li')
-        .addClass('editing')
-        .find('.edit');
+        .classList.add('editing')
+        .querySelectorAll('.edit')
       // puts caret at end of input
-      let tmpStr = $input.val();
-      $input.val('');
-      $input.val(tmpStr);
-      $input.focus();
+      let tmpStr = input.value;
+      input.val('');
+      input.val(tmpStr);
+      input.focus();
     },
     editKeyup: function (e) {
       if (e.which === ENTER_KEY) {
@@ -198,15 +203,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (e.which === ESCAPE_KEY) {
-        $(e.target)
+        e.target
           .data('abort', true)
           .blur();
       }
     },
     update: function (e) {
       let el = e.target;
-      let $el = $(el);
-      let val = $el.val().trim();
+      // reroll
+      let $el = el.classList;
+      let val = $el.value.trim();
 
       if ($el.data('abort')) {
         $el.data('abort', false);
