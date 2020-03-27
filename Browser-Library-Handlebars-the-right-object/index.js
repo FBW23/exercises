@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
     const structure = `
-    <h1>{{ firstName }} {{ lastName }}</h1>
+    <h1>{{ firstName }} {{ lastName }}</h1> 
     <p><label>Position: </label>{{ jobTitle }}</p>
     <p><label>Joined: </label>{{ startDate }}</p>
     <p><label>Birthday: </label>{{ birthday }}</p>
@@ -22,6 +22,5 @@ document.addEventListener('DOMContentLoaded', function () {
     let template = Handlebars.compile(structure);
     const myTemplate = template(info);
     container.innerHTML += myTemplate;
-
-
 });
+
