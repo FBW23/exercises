@@ -1,225 +1,152 @@
-// ! This is a helper function to delegate events from an element to any child with a specified selector.
-// ? Use where required.
+/*global blocks */
 
-function delegateEvent(fromElement, eventName, targetSelector, callback) {
-  fromElement.addEventListener(eventName, event => {
-    let targetsList = [...event.currentTarget.querySelectorAll(targetSelector)];
+(function () {
+	'use strict';
 
-    if (targetsList.includes(event.target)) {
-      callback(event);
-    }
-  });
-}
+	let ENTER_KEY = 13;
+	let ESCAPE_KEY = 27;
 
-/*global jQuery, Handlebars, Router */
-jQuery(function($) {
-  'use strict';
+	let App = blocks.Application();
 
-  Handlebars.registerHelper('eq', function(a, b, options) {
-    return a === b ? options.fn(this) : options.inverse(this);
-  });
+	let Todo = App.Model({
+		title: App.Property(),
 
-  let ENTER_KEY = 13;
-  let ESCAPE_KEY = 27;
+		completed: App.Property(),
 
-  let util = {
-    uuid: function() {
-      /*jshint bitwise:false */
-      let i, random;
-      let uuid = '';
+		editing: blocks.observable(),
 
-      for (i = 0; i < 32; i++) {
-        random = (Math.random() * 16) | 0;
-        if (i === 8 || i === 12 || i === 16 || i === 20) {
-          uuid += '-';
-        }
-        uuid += (i === 12 ? 4 : i === 16 ? (random & 3) | 8 : random).toString(
-          16
-        );
-      }
+		init: function () {
+			let collection = this.collection();
 
-      return uuid;
-    },
-    pluralize: function(count, word) {
-      return count === 1 ? word : word + 's';
-    },
-    store: function(namespace, data) {
-      if (arguments.length > 1) {
-        return localStorage.setItem(namespace, JSON.stringify(data));
-      } else {
-        let store = localStorage.getItem(namespace);
-        return (store && JSON.parse(store)) || [];
-      }
-    }
-  };
+			// collection is undefined when a Todo is still not part of the Todos collection
+			if (collection) {
+				// save to Local Storage on each attribute change
+				this.title.on('change', collection.save);
+				this.completed.on('change', collection.save);
+			}
 
-  let App = {
-    init: function() {
-      this.todos = util.store('todos-jquery');
-      this.todoTemplate = Handlebars.compile($('#todo-template').html());
-      this.footerTemplate = Handlebars.compile($('#footer-template').html());
-      this.bindEvents();
+			this.title.on('change', function (newValue) {
+				this.title((newValue || '').trim());
+			});
+		},
 
-      new Router({
-        '/:filter': function(filter) {
-          this.filter = filter;
-          this.render();
-        }.bind(this)
-      }).init('/all');
-    },
-    bindEvents: function() {
-      $('.new-todo').on('keyup', this.create.bind(this));
-      $('.toggle-all').on('change', this.toggleAll.bind(this));
-      $('.footer').on(
-        'click',
-        '.clear-completed',
-        this.destroyCompleted.bind(this)
-      );
-      $('.todo-list')
-        .on('change', '.toggle', this.toggle.bind(this))
-        .on('dblclick', 'label', this.editingMode.bind(this))
-        .on('keyup', '.edit', this.editKeyup.bind(this))
-        .on('focusout', '.edit', this.update.bind(this))
-        .on('click', '.destroy', this.destroy.bind(this));
-    },
-    render: function() {
-      let todos = this.getFilteredTodos();
-      $('.todo-list').html(this.todoTemplate(todos));
-      $('.main').toggle(todos.length > 0);
-      $('.toggle-all').prop('checked', this.getActiveTodos().length === 0);
-      this.renderFooter();
-      $('.new-todo').focus();
-      util.store('todos-jquery', this.todos);
-    },
-    renderFooter: function() {
-      let todoCount = this.todos.length;
-      let activeTodoCount = this.getActiveTodos().length;
-      let template = this.footerTemplate({
-        activeTodoCount: activeTodoCount,
-        activeTodoWord: util.pluralize(activeTodoCount, 'item'),
-        completedTodos: todoCount - activeTodoCount,
-        filter: this.filter
-      });
+		toggleComplete: function () {
+			this.completed(!this.completed());
+		},
 
-      $('.footer')
-        .toggle(todoCount > 0)
-        .html(template);
-    },
-    toggleAll: function(e) {
-      let isChecked = $(e.target).prop('checked');
+		edit: function () {
+			this.lastValue = this.title();
+			this.editing(true);
+		},
 
-      this.todos.forEach(function(todo) {
-        todo.completed = isChecked;
-      });
+		closeEdit: function () {
+			if (this.title()) {
+				this.editing(false);
+			} else {
+				this.destroy();
+			}
+		},
 
-      this.render();
-    },
-    getActiveTodos: function() {
-      return this.todos.filter(function(todo) {
-        return !todo.completed;
-      });
-    },
-    getCompletedTodos: function() {
-      return this.todos.filter(function(todo) {
-        return todo.completed;
-      });
-    },
-    getFilteredTodos: function() {
-      if (this.filter === 'active') {
-        return this.getActiveTodos();
-      }
+		handleAction: function (e) {
+			if (e.which === ENTER_KEY) {
+				this.closeEdit();
+			} else if (e.which === ESCAPE_KEY) {
+				this.title(this.lastValue);
+				this.editing(false);
+			}
+		}
+	});
 
-      if (this.filter === 'completed') {
-        return this.getCompletedTodos();
-      }
+	let Todos = App.Collection(Todo, {
+		remaining: blocks.observable(),
 
-      return this.todos;
-    },
-    destroyCompleted: function() {
-      this.todos = this.getActiveTodos();
-      this.render();
-    },
-    // accepts an element from inside the `.item` div and
-    // returns the corresponding index in the `todos` array
-    getIndexFromEl: function(el) {
-      let id = $(el)
-        .closest('li')
-        .data('id');
-      let todos = this.todos;
-      let i = todos.length;
+		init: function () {
+			this
+				// load the data from the Local Storage
+				.reset(JSON.parse(localStorage.getItem('todos-jsblocks')) || [])
+				// save to Local Storage on each item add or remove
+				.on('add remove', this.save)
+				.updateRemaining();
+		},
 
-      while (i--) {
-        if (todos[i].id === id) {
-          return i;
-        }
-      }
-    },
-    create: function(e) {
-      let $input = $(e.target);
-      let val = $input.val().trim();
+		// set all todos as completed
+		toggleAll: function () {
+			let complete = this.remaining() === 0 ? false : true;
+			this.each(function (todo) {
+				todo.completed(complete);
+			});
+		},
 
-      if (e.which !== ENTER_KEY || !val) {
-        return;
-      }
+		// remove all completed todos
+		clearCompleted: function () {
+			this.removeAll(function (todo) {
+				return todo.completed();
+			});
+		},
 
-      this.todos.push({
-        id: util.uuid(),
-        title: val,
-        completed: false
-      });
+		// saves all data back to the Local Storage
+		save: function () {
+			let result = [];
 
-      $input.val('');
+			blocks.each(this(), function (model) {
+				result.push(model.dataItem());
+			});
 
-      this.render();
-    },
-    toggle: function(e) {
-      let i = this.getIndexFromEl(e.target);
-      this.todos[i].completed = !this.todos[i].completed;
-      this.render();
-    },
-    editingMode: function(e) {
-      let $input = $(e.target)
-        .closest('li')
-        .addClass('editing')
-        .find('.edit');
-      // puts caret at end of input
-      let tmpStr = $input.val();
-      $input.val('');
-      $input.val(tmpStr);
-      $input.focus();
-    },
-    editKeyup: function(e) {
-      if (e.which === ENTER_KEY) {
-        e.target.blur();
-      }
+			localStorage.setItem('todos-jsblocks', JSON.stringify(result));
 
-      if (e.which === ESCAPE_KEY) {
-        $(e.target)
-          .data('abort', true)
-          .blur();
-      }
-    },
-    update: function(e) {
-      let el = e.target;
-      let $el = $(el);
-      let val = $el.val().trim();
+			this.updateRemaining();
+		},
 
-      if ($el.data('abort')) {
-        $el.data('abort', false);
-      } else if (!val) {
-        this.destroy(e);
-        return;
-      } else {
-        this.todos[this.getIndexFromEl(el)].title = val;
-      }
+		// updates the observable
+		updateRemaining: function () {
+			this.remaining(this.reduce(function (memo, todo) {
+				return todo.completed() ? memo : memo + 1;
+			}, 0));
+		}
+	});
 
-      this.render();
-    },
-    destroy: function(e) {
-      this.todos.splice(this.getIndexFromEl(e.target), 1);
-      this.render();
-    }
-  };
+	App.View('Todos', {
+		options: {
+			// creates a route for the View in order to handle
+			// /all, /active, /completed filters
+			route: blocks.route('{{filter}}').optional('filter')
+		},
 
-  App.init();
-});
+		filter: blocks.observable(),
+
+		newTodo: new Todo(),
+
+		// holds all todos for the current view
+		// todos are filtered if "Active" or "Completed" is clicked
+		todos: new Todos().extend('filter', function (value) {
+			let mode = this.filter();
+			let completed = value.completed();
+			let include = true;
+
+			if (mode === 'active') {
+				include = !completed;
+			} else if (mode === 'completed') {
+				include = completed;
+			}
+
+			return include;
+		}),
+
+		// filter the data when the route have changed
+		// the callback is fired when "All", "Active" or "Completed" have been clicked
+		routed: function (params) {
+			if (params.filter !== 'active' && params.filter !== 'completed') {
+				params.filter = 'all';
+			}
+			this.filter(params.filter);
+		},
+
+		addTodo: function (e) {
+			if (e.which === ENTER_KEY && this.newTodo.title()) {
+				this.todos.push(this.newTodo);
+				// return all Todo values to their defaults
+				this.newTodo.reset();
+			}
+		}
+	});
+})();
