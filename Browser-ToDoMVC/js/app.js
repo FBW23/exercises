@@ -148,9 +148,9 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
     // accepts an element from inside the `.item` div and
     // returns the corresponding index in the `todos` array
     getIndexFromEl: function(el) {
-      let id = $(el)
+      let id = el
         .closest('li')
-        .data('id');
+        .dataset = 'id';
       let todos = this.todos;
       let i = todos.length;
 
@@ -184,15 +184,15 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
       this.render();
     },
     editingMode: function(e) {
-      let $input = $(e.target)
+      let input = e.target
         .closest('li')
-        .addClass('editing')
-        .find('.edit');
+        .classList.add('editing')
+        .classList.contains('.edit');
       // puts caret at end of input
-      let tmpStr = $input.val();
-      $input.val('');
-      $input.val(tmpStr);
-      $input.focus();
+      let tmpStr = document.querySelector(input).value;
+      input.value = '';
+      input.value = tmpStr;
+      input.focus();
     },
     editKeyup: function(e) {
       if (e.which === ENTER_KEY) {
@@ -200,23 +200,23 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
       }
 
       if (e.which === ESCAPE_KEY) {
-        $(e.target)
-          .data('abort', true)
-          .blur();
+        e.target
+          .dataset ==='abort';
+          e.target.blur();
       }
     },
     update: function(e) {
       let el = e.target;
-      let $el = $(el);
-      let val = $el.val().trim();
-
-      if ($el.data('abort')) {
+      let $el = el;
+      let val = $el.value.trim();
+      
+      if ($el.dataset === 'abort') {
         $el.data('abort', false);
       } else if (!val) {
         this.destroy(e);
         return;
       } else {
-        this.todos[this.getIndexFromEl(el)].title = val;
+        this.todos[this.getIndexFromEl(el)];
       }
 
       this.render();
