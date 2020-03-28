@@ -12,7 +12,6 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
 }
 
 /*global jQuery, Handlebars, Router */
-jQuery(function($) {
   'use strict';
 
   Handlebars.registerHelper('eq', function(a, b, options) {
@@ -56,8 +55,8 @@ jQuery(function($) {
   let App = {
     init: function() {
       this.todos = util.store('todos-jquery');
-      this.todoTemplate = Handlebars.compile($('#todo-template').html());
-      this.footerTemplate = Handlebars.compile($('#footer-template').html());
+      this.todoTemplate = Handlebars.compile(document.querySelector('#todo-template').innerHTML);
+      this.footerTemplate = Handlebars.compile(document.querySelector('#footer-template').innerHTML);
       this.bindEvents();
 
       new Router({
@@ -68,27 +67,34 @@ jQuery(function($) {
       }).init('/all');
     },
     bindEvents: function() {
-      $('.new-todo').on('keyup', this.create.bind(this));
-      $('.toggle-all').on('change', this.toggleAll.bind(this));
-      $('.footer').on(
+      document.querySelector('.new-todo').addEventListener('keyup', this.create.bind(this));
+      document.querySelector('.toggle-all').addEventListener('change', this.toggleAll.bind(this));
+      document.querySelector('.footer').addEventListener(
         'click',
-        '.clear-completed',
-        this.destroyCompleted.bind(this)
+        // '.clear-completed',
+        this.destroyCompleted.bind(this),
+        true
       );
-      $('.todo-list')
-        .on('change', '.toggle', this.toggle.bind(this))
-        .on('dblclick', 'label', this.editingMode.bind(this))
-        .on('keyup', '.edit', this.editKeyup.bind(this))
-        .on('focusout', '.edit', this.update.bind(this))
-        .on('click', '.destroy', this.destroy.bind(this));
+      // $('.todo-list')
+      //   .on('change', '.toggle', this.toggle.bind(this))
+      //   .on('dblclick', 'label', this.editingMode.bind(this))
+      //   .on('keyup', '.edit', this.editKeyup.bind(this))
+      //   .on('focusout', '.edit', this.update.bind(this))
+      //   .on('click', '.destroy', this.destroy.bind(this));
+      let todoList = document.querySelector('.todo-list');
+      delegateEvent(todoList, 'change', '.toggle', todoList.classList.toggle.bind(this))
+      delegateEvent(todoList, 'dblclick', 'label', this.editingMode.bind(this))
+      delegateEvent(todoList, 'keyup', '.edit', this.editKeyup.bind(this))
+      delegateEvent(todoList, 'focusout', '.edit', this.update.bind(this))
+      delegateEvent(todoList, 'click', 'destroy', this.destroy.bind(this)) 
     },
     render: function() {
       let todos = this.getFilteredTodos();
-      $('.todo-list').html(this.todoTemplate(todos));
-      $('.main').toggle(todos.length > 0);
-      $('.toggle-all').prop('checked', this.getActiveTodos().length === 0);
+      document.querySelector('.todo-list').innerHTML = this.todoTemplate(todos);
+      document.querySelector('.main').classList.toggle(todos.length > 0);
+      document.querySelector('.toggle-all').prop = 'checked', this.getActiveTodos().length === 0;
       this.renderFooter();
-      $('.new-todo').focus();
+      document.querySelector('.new-todo').focus();
       util.store('todos-jquery', this.todos);
     },
     renderFooter: function() {
@@ -101,9 +107,9 @@ jQuery(function($) {
         filter: this.filter
       });
 
-      $('.footer')
+      document.querySelector('.footer').classList
         .toggle(todoCount > 0)
-        .html(template);
+        .innerHTML = template;
     },
     toggleAll: function(e) {
       let isChecked = $(e.target).prop('checked');
@@ -155,8 +161,8 @@ jQuery(function($) {
       }
     },
     create: function(e) {
-      let $input = $(e.target);
-      let val = $input.val().trim();
+      let input = e.target;
+      let val = input.value.trim();
 
       if (e.which !== ENTER_KEY || !val) {
         return;
@@ -168,7 +174,7 @@ jQuery(function($) {
         completed: false
       });
 
-      $input.val('');
+      input.value = '';
 
       this.render();
     },
@@ -222,4 +228,3 @@ jQuery(function($) {
   };
 
   App.init();
-});
