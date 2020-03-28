@@ -112,7 +112,7 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
         .innerHTML = template;
     },
     toggleAll: function(e) {
-      let isChecked = $(e.target).prop('checked');
+      let isChecked = e.target.prop = 'checked';
 
       this.todos.forEach(function(todo) {
         todo.completed = isChecked;
@@ -216,7 +216,7 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
         this.destroy(e);
         return;
       } else {
-        this.todos[this.getIndexFromEl(el)];
+        this.todos[this.getIndexFromEl(el)] = val; // NOT WORKING Should save the new value
       }
 
       this.render();
