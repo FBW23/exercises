@@ -151,9 +151,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // accepts an element from inside the `.item` div and
     // returns the corresponding index in the `todos` array
     getIndexFromEl: function (el) {
-      let id = document.getElementById(el)
+      let id = el
         .closest('li')
-        .data('id');
+        .dataset.id;
       let todos = this.todos;
       let i = todos.length;
 
@@ -204,7 +204,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (e.which === ESCAPE_KEY) {
         e.target
-          .data('abort', true)
           .blur();
       }
     },
@@ -214,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let $el = el.classList;
       let val = $el.value.trim();
 
-      if ($el.data('abort')) {
+      if ($el.dataset === 'abort') {
         $el.data('abort', false);
       } else if (!val) {
         this.destroy(e);
