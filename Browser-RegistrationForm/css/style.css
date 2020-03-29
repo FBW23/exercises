@@ -68,7 +68,7 @@ a {
 #addressDiv,
 #profileDiv,
 #resultDiv {
-  display: none;
+  display: block;
 }
 #photoLabel {
   width: 250px;
