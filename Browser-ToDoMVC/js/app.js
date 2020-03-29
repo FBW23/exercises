@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded',function() {
     render: function() {
       let todos = this.getFilteredTodos();
       document.querySelector('.todo-list').innerHTML = this.todoTemplate(todos);
-      $('.main').toggle(todos.length > 0);
-      $('.toggle-all').prop('checked', this.getActiveTodos().length === 0);
+      document.querySelector('.main').toggle(todos.length > 0);
+      document.querySelector('.toggle-all').prop('checked', this.getActiveTodos().length === 0);
       this.renderFooter();
-      $('.new-todo').focus();
+      document.querySelector(('.new-todo').focus();
       util.store('todos-jquery', this.todos);
     },
     renderFooter: function() {
@@ -109,9 +109,9 @@ document.addEventListener('DOMContentLoaded',function() {
         filter: this.filter
       });
 
-      $('.footer')
+      document.querySelector('.footer')
         .toggle(todoCount > 0)
-        .html(template);
+        .innerHtml = template;
     },
     toggleAll: function(e) {
       let isChecked = $(e.target).prop('checked');
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded',function() {
       }
     },
     create: function(e) {
-      let $input = $(e.target);
+      let $input = document.getIndexFromEl(e.target);
       let val = $input.val().trim();
 
       if (e.which !== ENTER_KEY || !val) {
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded',function() {
       }
 
       if (e.which === ESCAPE_KEY) {
-        $(e.target)
+        document.querySelector(e.target)
           .data('abort', true)
           .blur();
       }
