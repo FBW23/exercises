@@ -4,6 +4,75 @@ body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+<<<<<<< HEAD
+
+
+li{
+    display: inline-block;
+    background:blue;
+    padding:5px 0;
+    text-align: center;
+    height:20px;
+    width:90px;}
+
+
+   
+
+
+    /* @keyframes scale-up-bottom {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+      }
+      
+      li:hover{
+        animation-name:scale-up-bottom;
+        background:red;
+        transition-duration: 1s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;} */
+
+
+@keyframes zoom {
+   0% {
+        height:20px;
+        width:50px;
+        font-size: 1em;
+       
+    }
+
+  
+
+    100% {
+        height:30px;
+        width:100px;
+        font-size: 1.5em;
+        text-align:center;
+       
+    }
+}
+
+li:hover{
+    animation-name:zoom;
+    background:red;
+    transition-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    
+    
+
+}
+=======
 nav ul li{
     
     display: inline-block;
@@ -57,3 +126,4 @@ nav ul li{
   }
 
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
