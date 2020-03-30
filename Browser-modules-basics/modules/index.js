@@ -1,6 +1,6 @@
 import { clickImages } from './click.js';
 //import default2 from './module.js';
-import { hoverHeader } from './hover.js';
+import { hoverHeader, closeModal } from './hover.js';
 import { scrollWindow } from './scroll.js'
 
 // This shows how it works! 
@@ -8,3 +8,4 @@ import { scrollWindow } from './scroll.js'
 clickImages();
 hoverHeader();
 scrollWindow();
+closeModal();
