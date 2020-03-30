@@ -1,7 +1,5 @@
 // Your code goes here!
 
-// Your code goes here!
-
 import * as module1 from './aspect-ratio.js';
 import * as module2 from './percentage.js';
 
@@ -78,8 +76,7 @@ const calculateAspectRatio = function () {
     let originalRatio1 = parseInt(aspectRatio1.value);
     let originalRatio2 = parseInt(aspectRatio2.value);
     let valueType = parseInt(ratioWidth.value);
-    let newValue = parseInt(aspectRatioResult.value);
-    let aspectRatioForm = module1.calculateAspectRatio(originalRatio1, originalRatio2, newValue, valueType);
+    let aspectRatioForm = module1.calculateAspectRatio(originalRatio1, originalRatio2, valueType, aspectRatioResult);
     aspectRatioResult.value = aspectRatioForm;
 }
 aspectForm.addEventListener('change', calculateAspectRatio);
