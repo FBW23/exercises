@@ -1,0 +1,14 @@
+#output {
+    display: flex;
+    justify-content: center;
+    border: 3px solid grey;
+    padding: 1rem 0rem 1rem 2rem;
+    width: 33%;
+    font-family: 'Baloo Da 2', cursive;
+    background-color: black;
+    color: white;
+}
+
+h1, .color {
+    color: fuchsia;
+}
