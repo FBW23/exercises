@@ -71,24 +71,12 @@ document.addEventListener('DOMContentLoaded',function() {
       document.querySelector('.new-todo').addEventListener('keyup', this.create.bind(this));
       document.querySelector('.toggle-all').addEventListener('change', this.toggleAll.bind(this));
       delegateEvent(document.querySelector('.footer'), 'click', '.clear-completed', this.destroyCompleted.bind(this));
-      // document.querySelector('.footer').addEventListener(
-      //   'click',
-      //   '.clear-completed',
-      //   this.destroyCompleted.bind(this)
-      //  );
-
-      // delegateEvent(fromElement, eventName, targetSelector, callback)
       delegateEvent(document.querySelector('.todo-list'), 'change', '.toggle', this.toggle.bind(this));
       delegateEvent(document.querySelector('.todo-list'), 'dblclick', 'label', this.editingMode.bind(this));
       delegateEvent(document.querySelector('.todo-list'), 'keyup', '.edit', this.editKeyup.bind(this));
       delegateEvent(document.querySelector('.todo-list'), 'focusout', '.edit', this.update.bind(this));
       delegateEvent(document.querySelector('.todo-list'), 'click', '.destroy', this.destroy.bind(this));
 
-        // .addEventListener('change', '.toggle', this.toggle.bind(this)) 
-        // .addEventListener('dblclick', 'label', this.editingMode.bind(this))
-        // .addEventListener('keyup', '.edit', this.editKeyup.bind(this))
-        // .addEventListener('focusout', '.edit', this.update.bind(this))
-        // .addEventListener('click', '.destroy', this.destroy.bind(this));
     },
     render: function() {
       let todos = this.getFilteredTodos();
@@ -96,7 +84,7 @@ document.addEventListener('DOMContentLoaded',function() {
       document.querySelector('.main').toggle(todos.length > 0);
       document.querySelector('.toggle-all').prop('checked', this.getActiveTodos().length === 0);
       this.renderFooter();
-      document.querySelector(('.new-todo').focus();
+      document.querySelector('.new-todo').focus();
       util.store('todos-jquery', this.todos);
     },
     renderFooter: function() {
