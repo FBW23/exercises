@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu ul, .cards, .scripts {
+  display: flex;
+}
+
+#bmenu {
+  padding: 3rem;
+  background: blue;
+  color: white;
+}
+
+#tmenu {
+  color: blue;
+}
+
+.landing {
+  text-align: center;
+  background: url(/images/header.jpg) no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+
+#mountain {
+  background: url(/images/mountain.jpg) no-repeat;
+  background-size: cover;
+}
+
+#surf {
+  background: url(/images/surfer.jpg);
+  background-size: cover;
+}
+
+#tree {
+  background: url(/images/tree.jpg);
+  background-size: cover;
+}
+
+.card {
+  background: bisque;
+}
+
+section, .card, .aside, .article {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 678px) {
+  .menu ul {
+    justify-content: center;
+  }
+
+  .card, .scripts, .cards {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .card h2, .scripts h2, .cards h2 {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .image {
+    height: 40vh;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .aside {
+    border: 2px solid bisque;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

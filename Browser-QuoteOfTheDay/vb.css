@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    background: red;
+}
+
+#text{
+    width:50%;
+    text-align: center;
+    border: none;
+    margin:3rem;
+    background: red;
+}
+
+#button{
+    border: black 1px solid;
+    border-radius: 5px;
+    height:2rem;
+    background: red;
+    color:white;
+}

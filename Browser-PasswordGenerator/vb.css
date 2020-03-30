@@ -1,0 +1,32 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    height:5rem;
+    width:50rem;
+    margin:auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#length{
+    margin:2rem 2rem 2rem -15rem; 
+    width:25rem;
+}
+
+#tickText{
+    font-size: 12px;
+
+   }
+
+#button{
+    background: green;
+    color:white;
+    text-align: center;
+    width:50rem;
+    
+}

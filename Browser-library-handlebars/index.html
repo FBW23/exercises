@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script defer src="band.js"></script>
+    <script defer src="vb.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vb.css">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+    <header></header>
+    <div id="actualContainer">
+        <script id="content" type="text/x-handlebars-template">
+            <div id="trackContainer">
+                {{#each scooters}}
+                    <div id="trackBox">
+                        <div id="track">{{this.track}}</div>
+                        <div id="year">{{this.year}}</div>
+                    </div>
+                {{/each}}
+            </div>
+        </script>
+    </div>
+</body>
+
+</html>
