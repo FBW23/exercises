@@ -14,10 +14,17 @@ event.target
 }
 
 /*global jQuery, Handlebars, Router */
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function() {
   "use strict";
 
   Handlebars.registerHelper("eq", function(a, b, options) {
+=======
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
+  Handlebars.registerHelper('eq', function (a, b, options) {
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
     return a === b ? options.fn(this) : options.inverse(this);
   });
 
@@ -25,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let ESCAPE_KEY = 27;
 
   let util = {
-    uuid: function() {
+    uuid: function () {
       /*jshint bitwise:false */
       let i, random;
       let uuid = "";
@@ -42,10 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
       return uuid;
     },
+<<<<<<< HEAD
     pluralize: function(count, word) {
       return count === 1 ? word : word + "s";
+=======
+    pluralize: function (count, word) {
+      return count === 1 ? word : word + 's';
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
     },
-    store: function(namespace, data) {
+    store: function (namespace, data) {
       if (arguments.length > 1) {
         return localStorage.setItem(namespace, JSON.stringify(data));
       } else {
@@ -56,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   let App = {
+<<<<<<< HEAD
     init: function() {
       this.todos = 
 util.store
@@ -70,11 +83,22 @@ util.store
 
       new Router({
         filter: function(filter) {
+=======
+    init: function () {
+      this.todos = util.store('todos-jquery');
+      this.todoTemplate = Handlebars.compile(document.querySelector('#todo-template').innerHTML);
+      this.footerTemplate = Handlebars.compile(document.querySelector('#footer-template').innerHTML);
+      this.bindEvents();
+
+      new Router({
+        '/:filter': function (filter) {
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
           this.filter = filter;
           this.render();
         }.bind(this)
       }).init("/all");
     },
+<<<<<<< HEAD
     bindEvents: function() {
       document
         .querySelector(".new-todo")
@@ -116,8 +140,45 @@ util.store
       
 util.store
 ("todos-jquery", this.todos);
+=======
+    bindEvents: function () {
+      document.querySelector('.new-todo').addEventListener('keyup', this.create.bind(this));
+      document.querySelector('.toggle-all').addEventListener('change', this.toggleAll.bind(this));
+
+      delegateEvent(document.querySelector('.footer'), 'click', '.clear-completed', this.destroyCompleted.bind(this));
+
+      const todoList = document.querySelector('.todo-list');
+
+      delegateEvent(todoList, 'change', '.toggle', this.toggle.bind(this));
+
+      delegateEvent(todoList, 'dblclick', 'label', this.editingMode.bind(this));
+
+      delegateEvent(todoList, 'keyup', '.edit', this.editKeyup.bind(this));
+
+      delegateEvent(todoList, 'focusout', '.edit', this.update.bind(this));
+
+      delegateEvent(todoList, 'click', '.destroy', this.destroy.bind(this));
     },
-    renderFooter: function() {
+    render: function () {
+      let todos = this.getFilteredTodos();
+      document.querySelector('.todo-list').innerHTML = this.todoTemplate(todos);
+      // toggle = Show & hide
+      // style display block / none
+      // toggle(condition) ==> jquery
+      const main = document.querySelector('.main');
+      if (todos.length > 0) { // condition
+        main.style.display = 'block';
+      } else {
+        main.style.display = 'none'
+      }
+      // prop(property, value) ===> property = value
+      document.querySelector('.toggle-all').checked = this.getActiveTodos().length === 0;
+      this.renderFooter();
+      document.querySelector('.new-todo').focus();
+      util.store('todos-jquery', this.todos);
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
+    },
+    renderFooter: function () {
       let todoCount = this.todos.length;
       let activeTodoCount = this.getActiveTodos().length;
       let template = this.footerTemplate({
@@ -126,6 +187,7 @@ util.store
         completedTodos: todoCount - activeTodoCount,
         filter: this.filter
       });
+<<<<<<< HEAD
 
       document
         .querySelector(".footer")
@@ -136,25 +198,45 @@ util.store
       let isChecked = document.querySelector(
 e.target
 ).outerHTML("checked");
+=======
+      // toggle = Show & hide
+      // style display block / none
+      // toggle(condition) ==> jquery
+      const footer = document.querySelector('.footer');
+      if (todoCount > 0) { // condition
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none'
+      }
+      footer.innerHTML = template;
+    },
+    toggleAll: function (e) {
+      let isChecked = e.target.checked;
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
 
-      this.todos.forEach(function(todo) {
+      this.todos.forEach(function (todo) {
         todo.completed = isChecked;
       });
 
       this.render();
     },
-    getActiveTodos: function() {
-      return this.todos.filter(function(todo) {
+    getActiveTodos: function () {
+      return this.todos.filter(function (todo) {
         return !todo.completed;
       });
     },
-    getCompletedTodos: function() {
-      return this.todos.filter(function(todo) {
+    getCompletedTodos: function () {
+      return this.todos.filter(function (todo) {
         return todo.completed;
       });
     },
+<<<<<<< HEAD
     getFilteredTodos: function() {
       if (this.filter === "active") {
+=======
+    getFilteredTodos: function () {
+      if (this.filter === 'active') {
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
         return this.getActiveTodos();
       }
 
@@ -164,16 +246,23 @@ e.target
 
       return this.todos;
     },
-    destroyCompleted: function() {
+    destroyCompleted: function () {
       this.todos = this.getActiveTodos();
       this.render();
     },
     // accepts an element from inside the `.item` div and
     // returns the corresponding index in the `todos` array
+<<<<<<< HEAD
     getIndexFromEl: function(el) {
       let id = $(el)
         .closest("li")
         .data("id");
+=======
+    getIndexFromEl: function (el) {
+      let id = el
+        .closest('li')
+        .dataset.id;
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
       let todos = this.todos;
       let i = todos.length;
 
@@ -183,10 +272,15 @@ e.target
         }
       }
     },
+<<<<<<< HEAD
     
     create: function(e) {
       let $input = document.querySelector(e.target);
     
+=======
+    create: function (e) {
+      let $input = e.target;
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
       let val = $input.value.trim();
 
       if (e.which !== ENTER_KEY || !val) {
@@ -199,6 +293,7 @@ e.target
         completed: false
       });
 
+<<<<<<< HEAD
       $input.val("");
 
       this.render();
@@ -218,13 +313,29 @@ e.target
         .closest("li")
         .classList.add("editing")
         .querySelector(".edit"); // querySelectorAll incase if its doesnt work
+=======
+      $input.value = '';
+
+      this.render();
+    },
+    toggle: function (e) {
+      let i = this.getIndexFromEl(e.target);
+      this.todos[i].completed = !this.todos[i].completed;
+      this.render();
+    },
+    editingMode: function (e) {
+      let $input = $(e.target)
+        .closest('li')
+        .addClass('editing')
+        .find('.edit');
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
       // puts caret at end of input
       let tmpStr = $input.val();
       $input.val("");
       $input.val(tmpStr);
       $input.focus();
     },
-    editKeyup: function(e) {
+    editKeyup: function (e) {
       if (e.which === ENTER_KEY) {
         e.target.blur();
       }
@@ -238,11 +349,17 @@ e.target
           .blur();
       }
     },
+<<<<<<< HEAD
     update: function(e) {
       let el = 
 e.target
 ;
       let $el = document.querySelector(el);
+=======
+    update: function (e) {
+      let el = e.target;
+      let $el = $(el);
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
       let val = $el.val().trim();
 
    
@@ -259,10 +376,15 @@ e.target
 
       this.render();
     },
+<<<<<<< HEAD
     destroy: function(e) {
       this.todos.splice(this.getIndexFromEl(
 e.target
 ), 1);
+=======
+    destroy: function (e) {
+      this.todos.splice(this.getIndexFromEl(e.target), 1);
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
       this.render();
     }
   };
