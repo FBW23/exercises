@@ -7,7 +7,9 @@ function calculateAspectRatio(originalWidth, originalHeight, newValue, valueType
         return 0;
     }
     let formula = (valueType === "h") ?
-        originalWidth / originalHeight :
-        originalHeight / originalWidth;
+        originalWidth / originalHeight : // true
+        originalHeight / originalWidth; // false
     return fixRoundingErrors(formula * newValue);
 }
+
+export { calculateAspectRatio }; // fixRoundingErrors removed
