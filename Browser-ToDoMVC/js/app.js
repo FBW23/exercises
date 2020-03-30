@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
           16
         );
       }
+
       return uuid;
     },
     pluralize: function (count, word) {
@@ -95,29 +96,34 @@ document.addEventListener('DOMContentLoaded', function () {
     bindEvents: function () {
       document.querySelector('.new-todo').addEventListener('keyup', this.create.bind(this));
       document.querySelector('.toggle-all').addEventListener('change', this.toggleAll.bind(this));
-      delegateEvent(document.querySelector('.footer'), 'click', '.clear-completed',
-        this.destroyCompleted.bind(this));
+
+      delegateEvent(document.querySelector('.footer'), 'click', '.clear-completed', this.destroyCompleted.bind(this));
+
       const todoList = document.querySelector('.todo-list');
-      delegateEvent(todoList, 'change', '.toggle',
-        this.toggle.bind(this));
-      delegateEvent(todoList, 'dblclick', 'label',
-        this.editingMode.bind(this));
-      delegateEvent(todoList, 'keyup', '.edit',
-        this.editKeyup.bind(this));
-      delegateEvent(todoList, 'focusout', '.edit',
-        this.update.bind(this));
-      delegateEvent(todoList, 'click', '.destroy',
-        this.destroy.bind(this));
+
+      delegateEvent(todoList, 'change', '.toggle', this.toggle.bind(this));
+
+      delegateEvent(todoList, 'dblclick', 'label', this.editingMode.bind(this));
+
+      delegateEvent(todoList, 'keyup', '.edit', this.editKeyup.bind(this));
+
+      delegateEvent(todoList, 'focusout', '.edit', this.update.bind(this));
+
+      delegateEvent(todoList, 'click', '.destroy', this.destroy.bind(this));
     },
     render: function () {
       let todos = this.getFilteredTodos();
       document.querySelector('.todo-list').innerHTML = this.todoTemplate(todos);
+      // toggle = Show & hide
+      // style display block / none
+      // toggle(condition) ==> jquery
       const main = document.querySelector('.main');
-      if (todos.length > 0) {
+      if (todos.length > 0) { // condition
         main.style.display = 'block';
       } else {
-        main.style.display = 'none';
+        main.style.display = 'none'
       }
+      // prop(property, value) ===> property = value
       document.querySelector('.toggle-all').checked = this.getActiveTodos().length === 0;
 >>>>>>> abe3dae2ca914ce469415b2b79dd31f26a6336c9
       this.renderFooter();
@@ -134,6 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
         filter: this.filter
       });
 <<<<<<< HEAD
+<<<<<<< HEAD
       $('.footer')
         .toggle(todoCount > 0)
         .html(template); 
@@ -142,12 +149,16 @@ document.addEventListener('DOMContentLoaded', function () {
       let isChecked = $(e.target).prop('checked');
       this.todos.forEach(function(todo) {
 =======
+=======
+      // toggle = Show & hide
+      // style display block / none
+      // toggle(condition) ==> jquery
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
       const footer = document.querySelector('.footer');
-      
-      if (todoCount > 0) {
+      if (todoCount > 0) { // condition
         footer.style.display = 'block';
       } else {
-        footer.style.display = 'none';
+        footer.style.display = 'none'
       }
       footer.innerHTML = template;
     },
@@ -219,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
       $input.val('');
 =======
 
-      $input.value;
+      $input.value = '';
 
 >>>>>>> abe3dae2ca914ce469415b2b79dd31f26a6336c9
       this.render();
@@ -230,15 +241,14 @@ document.addEventListener('DOMContentLoaded', function () {
       this.render();
     },
     editingMode: function (e) {
-      let $input = e.target
+      let $input = $(e.target)
         .closest('li')
-        .classList
-        .add('editing')
+        .addClass('editing')
         .find('.edit');
       // puts caret at end of input
-      let tmpStr = $input.value;
-      $input.value = '';
-      $input.value = tmpStr;
+      let tmpStr = $input.val();
+      $input.val('');
+      $input.val(tmpStr);
       $input.focus();
     },
     editKeyup: function (e) {
@@ -246,13 +256,14 @@ document.addEventListener('DOMContentLoaded', function () {
         e.target.blur();
       }
       if (e.which === ESCAPE_KEY) {
-        e.target
+        $(e.target)
           .data('abort', true)
           .blur();
       }
     },
     update: function (e) {
       let el = e.target;
+<<<<<<< HEAD
 <<<<<<< HEAD
       let $el = $(el);
       let val = $el.val().trim();
@@ -265,6 +276,13 @@ document.addEventListener('DOMContentLoaded', function () {
       if ($el.dataset.abort) {
         $el.dataset.abort = false;
 >>>>>>> abe3dae2ca914ce469415b2b79dd31f26a6336c9
+=======
+      let $el = $(el);
+      let val = $el.val().trim();
+
+      if ($el.data('abort')) {
+        $el.data('abort', false);
+>>>>>>> 7dffd8616c6c5a293312fb1dd2cf29ec9c992012
       } else if (!val) {
         this.destroy(e);
         return;
