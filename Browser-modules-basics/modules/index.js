@@ -6,10 +6,10 @@ import  { hoverHeader } from './hover.js';
 
 
 
-// document.showImport = function showImport () {
+
     scrollWindow();
     clickImages();
     hoverHeader();
-// }
+
 
 
