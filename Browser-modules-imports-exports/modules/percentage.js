@@ -15,4 +15,5 @@ function difference(first, second ) {
     return (calc * 100) / first 
 }
 
- 
+export{modulo,percentage,percentageOf,difference}
+
