@@ -1,6 +1,10 @@
 // ! This is a helper function to delegate events from an element to any child with a specified selector.
 // ? Use where required.
+// const toggles = document.querySelectorAll('.toggle-all');
 
+// for (let i = 0; i < toggles.length; i++) {
+//   toggles[i].addEventListener('change', this.toggleAll.bind(this));
+// }
 function delegateEvent(fromElement, eventName, targetSelector, callback) {
   fromElement.addEventListener(eventName, event => {
     let targetsList = [...event.currentTarget.querySelectorAll(targetSelector)];
@@ -12,18 +16,19 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
 }
 
 /*global jQuery, Handlebars, Router */
-jQuery(function($) {
+document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
-  Handlebars.registerHelper('eq', function(a, b, options) {
+  Handlebars.registerHelper('eq', function (a, b, options) {
     return a === b ? options.fn(this) : options.inverse(this);
   });
 
   let ENTER_KEY = 13;
   let ESCAPE_KEY = 27;
 
+  //object with functions
   let util = {
-    uuid: function() {
+    uuid: function () {
       /*jshint bitwise:false */
       let i, random;
       let uuid = '';
@@ -40,10 +45,10 @@ jQuery(function($) {
 
       return uuid;
     },
-    pluralize: function(count, word) {
+    pluralize: function (count, word) {
       return count === 1 ? word : word + 's';
     },
-    store: function(namespace, data) {
+    store: function (namespace, data) {
       if (arguments.length > 1) {
         return localStorage.setItem(namespace, JSON.stringify(data));
       } else {
@@ -53,45 +58,63 @@ jQuery(function($) {
     }
   };
 
+  //object with the init and function
   let App = {
-    init: function() {
+    init: function () {
       this.todos = util.store('todos-jquery');
-      this.todoTemplate = Handlebars.compile($('#todo-template').html());
-      this.footerTemplate = Handlebars.compile($('#footer-template').html());
+      this.todoTemplate = Handlebars.compile(document.querySelector('#todo-template').innerHTML);
+      this.footerTemplate = Handlebars.compile(document.querySelector('#footer-template').innerHTML);
       this.bindEvents();
 
       new Router({
-        '/:filter': function(filter) {
+        '/:filter': function (filter) {
           this.filter = filter;
           this.render();
         }.bind(this)
       }).init('/all');
     },
-    bindEvents: function() {
-      $('.new-todo').on('keyup', this.create.bind(this));
-      $('.toggle-all').on('change', this.toggleAll.bind(this));
-      $('.footer').on(
-        'click',
-        '.clear-completed',
-        this.destroyCompleted.bind(this)
-      );
-      $('.todo-list')
-        .on('change', '.toggle', this.toggle.bind(this))
-        .on('dblclick', 'label', this.editingMode.bind(this))
-        .on('keyup', '.edit', this.editKeyup.bind(this))
-        .on('focusout', '.edit', this.update.bind(this))
-        .on('click', '.destroy', this.destroy.bind(this));
+    // object method (function)
+    bindEvents: function () {
+      document.querySelector('.new-todo').addEventListener('keyup', this.create.bind(this));
+      document.querySelector('.toggle-all').addEventListener('change', this.toggleAll.bind(this));
+      delegateEvent(document.querySelector('.footer'), 'click', '.clear-completed', this.destroyCompleted.bind(this));
+      // document.querySelector('.footer').addEventListener(
+      //   'click',
+      //   '.clear-completed',
+      //   this.destroyCompleted.bind(this)
+      // );
+      delegateEvent(document.querySelector('.todo-list'), 'change', '.toggle', this.toggle.bind(this));
+      delegateEvent(document.querySelector('.todo-list'), 'dblclick', 'label', this.editingMode.bind(this));
+      delegateEvent(document.querySelector('.todo-list'), 'keyup', '.edit', this.editKeyup.bind(this));
+      delegateEvent(document.querySelector('.todo-list'), 'focusout', '.edit', this.update.bind(this));
+      delegateEvent(document.querySelector('.todo-list'), 'click', '.destroy', this.destroy.bind(this));
+
+      // .addEventListener('change', '.toggle', this.toggleClass.bind(this))
+      // .addEventListener('dblclick', 'label', this.editingMode.bind(this))
+      // .addEventListener('keyup', '.edit', this.editKeyup.bind(this))
+      // .addEventListener('focusout', '.edit', this.update.bind(this))
+      // .addEventListener('click', '.destroy', this.destroy.bind(this));
     },
-    render: function() {
+    render: function () {
+      const main = document.querySelector('.main');
+
       let todos = this.getFilteredTodos();
-      $('.todo-list').html(this.todoTemplate(todos));
-      $('.main').toggle(todos.length > 0);
-      $('.toggle-all').prop('checked', this.getActiveTodos().length === 0);
+      document.querySelector('.todo-list').innerHtml = this.todoTemplate(todos);
+
+      const toggleFunction = (element) => {  //this is the function to replace the toogle on jquery, but I didnt manage to apply it correctly.
+
+        element.style.display == "block" ? element.style.display = "none" :
+          element.style.display = "block";
+      }
+      //this function is adding and removing the displays to the main with the 'todos' with the status active and with the length > 0
+      toggleFunction(document.querySelector('.main')).todos.length > 0;
+
+      document.querySelector('.toggle-all'). disabled = true.this.getActiveTodos().length === 0;
       this.renderFooter();
-      $('.new-todo').focus();
+      document.querySelector('.new-todo').focus();
       util.store('todos-jquery', this.todos);
     },
-    renderFooter: function() {
+    renderFooter: function () {
       let todoCount = this.todos.length;
       let activeTodoCount = this.getActiveTodos().length;
       let template = this.footerTemplate({
@@ -101,50 +124,60 @@ jQuery(function($) {
         filter: this.filter
       });
 
-      $('.footer')
+      document.querySelector('.footer')
         .toggle(todoCount > 0)
-        .html(template);
+        .innerHTML = template;
     },
-    toggleAll: function(e) {
-      let isChecked = $(e.target).prop('checked');
+    toggleAll: function (e) {
+      let isChecked = e.target.checked = true;
 
-      this.todos.forEach(function(todo) {
+      this.todos.forEach(function (todo) {
         todo.completed = isChecked;
       });
 
       this.render();
     },
-    getActiveTodos: function() {
-      return this.todos.filter(function(todo) {
-        return !todo.completed;
+
+    getActiveTodos: function () {
+
+      [...todos].filter(e => {
+        return !e.completed
       });
+      // return this.todos.filter(function (todo) {
+      //   return !todo.completed;
+      // });
     },
-    getCompletedTodos: function() {
-      return this.todos.filter(function(todo) {
+    getCompletedTodos: function () {
+      //here is supposed to return the elements with the todo function applied...
+      return this.todos.filter(function (todo) {
         return todo.completed;
       });
     },
-    getFilteredTodos: function() {
-      if (this.filter === 'active') {
+    getFilteredTodos: function () {
+      // if (this.filter === 'active') { what is this 'active'? class? value?
+      if (this.classList.contains('active')) {
         return this.getActiveTodos();
       }
 
-      if (this.filter === 'completed') {
+      //if (this.filter === 'completed') {
+      if (this.classList.contains('completed')) {
         return this.getCompletedTodos();
       }
 
       return this.todos;
     },
-    destroyCompleted: function() {
+    destroyCompleted: function () {
       this.todos = this.getActiveTodos();
       this.render();
     },
     // accepts an element from inside the `.item` div and
     // returns the corresponding index in the `todos` array
-    getIndexFromEl: function(el) {
-      let id = $(el)
-        .closest('li')
-        .data('id');
+    getIndexFromEl: function (el) {
+      let id = //$
+        querySelector(el)
+          //.closest('li')
+          .parentNode
+          .data('id');
       let todos = this.todos;
       let i = todos.length;
 
@@ -154,8 +187,8 @@ jQuery(function($) {
         }
       }
     },
-    create: function(e) {
-      let $input = $(e.target);
+    create: function (e) {
+      let $input = document.querySelector(e.target);
       let val = $input.val().trim();
 
       if (e.which !== ENTER_KEY || !val) {
@@ -172,36 +205,38 @@ jQuery(function($) {
 
       this.render();
     },
-    toggle: function(e) {
+    toggle: function (e) {
       let i = this.getIndexFromEl(e.target);
       this.todos[i].completed = !this.todos[i].completed;
       this.render();
     },
-    editingMode: function(e) {
-      let $input = $(e.target)
-        .closest('li')
-        .addClass('editing')
-        .find('.edit');
+    editingMode: function (e) {
+      let $input = document.querySelector(e.target, '.edit')
+        // .closest('li')
+        .parentNode
+        .classList.add('editing')
+      // .find('.edit'); - replaced for the query selector. line 185
+
       // puts caret at end of input
       let tmpStr = $input.val();
       $input.val('');
       $input.val(tmpStr);
       $input.focus();
     },
-    editKeyup: function(e) {
+    editKeyup: function (e) {
       if (e.which === ENTER_KEY) {
         e.target.blur();
       }
 
       if (e.which === ESCAPE_KEY) {
-        $(e.target)
+        document.querySelector(e.target)
           .data('abort', true)
           .blur();
       }
     },
-    update: function(e) {
+    update: function (e) {
       let el = e.target;
-      let $el = $(el);
+      let $el = document.querySelector(el);
       let val = $el.val().trim();
 
       if ($el.data('abort')) {
@@ -215,7 +250,7 @@ jQuery(function($) {
 
       this.render();
     },
-    destroy: function(e) {
+    destroy: function (e) {
       this.todos.splice(this.getIndexFromEl(e.target), 1);
       this.render();
     }
