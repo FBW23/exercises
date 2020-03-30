@@ -12,10 +12,10 @@ function delegateEvent(fromElement, eventName, targetSelector, callback) {
 }
 
 /*global jQuery, Handlebars, Router */
-document.addEventListener('DOMContentLoaded',function() { 
+document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
-  Handlebars.registerHelper('eq', function(a, b, options) {
+  Handlebars.registerHelper('eq', function (a, b, options) {
     return a === b ? options.fn(this) : options.inverse(this);
   });
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded',function() {
   let ESCAPE_KEY = 27;
 
   let util = {
-    uuid: function() {
+    uuid: function () {
       /*jshint bitwise:false */
       let i, random;
       let uuid = '';
@@ -37,13 +37,12 @@ document.addEventListener('DOMContentLoaded',function() {
           16
         );
       }
-
       return uuid;
     },
-    pluralize: function(count, word) {
+    pluralize: function (count, word) {
       return count === 1 ? word : word + 's';
     },
-    store: function(namespace, data) {
+    store: function (namespace, data) {
       if (arguments.length > 1) {
         return localStorage.setItem(namespace, JSON.stringify(data));
       } else {
@@ -54,40 +53,51 @@ document.addEventListener('DOMContentLoaded',function() {
   };
 
   let App = {
-    init: function() {
+    init: function () {
       this.todos = util.store('todos-jquery');
       this.todoTemplate = Handlebars.compile(document.querySelector('#todo-template').innerHTML);
       this.footerTemplate = Handlebars.compile(document.querySelector('#footer-template').innerHTML);
       this.bindEvents();
 
       new Router({
-        '/:filter': function(filter) {
+        '/:filter': function (filter) {
           this.filter = filter;
           this.render();
         }.bind(this)
       }).init('/all');
     },
-    bindEvents: function() {
+    bindEvents: function () {
       document.querySelector('.new-todo').addEventListener('keyup', this.create.bind(this));
       document.querySelector('.toggle-all').addEventListener('change', this.toggleAll.bind(this));
-      delegateEvent(document.querySelector('.footer'), 'click', '.clear-completed', this.destroyCompleted.bind(this));
-      delegateEvent(document.querySelector('.todo-list'), 'change', '.toggle', this.toggle.bind(this));
-      delegateEvent(document.querySelector('.todo-list'), 'dblclick', 'label', this.editingMode.bind(this));
-      delegateEvent(document.querySelector('.todo-list'), 'keyup', '.edit', this.editKeyup.bind(this));
-      delegateEvent(document.querySelector('.todo-list'), 'focusout', '.edit', this.update.bind(this));
-      delegateEvent(document.querySelector('.todo-list'), 'click', '.destroy', this.destroy.bind(this));
-
+      delegateEvent(document.querySelector('.footer'), 'click', '.clear-completed',
+        this.destroyCompleted.bind(this));
+      const todoList = document.querySelector('.todo-list');
+      delegateEvent(todoList, 'change', '.toggle',
+        this.toggle.bind(this));
+      delegateEvent(todoList, 'dblclick', 'label',
+        this.editingMode.bind(this));
+      delegateEvent(todoList, 'keyup', '.edit',
+        this.editKeyup.bind(this));
+      delegateEvent(todoList, 'focusout', '.edit',
+        this.update.bind(this));
+      delegateEvent(todoList, 'click', '.destroy',
+        this.destroy.bind(this));
     },
-    render: function() {
+    render: function () {
       let todos = this.getFilteredTodos();
       document.querySelector('.todo-list').innerHTML = this.todoTemplate(todos);
-      document.querySelector('.main').toggle(todos.length > 0);
-      document.querySelector('.toggle-all').prop('checked', this.getActiveTodos().length === 0);
+      const main = document.querySelector('.main');
+      if (todos.length > 0) {
+        main.style.display = 'block';
+      } else {
+        main.style.display = 'none';
+      }
+      document.querySelector('.toggle-all').checked = this.getActiveTodos().length === 0;
       this.renderFooter();
       document.querySelector('.new-todo').focus();
       util.store('todos-jquery', this.todos);
     },
-    renderFooter: function() {
+    renderFooter: function () {
       let todoCount = this.todos.length;
       let activeTodoCount = this.getActiveTodos().length;
       let template = this.footerTemplate({
@@ -96,31 +106,35 @@ document.addEventListener('DOMContentLoaded',function() {
         completedTodos: todoCount - activeTodoCount,
         filter: this.filter
       });
-
-      document.querySelector('.footer')
-        .toggle(todoCount > 0)
-        .innerHtml = template;
+      const footer = document.querySelector('.footer');
+      
+      if (todoCount > 0) {
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+      footer.innerHTML = template;
     },
-    toggleAll: function(e) {
-      let isChecked = $(e.target).prop('checked');
+    toggleAll: function (e) {
+      let isChecked = e.target.checked;
 
-      this.todos.forEach(function(todo) {
+      this.todos.forEach(function (todo) {
         todo.completed = isChecked;
       });
 
       this.render();
     },
-    getActiveTodos: function() {
-      return this.todos.filter(function(todo) {
+    getActiveTodos: function () {
+      return this.todos.filter(function (todo) {
         return !todo.completed;
       });
     },
-    getCompletedTodos: function() {
-      return this.todos.filter(function(todo) {
+    getCompletedTodos: function () {
+      return this.todos.filter(function (todo) {
         return todo.completed;
       });
     },
-    getFilteredTodos: function() {
+    getFilteredTodos: function () {
       if (this.filter === 'active') {
         return this.getActiveTodos();
       }
@@ -131,16 +145,16 @@ document.addEventListener('DOMContentLoaded',function() {
 
       return this.todos;
     },
-    destroyCompleted: function() {
+    destroyCompleted: function () {
       this.todos = this.getActiveTodos();
       this.render();
     },
     // accepts an element from inside the `.item` div and
     // returns the corresponding index in the `todos` array
-    getIndexFromEl: function(el) {
-      let id = $(el)
+    getIndexFromEl: function (el) {
+      let id = el
         .closest('li')
-        .data('id');
+        .dataset.id;
       let todos = this.todos;
       let i = todos.length;
 
@@ -150,9 +164,9 @@ document.addEventListener('DOMContentLoaded',function() {
         }
       }
     },
-    create: function(e) {
-      let $input = document.getIndexFromEl(e.target);
-      let val = $input.val().trim();
+    create: function (e) {
+      let $input = e.target;
+      let val = $input.value.trim();
 
       if (e.which !== ENTER_KEY || !val) {
         return;
@@ -164,27 +178,28 @@ document.addEventListener('DOMContentLoaded',function() {
         completed: false
       });
 
-      $input.val('');
+      $input.value;
 
       this.render();
     },
-    toggle: function(e) {
+    toggle: function (e) {
       let i = this.getIndexFromEl(e.target);
       this.todos[i].completed = !this.todos[i].completed;
       this.render();
     },
-    editingMode: function(e) {
-      let $input = $(e.target)
+    editingMode: function (e) {
+      let $input = e.target
         .closest('li')
-        .addClass('editing')
+        .classList
+        .add('editing')
         .find('.edit');
       // puts caret at end of input
-      let tmpStr = $input.val();
-      $input.val('');
-      $input.val(tmpStr);
+      let tmpStr = $input.value;
+      $input.value = '';
+      $input.value = tmpStr;
       $input.focus();
     },
-    editKeyup: function(e) {
+    editKeyup: function (e) {
       if (e.which === ENTER_KEY) {
         e.target.blur();
       }
@@ -195,13 +210,13 @@ document.addEventListener('DOMContentLoaded',function() {
           .blur();
       }
     },
-    update: function(e) {
+    update: function (e) {
       let el = e.target;
-      let $el = $(el);
-      let val = $el.val().trim();
+      let $el = el;
+      let val = $el.value.trim();
 
-      if ($el.data('abort')) {
-        $el.data('abort', false);
+      if ($el.dataset.abort) {
+        $el.dataset.abort = false;
       } else if (!val) {
         this.destroy(e);
         return;
@@ -211,7 +226,7 @@ document.addEventListener('DOMContentLoaded',function() {
 
       this.render();
     },
-    destroy: function(e) {
+    destroy: function (e) {
       this.todos.splice(this.getIndexFromEl(e.target), 1);
       this.render();
     }
