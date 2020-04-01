@@ -78,5 +78,5 @@ const calculateAspectRatio = function () {
     let valueType = parseInt(ratioWidth.value);
     let aspectRatioForm = module1.calculateAspectRatio(originalRatio1, originalRatio2, valueType, aspectRatioResult);
     aspectRatioResult.value = aspectRatioForm;
-}
+};
 aspectForm.addEventListener('change', calculateAspectRatio);
