@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <title>Calculator X</title>
+    <script type="module" src="modules/index.js" defer></script>
 </head>
 
 <body>
@@ -127,13 +128,11 @@
                     <span class="lead font-weight-bold">&equals;</span>
                     <span class="lead ml-1">New width</span>
                     <div class="col">
-                        <input type="number" id="ratio_result-width" class="ratio width result form-control" value="0"
-                            data-operation="ratio" />
+                        <input type="number" id="ratio_result-width" class="ratio width result form-control" data-operation="ratio" />
                     </div>
                     <span class="lead">New height</span>
                     <div>
-                        <input type="number" id="ratio_result-height" class="ratio height result form-control" value="0"
-                            data-operation="ratio" />
+                        <input type="number" id="ratio_result-height" class="ratio height result form-control" data-operation="ratio" />
                     </div>
                 </div>
             </form>
