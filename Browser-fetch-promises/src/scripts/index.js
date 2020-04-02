@@ -9,7 +9,7 @@ import '../styles/main.scss';
 
 const modal = document.querySelector("#myModal");
 const close = document.querySelector(".close");
-
+const modalText=document.querySelector("#modalText")
 
 
 
@@ -23,6 +23,7 @@ const clockShort = () => {
 
     promise.then(spentIt => {
         spentIt;
+        modalText.innerText="You've been on the site for 5 seconds! Cool!"
     })
 };
 
