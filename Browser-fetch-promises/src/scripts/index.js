@@ -5,10 +5,31 @@ import '../styles/main.scss';
 
 // \/ All of your javascript should go here \/
 
+
+
 const modal = document.querySelector("#myModal");
 const close = document.querySelector(".close");
 
-const clock = () => {
+
+
+
+const clockShort = () => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(modal.style.display = "block")
+        }, 5000);
+    });
+
+
+    promise.then(spentIt => {
+        spentIt;
+    })
+};
+
+
+
+
+const clockLong = () => {
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(modal.style.display = "block")
@@ -25,6 +46,23 @@ const closeModal = () => {
     modal.style.display = "none";
 };
 
-document.addEventListener("DOMContentLoaded", clock);
 
-close.addEventListener("click", closeModal)
+
+//document.addEventListener("DOMContentLoaded", clockLong);
+
+close.addEventListener("click", closeModal);
+
+
+const choice = () => {
+    let userselection = confirm("Do you have 60 seconds?");
+    if (userselection === true) {
+        clockLong();
+    } else {
+        clockShort();
+    }
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", choice);
