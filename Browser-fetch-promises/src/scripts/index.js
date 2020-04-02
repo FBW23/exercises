@@ -10,17 +10,17 @@ const x = document.querySelector('.close');
 
 const promise = new Promise((resolve, reject) => {
     resolve(setTimeout(() => {
-        modal.style.display ='block';
-    },60000)), error=> {
-        reject(error);
+        modal.style.display = 'block';
+    }, 60000)), error => {
+        reject(Error('Promise failed'));
     };
 });
 
 promise
-.then(resolve => console.log('success'))
-.catch(error => console.error(error));
+    .then(() => console.log('success'))
+    .catch(error => console.error(error));
 
 // close the modal
-x.addEventListener('click', function() {
+x.addEventListener('click', function () {
     modal.style.display = 'none'
 });
