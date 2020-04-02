@@ -54,7 +54,7 @@ close.addEventListener("click", closeModal);
 
 
 const choice = () => {
-    let userselection = confirm("Do you have 60 seconds?");
+    let userselection = confirm("If you have 60 seconds, press OK, if you have 5 seconds only, CANCEL!    ");
     if (userselection === true) {
         clockLong();
     } else {
