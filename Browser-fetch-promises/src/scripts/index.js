@@ -4,4 +4,20 @@ import '../styles/main.scss';
 
 
 // \/ All of your javascript should go here \/
+const modal = document.querySelector('.close');
+function clearAlert() {
+    window.clearTimeout(timeoutID);
+}
 
+function delayedAlert() {
+    console.log('hey, before the timeout!');
+    timeoutID = new Promise(function(resolve) {
+        
+        window.setTimeout(resolve, 5000);
+    }).then(function () { setTimeout(function(){
+        modal.style.display = 'block'
+    }); // not being blocked by the code before 
+    });
+}
+
+window.addEventListener('load', delayedAlert);
