@@ -4,3 +4,37 @@ body,
 body * {
   box-sizing: border-box;
 }
+.timer {
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+  display: inline-block;
+  margin: 25px;
+  padding: 25px 30px;
+}
+
+.timer__item {
+  display: inline-block;
+  text-align: center;
+}
+
+.timer__item + .timer__item {
+  margin-left: 20px;
+}
+
+.timer__value,
+.timer__label {
+  display: block;
+}
+
+.timer__value {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.timer__label {
+  color: #777;
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}

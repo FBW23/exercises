@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
     <title></title>
   </head>
 
   <body>
+
+    <div id="js-timer" class="timer" role="timer" aria-label="A timer, counting down to {{eventName}}" data-endtime="2020-01-03 07:30:00">
+		
+      <span class="timer__item" id="timer-days">
+				<span class="timer__value">{{days}}</span>
+				<span class="timer__label">Days</span>
+			</span><!--/.timer__item-->
+
+			<span class="timer__item" id="timer-hours">
+				<span class="timer__value">{{hours}}</span>
+				<span class="timer__label">
+					Hours
+				</span>
+			</span><!--/.timer__item-->
+
+			<span class="timer__item" id="timer-minutes">
+				<span class="timer__value">{{minutes}}</span>
+				<span class="timer__label">
+					Minutes
+				</span>
+			</span><!--/.timer__item-->
+
+			<span class="timer__item" id="timer-seconds">
+				<span class="timer__value">{{seconds}}</span>
+				<span class="timer__label">
+					Seconds
+				</span>
+			</span><!--/.timer__item-->
+      
+		</div><!--/.timer-->
     <main class="container"></main>
+   
   </body>
 </html>
