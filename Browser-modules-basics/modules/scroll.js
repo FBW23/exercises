@@ -1,7 +1,7 @@
 function scrollWindow() {
     const siteNav = document.getElementById("site-title");
     const siteHeading = document.getElementById("heading");
-    window.addEventListener("scroll", () => {
+    document.addEventListener("scroll", () => {
         if (window.scrollY >= 300) {
             siteNav.classList.add("fixed-header");
             siteHeading.classList.add("visible-title");

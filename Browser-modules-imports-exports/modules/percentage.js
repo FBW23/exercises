@@ -16,3 +16,5 @@ function difference(first, second ) {
 }
 
 
+export {modulo, percentage, percentageOf, difference};
+//  export * as percentage from './percentage.js';

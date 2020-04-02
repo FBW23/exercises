@@ -1,0 +1,111 @@
+// This is where your styles can go, import any other scss or css files here or write your own style directly below
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: lightgrey;
+    height: 100vh;
+
+}
+
+main {
+    margin: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 100vh;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+
+
+}
+
+#left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 35%;
+    background: black;
+    color: white;
+    text-align: justify;
+
+}
+
+#text {
+    text-align: center;
+    margin: 0 12%;
+}
+
+.button {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 30px;
+    height: 2rem;
+    width: 7rem;
+    box-shadow: 0 2px #999;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px grey;
+    transform: translateY(4px);
+}
+
+
+#icons {
+
+    padding-top: 13rem;
+}
+
+i {
+    margin-left: 1rem;
+}
+
+
+.timer {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.unit {
+    margin-left: 2rem;
+    opacity: 0.8;
+    margin-top: 2.3rem;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+}
+
+h2{
+    text-align: center;
+}

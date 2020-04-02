@@ -1,4 +1,4 @@
-function clickImages() {
+const clickImages=()=> {
     const sectionContent = document.getElementById("content");
     sectionContent.addEventListener("click", e => {
         switch (e.target.tagName) {
@@ -6,6 +6,6 @@ function clickImages() {
             alert("All of the yarn is available in our shop!")
         }
     })
- }
+ };
  
  export {clickImages};

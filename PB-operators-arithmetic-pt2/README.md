@@ -39,5 +39,7 @@ What is Noemy's average hours worked per day?
 Q11. A math student scored 75, 70, 85, 90, 100 on the first five tests he took . After he took his sixth math test, the average is now 85. What did he score on the sixth test?
 Expected output: Score in the sixth test: --.
 
-Q12. For James to get a 1st class degree, he needs to get an average of 80% in all 9 of his assessments. He has taken 8 assessments and his average is 78%. What is the minimum percentage he must get in his last assessment to ensure he gets a first class? 
+Q12. For James to get a 1st class degree, he needs to get an average of 80% in all 9 of his assessments. 
+He has taken 8 assessments and his average is 78%. What is the minimum percentage he must get in his last 
+assessment to ensure he gets a first class? 
 Expected output: James needs a minimum of --% to get an 80% average.

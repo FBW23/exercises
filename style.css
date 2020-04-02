@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    box-sizing:0;
+    padding:0;
+}
+
+header{
+    background:black;
+    height:50px;
+    color:white;
+}
+
+ul li{
+    display:inline-block;
+    padding: 16px 10px;
+}
+
+.submenu{
+    position:absolute;
+    display:none;
+    background:blue;
+    top:50px;
+    left:0px;
+    width:100%;
+
+}
+.submenu li{
+    width:100%;
+}
+
+.mainmenu li:hover{
+    background:blue;
+
+}
+
+.mainmenu li:hover .submenu{
+    display:block;
+}
+
+.submenu li:hover{
+    color:black;
+    background:white;
+    
+}

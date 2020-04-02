@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="vb.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>My Little Tea Shop</title>
@@ -65,21 +65,20 @@
         <h2>Love Tea?</h2>
         <h3>Tell us who you are for more information & win tea prizes!</h3>
         <section class="info__form d-flex flex-column justify-content-center">
-            <form class="d-flex flex-column">
+            <form class="d-flex flex-column" id="form">
                 First name:<br>
                 <input type="text" name="firstname" class="border border-warning"><br>
                 Last name:<br>
                 <input type="text" name="lastname" class="border border-warning"><br>
                 Email address:<br>
                 <input type="email" class="border border-warning">
-                <!-- <input type="submit" class="submit mt-2"> -->
-
+                <input type="submit" class="submit mt-2">
             </form>
-            <input type="submit" class="submit m-2">
+            <!-- <input  id="button" type="submit" class="submit m-2"> -->
             <div class="modal">
                 <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="modal-close text-warning">&times;</span>
+                <div  class="modal-content">
+                    <span id="closing" class="modal-close text-warning">&times;</span>
                     <p class="text-align-center">Thank you for your submission! & Good Luck!</p>
                 </div>
             </div>
@@ -101,7 +100,7 @@
     </footer>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="index.js"></script>
+        <script src="vb.js"></script>
 </body>
 
 </html>

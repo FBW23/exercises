@@ -1,4 +1,4 @@
-# The Guessing Game
+<!-- # The Guessing Game
 ## Create a guessing game for players. 
 
 * Randomize a number between 1-10. Do not show the player.
@@ -11,4 +11,4 @@
 * If the player fails to guess the number after three attempts, print out that the player was unsuccessful AND what the number was. e.g. "Sorry, you failed to guess the number in three attempts. The number was 0!"
 ![alt text](./images/game-lost.png "Lost Game") 
 
-**See the images for reference**
+**See the images for reference** -->

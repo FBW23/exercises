@@ -1,65 +1,26 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+#formContainer{
+  display:flex;
+  flex-direction: column;
+
 }
 
-* {
-  box-sizing: border-box;
+#firstForm{
+  border-top: 1px solid lightgrey;;
 }
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: white;
+.inputField{
+  background:lightgrey;
+  border:none;
+  height:2em;
 }
 
-/* Full-width input fields */
-input[type='text'],
-input[type='password'],
-input[type='date'],
-select,
-label[id] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+p{
+  display:flex;
+  flex-direction: column;
+  
 }
 
-input[type='text']:focus,
-input[type='password']:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 5px;
-  border: none;
-  cursor: pointer;
-  width: 45%;
-  opacity: 0.9;
-}
-
-.registerbtn:hover {
-  opacity: 1;
-}
-
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
-
+<<<<<<< HEAD
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #f1f1f1;
@@ -68,8 +29,16 @@ a {
 #addressDiv,
 #profileDiv,
 #resultDiv {
-  display: none;
+  display: block;
 }
 #photoLabel {
   width: 250px;
 }
+=======
+.button{
+  background: green;
+  color:white;
+  height:3em;
+  width:40vw;
+}
+>>>>>>> f15968bde50e68a1190837b1fe01f7dfa8d7a6c9

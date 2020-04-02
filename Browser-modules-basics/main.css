@@ -9,14 +9,17 @@
 }
 
 li {
+    
     list-style: none;
 }
 
 .header {
+    
     height: 15rem;
     background-image: url("images/yarn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 
 aside img {
@@ -45,14 +48,14 @@ article img {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index:1 ;
 }
 
 /* modal styling */
 .modal {
-    display: none;
+    display:none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -82,3 +85,4 @@ article img {
     text-decoration: none;
     cursor: pointer;
 }
+
