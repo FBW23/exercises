@@ -5,3 +5,16 @@ import '../styles/main.scss';
 
 // \/ All of your javascript should go here \/
 
+let message = document.querySelector('.modal');
+
+function timedOut() {
+    message.style.display = 'block'
+}
+setTimeout(timedOut, 60000);
+let closeBTN = document.querySelector('.close')
+
+function closeDIV() {
+    document.querySelector('.modal').style.display = 'none'
+
+}
+closeBTN.addEventListener('click', closeDIV);
