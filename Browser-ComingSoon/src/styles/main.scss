@@ -4,3 +4,52 @@ body,
 body * {
   box-sizing: border-box;
 }
+
+main{
+  display: flex;
+  width: 100%;
+  
+}
+aside{
+  margin: 0px;
+  background-image: url('../images/shark.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming_soon{
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 300px;
+  
+}
+
+h1{
+  
+}
+
+.event{
+  font-size: 20px;
+  
+}
+
+#counter{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+button{
+  margin: 0 auto;
+}
+
+footer{
+  display: flex;
+  
+}
