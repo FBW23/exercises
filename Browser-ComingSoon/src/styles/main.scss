@@ -1,0 +1,24 @@
+// This is where your styles can go, import any other scss or css files here or write your own style directly below
+
+body {
+  box-sizing: border-box;
+  background: url(https://cdn.pixabay.com/photo/2016/11/20/08/58/celebration-1842258_960_720.jpg);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 250px;
+  font: 40px 'Gloria Hallelujah';
+  color: darkred;
+  text-shadow: 2px 1px 1px rgba(255, 250, 255, 1);
+}
+
+#timer {
+  color: #a3ef10;
+  font-family: 'Archivo Narrow', serif;
+  font-size: 80px;
+  display: flex;
+  letter-spacing: 3px;
+  justify-content: center;
+  text-shadow: 3px 3px 0 rgba(50, 50, 50, 0.5);
+}
