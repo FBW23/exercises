@@ -5,3 +5,16 @@ import '../styles/main.scss';
 
 // \/ All of your javascript should go here \/
 
+// start the countdown
+let closeBTN = document.querySelector('.close')
+let message = document.querySelector('.modal');
+const promise1 = new Promise(function (resolve, reject) {
+setTimeout(function () {
+message.style.display = 'block';
+resolve();
+}, 10000);
+});
+function closeDIV (){
+document.querySelector('.modal').style.display='none'
+}
+closeBTN.addEventListener('click', closeDIV);
