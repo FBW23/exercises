@@ -5,14 +5,17 @@ import '../styles/main.scss';
 
 // \/ All of your javascript should go here \/
 const myModal = document.querySelector('#myModal');
-const closeModal = document.querySelector('.close');
 
 const promise1 = new Promise(function (resolve, reject) {
     setTimeout(function () {
         myModal.style.display = 'block';
         resolve();
     }, 60000);
+}).then (function() {
+    console.log('success!');
 });
+
+const closeModal = document.querySelector('.close');
 
 const closing = function() {
     myModal.style.display = 'none';
