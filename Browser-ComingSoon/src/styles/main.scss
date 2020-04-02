@@ -1,6 +1,8 @@
 // This is where your styles can go, import any other scss or css files here or write your own style directly below
 
-body,
-body * {
+body {
   box-sizing: border-box;
+  background-image: url(../images/bride_horse.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
