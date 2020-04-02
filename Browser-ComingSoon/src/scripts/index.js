@@ -12,7 +12,7 @@ import '../styles/main.scss';
 //===================================
 
 
-let countDownDate = new Date("Aug 12, 2020 00:01:25").getTime();
+let countDownDate = new Date("Nov 15, 2020 00:01:25").getTime();
 
 
 let x = setInterval(function () {
@@ -24,7 +24,7 @@ let x = setInterval(function () {
     let distance = countDownDate - now;
     console.log(Math.floor(distance / (1000 * 60 * 60 * 24)))
     
-    let days = Math.floor(distance / (10000 * 60 * 60 * 24));
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
