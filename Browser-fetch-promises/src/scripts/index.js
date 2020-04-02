@@ -2,25 +2,21 @@
 import '../styles/main.scss';
 // Import any additional modules you want to include below \/
 
-
 // \/ All of your javascript should go here \/
 
-console.log('anyone out there?');
+console.log(' out there?');
 
 const modal = document.querySelector('.modal');
 const close = document.querySelector('.close');
 
-let promise = new Promise(function (resolve, reject) {
-    if (modal.style.display = 'none') {
-        resolve(); 
-    } else {
-        reject(); 
-    }
-}).then(function () { 
+const promise = new Promise(function (resolve, reject) {
     window.setTimeout(function () {
         modal.style.display = "block";
-    }, 2 * 1000);
-}).catch(function () { 
+        resolve();
+    }, 60 * 1000);
+}).then(function () {
+    console.log('successfully shown modal');
+}).catch(function () {
     console.log('Some error has occured');
 });
 
