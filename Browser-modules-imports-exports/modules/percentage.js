@@ -15,4 +15,8 @@ function difference(first, second ) {
     return (calc * 100) / first 
 }
 
+<<<<<<< HEAD
 export { modulo, percentage, percentageOf, difference };  
+=======
+
+>>>>>>> 566a4ea576d8a6271e58da5110866610d650481c
