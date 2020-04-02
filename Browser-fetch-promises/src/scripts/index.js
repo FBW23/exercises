@@ -9,14 +9,16 @@ const modal = document.querySelector('.modal');
 const x = document.querySelector('.close');
 
 const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
+    resolve(setTimeout(() => {
         modal.style.display ='block';
-    },60000);
+    },60000)), error=> {
+        reject(error);
+    };
 });
 
 promise
-.then(() => console.log('success'))
-.catch(()=> console.log('error'))
+.then(resolve => console.log('success'))
+.catch(error => console.error(error));
 
 // close the modal
 x.addEventListener('click', function() {
