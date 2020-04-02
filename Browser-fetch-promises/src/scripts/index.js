@@ -18,8 +18,9 @@ const promise = new Promise((resolve, reject) => {
 
 promise
     .then(() => console.log('success'))
-    .catch(error => console.error(error));
-
+    .catch(error => console.error(error))
+    .finally(() => console.log('done'));
+    
 // close the modal
 x.addEventListener('click', function () {
     modal.style.display = 'none'
