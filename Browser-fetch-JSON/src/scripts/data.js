@@ -21,7 +21,7 @@ const recipes = {
         image: "https://www.tasteofhome.com/wp-content/uploads/2017/10/Vanilla-Cheesecake_EXPS_THLS17_205125_D02_23_3b-1.jpg"
     }
     ],
-    biscuits: [{
+    "biscuits": [{
         type: "biscuits",
         author: "Vincent Grey",
         title: "Ginger Snaps",
@@ -43,7 +43,7 @@ const recipes = {
         image: "https://i0.wp.com/everydaycooks.co.uk/wp-content/uploads/2017/10/millionaire-shortbread-h2.jpg?fit=1800%2C1360&ssl=1"
     }
     ],
-    bread: [{
+    "bread": [{
         type: "bread",
         author: "Martin Zammit",
         title: "Sourdough",
@@ -66,3 +66,13 @@ const recipes = {
     }
     ],
 };
+
+
+
+
+
+
+
+ const recipesOBJ  = JSON.stringify(recipes);
+
+ export{recipesOBJ};
