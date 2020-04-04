@@ -14,3 +14,4 @@ const showBlock = function () {
 titles.forEach(title => {
     title.addEventListener('click', showBlock);
 })
+
