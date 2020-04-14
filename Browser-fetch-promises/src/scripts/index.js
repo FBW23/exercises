@@ -1,5 +1,5 @@
 // The following line makes sure your styles are included in the project. Don't remove this.
-import '../styles/main.scss';
+//import '../styles/main.scss';
 // Import any additional modules you want to include below \/
 
 
@@ -46,9 +46,6 @@ const clockLong = () => {
 const closeModal = () => {
     modal.style.display = "none";
 };
-
-
-
 //document.addEventListener("DOMContentLoaded", clockLong);
 
 close.addEventListener("click", closeModal);

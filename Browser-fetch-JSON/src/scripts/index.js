@@ -1,5 +1,5 @@
 // The following line makes sure your styles are included in the project. Don't remove this.
-import '../styles/main.scss';
+//import '../styles/main.scss';
 // Import any additional modules you want to include below \/
 
 import {
@@ -14,8 +14,6 @@ const sections = document.querySelectorAll(".container section");
 const categoryNames = Object.keys(recipes);
 const categoryValues = Object.values(recipes);
 
-let currentCategoryName = ``;
-let currentCategoryValue = ``;
 let currentItem = ``;
 let currentName = ``;
 let currentAuthor = ``;
@@ -25,8 +23,8 @@ let template = ``;
 let currentType = ``;
 
 for (let i = 0; i < categoryNames.length; i++) {
-    currentCategoryName = categoryNames[i];
-    currentCategoryValue = categoryValues[i];
+   let currentCategoryName = categoryNames[i];
+   let currentCategoryValue = categoryValues[i];
 
     for (let j = 0; j < currentCategoryValue.length; j++) {
         currentItem = currentCategoryValue[j];
