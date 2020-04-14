@@ -7,6 +7,9 @@ import '../styles/main.scss';
 // \/ All of your javascript should go here \/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ce4a71165032ceb3abf7d7de9f979fb92fe26c90
 let closeBTN = document.querySelector('.close')
 let message = document.querySelector('.modal');
 const promise1 = new Promise(function (resolve, reject) {
@@ -22,6 +25,7 @@ function closeDIV (){
 }
 
 closeBTN.addEventListener('click', closeDIV);
+<<<<<<< HEAD
 =======
 document.addEventListener('DOMContentLoaded', function () {
     const body = document.querySelector('body');
@@ -47,3 +51,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 >>>>>>> d2ac006bac3b465ed6d89797d3d5bcdbe9599324
+=======
+>>>>>>> ce4a71165032ceb3abf7d7de9f979fb92fe26c90
