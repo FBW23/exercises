@@ -5,3 +5,23 @@ import '../styles/main.scss';
 
 // \/ All of your javascript should go here \/
 
+const modal = document.querySelector('.modal');
+const x = document.querySelector('.close');
+
+const promise = new Promise((resolve, reject) => {
+    resolve(setTimeout(() => {
+        modal.style.display = 'block';
+    }, 60000)), error => {
+        reject(Error('Promise failed'));
+    };
+});
+
+promise
+    .then(() => console.log('success'))
+    .catch(error => console.error(error))
+    .finally(() => console.log('done'));
+    
+// close the modal
+x.addEventListener('click', function () {
+    modal.style.display = 'none'
+});

@@ -1,6 +1,61 @@
 // This is where your styles can go, import any other scss or css files here or write your own style directly below
 
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
 body,
 body * {
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 3.5rem;
+
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-image: url('https://i.pinimg.com/originals/f6/20/a1/f620a179ca1acfd15a0754701677fb58.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  height: 100vh;
+}
+
+.left {
+  padding: 2em;
+  font-size: 2rem;
+}
+
+.right {
+  padding: 0 10em;
+}
+
+button,
+a {
+  width: 30%;
+  height: 50px;
+  border-radius: 10%;
+  background-color: firebrick;
+  color: white;
+  border-color: firebrick;
+}
+
+button:hover,
+button:focus
+ {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+
