@@ -63,11 +63,11 @@ const buttonclick=()=>{
 const promiseOfButton=new Promise(function (resolve) {
     window.setTimeout(function () {
         resolve(btn)
-    }, (1000));
+    }, (0));
 });
 
 promiseOfButton.then(function(btn) {
-  
+    alert("Continue to Subscribe!")
     btn.style.background = "#17A2B8";
 })
 
