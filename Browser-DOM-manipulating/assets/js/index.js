@@ -25,8 +25,8 @@
 // * Work with the `index.html` and `index.js` files provided in this repository.
 // * Add bootstrap styling where necessary. See the reference images for result.
 
-const books = [
-  {
+const books = {
+  lists : [{
     title: "The Design of EveryDay Things",
     author: "Don Norman",
     alreadyRead: false,
@@ -53,7 +53,9 @@ const books = [
     alreadyRead: false,
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
-];
+],
+}
+;
 
 
 
@@ -63,14 +65,15 @@ for (let i=0; i<books.length; i++){
 
   document.querySelector('ul').innerHTML += `
   <li class="card" style="width: 18rem;">
-  <img class="card-img-top" src=${books[i].img} alt="Card image cap">
+  <img class="card-img-top" src=${books.lists[i].img} alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">${books[i].title}</h5>
-    <p class="card-text">${books[i].author.split(' ').reverse().join(', ')}</p>
+    <h5 class="card-title">${books.lists[i].title}</h5>
+    <p class="card-text">${books.lists[i].author.split(' ').reverse().join(', ')}</p>
     <a href="#" class="btn btn-primary">Read</a>
   </div>
   </li>
   `
+
 }
 // document.querySelector('ul').innerHTML = document.querySelector('ul').innerHTML + '>img';
 // // document.querySelector('ul').innerHTML += '<li></li>';

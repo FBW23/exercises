@@ -5,16 +5,17 @@ import '../scripts/data.js';
 
 // \/ All of your javascript should go here \/
 const myNewObject = JSON.parse(MyJSON);
+console.log(myNewObject);
 
-for (let i = 0; i < myNewObject; i++) {
+for (let i = 0; i < myNewObject.length; i++) {
    
-    const card = document.createElement(`<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="${myNewObject[i][image]} " alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>`)
-    // append here 
-    card.append
+   const cakes = document.querySelector('#cakes');
+   cakes.innerHTML += `  <li class="card" style="width: 18rem;">
+   <img class="card-img-top" src=${myNewObject[i].cakes[0].image} alt="Card image cap">
+   <div class="card-body">
+     <h5 class="card-title">${myNewObject[i].cakes[0].title}</h5>
+     <p class="card-text">bla</p>
+     <a href="#" class="btn btn-primary">Read</a>
+   </div>
+   </li>`
 }
