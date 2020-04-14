@@ -21,14 +21,16 @@ const recipes = JSON.parse(recipesJSON);
     
     const cakesBoilerplate = 
     `
+
     <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src='${element['image']}'>
-    <div class="card-body">
-     <h5>${element['title']}</h5>
-    <p>${element['author']}</p>
-    <p>${element['ingredients']}</p>
+      <img class="card-img-top" src='${element['image']}'>
+      <div class="card-body">
+        <h5>${element['title']}</h5>
+        <p class="author">${element['author']}</p>
+        <p>${element['ingredients']}</p>
+      </div>
     </div>
-    </div>
+
     `;
 
     switch(element['type']) {
