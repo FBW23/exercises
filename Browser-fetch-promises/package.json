@@ -1,5 +1,5 @@
 {
-  "name": "Browser-ComingSoon",
+  "name": "",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "last 2 versions"
   ],
   "keywords": [],
-  "author": "Bianca Richa",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.3.4",
