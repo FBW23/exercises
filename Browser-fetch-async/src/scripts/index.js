@@ -39,17 +39,15 @@ const modal = document.getElementById("myModal");
 
 
 const close=document.querySelector(".close");
+const btn=document.querySelector("#continue");
+
 
 const closeIt=()=>{
     modal.style.display="none";
 }
 
-
 close.addEventListener("click", closeIt)
 
-
-
-// const Show=modal.style.display="block"
 
 async function showModal() {
 await window.setTimeout(function () {
@@ -58,32 +56,6 @@ await window.setTimeout(function () {
 
 document.addEventListener("DOMContentLoaded", showModal);
     
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let btn=document.querySelector("#continue");
-
 
 const buttonclick=()=>{
 
