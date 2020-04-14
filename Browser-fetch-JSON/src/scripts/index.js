@@ -21,17 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
         let author = myJSON.cakes[i].author;
         let ingredients = myJSON.cakes[i].ingredients;
         let image = myJSON.cakes[i].image;
-        cakeSection.innerHTML =
-        `
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${image}" alt="Card image cap">
-        <div class="card-body">
-        <h5 class="card-title">${cakeName}</h5>
-        <p class="card-text">${author}</p>
-        <hr>
-        <p class="card-text">Ingredients: ${ingredients}</p>
-        </div>
-        </div>
-        `
+        for (let j = 0; j < myJSON.cakes.length; j++) {
+            console.log(container.length)
+            let template = `<div class="card">
+                <img src=${image}>
+                <p class="type">${type}</p>
+                <p class="author">${author}</p>
+                <p class="cakeName">${cakeName}</p>
+                <p class="ingredients"> ${ingredients}</p>
+              </div>`
+              cakeSection[j].innerHTML += template;
+        }
     }
 });
