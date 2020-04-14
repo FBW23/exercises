@@ -64,5 +64,9 @@ const recipes = {
         ingredients: ["water", "flour"],
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdfaG5Cv4oOjewDMyFitnCpsOBH3ifA5fkycKUy0_y_4Vv2P4IkA"
     }
-    ],
+    ]
 };
+// convert it from javascript object to a json
+//const recipesJSON = JSON.stringify(recipes);
+// export it for later use 
+export { recipes };
