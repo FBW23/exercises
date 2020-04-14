@@ -1,4 +1,3 @@
-
 // # Fetch - Async Await
 
 // **Instructions**:
@@ -11,15 +10,22 @@
 
 
 
- import "../styles/main.scss";
+import "../styles/main.scss";
 import "babel-polyfill"
 
+
+
+
+const btn = document.querySelector("#continue");
 const modal = document.getElementById("myModal");
-// let promiseOfModal = new Promise(function (resolve) {
-//     window.setTimeout(function () {
-//         resolve(modal)
-//     }, (1000 * 60));
-// });
+const close = document.querySelector(".close");
+
+let promiseOfModal = new Promise(function (resolve) {
+    window.setTimeout(function () {
+        resolve(modal)
+    }, (2000));
+
+});
 
 // promiseOfModal.then(function(val) {
 //     console.log("User has been on the page for 60 seconds");
@@ -38,40 +44,72 @@ const modal = document.getElementById("myModal");
 
 
 
-const close=document.querySelector(".close");
-const btn=document.querySelector("#continue");
 
-
-const closeIt=()=>{
-    modal.style.display="none";
-}
-
-close.addEventListener("click", closeIt)
 
 
 async function showModal() {
-await window.setTimeout(function () {
-    modal.style.display="block"
-}, (2000));} 
+    await promiseOfModal;
+    modal.style.display = "block";
+}
+showModal()
 
-document.addEventListener("DOMContentLoaded", showModal);
+document.addEventListener("DOMContentLoaded", promiseOfModal);
+
+
+
+
+
+
+
+
+
+
+
+//BUTTONPROMISE
+
+
+const buttonclick = () => {
+const promiseOfButton = new Promise(function (resolve) {
+    btn.addEventListener("animationend", buttonRelated)
+    resolve()
     
-
-const buttonclick=()=>{
-
-
-const promiseOfButton=new Promise(function (resolve) {
-    window.setTimeout(function () {
-        resolve(btn)
-    }, (0));
-});
-
-promiseOfButton.then(function(btn) {
-    alert("Continue to Subscribe!")
-    btn.style.background = "#17A2B8";
 })
 
-};
+async function buttonRelated() {
+    await promiseOfButton;
+    alert("Continue to Subscribe!")
+    btn.style.background = "#17A2B8";
+}
 
 
-btn.addEventListener("animationend",buttonclick)
+   
+}
+
+
+
+//     promiseOfButton.then(function (btn) {
+//         alert("Continue to Subscribe!")
+//         btn.style.background = "#17A2B8";
+//     })
+
+// };
+
+
+// btn.addEventListener("animationend", buttonclick)
+btn.addEventListener("click", buttonclick)
+
+
+
+
+
+// CLOSING THE MODAL
+
+
+
+
+
+const closeIt = () => {
+    modal.style.display = "none";
+}
+
+close.addEventListener("click", closeIt);
