@@ -1,0 +1,29 @@
+<!doctype html> <html lang=en> <head> <meta charset=UTF-8 /> <meta name=viewport content="width=device-width,initial-scale=1"/> <meta http-equiv=X-UA-Compatible content="ie=edge"/> <title>Browser-fetch-02-crypto-currency-converter</title> <link href="styles/main.css" rel="stylesheet"></head> <body> <script id=currencies-template type=text/x-handlebars-template> <main class="">
+
+                   <form>
+             <h1 class="mb-3">Crypto-Rate</h1>
+              <div class="form-group form-inline w-100 my-2">
+
+                <label for="crypto-currency" class="border rounded-left mt-0 title">Crypto-Currency</label>
+                <select class="form-control rounded-right " id="crypto-currency">
+                  <option>BTC</option>
+                  <option>LTC</option>
+                  <option>DOGE</option>
+                  <option>ETH</option>
+                </select>
+
+              </div>
+               <input class="form-control rounded my-2" type="number" placeholder="Amount" id='amount'>
+              <div class="form-group form-inline my-2">
+              <label for="currency" class="border rounded-left mt-0 title">Currency</label>
+                <select class="form-control rounded-right" id="currency">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>TRY</option>
+                </select>
+
+              </div>
+      <input id='result' class="form-control rounded my-2" type="text" placeholder="Result" readonly>
+               <button type="submit" class="btn border rounded convert">Convert</button>
+            </form>
+                  </main> </script> <script type="text/javascript" src="scripts/bundle.js"></script></body> </html> 
