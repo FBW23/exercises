@@ -11,18 +11,20 @@
 ## Instructions for students:
 
 Create a currency converter webpage. The page should convert the given currency to the chosen one. 
-  
- - use exchange rates API [Cryptocurrencies](https://www.cryptonator.com/api)
+
+- use exchange rates API [Cryptocurrencies](https://www.cryptonator.com/api)
 
 Example once your program is running properly:
 
- 
- ![preview](./demo.gif)
+![preview](./demo.gif)
 
-
-
+List what are the exchange rates between Euro and few currencies of your choice.
 
 ### Rules
 
 -   This is an individual assignment.
 -   Deadline: 3 hours.
+
+### Extra
+
+- Use class
