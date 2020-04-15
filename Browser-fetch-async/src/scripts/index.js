@@ -42,14 +42,10 @@ let promiseOfModal = new Promise(function (resolve) {
 // })
 
 
-
-
-
-
-
 async function showModal() {
-    await promiseOfModal;
-    modal.style.display = "block";
+    const timePassed = await promiseOfModal;
+
+    timePassed.style.display = "block";
 }
 showModal()
 
@@ -66,24 +62,27 @@ document.addEventListener("DOMContentLoaded", promiseOfModal);
 
 
 //BUTTONPROMISE
-
+async function buttonRelated() {
+    const buttonAnimation = await buttonclick();
+    alert("Continue to Subscribe!")
+    buttonAnimation.style.background = "#17A2B8";
+}
 
 const buttonclick = () => {
-const promiseOfButton = new Promise(function (resolve) {
-    btn.addEventListener("animationend", buttonRelated)
-    resolve()
-    
-})
+    return new Promise(function (resolve) {
+        btn.addEventListener("animationend",()=>{
+            buttonRelated();
+        })
+        resolve(btn)
 
-async function buttonRelated() {
-    await promiseOfButton;
-    alert("Continue to Subscribe!")
-    btn.style.background = "#17A2B8";
+    })
+
+
 }
 
 
-   
-}
+
+btn.addEventListener("click", buttonclick)
 
 
 
@@ -96,11 +95,6 @@ async function buttonRelated() {
 
 
 // btn.addEventListener("animationend", buttonclick)
-btn.addEventListener("click", buttonclick)
-
-
-
-
 
 // CLOSING THE MODAL
 
