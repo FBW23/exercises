@@ -1,0 +1,11 @@
+body{
+    background-image:url("manguinhos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 30px;
+    
+}
+form{
+    text-align: center;
+    padding-top: 6em;
+}
