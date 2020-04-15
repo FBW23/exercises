@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto-rate</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <form >
+        <h1>Crypto-Rate</h1>
+        <div class="input">
+            <span id="span1">Crypto-currency</span>
+            <select id="cryptoCurrency">
+                <option value="">Choose...</option>
+                <option value="BTC">BTC</option>
+                <option value="XRP">XRP</option>
+                <option value="EOS">EOS</option>
+                <option value="LTC">LTC</option>
+                <option value="ETH">ETH</option>
+            </select>
+        </div>
+        <input type="number" name="cryptoAmount" id="cryptoAmount">
+        <div class="input">
+            <span id="span2">Currency</span>
+            <select id="currency">
+                <option value="">Choose...</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="HK">HK</option>
+            </select>
+        </div>
+        <input type="number" name="result" id="result" readonly>
+        <input id="button" type="submit" value="Convert">
+    </form>
+</body>
+</html>
