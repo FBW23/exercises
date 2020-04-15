@@ -1,0 +1,64 @@
+form{
+    display:flex;
+    flex-direction: column;
+   margin:5rem;
+}
+
+.input{
+    display:flex;
+    margin-top:3rem;
+}
+
+ input{
+    margin-top:1rem;
+   
+    
+ }
+
+select,#currency,#cryptoCurrency, input{
+    border-radius: 3px;
+    border:none;
+}
+
+#cryptoAmount{
+    border:1px solid lightgrey;
+}
+
+span{
+width:25%
+}
+
+select{
+    width:75%;
+}
+
+
+#result{
+    background:lightgrey;
+   border:none
+
+}
+
+#span1{
+    background:blueviolet;
+    color:white;
+}
+
+#span2{
+    background:red;
+    color:white;
+}
+
+#button{
+    background:blueviolet;
+    color:white;
+    width:5rem;
+}
+
+#span1, #span2, #button{
+    padding:0.5rem;
+    text-align: center;
+    border-radius: 3px;
+  
+}
+
