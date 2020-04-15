@@ -31,12 +31,23 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
 
-const subscribePromise = new Promise((resolve, reject) => {
-    const button = document.querySelector('.btn');
-    button.addEventListener('mouseout', function() {
-        resolve(this.style.background = 'black') 
+
+    async function asyncSubscribe() {
+        let promiseSubs = new Promise(function (resolve, reject) {
+            button.addEventListener('animationend', function () {
+                resolve(button);
+            });
+
+            await promiseSubs.then(function (button) {
+
+                alert('Subscribe now');
+                button.style.backgroundColor = 'black';
+
+            });
+        });
+
         
-    })
-})
- subscribePromise();
-})
+    }
+    asyncSubscribe();
+
+});
