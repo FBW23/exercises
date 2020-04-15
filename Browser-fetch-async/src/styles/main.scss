@@ -48,7 +48,7 @@ body * {
 
 .btn {
   width: 100%;
-  &:hover {
+  &:hover { 
     animation-name: slide-in;
     animation-duration: .2s;
     animation-timing-function: ease-in-out;
