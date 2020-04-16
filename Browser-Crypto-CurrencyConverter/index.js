@@ -12,10 +12,10 @@ const selectCurrency = document.querySelector('#currency');
 const result = document.querySelector('#result');
 
 function displayResults(json){
-    const change = json.ticker.change;
+    const change = json.ticker.price;
     const amount = searchCrypto.value;
     const calculation = amount * change;
-    result.value += calculation;
+    result.value = calculation;
 
 };
 
