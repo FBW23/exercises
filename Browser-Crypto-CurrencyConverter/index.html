@@ -3,63 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Currency converter</title>
+  
+  <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="script.js" defer></script>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
+  
   <main class="container">
-    <form class="form-block">
-      <h1 class="pt-5">Crypto-Rate</h1>
-      <div class="pt-5 pb-3">
-        <label class="sr-only" for="selectedCrypto"></label>
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <div class="input-group-text bg-primary text-light">
-              Crypto-currency
-            </div>
-          </div>
-          <select class="custom-select form-control" id="selectedCrypto">
-            <option value="btc">Bitcoin (BTC)</option>
-            <option value="xrp">Ripple (XRP)</option>
-            <option value="eos">EOSIO (EOS)</option>
-          </select>
-        </div>
-      </div>
-      <div class="pb-5">
-        <input
-          type="text"
-          class="form-control amountOfCrypto"
-          placeholder="0"
-        />
-      </div>
-      <div>
-        <label class="sr-only" for="selectedCurrency"></label>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text bg-danger text-light">Currency</div>
-          </div>
-          <select class="custom-select form-control" id="selectedCurrency">
-            <option value="eur">Euro (EUR)</option>
-            <option value="usd">US Dollar (USD)</option>
-            <option value="gbp">British Pound (GBP)</option>
-          </select>
-        </div>
-      </div>
-      <fieldset disabled>
-        <div class="form-group">
-          <label for="disabledTextInput"></label>
-          <input
-            type="text"
-            id="disabledTextInput"
-            class="form-control costOfCrypto"
-          />
-        </div>
-      </fieldset>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-2">Convert</button>
-      </div>
+    <h1>Crypto Currency</h1>
+    <form action="">
+      
     </form>
   </main>
+
+
+
+
+  <!-- BOOTSTRAP script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
 </body>
 </html>
