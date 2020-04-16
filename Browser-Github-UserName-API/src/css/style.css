@@ -15,3 +15,12 @@ label {
 input {
   margin-right: 1em;
 }
+
+a {
+  font-size: 1.2em;
+  color: firebrick;
+}
+
+.list-group-item:hover {
+  background-color: yellow;
+}
