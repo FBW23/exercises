@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Github Username API</title>
+    <title>Github Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
-
 <body>
-
-    <h1>GitHub Username Widget</h1>
-
-    <form action="#">
-        <input type="text" id="user-input">
-        <br>
-        <button type="submit">SEARCH</button>
+<div class="container">
+    <form id="form" autocomplete="off">
+        <h1 style="text-align: center;">Github Search Users</h1>
+        <div class="form-group">
+            <input type="text" id="username" placeholder="Username" class="form-control ml-4">
+        </div>
+        <div class="form-group">
+           <button class="btn btn-danger ml-4">Search</button> 
+        </div>
     </form>
-
-    <div class="profile-container">
-        <div class="profile-photo">
-            <img id="profile-img" src="" alt="profile-photo">
-        </div>
-        <div class="user-info">
-            <p class="info">Username: <span class="name info-value"></span></p>
-            <p class="info">Biography: <span class="bio info-value"></span></p>
-            <p class="info">Location: <span class="location info-value"></span></p>
-            <p class="info">Followers: <span class="followers info-value"></span></p>
-            <p class="info">Repositories: <span class="repositories info-value"></span></p>
-        </div>
-    </div>
-
-    <div class="container">
+    <div id="result">
 
     </div>
+</div>
 
-    <script src="main.js"></script>
+    
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </html>
