@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color:  rgb(21, 133, 127);
+    border: none;
+    box-shadow: 1px 1px 2px blue;
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
+
+.profile-container {
+    width: 100%;
+    height: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info {
+    width: auto;
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.info {
+    margin: 0.8rem 0;
+}
+
+.info-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#profile-img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    padding: 0.5rem;
+}
+
+.profile-photo,
+.user-info {
+    margin: 2rem;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    border: 1px solid lightgrey;
+    display: none;
+    flex-direction: column;
+}
+
+.repo {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.repo:hover,
+.link:hover {
+    background-color: rgb(71, 32, 178);
+    color: #fff;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 0.8rem;;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
