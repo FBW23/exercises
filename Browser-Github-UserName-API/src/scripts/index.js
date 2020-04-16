@@ -18,12 +18,18 @@ const submitHandler = () => {
   getGithubRepositories()
     .then(data => {
       data.forEach(element => {
-          unorderedList1.innerHTML += `
-      <li class="list-group-item"><a style="text-decoration:none" href='${element.html_url}'>${element.name}</a></li>
-      
+          unorderedList1.innerHTML += 
+      `
+      <li class="list-group-item">
+        <div>
+          <a style="text-decoration:none" href='${element.html_url}'>${element.name}</a>
+          <p>${element.description}</p>
+        </div> 
+        <p>${element.created_at}</p>
+      </li>
       `
         })
-        .catch(error => console.log(error));
-    })
+      })
+    .catch(error => console.error(error));
 }
 form1.addEventListener('submit', submitHandler);
