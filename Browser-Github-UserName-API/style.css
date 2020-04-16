@@ -1,0 +1,20 @@
+#repoContainer{
+    display:flex;
+    border:1px solid black;
+    justify-content: space-between;
+    padding:0 3rem;
+}
+
+#repoContainer:hover{
+    background:lightblue;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+#repoName{
+    font-weight: bold;
+    font-size: 1rem;
+}
