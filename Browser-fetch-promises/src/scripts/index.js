@@ -63,7 +63,7 @@ const choice = () => {
 
 
 
-// document.addEventListener("DOMContentLoaded", choice);
+document.addEventListener("DOMContentLoaded", choice);
 // document.addEventListener('DOMContentLoaded', function () {
 //     const body = document.querySelector('body');
 //     const modal = document.querySelector('.modal');
@@ -87,3 +87,4 @@ const choice = () => {
 //         modal.style.display = "none";
 //     });
 // });
+ 

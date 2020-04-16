@@ -26,3 +26,45 @@ const calc = () => {
 
 };
 form.addEventListener("submit", calc);
+
+
+
+
+
+
+
+
+
+// MARTINA
+
+// "use strict";
+// class CryptonatorAPI {
+//     constructor() {
+//         this.apiUrl = "https://api.cryptonator.com/api/ticker";
+//         this.conversionEndpoint = "/:conversion";
+//         this.init();
+//     }
+//     init() {
+//         this.entryField = document.querySelector(".entryField");
+//         this.outputField = document.querySelector(".outputField");
+//         this.form = document.querySelector("#conversion-form");
+//         this.input = document.querySelector("#cryptoInput");
+//         this.output = document.querySelector("#cryptoOutput");
+//         this.registerEvents();
+//     }
+//     registerEvents() {
+//         this.inputAmount = document.querySelector("#cryptoInput");
+//         this.form.addEventListener("submit", e => {
+//             e.preventDefault();
+//             fetch(`${this.apiUrl}/${this.entryField.value}-${this.outputField.value}`)
+//                 .then(data => data.json())
+//                 .then(
+//                     response =>
+//                     (this.output.value = (
+//                         response.ticker.price * this.input.value
+//                     ).toFixed(2))
+//                 );
+//         });
+//     }
+// }
+// const cryptoRate = new CryptonatorAPI();

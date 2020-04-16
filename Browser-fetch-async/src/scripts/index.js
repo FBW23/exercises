@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // # Fetch - Async Await
 
 // **Instructions**:
@@ -14,141 +13,92 @@
 import "../styles/main.scss";
 import "babel-polyfill"
 
-
-
+//VARIABLES
 
 const btn = document.querySelector("#continue");
-const modal = document.getElementById("myModal");
+const modal = document.querySelector(".modal");
+const modalbackground = document.querySelector(".modal__content")
 const close = document.querySelector(".close");
+const body=document.querySelector("body");
 
-=======
-const btn = document.querySelector("#continue");
-const modal = document.getElementById("myModal");
-const closeBtn = document.querySelector(".close");
->>>>>>> 9ba87cb0a9fca9a168a5bae0239513b32156a335
-let promiseOfModal = new Promise(function (resolve) {
-    window.setTimeout(function () {
-        resolve(modal)
-    }, (2000));
-<<<<<<< HEAD
 
-=======
->>>>>>> 9ba87cb0a9fca9a168a5bae0239513b32156a335
-});
-// promiseOfModal.then(function(val) {
-//     console.log("User has been on the page for 60 seconds");
-//     val.style.display = "block";
-// })
-// modal.addEventListener("click", (e) => {
-//     switch(e.target.className) {
-//         case "close":
-//         case "modal":
-//         modal.style.display = "none"
-//         break;
-//     }
-// })
-async function showModal() {
-    await promiseOfModal;
-    modal.style.display = "block";
-}
-showModal();
 
-// promiseOfModal.then(function(val) {
-//     console.log("User has been on the page for 60 seconds");
-//     val.style.display = "block";
-// })
 
-// modal.addEventListener("click", (e) => {
-//     switch(e.target.className) {
-//         case "close":
-//         case "modal":
-//         modal.style.display = "none"
-//         break;
-//     }
-// })
+
+//MODAL
 
 
 async function showModal() {
-    const timePassed = await promiseOfModal;
-
-    timePassed.style.display = "block";
-}
-showModal()
-
-document.addEventListener("DOMContentLoaded", promiseOfModal);
-
-
-
-
-
-
-
-
-
-
-
-//BUTTONPROMISE
-async function buttonRelated() {
-    const buttonAnimation = await buttonclick();
-    alert("Continue to Subscribe!")
-    buttonAnimation.style.background = "#17A2B8";
-}
-
-const buttonclick = () => {
-    return new Promise(function (resolve) {
-        btn.addEventListener("animationend",()=>{
-            buttonRelated();
-        })
-        resolve(btn)
-
-    })
-
-
+    await window.setTimeout(function () {
+        modal.style.display = "block"
+    }, (1000));
 }
 
 
 
-btn.addEventListener("click", buttonclick)
+async function background(){
+ await showModal;
+
+window.setTimeout(function () {
+    modalbackground.style.background="blue";
+ }, (2000));
+body.style.background="red";
+ 
+}
+background()
+
+
+document.addEventListener("DOMContentLoaded", showModal);
 
 
 
-//     promiseOfButton.then(function (btn) {
+//BUTTON-THING DONE WITH PROMISES
+
+
+
+// const buttonHover = () => {
+//     const promiseOfButton = new Promise(function (resolve) {
+//         window.setTimeout(function () {
+//             resolve(btn)
+//         }, (0));
+//     });
+
+//  promiseOfButton.then(function (btn) {
 //         alert("Continue to Subscribe!")
 //         btn.style.background = "#17A2B8";
 //     })
-
 // };
-
-
-// btn.addEventListener("animationend", buttonclick)
-
-// CLOSING THE MODAL
+// btn.addEventListener("animationend", buttonHover)
 
 
 
 
 
-const closeIt = () => {
-    modal.style.display = "none";
-}
 
-close.addEventListener("click", closeIt);
-document.addEventListener("DOMContentLoaded", promiseOfModal);
 
-const buttonclick = () => {
-    const promiseOfButton = new Promise(function (resolve) {
-        window.setTimeout(function () {
-            resolve(btn)
-        }, (0));
-    });
-    promiseOfButton.then(function (btn) {
-        alert("Continue to Subscribe!")
-        btn.style.background = "#17A2B8";
-    })
+//BUTTON-THING DONE WITH ASYNC
+
+
+
+async function  buttonColor () {
+
+await this
+btn.style.background="#17A2B8";
 };
-btn.addEventListener("animationend", buttonclick)
+btn.addEventListener("animationend", buttonColor);
+
+
+
+
+
+
+
+
+
+
+
 // CLOSING THE MODAL
 const closeIt = () => {
     modal.style.display = "none";
 }
-closeBtn.addEventListener("click", closeIt);
+close.addEventListener("click", closeIt);
