@@ -1,6 +1,21 @@
-// This is where your styles can go, import any other scss or css files here or write your own style directly below
-
-body,
-body * {
+body {
+  margin: 30px;
+  padding: 30px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
   box-sizing: border-box;
+  background: url('../images/bdcake.jpg') no-repeat center;
+  background-color: #000;
+}
+h1 {
+  color: red;
+  text-shadow: 2px 1px 1px rgba(255, 250, 255, 1);
+}
+#countdown {
+  color: #ef3110;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 3px rgb(248, 213, 132), 0 0 5px rgb(255, 170, 11);
 }
