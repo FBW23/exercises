@@ -30,6 +30,6 @@ const submitHandler = () => {
       `
         })
       })
-    .catch(error => console.error(error));
+      .catch(() => alert(`User name dose not exist.Try with different user name!`));
 }
 form1.addEventListener('submit', submitHandler);
