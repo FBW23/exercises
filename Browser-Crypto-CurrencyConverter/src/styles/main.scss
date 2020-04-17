@@ -14,7 +14,8 @@ body * {
 }
 
 body {
-  background-color: #e8eff5;
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_960_720.jpg')!important;
+  background-size: cover;
   font-family: Roboto, sans-serif;
   display: flex;
   justify-content: center;
@@ -50,9 +51,12 @@ label {
   width: 100% !important;
 }
 h1 {
-  font-weight: 300;
-  letter-spacing: 4px;
-  color: #525252;
+  font-weight: bold!important;
+  letter-spacing: 10px;
+  font-size: 3.5rem!important;
+  color: #2b2a2a !important;
+  text-align: center;
+  text-shadow: 2px 5px 15px white;
 }
 select {
   box-shadow: 7px 7px 15px #bbcfda, 0px -4px 13px #fff,
@@ -61,23 +65,29 @@ select {
 }
 
 .title {
-  background: #c5e4ff;
+  background: #c8e0f5;
   box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff,
     inset 4px 4px 8px rgba(113, 155, 224, 0.2),
     inset -8px -8px 8px rgba(107, 238, 255, 0.2);
 }
 .convert {
-  color: white !important;
+  color: rgb(248, 248, 248) !important;
   font-weight: bold !important;
-  background: #ee69ff !important;
+  background: #1f1e1e !important;
   box-shadow: 7px 7px 15px #dad4bb, -4px -4px 13px #fff,
     inset 4px 4px 8px rgba(152, 113, 224, 0.2),
     inset -8px -8px 8px rgba(188, 107, 255, 0.2);
 }
 
 .convert:active {
-  background: #da24ff !important;
+  background: #c8e0f5 !important;
   box-shadow: 3px 3px 8px #dad4bb, -2px -2px 6px #fff,
     inset 4px 4px 8px rgba(174, 113, 224, 0.2),
     inset -8px -8px 8px rgba(184, 107, 255, 0.2);
+    color: #616161 !important;
+}
+footer{
+position: absolute;
+bottom: 30px;
+text-shadow: 2px 5px 5px white;
 }
