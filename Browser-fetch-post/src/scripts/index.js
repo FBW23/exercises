@@ -27,15 +27,26 @@ const handleSubmit = (event) => {
 
     const url = "https://jsonplaceholder.typicode.com/posts"
 
-    fetch(url, {
-            method: 'POST',
-            body: JSON.stringify(myBody)
-        })
-        .then(response => response.json()) // parse JSON
-        .then(json => console.log(json)); // console.log it!
 
+
+    // fetch(url, {
+    //         method: 'POST',
+    //         body: JSON.stringify(myBody)
+    //     })
+    //     .then(response => response.json()) // parse JSON
+    //     .then(json => console.log(json)); // console.log it!
+    async function postRequest() {
+        const response = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify(userInput)
+        })
+        const data = await response.json();
+        return data;
+    }
+
+    postRequest()
+        .then(response => console.log(response))
+        .then(alert('Your form was submitted'));
 
 }
 form.addEventListener('submit', handleSubmit);
-
-
