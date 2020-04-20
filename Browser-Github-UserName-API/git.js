@@ -27,3 +27,31 @@ function displayResults(e){
 }
  
   form.addEventListener('submit', displayResults);
+
+
+  const form = document.querySelector('form');
+const userName = document.querySelector('input[type=text]');
+const password = document.querySelector('input[type=password]');
+
+const handleSubmit = (event) => {
+    event.preventDefault();
+    const myOptions = {
+        method : 'GET' // 'GET'
+    };
+
+    const myBody = {
+        username: userName.value,
+        password: password.value // possibilities to secure the password /encrypt 
+    };
+    
+    const url = "https://jsonplaceholder.typicode.com/posts"
+    
+    fetch(url, {
+        method: 'POST', 
+        body: JSON.stringify(myBody)
+    })
+    .then(response => response.json()) // parse JSON
+    .then(json => console.log(json)); // console.log it!
+}
+
+form.addEventListener('submit', handleSubmit);
