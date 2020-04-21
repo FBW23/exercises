@@ -13,4 +13,5 @@ localStorage.clear();
 
 let newClass = new Client();
 
-console.log();
+newClass.getMovieData()
+.then( response => console.log(Object.keys(response)))
