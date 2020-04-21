@@ -34,9 +34,64 @@ const handleSubmit = async (event) => {
     })
     .then(response => response.json()) 
     .then(json => console.log(json)) 
-    .then(alert('Thank you for submitting your details!'));
+    .then(alert(data));
 }
 
 form.addEventListener('submit', handleSubmit);
 
 
+// const form = document.querySelector("form");
+// const user = document.querySelector("#name");
+// const email = document.querySelector("#email");
+// const password = document.querySelector("#password");
+// const message=document.querySelector("#message");
+// const checkbox=document.querySelector("#checkbox")
+
+
+// const formSubmit = async (event) => {
+// event.preventDefault();
+
+// const myOptions = {
+// method: 'POST'
+// };
+
+// let myBody={};
+
+// const formCheck= async ()=>{
+
+
+// myBody={
+// username: user.value,
+// email: email.value,
+// password: password.value,
+// message:message.value,
+// checkbox:checkbox.checked
+// }
+// }
+
+// await formCheck()
+
+// const fetchFunction=async()=>{
+// const url = "https://jsonplaceholder.typicode.com/posts"
+
+// fetch(url, {
+// method: 'POST',
+// body: JSON.stringify(myBody)
+// })
+// .then(response => response.json()) // parse JSON
+// .then(json => console.log(json)); // console.log it!
+// };
+
+
+// await fetchFunction();
+
+// alert("You have submitted your request!")
+
+
+
+// };
+
+
+
+
+// form.addEventListener("submit", formSubmit); 
