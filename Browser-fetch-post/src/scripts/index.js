@@ -10,6 +10,7 @@ const name = document.querySelector('input[type=text]');
 const email = document.querySelector('input[type=email]');
 const password = document.querySelector('input[type=password]');
 const checkbox = document.querySelector('input[type=checkbox]');
+const message = document.querySelector('#message');
 
 
 
@@ -22,23 +23,17 @@ const handleSubmit = (event) => {
         name: name.value,
         email: email.value,
         password: password.value,
+        message: message.value,
         checkbox: checkbox.checked
     };
 
     const url = "https://jsonplaceholder.typicode.com/posts"
 
 
-
-    // fetch(url, {
-    //         method: 'POST',
-    //         body: JSON.stringify(myBody)
-    //     })
-    //     .then(response => response.json()) // parse JSON
-    //     .then(json => console.log(json)); // console.log it!
     async function postRequest() {
         const response = await fetch(url, {
             method: 'POST',
-            body: JSON.stringify(userInput)
+            body: JSON.stringify(myBody)
         })
         const data = await response.json();
         return data;
