@@ -44,6 +44,9 @@ const handleSubmit = (event) => {
 
 }
 form.addEventListener('submit', handleSubmit);
+
+
+// Martina solution
 // grab the elements
 const form = document.querySelector('form');
 const user = document.querySelector("#name");
