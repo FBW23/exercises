@@ -4,42 +4,41 @@ import "babel-polyfill";
 
 // \/ All of your javascript should go here \/
 
+// grab the elements
 const form = document.querySelector('form');
-const nameInput = document.querySelector('input[type=text]');
-const emailInput = document.querySelector('input[type=email]');
-const passwordInput = document.querySelector('input[type=password]');
-const messageInput = document.querySelector('input[name=message]');
-const checkBoxValue = document.querySelector('input[type=checkbox]');
+const user = document.querySelector("#name");
+const email = document.querySelector("input[type=email]");
+const password = document.querySelector("input[type=password]");
+const message = document.querySelector("#message");
+const checkbox = document.querySelector("[type=checkbox]");
 
-
-const handleSubmit = event => {
+const handleSubmit = async (event) => {
   event.preventDefault();
-  const userInput = {
-    username: nameInput.value,
-    email: emailInput.value,
-    password: passwordInput.value,
-    message: messageInput.value,
-    checkbox: checkBoxValue.checked
-  }
+  
+  const myUrl = "https://jsonplaceholder.typicode.com/posts";
 
-  const url = 'https://jsonplaceholder.typicode.com/posts'
+  const myBody= {
+    username: user.value,
+    email: email.value,
+    password: password.value,
+    message: message.value, 
+    checkbox: checkbox.checked // boolean, value always "on"
+  };
 
-  async function postRequest() {
-    const response = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(userInput)
-    })
-    const data = await response.json();
-    return data;
-  }
+  const myOptions = {
+    method: 'POST',
+    body: JSON.stringify(myBody)
+  };
 
-  postRequest()
-    .then(response => console.log(response))
-    .then(alert('Your form was submitted'));
+  const resp = await fetch(myUrl, myOptions)
+  const data = await resp.json();
+  //.then(response => response.json())
+  //.then(parsedData => {
+    console.log(data);
+  //  return parsedData;
+  //})
+  //.then(parsedData => 
+    alert(JSON.stringify(data))
+    //);
 }
-
-
-
-
-
-form.addEventListener('submit', handleSubmit);
+form.addEventListener("submit", handleSubmit); 
