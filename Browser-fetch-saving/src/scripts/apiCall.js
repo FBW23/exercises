@@ -1,7 +1,9 @@
-class Client {
+
+
+export default class Client {
     constructor () {
         //Your token goes here
-        this.token = "";
+        this.token = "dc6d26d6";
     }
 
     async getMovieData(movie) {
