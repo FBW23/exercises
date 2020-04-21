@@ -10,3 +10,7 @@ import View from './view';
 console.log(View);
 console.log(Client)
 localStorage.clear();
+
+let newClass = new Client();
+
+console.log();

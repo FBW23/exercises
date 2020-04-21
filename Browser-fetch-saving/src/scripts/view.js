@@ -1,4 +1,4 @@
-class View {
+export default class View {
     constructor() {
         this.moviesSection = document.querySelector(".movies");
     }
@@ -23,5 +23,3 @@ class View {
     }
 
 }
-
-export default { View }

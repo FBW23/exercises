@@ -1,4 +1,5 @@
-class Client {
+
+export default class Client {
     constructor () {
         //Your token goes here
         this.token = "ff8df0bd";
@@ -11,4 +12,3 @@ class Client {
     }
 }
 
-export default { Client } 
