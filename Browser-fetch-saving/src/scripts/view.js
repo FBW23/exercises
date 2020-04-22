@@ -21,5 +21,5 @@ export default class View {
     removeDisplay() {
         this.moviesSection.innerHTML = "";
     }
-
 }
+export { View }
