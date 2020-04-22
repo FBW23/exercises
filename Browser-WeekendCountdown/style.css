@@ -1,0 +1,32 @@
+* {
+    margin:5px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 60px;
+}
+
+#text { 
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 3px;
+}
+
+#btn{
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#btn:focus{
+    outline: none;
+}
+
+#text:focus{
+    outline: none;
+}

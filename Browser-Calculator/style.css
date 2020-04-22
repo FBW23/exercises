@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(243, 223, 223);
+    text-align: center;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    margin: 20px;
+}
+
+.input {
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    border-color: blue;
+}

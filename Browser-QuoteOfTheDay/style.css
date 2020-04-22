@@ -1,3 +1,39 @@
+<<<<<<< HEAD
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+#btn {
+    height: 40px;
+    border-radius: 5px;
+    border-color: blue;
+    background-color: white;
+}
+
+form {
+    width: 30vw;
+    height: 30vh;
+    margin: auto ;
+    margin-top: 100px;
+    border: solid;
+    padding: 40px;
+    border-radius: 5px;
+    border-color: rgb(51, 51, 146);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    height: 40px;
+    margin: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(82, 81, 81);
+}
+=======
 body{
     text-align: center;
     background-color: black;
@@ -29,3 +65,4 @@ body{
 #icon {
     display: none;
 } 
+>>>>>>> 2345ab816298e8db4666db4445bed0b81eb30b6c

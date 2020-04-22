@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+const password = document.querySelector("#password");
+const checkbox = document.querySelector("#checkCase");
+const passLength = document.querySelector("#passLength");
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_-';
+    for (let i = 0; i < passLength.value; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    if (checkbox.checked) {
+        password.innerText = result.toUpperCase();
+    } else {
+        password.innerText = result;
+    }
+});
+=======
 console.log('Ctrl+Shift+P');
 console.log('Can you see me coding? ');
 
@@ -45,3 +64,4 @@ const myButton = document.querySelector('#button');
 myButton.addEventListener('click', handlingInputs);
 //passwordGenerator(20, true);
 //passwordGenerator(5, false);
+>>>>>>> 2345ab816298e8db4666db4445bed0b81eb30b6c
