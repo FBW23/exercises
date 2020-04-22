@@ -23,3 +23,8 @@ class View {
     }
 
 }
+
+
+const view=View;
+
+export  {view}
