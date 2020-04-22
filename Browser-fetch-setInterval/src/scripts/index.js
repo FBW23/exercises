@@ -2,28 +2,7 @@
 
 const pomodoroSession = document.querySelector('input');
 
-// Countdown
 
-function countDown() {
-  let timer = document.querySelector('#timer');
-  
-  let counter = 0;
-  let timeleft = 60;
-
-  function convertSeconds(s) {
-    let min = Math.floor(s / 60);
-    let sec = s % 60;
-    return `${min} : ${sec}`
-  }
-
-  function timeIt() {
-    counter ++;
-    timer.innerHTML = convertSeconds(timeleft - counter);
-  }
-  setInterval(timeIt, 1000);
-}
-
-countDown();
 
 // Get Buttons
 const buttons = document.querySelectorAll('button');
@@ -53,3 +32,30 @@ buttons.forEach(element => element.addEventListener('click', function () {
       break;
   }
 }))
+
+// Countdown
+
+function countDown() {
+  let timer = document.querySelector('#timer');
+  
+  let counter = 0;
+  let timeleft = parseInt(pomodoroSession.value);
+
+  function convertSeconds(s) {
+    let min = Math.floor(s / 60);
+    let sec = s % 60;
+    return `${min} : ${sec}`
+  }
+
+  function timeIt() {
+    counter ++;
+    timer.innerHTML = convertSeconds(timeleft - counter);
+    if(counter == timeleft) {
+      clearInterval(interval);
+      counter = 0;
+    }
+  }
+const interval =  setInterval(timeIt, 1000);
+}
+
+countDown();
