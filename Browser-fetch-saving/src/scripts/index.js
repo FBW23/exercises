@@ -36,11 +36,11 @@ async function save() {
 
 
 function reset() {
-    view.removeDisplay()
+    view.removeDisplay();
     localStorage.clear();
 }
 
-async function saveData() {
+async function savedData() {
     arrayOfStorage = JSON.parse(localStorage.getItem('movies'));
     if (arrayOfStorage) {
         for (let i = 0; i < arrayOfStorage.length; i++) {
@@ -54,6 +54,6 @@ async function saveData() {
 
 buttonReset.addEventListener("click", reset);
 buttonSave.addEventListener("click", save);
-document.addEventListener('DOMContentLoaded', saveData);
+document.addEventListener('DOMContentLoaded', savedData);
 
 
