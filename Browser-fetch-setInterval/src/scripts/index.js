@@ -16,13 +16,15 @@ buttons.forEach(element => element.addEventListener('click', function () {
       break;
     case 'btn-minus':
       console.log(element.id)
-      pomodoroSession.value = parseInt(pomodoroSession.value) -1;
+      pomodoroSession.value = parseInt(pomodoroSession.value) - 1;
       break;
     case 'btn-start':
       console.log(element.id)
+      countDown(); // Start the Timer
       break;
     case 'btn-reset':
       console.log(element.id)
+      clearInterval(interval)
       break;
     case 'btn-pause':
       console.log(element.id)
@@ -34,28 +36,27 @@ buttons.forEach(element => element.addEventListener('click', function () {
 }))
 
 // Countdown
+let counter = 0;
+let timeleft = parseInt(pomodoroSession.value);
+
+function convertSeconds(s) {
+  let min = Math.floor(s / 60);
+  let sec = s % 60;
+  return `${min} : ${sec}`
+}
 
 function countDown() {
-  let timer = document.querySelector('#timer');
+  const timer = document.querySelector('#timer');
+
   
-  let counter = 0;
-  let timeleft = parseInt(pomodoroSession.value);
-
-  function convertSeconds(s) {
-    let min = Math.floor(s / 60);
-    let sec = s % 60;
-    return `${min} : ${sec}`
-  }
-
   function timeIt() {
-    counter ++;
+    counter++;
     timer.innerHTML = convertSeconds(timeleft - counter);
-    if(counter == timeleft) {
+    if (counter == timeleft) {
       clearInterval(interval);
       counter = 0;
     }
   }
-const interval =  setInterval(timeIt, 1000);
+  let interval = setInterval(timeIt, 1000);
 }
 
-countDown();
