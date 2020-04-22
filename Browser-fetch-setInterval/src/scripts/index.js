@@ -2,7 +2,7 @@
 
 const pomodoroSession = document.querySelector('input');
 
-
+let interval = null;
 
 // Get Buttons
 const buttons = document.querySelectorAll('button');
@@ -12,11 +12,11 @@ buttons.forEach(element => element.addEventListener('click', function () {
   switch (element.id) {
     case 'btn-plus':
       console.log(element.id)
-      pomodoroSession.value = parseInt(pomodoroSession.value) + 1;
+      pomodoroSession.value = parseFloat(pomodoroSession.value) + 1;
       break;
     case 'btn-minus':
       console.log(element.id)
-      pomodoroSession.value = parseInt(pomodoroSession.value) - 1;
+      pomodoroSession.value = parseFloat(pomodoroSession.value) - 1;
       break;
     case 'btn-start':
       console.log(element.id)
@@ -37,7 +37,7 @@ buttons.forEach(element => element.addEventListener('click', function () {
 
 // Countdown
 let counter = 0;
-let timeleft = parseInt(pomodoroSession.value);
+let timeleft = parseFloat(pomodoroSession.value) * 60;
 
 function convertSeconds(s) {
   let min = Math.floor(s / 60);
@@ -52,11 +52,11 @@ function countDown() {
   function timeIt() {
     counter++;
     timer.innerHTML = convertSeconds(timeleft - counter);
-    if (counter == timeleft) {
+    if (counter === timeleft) {
       clearInterval(interval);
       counter = 0;
     }
   }
-  let interval = setInterval(timeIt, 1000);
+   interval = setInterval(timeIt, 1000);
 }
 
