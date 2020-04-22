@@ -44,11 +44,11 @@ const count = () => {
 
     let ticker = setInterval(function () {
         if (secs.innerText > 0) {
-            secs.innerText -= 1
+            secs.innerText -= 1;
         }
         if (secs.innerText == 0 && mins.innerText > 0) {
-            secs.innerText = 60
-            mins.innerText -= 1
+            secs.innerText = 60;
+            mins.innerText -= 1;
         }
 
 
@@ -57,9 +57,9 @@ const count = () => {
 //PAUSE
 
  const pasueFunction = () => {
-        clearInterval(ticker)
+        clearInterval(ticker);
     };
-    pause.addEventListener("click", pasueFunction)
+    pause.addEventListener("click", pasueFunction);
 
 
 //CONTINUE
@@ -68,18 +68,18 @@ const continueCounting = () => {
         ticker = setInterval(function () {
 
             if (secs.innerText > 0) {
-                secs.innerText -= 1
+                secs.innerText -= 1;
             }
             if (secs.innerText == 0 && mins.innerText > 0) {
-                secs.innerText = 5
-                mins.innerText -= 1
+                secs.innerText = 5;
+                mins.innerText -= 1;
             }
 
 
         }, 1000)
     }
 
-    continueBtn.addEventListener("click", continueCounting)
+    continueBtn.addEventListener("click", continueCounting);
 
 
 }
@@ -88,13 +88,13 @@ const continueCounting = () => {
 
 //INCREASE BUTTON
 const plusFunction = () => {
-    return timeInput.value++
+    return timeInput.value++;
 };
 
 
 //DECREASE BUTTON
 const minusFunction = () => {
-    return timeInput.value--
+    return timeInput.value--;
 };
 
 
