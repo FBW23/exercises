@@ -2,7 +2,11 @@
 export default class Client {
     constructor () {
         //Your token goes here
+<<<<<<< HEAD
         this.token = "ff8df0bd";
+=======
+        this.token = "4da339a9";
+>>>>>>> bc113b5484ecc7f51da1bc1d22f504f7c9ba48f7
     }
 
     async getMovieData(movie) {
@@ -11,4 +15,8 @@ export default class Client {
         return data;
     }
 }
+<<<<<<< HEAD
 
+=======
+export { Client }
+>>>>>>> bc113b5484ecc7f51da1bc1d22f504f7c9ba48f7
