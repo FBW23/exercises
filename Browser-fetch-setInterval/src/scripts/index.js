@@ -1,6 +1,30 @@
 //Your code goes here!
 
 const pomodoroSession = document.querySelector('input');
+
+// Countdown
+
+function countDown() {
+  let timer = document.querySelector('#timer');
+  
+  let counter = 0;
+  let timeleft = 60;
+
+  function convertSeconds(s) {
+    let min = Math.floor(s / 60);
+    let sec = s % 60;
+    return `${min} : ${sec}`
+  }
+
+  function timeIt() {
+    counter ++;
+    timer.innerHTML = convertSeconds(timeleft - counter);
+  }
+  setInterval(timeIt, 1000);
+}
+
+countDown();
+
 // Get Buttons
 const buttons = document.querySelectorAll('button');
 
