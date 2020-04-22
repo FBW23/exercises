@@ -21,6 +21,7 @@ class View {
     removeDisplay() {
         this.moviesSection.innerHTML = "";
     }
+<<<<<<< HEAD
 
 }
 
@@ -28,3 +29,7 @@ class View {
 const view=View;
 
 export  {view}
+=======
+}
+export { View }
+>>>>>>> bc113b5484ecc7f51da1bc1d22f504f7c9ba48f7
