@@ -68,7 +68,10 @@ li {
   transition: all 0.5s ease;
 }
 
-.teapot-rotate {
+.image_teapot {
     transform: rotate(20deg);
 }
 
+.showLayers {
+    -webkit-transform: rotate(20deg)
+  }

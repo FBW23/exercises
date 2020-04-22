@@ -1,0 +1,53 @@
+body {
+    font-family: verdana, sans-serif;
+    font-size: 18px;
+    background: tomato;
+    color: white;
+}
+h2:first-of-type {
+    padding: 1em 0;
+}
+input[type="number"], label {
+    font-size:1.2em;
+}
+.watchrow {
+    padding: .1em;
+    border-radius: 1em;
+    background: tomato;
+    -webkit-filter: brightness(125%);
+    filter: brightness(125%);
+    cursor: pointer;
+}
+.watch {
+    background: #333;
+    padding: 5px;
+    border: solid 5px #555;
+    border-radius: .2em;
+}
+.watch>div {
+        text-align: center;
+    }
+.watchhead div {
+    display: inline-block;
+    width: 2em;
+    text-align: center;
+}
+.watchbody div {
+    display: inline-block;
+    background: white;
+    color: #333;
+    width: 2em;
+    text-align: center;
+    border-radius: .2em;
+}
+#message {
+    font-size:1.2em;
+    text-align: center;
+}
+.bwhite {
+    background: white;
+    color: #333;
+    margin-bottom:.5em;
+    padding-bottom: 1em;
+    border-radius:.2em;
+}

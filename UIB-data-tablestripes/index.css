@@ -1,0 +1,29 @@
+tr:nth-child(2n+1) {
+    background-color: gray;
+}
+
+tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+tr:nth-child(4n) td:nth-child(2){
+    background-color: #cc181b;
+}
+tr:nth-child(7n) td:nth-child(2){
+    background-color: #cc181b;
+}
+/*tr:nth-child(7) td:not(:first-child) {
+    background-color: #cc181b;
+}
+
+
+
+tr:nth-child(4) td:not(:first-child) {
+    background-color: #cc181b;
+}
+/*

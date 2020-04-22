@@ -1,9 +1,39 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+<<<<<<< HEAD
+nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+    background: blue;
+    display: inline-block;
+    padding: 10px;
+    }
+
+
+ul li:hover {
+    background-color: crimson;
+    animation-duration: 3s;
+    animation-name: exu;
+}
+
+@keyframes exu {
+    0% {transform: scale(1);
+        transform: scale(1);
+        
+    }
+
+    50% {
+        
+        transform: scale(2);
+        transform: scale(2);
+    }
+}
+=======
 nav ul li{
     
     display: inline-block;
@@ -57,3 +87,4 @@ nav ul li{
   }
 
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

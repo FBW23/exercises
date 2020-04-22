@@ -1,0 +1,108 @@
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#a,
+#b,
+#c,
+#d,
+#e,
+#f,
+#g {
+    height: 100px;
+    justify-content: center;
+
+
+}
+
+#a {
+    background: #950081;
+
+}
+
+#b {
+    background: #bc00e9;
+
+}
+
+#c {
+    background: #9300ff;
+}
+
+#d {
+    background: #00a600
+}
+
+#e {
+    background: #daff00
+}
+
+#f {
+    background: #ff9800
+}
+
+#g {
+    background: #FF0000
+}
+
+@media screen and (max-width: 600px) 
+ {#boxes{flex-direction: column;
+} }
+
+
+@media screen and (min-width:601px) and (max-width: 800px) {
+
+    #a,
+    #b,
+    #f,
+    #g {
+        width:100%;
+        
+        
+    }
+
+    #e,
+    #c,
+    #d {
+       width:33.33%;
+       
+    }
+}
+@media screen and (min-width:601px) and (max-width: 800px) {
+
+    #a,
+    #b,
+    #f,
+    #g {
+        width:100%;
+       
+        
+    }
+
+    #e,
+    #c,
+    #d {
+       width:33.33%;
+       
+    }
+}
+@media screen and (min-width:801px)  {
+
+    #a,
+    #b,
+    #f,
+    #g {
+        width:50%;
+        
+        
+    }
+
+    #e,
+    #c,
+    #d {
+       width:33.33%;
+       
+    }
+}

@@ -5,6 +5,60 @@ body {
     height: 100%;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.halloworld {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin:0 auto;
+    left:5px;
+    bottom:7px;
+    text-align: center;
+    position:relative;
+}
+
+.box1 {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    margin:35px;
+    margin-top:50px;
+    
+    
+    
+}
+
+.box2 {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 255, 85);
+    position:absolute;
+    margin:45px;
+        margin-left:40px;
+        z-index: 1;
+}
+
+.box3 {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 183, 255);
+    
+    margin-left:50px;
+    margin-top:30px;
+    position:absolute;
+
+}
+=======
+/* i m aware of alphabetical order but i m tired */
+body {
+    font-family: Arapey, Montserrat, sans-serif;
+=======
 .halloworld,
 .box1,
 .box2,
@@ -26,6 +80,7 @@ body {
     top: 7px;
     text-align: center;
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
 
 .box1,
@@ -34,6 +89,51 @@ body {
     position: absolute;
 }
 
+<<<<<<< HEAD
+    [id *="section"] {
+        border: 1px solid black;
+        padding: 0.8em;
+        box-shadow: 0 0 2em black;
+        margin-bottom: 3em;
+    }
+
+    h1 {
+        font-size: 4rem;
+        direction: rtl;
+    }
+
+    nav {
+        position: absolute;
+        width: 12%;
+        top: 100px;
+        height: 100%;
+        line-height: 1.3rem;
+        text-align: start;
+        font-family: Montserrat, sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+        line-height: 2rem;
+        line-height: 1.7rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h3 {
+        position: relative;
+        left: 26%;
+
+    }
+>>>>>>> 4d9abd5a283b743b21aaf118ea14cf74ea350f69
+=======
 .box1 {
     background: red;
     bottom: 0;
@@ -56,3 +156,4 @@ body {
     z-index: -1;
 
 }
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09

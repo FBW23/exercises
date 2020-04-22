@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "joao",
   "version": "0.1.0",
-  "description": "",
+  "description": "countdown",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",

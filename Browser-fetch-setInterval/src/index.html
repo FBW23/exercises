@@ -4,31 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <title>Document</title>
 </head>
 
-<body class="d-flex flex-column align-items-center justify-content-center">
-    <h1 class="border-bottom border-danger display-3">Pomodoro Timer</h1>
-    <section id="timer" class="timer text-danger display-2">
-        <span class="mins">0</span><span>:</span><span class="secs">0</span>
-    </section>
+<body>
+    <div class="container">
 
-    <label for="time-session" class="m-0">Input time in minutes</label>
-    <section id="session" class="d-flex flex-row justify-content-around align-items-center">
-        <button id="btn-minus" class=" btn btn-outline-danger">&minus;</button>
-        <input type="number" id="time" class="session__time ml-1 mr-1 w-100" value="0">
-        <button id="btn-plus" class="display-3 btn btn-outline-danger">&plus;</button>
-    </section>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">Click the Pomodoro Clock to start or pause it.</h2>
+            </div>
+        </div>
 
-    <section class="buttons mt-3">
-        <button id="btn-start" class="btn btn-outline-danger">Start</button>
-        <button id="btn-reset" class="btn btn-outline-danger">Reset</button>
-        <button id="btn-pause" class="btn btn-outline-danger">Pause</button>
-        <button id="btn-continue" class="btn btn-outline-danger">Continue</button>
-    </section>
+        <div class="row">
+            <div class="col-xs-6">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row bwhite">
+                            <h2 class="text-center">Change Work Pomodoro</h2>
+                            <div class="col-xs-2">
+                                <label>min: </label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control" id="workmin" type="number" value="25" size="3" min="0"
+                                    max="99" />
+                            </div>
+                            <div class="col-xs-2">
+                                <label>sec: </label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control" id="worksec" type="number" value="0" size="3" min="0"
+                                    max="59" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row bwhite">
+                            <h2 class="text-center">Change Rest Pomodoro</h2>
+                            <div class="col-xs-2">
+                                <label>min: </label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control" id="restmin" type="number" value="5" size="3" min="0"
+                                    max="99" />
+                            </div>
+                            <div class="col-xs-2">
+                                <label>sec: </label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control" id="restsec" type="number" value="0" size="3" min="0"
+                                    max="59" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-2 col-xs-offset-2 watchrow">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="message">Work</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="watch">
+                            <div class="row watchhead">
+                                <div>Min</div>
+                                <div>Sec</div>
+                            </div>
+                            <div class="row watchbody">
+                                <div id="min">25</div>:<div id="sec">00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12" style="padding-top:1em;">
+                        <img id="pedoimg" class="img-responsive"
+                            src="http://www.clipartkid.com/images/129/work-party-call-st-george-s-park-saturday-21-march-st-george-s-bpHkR9-clipart.png"
+                            alt="work">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 
 </html>

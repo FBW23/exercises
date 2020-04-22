@@ -5,6 +5,20 @@ import '../styles/main.scss';
 
 // \/ All of your javascript should go here \/
 
+<<<<<<< HEAD
+
+      timeoutID = new Promise(function(resolve) {
+        
+        window.setTimeout(resolve, 10000);
+    }).then(function () { setTimeout(function(){
+        $.colorbox({
+            html:"<h2>You've been on the site for 10 seconds! Cool!</h2>",
+            className: "cta",
+          
+          }); 
+    });
+})
+=======
 document.addEventListener('DOMContentLoaded', function () {
     const body = document.querySelector('body');
     const modal = document.querySelector('.modal');
@@ -28,3 +42,4 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.style.display = "none";
     });
 });
+>>>>>>> 417289746f360b6b1b3c16981189448568fbd72e

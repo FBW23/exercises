@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+body {
+
+    width: 100%;
+    
+    }
+
+* {
+    box-sizing: border-box;
+}
+div {height: 100vh;}
+
+
+@media screen and (min-width:601px) {
+    div {
+        display: flex;
+                flex-wrap: wrap;
+        height:50vh;
+    }
+    .column {width:50vw;}
+}
+
+
+@media screen and (min-width: 992px) {
+    div {flex: 1;
+    height:100vh;}
+
+
+=======
 * {
     box-sizing: border-box;
 }
@@ -30,5 +59,9 @@
     .column{
         flex: 1;
     }
+<<<<<<< HEAD
+>>>>>>> 694a8c2c45e1f08cdc9aa50b281a6e07485a55f9
+=======
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }

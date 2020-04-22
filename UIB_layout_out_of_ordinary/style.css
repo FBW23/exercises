@@ -2,10 +2,90 @@ html,
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+    background-color: green;
+}
+<<<<<<< HEAD
+
+* {
+    flex-direction: row;
+}
+
+#Genres {
+    
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+#Action {
+    background-color: dodgerblue;
+    width: 500px;
+    height: 100px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#Romance {
+    background-color: red;
+    height: 100px;
+    width: 500px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+}
+
+#Thriller {
+    background-color: rgb(190, 178, 178);
+    height: 100px;
+    width: 500px;
+    flex-grow: 10;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#Comedy {
+    background-color: rgb(255, 214, 30);
+    height: 100px;
+    width: 500px;
+    flex-grow: 10;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#Horror {
+    background-color: black;
+    height: 100px;
+    width: 500px;
+    color: white;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#Drama {
+    background-color: darkgrey;
+    height: 100px;
+    width: 500px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+=======
+=======
     
 }
 
 
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 .genres {
     display: flex;
     text-align: center;
@@ -43,6 +123,13 @@ body {
 #dra{
     background-color: darkgray;
 }
+<<<<<<< HEAD
+
+.romance {
+    background: red;
+>>>>>>> a59ed8ec6c32174d5536f036e4e25a58256bea0f
+=======
 #rom{
     background-color:red
+>>>>>>> 51ae60c872ce5d59f1711be802ec8c253bd19a09
 }
