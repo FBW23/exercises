@@ -32,7 +32,11 @@
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^7.3.1",
     "style-loader": "^1.1.4",
+<<<<<<< HEAD
+    "webpack": "^4.43.0",
+=======
     "webpack": "^4.42.1",
+>>>>>>> bc113b5484ecc7f51da1bc1d22f504f7c9ba48f7
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },

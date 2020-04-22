@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 60%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    margin-bottom: .5em;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.albums,
+.more-info {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+img,
+ul {
+    margin-bottom: 2em;
+}
+
+li {
+    border-bottom: 1px solid;
+    padding: 1em;
+    font-weight: 900;
+    color: crimson;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover,
+a:focus {
+    color: crimson;
+}

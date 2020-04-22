@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+h1,
+ul,
+.dropdown-menu {
+    text-align: center;
+}
+
+h1 {
+    padding: .5em;
+    margin-bottom: .2em;
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+}
+
+.nav-link {
+    padding: .2em;
+}
+
+
+.nav-link {
+    display: block;
+    padding: .8em 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.dropdown-menu {
+    flex-direction: column;
+    display: none;
+}
+
+li:hover,
+li:focus,
+a:hover,
+a:focus {   
+    background-color: black;
+    color: lightblue;
+}

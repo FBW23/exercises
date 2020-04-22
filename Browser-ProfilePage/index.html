@@ -13,14 +13,14 @@
       <fieldset>
         <legend>Put your details here!</legend>
 
-        <label>Put your name here</label>
-        <input type="text" />
+        <label for="nameInput">Put your name here</label>
+        <input id="nameInput" type="text" name="nameInput" />
 
         <label>Put your birthday here</label>
-        <input type="date" />
+        <input id="birthdayInput" type="date" />
 
         <label>Upload a photo of yours</label>
-        <input type="file" /><br />
+        <input type="file" id="avatar"/><br />
 
         <label>Pick your favorite color</label>
         <input id="primaryColor" type="color" /><br />
@@ -36,13 +36,25 @@
 
         <label>Pick your Skills: </label><br />
 
-        <li><input type="checkbox" />JavaScript</li>
-        <li><input type="checkbox" />Ruby</li>
-        <li><input type="checkbox" />Python</li>
-        <li><input type="checkbox" />Java</li>
-        <li><input type="checkbox" />PHP</li>
+        <li><input class="skills" type="checkbox" value='JavaScript'/>JavaScript</li>
+        <li><input class="skills" type="checkbox" value='Ruby'/>Ruby</li>
+        <li><input class="skills" type="checkbox" value='Python' />Python</li>
+        <li><input class="skills" type="checkbox" value='Java'/>Java</li>
+        <li><input class="skills" type="checkbox" value='PHP'/>PHP</li>
       </fieldset>
     </form>
+    <button type='submit'>Create CV</button>
+    <button type='reset'>Reset Form</button>
+
+    <div class="container">
+      <div>
+        <h1 id="userName"></h1>
+        <p id="userAge"></p>
+        <img id="image">
+        <p id="aboutMe"></p>
+        <p id="userSkills"></p>
+      </div>
+    </div>
 
     <script src="js/index.js"></script>
   </body>

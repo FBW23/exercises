@@ -1,0 +1,48 @@
+body {
+  background-image: url('../img/annie-spratt-im8y4BO2hso-unsplash.jpg');
+  background-size: cover ;
+  /* background-color: firebrick; */
+}
+
+label {
+  margin: .5em 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.flex-form {
+  display: flex;
+}
+
+input {
+  margin-right: 1em;
+}
+
+a {
+  font-size: 1.2em;
+  color: black;
+  padding: .9em 0 2.8em 0;
+}
+
+a:hover,
+a:focus {
+  color: black;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  color: firebrick;
+}
+
+.list-group-item:hover,
+.list-group-item:focus {
+  background-color: #17a2b8;
+  color: white;
+
+}
+
+p {
+  font-size: .9rem;
+}

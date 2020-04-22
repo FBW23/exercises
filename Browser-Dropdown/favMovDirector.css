@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    background: lightblue;
+}
+
+
+li {
+    color: white;
+    padding: .5em;
+}
+
+
+.nav-item {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+} 
+
+
+.dropdown-menu {
+    background-color: black;
+    text-align: center;
+    padding: 1.8em;
+}
+
+ .dropdown-item {
+    color: white;
+    text-align: center;
+    padding: 0 1em;
+} 
+
+.nav {
+    justify-content: space-around;
+}

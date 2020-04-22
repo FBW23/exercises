@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+let tbody = document.querySelector('tbody');
+
+let table = '';
+music.forEach(element => {
+    console.log(element);
+    table += `
+        <tr class='line'>
+        <td scope="col" class="pic"><img src="assets/img/music.jpg"></td>
+        <td scope="col" class="track">${element.trackName}</td>
+        <td scope="col" class="artist">${element.artistName}</td>
+        <td scope="col" class="type">${element.collectionName}</td>
+        <td scope="col" class="date">${element.releaseDate}</td>
+        </tr>
+    `;
+    tbody.innerHTML = table;
+})
+=======
 // HTML elements saved in Lets
 let line = document.querySelectorAll('.line');
 let track = document.querySelector('.track');
@@ -20,3 +38,4 @@ for (let i = 0; i < 5; i++) {
     // let's add the key values to the html
     
 }
+>>>>>>> b54d375f3c088fb244f79043840ef3bac0c41a6b

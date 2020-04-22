@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  background: orangered;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+
+.input-group {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 95%;
+}
+
+.form-control {
+  margin: 0 2em;
+}
+
+.headings {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.headings,
+p {
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-left: 3em;
+
+}
+
+.headings {
+  margin-left: 2.1em;
+}
+
+span {
+  font-size: 1.5em;
+}
