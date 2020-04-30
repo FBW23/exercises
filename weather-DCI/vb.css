@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    max-width:60%;
+    align-items: center;
+    margin:0 auto;
+}
+
+#city{
+    height:3rem;
+    width: 15rem;
+}
+
+
+#button{
+    background:green;
+    color:white;
+    padding:1rem 4rem;
+}
+
+
+.weatherContainer{
+    display: flex;
+ 
+ flex-wrap: wrap;
+ flex-grow: 1;
+ max-width: 80%;
+ margin:0 auto;
+}
+
+section{
+    color:white;
+    
+}
